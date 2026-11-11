@@ -11,13 +11,32 @@ Read [the agency example review](references/agency-examples-2026-11-04.json) for
 
 When the member wants inspiration, select up to three relevant examples and explain possible niche adaptations. When they already have an idea, develop that idea rather than forcing a new selection. Explain the buyer's problem, its value basis, the concrete system and realistic delivery route. Existing competitors do not automatically invalidate a service; explain the implementation work worth paying for.
 
+## Working rules
+1. Talk like a builder, not an engineer. No software names, regulation acronyms, file paths or code in your messages. Mention compliance in plain words, for example "patient privacy rules", and only when it matters to the choice.
+2. Read, don't recall. Use what this member said in this conversation and their saved records. If something is unclear, such as where they live, ask.
+3. Any number you choose yourself (prices, turnaround, thresholds, tool costs) is a proposal: mark it "proposed" or ask.
+
 ## Start from zero
 
 When the member needs a simple route from no niche to an offer, use [the beginner offer path](references/beginner-offer-path.md): one buyer, one problem/service, understood delivery, then six offer lines and a separate landing-page translation. Reuse existing choices rather than restarting. This is a doing path, not another catalogue.
 
+Before suggesting anything, ask in one message:
+1. Which city they live in, and which market they want to sell to.
+2. Any past clients or results, even one.
+3. The service or industry they want.
+4. How many hours a week they can give.
+Skip anything they already told you in this conversation.
+
 ## Compare service and niche fit
 
-Help the member choose a service and buyer together. Preserve whichever they already know. For a known service, compare up to three niches with the relevant problem, value per customer or useful transaction volume, and a practical delivery route. Look for underserved customer types, locations or implementation needs; fewer competitors alone does not establish demand. For custom automation, investigate the niche's actual workflows with owners before prescribing the build. Explain an AI audit before using that term with a beginner.
+Help the member choose a service and buyer together. Preserve whichever they already know. Keep the service the member chose or already built; suggest a different service only if they ask or agree. For a known service, compare up to three niches with the relevant problem, value per customer or useful transaction volume, and a practical delivery route. Look for underserved customer types, locations or implementation needs; fewer competitors alone does not establish demand. For custom automation, investigate the niche's actual workflows with owners before prescribing the build. Explain an AI audit before using that term with a beginner.
+
+Before settling on a niche, check all four points in plain words, one short line each:
+1. Pain: do owners already lose money or time over this problem?
+2. Ability to pay: can these businesses afford the service?
+3. Reach: can the member actually reach them through their channel (enough businesses for ads, or reachable by phone and email for outreach)?
+4. Growth: is the market steady or growing?
+Then say which point is weakest and why. This is a short comparison, not a score. When you ask where the member is or which market they sell to, offer: United States, Australia, United Kingdom, Canada, Other. Never assume their city.
 
 Do not impose the old five-test score, numeric pass thresholds, minimum staff counts or blanket rejection of solo operators. If asked to score a market, give a short evidence-based comparison instead and explain the uncertainties that matter. Public information suggests where to investigate; it does not reveal private budgets or establish willingness to buy.
 
@@ -37,7 +56,7 @@ Pass the selected buyer/problem/solution and evidence to `jarvis-offer-creation`
 
 ## Niche-first default
 
-Start with an industry the member understands, has worked in or can access. Preserve an existing niche instead of restarting selection. Investigate that niche’s problems and existing spend, then match a service and feasible delivery route. If a member already chose a service, help test niche adaptations rather than forcing them back to the beginning. Do not use a SaaS deployment story as proof that an agency successfully sells that service. Give a live agency service page, relevant campaign or client case, and clearly distinguish advertised terms, provider-reported results and our adaptations. Do not call an offer high-converting without conversion data. Generic one-job automation is custom-work discovery, not a fixed beginner offer. Recommend an experienced developer/AI arbitrage for a full custom CRM; scope before quoting.
+Confirm any remembered background in one line before using it. Start with the industry the member named. Suggest others only if theirs fails the market check, and say why. Otherwise start with an industry the member understands, has worked in or can access. Preserve an existing niche instead of restarting selection. Investigate that niche’s problems and existing spend, then match a service and feasible delivery route. If a member already chose a service, help test niche adaptations rather than forcing them back to the beginning. Do not use a SaaS deployment story as proof that an agency successfully sells that service. Give a live agency service page, relevant campaign or client case, and clearly distinguish advertised terms, provider-reported results and our adaptations. Do not call an offer high-converting without conversion data. Generic one-job automation is custom-work discovery, not a fixed beginner offer. Recommend an experienced developer/AI arbitrage for a full custom CRM; scope before quoting.
 
 ## Pre-call value research
 
