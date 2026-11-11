@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="'Instrument Sans', Arial, sans-serif">
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#8b8e9c"/></marker></defs>
+  <text x="60" y="54" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="600" fill="#0e1016">Three doors, one offer</text>
+  <!-- door 1 -->
+  <rect x="60" y="100" width="330" height="120" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="80" y="128" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">WAY 1</text>
+  <text x="80" y="160" font-size="22" font-weight="600" fill="#0e1016">Study what is scaling</text>
+  <text x="80" y="188" font-size="18" fill="#5a5d6b">Meta Ad Library, 15+ creatives</text>
+  <!-- door 2 -->
+  <rect x="60" y="250" width="330" height="120" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="80" y="278" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">WAY 2</text>
+  <text x="80" y="310" font-size="22" font-weight="600" fill="#0e1016">Pick a proven offer</text>
+  <text x="80" y="338" font-size="18" fill="#5a5d6b">Our list, you choose the niche</text>
+  <!-- door 3 -->
+  <rect x="60" y="400" width="330" height="120" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="80" y="428" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">WAY 3</text>
+  <text x="80" y="460" font-size="22" font-weight="600" fill="#0e1016">Find the underserved niche</text>
+  <text x="80" y="488" font-size="18" fill="#5a5d6b">One big problem, targeted outreach</text>
+  <!-- arrows -->
+  <path d="M390 160 C480 160, 500 300, 600 300" fill="none" stroke="#8b8e9c" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M390 310 L600 310" fill="none" stroke="#8b8e9c" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M390 460 C480 460, 500 320, 600 320" fill="none" stroke="#8b8e9c" stroke-width="1.5" marker-end="url(#a)"/>
+  <!-- offer card -->
+  <rect x="620" y="130" width="520" height="360" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="644" y="162" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8a6210">YOUR OFFER</text>
+  <text x="644" y="206" font-size="21" fill="#0e1016"><tspan font-weight="600">Niche</tspan>  who it is for</text>
+  <text x="644" y="246" font-size="21" fill="#0e1016"><tspan font-weight="600">Outcome</tspan>  what they get</text>
+  <text x="644" y="286" font-size="21" fill="#0e1016"><tspan font-weight="600">Timeframe</tspan>  by when</text>
+  <text x="644" y="326" font-size="21" fill="#0e1016"><tspan font-weight="600">Risk reversal</tspan>  what happens if not</text>
+  <text x="644" y="366" font-size="21" fill="#0e1016"><tspan font-weight="600">Authority</tspan>  why you</text>
+  <text x="644" y="406" font-size="21" fill="#0e1016"><tspan font-weight="600">Unique mechanism</tspan>  how it works</text>
+  <text x="644" y="460" font-size="17" fill="#5a5d6b">Every page, ad, email and call is built from this card.</text>
+</svg>

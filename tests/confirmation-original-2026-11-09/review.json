@@ -1,0 +1,31 @@
+{
+  "browser": "installed Google Chrome",
+  "checks": [
+    {
+      "width": 1440,
+      "badges": [
+        "✓ Done",
+        "● Ready for testing",
+        "✓ Done"
+      ],
+      "course_link": "passed",
+      "demo_and_return": "passed",
+      "overflow": false,
+      "failed_requests": []
+    },
+    {
+      "width": 390,
+      "badges": [
+        "✓ Done",
+        "● Ready for testing",
+        "✓ Done"
+      ],
+      "course_link": "passed",
+      "demo_and_return": "passed",
+      "overflow": false,
+      "failed_requests": []
+    }
+  ],
+  "errors": [],
+  "scope": "Original demonstration and local course; no live booking/email integration. Phone-sized Chrome is not Safari."
+}

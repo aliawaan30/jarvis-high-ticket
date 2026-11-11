@@ -1,0 +1,13 @@
+{
+  "browser": "156.0.8078.80",
+  "checks": [
+    "desktop: m2-create-your-offer visible and expected learning/action content present",
+    "desktop: m2-write-the-offer visible and expected learning/action content present",
+    "desktop: m5-the-follow-up-that-runs-without-you visible and expected learning/action content present",
+    "iphone: m2-create-your-offer visible and expected learning/action content present",
+    "iphone: m2-write-the-offer visible and expected learning/action content present",
+    "iphone: m5-the-follow-up-that-runs-without-you visible and expected learning/action content present"
+  ],
+  "errors": [],
+  "limit": "Course navigation/rendering and instruction review only, no learner/provider execution."
+}

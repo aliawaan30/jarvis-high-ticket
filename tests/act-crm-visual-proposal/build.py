@@ -1,0 +1,102 @@
+from pathlib import Path
+import re
+import shutil
+
+HERE = Path(__file__).parent
+OUT = Path('/Users/blakestephens/Downloads/ACT-CRM-Proposal')
+plain = (OUT / 'archive/ACT-CRM-Proposal-plain-2026-10-29.html').read_text()
+sections = re.findall(r'<section>(.*?)</section>', plain, re.S)
+assert len(sections) == 10
+sections = [s.replace('ACT Certification · 29 October 2026', 'ACT Certification · 30 October 2026') for s in sections]
+
+def replace_body(index, body):
+    header = re.search(r'^(.*?</h1>)', sections[index], re.S).group(1)
+    footer = re.search(r'(<div class="page">.*)$', sections[index], re.S).group(1)
+    sections[index] = header + body + footer
+
+replace_body(0, '''
+<div class="cover-grid"><div><p class="intro">One workspace for the job, its documents and the next step.</p>
+<p>A customer asks where their job is up to. Your team should be able to answer from one record.</p>
+<p>We propose completing a CRM around ACT’s request-to-assessment workflow. Jotform, Microsoft 365, DocuSign and Xero keep their roles. The CRM connects the handovers.</p>
+<a class="primary" href="#version-one">Walk through version one <span>↘</span></a></div>
+<div class="cover-preview"><div class="app-top"><b>ACT <span>workspace</span></b><span class="tag">Concept</span></div>
+<div class="preview-content"><small>ONE JOB RECORD</small><h2>Residential extension</h2><p class="preview-address">Illustrative project · DEMO-001</p>
+<div class="mini-stage"><i></i><i></i><i></i><i></i><i class="pending"></i></div>
+<div class="next-action"><small>NEXT ACTION · ASSIGNED TO ASSESSOR</small><b>Review plans and start assessment</b><span>Signed documents ✓ &nbsp; Payment confirmed ✓</span></div>
+<div class="preview-footer"><span>Owner<br><b>Assigned</b></span><span>Documents<br><b>Current versions</b></span><span>Job history<br><b>In one place</b></span></div></div></div></div>
+<p class="note">Discussion draft · 30 October 2026. The preview illustrates the proposed workflow; it is not a live ACT record. Scope, commercial terms and connected-account acceptance remain to be agreed.</p>
+''')
+
+replace_body(1, '''
+<p class="intro">The team’s extra work happens between otherwise sensible steps.</p>
+<div class="pain-flow" aria-label="Current handovers described by ACT">
+<div><small>JOTFORM</small><b>Request arrives</b><span>Details and plans in an email</span></div>
+<div class="handoff"><b>↷</b><span>Retype</span></div>
+<div><small>BCS</small><b>Set the job up</b><span>Enter the same information again</span></div>
+<div class="handoff"><b>↷</b><span>Find &amp; prepare</span></div>
+<div><small>WORD + FILES</small><b>Prepare the proposal</b><span>Find the fees, template and forms</span></div>
+<div class="handoff"><b>↷</b><span>Check &amp; chase</span></div>
+<div><small>SIGNING + FINANCE</small><b>Move it forward</b><span>Check signatures and payment</span></div></div>
+<div class="pain-cards"><article><span class="icon">↺</span><h2>“We’ve already entered this.”</h2><p>Staff handle the same request twice before the quote begins.</p></article><article><span class="icon">?</span><h2>“Which file is current?”</h2><p>Plans, forms and revisions need clear names and approval status.</p></article><article><span class="icon">…</span><h2>“Who’s moving this along?”</h2><p>Someone has to check the owner, signature, invoice and next task.</p></article></div>
+<div class="takeaway"><b>The cost is more than typing.</b><span>Every status check interrupts another piece of work. The proposal is to make the job’s next step visible, with a clear owner.</span></div>
+<p class="note">The questions above illustrate the team experience; they are not verbatim client quotes. The workflow is based on ACT’s retained discovery notes.</p>
+''')
+
+replace_body(2, '''
+<p class="intro">The same tools. A job record that connects them.</p>
+<div class="comparison"><div class="before-panel"><small>CURRENT HANDOVER</small><h2>Staff carry the context.</h2><div class="scattered"><span>Request email</span><span>BCS record</span><span>Word proposal</span><span>Signed form</span><span>Xero invoice</span></div><p>Find it → check it → pass it on</p></div>
+<div class="after-panel"><small>PROPOSED WORKFLOW</small><h2>The context stays with the job.</h2><div class="central-record"><b>ACT job record</b><span>Owner · stage · files · next task</span></div><div class="connected"><span>Jotform</span><span>DocuSign</span><span>Xero</span><span>Microsoft 365</span></div><p>Open the record → see what needs attention</p></div></div>
+<div class="approval-line"><span>STAFF REVIEW</span><p>ACT still approves the fee, the proposal and the certification work. The CRM organises the handovers around those decisions.</p></div>
+<p>Enquiries, accepted proposals and paid invoices stay distinct. Non-converting enquiries remain available for reporting. The BCS transition is agreed before cutover.</p>
+''')
+
+replace_body(3, '''
+<p class="intro">A workspace shaped around the work ACT already does.</p>
+<div class="capability-grid"><article><small>01 · KEEP TRACK</small><h2>Enquiries → proposals → projects</h2><p>See the current stage, the owner and what needs to happen next without losing the history.</p></article>
+<article><small>02 · PREPARE THE WORK</small><h2>Proposals and documents</h2><p>Use approved templates and fees. Keep current documents separate from superseded versions.</p></article>
+<article><small>03 · GET IT MOVING</small><h2>Tasks and inspections</h2><p>Assign the work, see workloads and use the retained Microsoft inspection calendar.</p></article>
+<article><small>04 · KNOW WHAT HAPPENED</small><h2>Communication and activity</h2><p>Keep relevant mail, SMS and job events together. Define reports from ACT’s tracking spreadsheet.</p></article></div>
+<div class="approval-line"><span>AI’S ROLE</span><p>Suggest the appropriate proposal template from the job details. Staff accept or override it. AI does not set the fee or make certification decisions.</p></div>
+<p class="note">The first release covers the agreed templates, forms, roles and workflows. Historical migration and additional reporting require agreed scope.</p>
+''')
+
+replace_body(4, '''
+<p class="intro">Watch one request become a job the assessor can pick up.</p>
+<div class="demo-toolbar"><span class="tag">VERSION ONE · INTERACTIVE CONCEPT</span><button id="play" type="button">Play walkthrough ▷</button></div>
+<div class="crm-demo"><aside class="crm-nav"><b class="crm-brand">ACT<span>Certification workspace</span></b><span class="nav-label">FOLLOW THE JOB</span><div id="steps" class="demo-steps"></div><div class="nav-note">Illustrative record<br>No messages, invoices or bookings are sent.</div></aside>
+<div class="crm-main"><div class="app-top"><b id="record-kind">Enquiries</b><span class="tag">DEMO-001</span></div><div class="crm-body">
+<div class="record-title"><div><small>ILLUSTRATIVE PROJECT</small><h2>Residential extension</h2></div><span id="demo-status" class="status">New request</span></div>
+<div class="record-progress" id="record-progress" aria-label="Job progress"></div>
+<div class="record-grid"><div class="record-primary"><div class="next-action" aria-live="polite"><small id="next-owner">NEXT ACTION</small><h3 id="next-title"></h3><p id="next-description"></p></div>
+<div class="document-panel"><small>DOCUMENTS WITH THIS JOB</small><div id="documents"></div></div></div>
+<div class="activity-panel"><small>JOB HISTORY</small><ol id="activity"></ol></div></div>
+<div class="staff-rule" id="staff-rule"></div></div>
+<div class="demo-controls"><button type="button" id="prev">← Previous</button><span id="step-counter">1 / 6</span><button type="button" id="next">Next →</button></div></div></div>
+<div class="demo-explanation" aria-live="polite"><span id="demo-number">01</span><div><h2 id="benefit-title"></h2><p id="benefit-copy"></p></div></div>
+<p class="note">A proposed interface and workflow, not a screenshot of the deployed CRM. Controlled ACT account tests must verify the actual connections before launch. Fees, documents and certification decisions stay with staff.</p>
+''')
+
+replace_body(7, '''
+<p class="intro">What does repeated handling add up to across a month?</p>
+<div class="calculator"><div class="calc-inputs"><small>DISCUSSION CALCULATOR</small><h2>Use ACT’s actual numbers.</h2><p>The starting figures are examples only. Change them together on the call.</p>
+<label>Requests per month<input id="volume" type="number" min="0" max="100000" value="60"></label>
+<label>Manual handling today · minutes per request<input id="before" type="number" min="0" max="10000" value="30"></label>
+<label>Handling with CRM · target minutes per request<input id="after" type="number" min="0" max="10000" value="12"></label>
+<label>Loaded staff cost · AUD per hour<input id="hourly" type="number" min="0" max="10000" value="45"></label></div>
+<div class="calc-results" aria-live="polite"><small>ILLUSTRATIVE MONTHLY WORKLOAD</small><div class="bar-row"><div><b>Current manual handling</b><span id="before-hours"></span></div><div class="bar-track"><i id="before-bar" class="bar-before"></i></div></div>
+<div class="bar-row"><div><b>With the proposed workflow</b><span id="after-hours"></span></div><div class="bar-track"><i id="after-bar" class="bar-after"></i></div></div>
+<div class="calc-summary"><div><strong id="saved-hours"></strong><span>capacity released / month</span></div><div><strong id="saved-value"></strong><span>staff-time value / month</span></div></div>
+<p id="calc-formula" class="formula"></p><p class="note" id="calc-note">Example inputs, not a measured ACT saving or delivery guarantee.</p></div></div>
+<div class="takeaway"><b>More time for the work that needs people.</b><span>Retyping, finding files and checking status are the baseline to measure. Keep staff review and exception handling in the future-workflow estimate.</span></div>
+<p class="note">Staff-time value is capacity, not necessarily cash saved. This excludes build, support, usage and incremental software costs; it is not net ROI. Additional jobs or revenue are not assumed.</p>
+''')
+
+body = ''.join(f'<section id="{("version-one" if i == 4 else "page-"+str(i+1))}" class="page-section {("demo-section" if i == 4 else "")}">{s}</section>' for i,s in enumerate(sections))
+html='''<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ACT CRM proposal · Visual walkthrough</title><link rel="stylesheet" href="visual-proposal.css"><script src="visual-proposal.js" defer></script></head><body>'''+body+'</body></html>'
+(HERE/'ACT-CRM-Proposal-Visual.html').write_text(html)
+OUT.mkdir(exist_ok=True)
+for name in ['visual-proposal.css','visual-proposal.js']:
+    shutil.copy2(HERE/name,OUT/name)
+(OUT/'ACT-CRM-Proposal.html').write_text(html)
+(OUT/'ACT-CRM-Proposal-Visual.html').write_text(html)
+print('Built visual proposal: ten sections; original plain HTML preserved in archive.')

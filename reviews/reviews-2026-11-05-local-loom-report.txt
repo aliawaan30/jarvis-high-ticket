@@ -1,0 +1,35 @@
+
+# watch: video report
+
+- **Source:** /Users/blakestephens/Movies/LocalLoom/2026-11-05_2246.mp4
+- **Title:** 2026-11-05_2246.mp4
+- **Duration:** 21:18 (1277.6s)
+- **Resolution:** 2560x1654 (h264)
+- **Detail:** balanced
+- **Frames:** 8 selected from 8 candidates (scene, full range, budget 18, cap 18)
+- **Frame size:** max 1280px wide, max 1998px tall
+- **Transcript:** none available
+
+> **Warning:** This is a 21-minute video. Frame coverage is sparse at this length under `balanced` detail — its cap spreads thin across the full clip. For better results, re-run with `--start HH:MM:SS --end HH:MM:SS` to zoom into a section, or use `--detail token-burner` to keep every scene-change frame across the whole video.
+
+## Frames
+
+Frames live at: `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/frames`
+
+**Read each frame path below with the Read tool to view the image.** Frames are in chronological order; `t=MM:SS` is the absolute timestamp in the source video.
+
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/frames/frame_0001.jpg` (t=00:00, reason=first-frame)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/frames/frame_0002.jpg` (t=10:20, reason=scene-change)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/frames/frame_0003.jpg` (t=10:29, reason=scene-change)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/frames/frame_0004.jpg` (t=17:36, reason=scene-change)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/frames/frame_0005.jpg` (t=17:38, reason=scene-change)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/frames/frame_0006.jpg` (t=17:39, reason=scene-change)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/frames/frame_0007.jpg` (t=17:40, reason=scene-change)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/frames/frame_0008.jpg` (t=17:40, reason=scene-change)
+
+## Transcript
+
+_No transcript available — proceed with frames only. Captions were missing and the Whisper fallback was unavailable (no API key set, or `--no-whisper` was used). Run `python3 /Users/blakestephens/.codex/skills/watch/scripts/setup.py` to enable Whisper, then re-run._
+
+---
+_Work dir: `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom` — delete when done._

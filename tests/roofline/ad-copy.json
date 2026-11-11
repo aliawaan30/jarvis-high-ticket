@@ -1,0 +1,30 @@
+[
+  {
+    "id": "01-callout",
+    "angle": "Pain-aware / native story style",
+    "primary_text": "You paid to get the enquiry. You sent a rep out. The estimate is sitting in your CRM. Roofline follows up on eligible unsold roof estimates and brings interested homeowners back to your team. See whether your pipeline fits the 60-day pilot.",
+    "headline": "Your next roofing conversation may already be quoted.",
+    "cta": "Learn more"
+  },
+  {
+    "id": "02-jobsite",
+    "angle": "Problem recognition / AI-generated illustrative photograph",
+    "primary_text": "The site visit is done. The estimate is out. Who owns the follow-up? We build and run an AI-assisted estimate-recovery workflow for residential roofing companies, so your reps get useful conversations instead of another list to chase.",
+    "headline": "Put your unsold roof estimates back in play.",
+    "cta": "Learn more"
+  },
+  {
+    "id": "03-conversation",
+    "angle": "Mechanism / illustrative conversation, not proof",
+    "primary_text": "Some homeowners have moved on. Others still have a question. Our follow-up system helps separate the two, then gives your roofing rep the context to pick up the conversation. Your team keeps control of the sale.",
+    "headline": "AI follows up. Your roofing team closes.",
+    "cta": "Learn more"
+  },
+  {
+    "id": "04-pilot",
+    "angle": "Offer-aware / explicit risk reversal",
+    "primary_text": "Turn the estimates you already sent into paying jobs. If we miss the agreed recovery target, we keep working without a management fee until we hit it. Eligibility and agreed terms apply; third-party costs remain payable.",
+    "headline": "Your quotes. Your next paying jobs.",
+    "cta": "Learn more"
+  }
+]

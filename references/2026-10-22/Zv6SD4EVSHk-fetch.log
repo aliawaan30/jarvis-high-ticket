@@ -1,0 +1,18 @@
+[watch] working dir: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/Zv6SD4EVSHk
+[watch] checking metadata/captions via yt-dlp…
+[youtube] Extracting URL: https://www.youtube.com/watch?v=Zv6SD4EVSHk
+[youtube] Zv6SD4EVSHk: Downloading webpage
+[youtube] Zv6SD4EVSHk: Downloading visionos player API JSON
+[youtube] Zv6SD4EVSHk: Downloading m3u8 information
+[info] Zv6SD4EVSHk: Downloading subtitles: en-orig, en
+[info] Zv6SD4EVSHk: Downloading 1 format(s): 401+251
+[info] Writing video subtitles to: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/Zv6SD4EVSHk/download/video.en-orig.vtt
+[download] Destination: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/Zv6SD4EVSHk/download/video.en-orig.vtt
+[download]    1.00KiB at  Unknown B/s (00:00:01)[download]    3.00KiB at  194.21KiB/s (00:00:01)[download]    7.00KiB at  196.17KiB/s (00:00:01)[download]   15.00KiB at  414.19KiB/s (00:00:01)[download]   31.00KiB at  609.09KiB/s (00:00:01)[download]   63.00KiB at  708.68KiB/s (00:00:01)[download]  127.00KiB at  844.29KiB/s (00:00:01)[download]  170.36KiB at  981.80KiB/s (00:00:01)[download] 100% of  170.36KiB in 00:00:01 at 111.49KiB/s
+[info] Writing video subtitles to: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/Zv6SD4EVSHk/download/video.en.vtt
+[download] Destination: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/Zv6SD4EVSHk/download/video.en.vtt
+[download]    1.00KiB at  Unknown B/s (00:00:01)[download]    3.00KiB at  Unknown B/s (00:00:01)[download]    7.00KiB at  Unknown B/s (00:00:01)[download]   15.00KiB at    1.90MiB/s (00:00:01)[download]   31.00KiB at 1011.71KiB/s (00:00:01)[download]   63.00KiB at  727.47KiB/s (00:00:01)[download]  127.00KiB at    1.06MiB/s (00:00:01)[download]  170.36KiB at    1.11MiB/s (00:00:01)[download] 100% of  170.36KiB in 00:00:01 at 102.37KiB/s
+[info] Writing video metadata as JSON to: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/Zv6SD4EVSHk/download/video.info.json
+[SubtitlesConvertor] Converting subtitles
+[SubtitlesConvertor] Subtitle file for vtt is already in the requested format
+[SubtitlesConvertor] Subtitle file for vtt is already in the requested format

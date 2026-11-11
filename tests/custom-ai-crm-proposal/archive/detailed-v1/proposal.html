@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153348">
+  <title>Custom CRM implementation proposal · Example</title>
+  <link rel="stylesheet" href="proposal.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Proposal top">FIELDNOTE <span>IMPLEMENTATION PROPOSAL</span></a>
+    <div class="topmeta"><span class="draft-tag">ILLUSTRATIVE EXAMPLE</span><button class="print-button" type="button" onclick="window.print()">Print / save PDF</button></div>
+  </header>
+  <div class="layout" id="top">
+    <aside class="rail" aria-label="Proposal sections">
+      <div class="rail-title">ON THIS CALL</div>
+      <nav>
+        <a href="#summary"><b>00</b> Proposal summary</a>
+        <a href="#heard"><b>01</b> What we heard</a>
+        <a href="#recommendation"><b>02</b> Why this system</a>
+        <a href="#system"><b>03</b> The full system</a>
+        <a href="#demo"><b>04</b> See it working</a>
+        <a href="#scope"><b>05</b> Included scope</a>
+        <a href="#roadmap"><b>06</b> Delivery plan</a>
+        <a href="#economics"><b>07</b> Cost & business case</a>
+        <a href="#trust"><b>08</b> Proof & safeguards</a>
+        <a href="#decision"><b>09</b> Decision & next steps</a>
+      </nav>
+      <div class="rail-note"><span class="live-dot"></span> Read this together. Stop at each section to confirm it matches the business.</div>
+    </aside>
+
+    <main>
+      <section class="proposal-head" id="summary">
+        <div class="eyebrow">PRIVATE PROPOSAL · CUSTOM CRM IMPLEMENTATION · 29 OCTOBER 2026</div>
+        <div class="title-row"><div><p class="for-line">PREPARED FOR <strong>Northstar Services (example business)</strong></p><h1>One CRM. From first enquiry to finished work.</h1></div><div class="doc-chip"><span>PROPOSAL</span><strong>CRM-001</strong><small>Example · v1.0</small></div></div>
+        <div class="summary-grid">
+          <div><h2>What we are proposing</h2>
+            <p>We propose a custom CRM that brings enquiries, sales follow-up and client delivery into one workspace shaped around how your team works. A new enquiry gets an owner and next step; an approved proposal can become a project with the agreed scope, people, documents, milestones and tasks already attached. Your team can see what needs attention without piecing the story together from inboxes, spreadsheets and chat.</p>
+            <p>The system will automate routine capture, reminders and handovers, while staff remain responsible for decisions that affect customers, money or delivery. Jarvis can find information, summarise a record, suggest an action and prepare a draft; it will show its source and ask for approval before sensitive actions. We will configure and test the complete agreed workflow, connect only the approved systems, train the team and launch through a controlled pilot.</p>
+          </div>
+          <aside class="recommendation"><div class="eyebrow">OUR RECOMMENDATION</div><strong>Build the operating workflow—not just another contact database.</strong><p>One CRM for lead → proposal → project → completion, with clear ownership, practical automations and AI assistance under staff control.</p><div class="decision-callout"><span>THE DECISION THIS PROPOSAL SUPPORTS</span><b>Confirm the scope, commercial terms and technical dependencies so we can agree the implementation.</b></div></aside>
+        </div>
+        <div class="assumption-banner"><strong>Example scenario:</strong> Northstar Services is fictional. Its pains, systems, volumes, costs, team and results below are illustrative placeholders. Replace them with the owner’s actual discovery answers before presenting this to a buyer.</div>
+        <div class="proposal-facts"><div><span>Prepared by</span><b>[Agency / implementation lead]</b></div><div><span>Proposal valid until</span><b>[Date after commercial approval]</b></div><div><span>Proposed system</span><b>Custom CRM + Jarvis assistant</b></div><div><span>Decision status</span><b>Draft for internal review</b></div></div>
+      </section>
+
+      <section class="section" id="heard">
+        <div class="section-kicker">01 · THE BUSINESS CASE</div><h2>What is getting in the way today?</h2>
+        <p class="section-lead">In a real proposal, this section repeats the owner’s words and quantifies the friction. These example pains are not claims about a real company.</p>
+        <div class="heard-list">
+          <article><span class="number">01</span><div><h3>Leads arrive in different places</h3><p>Enquiries come through forms, email, calls and referrals. The team manually decides where to record each one, which can leave ownership and follow-up unclear.</p></div><div class="impact"><small>CONFIRM WITH OWNER</small><b>Missed or late follow-ups</b></div></article>
+          <article><span class="number">02</span><div><h3>Sales context gets scattered</h3><p>Call notes, quote versions and next steps sit in separate tools. Before replying, someone has to reconstruct what was discussed and promised.</p></div><div class="impact"><small>CONFIRM WITH OWNER</small><b>Time spent searching and rework</b></div></article>
+          <article><span class="number">03</span><div><h3>Won work needs to be set up again</h3><p>After a customer accepts, delivery staff re-enter scope, contacts, files and dates. Important details can be lost between sales and operations.</p></div><div class="impact"><small>CONFIRM WITH OWNER</small><b>Slow handover and avoidable errors</b></div></article>
+          <article><span class="number">04</span><div><h3>The owner becomes the reporting layer</h3><p>To find out what is blocked or overdue, the owner asks people for updates and assembles the answer by hand.</p></div><div class="impact"><small>CONFIRM WITH OWNER</small><b>Less time for decisions and customers</b></div></article>
+        </div>
+        <div class="confirm-strip"><b>Before we proceed:</b> Which two of these cost you the most time or money? What happened most recently? What does the team do now to work around it?</div>
+        <details class="presenter"><summary>Presenter cue · replace before the real call</summary><p>Add the buyer’s exact language, named roles, a recent example, monthly volume and baseline. Do not present these generic pains as findings from discovery.</p></details>
+      </section>
+
+      <section class="section section-tint" id="recommendation">
+        <div class="section-kicker">02 · THE RECOMMENDATION</div><h2>Why a custom CRM—and why this design?</h2>
+        <div class="why-grid"><div><h3>One connected record for the whole relationship</h3><p>The core problem is not a lack of another place to store contacts. It is the handoff between sales commitments and the work the team must deliver. This design keeps the customer, opportunity, proposal, project, tasks and documents linked, so context follows the work.</p><p>We recommend a custom build only if the discovery shows the current CRM or an affordable off-the-shelf setup cannot handle the required workflow cleanly. If the native system already solves it, use that instead of paying us to rebuild it.</p></div><div class="fit-card"><span class="fit-label">WHY NOT JUST ADD ANOTHER TOOL?</span><div class="fit-row"><b>Spreadsheets + inbox</b><span>Low entry cost; people still reconcile status and handovers.</span></div><div class="fit-row"><b>Standard CRM</b><span>Often faster and cheaper; test its workflow and automation limits first.</span></div><div class="fit-row selected"><b>Custom CRM</b><span>Fits a proven business-specific process; higher build and ownership responsibility.</span></div><div class="fit-row"><b>Do nothing</b><span>Valid if the measured cost is lower than the full cost and risk of change.</span></div></div></div>
+        <div class="before-after"><div><span>THE CURRENT WAY · EXAMPLE</span><b>Enquiry in inbox → search notes → chase owner → recreate project → ask what happens next</b></div><div class="arrow">→</div><div class="after"><span>THE PROPOSED WAY</span><b>One customer record → clear owner → approved proposal → linked project → visible next action</b></div></div>
+      </section>
+
+      <section class="section" id="system">
+        <div class="section-kicker">03 · THE SYSTEM WE WILL BUILD</div><h2>One workspace. Each person sees the work they need to move forward.</h2>
+        <p class="section-lead">The proposed CRM is a role-based web application configured around the agreed process, with access controls defined and tested before launch. Exact data fields and integrations are confirmed in technical discovery.</p>
+        <div class="system-grid">
+          <article class="system-card"><span>01 / INTAKE</span><h3>Enquiries & opportunities</h3><p>Capture a lead’s source, contact details, need, owner, stage, value and next action. Prevent accidental duplicate contacts and make unassigned enquiries visible.</p><ul><li>Agreed entry forms/import</li><li>Searchable customer history</li><li>Lead ownership and stage rules</li><li>Follow-up dates and overdue states</li></ul></article>
+          <article class="system-card"><span>02 / SELL</span><h3>Proposals & decisions</h3><p>Prepare proposals from approved service, price and scope data. Keep versions and decision status tied to the opportunity.</p><ul><li>Reusable proposal template(s)</li><li>Review and approval before sending</li><li>Accepted / declined / revision tracking</li><li>Manual or verified e-signature link</li></ul></article>
+          <article class="system-card"><span>03 / DELIVER</span><h3>Projects & handovers</h3><p>Turn accepted work into a project with the scope, contacts, files, owner, milestones, dependencies and checklist carried over.</p><ul><li>Project templates and stage gates</li><li>Task assignment and due dates</li><li>Blockers and status history</li><li>Client requests and completion record</li></ul></article>
+          <article class="system-card"><span>04 / CONTROL</span><h3>Tasks, alerts & team view</h3><p>Give each person a queue of assigned work. Let managers see overdue tasks, workload, unassigned items and projects that need attention.</p><ul><li>In-app notification feed</li><li>Optional approved email alerts</li><li>Workload and date filters</li><li>Read / unread and owner status</li></ul></article>
+          <article class="system-card"><span>05 / KNOW</span><h3>Files & activity history</h3><p>Keep files attached to the relevant customer, proposal or project, with a clear type and status. Record material changes and actions.</p><ul><li>Document type and version</li><li>Approved / superseded organisation</li><li>Search by record and filename</li><li>Who changed what and when</li></ul></article>
+          <article class="system-card"><span>06 / ASSIST</span><h3>Jarvis AI inside the workflow</h3><p>Answer questions from records the user may access. Suggest next steps, summarise history and draft routine communications for review.</p><ul><li>Show the source records used</li><li>Flag missing or conflicting context</li><li>Ask before sensitive changes or sends</li><li>Log approved AI-assisted actions</li></ul></article>
+        </div>
+        <div class="architecture"><div class="arch-node">Team<br><small>role-based sign-in</small></div><span>↔</span><div class="arch-node main-node">Custom CRM<br><small>customers · pipeline · projects · tasks · files</small></div><span>↔</span><div class="arch-node">Approved services<br><small>email · calendar · accounting*</small></div></div>
+        <p class="footnote">*Only named integrations confirmed in discovery and technical testing are included. Any system of record remains authoritative for its data; the CRM should not silently overwrite it.</p>
+      </section>
+
+      <section class="section demo-section" id="demo">
+        <div class="section-kicker">04 · A SHORT WALK THROUGH THE EXPERIENCE</div><h2>See an enquiry become active client work.</h2>
+        <p class="section-lead">Illustrative clickable prototype · synthetic records · no connected systems. Use the step buttons as the closer walks through the workflow.</p>
+        <div class="demo-shell">
+          <div class="demo-toolbar"><div><span class="app-mark">F</span><b>Fieldnote CRM</b><small>EXAMPLE WORKSPACE</small></div><div class="demo-user">Maya Chen <span>Operations</span></div></div>
+          <div class="demo-app">
+            <aside class="demo-sidebar"><b>WORKSPACE</b><span class="active">▦ Overview</span><span>◎ Inquiries</span><span>▤ Proposals</span><span>◫ Projects</span><span>✓ My tasks</span><span>♧ Contacts</span></aside>
+            <div class="demo-main"><div class="demo-heading"><div><small id="demo-label">STEP 1 · NEW ENQUIRY</small><h3 id="demo-title">A lead arrives with an owner and a next step.</h3></div><span class="demo-state" id="demo-state">New · assigned</span></div><div class="demo-content"><div class="demo-record"><div class="record-head"><div><small>OPPORTUNITY · FN-2048</small><h4 id="demo-company">Northstar Services</h4></div><b id="demo-stage">New inquiry</b></div><div class="record-fields" id="demo-fields"></div><div class="demo-note" id="demo-note"></div></div><aside class="jarvis-card"><div class="jarvis-mark">✦</div><div><small>JARVIS · DRAFT ASSIST</small><p id="demo-ai"></p><span id="demo-source">Source: example CRM record · sample data</span></div></aside></div><div class="activity"><b>ACTIVITY</b><span id="demo-activity"></span></div></div>
+          </div>
+          <div class="demo-controls"><button class="secondary" id="demo-prev" type="button" disabled>← Previous</button><div class="demo-steps" id="demo-steps" role="group" aria-label="Demo steps"></div><button class="primary" id="demo-next" type="button">Next step →</button></div>
+        </div>
+        <div class="demo-explainer"><div><b>What the demo shows</b><p>A lead receives an owner and follow-up; a proposal is approved; acceptance creates the project handover; a blocker is routed; Jarvis reports with a source.</p></div><div><b>What it does not show</b><p>Live integrations, real AI, permissions against real data, production security or a completed customer build. Those are implementation and acceptance-test work.</p></div></div>
+      </section>
+
+      <section class="section section-tint" id="scope">
+        <div class="section-kicker">05 · INCLUDED WORK & DEFINITION OF DONE</div><h2>What you receive, in practical terms.</h2>
+        <div class="scope-table-wrap"><table class="scope-table"><thead><tr><th>Workstream</th><th>Included deliverable</th><th>We consider it complete when…</th></tr></thead><tbody>
+          <tr><td><b>Workflow design</b></td><td>Approved workflow map, roles, data fields, stage definitions and exception rules.</td><td>The process owner signs off the mapped inquiry → sales → delivery path.</td></tr>
+          <tr><td><b>CRM workspace</b></td><td>Configured customer, opportunity, proposal, project, task and document records.</td><td>Users can find and update the records their role permits; relationships and history are visible.</td></tr>
+          <tr><td><b>Automation</b></td><td>Agreed assignment, reminder, stage-change and handover rules.</td><td>Each rule passes normal, duplicate, missing-data and failure-path tests.</td></tr>
+          <tr><td><b>AI assistance</b></td><td>Record-aware search, summaries and draft suggestions for agreed tasks.</td><td>Outputs cite accessible sources, uncertain cases are flagged, and restricted actions require approval.</td></tr>
+          <tr><td><b>Data & integrations</b></td><td>One agreed import and up to [N] named, technically verified connections.</td><td>Field mapping, sync direction, error handling and reconciliation pass the agreed test set.</td></tr>
+          <tr><td><b>Quality & handover</b></td><td>Role tests, user acceptance session, admin guide, staff training and launch checklist.</td><td>Named client owner accepts the checklist; backup, export and support ownership are documented.</td></tr>
+        </tbody></table></div>
+        <div class="scope-boundaries"><div><h3>Included in this example scope</h3><ul class="check-list"><li>One business and one agreed operating workflow</li><li>One web-based CRM workspace and agreed user roles</li><li>Lead-to-project lifecycle and staff task views</li><li>Configured notifications and approval checkpoints</li><li>Bounded AI assistant with source visibility</li><li>Testing, training and controlled go-live support</li></ul></div><div><h3>Not included unless priced in</h3><ul class="no-list"><li>Replacing accounting, email or a full ERP</li><li>Unlimited historic data cleanup or migration</li><li>Custom iOS/Android apps or client portal</li><li>Unspecified integrations or third-party licences</li><li>AI making pricing, credit, legal or delivery decisions</li><li>Unlimited revisions, support or future feature work</li></ul></div></div>
+      </section>
+
+      <section class="section" id="roadmap">
+        <div class="section-kicker">06 · IMPLEMENTATION ROADMAP</div><h2>A controlled build with a decision gate at every stage.</h2>
+        <p class="section-lead">Illustrative six-week sequence after access, sample data and kickoff. The technical lead confirms dates after scope and dependencies are checked.</p>
+        <div class="roadmap">
+          <article><div class="week">WEEK 1</div><div class="road-icon">01</div><div><h3>Discover & lock scope</h3><p>Map the real process, users, roles, pain points, volumes, existing tools, data ownership and baseline. Prioritise first-release requirements.</p><div class="deliver">GATE 1 · Signed workflow, scope, assumptions and acceptance criteria</div><small>Client provides process owner, current workflow, sample records and system owners.</small></div></article>
+          <article><div class="week">WEEK 2</div><div class="road-icon">02</div><div><h3>Design the workspace</h3><p>Review clickable screens, data model, permission matrix, integrations, security controls and migration plan before build.</p><div class="deliver">GATE 2 · User journey, data model and connection plan approved</div><small>Client confirms roles, required fields, retention rules and vendor access.</small></div></article>
+          <article><div class="week">WEEKS 3–4</div><div class="road-icon">03</div><div><h3>Build the first release</h3><p>Configure records, lifecycle, task views, notification feed, agreed automation and bounded AI features in a non-production environment.</p><div class="deliver">GATE 3 · Demonstrable end-to-end workflow with test data</div><small>Weekly review with the process owner; changes outside scope are estimated before work.</small></div></article>
+          <article><div class="week">WEEK 5</div><div class="road-icon">04</div><div><h3>Test with the team</h3><p>Run role-based tests, migration reconciliation, integration failures, duplicate events, AI source checks and user acceptance.</p><div class="deliver">GATE 4 · Test report, resolved critical defects and client acceptance</div><small>Client users complete agreed scenarios and record results.</small></div></article>
+          <article><div class="week">WEEK 6</div><div class="road-icon">05</div><div><h3>Launch & hand over</h3><p>Import approved data, train users, launch in a controlled group, monitor first use and hand over admin documentation.</p><div class="deliver">GATE 5 · Go-live checklist and named operational owner</div><small>Broader rollout proceeds only after the pilot and support path are accepted.</small></div></article>
+        </div>
+        <div class="dependency-note"><b>Schedule depends on:</b> timely access to systems, a stable set of sample records, fast decisions from the process owner, vendor approvals and no material scope change. A blocked dependency moves the calendar; it does not silently reduce testing.</div>
+      </section>
+
+      <section class="section economics-section" id="economics">
+        <div class="section-kicker">07 · THE COST OF TODAY & THE INVESTMENT</div><h2>Compare the full cost—not a made-up ROI promise.</h2>
+        <p class="section-lead">Use the owner’s measured figures on the call. The example below counts staff capacity and tools separately; it does not pretend every saved minute becomes cash or extra sales.</p>
+        <div class="calc-layout"><div class="calc-inputs"><h3>Example inputs · change to match reality</h3>
+          <label>Customer jobs / enquiries handled each month <input type="number" id="jobs" min="0" step="10" value="120"></label>
+          <label>Minutes spent on duplicate admin per job <input type="number" id="minutes" min="0" step="1" value="30"></label>
+          <label>Loaded team cost per hour (AUD) <input type="number" id="hourly" min="0" step="1" value="42"></label>
+          <label>Share this first release could realistically remove (%) <input type="number" id="recover" min="0" max="100" step="5" value="35"></label>
+          <label>Current tools expected to be retired / month (AUD) <input type="number" id="current-tools" min="0" step="50" value="450"></label>
+          <label>Current subscriptions that will remain / month (AUD) <input type="number" id="retained-tools" min="0" step="50" value="300"></label>
+          <label>New CRM platform and AI services / month (AUD) <input type="number" id="new-tools" min="0" step="50" value="0"></label>
+          <div class="calc-warning">Example only. Replace each value with bills, time samples and a team-approved estimate. New recurring cost defaults to $0 because vendor pricing is not yet quoted.</div>
+        </div><div class="calc-results"><div class="result-label">CURRENT ANNUAL ADMIN CAPACITY COST</div><strong id="current-value">$30,240</strong><small>Hours spent repeating the selected work × loaded hourly rate.</small><div class="result-divider"></div><div class="result-label">POTENTIAL CAPACITY RELEASED</div><strong class="green" id="saved-value">$10,584</strong><small id="saved-hours">88 hours per month at the example recovery rate.</small><div class="result-divider"></div><div class="result-label">NET CASH SAVING</div><strong class="amber">Not established</strong><small>Only claim cash savings if staffing, overtime or external spend is actually reduced. This model does not count extra revenue.</small><div class="result-divider"></div><div class="result-label">CRM IMPLEMENTATION INVESTMENT</div><strong class="pending">Quote after technical scope</strong><small>Include implementation, migration, vendor subscriptions, support and internal adoption cost before calculating payback.</small></div></div>
+        <div class="cost-stack"><div><h3>Today · total cost to verify</h3><p>Staff time: <b id="stack-labour">$30,240/year</b></p><p>Tools that could be retired: <b id="stack-tools">$5,400/year</b></p><p>Tools that will remain: <b id="retained-tools-total">$3,600/year</b></p><p>Rework / missed work: <b>measure from records; not included yet</b></p><strong id="today-total">$39,240/year + unmeasured leakage</strong></div><div class="cost-arrow">→</div><div><h3>With the CRM · complete cost to compare</h3><p>Remaining admin after the measured reduction: <b id="remaining-labour">$19,656/year</b></p><p>Existing subscriptions retained: <b id="retained-tools-post">$3,600/year</b></p><p>New subscriptions and AI usage: <b id="new-tools-total">$0/year · vendor quote pending</b></p><p>Implementation, support and change time: <b>enter approved quote and internal cost</b></p><strong id="future-total">ROI unknown until complete costs are confirmed</strong></div></div>
+        <div class="price-panel"><div class="price-title"><span class="section-kicker">THE PROPOSED PACKAGE</span><h3>One implementation. One clear acceptance plan.</h3><p>We price the agreed system as a package after technical scope. That price is compared with the verified cost and risk of continuing the current process—not an inflated “was” price.</p></div><div class="price-lines"><div><span>Custom CRM discovery, design and implementation</span><b>[Approved fixed fee · AUD]</b></div><div><span>Payment milestones</span><b>[e.g. kickoff / UAT / accepted launch]</b></div><div><span>Ongoing support (optional)</span><b>[Monthly fee, hours and response scope]</b></div><div><span>Third-party software</span><b>[Named vendor quote · billed transparently]</b></div></div><div class="price-foot">Commercial placeholders are intentionally not invented. The signed proposal must show the complete price, GST/tax treatment, billing dates, change-control terms and cancellation/support conditions.</div></div>
+      </section>
+
+      <section class="section section-dark" id="trust">
+        <div class="section-kicker">08 · WHY THIS DELIVERY APPROACH IS TRUSTWORTHY</div><h2>Trust comes from what you can inspect—not a security slogan.</h2>
+        <div class="trust-grid"><div><h3>Built around your real process</h3><p>We map and approve the workflow before coding. You see the data model, permissions and screens before the full build proceeds.</p></div><div><h3>Tested before wider rollout</h3><p>We test normal use, role boundaries, missing data, duplicate events, integration failure, backup/export and AI source accuracy against agreed acceptance cases.</p></div><div><h3>People remain accountable</h3><p>AI drafts and retrieves; staff decide prices, commitments, access changes and external messages. Each approved action has an owner and history.</p></div><div><h3>Clear ownership and handover</h3><p>System accounts, data export, admin instructions, known limits and support responsibilities are written down. Vendor charges are disclosed separately.</p></div></div>
+        <div class="proof-panel"><div><span class="section-kicker">PROOF FOR THIS PROPOSAL</span><h3>See the experience and the test plan before committing.</h3><p>We can walk through the clickable CRM prototype above, then show the implementation acceptance checklist and who will own each test.</p></div><div class="proof-status"><span class="status-pill">DEMO · SYNTHETIC</span><span class="status-pill">TEST PLAN · PROPOSED</span><span class="status-pill muted">CLIENT RESULTS · NOT CLAIMED</span><p>No testimonial, security certification, dedicated department, past-client result or live deployment is claimed in this example. Add verified evidence only when available and approved for use.</p></div></div>
+        <div class="team-panel"><div class="team-intro"><span class="section-kicker">THE PEOPLE RESPONSIBLE</span><h3>Named owners, clear handoffs.</h3><p>Put real names and relevant experience here before the proposal is presented. The person selling the work should be able to explain who designs, builds, tests and supports it.</p></div><div class="team-roles"><div><span>01</span><b>Implementation lead</b><small>[Name] · scope, decisions, delivery and client updates</small></div><div><span>02</span><b>Technical lead</b><small>[Name] · architecture, integrations and code review</small></div><div><span>03</span><b>QA / security reviewer</b><small>[Name or partner] · agreed test plan and control review</small></div><div><span>04</span><b>Client process owner</b><small>[Client name] · business rules, UAT and launch approval</small></div></div></div>
+        <div class="security-baseline"><b>Proposed security baseline:</b> named technical owner; least-privilege roles; access and action logging; encryption in transit and at rest where supported by the selected platform; development/test data separated from production; dependency and configuration review; backup/export and recovery check; documented incident contact. Confirm exact controls, platform responsibilities and any independent review before signing. No claim of a dedicated security department is made here.</div>
+      </section>
+
+      <section class="section decision-section" id="decision">
+        <div class="section-kicker">09 · THE DECISION & NEXT STEP</div><h2>If the numbers and workflow hold, here is how we start.</h2>
+        <div class="decision-grid"><div><h3>Today, confirm together</h3><ol><li>Are these the right business pains and desired outcomes?</li><li>Does the lead-to-project workflow match how your team operates?</li><li>Which existing CRM or tools should stay, connect or be replaced?</li><li>Who approves scope, access, security controls and test results?</li><li>What volume, timing and budget make the business case worthwhile?</li></ol></div><div class="decision-box"><span>PROPOSED NEXT ACTION</span><h3>Approve a technical scoping and commercial finalisation step.</h3><p>We confirm requirements with your process and system owners, validate integrations and data, measure the baseline, finalise the acceptance criteria, and return a fixed-scope package with price and dates.</p><div class="decision-row"><b>Scope owner</b><span>[Name]</span></div><div class="decision-row"><b>Technical owner</b><span>[Name]</span></div><div class="decision-row"><b>Target decision date</b><span>[Date]</span></div><div class="decision-row"><b>Implementation quote</b><span>[AUD · approved amount]</span></div></div></div>
+        <div class="bottom-line"><b>The honest fit test:</b> proceed if one connected workflow will remove a measured, recurring cost or risk that justifies the full implementation and operating cost. If the standard CRM already solves it, or the verified numbers do not work, do not build custom.</div>
+        <details class="presenter"><summary>Presenter cue · close without pressure</summary><p>Ask the owner to say back the system and the main expected change in their own words. Resolve missing assumptions before asking for a decision. The next commitment is the scoping step above—not an implied production launch.</p></details>
+      </section>
+      <footer class="footer"><span>FIELDNOTE · CUSTOM CRM IMPLEMENTATION PROPOSAL</span><span>ILLUSTRATIVE EXAMPLE · NOT A SIGNED SCOPE OR QUOTE</span></footer>
+    </main>
+  </div>
+  <script src="proposal.js"></script>
+</body>
+</html>

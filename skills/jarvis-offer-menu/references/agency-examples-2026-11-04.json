@@ -1,0 +1,54 @@
+{
+  "review_date": "2026-11-04",
+  "selection_rule": "Prefer niche-first agency services and agency client evidence; classify SaaS deployment evidence separately. No conversion rates or independent results established.",
+  "sources": [
+    {
+      "name": "SyncPro Media",
+      "url": "https://syncpromedia.com/",
+      "type": "advertised managed agency offer",
+      "read": "Public JS bundle fetched; offer strings inspected. Search index supplied fuller page text; not visually inspected.",
+      "claim": "Dental implant sales target and work-free remedy, with Meta ads and AI setting.",
+      "limits": "Offer existence is not conversion or profitability proof; includes lead generation, not only new-inquiry follow-up."
+    },
+    {
+      "name": "Mixed Media Ventures",
+      "url": "https://www.mixedmediaventures.com/database-reactivation-terms-and-conditions/",
+      "case_url": "https://www.mixedmediaventures.com/case-studies/",
+      "type": "agency service terms and anonymous provider-reported roofing case",
+      "read": "Opened service terms and case page, relevant sections.",
+      "claim": "Managed reactivation for clients/resellers; roofing case reports 127 qualified appointments in 90 days.",
+      "limits": "Anonymous buyer; no independent corroboration. Not 30 paid jobs monthly or exact unsold-estimate-only cohort."
+    },
+    {
+      "name": "ColdIQ",
+      "url": "https://coldiq.com/implementation",
+      "case_url": "https://coldiq.com/case-studies/hemlane",
+      "type": "managed implementation plus provider-reported named case",
+      "read": "Opened implementation and case page, relevant sections.",
+      "claim": "Client-owned outbound setup/management; Hemlane case reports 5.5% replies.",
+      "limits": "Also sells software. Target is property software outreach; does not validate a cleaning-company adaptation."
+    },
+    {
+      "name": "LeftClick",
+      "url": "https://leftclick.ai/services",
+      "type": "advertised custom agency services",
+      "read": "Opened service page, relevant sections.",
+      "limits": "Does not prove our electrical quoting idea; use only as agency model evidence."
+    }
+  ],
+  "rejected_or_limited": [
+    {
+      "url": "https://awakened-leads.com/database-reactivation",
+      "reason": "Search result described contractor offer; direct open returned 404. Not used as live offer evidence."
+    },
+    {
+      "url": "https://robogrowthpartners.ai/case-studies/summit-roofing",
+      "reason": "Search snippet available but opened page returned no readable lines. Not used for headline claims."
+    },
+    {
+      "url": "https://www.usehatchapp.com/case-studies/bone-dry-roofing",
+      "reason": "SaaS deployment evidence retained historically; removed as direct agency offer example."
+    }
+  ],
+  "ad_verification": "No active Meta creative, agency funnel conversion rate or private campaign economics verified in this pass."
+}

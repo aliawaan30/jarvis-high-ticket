@@ -1,0 +1,1 @@
+22 Oct 2026: inspected live Scale Info page HTML. CTA is SEE IF YOU QUALIFY; #apply embeds Typeform widget tMlbSqVp. Embedded questions did not load in inspection; no form submitted. One-question-at-a-time design is explicitly requested by Blake. Do not claim the exact questions or branching were copied.

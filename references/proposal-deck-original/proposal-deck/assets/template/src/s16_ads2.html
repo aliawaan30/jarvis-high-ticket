@@ -1,0 +1,241 @@
+<section class="slide" id="ads2">
+<style>
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num { background:#FBF7F0; color:#13283A; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-top { position:absolute; left:6cqw; right:6cqw; top:6cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-top .xa-eb { color:var(--gold-d); display:flex; justify-content:space-between; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-pre { font-family:'Playfair',serif; font-size:5.4cqw; line-height:1.1; margin-top:2.4cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-pre em { color:var(--gold-d); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-n { font-family:'Anton',sans-serif; font-size:19.5cqw; line-height:1; letter-spacing:-.005em; margin-top:.6cqw; white-space:nowrap; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-src { font-size:2.4cqw; letter-spacing:.12em; text-transform:uppercase; color:#8C8173; font-weight:600; margin-top:1.4cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-ph { position:absolute; left:0; right:0; bottom:0; height:42cqw; overflow:hidden; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-ph img { width:100%; height:100%; object-fit:cover; object-position:50% 62%; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-ph::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,rgba(10,22,32,.1) 0%,rgba(10,22,32,.62) 34%,rgba(10,22,32,.93) 100%); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-sp { position:absolute; left:6cqw; right:6cqw; top:46cqw; display:grid; grid-template-columns:repeat(3,auto); justify-content:space-between; border-top:.3cqw solid rgba(19,40,58,.16); padding-top:2cqw;
+    font-size:2.6cqw; letter-spacing:.14em; text-transform:uppercase; font-weight:700; color:#5A5249; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-q { position:absolute; left:6cqw; right:6cqw; bottom:5.4cqw; z-index:2; color:#fff; display:flex; align-items:flex-end; justify-content:space-between; gap:3cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-q div { font-family:'Playfair',serif; font-size:6.6cqw; line-height:1.06; text-shadow:0 .3cqw 2cqw rgba(0,0,0,.6); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-q div em { color:var(--gold-lite); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-q span { flex:none; background:var(--gold-lite); color:#13283A; border-radius:10cqw; padding:1.8cqw 3cqw 1.6cqw; font-size:2.8cqw; letter-spacing:.12em; text-transform:uppercase; font-weight:800; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-lg { position:absolute; right:6cqw; top:6cqw; z-index:2; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-num .u-lg .xa-logo { width:17cqw; }
+
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict { background:#F4EFE7; color:#13283A; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-top { position:absolute; left:6cqw; right:6cqw; top:6cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-top .xa-eb { color:var(--gold-d); display:flex; justify-content:space-between; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-row { display:flex; gap:3cqw; margin-top:2.6cqw; align-items:center; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-units { display:grid; grid-template-columns:repeat(10,1fr); gap:1.2cqw 1cqw; width:46cqw; flex:none; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-units svg { width:100%; height:auto; fill:#B57A2E; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-units svg:nth-child(3n) { fill:#C99A57; } :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-units svg:nth-child(5n) { fill:#13283A; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-n { margin-left:auto; font-family:'Playfair',serif; font-size:16cqw; line-height:.86; color:#13283A; white-space:nowrap; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-l { font-family:'Playfair',serif; font-size:5.2cqw; line-height:1.08; margin-top:2.4cqw; white-space:nowrap; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-l em { color:var(--gold-d); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-st { display:grid; grid-template-columns:repeat(2,1fr); margin-top:2.6cqw; border-top:.3cqw solid rgba(19,40,58,.18); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-st div { padding:1.8cqw 0 0 2cqw; border-left:.3cqw solid rgba(19,40,58,.12); font-family:'Playfair',serif; font-size:5.4cqw; line-height:1; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-st div:first-child { border-left:0; padding-left:0; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-st small { display:block; font-family:'Jost',sans-serif; font-size:2.2cqw; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:#8C8173; margin-top:1cqw; line-height:1.25; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-ph { position:absolute; left:0; right:0; bottom:0; height:29cqw; overflow:hidden; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-ph img { width:100%; height:100%; object-fit:cover; object-position:50% 30%; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-ph::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,rgba(10,22,32,.92) 0%,rgba(10,22,32,.7) 55%,rgba(10,22,32,.45) 100%); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-bt { position:absolute; left:6cqw; right:6cqw; bottom:4.6cqw; z-index:2; color:#fff; display:flex; justify-content:space-between; align-items:flex-end; gap:3cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-bt div { font-family:'Playfair',serif; font-size:5.4cqw; line-height:1.1; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-bt div em { color:var(--gold-lite); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-lk { display:flex; flex-direction:column; align-items:flex-end; gap:1.6cqw; flex:none; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-pict .i-lk .xa-logo { width:17cqw; }
+
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-myth .xa-ph { height:66%; object-position:50% 50%; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-myth .y-sc { position:absolute; inset:0; background:linear-gradient(180deg,rgba(10,22,32,.86) 0%,rgba(10,22,32,.72) 36%,rgba(10,22,32,.3) 62%); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-myth .y-m { position:absolute; left:6cqw; right:12cqw; top:7cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-myth .y-stp { display:inline-block; border:.6cqw solid #E5483F; color:#FF6A5F; padding:1cqw 2.4cqw .8cqw; font-family:'Anton',sans-serif; font-size:5cqw;
+    letter-spacing:.14em; transform:rotate(-6deg); border-radius:.8cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-myth .y-mt { font-family:'Playfair',serif; font-size:7.4cqw; line-height:1.08; margin-top:3cqw; text-decoration:line-through; text-decoration-color:#E5483F;
+    text-decoration-thickness:.6cqw; text-shadow:0 .3cqw 2cqw rgba(0,0,0,.5); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-myth .y-f { position:absolute; inset:0; background:#FBF7F0; clip-path:polygon(0 58%,100% 40%,100% 100%,0 100%); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-myth .y-fb { position:absolute; left:6cqw; right:6cqw; bottom:5.4cqw; color:#13283A; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-myth .y-fl { display:inline-flex; align-items:center; gap:1.4cqw; background:#13283A; color:var(--gold-lite); font-family:'Anton',sans-serif; font-size:4.4cqw;
+    letter-spacing:.16em; padding:1cqw 2.6cqw .8cqw; border-radius:.8cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-myth .y-ft { font-family:'Playfair',serif; font-size:6.4cqw; line-height:1.1; margin-top:2.4cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-myth .y-ft em { color:var(--gold-d); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-myth .y-fs { display:flex; justify-content:space-between; align-items:center; gap:3cqw; margin-top:2.6cqw; font-size:2.7cqw; letter-spacing:.14em; text-transform:uppercase; font-weight:700; color:#5A5249; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-myth .y-fs .xa-logo { width:18cqw; flex:none; }
+
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat { background:#EFE9E1; color:#111; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-image:radial-gradient(rgba(19,40,58,.05) 12%,transparent 13%); background-size:4cqw 4cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-bar { position:absolute; left:0; right:0; top:0; height:14cqw; background:#FBF9F6; border-bottom:.3cqw solid #E2DCD3; display:flex; align-items:center; gap:2.4cqw; padding:0 4.4cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-bk { font-size:6cqw; color:#8C8173; line-height:1; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-av { width:8.6cqw; height:8.6cqw; border-radius:50%; overflow:hidden; background:#fff; border:.25cqw solid #E2DCD3; flex:none; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-av img { width:100%; height:100%; object-fit:cover; display:block; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-nm { font-size:3.7cqw; font-weight:700; line-height:1.15; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-nm small { display:block; font-size:2.6cqw; font-weight:400; color:#2E8B57; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-ms { position:absolute; left:4.6cqw; right:4.6cqw; top:16cqw; display:flex; flex-direction:column; gap:1.5cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-day { align-self:center; background:#FBF9F6; border-radius:2cqw; padding:.8cqw 2.4cqw; font-size:2.4cqw; color:#8C8173; font-weight:600; letter-spacing:.04em; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-b { max-width:80%; border-radius:3cqw; padding:1.4cqw 2.6cqw 1.3cqw; font-size:3.1cqw; line-height:1.26; box-shadow:0 .3cqw .6cqw rgba(0,0,0,.08); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-b.me { align-self:flex-end; background:#D9EEDB; border-bottom-right-radius:.8cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-b.us { align-self:flex-start; background:#fff; border-bottom-left-radius:.8cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-b small { float:right; font-size:2.2cqw; color:#7A6E60; margin:1.1cqw 0 0 2.4cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-b small i { font-style:normal; color:#3C9BD6; letter-spacing:-.2em; margin-left:.8cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-pn { position:absolute; left:0; right:0; bottom:0; height:29cqw; background:#13283A; color:#FBF7F0; padding:3.6cqw 5.6cqw; font-family:'Jost',sans-serif;
+    display:flex; align-items:center; justify-content:space-between; gap:4cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-pn::before { content:''; position:absolute; left:0; right:0; top:-6cqw; height:6cqw; background:linear-gradient(180deg,rgba(19,40,58,0),rgba(19,40,58,.3)); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-t { font-family:'Playfair',serif; font-size:6.4cqw; line-height:1.05; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-t em { color:var(--gold-lite); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-s { margin-top:1.8cqw; font-size:2.9cqw; line-height:1.35; color:rgba(251,247,240,.82); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-chat .h-pn .xa-logo { width:17cqw; flex:none; }
+
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file { background:radial-gradient(120% 90% at 75% 8%,#24445E 0%,#13283A 55%,#0C1B28 100%); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-hd { position:absolute; left:6cqw; right:6cqw; top:5.4cqw; display:flex; justify-content:space-between; align-items:flex-start; gap:3cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-hd .xa-eb { color:var(--gold-lite); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-t { font-family:'Playfair',serif; font-size:7.4cqw; line-height:1.04; margin-top:1.2cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-t em { color:var(--gold-lite); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-lk { flex:none; display:flex; flex-direction:column; align-items:center; gap:1.2cqw; padding-top:.6cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-lk .xa-logo { width:17cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-lk .xa-partner { width:15cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-lk span { font-size:2.6cqw; color:var(--gold-lite); font-weight:600; line-height:1; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-fd { position:absolute; left:7cqw; right:7cqw; top:33cqw; bottom:5cqw; transform:rotate(-2deg); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-tabs { display:flex; gap:1.2cqw; padding-left:3cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-tabs span { background:#D3B077; color:#5B4220; border-radius:1.6cqw 1.6cqw 0 0; padding:1.5cqw 3cqw 1.1cqw; font-size:2.4cqw; letter-spacing:.14em; text-transform:uppercase; font-weight:800; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-tabs span.on { background:#E6C890; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-bd { position:absolute; left:0; right:0; top:5.2cqw; bottom:0; background:linear-gradient(180deg,#E6C890,#DBBA80); border-radius:0 1.6cqw 1.6cqw 1.6cqw;
+    box-shadow:0 2cqw 5cqw rgba(0,0,0,.5); padding:4cqw 5cqw; color:#3B2A14; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-lb { display:inline-block; background:#FEFDFB; border:.25cqw solid rgba(59,42,20,.25); padding:1cqw 2cqw; font-family:'Space Mono',monospace; font-weight:700; font-size:2.3cqw; letter-spacing:.04em; color:#3B2A14; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-h { font-family:'Playfair',serif; font-size:5.2cqw; line-height:1.08; margin-top:2.4cqw; color:#13283A; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file ul { list-style:none; margin:2.6cqw 0 0; padding:0; display:grid; gap:1.5cqw; width:44cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-h em { color:#9A6420; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file li { display:flex; align-items:center; gap:2cqw; font-size:3.3cqw; font-weight:600; color:#2B2010; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file li::before { content:'\2713'; flex:none; width:4cqw; height:4cqw; border-radius:50%; background:#13283A; color:var(--gold-lite); font-size:2.4cqw; font-weight:800;
+    display:flex; align-items:center; justify-content:center; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-ph { position:absolute; right:4.4cqw; bottom:4.6cqw; width:28cqw; background:#fff; padding:1.2cqw 1.2cqw 3.4cqw; transform:rotate(5deg); box-shadow:0 1cqw 2.4cqw rgba(0,0,0,.3); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-ph img { display:block; width:100%; aspect-ratio:4/3; object-fit:cover; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-ph span { position:absolute; left:1.2cqw; right:1.2cqw; bottom:.9cqw; font-family:'Caveat',cursive; font-weight:700; font-size:3.4cqw; color:#3A3230; line-height:1; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-file .fl-ph::before { content:''; position:absolute; left:4cqw; top:-2.4cqw; width:3cqw; height:8cqw; border:.5cqw solid #9AA3AA; border-radius:2cqw; z-index:2; }
+
+  @media (prefers-reduced-motion:no-preference) {
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-num .u-q { animation:xaUp .7s ease calc(var(--ad) + 1.2s) both; }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-pict .i-units svg { animation:xaPop .4s ease calc(var(--ad) + .3s) both; }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-myth .y-mt { animation:xaStrike 1s ease calc(var(--ad) + .2s) both; }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-myth .y-fb { animation:xaUp .6s ease calc(var(--ad) + .9s) both; }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-chat .h-b { animation:xaPop .4s ease both; }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-chat .h-b:nth-of-type(1) { animation-delay:calc(var(--ad) + .1s); } body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-chat .h-b:nth-of-type(2) { animation-delay:calc(var(--ad) + .6s); }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-chat .h-b:nth-of-type(3) { animation-delay:calc(var(--ad) + 1.1s); } body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-chat .h-b:nth-of-type(4) { animation-delay:calc(var(--ad) + 1.6s); }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-file .fl-fd { animation:xaRise .8s cubic-bezier(.2,.75,.2,1) var(--ad) both; }
+  }
+</style>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">The creative&ensp;&middot;&ensp;the objections</div>
+      <h2>Angle two: <em>the doubts that stop a sale.</em></h2>
+      <div class="note"><b>Say this</b>&ldquo;These five answer the reasons people don&rsquo;t enquire: the price in US dollars, who builds it, who runs it, what it earns, and buying off-plan.&rdquo; Point at the chat: <b>&ldquo;that&rsquo;s how returns are handled &mdash; never in the ad, always on your team&rsquo;s call.&rdquo;</b> Then: &ldquo;every figure here is from your own site &mdash; only the Australian-dollar conversions are ours, and they all say &lsquo;about&rsquo;.&rdquo;</div>
+    </div>
+    <div class="adgrid xa-grid rv">
+<div class="adcell xa-cell k-xa-num">
+  <div class="xa-set" style="--c:#B57A2E"><i></i><span>Ad set &middot; The Garden Suite</span><b>06<small>/20</small></b></div>
+  <div class="adflip">
+  <div class="fb">
+    <div class="fbh"><div class="fbav brav"><img src="assets/brand-avatar.png" alt=""></div>
+      <div class="fbid"><div class="nm">Kestrel Bay Resort</div><div class="sp">Sponsored &middot; <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5c.9 0 2 1.9 2.3 4.2H5.7C6 4.4 7.1 2.5 8 2.5Zm-3.8 4.2H2.7A5.5 5.5 0 0 1 5.6 3a11 11 0 0 0-1.4 3.7Zm0 2.6c.2 1.4.7 2.7 1.4 3.7a5.5 5.5 0 0 1-2.9-3.7h1.5Zm1.5 0h4.6C10 11.6 8.9 13.5 8 13.5s-2-1.9-2.3-4.2Zm6.1 0h1.5a5.5 5.5 0 0 1-2.9 3.7c.7-1 1.2-2.3 1.4-3.7Zm0-2.6a11 11 0 0 0-1.4-3.7 5.5 5.5 0 0 1 2.9 3.7h-1.5Z"/></svg></div></div>
+      <div class="fbx"><svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><circle cx="4" cy="10" r="1.6"/><circle cx="10" cy="10" r="1.6"/><circle cx="16" cy="10" r="1.6"/></svg><svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></div></div>
+    <div class="fbt">The Garden Suite is from US$165,000. <b>In Australian dollars, that&rsquo;s about A$240,000.</b> Our sales team confirms today&rsquo;s figure on the call. <span class="mr">&#8230; See more</span></div>
+    <div class="fbi xa-fbi"><div class="cr xa-cr xa-num"><div class="u-top"><div class="xa-eb"><span>The Garden Suite</span></div><div class="u-pre">US$165,000 is <em>about</em></div><div class="u-n" data-to="240000" data-pre="A$">A$240,000</div><div class="u-src">At 0.69 US$ per A$ &middot; approximate</div></div><div class="u-lg"><img class="xa-logo" src="assets/brand-logo-dark.png" alt="Kestrel Bay Resort"></div><div class="u-sp"><span>34 m&sup2;</span><span>1 bedroom</span><span>Garden terrace</span></div><div class="u-ph"><img src="assets/ph-suite-a2.jpg" alt=""></div><div class="u-q"><div>Priced in US dollars. <em>Here it is in yours.</em></div><span>Ask us</span></div></div></div>
+    <div class="fbl"><div class="lk"><div class="dm">Form on Facebook</div><div class="hl">The Garden Suite in A$</div></div><div class="fbc">Get quote</div></div>
+    <div class="fba"><div><svg viewBox="0 0 16 16"><path d="M8 1.5 6 5H3.2A1.2 1.2 0 0 0 2 6.2v6.6A1.2 1.2 0 0 0 3.2 14h8.3c.6 0 1.1-.4 1.2-1l1.2-5.4c.2-.8-.4-1.6-1.2-1.6H9.3l.4-2.6A1.5 1.5 0 0 0 8 1.5Z"/></svg>Like</div><div><svg viewBox="0 0 16 16"><path d="M8 1.8c-3.6 0-6.5 2.4-6.5 5.4 0 1.7.9 3.2 2.4 4.2l-.6 2.3 2.5-1.3c.7.2 1.4.3 2.2.3 3.6 0 6.5-2.4 6.5-5.5S11.6 1.8 8 1.8Z"/></svg>Comment</div><div><svg viewBox="0 0 16 16"><path d="M14.5 8 8 2.5v3C4.4 5.9 2.2 8.3 1.5 12c1.6-1.9 3.7-2.8 6.5-2.8v3L14.5 8Z"/></svg>Share</div></div>
+  </div>
+  <div class="adback" aria-hidden="true">
+      <div class="wk">Why it works</div>
+      <div class="wa">In Australian dollars</div>
+      <div class="wl">A US-dollar price makes Australians do maths before they enquire, so the ad does it for them, rate on the image.</div>
+      <div class="wr"><span>Audience</span><b>Cold Australian buyers</b></div><div class="wr"><span>Format</span><b>Big number &middot; 1:1 &middot; rate on the image</b></div><div class="wr"><span>Ad set</span><b>The Garden Suite</b></div><div class="wr"><span>Stands apart</span><b>The only number-led layout</b></div>
+      <button type="button" class="wback">&larr; Back to the ad</button>
+    </div>
+  </div>
+  <div class="adtag"><em>&#9679;</em>&ensp;In A$ &middot; big number<button type="button" class="whyb">Why it works &#8635;</button></div>
+</div>
+<div class="adcell xa-cell k-xa-pict">
+  <div class="xa-set" style="--c:#6B7F4E"><i></i><span>Ad set &middot; Kestrel &times; Tidewater</span><b>07<small>/20</small></b></div>
+  <div class="adflip">
+  <div class="fb">
+    <div class="fbh"><div class="fbav brav"><img src="assets/brand-avatar.png" alt=""></div>
+      <div class="fbid"><div class="nm">Kestrel Bay Resort</div><div class="sp">Sponsored &middot; <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5c.9 0 2 1.9 2.3 4.2H5.7C6 4.4 7.1 2.5 8 2.5Zm-3.8 4.2H2.7A5.5 5.5 0 0 1 5.6 3a11 11 0 0 0-1.4 3.7Zm0 2.6c.2 1.4.7 2.7 1.4 3.7a5.5 5.5 0 0 1-2.9-3.7h1.5Zm1.5 0h4.6C10 11.6 8.9 13.5 8 13.5s-2-1.9-2.3-4.2Zm6.1 0h1.5a5.5 5.5 0 0 1-2.9 3.7c.7-1 1.2-2.3 1.4-3.7Zm0-2.6a11 11 0 0 0-1.4-3.7 5.5 5.5 0 0 1 2.9 3.7h-1.5Z"/></svg></div></div>
+      <div class="fbx"><svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><circle cx="4" cy="10" r="1.6"/><circle cx="10" cy="10" r="1.6"/><circle cx="16" cy="10" r="1.6"/></svg><svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></div></div>
+    <div class="fbt">Built by Kestrel: 18 years building resorts and homes, 9 developments and <b>600+ units delivered.</b> See who&rsquo;s behind Kestrel Bay Resort. <span class="mr">&#8230; See more</span></div>
+    <div class="fbi xa-fbi"><div class="cr xa-cr xa-pict"><div class="i-top"><div class="xa-eb"><span>Who builds it</span><span>Kestrel Developments</span></div><div class="i-row"><div class="i-units"><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg><svg viewBox="0 0 40 44"><path d="M20 2 38 16v26H25V30H15v12H2V16Z"/></svg></div><div class="i-n">600+</div></div><div class="i-l">units delivered <em>by Kestrel.</em></div><div class="i-st"><div>18<small>Years building resorts</small></div><div>9<small>Developments</small></div></div></div><div class="i-ph"><img src="assets/ph-team-signing.jpg" alt=""></div><div class="i-bt"><div>The developer <em>behind the resort.</em></div><div class="i-lk"><img class="xa-logo" src="assets/brand-logo-light.png" alt="Kestrel Bay Resort"></div></div></div></div>
+    <div class="fbl"><div class="lk"><div class="dm">Form on Facebook</div><div class="hl">Who builds Kestrel Bay Resort</div></div><div class="fbc">Learn more</div></div>
+    <div class="fba"><div><svg viewBox="0 0 16 16"><path d="M8 1.5 6 5H3.2A1.2 1.2 0 0 0 2 6.2v6.6A1.2 1.2 0 0 0 3.2 14h8.3c.6 0 1.1-.4 1.2-1l1.2-5.4c.2-.8-.4-1.6-1.2-1.6H9.3l.4-2.6A1.5 1.5 0 0 0 8 1.5Z"/></svg>Like</div><div><svg viewBox="0 0 16 16"><path d="M8 1.8c-3.6 0-6.5 2.4-6.5 5.4 0 1.7.9 3.2 2.4 4.2l-.6 2.3 2.5-1.3c.7.2 1.4.3 2.2.3 3.6 0 6.5-2.4 6.5-5.5S11.6 1.8 8 1.8Z"/></svg>Comment</div><div><svg viewBox="0 0 16 16"><path d="M14.5 8 8 2.5v3C4.4 5.9 2.2 8.3 1.5 12c1.6-1.9 3.7-2.8 6.5-2.8v3L14.5 8Z"/></svg>Share</div></div>
+  </div>
+  <div class="adback" aria-hidden="true">
+      <div class="wk">Why it works</div>
+      <div class="wa">Who builds it</div>
+      <div class="wl">An off-plan buyer&rsquo;s first worry is the builder, so three numbers from Kestrel&rsquo;s own record answer it.</div>
+      <div class="wr"><span>Audience</span><b>Careful buyers &middot; first time buying overseas</b></div><div class="wr"><span>Format</span><b>Pictogram stat &middot; 1:1 &middot; Kestrel&rsquo;s figures</b></div><div class="wr"><span>Ad set</span><b>Kestrel &times; Tidewater</b></div><div class="wr"><span>Stands apart</span><b>The only pictogram</b></div>
+      <button type="button" class="wback">&larr; Back to the ad</button>
+    </div>
+  </div>
+  <div class="adtag"><em>&#9679;</em>&ensp;Who builds it &middot; pictogram<button type="button" class="whyb">Why it works &#8635;</button></div>
+</div>
+<div class="adcell xa-cell k-xa-myth">
+  <div class="xa-set" style="--c:#6B7F4E"><i></i><span>Ad set &middot; Kestrel &times; Tidewater</span><b>08<small>/20</small></b></div>
+  <div class="adflip">
+  <div class="fb">
+    <div class="fbh"><div class="fbav brav"><img src="assets/brand-avatar.png" alt=""></div>
+      <div class="fbid"><div class="nm">Kestrel Bay Resort</div><div class="sp">Sponsored &middot; <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5c.9 0 2 1.9 2.3 4.2H5.7C6 4.4 7.1 2.5 8 2.5Zm-3.8 4.2H2.7A5.5 5.5 0 0 1 5.6 3a11 11 0 0 0-1.4 3.7Zm0 2.6c.2 1.4.7 2.7 1.4 3.7a5.5 5.5 0 0 1-2.9-3.7h1.5Zm1.5 0h4.6C10 11.6 8.9 13.5 8 13.5s-2-1.9-2.3-4.2Zm6.1 0h1.5a5.5 5.5 0 0 1-2.9 3.7c.7-1 1.2-2.3 1.4-3.7Zm0-2.6a11 11 0 0 0-1.4-3.7 5.5 5.5 0 0 1 2.9 3.7h-1.5Z"/></svg></div></div>
+      <div class="fbx"><svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><circle cx="4" cy="10" r="1.6"/><circle cx="10" cy="10" r="1.6"/><circle cx="16" cy="10" r="1.6"/></svg><svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></div></div>
+    <div class="fbt">Owning from Australia? <b>You don&rsquo;t run it &mdash; Tidewater Hospitality does</b>: 12 venues and close to 900,000 guests a year. <span class="mr">&#8230; See more</span></div>
+    <div class="fbi xa-fbi"><div class="cr xa-cr xa-myth"><img class="xa-ph" src="assets/ph-venue-2.jpg" alt=""><div class="y-sc"></div><div class="y-m"><span class="y-stp">MYTH</span><div class="y-mt">&ldquo;I&rsquo;d have to run it myself, from Australia.&rdquo;</div></div><div class="y-f"></div><div class="y-fb"><span class="y-fl">FACT</span><div class="y-ft">Tidewater Hospitality runs the resort, <em>day to day.</em></div><div class="y-fs"><span>12 venues &middot; close to 900,000 guests a year</span><img class="xa-logo" src="assets/brand-logo-dark.png" alt="Kestrel Bay Resort"></div></div></div></div>
+    <div class="fbl"><div class="lk"><div class="dm">Form on Facebook</div><div class="hl">Who runs the resort</div></div><div class="fbc">Learn more</div></div>
+    <div class="fba"><div><svg viewBox="0 0 16 16"><path d="M8 1.5 6 5H3.2A1.2 1.2 0 0 0 2 6.2v6.6A1.2 1.2 0 0 0 3.2 14h8.3c.6 0 1.1-.4 1.2-1l1.2-5.4c.2-.8-.4-1.6-1.2-1.6H9.3l.4-2.6A1.5 1.5 0 0 0 8 1.5Z"/></svg>Like</div><div><svg viewBox="0 0 16 16"><path d="M8 1.8c-3.6 0-6.5 2.4-6.5 5.4 0 1.7.9 3.2 2.4 4.2l-.6 2.3 2.5-1.3c.7.2 1.4.3 2.2.3 3.6 0 6.5-2.4 6.5-5.5S11.6 1.8 8 1.8Z"/></svg>Comment</div><div><svg viewBox="0 0 16 16"><path d="M14.5 8 8 2.5v3C4.4 5.9 2.2 8.3 1.5 12c1.6-1.9 3.7-2.8 6.5-2.8v3L14.5 8Z"/></svg>Share</div></div>
+  </div>
+  <div class="adback" aria-hidden="true">
+      <div class="wk">Why it works</div>
+      <div class="wa">Who runs it</div>
+      <div class="wl">It names the worry of owning from a distance, then answers it with an operator that already runs 12 venues.</div>
+      <div class="wr"><span>Audience</span><b>Buyers who&rsquo;ve never owned overseas</b></div><div class="wr"><span>Format</span><b>Myth vs fact &middot; diagonal split &middot; 1:1</b></div><div class="wr"><span>Ad set</span><b>Kestrel &times; Tidewater</b></div><div class="wr"><span>Stands apart</span><b>The only diagonal</b></div>
+      <button type="button" class="wback">&larr; Back to the ad</button>
+    </div>
+  </div>
+  <div class="adtag"><em>&#9679;</em>&ensp;Who runs it &middot; myth vs fact<button type="button" class="whyb">Why it works &#8635;</button></div>
+</div>
+<div class="adcell xa-cell k-xa-chat">
+  <div class="xa-set" style="--c:#13283A"><i></i><span>Ad set &middot; The Ocean Suite</span><b>09<small>/20</small></b></div>
+  <div class="adflip">
+  <div class="fb">
+    <div class="fbh"><div class="fbav brav"><img src="assets/brand-avatar.png" alt=""></div>
+      <div class="fbid"><div class="nm">Kestrel Bay Resort</div><div class="sp">Sponsored &middot; <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5c.9 0 2 1.9 2.3 4.2H5.7C6 4.4 7.1 2.5 8 2.5Zm-3.8 4.2H2.7A5.5 5.5 0 0 1 5.6 3a11 11 0 0 0-1.4 3.7Zm0 2.6c.2 1.4.7 2.7 1.4 3.7a5.5 5.5 0 0 1-2.9-3.7h1.5Zm1.5 0h4.6C10 11.6 8.9 13.5 8 13.5s-2-1.9-2.3-4.2Zm6.1 0h1.5a5.5 5.5 0 0 1-2.9 3.7c.7-1 1.2-2.3 1.4-3.7Zm0-2.6a11 11 0 0 0-1.4-3.7 5.5 5.5 0 0 1 2.9 3.7h-1.5Z"/></svg></div></div>
+      <div class="fbx"><svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><circle cx="4" cy="10" r="1.6"/><circle cx="10" cy="10" r="1.6"/><circle cx="16" cy="10" r="1.6"/></svg><svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></div></div>
+    <div class="fbt">&ldquo;What will it earn?&rdquo; is the right question. <b>Our sales team answers it on a private call</b>, with the numbers in front of you &mdash; not in an ad. <span class="mr">&#8230; See more</span></div>
+    <div class="fbi xa-fbi"><div class="cr xa-cr xa-chat"><div class="h-bar"><span class="h-bk">&lsaquo;</span><span class="h-av"><img src="assets/brand-avatar.png" alt=""></span><div class="h-nm">Kestrel Bay Resort &middot; Sales<small>online</small></div></div><div class="h-ms"><span class="h-day">Today</span><div class="h-b me">Hi! What returns do the Ocean Suites make?<small>9:14<i>&#10003;&#10003;</i></small></div><div class="h-b us">Good question. We go through returns on a private call, with the numbers in front of you.<small>9:16</small></div><div class="h-b me">Great. Can we do Thursday?<small>9:17<i>&#10003;&#10003;</i></small></div><div class="h-b us">Thursday works. We&rsquo;ll send you a time.<small>9:18</small></div></div><div class="h-pn"><div><div class="h-t">Returns? <em>Explained on a private call.</em></div><div class="h-s">Asked and answered one to one, by our sales team.</div></div><img class="xa-logo" src="assets/brand-logo-light.png" alt="Kestrel Bay Resort"></div></div></div>
+    <div class="fbl"><div class="lk"><div class="dm">Form on Facebook</div><div class="hl">Book a private call</div></div><div class="fbc">Book now</div></div>
+    <div class="fba"><div><svg viewBox="0 0 16 16"><path d="M8 1.5 6 5H3.2A1.2 1.2 0 0 0 2 6.2v6.6A1.2 1.2 0 0 0 3.2 14h8.3c.6 0 1.1-.4 1.2-1l1.2-5.4c.2-.8-.4-1.6-1.2-1.6H9.3l.4-2.6A1.5 1.5 0 0 0 8 1.5Z"/></svg>Like</div><div><svg viewBox="0 0 16 16"><path d="M8 1.8c-3.6 0-6.5 2.4-6.5 5.4 0 1.7.9 3.2 2.4 4.2l-.6 2.3 2.5-1.3c.7.2 1.4.3 2.2.3 3.6 0 6.5-2.4 6.5-5.5S11.6 1.8 8 1.8Z"/></svg>Comment</div><div><svg viewBox="0 0 16 16"><path d="M14.5 8 8 2.5v3C4.4 5.9 2.2 8.3 1.5 12c1.6-1.9 3.7-2.8 6.5-2.8v3L14.5 8Z"/></svg>Share</div></div>
+  </div>
+  <div class="adback" aria-hidden="true">
+      <div class="wk">Why it works</div>
+      <div class="wa">What will it earn?</div>
+      <div class="wl">Returns are answered honestly, on a call and not in the ad, which is what Meta allows and what a careful buyer trusts.</div>
+      <div class="wr"><span>Audience</span><b>Buyers who&rsquo;d rent the suite out</b></div><div class="wr"><span>Format</span><b>Chat screen &middot; 1:1</b></div><div class="wr"><span>Ad set</span><b>The Ocean Suite</b></div><div class="wr"><span>Stands apart</span><b>The only messaging-app screen</b></div>
+      <button type="button" class="wback">&larr; Back to the ad</button>
+    </div>
+  </div>
+  <div class="adtag"><em>&#9679;</em>&ensp;Returns, on a call &middot; chat screen<button type="button" class="whyb">Why it works &#8635;</button></div>
+</div>
+<div class="adcell xa-cell k-xa-file">
+  <div class="xa-set" style="--c:#6B7F4E"><i></i><span>Ad set &middot; Kestrel &times; Tidewater</span><b>10<small>/20</small></b></div>
+  <div class="adflip">
+  <div class="fb">
+    <div class="fbh"><div class="fbav brav"><img src="assets/brand-avatar.png" alt=""></div>
+      <div class="fbid"><div class="nm">Kestrel Bay Resort</div><div class="sp">Sponsored &middot; <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5c.9 0 2 1.9 2.3 4.2H5.7C6 4.4 7.1 2.5 8 2.5Zm-3.8 4.2H2.7A5.5 5.5 0 0 1 5.6 3a11 11 0 0 0-1.4 3.7Zm0 2.6c.2 1.4.7 2.7 1.4 3.7a5.5 5.5 0 0 1-2.9-3.7h1.5Zm1.5 0h4.6C10 11.6 8.9 13.5 8 13.5s-2-1.9-2.3-4.2Zm6.1 0h1.5a5.5 5.5 0 0 1-2.9 3.7c.7-1 1.2-2.3 1.4-3.7Zm0-2.6a11 11 0 0 0-1.4-3.7 5.5 5.5 0 0 1 2.9 3.7h-1.5Z"/></svg></div></div>
+      <div class="fbx"><svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><circle cx="4" cy="10" r="1.6"/><circle cx="10" cy="10" r="1.6"/><circle cx="16" cy="10" r="1.6"/></svg><svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></div></div>
+    <div class="fbt">Kestrel Bay Resort is under construction, so <b>here&rsquo;s exactly what you&rsquo;d choose between</b>: two suites, prices in US$ and A$, and the operator. <span class="mr">&#8230; See more</span></div>
+    <div class="fbi xa-fbi"><div class="cr xa-cr xa-file"><div class="fl-hd"><div><div class="xa-eb">From Australia</div><div class="fl-t">Buying <em>off-plan?</em></div></div><div class="fl-lk"><img class="xa-logo" src="assets/brand-logo-light.png" alt="Kestrel Bay Resort"><span>&times;</span><img class="xa-partner" src="assets/partner-logo-light.png" alt="Tidewater Hospitality"></div></div><div class="fl-fd"><div class="fl-tabs"><span class="on">Suites</span><span>Prices</span><span>Operator</span></div><div class="fl-bd"><div class="fl-lb">BUYER FILE &middot; KESTREL BAY RESORT</div><div class="fl-h">Under construction. <em>Here&rsquo;s what you choose.</em></div><ul><li>Two suites &middot; 34 or 52 m&sup2;</li><li>Prices in US$ and A$</li><li>The Owners&rsquo; Club</li><li>Run by Tidewater</li></ul><div class="fl-ph"><img src="assets/ph-site-1.jpg" alt="" style="object-position:50% 50%"><span>the site</span></div></div></div></div></div>
+    <div class="fbl"><div class="lk"><div class="dm">Form on Facebook</div><div class="hl">Buying off-plan &middot; the facts</div></div><div class="fbc">Learn more</div></div>
+    <div class="fba"><div><svg viewBox="0 0 16 16"><path d="M8 1.5 6 5H3.2A1.2 1.2 0 0 0 2 6.2v6.6A1.2 1.2 0 0 0 3.2 14h8.3c.6 0 1.1-.4 1.2-1l1.2-5.4c.2-.8-.4-1.6-1.2-1.6H9.3l.4-2.6A1.5 1.5 0 0 0 8 1.5Z"/></svg>Like</div><div><svg viewBox="0 0 16 16"><path d="M8 1.8c-3.6 0-6.5 2.4-6.5 5.4 0 1.7.9 3.2 2.4 4.2l-.6 2.3 2.5-1.3c.7.2 1.4.3 2.2.3 3.6 0 6.5-2.4 6.5-5.5S11.6 1.8 8 1.8Z"/></svg>Comment</div><div><svg viewBox="0 0 16 16"><path d="M14.5 8 8 2.5v3C4.4 5.9 2.2 8.3 1.5 12c1.6-1.9 3.7-2.8 6.5-2.8v3L14.5 8Z"/></svg>Share</div></div>
+  </div>
+  <div class="adback" aria-hidden="true">
+      <div class="wk">Why it works</div>
+      <div class="wa">Buying off-plan</div>
+      <div class="wl">An unbuilt resort is a quiet doubt, so the ad lays out exactly what the buyer is choosing between &mdash; suites, prices, operator.</div>
+      <div class="wr"><span>Audience</span><b>First-time overseas buyers</b></div><div class="wr"><span>Format</span><b>Document folder &middot; 1:1</b></div><div class="wr"><span>Ad set</span><b>Kestrel &times; Tidewater</b></div><div class="wr"><span>Stands apart</span><b>The only folder</b></div>
+      <button type="button" class="wback">&larr; Back to the ad</button>
+    </div>
+  </div>
+  <div class="adtag"><em>&#9679;</em>&ensp;Off-plan &middot; buyer file<button type="button" class="whyb">Why it works &#8635;</button></div>
+</div>
+    </div>
+  </div>
+</section>

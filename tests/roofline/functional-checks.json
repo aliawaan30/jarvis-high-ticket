@@ -1,0 +1,11 @@
+{
+  "version": "v2",
+  "pageErrors": [],
+  "requiredValidation": true,
+  "backPreservesAnswers": true,
+  "sevenQuestions": true,
+  "qualifiedAndReviewBranches": true,
+  "noPIIInURL": true,
+  "mobileOverflow": false,
+  "adsExported": 8
+}

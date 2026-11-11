@@ -1,0 +1,13 @@
+Local checks, 2 November 2026
+PASS runtime pending -> Owner pricing required
+PASS runtime missing -> Incomplete scope · hold
+PASS runtime sent -> Awaiting client decision
+PASS runtime accepted -> Ready for invoice review
+PASS runtime revised -> New version needs review
+PASS runtime billed -> No duplicate handoff
+PASS offline source scan: no network URLs, forms or request APIs
+PASS six-line offer: exactly six lines
+PASS arithmetic: 1800-1200=600; ceil(2500/600)=5; 12*600-2500=4700; 2500-750-28*35=770
+DOM stub runtime checks, not a real browser/Buildxact test. No real data or credentials in fixture. No deployment/outreach/payment.
+PASS explicit arithmetic assertions in Python: contribution, break-even ceiling, annual value, student economics and licence sensitivity.
+PASS headless Chrome 1200x1100 render; screenshot visually inspected: readable panels, clear sample label, no clipping. Corrected misleading input label from owner-approved to illustrative estimate after visual inspection. Screenshot then refreshed.

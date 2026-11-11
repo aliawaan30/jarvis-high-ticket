@@ -1,0 +1,262 @@
+<section class="slide" id="included">
+<style>
+  /* ── the package page, top to bottom ──
+     frame   .wrap · .bigpkg (the one card) · .seg (one per part) · .seg-k (its 01/02/03 label: i number, b title)
+     01 What you get — the stack
+             .stk · .sg group (.sg.incl = the ad spend in the price) · .sg-h name + group total · .sl line + value · .oworth total value
+     02 What is guaranteed — hero + four cards   (.seg-guar)
+             hero   .fsg · .fsg-seal · .fsg-n name · .fsg-d terms · .fsg-r what your team does
+             cards  .gcards · .gc (.gc.gold = the first card) · .gn name · .gd remedy
+     03 Your price — the struck ladder and the price card   (.seg-price)
+             ladder .lad · .ld (span label, s struck figure) · .ld-ar arrow
+             card   .pcard · .pc-tag · .pc-k · .pc-sum · .ps fee / spend / .ps.tot all-in · .ps-op · .ps-eq · .pc-term
+     Print and phone rules sit beside the part they adjust; the first @media print block holds the frame, the stack total and 02's cards. */
+  #included { height:auto; }
+  #included .wrap { max-width:880px; }
+  #included .bigpkg { border-radius:16px; overflow:hidden; background:var(--paper);
+    border:2px solid var(--teal);
+    box-shadow:0 2px 6px rgba(19,40,58,.10), 0 26px 64px rgba(19,40,58,.18); }
+
+  #included .seg { padding:24px 40px 22px; }
+  #included .seg + .seg { border-top:1px solid var(--rule); }
+  #included .seg-k { display:flex; align-items:baseline; gap:14px; margin-bottom:18px;
+    padding-bottom:11px; border-bottom:1px solid var(--rule); }
+  #included .seg-k i { font-style:normal; font-family:'Playfair',serif; font-size:26px;
+    line-height:1; color:var(--teal); }
+  #included .seg-k b { font-size:11.5px; letter-spacing:.24em; text-transform:uppercase;
+    color:var(--ink); font-weight:700; }
+  #included .oworth { padding-top:15px; }
+
+  /* the guarantees — four named, each with a remedy */
+  #included .gcards { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  #included .gc { display:flex; gap:13px; background:var(--teal-lite);
+    border:1px solid rgba(181,122,46,.3); border-radius:12px; padding:15px 17px; }
+  #included .gc i { flex:0 0 auto; width:21px; height:21px; border-radius:50%;
+    background:var(--teal); position:relative; margin-top:2px; }
+  #included .gc i::after { content:''; position:absolute; left:6px; top:6.5px; width:7px; height:3.5px;
+    border-left:2px solid #fff; border-bottom:2px solid #fff; transform:rotate(-45deg); }
+  #included .gc .gn { font-size:13.5px; font-weight:700; color:var(--ink); }
+  #included .gc .gd { font-size:12px; line-height:1.55; color:var(--soft); margin-top:5px; }
+  #included .gc .gd b { color:var(--ink); font-weight:600; }
+  #included .gc.gold { background:#FBF7EA; border-color:rgba(181,122,46,.5); }
+  #included .gc.gold i { background:var(--sand); }
+  #included .gc.gold .gn { color:var(--gold-d); }
+
+  @media print {
+    #included { height:auto !important; min-height:0 !important; display:block !important;
+      padding:10mm 12mm 0 12mm !important; overflow:visible !important;
+      break-after:auto !important; page-break-after:auto !important;
+      break-inside:auto !important; page-break-inside:auto !important; }
+    /* #decision is the optional next-steps slide (optional/s24_decision.html), added straight after this page */
+    #decision { break-before:page; page-break-before:always; }
+    #included .wrap { zoom:0.78; }
+    #included .bigpkg { margin-bottom:0; }
+    /* on screen it runs as one column; on paper it breaks at each numbered segment */
+    #included .seg-guar, #included .seg-price { break-before:page; page-break-before:always; padding-top:14px; }
+    #included .gc, #included .oworth { break-inside:avoid; }
+
+    #included .oworth { padding-top:12px; }
+    #included .oworth .v { font-size:26px; }
+    #included .seg-k i { font-size:20px; }
+
+    /* 02 carries the guarantees */
+    #included .seg-guar { padding-top:26px; padding-bottom:0; }
+
+    /* 03 is the reveal — the struck ladder, then the price card */
+    #included .seg-price { padding-top:14px; }
+
+    #included .seg { padding:16px 26px 15px; }
+    #included .seg-k { margin-bottom:12px; padding-bottom:8px; }
+    #included .seg-k i { font-size:21px; }
+    #included .gcards { grid-template-columns:1fr 1fr !important; gap:9px; }
+    #included .gc { padding:15px 17px; gap:12px; }
+    #included .gc .gn { font-size:13px; } #included .gc .gd { font-size:11.4px; margin-top:5px; }
+  }
+
+  /* the guarantee cards' final fills — .gc.gold here overrides the #FBF7EA set above */
+  #included .gc { background:var(--teal-lite); }
+  #included .gc.gold { background:#FBF3E4; }
+  #included .gc i { background:var(--teal); }
+
+  /* 01 the stack — priced groups, then the ad spend the price includes */
+  #included .stk { display:flex; flex-direction:column; gap:12px; }
+  #included .sg { border:1px solid var(--rule); border-radius:12px; background:#fff; overflow:hidden; }
+  #included .sg-h { display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding:10px 16px 9px; background:var(--teal-lite); border-bottom:1px solid var(--rule); }
+  #included .sg-h b { font-size:10.5px; letter-spacing:.22em; text-transform:uppercase; font-weight:700; color:var(--ink); }
+  #included .sg-h span { font-family:'Playfair',serif; font-size:19px; color:var(--gold-d); font-variant-numeric:tabular-nums; }
+  #included .sl { display:grid; grid-template-columns:1fr auto; gap:4px 18px; align-items:baseline; padding:10px 16px 10px; }
+  #included .sl + .sl { border-top:1px dashed var(--rule); }
+  #included .sl b { font-size:13.5px; font-weight:600; color:var(--ink); line-height:1.35; }
+  #included .sl p { font-size:11.5px; line-height:1.5; color:var(--soft); margin-top:3px; }
+  #included .sl s { font-family:'Playfair',serif; font-size:17px; color:var(--taupe); white-space:nowrap; font-variant-numeric:tabular-nums;
+    text-decoration-thickness:1.5px; text-decoration-color:rgba(181,122,46,.85); }
+  #included .stk + .oworth { display:flex; justify-content:space-between; align-items:baseline; margin-top:14px; padding-top:14px; border-top:2px solid var(--rule2); }
+  @media (max-width:560px){ #included .sl { grid-template-columns:1fr; } #included .sg-h { flex-direction:column; gap:2px; } #included .gcards { grid-template-columns:1fr; } }
+  @media print {
+    #included .stk { display:block !important; columns:2; column-gap:12px; }
+    #included .stk .sg { margin-bottom:8px; }
+    #included .sg-h { padding:6px 12px 5px; } #included .sg-h b { font-size:9px; } #included .sg-h span { font-size:15px; }
+    #included .sl { padding:5px 12px; } #included .sl b { font-size:11px; } #included .sl p { font-size:9.4px; margin-top:1px; line-height:1.35; }
+    #included .sl s { font-size:13px; }
+    #included .sg { break-inside:avoid; }
+  }
+
+  /* the included group */
+  #included .sg.incl { border-color:rgba(181,122,46,.5); }
+  #included .sg.incl .sg-h { background:rgba(181,122,46,.14); }
+
+  /* 02 the headline guarantee */
+  #included .fsg { display:grid; grid-template-columns:auto minmax(0,1.2fr) minmax(0,1fr); gap:22px; align-items:center; margin-bottom:14px; padding:22px 24px;
+    border-radius:18px; background:radial-gradient(120% 140% at 0% 0%, #3A2D20, #13283A 60%); color:#FBF7F0; box-shadow:var(--sh-lg); border:1px solid rgba(226,184,114,.35); }
+  #included .fsg-seal { width:104px; height:104px; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    background:radial-gradient(circle at 35% 30%, #F1D39A, #B57A2E 70%); color:#13283A; box-shadow:0 0 0 5px rgba(226,184,114,.18), 0 0 0 10px rgba(226,184,114,.08), 0 10px 26px rgba(0,0,0,.4); }
+  #included .fsg-seal b { font-family:'Playfair',serif; font-size:40px; line-height:.9; }
+  #included .fsg-seal span { font-size:11px; letter-spacing:.3em; text-transform:uppercase; font-weight:800; margin-top:3px; }
+  #included .fsg-n { font-family:'Playfair',serif; font-size:30px; line-height:1.1; margin-top:4px; }
+  #included .fsg-d { font-size:13.5px; line-height:1.55; color:rgba(251,247,240,.78); margin-top:8px; }
+  #included .fsg-d b { color:#FBF7F0; font-weight:600; }
+  #included .fsg-r { list-style:none; margin:0; padding:14px 16px; border-radius:12px; background:rgba(251,247,240,.06); border:1px solid rgba(251,247,240,.12); display:grid; gap:7px; }
+  #included .fsg-r li { position:relative; padding-left:18px; font-size:11.8px; line-height:1.4; color:rgba(251,247,240,.8); }
+  #included .fsg-r li::before { content:''; position:absolute; left:0; top:5px; width:8px; height:8px; border-radius:50%; background:var(--gold-lite); }
+  #included .fsg-r b { color:#FBF7F0; font-weight:600; }
+  @media screen and (max-width:900px){ #included .fsg { grid-template-columns:1fr; justify-items:start; } }
+  @media print { #included .fsg { grid-template-columns:auto minmax(0,1.2fr) minmax(0,1fr) !important; break-inside:avoid; } }
+
+  /* 03 the price card */
+  #included .pcard { position:relative; max-width:620px; margin:6px auto 0; background:#13283A; color:#fff; border-radius:14px; padding:26px 30px 22px; box-shadow:0 14px 34px rgba(19,40,58,.22); }
+  #included .pc-tag { position:absolute; top:-11px; right:22px; background:var(--gold-lite); color:#13283A; font-size:9px; letter-spacing:.2em; text-transform:uppercase; font-weight:800; border-radius:12px; padding:5px 11px 4px; }
+  #included .pc-k { font-size:10px; letter-spacing:.24em; text-transform:uppercase; font-weight:700; color:var(--gold-lite); }
+  @media screen and (max-width:560px){ #included .pcard { padding:22px 18px 18px; } }
+  @media print { #included .pcard { box-shadow:none; padding:18px 24px 15px; } }
+  /* 01's line values show plain, not struck (this resets the strike set on .sl s above) */
+  #included .sl s, #included .sg .sl s { text-decoration:none; }
+
+  /* 03 the struck ladder — the price card sits at its foot */
+  #included .lad { display:flex; flex-direction:column; align-items:center; max-width:540px; margin:8px auto 0; }
+  #included .ld { display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center; }
+  #included .ld span { font-size:10px; letter-spacing:.24em; text-transform:uppercase; font-weight:700; color:var(--taupe); }
+  #included .ld s { font-family:'Playfair',serif; font-size:44px; line-height:1; color:var(--taupe); text-decoration-thickness:2px; font-variant-numeric:tabular-nums; }
+  #included .ld-ar { position:relative; display:block; width:2px; height:34px; margin:14px 0; background:var(--rule2); }
+  #included .ld-ar::after { content:''; position:absolute; left:50%; bottom:-1px; width:8px; height:8px; border-right:2px solid var(--rule2); border-bottom:2px solid var(--rule2); transform:translateX(-50%) rotate(45deg); }
+  #included .lad .pcard { width:100%; max-width:none; margin:4px 0 0; }
+  #included .pc-k { text-align:center; }
+  @media print { #included .ld s { font-size:32px; } #included .ld-ar { height:20px; margin:8px 0; } }
+
+  #included .pc-sum { display:flex; flex-direction:column; align-items:center; text-align:center; margin-top:14px; }
+  #included .ps b { display:block; font-family:'Playfair',serif; font-weight:500; font-size:30px; line-height:1; color:#fff; font-variant-numeric:tabular-nums; }
+  #included .ps span { display:block; margin-top:6px; font-size:10px; letter-spacing:.18em; text-transform:uppercase; font-weight:600; color:rgba(255,255,255,.6); }
+  #included .ps span span { display:inline; margin:0; letter-spacing:inherit; }
+  #included .ps-op { font-style:normal; font-family:'Playfair',serif; font-size:24px; line-height:1; color:var(--gold-lite); margin:10px 0; }
+  #included .ps-eq { display:block; width:120px; height:1px; background:rgba(255,255,255,.25); margin:16px 0; }
+  #included .ps.tot b { font-size:60px; color:var(--gold-lite); }
+  #included .ps.tot span { color:rgba(255,255,255,.8); }
+  @media print { #included .ps b { font-size:24px; } #included .ps.tot b { font-size:44px; } #included .ps-eq { margin:10px 0; } }
+  #included .pc-term { margin-top:18px; padding-top:14px; border-top:1px solid rgba(255,255,255,.18); display:flex; justify-content:space-between; align-items:center; gap:16px; text-align:left; }
+  #included .pc-term b { display:block; font-weight:600; font-size:13px; color:#fff; }
+  #included .pc-term span { display:block; font-size:10px; letter-spacing:.16em; text-transform:uppercase; font-weight:600; color:rgba(255,255,255,.6); margin-top:3px; }
+</style>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">The package</div>
+      <h2>Everything <em>you get.</em></h2>
+      <div class="note"><b>Built backwards from the price</b><b>01</b>: walk the groups, one line from each &mdash; the 448 ads, your CRM set up, the Kestrel Bay pack, the call script. Land on <b>&ldquo;fifty-eight thousand three hundred dollars of work and media for the quarter.&rdquo;</b> <b>02</b>: name each guarantee: <b>the First Sale, the First-Hundred, Every Number Answers, the Six-Day, Keep Everything.</b> <b>03</b>: the struck value, then <b>&ldquo;our standard fee for one campaign is twenty thousand a quarter.&rdquo;</b> Then the dark card: <b>&ldquo;for your launch quarter, twelve thousand for our work and twelve thousand for the ads &mdash; your four thousand a month. Twenty-four thousand, all in, for the quarter.&rdquo;</b> If they ask why launch pricing: <b>&ldquo;it&rsquo;s your first quarter with us, and we&rsquo;d rather the results do the talking for the next one.&rdquo;</b> Then stop talking.</div>
+    </div>
+
+    <div class="bigpkg rv">
+
+      <div class="seg">
+        <div class="seg-k"><i>01</i><b>What you get</b></div>
+        <div class="stk">
+          <div class="sg"><div class="sg-h"><b>The buyer campaign</b><span>$22,500</span></div>
+            <div class="sl"><div><b>The whole campaign built and run</b><p>28 ad sets across every Australian state, with targeting, budgets and daily optimisation for 90 days.</p></div><s>$10,000</s></div>
+            <div class="sl"><div><b>448 live ads, with new designs every month</b><p>64 designs across seven locations, so nobody sees the same ad twice and the account never goes stale.</p></div><s>$5,500</s></div>
+            <div class="sl"><div><b>Retargeting for everyone who hesitates</b><p>Anyone who opened the form or stopped on an ad sees Kestrel Bay again. They&rsquo;re the cheapest enquiries in any account.</p></div><s>$1,500</s></div>
+            <div class="sl"><div><b>A new release, live within five business days</b><p>If you release new suites during the quarter, their ads go live within five business days of the pack.</p></div><s>$1,500</s></div>
+            <div class="sl"><div><b>The nurture bank</b><p>Every &ldquo;just looking&rdquo; buyer kept and followed up as prices and releases change, so you never pay to find them twice.</p></div><s>$1,300</s></div>
+            <div class="sl"><div><b>The enquiry form that screens</b><p>Six questions, so your team knows the suite, budget and timing before they call.</p></div><s>$1,500</s></div>
+            <div class="sl"><div><b>Contact verification on every enquiry</b><p>A code to the mobile and the email. No code, no enquiry, so your team never rings a dead number.</p></div><s>$1,200</s></div>
+          </div>
+          <div class="sg"><div class="sg-h"><b>Your setup and sales system</b><span>$18,000</span></div>
+            <div class="sl"><div><b>Account build and onboarding</b><p>Your page, ad account, pixel and tracking set up properly, so every enquiry is measured.</p></div><s>$2,000</s></div>
+            <div class="sl"><div><b>Your 90-day plan</b><p>What runs, where and why, with every ad checked against Meta&rsquo;s property and financial rules.</p></div><s>$2,000</s></div>
+            <div class="sl"><div><b>Your CRM, set up for the campaign</b><p>Every enquiry arrives in your CRM as a lead, with all six answers, the score and the ad it came from. Your pipeline stages set to match.</p></div><s>$3,000</s></div>
+            <div class="sl"><div><b>Enquiry routing and phone alerts</b><p>Every enquiry lands in your CRM and on your sales team&rsquo;s phones the same minute.</p></div><s>$1,500</s></div>
+            <div class="sl"><div><b>Follow-ups, booking and reminders</b><p>Automated, in your name, and logged in your CRM, so nobody slips through.</p></div><s>$3,000</s></div>
+            <div class="sl"><div><b>Your Kestrel Bay pack, set up for Australians</b><p>Prices in US$ and A$, the Garden Suite and the Ocean Suite, the Owners&rsquo; Club and photos, sent on the first call.</p></div><s>$1,500</s></div>
+            <div class="sl"><div><b>Phase two: a film and landing page</b><p>Scripted, filmed and edited by us once the winning message is proven, so buyers watch first and book themselves.</p></div><s>$5,000</s></div>
+          </div>
+          <div class="sg"><div class="sg-h"><b>Sales support</b><span>$5,800</span></div>
+            <div class="sl"><div><b>Our call script</b><p>The script we use ourselves to turn an enquiry into a booked private call.</p></div><s>$1,000</s></div>
+            <div class="sl"><div><b>Training calls with your sales team</b><p>So everyone calls and books the same way.</p></div><s>$3,000</s></div>
+            <div class="sl"><div><b>A weekly review of the numbers</b><p>Twenty minutes with us, every week, deciding what to change.</p></div><s>$1,800</s></div>
+          </div>
+          <div class="sg incl"><div class="sg-h"><b>Included in the price</b><span data-live="incG">$12,000</span></div>
+            <div class="sl"><div><b>Meta ad spend for the quarter</b><p><span data-live="spendM">$4,000</span> a month for three months. We pay Meta directly, so you never see an ad invoice.</p></div><s data-live="spendQ">$12,000</s></div>
+          </div>
+        </div>
+        <div class="oworth"><span class="t">Total value</span><span class="v" data-live="stack">$58,300</span></div>
+      </div>
+
+      <div class="seg seg-guar">
+        <div class="seg-k"><i>02</i><b>What is guaranteed</b></div>
+        <div class="fsg">
+          <div class="fsg-seal"><b>1</b><span>sale</span></div>
+          <div class="fsg-t">
+            <div class="fsg-n">The First Sale Guarantee</div>
+            <div class="fsg-d"><b>A campaign buyer reserves a suite at Kestrel Bay inside your quarter. If none does, we keep working at no fee until one does.</b> It holds while your team works the programme with us.</div>
+          </div>
+          <ul class="fsg-r">
+            <li>Call new enquiries within <b>5 minutes</b>, 8am&ndash;8pm Bali time</li>
+            <li>Let your follow-ups run, and log every call</li>
+            <li>Join the <b>20-minute</b> weekly review</li>
+            <li>Send us price and availability changes the day they happen</li>
+          </ul>
+        </div>
+        <div class="gcards">
+          <div class="gc gold"><i></i><div>
+            <div class="gn">The First-Hundred Guarantee</div>
+            <div class="gd"><b>100 verified enquiries in your first 30 days.</b> Fall short and we keep running at no fee until you have them.</div>
+          </div></div>
+          <div class="gc"><i></i><div>
+            <div class="gn">Every Number Answers</div>
+            <div class="gd"><b>Every mobile and email is confirmed by code.</b> If one reaches you dead on both, we replace it free.</div>
+          </div></div>
+          <div class="gc"><i></i><div>
+            <div class="gn">The Six-Day Guarantee</div>
+            <div class="gd"><b>Your buyer campaign is live within six days of onboarding.</b> Every day we&rsquo;re late is a day added to your quarter, free.</div>
+          </div></div>
+          <div class="gc"><i></i><div>
+            <div class="gn">Keep Everything</div>
+            <div class="gd"><b>The ad account, the ads, your CRM set-up and every buyer are yours from day one.</b> If we ever part ways, it all stays with you.</div>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="seg seg-price">
+        <div class="seg-k"><i>03</i><b>Your price</b></div>
+
+        <div class="lad">
+          <div class="ld"><span>Everything above, bought separately &middot; the quarter</span><s data-live="stack">$58,300</s></div>
+          <i class="ld-ar" aria-hidden="true"></i>
+          <div class="ld"><span>Our standard fee for one campaign &middot; the quarter</span><s>$20,000</s></div>
+          <i class="ld-ar" aria-hidden="true"></i>
+          <div class="pcard">
+            <div class="pc-tag">Launch pricing</div>
+            <div class="pc-k">Your investment &middot; the quarter</div>
+            <div class="pc-sum">
+              <div class="ps"><b data-live="fee">$12,000</b><span>Our fee</span></div>
+              <i class="ps-op">+</i>
+              <div class="ps"><b data-live="spendQ">$12,000</b><span>Meta ad spend &middot; <span data-live="spendM">$4,000</span> a month &times; 3</span></div>
+              <i class="ps-eq"></i>
+              <div class="ps tot"><b data-live="price">$24,000</b><span>All in, for the quarter</span></div>
+            </div>
+            <div class="pc-term">
+              <div><b>Launch pricing, because it&rsquo;s your first quarter with us</b><span>One quarter &middot; paid on signing &middot; everything above included &middot; AUD</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

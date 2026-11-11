@@ -1,0 +1,611 @@
+
+# watch: video report
+
+- **Source:** https://www.youtube.com/watch?v=4C-2ab6rD9M
+- **Title:** I Ranked Every Ad Creative Format From Worst to Best
+- **Uploader:** Jeremy Haynes
+- **Duration:** 18:23 (1102.7s)
+- **Resolution:** 1280x720 (av1)
+- **Detail:** efficient
+- **Frames:** 18 selected from 309 candidates (keyframe, 10 near-duplicates dropped, full range, budget 18, cap 18)
+- **Frame size:** max 960px wide, max 1998px tall
+- **Transcript:** 562 segments (via captions)
+
+> **Warning:** This is a 18-minute video. Frame coverage is sparse at this length under `efficient` detail — its cap spreads thin across the full clip. For better results, re-run with `--start HH:MM:SS --end HH:MM:SS` to zoom into a section, or use `--detail token-burner` to keep every scene-change frame across the whole video.
+
+## Frames
+
+Frames live at: `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames`
+
+**Read each frame path below with the Read tool to view the image.** Frames are in chronological order; `t=MM:SS` is the absolute timestamp in the source video.
+
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0001.jpg` (t=00:00, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0019.jpg` (t=00:30, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0036.jpg` (t=01:30, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0056.jpg` (t=02:20, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0077.jpg` (t=03:23, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0095.jpg` (t=04:33, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0112.jpg` (t=05:34, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0130.jpg` (t=06:36, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0147.jpg` (t=07:33, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0166.jpg` (t=08:45, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0183.jpg` (t=10:04, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0201.jpg` (t=11:26, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0218.jpg` (t=11:58, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0236.jpg` (t=12:57, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0253.jpg` (t=14:13, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0271.jpg` (t=15:14, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0288.jpg` (t=16:32, reason=keyframe)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/frames/frame_0309.jpg` (t=18:19, reason=keyframe)
+
+## Transcript
+
+_Source: captions._
+
+```
+[00:01] Ladies and gentlemen, welcome to another video. My name's Jeremy Haynes and in
+[00:02] video. My name's Jeremy Haynes and in this one, we're going to be ranking ad
+[00:04] this one, we're going to be ranking ad creative formats from best to worst.
+[00:06] creative formats from best to worst. Some of the specific ad creatives that
+[00:08] Some of the specific ad creatives that we're going to be ranking today fall
+[00:09] we're going to be ranking today fall under the following categories: content
+[00:12] under the following categories: content ads, static images, static reels,
+[00:14] ads, static images, static reels, running a VSL as an ad, running podcasts
+[00:18] running a VSL as an ad, running podcasts as ads,
+[00:18] as ads, &gt;&gt; [music]
+[00:19] &gt;&gt; [music] &gt;&gt; the classic talking head format, UGC,
+[00:22] &gt;&gt; the classic talking head format, UGC, AI-generated creatives, [music]
+[00:24] AI-generated creatives, [music] carousels, green screen organic, meme
+[00:27] carousels, green screen organic, meme ads, testimonials, and classic
+[00:29] ads, testimonials, and classic retargeting ads. We won't talk about
+[00:31] retargeting ads. We won't talk about these in a generalized way. We'll go
+[00:32] these in a generalized way. We'll go through examples. We'll also be
+[00:34] through examples. We'll also be discussing what specifically works best
+[00:36] discussing what specifically works best to crack serious numbers. How we're
+[00:39] to crack serious numbers. How we're going to rank this list is based on what
+[00:41] going to rank this list is based on what has actually helped organizations crack
+[00:43] has actually helped organizations crack million-dollar months or that next
+[00:45] million-dollar months or that next million a month. Not every creative is
+[00:47] million a month. Not every creative is created equally. Some creatives have
+[00:49] created equally. Some creatives have very low scale ceilings, meaning when
+[00:51] very low scale ceilings, meaning when you actually go and they're working at a
+[00:53] you actually go and they're working at a low level and start to put more daily ad
+[00:55] low level and start to put more daily ad spend in it, they don't absorb it well
+[00:57] spend in it, they don't absorb it well at all. The cost starts to spin out. We
+[01:00] at all. The cost starts to spin out. We don't want that, so anything that falls
+[01:02] don't want that, so anything that falls under the S-tier or even close to the
+[01:04] under the S-tier or even close to the S-tier category is something that you
+[01:05] S-tier category is something that you should be able to put some serious spend
+[01:08] should be able to put some serious spend behind. Quick disclaimer, the odds of
+[01:10] behind. Quick disclaimer, the odds of you ever cracking million-dollar months
+[01:12] you ever cracking million-dollar months are near impossible. According to
+[01:13] are near impossible. According to research, there is a 0.1% probability
+[01:16] research, there is a 0.1% probability that you'd ever crack 10 million a year,
+[01:18] that you'd ever crack 10 million a year, let alone an even smaller probability
+[01:20] let alone an even smaller probability than that you'd ever go and crack a
+[01:21] than that you'd ever go and crack a million a month. There's an even smaller
+[01:23] million a month. There's an even smaller probability than that that you'd ever go
+[01:24] probability than that that you'd ever go and crack a couple million dollars a
+[01:25] and crack a couple million dollars a month, but nonetheless, that [music]
+[01:27] month, but nonetheless, that [music] doesn't stop us from handing down
+[01:28] doesn't stop us from handing down lessons from the people that have been
+[01:29] lessons from the people that have been there, done that in our client roster.
+[01:32] there, done that in our client roster. So, without further ado, let's start
+[01:33] So, without further ado, let's start going through these different creatives.
+[01:34] going through these different creatives. Let's get started with content ads. I
+[01:36] Let's get started with content ads. I want to be very clear on what this
+[01:37] want to be very clear on what this specifically means. There's a lot of
+[01:38] specifically means. There's a lot of people who have done well organically.
+[01:41] people who have done well organically. Let's use the example that you post a
+[01:42] Let's use the example that you post a specific Instagram reel, and that
+[01:44] specific Instagram reel, and that Instagram reel absolutely rips. It did
+[01:46] Instagram reel absolutely rips. It did well for you selling people, and you're
+[01:49] well for you selling people, and you're asking yourself, should I run this
+[01:50] asking yourself, should I run this organic piece of content as a paid ad?
+[01:53] organic piece of content as a paid ad? The answer is yeah, it makes a lot of
+[01:54] The answer is yeah, it makes a lot of sense to definitely test. But, where
+[01:56] sense to definitely test. But, where does it fall on the ranking spectrum is
+[01:58] does it fall on the ranking spectrum is the key question. And unfortunately, I
+[02:01] the key question. And unfortunately, I wouldn't rank it that high. I'd rank it
+[02:02] wouldn't rank it that high. I'd rank it a B tier of taking your existing content
+[02:05] a B tier of taking your existing content and running it as a paid ad. Content
+[02:08] and running it as a paid ad. Content typically does well organically because
+[02:11] typically does well organically because it doesn't have the little sponsored or
+[02:13] it doesn't have the little sponsored or ad format feature, especially depending
+[02:15] ad format feature, especially depending on the placement that it's running can
+[02:17] on the placement that it's running can determine effectiveness all in itself.
+[02:18] determine effectiveness all in itself. We generally see that something that
+[02:20] We generally see that something that works organically can still work on the
+[02:23] works organically can still work on the paid advertising side. We just don't see
+[02:24] paid advertising side. We just don't see it absorb a lot of spend.
+[02:27] it absorb a lot of spend. Static images. Static images undeniably
+[02:30] Static images. Static images undeniably are A tier. It depends on what images,
+[02:33] are A tier. It depends on what images, of course, you are creating. One thing
+[02:34] of course, you are creating. One thing that we've seen time and time again,
+[02:36] that we've seen time and time again, images do great, especially at scale. If
+[02:38] images do great, especially at scale. If you're trying to put some serious spend
+[02:40] you're trying to put some serious spend behind some creatives, you can ensure
+[02:43] behind some creatives, you can ensure with a very high degree of certainty
+[02:45] with a very high degree of certainty that static images will be able to take
+[02:47] that static images will be able to take that additional spend you put towards
+[02:48] that additional spend you put towards it. They typically maintain great CPMs
+[02:51] it. They typically maintain great CPMs as you push more dollars into them.
+[02:53] as you push more dollars into them. They're typically very stable. I will
+[02:55] They're typically very stable. I will say, depending on what funnel they run
+[02:57] say, depending on what funnel they run to can also determine their ranking. As
+[02:59] to can also determine their ranking. As an example, static images when you drive
+[03:02] an example, static images when you drive webinar opt-ins is an incredible funnel.
+[03:05] webinar opt-ins is an incredible funnel. If I took static images and I ran them
+[03:07] If I took static images and I ran them to a VSL call funnel on the other hand,
+[03:09] to a VSL call funnel on the other hand, yeah, you still might get really good ad
+[03:11] yeah, you still might get really good ad costs. Like your CPMs might be great,
+[03:12] costs. Like your CPMs might be great, your link click-through rate might be
+[03:13] your link click-through rate might be great, your cost per call might be
+[03:15] great, your cost per call might be great. But the downside of static images
+[03:17] great. But the downside of static images specifically in a VSL call funnel, we
+[03:19] specifically in a VSL call funnel, we typically see people come through far
+[03:21] typically see people come through far less educated cuz people don't really
+[03:23] less educated cuz people don't really consume the VSLs that much or the
+[03:25] consume the VSLs that much or the information you may have on the front
+[03:26] information you may have on the front end. And if you don't have back end
+[03:28] end. And if you don't have back end selling systems in place, you're going
+[03:29] selling systems in place, you're going to have a bad time with these. So, the
+[03:31] to have a bad time with these. So, the context of these prevents me from
+[03:33] context of these prevents me from putting them in the S tier category just
+[03:35] putting them in the S tier category just from circumstantial conditions.
+[03:37] from circumstantial conditions. Now, static reels. Static reels is
+[03:40] Now, static reels. Static reels is definitely going in the S tier category.
+[03:42] definitely going in the S tier category. Static reels, for all those that are
+[03:44] Static reels, for all those that are unfamiliar, are the specific creative
+[03:46] unfamiliar, are the specific creative format where you have some B-roll video
+[03:48] format where you have some B-roll video running in the background. You might
+[03:50] running in the background. You might have, let's say, 10 different B-roll
+[03:51] have, let's say, 10 different B-roll videos running in the back of this with
+[03:53] videos running in the back of this with cuts every few seconds, and you just
+[03:56] cuts every few seconds, and you just have text over top of it. Depending on
+[03:58] have text over top of it. Depending on how you creatively do this can determine
+[04:00] how you creatively do this can determine what specifically you get as an outcome
+[04:04] what specifically you get as an outcome when you go to scale it. So, let me give
+[04:05] when you go to scale it. So, let me give you some examples. If I go into
+[04:07] you some examples. If I go into Instagram and I navigate over to
+[04:10] Instagram and I navigate over to Instagram's in-app editor, and I take
+[04:12] Instagram's in-app editor, and I take some specific B-roll footage, and I just
+[04:15] some specific B-roll footage, and I just literally type text over it, and I make
+[04:18] literally type text over it, and I make it look like literally it was created
+[04:20] it look like literally it was created inside of the Instagram app, that's an
+[04:22] inside of the Instagram app, that's an example of something that makes it a
+[04:23] example of something that makes it a little more native feeling. However,
+[04:26] little more native feeling. However, it's very important you understand this,
+[04:27] it's very important you understand this, you can also get very creative with how
+[04:29] you can also get very creative with how you actually present the text. One of
+[04:31] you actually present the text. One of the guys who's been in our Jeremy's
+[04:32] the guys who's been in our Jeremy's Inner Circle group, his name's Brooke.
+[04:34] Inner Circle group, his name's Brooke. Brooke specifically runs static reels
+[04:35] Brooke specifically runs static reels with lifestyle flex B-roll in the
+[04:39] with lifestyle flex B-roll in the background for an e-com biz op
+[04:41] background for an e-com biz op opportunity. And to be clear, this
+[04:42] opportunity. And to be clear, this specific way he presents the text is
+[04:44] specific way he presents the text is like Star Wars. The text scrolls up from
+[04:48] like Star Wars. The text scrolls up from the bottom out through the top of the
+[04:50] the bottom out through the top of the video, and it's a very creative thing
+[04:52] video, and it's a very creative thing you don't see it that often inside of
+[04:53] you don't see it that often inside of your newsfeed or inside of whatever
+[04:54] your newsfeed or inside of whatever placement it may reach you on. It's so
+[04:56] placement it may reach you on. It's so consistent. When you're running static
+[04:58] consistent. When you're running static reels, you're ideally trying to make a
+[05:01] reels, you're ideally trying to make a point with the text, and then change the
+[05:03] point with the text, and then change the text to the next thing. The same types
+[05:05] text to the next thing. The same types of things you'd say out loud are just
+[05:07] of things you'd say out loud are just the things you write down inside of the
+[05:08] the things you write down inside of the text that goes into a static reel. VSLs.
+[05:12] text that goes into a static reel. VSLs. So, a very underutilized tactic. You can
+[05:14] So, a very underutilized tactic. You can take the literal VSL that would normally
+[05:17] take the literal VSL that would normally run on a call funnel or normally run on
+[05:18] run on a call funnel or normally run on an opt-in page or wherever you got your
+[05:20] an opt-in page or wherever you got your VSLs at, and you can choose to run it as
+[05:22] VSLs at, and you can choose to run it as an ad. Depending on the length of the
+[05:24] an ad. Depending on the length of the VSL will directly determine its success
+[05:27] VSL will directly determine its success as an actual ad. It's very important to
+[05:29] as an actual ad. It's very important to note, it's not going to rank that high
+[05:30] note, it's not going to rank that high on the list, but it does well when it
+[05:32] on the list, but it does well when it does well. Unfortunately, this doesn't
+[05:34] does well. Unfortunately, this doesn't do well all the time. Therefore, it's
+[05:36] do well all the time. Therefore, it's going to be on the C rank of the
+[05:37] going to be on the C rank of the category. Now, let me give you some pro
+[05:39] category. Now, let me give you some pro tips if you do choose to run a VSL as an
+[05:41] tips if you do choose to run a VSL as an ad, that way you can see it higher on
+[05:42] ad, that way you can see it higher on the ranking list. This VSL specifically
+[05:46] the ranking list. This VSL specifically is, let's use example, 2 to 10 minutes
+[05:48] is, let's use example, 2 to 10 minutes long, preferably 2 to 5 minutes long,
+[05:50] long, preferably 2 to 5 minutes long, it's going to crush as an ad and I would
+[05:52] it's going to crush as an ad and I would rank it realistically in the A-tier
+[05:54] rank it realistically in the A-tier format if we're talking like a 2 to 5
+[05:56] format if we're talking like a 2 to 5 minute VSL. Unfortunately, if you go
+[05:58] minute VSL. Unfortunately, if you go look at your actual VSL length, it's
+[06:00] look at your actual VSL length, it's probably not 2 to 5 minutes. It's
+[06:01] probably not 2 to 5 minutes. It's probably closer between 10 and 20
+[06:02] probably closer between 10 and 20 minutes. If that's the case, usually
+[06:05] minutes. If that's the case, usually it's in that B or C-tier category mainly
+[06:07] it's in that B or C-tier category mainly due to length, something very important
+[06:09] due to length, something very important for you to consider there. But again,
+[06:11] for you to consider there. But again, when it works, it works great. It's
+[06:12] when it works, it works great. It's definitely worth a test if you wanted to
+[06:13] definitely worth a test if you wanted to try it out and you're stuck and don't
+[06:15] try it out and you're stuck and don't have a lot of additional creatives right
+[06:17] have a lot of additional creatives right now to run with. Along that same line,
+[06:20] now to run with. Along that same line, are podcasts being run as an ad, not
+[06:22] are podcasts being run as an ad, not that effective. I'm going to place it in
+[06:24] that effective. I'm going to place it in the same category cuz unfortunately,
+[06:27] the same category cuz unfortunately, it's the exact same logic except
+[06:28] it's the exact same logic except podcasts are generally always way
+[06:30] podcasts are generally always way longer. Now, let me tell you something
+[06:32] longer. Now, let me tell you something as another pro tip. If I take key
+[06:34] as another pro tip. If I take key podcast moments and I'm able to cut out
+[06:37] podcast moments and I'm able to cut out most of the fluff and filler in between,
+[06:39] most of the fluff and filler in between, that can dramatically increase the
+[06:41] that can dramatically increase the effectiveness of ads. One thing that I
+[06:42] effectiveness of ads. One thing that I commonly say on this channel very often
+[06:44] commonly say on this channel very often as a key lesson is you have to
+[06:47] as a key lesson is you have to understand that organically when you're
+[06:48] understand that organically when you're posting content, like right here on this
+[06:50] posting content, like right here on this very channel as an example, you'll go
+[06:52] very channel as an example, you'll go through my content and you'll have many
+[06:53] through my content and you'll have many aha moments, otherwise known as
+[06:55] aha moments, otherwise known as epiphanies. And when you specifically
+[06:57] epiphanies. And when you specifically have those aha moments and those
+[06:59] have those aha moments and those epiphanies, they give you the sense that
+[07:02] epiphanies, they give you the sense that you just got a lot of value from
+[07:04] you just got a lot of value from actually spending time watching that
+[07:05] actually spending time watching that specific piece of content. And when you
+[07:08] specific piece of content. And when you specifically on the advertising side can
+[07:11] specifically on the advertising side can condense several aha moments, several
+[07:15] condense several aha moments, several epiphanies very close sequentially
+[07:18] epiphanies very close sequentially back-to-back-to-back-to-back,
+[07:20] back-to-back-to-back-to-back, your ads will have a lot more
+[07:20] your ads will have a lot more effectiveness. If you can replicate that
+[07:22] effectiveness. If you can replicate that with a VSL or podcast, the ranking goes
+[07:24] with a VSL or podcast, the ranking goes up a lot. Just due to how most people
+[07:26] up a lot. Just due to how most people run them, they'll just download the
+[07:27] run them, they'll just download the thing and plug it into the ads manager,
+[07:30] thing and plug it into the ads manager, it ranks lower as a result. Talking
+[07:31] it ranks lower as a result. Talking head,
+[07:32] head, this one's S-tier for sure. Talking head
+[07:34] this one's S-tier for sure. Talking head is an OG ad creative format that works
+[07:38] is an OG ad creative format that works so well. It's undeniable. Pull out your
+[07:41] so well. It's undeniable. Pull out your phone, film a specific video under 2
+[07:43] phone, film a specific video under 2 minutes, preferably 30 to 60 seconds,
+[07:45] minutes, preferably 30 to 60 seconds, run it as a paid ad. It's one of the
+[07:47] run it as a paid ad. It's one of the easiest formats to plug a specific ad
+[07:50] easiest formats to plug a specific ad script into, plug some jump cuts and
+[07:53] script into, plug some jump cuts and captions onto the video, throw a bunch
+[07:56] captions onto the video, throw a bunch of them into the ads manager, and you've
+[07:58] of them into the ads manager, and you've got yourself a high probability to get
+[08:00] got yourself a high probability to get some great results, no matter what the
+[08:02] some great results, no matter what the funnel is on the other side of it.
+[08:03] funnel is on the other side of it. However, one downside to it, you got to
+[08:06] However, one downside to it, you got to have some star power. You got to be
+[08:07] have some star power. You got to be charismatic, you got to have the power
+[08:09] charismatic, you got to have the power of the tongue, ladies and gentlemen. It
+[08:11] of the tongue, ladies and gentlemen. It does not work that well at all,
+[08:13] does not work that well at all, obviously, if you're terrible at
+[08:14] obviously, if you're terrible at talking. And I want to be clear when I
+[08:16] talking. And I want to be clear when I say this. The reason you want to be
+[08:17] say this. The reason you want to be aware of all these different formats
+[08:18] aware of all these different formats that we're sitting here discussing and
+[08:20] that we're sitting here discussing and where they rank, you also want to
+[08:21] where they rank, you also want to understand like what you can plug into
+[08:23] understand like what you can plug into easiest. Talking head is one of those
+[08:25] easiest. Talking head is one of those things. Static reels is one of those
+[08:26] things. Static reels is one of those things that's so simple and easy to just
+[08:28] things that's so simple and easy to just plug into. Volume matters so much when
+[08:32] plug into. Volume matters so much when you are testing ad creatives because
+[08:34] you are testing ad creatives because most people never actually run their hit
+[08:36] most people never actually run their hit rate. Your hit rate matters so much in
+[08:38] rate. Your hit rate matters so much in advertising, it's very simple to
+[08:39] advertising, it's very simple to understand. How many total ads did you
+[08:42] understand. How many total ads did you launch? How many total ads actually
+[08:44] launch? How many total ads actually worked? And by actually worked, I do not
+[08:46] worked? And by actually worked, I do not just mean had a positive ROAS spending
+[08:49] just mean had a positive ROAS spending like a hundred dollars. By worked, I
+[08:51] like a hundred dollars. By worked, I mean they got a positive ROAS, they were
+[08:53] mean they got a positive ROAS, they were consistent over a relatively broad
+[08:55] consistent over a relatively broad period of time, and you were able to put
+[08:57] period of time, and you were able to put some serious ad spend into them. If that
+[09:00] some serious ad spend into them. If that specifically happens with any creative,
+[09:02] specifically happens with any creative, you'll notice if you quantified it, it's
+[09:05] you'll notice if you quantified it, it's usually a single-digit percentage of
+[09:07] usually a single-digit percentage of total creatives you launch that ever
+[09:08] total creatives you launch that ever actually have that level of success. So,
+[09:10] actually have that level of success. So, if you knew that you had a single-digit
+[09:13] if you knew that you had a single-digit percentage of out of every ad creative
+[09:16] percentage of out of every ad creative that you ever ran to have genuine
+[09:19] that you ever ran to have genuine success at scale, you'd launch way more
+[09:21] success at scale, you'd launch way more creatives. And you wouldn't ever just
+[09:23] creatives. And you wouldn't ever just want to launch one type of creative,
+[09:26] want to launch one type of creative, you'd want to do something that you can
+[09:27] you'd want to do something that you can really churn out. So, some of these as
+[09:29] really churn out. So, some of these as an example, even if you've had success
+[09:31] an example, even if you've had success with them like I have, they rank lower
+[09:32] with them like I have, they rank lower because you're not probable to churn out
+[09:35] because you're not probable to churn out a hundred different VSLs as an ad test
+[09:37] a hundred different VSLs as an ad test to end up with less than nine that end
+[09:40] to end up with less than nine that end up being in your success hit rate
+[09:42] up being in your success hit rate category. You can absolutely churn out a
+[09:45] category. You can absolutely churn out a ton of content, a ton of image ads, a
+[09:47] ton of content, a ton of image ads, a ton of static reels, a ton of talking
+[09:49] ton of static reels, a ton of talking head. So, keep that in mind in your
+[09:50] head. So, keep that in mind in your considerations here as you sit there and
+[09:52] considerations here as you sit there and watch this.
+[09:54] watch this. UGC. UGC I'd actually rank in the B
+[09:56] UGC. UGC I'd actually rank in the B category. I want to be fair in saying
+[09:58] category. I want to be fair in saying that depending on what kind of business
+[09:59] that depending on what kind of business you got, UGC can work. A lot of people
+[10:02] you got, UGC can work. A lot of people that watch this channel guys have some
+[10:04] that watch this channel guys have some kind of high ticket product or service
+[10:06] kind of high ticket product or service based business. You have a specific
+[10:08] based business. You have a specific outcome that people are paying you to
+[10:09] outcome that people are paying you to help them produce. And as a result of
+[10:12] help them produce. And as a result of that, it's harder to get other people to
+[10:15] that, it's harder to get other people to talk about it like real human beings
+[10:17] talk about it like real human beings specifically. I'm not talking AI UGC.
+[10:19] specifically. I'm not talking AI UGC. I'm talking real human beings that you
+[10:21] I'm talking real human beings that you pay. The main reason that it's tough,
+[10:23] pay. The main reason that it's tough, they don't ever really sound that
+[10:24] they don't ever really sound that genuine. That is actually the biggest
+[10:26] genuine. That is actually the biggest drawback to UGC from what we see time
+[10:28] drawback to UGC from what we see time and time again with some kind of high
+[10:30] and time again with some kind of high ticket product or service. If you can
+[10:31] ticket product or service. If you can get somebody that's actually good and
+[10:33] get somebody that's actually good and sounds like they're being genuine in
+[10:35] sounds like they're being genuine in whatever they're sitting there selling
+[10:36] whatever they're sitting there selling to people, then it's higher on the list
+[10:38] to people, then it's higher on the list no doubt. Most people though just sound
+[10:41] no doubt. Most people though just sound and look like they're reading a script
+[10:43] and look like they're reading a script and it costs a lot compared to as an
+[10:45] and it costs a lot compared to as an example AI UGC. So, from that
+[10:47] example AI UGC. So, from that perspective it's not that high on my
+[10:49] perspective it's not that high on my list. AI generated creatives. Now, I
+[10:52] list. AI generated creatives. Now, I want to be very fair. This is a very
+[10:53] want to be very fair. This is a very broad category. Before we rank this one,
+[10:55] broad category. Before we rank this one, I just want to describe what this
+[10:56] I just want to describe what this technically means. AI UGC that can fall
+[10:58] technically means. AI UGC that can fall under this category, that deserves its
+[11:00] under this category, that deserves its own categorical ranking to be fair.
+[11:02] own categorical ranking to be fair. We've seen as an example, there's so
+[11:05] We've seen as an example, there's so many different ways to generate AI
+[11:06] many different ways to generate AI creatives. We've seen from as an example
+[11:08] creatives. We've seen from as an example Google's VO tool that they have for
+[11:10] Google's VO tool that they have for video production, Higgs field videos
+[11:13] video production, Higgs field videos where you're literally doing like full
+[11:14] where you're literally doing like full blown story formats like almost movie
+[11:17] blown story formats like almost movie trailers but for an ad creative. That
+[11:19] trailers but for an ad creative. That used to cost like hundreds of thousands
+[11:21] used to cost like hundreds of thousands of dollars to be able to actually
+[11:22] of dollars to be able to actually produce. That technically falls into the
+[11:24] produce. That technically falls into the category of AI generated ad creative. AI
+[11:27] category of AI generated ad creative. AI generated as a whole though just for the
+[11:29] generated as a whole though just for the sake of simplicity, I want to be very
+[11:31] sake of simplicity, I want to be very fair in saying I think it's a really
+[11:32] fair in saying I think it's a really close to being rated in S-tier category.
+[11:35] close to being rated in S-tier category. The downside is is that not everybody's
+[11:38] The downside is is that not everybody's great at creating them. There's still a
+[11:39] great at creating them. There's still a huge gap in being able to prompt AI
+[11:42] huge gap in being able to prompt AI tools effectively to get it to actually
+[11:45] tools effectively to get it to actually rank higher than an A-tier.
+[11:47] rank higher than an A-tier. Carousels. Carousels I'm also going to
+[11:49] Carousels. Carousels I'm also going to rank A-tier. I'm a huge fan of
+[11:50] rank A-tier. I'm a huge fan of carousels. There's so many different
+[11:51] carousels. There's so many different ways you can do carousels. You can do
+[11:53] ways you can do carousels. You can do testimonial carousels. You can do
+[11:55] testimonial carousels. You can do feature-based carousels. You could do a
+[11:57] feature-based carousels. You could do a combination where you highlight
+[11:58] combination where you highlight different pain points, objections,
+[12:00] different pain points, objections, features, and testimonials inside a
+[12:02] features, and testimonials inside a carousel. You could do as an example,
+[12:04] carousel. You could do as an example, one undeniably proven carousel format
+[12:06] one undeniably proven carousel format for ad creatives is Twitter threads,
+[12:09] for ad creatives is Twitter threads, where you literally make a tweet thread,
+[12:10] where you literally make a tweet thread, screenshot it, and then turn it into an
+[12:12] screenshot it, and then turn it into an individual carousel image per
+[12:15] individual carousel image per screenshot. Unbelievable how well it
+[12:17] screenshot. Unbelievable how well it works. It truly does. But again, not
+[12:18] works. It truly does. But again, not something that I see that commonly used
+[12:20] something that I see that commonly used and abused. It's more of an
+[12:22] and abused. It's more of an underutilized tactic. It's one of those
+[12:24] underutilized tactic. It's one of those formats that you need to think
+[12:25] formats that you need to think creatively to truly exploit. As a result
+[12:28] creatively to truly exploit. As a result of that, I keep it in the A-tier.
+[12:30] of that, I keep it in the A-tier. Okay, green screen organic. I'm going to
+[12:32] Okay, green screen organic. I'm going to rank this a B-tier. Just to be clear on
+[12:34] rank this a B-tier. Just to be clear on what this means, so we're all on the
+[12:35] what this means, so we're all on the same page vocabulary-wise. When you go
+[12:38] same page vocabulary-wise. When you go and you watch something on let's use the
+[12:41] and you watch something on let's use the example TikTok or Instagram Reels, and
+[12:43] example TikTok or Instagram Reels, and you get the opportunity to just put a
+[12:44] you get the opportunity to just put a green screen behind you without having
+[12:46] green screen behind you without having like an actual green screen, and like
+[12:47] like an actual green screen, and like there's a little floating head down in
+[12:49] there's a little floating head down in the bottom, and they're pointing at
+[12:50] the bottom, and they're pointing at different things that they're bringing
+[12:51] different things that they're bringing up that are like little images or videos
+[12:53] up that are like little images or videos in the background. Those work well.
+[12:55] in the background. Those work well. Again, I want to be fair and saying, if
+[12:56] Again, I want to be fair and saying, if you've got the creative juices to really
+[12:59] you've got the creative juices to really milk that, it's awesome. The downside
+[13:01] milk that, it's awesome. The downside is, and I talked about this a bit in the
+[13:02] is, and I talked about this a bit in the middle of this whole video, you have to
+[13:04] middle of this whole video, you have to optimize around creative volume as well.
+[13:07] optimize around creative volume as well. We find that most people just aren't
+[13:09] We find that most people just aren't putting out serious volumes of green
+[13:12] putting out serious volumes of green screen organic creative. As a result of
+[13:14] screen organic creative. As a result of that, we don't really see a huge
+[13:16] that, we don't really see a huge quantity of that specific creative
+[13:19] quantity of that specific creative surface to the top. For out of every
+[13:22] surface to the top. For out of every creative you ever run being a true
+[13:24] creative you ever run being a true winner that can absorb some serious
+[13:25] winner that can absorb some serious scale. All right, meme ads. So, meme ads
+[13:28] scale. All right, meme ads. So, meme ads are tough one to rank because again, it
+[13:30] are tough one to rank because again, it always comes down to how creative you
+[13:32] always comes down to how creative you can actually get and how much it aligns
+[13:34] can actually get and how much it aligns to your specific organic. I'd probably
+[13:35] to your specific organic. I'd probably rank it a C, to be quite honest with
+[13:37] rank it a C, to be quite honest with you. But, I have seen an occasional
+[13:40] you. But, I have seen an occasional example where somebody comes along with
+[13:41] example where somebody comes along with a very specific meme that their niche
+[13:44] a very specific meme that their niche resonates with, there's some kind of
+[13:46] resonates with, there's some kind of industry slang or something that's
+[13:47] industry slang or something that's happening in the industry that you
+[13:49] happening in the industry that you participate in. And when you use it as a
+[13:51] participate in. And when you use it as a meme, you add humor into your specific
+[13:53] meme, you add humor into your specific creative, it can drive one of the
+[13:55] creative, it can drive one of the largest link click-through rates if it
+[13:56] largest link click-through rates if it actually aligns to something that's
+[13:58] actually aligns to something that's actively happening in your industry that
+[13:59] actively happening in your industry that people find genuinely funny. However, it
+[14:01] people find genuinely funny. However, it generates a lot of curiosity clicks. It
+[14:03] generates a lot of curiosity clicks. It doesn't ever generate high intent in
+[14:06] doesn't ever generate high intent in most instances, it generates
+[14:07] most instances, it generates curiosity-based clicks. So, as a result
+[14:09] curiosity-based clicks. So, as a result of that, unfortunately, I'm going to
+[14:10] of that, unfortunately, I'm going to rank it down here inside of the C
+[14:12] rank it down here inside of the C category.
+[14:14] category. So, testimonial ads. I'm kind of jumping
+[14:16] So, testimonial ads. I'm kind of jumping between A and B here if I'm being honest
+[14:17] between A and B here if I'm being honest with you because some people have great
+[14:19] with you because some people have great testimonials. Some people have really
+[14:21] testimonials. Some people have really boring testimonials, and it depends on
+[14:22] boring testimonials, and it depends on how you capture them. As an example,
+[14:24] how you capture them. As an example, let's say you combine testimonials and
+[14:26] let's say you combine testimonials and carousels, and you just had a bunch of
+[14:27] carousels, and you just had a bunch of specific images that were short, very
+[14:30] specific images that were short, very punchy, and very direct. Dude, that
+[14:32] punchy, and very direct. Dude, that could be an S tier. But, if you take a
+[14:33] could be an S tier. But, if you take a specific testimonial and it's a long
+[14:35] specific testimonial and it's a long drawn-out video, there's no captions on
+[14:37] drawn-out video, there's no captions on it, there's no jump cuts on it, you
+[14:39] it, there's no jump cuts on it, you know, that could be a D tier
+[14:40] know, that could be a D tier comparatively cuz it's just a shitty
+[14:42] comparatively cuz it's just a shitty creative. But, I got to tell you, most
+[14:43] creative. But, I got to tell you, most people, from what I've seen, when they
+[14:45] people, from what I've seen, when they look at their testimonial ads, they do
+[14:47] look at their testimonial ads, they do well at a small scale because it's a
+[14:49] well at a small scale because it's a more bottom-of-funnel aligned ad
+[14:51] more bottom-of-funnel aligned ad creative. And when I specifically create
+[14:53] creative. And when I specifically create this list, like I told you at the
+[14:54] this list, like I told you at the beginning of all this, the lessons are
+[14:56] beginning of all this, the lessons are centric around ads that can actually
+[14:58] centric around ads that can actually absorb some serious spend and maintain
+[15:01] absorb some serious spend and maintain their performance as they scale. So,
+[15:02] their performance as they scale. So, from that perspective, I'm going to rank
+[15:03] from that perspective, I'm going to rank it a B tier. It just does not do that
+[15:05] it a B tier. It just does not do that well at that because it's a
+[15:06] well at that because it's a bottom-of-funnel creative. And then our
+[15:08] bottom-of-funnel creative. And then our final one on the list are straight-up
+[15:10] final one on the list are straight-up retargeting ads. When you run a
+[15:12] retargeting ads. When you run a retargeting ad, the context of what I'm
+[15:13] retargeting ad, the context of what I'm talking about in this specific video is
+[15:17] talking about in this specific video is you have gotten people to do something,
+[15:19] you have gotten people to do something, like they've maybe interacted with your
+[15:21] like they've maybe interacted with your social profiles, you consider them a
+[15:23] social profiles, you consider them a warm audience, you're talking to them
+[15:25] warm audience, you're talking to them like you know them, or you've even
+[15:26] like you know them, or you've even gotten bottom of funnel below that, and
+[15:28] gotten bottom of funnel below that, and you've specifically created something
+[15:30] you've specifically created something for the context of they click to the
+[15:32] for the context of they click to the page, and maybe you're doing like a very
+[15:33] page, and maybe you're doing like a very specific objection handler video, or
+[15:35] specific objection handler video, or giving them additional reasons beyond
+[15:37] giving them additional reasons beyond the first reason that got them to click
+[15:38] the first reason that got them to click in the first place. And then when you
+[15:39] in the first place. And then when you factor in what kind of list we've
+[15:41] factor in what kind of list we've created here today, we factored in what
+[15:43] created here today, we factored in what specifically
+[15:45] specifically makes the most sense to run that can
+[15:47] makes the most sense to run that can absorb the most spend and be stable when
+[15:50] absorb the most spend and be stable when you really go to scale the hell out of
+[15:51] you really go to scale the hell out of it. Retargeting ads from that
+[15:52] it. Retargeting ads from that perspective are at the C-tier category.
+[15:54] perspective are at the C-tier category. They generally require some very
+[15:56] They generally require some very specific context for why the person
+[15:59] specific context for why the person would come back and click. Obviously,
+[16:01] would come back and click. Obviously, they're not a top of funnel creative, so
+[16:02] they're not a top of funnel creative, so they're not going to rank really high on
+[16:03] they're not going to rank really high on the list, but they'll be a high ROAS
+[16:04] the list, but they'll be a high ROAS action to be fair. Just not a lot of
+[16:07] action to be fair. Just not a lot of money comes from them as a result of not
+[16:09] money comes from them as a result of not being able to put a lot of spend behind
+[16:10] being able to put a lot of spend behind it. But, a great ROAS campaign
+[16:12] it. But, a great ROAS campaign nonetheless. Out of all these specific
+[16:13] nonetheless. Out of all these specific creatives, you'll notice there's nothing
+[16:15] creatives, you'll notice there's nothing that I ranked inside of the D or the
+[16:16] that I ranked inside of the D or the F-tier category. There's not a lot of
+[16:18] F-tier category. There's not a lot of creatives that we run where I'd say,
+[16:20] creatives that we run where I'd say, "Hey, never run that. That always sucks.
+[16:23] "Hey, never run that. That always sucks. Stay away from it." It's actually very
+[16:25] Stay away from it." It's actually very surprising that that happens. I would
+[16:26] surprising that that happens. I would have thought that over a decade plus
+[16:27] have thought that over a decade plus career, there'd at least be something I
+[16:29] career, there'd at least be something I would have accumulated by now where it's
+[16:30] would have accumulated by now where it's like,
+[16:31] like, "Don't ever do that." If I were to rank
+[16:32] "Don't ever do that." If I were to rank something inside of the F-tier or the
+[16:34] something inside of the F-tier or the D-tier category, I would rank completely
+[16:37] D-tier category, I would rank completely unedited ads. Those ones generally
+[16:39] unedited ads. Those ones generally perform like So, keep all this in
+[16:41] perform like So, keep all this in mind in your considerations when you're
+[16:42] mind in your considerations when you're going to run ads and you're on your way
+[16:44] going to run ads and you're on your way to scaling your million-dollar months or
+[16:45] to scaling your million-dollar months or that next million dollars a month.
+[16:46] that next million dollars a month. Static reels and talking head the
+[16:49] Static reels and talking head the consistent undeniable winners that get
+[16:51] consistent undeniable winners that get high-quality, high-intent traffic to
+[16:53] high-quality, high-intent traffic to generally click through. I wish static
+[16:55] generally click through. I wish static images drove on call funnel specifically
+[16:58] images drove on call funnel specifically for high-ticket product and
+[16:59] for high-ticket product and service-based businesses a higher intent
+[17:01] service-based businesses a higher intent lead, but they don't, so I ranked it in
+[17:02] lead, but they don't, so I ranked it in the A-tier category. AI-generated
+[17:04] the A-tier category. AI-generated creatives, if you've got your
+[17:05] creatives, if you've got your together, undeniably could be in the
+[17:07] together, undeniably could be in the S-tier category as well. Just to give a
+[17:08] S-tier category as well. Just to give a fair shout out to that. Carousels, if
+[17:10] fair shout out to that. Carousels, if you're running them as specific creative
+[17:12] you're running them as specific creative testing, and again, you're exploiting
+[17:14] testing, and again, you're exploiting them for all their worth, but you've
+[17:15] them for all their worth, but you've individually created these with the
+[17:18] individually created these with the intent of testing them by themselves
+[17:19] intent of testing them by themselves could also arguably be S tier in terms
+[17:21] could also arguably be S tier in terms of the scale and the total spend that
+[17:22] of the scale and the total spend that they could absorb. Organic content
+[17:24] they could absorb. Organic content ranking inside of the B tier category,
+[17:26] ranking inside of the B tier category, UGC, green screen organic testimonials,
+[17:30] UGC, green screen organic testimonials, great can be awesome. Running full-blown
+[17:32] great can be awesome. Running full-blown VSLs and full-blown podcasts as ads,
+[17:35] VSLs and full-blown podcasts as ads, you're not probable to churn out a lot
+[17:36] you're not probable to churn out a lot of them, that's why they're in the C
+[17:37] of them, that's why they're in the C tier category. Memes generally get very
+[17:39] tier category. Memes generally get very low level intent, just curiosity-based
+[17:42] low level intent, just curiosity-based link clicks, but a high quantity of link
+[17:44] link clicks, but a high quantity of link clicks nonetheless. And then same thing
+[17:45] clicks nonetheless. And then same thing with retargeting ads. Keep this list top
+[17:47] with retargeting ads. Keep this list top of mind for yourself, and if you want
+[17:48] of mind for yourself, and if you want more content from this very channel, the
+[17:50] more content from this very channel, the next best video for you to go and
+[17:52] next best video for you to go and consume is a video that we have on how
+[17:55] consume is a video that we have on how to create offers that actually convert
+[17:58] to create offers that actually convert for cold traffic. If you're interested
+[18:00] for cold traffic. If you're interested in getting the most out of your ads, you
+[18:04] in getting the most out of your ads, you need to consider what offers actually
+[18:06] need to consider what offers actually make the most sense to pair with those
+[18:10] make the most sense to pair with those ads. I got a great video for you to
+[18:11] ads. I got a great video for you to check out next. I'd love for you to go
+[18:13] check out next. I'd love for you to go watch that and add on top of what you
+[18:15] watch that and add on top of what you just learned here. Subscribe to the
+[18:16] just learned here. Subscribe to the channel if you haven't done so already,
+[18:18] channel if you haven't done so already, drop us a like and a comment on what you
+[18:19] drop us a like and a comment on what you got out of this, and most importantly,
+[18:21] got out of this, and most importantly, go get richer. Talk soon.
+```
+
+---
+_Work dir: `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson` — delete when done._

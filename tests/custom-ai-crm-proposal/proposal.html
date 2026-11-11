@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b3044">
+  <title>ACT Certification Services · CRM proposal</title>
+  <link rel="stylesheet" href="proposal.css">
+  <style>
+    .tech-note{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin:0 0 34px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .tech-note span{font-size:.56rem;color:var(--blue);font-weight:700;letter-spacing:.11em}
+    .tech-note p{font-size:.74rem;color:var(--body);line-height:1.5;margin:6px 0 0}
+    .tech-note b{color:var(--ink)}
+    @media(max-width:760px){.tech-note{grid-template-columns:1fr 1fr;gap:14px;padding:17px 0}}
+  </style>
+  <script src="proposal.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="opening" id="proposal">
+      <div class="opening-inner">
+        <p class="eyebrow">A CRM built around ACT’s certification work</p>
+        <h1>One job.<br><span>One clear path</span><br>from request to assessment.</h1>
+        <div class="intro-copy">
+          <p>ACT told us a website request can land in an inbox, then be typed into BCS. After that, the proposal, documents, signing, invoice, payment check and assessment all need to move between people and systems.</p>
+          <p>We’re building one ACT workspace to hold the job, its documents, its owner and its next step. Jotform, Microsoft 365, DocuSign and Xero stay in their roles; the CRM connects the handoffs so staff can see what has happened and what needs to happen next.</p>
+        </div>
+        <div class="opening-outcome">
+          <span class="outcome-mark" aria-hidden="true">→</span>
+          <p><b>The change:</b> fewer repeated steps and a clearer view of every request, proposal and active project.</p>
+        </div>
+        <p class="draft-label">Prepared for ACT Certification Services Pty Ltd <span>·</span> Discussion draft · 29 October 2026</p>
+      </div>
+      <div class="opening-art" aria-label="Illustration of an ACT job record connecting the intake, proposal, signing, payment and assessment steps">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="job-card">
+          <div class="job-card-top"><span class="act-glyph">ACT</span><span class="pill pill-blue">PROJECT WORKSPACE</span></div>
+          <p class="job-label">ONE RECORD FOR THE WHOLE JOB</p>
+          <h2>Request → assessment</h2>
+          <div class="job-progress"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="job-next"><span class="next-dot"></span><div><small>NEXT ACTION</small><b>Review request and uploaded plans</b></div><span class="owner-tag">Assigned staff</span></div>
+          <div class="job-bottom"><span>Documents <b>attached</b></span><span>Activity <b>recorded</b></span><span>Owner <b>visible</b></span></div>
+        </div>
+        <div class="orbit-label label-intake">Jotform</div><div class="orbit-label label-sign">DocuSign</div><div class="orbit-label label-xero">Xero</div><div class="orbit-label label-calendar">Microsoft 365</div>
+      </div>
+    </section>
+
+    <section class="story section-wrap" id="today">
+      <div class="section-heading">
+        <p class="eyebrow">The problem we’re solving</p>
+        <h2>Today, the job changes hands.<br><span>The information shouldn’t have to.</span></h2>
+        <p class="lede">This is the process ACT described on the call. Each step makes sense on its own; the gaps between them create the extra work.</p>
+      </div>
+      <div class="today-flow" aria-label="Current process described by ACT">
+        <div class="flow-step"><span>01</span><b>Request arrives</b><small>Jotform sends the details by email</small></div>
+        <div class="flow-gap"><span>↘</span><small>retype</small></div>
+        <div class="flow-step"><span>02</span><b>Set up in BCS</b><small>Staff enter the request again</small></div>
+        <div class="flow-gap"><span>↘</span><small>find &amp; prepare</small></div>
+        <div class="flow-step"><span>03</span><b>Quote and documents</b><small>Check files, fees, forms and versions</small></div>
+        <div class="flow-gap"><span>↘</span><small>follow through</small></div>
+        <div class="flow-step"><span>04</span><b>Sign, invoice, assess</b><small>Keep the handoffs moving</small></div>
+      </div>
+      <div class="recognition"><span class="recognition-icon">!</span><p><b>The risk is in the handover.</b> When information sits in different places, staff have to check what was received, who has it and whether the next step has happened.</p></div>
+    </section>
+
+    <section class="journey section-wrap" id="journey">
+      <div class="section-heading">
+        <p class="eyebrow">Walk through one ACT job</p>
+        <h2>Here’s what changes<br><span>when the record carries the work.</span></h2>
+        <p class="lede">Select a step. This walkthrough shows the intended workflow, with people approving the decisions that affect fees, commitments and certification.</p>
+      </div>
+      <div class="journey-demo">
+        <div class="journey-side">
+          <p class="side-label">A REQUEST THROUGH ACT</p>
+          <div class="journey-steps" role="tablist" aria-label="ACT workflow steps">
+            <button class="journey-step is-active" type="button" role="tab" aria-selected="true" aria-controls="step-panel" data-step="0"><span>01</span><span><b>Request received</b><small>Capture the details and files</small></span><i>›</i></button>
+            <button class="journey-step" type="button" role="tab" aria-selected="false" aria-controls="step-panel" data-step="1"><span>02</span><span><b>Staff review</b><small>Assign an owner and next task</small></span><i>›</i></button>
+            <button class="journey-step" type="button" role="tab" aria-selected="false" aria-controls="step-panel" data-step="2"><span>03</span><span><b>Proposal prepared</b><small>Use approved fees and documents</small></span><i>›</i></button>
+            <button class="journey-step" type="button" role="tab" aria-selected="false" aria-controls="step-panel" data-step="3"><span>04</span><span><b>Signed and invoiced</b><small>Keep acceptance separate from payment</small></span><i>›</i></button>
+            <button class="journey-step" type="button" role="tab" aria-selected="false" aria-controls="step-panel" data-step="4"><span>05</span><span><b>Ready for assessment</b><small>Payment confirmed; work handed over</small></span><i>›</i></button>
+            <button class="journey-step" type="button" role="tab" aria-selected="false" aria-controls="step-panel" data-step="5"><span>06</span><span><b>Inspection and follow-up</b><small>Book, remind and record the result</small></span><i>›</i></button>
+          </div>
+          <p class="human-rule"><span>ACT staff stay in control</span><br>Fees, proposal content and assessment decisions are reviewed by people.</p>
+        </div>
+        <div class="demo-screen" id="step-panel" role="tabpanel" aria-live="polite" aria-labelledby="demo-heading">
+          <div class="screen-top"><div><span class="screen-logo">ACT</span><b>Certification workspace</b></div><span class="screen-state"><i></i><span id="screen-state">NEW ENQUIRY</span></span></div>
+          <div class="screen-content">
+            <div class="record-heading"><div><small id="record-kind">ENQUIRY RECORD</small><h3 id="demo-heading">A request arrives with its files.</h3></div><span class="record-ref">ACT JOB<br><b>Reference created</b></span></div>
+            <p class="screen-description" id="screen-description">The request details and submitted plans are kept with one record for staff to review.</p>
+            <div class="screen-detail-grid">
+              <div class="detail-tile"><small id="detail-label-a">FROM</small><b id="detail-value-a">Website request</b></div>
+              <div class="detail-tile"><small id="detail-label-b">FILES</small><b id="detail-value-b">Plans attached</b></div>
+              <div class="detail-tile"><small id="detail-label-c">OWNER</small><b id="detail-value-c">To be assigned</b></div>
+              <div class="detail-tile next-tile"><small>NEXT STEP</small><b id="detail-next">Review request</b></div>
+            </div>
+            <div class="screen-foot"><span class="mini-check">✓</span><p id="screen-note">A staff member checks the submission before it becomes a proposal.</p></div>
+          </div>
+          <div class="screen-controls"><button type="button" id="previous-step" aria-label="Previous workflow step">← <span>Previous</span></button><span id="step-count">STEP 1 / 6</span><button type="button" id="next-step">Next <span>→</span></button></div>
+        </div>
+      </div>
+      <p class="demo-caption"><span>WORKFLOW ILLUSTRATION</span> Shows the proposed handoffs; it is not a live ACT job or proof that every external connection has passed.</p>
+    </section>
+
+    <section class="system section-wrap" id="included">
+      <div class="section-heading">
+        <p class="eyebrow">What the system includes</p>
+        <h2>One ACT workspace.<br><span>Connected to the tools you already use.</span></h2>
+        <p class="lede">The CRM is the place to see and manage the work. Specialist systems continue to do their jobs, with clear handoffs between them.</p>
+      </div>
+      <div class="system-map">
+        <div class="system-core"><span class="core-mark">ACT</span><b>ACT CRM</b><small>One record · owner · next task · history</small></div>
+        <div class="system-connectors" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="tool-grid">
+          <article><span class="tool-icon icon-forms">F</span><div><b>Jotform</b><p>Requests and submitted files</p></div><small>INTAKE</small></article>
+          <article><span class="tool-icon icon-sign">✍</span><div><b>DocuSign</b><p>Proposal and required signatures</p></div><small>SIGNING</small></article>
+          <article><span class="tool-icon icon-xero">X</span><div><b>Xero</b><p>Invoice and verified payment status</p></div><small>FINANCE</small></article>
+          <article><span class="tool-icon icon-ms">M</span><div><b>Microsoft 365</b><p>Email, calendar and inspection booking</p></div><small>COMMUNICATION</small></article>
+          <article><span class="tool-icon icon-tasks">✓</span><div><b>ACT team</b><p>Tasks, approvals and assessment work</p></div><small>DELIVERY</small></article>
+        </div>
+      </div>
+      <div class="tech-note">
+        <div><span>THE APP</span><p><b>Vercel</b> serves the CRM website and its application routes.</p></div>
+        <div><span>THE RECORDS</span><p><b>Supabase</b> stores CRM records and supports the connected data workflows.</p></div>
+        <div><span>THE HANDOFFS</span><p><b>n8n and service APIs</b> pass approved events between the CRM and ACT’s tools.</p></div>
+        <div><span>THE AI ROLE</span><p><b>Template suggestion only.</b> ACT staff review and approve the work.</p></div>
+      </div>
+      <div class="included-grid">
+        <article><span>01</span><div><h3>Enquiries → Proposals → Projects</h3><p>Keep an enquiry visible while it’s reviewed. Convert accepted work into a project without losing the trail.</p></div></article>
+        <article><span>02</span><div><h3>Tasks and responsibility</h3><p>Give the quote review, project handover and next action a named owner. Give admins a view of workload across the team.</p></div></article>
+        <article><span>03</span><div><h3>Documents that stay with the job</h3><p>Bring in the files, identify their type, keep approved material distinct from superseded versions, and preserve manual upload.</p></div></article>
+        <article><span>04</span><div><h3>Proposal preparation with review</h3><p>Use ACT templates and approved fees to prepare a draft. Staff review the content, price, forms and signer details before anything goes out.</p></div></article>
+        <article><span>05</span><div><h3>AI can suggest the right template</h3><p>Use the request description to suggest an ACT-approved proposal template. Staff can change it. AI does not set the fee or decide whether work complies.</p></div></article>
+        <article><span>06</span><div><h3>Finance and assessment handoff</h3><p>Track signed acceptance, invoice and payment as separate events. Start assessment work only when the agreed payment condition is met.</p></div></article>
+        <article><span>07</span><div><h3>Inspection follow-through</h3><p>Work from ACT’s Microsoft calendar, record the booking, then handle confirmations, reminders and replies using ACT-approved rules.</p></div></article>
+      </div>
+    </section>
+
+    <section class="build-state section-wrap" id="progress">
+      <div class="section-heading">
+        <p class="eyebrow">Where the build is now</p>
+        <h2>This is already a working CRM build.<br><span>The full workflow still needs proving.</span></h2>
+        <p class="lede">A useful distinction for the team: several CRM screens and draft workflows exist; the end-to-end path through ACT’s real services has not all passed.</p>
+      </div>
+      <div class="state-columns">
+        <div class="state-column built"><div class="state-head"><span>IN THE CURRENT BUILD</span><b>Ready to review</b></div><ul>
+          <li>Project records, project navigation and staff task views</li>
+          <li>Proposal preparation using ACT-supplied Word templates, pricing lines, GST totals and saved revisions</li>
+          <li>Original government forms available to find and download</li>
+          <li>Appointment of Certifier property prefill and document package preparation</li>
+          <li>DocuSign sandbox draft and internal signing flow exercised with test documents</li>
+          <li>Inspection and booking screens in the CRM</li>
+          <li>Template suggestion logic evaluated locally; ACT’s selection rules and accepted examples still need sign-off</li>
+        </ul><p class="state-foot">These are build capabilities. Each has its own review and acceptance conditions.</p></div>
+        <div class="state-column prove"><div class="state-head"><span>BEFORE ACT GO-LIVE</span><b>Complete the live checks</b></div><ul>
+          <li>Real Jotform submissions and attachments arrive once, on the right enquiry</li>
+          <li>ACT DocuSign account creates, sends and returns signed documents to that record</li>
+          <li>Xero invoice and payment states match ACT’s approved fee, tax and exception rules</li>
+          <li>ACT email, calendar and SMS deliver, reply and update the correct job</li>
+          <li>Roles, document handling, errors, retries, reporting and cutover are accepted by ACT</li>
+        </ul><p class="state-foot">No client message, invoice or certificate should be sent automatically until that path is approved and tested.</p></div>
+      </div>
+    </section>
+
+    <section class="investment section-wrap" id="investment">
+      <div class="investment-head">
+        <div><p class="eyebrow">The cost of the current process</p><h2>Count the hours ACT<br><span>gets back to certification work.</span></h2></div>
+        <p>The call did not include a measured monthly cost for retyping, chasing, filing or handover. We should use ACT’s actual job volumes and staff time before claiming a dollar saving.</p>
+      </div>
+      <div class="cost-equation">
+        <div><small>WHAT TO MEASURE</small><b>Requests re-entered</b><p>Jotform → inbox → BCS</p></div><span>+</span>
+        <div><small>WHAT TO MEASURE</small><b>Follow-up time</b><p>Documents, signatures, bookings</p></div><span>+</span>
+        <div><small>WHAT TO MEASURE</small><b>Rework and delay</b><p>Missing files or unclear next owner</p></div>
+      </div>
+      <div class="investment-card">
+        <div class="investment-copy"><span class="investment-kicker">THE PROPOSED INVESTMENT</span><h3>A complete operating workflow,<br>priced as one agreed scope.</h3><p>Implementation, any ongoing support and third-party services should be shown separately. The October 9 call record doesn’t state the CRM implementation fee, so this discussion draft leaves the number open rather than inventing a price or savings claim.</p></div>
+        <div class="investment-lines"><div><span>CRM implementation</span><b>Confirm agreed amount + GST</b></div><div><span>Payment milestones</span><b>Confirm against current agreement</b></div><div><span>Ongoing hosting / services</span><b>List ACT-owned platform costs</b></div><div><span>Support after launch</span><b>Agree owner and coverage</b></div></div>
+      </div>
+    </section>
+
+    <section class="rollout section-wrap" id="rollout">
+      <div class="section-heading">
+        <p class="eyebrow">A controlled route to launch</p>
+        <h2>Finish one dependable path.<br><span>Then let the team use it.</span></h2>
+        <p class="lede">We’ll keep the existing process available until ACT has tested the CRM on representative jobs and agreed it is ready.</p>
+      </div>
+      <div class="rollout-list">
+        <article><span class="rollout-number">1</span><div><h3>Lock down ACT’s rules</h3><p>Confirm approved fees, template selection, required signers, document names, user roles, invoice types and payment exceptions.</p></div><aside>ACT + Growth AI</aside></article>
+        <article><span class="rollout-number">2</span><div><h3>Connect the real workflow</h3><p>Complete form intake and file copying, proposal review, DocuSign return, Xero invoice/payment handoff, and the Microsoft inspection calendar.</p></div><aside>Build + integration checks</aside></article>
+        <article><span class="rollout-number">3</span><div><h3>Run controlled ACT tests</h3><p>Use a labelled test job. Check a normal case and exceptions: missing information, duplicate events, unpaid invoices, rescheduling and failed connections.</p></div><aside>ACT team acceptance</aside></article>
+        <article><span class="rollout-number">4</span><div><h3>Train, approve and launch</h3><p>Agree who owns the system, confirm staff access, complete handover and decide when the CRM becomes the working record.</p></div><aside>ACT sign-off</aside></article>
+      </div>
+      <div class="roadmap-note"><b>Timing:</b> the call did not establish a reliable launch date. We’ll set dates against the confirmed scope, ACT access and the acceptance checks above.</div>
+    </section>
+
+    <section class="decision section-wrap" id="next">
+      <div class="decision-panel">
+        <p class="eyebrow">The decision to make together</p>
+        <h2>Does this match the way<br>ACT wants each job to move?</h2>
+        <p>First agree the workflow and the first release. Then attach the actual commercial terms, confirm the remaining ACT inputs and start acceptance testing against the agreed path.</p>
+        <div class="decision-checks"><span><i>✓</i> The request does not get retyped and lost between stages</span><span><i>✓</i> Staff remain responsible for prices and certification decisions</span><span><i>✓</i> The team can see the owner, files and next task</span></div>
+        <p class="decision-close">If we agree those are the right outcomes, we can finish the live checks with ACT’s team and sign off launch together.</p>
+      </div>
+      <footer><span>ACT Certification Services Pty Ltd</span><span>Prepared by Growth AI · Discussion draft · 29 October 2026</span></footer>
+    </section>
+  </main>
+</body>
+</html>

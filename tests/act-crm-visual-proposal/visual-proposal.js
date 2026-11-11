@@ -1,0 +1,50 @@
+(() => {
+  'use strict';
+  const stages = [
+    {label:'Request received',kind:'Enquiries',status:'New request',owner:'NEXT ACTION · QUOTING REVIEW',title:'Review the request and plans',description:'Jotform details and uploaded plans arrive together. Staff check the submission and assign the owner.',documents:[['Submitted plans.pdf','Received'],['Request details','Captured']],activity:['Jotform request received','Enquiry and review task created'],rule:'Staff check missing details before preparing a proposal.',benefit:'Start with the information already supplied.',copy:'The request comes into one record. The first handover no longer depends on retyping the email into another system.'},
+    {label:'Staff review',kind:'Enquiries',status:'Review in progress',owner:'NEXT ACTION · ASSIGNED QUOTER',title:'Confirm the work and fee',description:'An assigned staff member reviews the work type, fees and required forms. AI may suggest the approved template.',documents:[['Submitted plans.pdf','For review'],['ACT template suggestion','Staff to approve']],activity:['Jotform request received','Enquiry and review task created','Quoting owner assigned'],rule:'AI suggests a template. ACT staff approve the template and fee.',benefit:'Someone owns the next step.',copy:'The team can see who is preparing the quote and which inputs are still needed, without another status-check message.'},
+    {label:'Proposal prepared',kind:'Proposals',status:'Ready for staff approval',owner:'NEXT ACTION · PROPOSAL APPROVER',title:'Check the package before sending',description:'The draft uses ACT’s approved template and selected fee lines. Plans and required appointment documents stay with the record.',documents:[['Proposal · revision 1','Draft'],['Appointment documentation','Check required fields'],['Submitted plans.pdf','Linked']],activity:['Quoting owner assigned','Template and fee selected by staff','Draft proposal prepared'],rule:'Staff review content, fees, signers and form fields before sending.',benefit:'Prepare the package without rebuilding the history.',copy:'The proposal, source plans and required forms sit together. The approver can see what they are approving.'},
+    {label:'Signed & invoiced',kind:'Proposals',status:'Awaiting payment',owner:'NEXT ACTION · FINANCE',title:'Confirm the payment milestone',description:'The completed DocuSign documents return to the job. The Xero invoice and payment status remain separate from signed acceptance.',documents:[['Signed proposal.pdf','Signed'],['Appointment documentation','Signed'],['Xero invoice','Awaiting payment']],activity:['Proposal approved by staff','Signed documents returned','Invoice created · payment pending'],rule:'A signed proposal is not a paid invoice. Assessment waits for ACT’s approved payment rule.',benefit:'Know what has happened—and what has not.',copy:'Staff can distinguish an accepted proposal from a paid invoice. The job does not quietly progress on the wrong assumption.'},
+    {label:'Ready for assessment',kind:'Projects',status:'Ready for assessment',owner:'NEXT ACTION · ASSIGNED ASSESSOR',title:'Review plans and start assessment',description:'The approved payment milestone is confirmed. The assessment owner receives the job with its current documents and agreed checklist.',documents:[['Plans · approved revision','Current'],['Signed proposal.pdf','Signed'],['Xero invoice','Payment confirmed']],activity:['Signed documents returned','Payment milestone confirmed','Assessment task assigned'],rule:'ACT staff carry out assessment and make certification decisions.',benefit:'Hand over a job the assessor can actually pick up.',copy:'The assessor sees the current documents, the payment position and their task. The history travels with the work.'},
+    {label:'Inspection & follow-up',kind:'Projects',status:'Inspection booked',owner:'NEXT ACTION · INSPECTION TEAM',title:'Complete the inspection and record the outcome',description:'The retained Microsoft calendar carries the booking. Approved reminders and replies are linked to the job; changes create a staff task.',documents:[['Plans · approved revision','Current'],['Inspection checklist','Ready'],['Booking confirmation','Recorded']],activity:['Assessment task assigned','Inspection booking recorded','Approved reminder scheduled'],rule:'Rescheduling, cancellations and unclear replies go to staff. No automatic certification decision.',benefit:'The booking stays connected to the job.',copy:'Staff can see the inspection, its documents and any reply that needs attention in the same workspace.'}
+  ];
+  const $ = id => document.getElementById(id);
+  let current = 0, timer = null;
+  const steps = $('steps');
+  stages.forEach((s,i) => {
+    const b=document.createElement('button'); b.type='button';
+    const num=document.createElement('span'); num.textContent=String(i+1).padStart(2,'0');
+    b.append(num,document.createTextNode(s.label)); b.addEventListener('click',()=>{pause();render(i);}); steps.appendChild(b);
+  });
+  function pause(){clearInterval(timer);timer=null;$('play').textContent='Play walkthrough ▷';$('play').setAttribute('aria-pressed','false');}
+  function render(i){
+    current=i;const s=stages[i];
+    [...steps.children].forEach((b,j)=>{b.classList.toggle('is-active',j===i);if(j===i)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current');});
+    for(const [id,value] of Object.entries({'record-kind':s.kind,'demo-status':s.status,'next-owner':s.owner,'next-title':s.title,'next-description':s.description,'staff-rule':s.rule,'benefit-title':s.benefit,'benefit-copy':s.copy,'demo-number':String(i+1).padStart(2,'0'),'step-counter':`${i+1} / ${stages.length}`}))$(id).textContent=value;
+    $('record-progress').replaceChildren(...stages.map((_,j)=>{const el=document.createElement('span');if(j<=i)el.className='complete';return el;}));
+    $('documents').replaceChildren(...s.documents.map(([name,state])=>{const row=document.createElement('div');row.className='doc-row';const b=document.createElement('b');b.textContent=name;const span=document.createElement('span');span.textContent=state;row.append(b,span);return row;}));
+    $('activity').replaceChildren(...s.activity.map((item,j)=>{const li=document.createElement('li');const b=document.createElement('b');b.textContent=`EVENT ${j+1}`;li.append(b,document.createTextNode(item));return li;}));
+    $('prev').disabled=i===0;$('next').disabled=i===stages.length-1;
+  }
+  $('prev').addEventListener('click',()=>{pause();render(Math.max(0,current-1));});
+  $('next').addEventListener('click',()=>{pause();render(Math.min(stages.length-1,current+1));});
+  $('play').setAttribute('aria-pressed','false');
+  $('play').addEventListener('click',()=>{if(timer){pause();return;}if(current===stages.length-1)render(0);$('play').textContent='Pause walkthrough Ⅱ';$('play').setAttribute('aria-pressed','true');timer=setInterval(()=>{if(current<stages.length-1){render(current+1);if(current===stages.length-1)pause();}else pause();},6500);});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)pause();});
+  const number=id=>{const el=$(id);const n=Number(el.value);return el.value!==''&&el.validity.valid&&Number.isFinite(n)?n:null;};
+  const fmt=n=>new Intl.NumberFormat('en-AU',{maximumFractionDigits:1}).format(n);
+  function calculate(){
+    const v=number('volume'),b=number('before'),a=number('after'),r=number('hourly');
+    if([v,b,a,r].some(n=>n===null)){
+      for(const id of ['before-hours','after-hours','saved-hours','saved-value'])$(id).textContent='—';
+      $('before-bar').style.width='0%';$('after-bar').style.width='0%';$('calc-formula').textContent='Enter valid, non-negative inputs to compare the workload.';return;
+    }
+    const before=v*b/60,after=v*a/60,saved=before-after,scale=Math.max(before,after,1);
+    $('before-hours').textContent=fmt(before)+' hours';$('after-hours').textContent=fmt(after)+' hours';
+    $('before-bar').style.width=(before/scale*100)+'%';$('after-bar').style.width=(after/scale*100)+'%';
+    $('saved-hours').textContent=fmt(saved)+' h';$('saved-value').textContent=new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}).format(saved*r);
+    $('calc-formula').textContent=`${fmt(v)} requests × (${fmt(b)} − ${fmt(a)}) minutes ÷ 60 = ${fmt(saved)} hours; × A$${fmt(r)}/hour.`;
+    $('calc-note').textContent=saved<0?'These inputs show MORE handling time with the proposed workflow. Revisit the scope and assumptions.': 'Example inputs, not a measured ACT saving or delivery guarantee.';
+  }
+  ['volume','before','after','hourly'].forEach(id=>$(id).addEventListener('input',calculate));render(0);calculate();
+})();

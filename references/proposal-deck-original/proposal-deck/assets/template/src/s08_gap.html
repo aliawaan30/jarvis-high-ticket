@@ -1,0 +1,78 @@
+<section class="slide" id="gap">
+<style>
+  #gap .wrap { max-width:1180px; }
+  #gap .gq-lede { text-align:center; max-width:700px; margin:-6px auto 26px; font-size:15px; line-height:1.55; color:var(--soft); }
+  #gap .gq-lede b { color:var(--ink); font-weight:600; }
+  #gap .gq3 { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+  #gap .gq { background:var(--paper); border:1px solid var(--rule); border-radius:20px; overflow:hidden; box-shadow:var(--sh); display:flex; flex-direction:column; }
+  #gap .gq-ph { position:relative; height:150px; background:#13283A center/cover; }
+  #gap .gq-ph::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(10,22,32,.6),rgba(10,22,32,.2) 30%,rgba(10,22,32,.45) 52%,rgba(10,22,32,.88)); }
+  #gap .gq-ph span { position:absolute; left:18px; top:14px; z-index:1; font-size:9.5px; letter-spacing:.22em; text-transform:uppercase; font-weight:700; color:var(--gold-lite); }
+  #gap .gq-ph h3 { position:absolute; left:18px; right:18px; bottom:14px; z-index:1; font-family:'Playfair',serif; font-weight:500; font-size:25px; line-height:1.12; color:#FBF7F0; }
+  #gap .gq-bd { padding:16px 18px 18px; display:grid; gap:12px; flex:1; }
+  #gap .gq-r { display:grid; grid-template-columns:22px minmax(0,1fr); gap:10px; align-items:start; font-size:13.5px; line-height:1.45; color:var(--soft); }
+  #gap .gq-r i { width:22px; height:22px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-style:normal; font-size:11px; font-weight:700; }
+  #gap .gq-r.no i { border:1.5px solid #C9BFAE; color:#A0937F; }
+  #gap .gq-r.yes i { background:var(--gold-d); color:#fff; }
+  #gap .gq-r.yes { color:var(--ink); }
+  #gap .gq-r small { display:block; font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; font-weight:700; color:var(--taupe); margin-bottom:2px; }
+  #gap .gq-r.yes small { color:var(--gold-d); }
+  #gap .gq-why { margin-top:auto; padding-top:12px; border-top:1px solid var(--rule); font-size:12px; line-height:1.5; color:var(--taupe); }
+  #gap .gq-why b { color:var(--ink); font-weight:600; }
+  #gap .gq-band { margin-top:18px; display:grid; grid-template-columns:auto minmax(0,1fr); gap:22px; align-items:center; background:var(--teal); color:#FBF7F0; border-radius:20px; padding:22px 28px; box-shadow:var(--sh); }
+  #gap .gq-band h3 { font-family:'Playfair',serif; font-weight:500; font-size:26px; line-height:1.15; }
+  #gap .gq-band h3 i { color:var(--gold-lite); }
+  #gap .gq-band ul { list-style:none; margin:0; padding:0 0 0 22px; border-left:1px solid rgba(251,247,240,.18); display:grid; gap:8px; }
+  #gap .gq-band li { font-size:13.5px; line-height:1.45; color:rgba(251,247,240,.82); }
+  #gap .gq-band li b { color:#fff; font-weight:600; }
+  @media screen and (max-width:960px){ #gap .gq3 { grid-template-columns:1fr; } #gap .gq-band { grid-template-columns:1fr; } #gap .gq-band ul { border-left:0; padding-left:0; } }
+  @media print {
+    #gap .wrap { zoom:.8 !important; }
+    #gap .gq3 { grid-template-columns:repeat(3,1fr) !important; }
+    #gap .gq-band { grid-template-columns:auto 1fr !important; }
+    #gap .gq, #gap .gq-band { break-inside:avoid; box-shadow:none; }
+    #gap .gq-ph, #gap .gq-r i, #gap .gq-band { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  }
+</style>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">The opportunity &middot; 2 of 2</div>
+      <h2>Why an Australian buyer<br><em>says yes to Kestrel Bay.</em></h2>
+    </div>
+    <p class="gq-lede rv">Before an Australian sends six figures to Bali, they need three answers. <b>Most off-plan projects can give one. Kestrel Bay Resort can give all three.</b></p>
+    <div class="gq3 rv">
+      <div class="gq">
+        <div class="gq-ph" style="background-image:url(assets/ph-team-signing.jpg);background-position:50% 40%"><span>Question one</span><h3>&ldquo;Who&rsquo;s behind it?&rdquo;</h3></div>
+        <div class="gq-bd">
+          <div class="gq-r no"><i>&#10005;</i><div><small>A typical off-plan project</small>A new company, one project and a set of renders.</div></div>
+          <div class="gq-r yes"><i>&#10003;</i><div><small>Kestrel Bay Resort</small>Built by Kestrel Developments: 18 years, 600+ units delivered and 9 developments.</div></div>
+          <div class="gq-why"><b>Why it matters now:</b> ⟦a dated rule or market change that makes buyers check who they&rsquo;re dealing with &mdash; named⟧</div>
+        </div>
+      </div>
+      <div class="gq">
+        <div class="gq-ph" style="background-image:url(assets/ph-pool-2.jpg);background-position:50% 55%"><span>Question two</span><h3>&ldquo;Who runs it when I&rsquo;m home?&rdquo;</h3></div>
+        <div class="gq-bd">
+          <div class="gq-r no"><i>&#10005;</i><div><small>A typical Bali villa</small>The owner finds the manager, the cleaner and the guests.</div></div>
+          <div class="gq-r yes"><i>&#10003;</i><div><small>Kestrel Bay Resort</small>Tidewater Hospitality runs it. Its 12 venues serve close to 900,000 guests a year.</div></div>
+          <div class="gq-why"><b>Why it matters:</b> the buyer lives in Australia, so the suite has to run without them.</div>
+        </div>
+      </div>
+      <div class="gq">
+        <div class="gq-ph" style="background-image:url(assets/ph-venue-1.jpg);background-position:50% 35%"><span>Question three</span><h3>&ldquo;Will I actually use it?&rdquo;</h3></div>
+        <div class="gq-bd">
+          <div class="gq-r no"><i>&#10005;</i><div><small>A typical rental suite</small>An income on paper, and not much else.</div></div>
+          <div class="gq-r yes"><i>&#10003;</i><div><small>Kestrel Bay Resort</small>The Owners&rsquo; Club: complimentary stays, priority bookings and member rates across Tidewater venues, valued up to US$15,000.</div></div>
+          <div class="gq-why"><b>Why it matters:</b> it gives an Australian a reason to buy that isn&rsquo;t only the numbers.</div>
+        </div>
+      </div>
+    </div>
+    <div class="gq-band rv">
+      <h3>That&rsquo;s what <i>we advertise.</i></h3>
+      <ul>
+        <li><b>The ads sell those three answers,</b> not just a render, so the people who enquire already trust you.</li>
+        <li><b>Returns stay off the ads</b> and go on the call, where your team can explain them properly.</li>
+      </ul>
+    </div>
+    <div class="note"><b>Three questions, then why it matters to them</b>Open on the headline. Read the line under it. Then each card, left to right: the question, what a typical project gives, what Kestrel Bay Resort gives, and why it matters. Close on the band: <b>&ldquo;that&rsquo;s exactly what the campaign sells. And you&rsquo;ll notice there isn&rsquo;t a return figure in any of our ads &mdash; Meta rejects them, and the numbers sound better coming from your team on the call.&rdquo;</b> The &ldquo;typical&rdquo; answers are general, not any named project.</div>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+# Deploy target is this folder (site/), publish directory "."
+[build]
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Static pages, nothing to build. Members only, keep it out of search.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

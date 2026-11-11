@@ -1,0 +1,33 @@
+{
+  "title": "Kestrel Bay Resort — Launch Plan",
+  "palette": {
+    "#13283A": "#13283A",
+    "#0C1B28": "#0C1B28",
+    "#16212B": "#16212B",
+    "#B57A2E": "#B57A2E",
+    "#E2B872": "#E2B872",
+    "#9A6420": "#9A6420",
+    "#F4EFE7": "#F4EFE7",
+    "#FCFAF6": "#FCFAF6",
+    "#F3EADB": "#F3EADB"
+  },
+  "residue": [
+    "Kestrel",
+    "Tidewater",
+    "Harbour Lane",
+    "Alex Morgan",
+    "Garden Suite",
+    "Ocean Suite",
+    "Owners' Club",
+    "Owners&rsquo; Club",
+    "Sarah Mitchell",
+    "kestrelbay",
+    "harbourlane",
+    "US$165,000",
+    "US$260,000",
+    "A$240k",
+    "A$375k",
+    "900,000 guests"
+  ],
+  "_help": "title: the browser-tab and deck title. palette: template colour -> client colour (leave a pair equal to keep it). residue: words that must NOT survive in this deck — the template's example names to start with; when you port from a previous client's deck, put that client's names AND concepts here instead."
+}

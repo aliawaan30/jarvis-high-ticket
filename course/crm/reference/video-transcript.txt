@@ -1,0 +1,211 @@
+[00:00] It took me one afternoon to build this CRM for my team.
+[00:03] It tracks every creator we work with, every video they post, follow ups and way more.
+[00:07] None of this is placeholder data by the way.
+[00:09] It's synced on the database we already use and live on a real link.
+[00:13] I didn't try to single line of code and since the hosting is free, it saves me hundreds
+[00:17] every month on tools I no longer pay for.
+[00:20] I built everything just with CloudCode, starting from a free template.
+[00:24] In this video, I'll show you the full workflow to turn your data into your own CRM from
+[00:29] the very first prompt to your team logging in.
+[00:31] At the end, I'll show you the one step that stops it from looking AI-made.
+[00:35] This is the template that we are going to use.
+[00:41] It's made by Marcel Cargol, if you want to follow him on X.
+[00:45] So then click on the GitHub repo and the best part is that it's shipped with some agent
+[00:50] skills so the AI can know exactly how to edit the template to your needs and also how to
+[00:57] keep the same design rules.
+[01:00] Then just copy the link like that and of course you can find it in the video description.
+[01:05] Then you want to go to your AI coding editor.
+[01:08] In my case, I'm going to use CloudCode inside of Cursor, but if you want to use codecs
+[01:12] or even cloud desktop app, there is no problem at all.
+[01:16] You can do it.
+[01:17] I'm going to click on Open Projects, New Folder, just CRM.
+[01:23] Create.
+[01:24] Open.
+[01:25] Open.
+[01:26] CloudCode directly.
+[01:28] Close this window.
+[01:29] So for the first prompt, it's going to be very simple.
+[01:31] I just have to paste the repo link.
+[01:35] Make sure to select as well the latest cloud model.
+[01:37] In my case, it's opus 5.5.
+[01:40] Set the effort to medium.
+[01:41] It's going to be enough.
+[01:42] You don't need maximum efforts.
+[01:44] And then you want to paste your database link.
+[01:47] So cloud builds the CRM around your real data.
+[01:50] So I have a demo over here with some lead information that we can then use for the build.
+[01:57] I'm using lotion right now, but you can use any other software that allows you to collect
+[02:03] data and keep everything in one place.
+[02:05] For example, Google Sheet will work very well.
+[02:08] And then you want to go to Share and just copy the link.
+[02:12] Then back into CloudCode, paste the link just like that and briefly explain what the application
+[02:18] will be.
+[02:19] I'm building a custom CRM today.
+[02:22] I want you to take a look at the first link I sent you.
+[02:25] This is going to be the templates of the CRM tool.
+[02:29] And the second link is going to be the real data I have right now.
+[02:33] So I want you to build the CRM based on the data.
+[02:37] And if you have any questions before the build, make sure to ask me an hour.
+[02:41] So I'm using voiceOS right now to basically dictate what I say.
+[02:46] And then you can just click on enter.
+[02:48] So Cloud will be able to take a look at my notion database because I have the MCP installed.
+[02:55] If it's not the case for you, don't worry.
+[02:57] Cloud will let you know.
+[02:58] He will tell you something like I don't have access to it.
+[03:00] Can you just connect to MCP or connect to an API?
+[03:03] He will give you all the steps to do it.
+[03:05] Okay, so now we have a few questions to answer.
+[03:08] First of all, he asks us about the data.
+[03:11] We want to keep it in notion.
+[03:12] Don't want to have a pipeline board, follow up cues.
+[03:16] And that's it for the location.
+[03:19] This folder is perfect.
+[03:22] And now let's wait for a few minutes until we have the first result.
+[03:26] All right, so after 11 minutes, as you can see over here, this is when we've started.
+[03:30] And this is when we got the first result.
+[03:33] We have first version ready.
+[03:35] So let's copy the link.
+[03:36] It's opened right now with the local server.
+[03:39] And this is, by the way, on the left side, all the codes that Cloud has written for us.
+[03:43] So if you want to go into the details, you can just take a look at it and just check
+[03:48] how it works.
+[03:50] And if we open this local server in the browser, we can see that we have the full design
+[03:55] ready, which is fully consistent based on the templates.
+[03:59] And also it's using our real data.
+[04:02] So if we click on one of those, for example, this is how it will look, which is really
+[04:07] nice.
+[04:08] So we have all the right information.
+[04:10] For context, by the way, the full database that I gave Cloud is about all the creators that
+[04:16] post videos about my software's, Nimura and stage.
+[04:20] And I just wanted to have a centralized place where I can manage everything and also follow
+[04:26] the pipeline because we also reach out to creators to see if they are interested to create
+[04:31] videos about my products.
+[04:33] Yeah, the first result is pretty great.
+[04:35] We have some filters options.
+[04:37] We have a search bar as well.
+[04:39] Let's say we type for Jordan.
+[04:41] And as you can see, it works.
+[04:43] And then we have like the detailed view of the lid over here.
+[04:47] So this is great.
+[04:48] But now it's time to turn it into something that my team can use every day.
+[04:55] Now it's time to iterate and to ask for new feature.
+[04:58] So as I told you before, I run two programs.
+[05:01] I have one for Nimura and one for stage.
+[05:04] So my first feature I want to add is a workspace section where I can basically switch between
+[05:11] stage and Nimura.
+[05:12] So this is exactly the first prompt I've written over here.
+[05:16] Number two, I want to have a video stub so I can basically enter all the videos that the
+[05:21] creators are posting.
+[05:22] And I can see everything in one place.
+[05:25] And at this point, what I would recommend you to do is to basically record a demo video.
+[05:30] You can use a tool like Screen Studio or even Loom.
+[05:34] And basically go through the entire application as it is right now and ask for your team feedback.
+[05:40] For example, one of my team member, he wanted to have a new lead page with an option to import
+[05:46] from Google Sheet the leads.
+[05:48] So we can add it over here as a through the feature.
+[05:51] Add a lead page with an option to import data from Google Sheets.
+[05:55] Once you have written all the features that you want to add to your CRM, just click Enter.
+[06:00] And let's wait for the results.
+[06:02] And let me show you the result.
+[06:03] So this is the workspace switcher.
+[06:06] As you can see over here, we have Nimura program, stage programs and all programs.
+[06:11] Then we also have this new video tab over here.
+[06:14] We can click on the creator who has posted it.
+[06:17] And then we can also see the leads section with the import from Google Sheets right over
+[06:23] here, which has been added.
+[06:26] So this is great.
+[06:26] We have like a new CRM, which looks very good.
+[06:29] But this is still like a copy of my data from Notion.
+[06:33] Now we have to find a way so the data can sync both ways.
+[06:37] Essentially, each time I make an update on the application, it will reflect on my database.
+[06:42] And each time I make an update on the database, it will reflect on the application.
+[06:47] If you use Notion, you have to go to Notion.
+[06:49] That is so slash connections.
+[06:51] If you want to have a complete guide with all the two links, all the prompts I'm using
+[06:55] in this video, make sure to go through the first link in the video description and you
+[06:58] can grab the guide for completely free.
+[07:00] We'll also make sure to include some indication if you choose Not to use Notion.
+[07:05] But Google Sheets, for example, to store all the data.
+[07:08] So you can still make this work even if you are not using the same tool as I'm using
+[07:13] in this video.
+[07:17] So essentially you want to create a new connection.
+[07:20] And what you want is an API token.
+[07:23] This is something that all the tools you can use to store your data will give you access
+[07:27] to.
+[07:28] And give it a name, I will just give it a random name.
+[07:31] Then click on Create Connection and you can just copy your API token.
+[07:38] Then open a new chat and say, Hey, so now I want to have my data syncing both ways in the
+[07:44] Notion database and also the application.
+[07:47] So I've prepared the API token.
+[07:49] Where should I put it?
+[07:51] I forgot Notion over here.
+[07:53] So he understands correctly.
+[07:55] So he has created this file.
+[07:58] Just click over here and we want to paste the Notion token.
+[08:02] This is the one.
+[08:03] You want to make sure to not paste the Notion token inside the chat because of security
+[08:08] issues.
+[08:09] But instead just paste it directly inside the end of that local.
+[08:13] Then just press Command S to save it.
+[08:17] And you can close this window.
+[08:19] The sync is now made as you can see over here.
+[08:21] So we need to try it.
+[08:23] Let's add this new creator.
+[08:26] And now if we reload the page, we can see that he has been added.
+[08:31] And this matters a lot because I know that some of my team members will prefer to stay
+[08:36] on Notion or Google Sheets.
+[08:38] So I want to make sure that all the updates they make on their platform also reflect on
+[08:43] my centralized software over here.
+[08:47] Alright, so the app is great.
+[08:49] But if we are completely honest, we just basically copied a template.
+[08:53] And ask Lotco to fill in the whole copies with our own data.
+[08:57] To work, if you just want to use this tool internally, but if you have the ambition to maybe
+[09:02] sell it to users or even to businesses, then in that case, you need to do more work.
+[09:11] So the first thing I will do is to use stage to do the thinking for me before the AI
+[09:16] does the building.
+[09:18] So essentially within the application, you can run competitive research and define a
+[09:23] clear strategy of the products.
+[09:25] You can also build your own style guide based on references that you really like.
+[09:30] Also work on what we called flows, which are basically old steps that a user needs to
+[09:35] take in order to reach a specific goal, like for example, buying your product.
+[09:40] And the most interesting part is going to be choosing your design skills, but also the
+[09:44] component libraries.
+[09:45] And this is exactly where you can import the templates.
+[09:49] Then once you have made all the necessary steps, you can basically export the complete
+[09:53] project to your AI coding agent and he will have the full context.
+[09:59] And then just write readagent.md and build my product, click enter and he will go through
+[10:06] the entire context and start the build.
+[10:08] So this will make sure that you have a unique product with a unique design style, but also
+[10:13] a clear strategy in mind when you build products.
+[10:17] Step number two is going to be generating assets for your designs.
+[10:21] When I talk about design assets, it can be hero images, product photos, icon sets, illustrations,
+[10:28] mockups.
+[10:29] And this is exactly what I've done for this custom illustration over here.
+[10:33] By the way, now we even have the possibility to edit your SVG.
+[10:38] So for example, this element, I want to change the color and use my blue accent color
+[10:43] from my brand kits, then just click on save and then you can download the SVG and upload
+[10:48] it to your products.
+[10:50] By the way, this was completely generated by AI and I've then decided to add it over
+[10:55] here.
+[10:56] This part is that as it's an SVG, it means that I can basically animate whatever I want.
+[11:01] So this is why you have this subtle animations over here, but you can push it really, really
+[11:06] far.
+[11:07] And everything was generated inside the cloud because we even have an MCP.
+[11:12] So AI is very good at writing the code, but as a designer and as a product builder, you
+[11:17] need to be good at bringing the tastes.
+[11:20] And now let's get our application in front of the team without having to pay insane fees
+[11:25] for hosting.
+[11:30] And the tool I use to deploy the application is called versatile.
+[11:33] All you have to do is to create an account if you don't have one, then just ask Cloud
+[11:38] deploy my application using versatile.
+[11:42] Click enter and if you don't have versatile connected already, he will ask you all the
+[11:46] steps you need to follow in order to make it happen.
+[11:49] And you will even be able to create a sign in page just like that, where you can have
+[11:53] different team roles, where some team members will have access to specific pages.
+[11:59] And the free plan of versatile is very generous, which means that if you only have this application
+[12:04] and you don't have a crazy amount of data, then you can host it for completely free.
+[12:09] Everything I use today is in the free CRM build guide that includes every prompt, the
+[12:13] notion setup, all the two links and even a deploy checklist.
+[12:17] The link is in the video description.
+[12:19] And if you want to see how I create websites using AI without having to A.A. Slope look,
+[12:24] then take a look at this video for the full workflow.

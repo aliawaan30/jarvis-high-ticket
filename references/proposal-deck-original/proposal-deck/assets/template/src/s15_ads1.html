@@ -1,0 +1,317 @@
+<section class="slide" id="ads1">
+<style>
+  :is(#ads1,#ads2,#ads3,#ads4) .wrap { max-width:1380px; }
+  :is(#ads1,#ads2,#ads3,#ads4) .adgrid.xa-grid { grid-template-columns:repeat(5,minmax(0,1fr)); gap:14px; align-items:start; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cell { gap:7px; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-set { display:flex; align-items:center; gap:5px; font-size:8px; letter-spacing:.07em; text-transform:uppercase;
+    font-weight:700; color:var(--soft); padding:0 2px; white-space:nowrap; min-width:0; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-set i { flex:none; width:7px; height:7px; border-radius:50%; background:var(--c); box-shadow:0 0 0 2px rgba(0,0,0,.04); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-set span { overflow:hidden; text-overflow:ellipsis; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-set b { margin-left:auto; font-family:'Playfair',serif; font-size:12px; letter-spacing:0; color:var(--ink); font-weight:500; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-set b small { font-family:'Jost',sans-serif; font-size:8px; color:var(--taupe); margin-left:1px; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cell .fbt { min-height:calc(3 * 1.36em + 9px); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cell .fbt b { font-weight:600; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cell .fbl .dm { font-size:9px; letter-spacing:.02em; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cell .fbl .hl { font-size:12px; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cell .fba { margin-top:0; }
+  :is(#ads1,#ads2,#ads3,#ads4) .fbav.brav { background:#fff; }
+  :is(#ads1,#ads2,#ads3,#ads4) .fbav.brav img { object-fit:cover; transform:none; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cell .adback .wr b { font-size:11.5px; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cell .adback .wl { font-size:13px; }
+  /* the legend of ad sets */
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-legend { display:flex; flex-wrap:wrap; justify-content:center; gap:8px 18px; margin:18px auto 0; font-size:9.5px;
+    letter-spacing:.14em; text-transform:uppercase; font-weight:700; color:var(--soft); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-legend span { display:inline-flex; align-items:center; gap:7px; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-legend i { width:8px; height:8px; border-radius:50%; background:var(--c); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-legend .lw { color:var(--taupe); font-weight:600; }
+  /* the canvas every creative is drawn on */
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-fbi { container-type:inline-size; background:#13283A; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cr { overflow:hidden; color:#fff; line-height:1.2; font-family:'Jost',sans-serif; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cr * { box-sizing:border-box; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cr .xa-ph { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cr .xa-logo { display:block; height:auto; width:22cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cr .xa-wm { display:block; height:auto; width:34cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cr .xa-partner { display:block; height:auto; width:16cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cr .xa-eb { font-size:3cqw; letter-spacing:.2em; text-transform:uppercase; font-weight:700; line-height:1.3; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cr .xa-ai { position:absolute; font-size:2cqw; letter-spacing:.14em; text-transform:uppercase; font-weight:600; color:rgba(255,255,255,.72); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cr em { font-style:italic; }
+  /* the carousel */
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-car { position:relative; background:#fff; padding-bottom:10px; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-car-in { display:flex; gap:6px; overflow-x:auto; scroll-snap-type:x mandatory; padding:0 11px; scrollbar-width:none; scroll-behavior:smooth; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-car-in::-webkit-scrollbar { display:none; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cc { flex:0 0 78%; scroll-snap-align:start; border:1px solid #E4E6EB; border-radius:8px; overflow:hidden; background:#fff; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cci { position:relative; aspect-ratio:1/1; overflow:hidden; container-type:inline-size; background:#13283A; color:#fff; font-family:'Jost',sans-serif; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cci img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cci .cs { position:absolute; inset:0; background:linear-gradient(180deg,rgba(10,22,32,.55) 0%,rgba(10,22,32,0) 34%,rgba(10,22,32,.15) 55%,rgba(10,22,32,.88) 100%); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cci .cn { position:absolute; left:7cqw; top:5cqw; font-family:'Anton',sans-serif; font-size:24cqw; line-height:1; color:var(--gold-lite); letter-spacing:.01em; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cci .ct2 { position:absolute; left:7cqw; right:7cqw; bottom:7cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cci .ct2 b { display:block; font-family:'Playfair',serif; font-weight:500; font-size:10.5cqw; line-height:1.05; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cci .ct2 span { display:block; font-size:4.6cqw; line-height:1.35; margin-top:2.4cqw; color:rgba(255,255,255,.9); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cc.hook .xa-cci { background:#FBF7F0; color:#13283A; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cc.hook .cn { font-family:'Jost',sans-serif; font-size:4.6cqw; letter-spacing:.22em; text-transform:uppercase; font-weight:700; color:var(--gold-d); top:9cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cc.hook .ct2 { top:19cqw; bottom:auto; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cc.hook .ct2 b { font-size:10cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cc.hook .ct2 b em { color:var(--gold-d); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cc.hook .ct2 span { color:#5A5249; font-size:5cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cc.hook .hk-sw { position:absolute; left:7cqw; right:7cqw; bottom:7cqw; display:flex; align-items:center; justify-content:space-between;
+    font-size:4.6cqw; letter-spacing:.18em; text-transform:uppercase; font-weight:700; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cc.hook .hk-sw img { width:27cqw; height:auto; position:static; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-cc.end .cn { font-size:5cqw; font-family:'Jost',sans-serif; letter-spacing:.2em; text-transform:uppercase; font-weight:700; top:8cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-ccf { display:flex; align-items:center; gap:6px; padding:7px 9px; background:#F0F2F5; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-ccf .hl { flex:1; min-width:0; font-size:11px; font-weight:600; line-height:1.25; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-ccf .fbc { font-size:10px; padding:6px 9px; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-car .xa-prev, :is(#ads1,#ads2,#ads3,#ads4) .xa-car .xa-next { position:absolute; top:38%; width:28px; height:28px; border-radius:50%; border:0; z-index:3; cursor:pointer;
+    background:rgba(255,255,255,.95); box-shadow:0 2px 8px rgba(0,0,0,.25); font-size:18px; line-height:26px; color:#13283A; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-car .xa-prev { left:5px; } :is(#ads1,#ads2,#ads3,#ads4) .xa-car .xa-next { right:5px; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-car .xa-prev, :is(#ads1,#ads2,#ads3,#ads4) .xa-car .xa-next { transition:opacity .25s; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-car.at-start .xa-prev, :is(#ads1,#ads2,#ads3,#ads4) .xa-car.at-end .xa-next { opacity:0; pointer-events:none; }
+  @media print {
+    :is(#ads1,#ads2,#ads3,#ads4) .wrap { zoom:.86 !important; }
+    :is(#ads1,#ads2,#ads3,#ads4) .head { margin-bottom:14px !important; }
+    :is(#ads1,#ads2,#ads3,#ads4) .adgrid.xa-grid { grid-template-columns:repeat(5,minmax(0,1fr)) !important; gap:12px !important; }
+    :is(#ads1,#ads2,#ads3,#ads4) .xa-car .xa-prev, :is(#ads1,#ads2,#ads3,#ads4) .xa-car .xa-next { display:none !important; }
+    :is(#ads1,#ads2,#ads3,#ads4) .xa-car-in { overflow:hidden !important; }
+  }
+  @media screen and (max-width:1180px){ :is(#ads1,#ads2,#ads3,#ads4) .adgrid.xa-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+  @media screen and (max-width:760px){ :is(#ads1,#ads2,#ads3,#ads4) .adgrid.xa-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  @media screen and (max-width:560px){ :is(#ads1,#ads2,#ads3,#ads4) .adgrid.xa-grid { grid-template-columns:minmax(0,1fr); max-width:420px; margin:0 auto; } }
+
+  @keyframes xaZoom { from { transform:scale(1.12); } }
+  @keyframes xaUp { from { opacity:0; transform:translateY(3cqw); } }
+  @keyframes xaDrop { from { opacity:0; translate:0 -6cqw; } }
+  @keyframes xaRise { from { opacity:0; translate:0 12cqw; } }
+  @keyframes xaStamp { from { opacity:0; scale:1.8; } }
+  @keyframes xaPop { from { opacity:0; scale:.7; } }
+  @keyframes xaStrike { from { text-decoration-color:transparent; } }
+  @keyframes xaSwing { 0% { rotate:-14deg; } 45% { rotate:6deg; } 75% { rotate:-3deg; } 100% { rotate:0deg; } }
+  @keyframes xaPick { 0%,40% { background:#fff; border-color:#E2DACE; } }
+  @keyframes xaGrow { from { width:0; } }
+  @keyframes xaPrint { from { clip-path:inset(0 0 100% 0); } to { clip-path:inset(0 0 0 0); } }
+
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-mag .xa-ph { object-position:50% 62%; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-mag .m-sc { position:absolute; inset:0; background:linear-gradient(90deg,rgba(10,22,32,.72) 0%,rgba(10,22,32,.4) 48%,rgba(10,22,32,0) 72%),
+    linear-gradient(180deg,rgba(10,22,32,.82) 0%,rgba(10,22,32,.5) 24%,rgba(10,22,32,.2) 42%,rgba(10,22,32,.34) 56%,rgba(10,22,32,.94) 100%); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-mag .m-top { position:absolute; left:5cqw; right:5cqw; top:5cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-mag .m-top .xa-wm { width:62cqw; margin:0 auto; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-mag .m-iss { display:flex; justify-content:space-between; border-top:.35cqw solid rgba(255,255,255,.7); margin-top:2.6cqw; padding-top:1.4cqw;
+    font-size:2.6cqw; letter-spacing:.2em; text-transform:uppercase; font-weight:600; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-mag .m-lines { position:absolute; left:5cqw; top:29cqw; width:56cqw; display:grid; gap:2cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-mag .m-lines div { font-family:'Playfair',serif; font-size:4.3cqw; line-height:1.1; padding-left:2.4cqw; border-left:.55cqw solid var(--gold-lite);
+    text-shadow:0 .3cqw 2cqw rgba(0,0,0,.65); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-mag .m-lines small { display:block; font-family:'Jost',sans-serif; font-size:2.5cqw; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:var(--gold-lite); margin-bottom:.5cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-mag .m-cov { position:absolute; left:5cqw; right:5cqw; bottom:4.6cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-mag .m-cov .xa-eb { color:var(--gold-lite); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-mag .m-hd { font-family:'Playfair',serif; font-weight:500; font-size:7.6cqw; line-height:1.05; margin-top:1.2cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-mag .m-hd em { color:var(--gold-lite); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-mag .m-cta { display:flex; justify-content:space-between; font-size:2.8cqw; letter-spacing:.16em; text-transform:uppercase; font-weight:700; margin-top:2.6cqw;
+    padding-top:1.8cqw; border-top:.3cqw solid rgba(255,255,255,.35); }
+
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two { background:#F4EFE7; color:#13283A; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-hd { position:absolute; left:5cqw; right:5cqw; top:4.4cqw; display:flex; align-items:center; justify-content:space-between; gap:3cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-hd .xa-eb { color:var(--gold-d); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-t { position:absolute; left:5cqw; right:5cqw; top:13cqw; font-family:'Playfair',serif; font-size:6.9cqw; line-height:1; white-space:nowrap; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-t em { color:var(--gold-d); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-hd .xa-logo { width:13cqw; flex:none; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-cols { position:absolute; left:4cqw; right:4cqw; top:24cqw; bottom:4cqw; display:grid; grid-template-columns:1fr 1fr; gap:3cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-c { position:relative; border-radius:2cqw; overflow:hidden; background:#fff; box-shadow:0 1cqw 3cqw rgba(19,40,58,.14); display:flex; flex-direction:column; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-c.hi { background:#13283A; color:#FBF7F0; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-im { height:28cqw; position:relative; flex:none; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-im img { width:100%; height:100%; object-fit:cover; display:block; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-bd { padding:2.8cqw 3.2cqw 3cqw; display:flex; flex-direction:column; flex:1; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-nm { font-size:2.3cqw; letter-spacing:.12em; text-transform:uppercase; font-weight:800; color:var(--gold-d); white-space:nowrap; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .hi .w-nm { color:var(--gold-lite); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-pr { font-family:'Playfair',serif; font-size:7cqw; line-height:1; margin-top:1.4cqw; white-space:nowrap; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-pr small { font-family:'Jost',sans-serif; font-size:3.2cqw; font-weight:700; letter-spacing:.04em; margin-right:.6cqw; vertical-align:.6cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-au { font-size:3cqw; font-weight:600; margin-top:1.1cqw; color:#5A5249; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .hi .w-au { color:rgba(251,247,240,.78); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-sp { margin-top:auto; border-top:.25cqw solid rgba(19,40,58,.14); padding-top:1.8cqw; display:grid; gap:1.1cqw; font-size:2.8cqw; line-height:1.2; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .hi .w-sp { border-top-color:rgba(251,247,240,.2); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-sp div { display:flex; gap:1.4cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-sp div::before { content:''; flex:none; width:1.3cqw; height:1.3cqw; border-radius:50%; background:var(--sand); margin-top:1cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .hi .w-sp div::before { background:var(--gold-lite); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-two .w-or { position:absolute; left:50%; top:52cqw; transform:translate(-50%,-50%); width:8cqw; height:8cqw; border-radius:50%; background:var(--gold-lite); color:#13283A;
+    display:flex; align-items:center; justify-content:center; font-family:'Playfair',serif; font-style:italic; font-size:3.6cqw; z-index:2; box-shadow:0 0 0 .8cqw #F4EFE7; }
+
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints { background:radial-gradient(120% 90% at 30% 20%,#F6F0E6 0%,#E8DECE 70%,#DDD1BE 100%); color:#13283A; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .p-hd { position:absolute; left:6cqw; top:6cqw; width:62cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .p-hd .xa-eb { color:var(--gold-d); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .p-t { font-family:'Playfair',serif; font-size:8.4cqw; line-height:1.02; margin-top:1.4cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .p-t em { color:var(--gold-d); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .pol { position:absolute; background:#fff; padding:1.8cqw 1.8cqw 0; box-shadow:0 1.4cqw 3.4cqw rgba(19,40,58,.28); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .pol img { display:block; width:100%; aspect-ratio:1/1; object-fit:cover; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .pol span { display:block; font-family:'Caveat',cursive; font-weight:700; font-size:4.6cqw; line-height:1; padding:1.6cqw 0 2cqw; color:#3A3230; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .pol.a { left:4cqw; top:36.5cqw; width:34cqw; transform:rotate(-7deg); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .pol.b { left:33cqw; top:32.5cqw; width:35cqw; transform:rotate(3deg); z-index:2; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .pol.c { right:4cqw; top:38.5cqw; width:32cqw; transform:rotate(-2deg); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .p-st { position:absolute; right:5cqw; top:78.4cqw; transform:rotate(-6deg); border:.6cqw solid #13283A; color:#13283A; border-radius:1cqw;
+    padding:1.4cqw 2.2cqw 1.2cqw; font-size:2.7cqw; letter-spacing:.16em; text-transform:uppercase; font-weight:800; line-height:1.3; text-align:center; opacity:.85; z-index:3; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .p-ft { position:absolute; left:0; right:0; bottom:0; background:#13283A; color:#FBF7F0; padding:2.8cqw 5cqw; display:flex; align-items:center; justify-content:space-between; gap:2cqw; font-size:3cqw; z-index:4; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .p-ft b { color:var(--gold-lite); font-weight:700; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .p-ft .xa-wm { width:25cqw; flex:none; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-prints .p-pk { position:absolute; left:6cqw; top:85cqw; font-size:2.2cqw; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:#8C8173; z-index:3; }
+
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four { background:#FBF7F0; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-g { position:absolute; inset:0; display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:.8cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-t { position:relative; overflow:hidden; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-t img { width:100%; height:100%; object-fit:cover; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-t::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,rgba(10,22,32,.6) 0%,rgba(10,22,32,0) 42%,rgba(10,22,32,0) 58%,rgba(10,22,32,.6) 100%); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-l { position:absolute; z-index:2; text-shadow:0 .2cqw 1.6cqw rgba(0,0,0,.7); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-l b { display:block; font-family:'Playfair',serif; font-weight:500; font-size:6.2cqw; line-height:1; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-l span { display:block; font-size:2.5cqw; letter-spacing:.18em; text-transform:uppercase; font-weight:700; margin-top:1cqw; color:#fff; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-t:nth-child(1) .f-l { left:4cqw; top:4cqw; } :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-t:nth-child(2) .f-l { right:4cqw; top:4cqw; text-align:right; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-t:nth-child(3) .f-l { left:4cqw; bottom:4cqw; } :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-t:nth-child(4) .f-l { right:4cqw; bottom:4cqw; text-align:right; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-c { position:absolute; left:50%; top:50%; width:44cqw; height:44cqw; transform:translate(-50%,-50%); border-radius:50%; background:#FBF7F0; color:#13283A;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; box-shadow:0 0 0 .8cqw rgba(251,247,240,.45),0 1.6cqw 4cqw rgba(0,0,0,.35); z-index:3; padding:0 4.4cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-c small { font-size:2.4cqw; letter-spacing:.2em; text-transform:uppercase; font-weight:800; color:var(--gold-d); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-c b { font-family:'Playfair',serif; font-weight:500; font-size:5.8cqw; line-height:1.04; margin:1.2cqw 0 1.6cqw; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-c b em { color:var(--gold-d); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-four .f-c .xa-logo { width:15cqw; }
+
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-dir .xa-ph { object-position:66% 50%; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-dir .d-sc { position:absolute; inset:0; background:linear-gradient(90deg,rgba(10,22,32,.6) 0%,rgba(10,22,32,.2) 60%,rgba(10,22,32,.05) 100%); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-dir .d-pn { position:absolute; left:6cqw; top:5cqw; bottom:5cqw; width:57cqw; background:#13283A; border-radius:2.6cqw; box-shadow:0 2cqw 5cqw rgba(0,0,0,.45);
+    padding:4cqw 5cqw 4cqw; display:flex; flex-direction:column; border:.35cqw solid rgba(226,184,114,.6); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-dir .d-pn .xa-logo { width:19cqw; margin:0 auto; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-dir .d-k { text-align:center; font-size:2.3cqw; letter-spacing:.24em; text-transform:uppercase; font-weight:700; color:var(--gold-lite); margin-top:1.8cqw; padding-bottom:1.4cqw; border-bottom:.3cqw solid rgba(226,184,114,.45); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-dir ul { list-style:none; margin:.6cqw 0 0; padding:0; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-dir li { display:flex; justify-content:space-between; align-items:center; gap:2cqw; font-size:3cqw; line-height:1.2; letter-spacing:.05em; font-weight:500; padding:1.05cqw 0; border-bottom:.2cqw solid rgba(251,247,240,.12); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-dir li i { font-style:normal; color:var(--gold-lite); font-size:3.4cqw; line-height:1; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-dir .d-h { margin-top:auto; padding-top:2cqw; font-family:'Playfair',serif; font-size:5cqw; line-height:1.06; }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-dir .d-h em { color:var(--gold-lite); }
+  :is(#ads1,#ads2,#ads3,#ads4) .xa-dir .xa-ai { right:4cqw; bottom:4cqw; }
+
+  @media (prefers-reduced-motion:no-preference) {
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-mag .xa-ph { animation:xaZoom 7s ease-out var(--ad) both; }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-mag .m-lines div { animation:xaUp .6s ease calc(var(--ad) + .3s) both; }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-mag .m-lines div:nth-child(2) { animation-delay:calc(var(--ad) + .5s); } body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-mag .m-lines div:nth-child(3) { animation-delay:calc(var(--ad) + .7s); }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-two .w-c { animation:xaUp .6s ease calc(var(--ad) + .2s) both; }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-two .w-c.hi { animation-delay:calc(var(--ad) + .45s); }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-two .w-or { animation:xaPop .45s cubic-bezier(.3,1.6,.5,1) calc(var(--ad) + .9s) both; }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-prints .pol { animation:xaDrop .7s cubic-bezier(.2,.75,.2,1) both; }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-prints .pol.a { animation-delay:var(--ad); } body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-prints .pol.b { animation-delay:calc(var(--ad) + .2s); }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-prints .pol.c { animation-delay:calc(var(--ad) + .4s); }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-prints .p-st { animation:xaStamp .45s cubic-bezier(.3,1.6,.5,1) calc(var(--ad) + 1s) both; }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-four .f-c { animation:xaPop .6s cubic-bezier(.3,1.4,.5,1) calc(var(--ad) + .4s) both; }
+    body.anim :is(#ads1,#ads2,#ads3,#ads4) .xa-grid.in .xa-dir li { animation:xaUp .45s ease both; animation-delay:calc(var(--ad) + .3s); }
+  }
+</style>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">The buyer campaign&ensp;&middot;&ensp;the creative</div>
+      <h2>Angle one: <em>own a suite at Kestrel Bay.</em></h2><div class="xa-legend"><span style="--c:#B57A2E"><i></i>The Garden Suite</span><span style="--c:#13283A"><i></i>The Ocean Suite</span><span style="--c:#2F7F9A"><i></i>The Owners&rsquo; Club</span><span style="--c:#6B7F4E"><i></i>Kestrel &times; Tidewater</span><span class="lw">&middot; warm = retargeting</span></div>
+      <div class="note"><b>Say this</b>&ldquo;Everything from here is finished creative, running from your page in your name &mdash; twenty ads, no two alike, because look-alike ads bid against each other and push your costs up.&rdquo; Point at the first one: <b>&ldquo;owning a suite in Bali is what stops the scroll, so the cover leads with it and Tidewater follows.&rdquo;</b> Then the second: &ldquo;both suites, both currencies, side by side.&rdquo; Then what&rsquo;s missing, as a strength: &ldquo;no yields, no return promises &mdash; Meta rejects them, and the numbers belong on your team&rsquo;s call.&rdquo;</div>
+    </div>
+    <div class="adgrid xa-grid rv">
+<div class="adcell xa-cell k-xa-mag">
+  <div class="xa-set" style="--c:#6B7F4E"><i></i><span>Ad set &middot; Kestrel &times; Tidewater</span><b>01<small>/20</small></b></div>
+  <div class="adflip">
+  <div class="fb">
+    <div class="fbh"><div class="fbav brav"><img src="assets/brand-avatar.png" alt=""></div>
+      <div class="fbid"><div class="nm">Kestrel Bay Resort</div><div class="sp">Sponsored &middot; <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5c.9 0 2 1.9 2.3 4.2H5.7C6 4.4 7.1 2.5 8 2.5Zm-3.8 4.2H2.7A5.5 5.5 0 0 1 5.6 3a11 11 0 0 0-1.4 3.7Zm0 2.6c.2 1.4.7 2.7 1.4 3.7a5.5 5.5 0 0 1-2.9-3.7h1.5Zm1.5 0h4.6C10 11.6 8.9 13.5 8 13.5s-2-1.9-2.3-4.2Zm6.1 0h1.5a5.5 5.5 0 0 1-2.9 3.7c.7-1 1.2-2.3 1.4-3.7Zm0-2.6a11 11 0 0 0-1.4-3.7 5.5 5.5 0 0 1 2.9 3.7h-1.5Z"/></svg></div></div>
+      <div class="fbx"><svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><circle cx="4" cy="10" r="1.6"/><circle cx="10" cy="10" r="1.6"/><circle cx="16" cy="10" r="1.6"/></svg><svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></div></div>
+    <div class="fbt">Australians who holiday in Bali: <b>you can now own a suite at Kestrel Bay Resort.</b> Built by Kestrel, run by Tidewater &mdash; from US$165,000 (about A$240k). <span class="mr">&#8230; See more</span></div>
+    <div class="fbi xa-fbi"><div class="cr xa-cr xa-mag"><img class="xa-ph" src="assets/ph-hero-pool.jpg" alt=""><div class="m-sc"></div><div class="m-top"><img class="xa-wm" src="assets/brand-wordmark-light.png" alt="Kestrel Bay Resort"><div class="m-iss"><span>For Australian buyers</span><span>Bali</span></div></div><div class="m-lines"><div><small>The suites</small>From US$165,000</div><div><small>The owners</small>The Owners&rsquo; Club</div><div><small>Run by</small>Tidewater Hospitality</div></div><div class="m-cov"><div class="xa-eb">Cover story</div><div class="m-hd">Own a suite in Bali. <em>Tidewater runs it.</em></div><div class="m-cta"><span>Six questions to enquire</span><span>&rarr;</span></div></div></div></div>
+    <div class="fbl"><div class="lk"><div class="dm">Form on Facebook</div><div class="hl">Own a suite at Kestrel Bay Resort</div></div><div class="fbc">Learn more</div></div>
+    <div class="fba"><div><svg viewBox="0 0 16 16"><path d="M8 1.5 6 5H3.2A1.2 1.2 0 0 0 2 6.2v6.6A1.2 1.2 0 0 0 3.2 14h8.3c.6 0 1.1-.4 1.2-1l1.2-5.4c.2-.8-.4-1.6-1.2-1.6H9.3l.4-2.6A1.5 1.5 0 0 0 8 1.5Z"/></svg>Like</div><div><svg viewBox="0 0 16 16"><path d="M8 1.8c-3.6 0-6.5 2.4-6.5 5.4 0 1.7.9 3.2 2.4 4.2l-.6 2.3 2.5-1.3c.7.2 1.4.3 2.2.3 3.6 0 6.5-2.4 6.5-5.5S11.6 1.8 8 1.8Z"/></svg>Comment</div><div><svg viewBox="0 0 16 16"><path d="M14.5 8 8 2.5v3C4.4 5.9 2.2 8.3 1.5 12c1.6-1.9 3.7-2.8 6.5-2.8v3L14.5 8Z"/></svg>Share</div></div>
+  </div>
+  <div class="adback" aria-hidden="true">
+      <div class="wk">Why it works</div>
+      <div class="wa">Own a suite in Bali</div>
+      <div class="wl">Owning in Bali is the idea that stops the scroll, so the cover leads with it and lets the price and the operator follow.</div>
+      <div class="wr"><span>Audience</span><b>Australians who holiday in Bali</b></div><div class="wr"><span>Format</span><b>Editorial cover &middot; 1:1</b></div><div class="wr"><span>Ad set</span><b>Kestrel &times; Tidewater</b></div><div class="wr"><span>Stands apart</span><b>The only full-bleed magazine layout</b></div>
+      <button type="button" class="wback">&larr; Back to the ad</button>
+    </div>
+  </div>
+  <div class="adtag"><em>&#9679;</em>&ensp;Own a suite &middot; magazine cover<button type="button" class="whyb">Why it works &#8635;</button></div>
+</div>
+<div class="adcell xa-cell k-xa-two">
+  <div class="xa-set" style="--c:#B57A2E"><i></i><span>Ad set &middot; The Garden Suite</span><b>02<small>/20</small></b></div>
+  <div class="adflip">
+  <div class="fb">
+    <div class="fbh"><div class="fbav brav"><img src="assets/brand-avatar.png" alt=""></div>
+      <div class="fbid"><div class="nm">Kestrel Bay Resort</div><div class="sp">Sponsored &middot; <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5c.9 0 2 1.9 2.3 4.2H5.7C6 4.4 7.1 2.5 8 2.5Zm-3.8 4.2H2.7A5.5 5.5 0 0 1 5.6 3a11 11 0 0 0-1.4 3.7Zm0 2.6c.2 1.4.7 2.7 1.4 3.7a5.5 5.5 0 0 1-2.9-3.7h1.5Zm1.5 0h4.6C10 11.6 8.9 13.5 8 13.5s-2-1.9-2.3-4.2Zm6.1 0h1.5a5.5 5.5 0 0 1-2.9 3.7c.7-1 1.2-2.3 1.4-3.7Zm0-2.6a11 11 0 0 0-1.4-3.7 5.5 5.5 0 0 1 2.9 3.7h-1.5Z"/></svg></div></div>
+      <div class="fbx"><svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><circle cx="4" cy="10" r="1.6"/><circle cx="10" cy="10" r="1.6"/><circle cx="16" cy="10" r="1.6"/></svg><svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></div></div>
+    <div class="fbt">Two suites at Kestrel Bay Resort. <b>The Garden Suite from US$165,000 (about A$240k)</b>, or the Ocean Suite at US$260,000 (about A$375k). <span class="mr">&#8230; See more</span></div>
+    <div class="fbi xa-fbi"><div class="cr xa-cr xa-two"><div class="w-hd"><div class="xa-eb">The suites &middot; Kestrel Bay</div><img class="xa-logo" src="assets/brand-logo-dark.png" alt="Kestrel Bay Resort"></div><div class="w-t">Two suites. <em>Side by side.</em></div><div class="w-cols"><div class="w-c"><div class="w-im"><img src="assets/ph-suite-a.jpg" alt="" style="object-position:50% 55%"></div><div class="w-bd"><div class="w-nm">Garden Suite</div><div class="w-pr"><small>US$</small>165,000</div><div class="w-au">from about A$240k</div><div class="w-sp"><div>34 m&sup2; &middot; 1 bedroom</div><div>Garden terrace</div><div>The Owners&rsquo; Club</div></div></div></div><div class="w-c hi"><div class="w-im"><img src="assets/ph-balcony.jpg" alt="" style="object-position:62% 55%"></div><div class="w-bd"><div class="w-nm">Ocean Suite</div><div class="w-pr"><small>US$</small>260,000</div><div class="w-au">about A$375k</div><div class="w-sp"><div>52 m&sup2; &middot; 1 bedroom</div><div>Balcony with daybed</div><div>Ocean outlook</div></div></div></div></div><div class="w-or">or</div></div></div>
+    <div class="fbl"><div class="lk"><div class="dm">Form on Facebook</div><div class="hl">Compare the two suites</div></div><div class="fbc">Learn more</div></div>
+    <div class="fba"><div><svg viewBox="0 0 16 16"><path d="M8 1.5 6 5H3.2A1.2 1.2 0 0 0 2 6.2v6.6A1.2 1.2 0 0 0 3.2 14h8.3c.6 0 1.1-.4 1.2-1l1.2-5.4c.2-.8-.4-1.6-1.2-1.6H9.3l.4-2.6A1.5 1.5 0 0 0 8 1.5Z"/></svg>Like</div><div><svg viewBox="0 0 16 16"><path d="M8 1.8c-3.6 0-6.5 2.4-6.5 5.4 0 1.7.9 3.2 2.4 4.2l-.6 2.3 2.5-1.3c.7.2 1.4.3 2.2.3 3.6 0 6.5-2.4 6.5-5.5S11.6 1.8 8 1.8Z"/></svg>Comment</div><div><svg viewBox="0 0 16 16"><path d="M14.5 8 8 2.5v3C4.4 5.9 2.2 8.3 1.5 12c1.6-1.9 3.7-2.8 6.5-2.8v3L14.5 8Z"/></svg>Share</div></div>
+  </div>
+  <div class="adback" aria-hidden="true">
+      <div class="wk">Why it works</div>
+      <div class="wa">Two suites, side by side</div>
+      <div class="wl">The first question is &ldquo;which one?&rdquo;, so both prices sit side by side in both currencies.</div>
+      <div class="wr"><span>Audience</span><b>Every cold buyer in the campaign</b></div><div class="wr"><span>Format</span><b>Comparison cards &middot; 1:1</b></div><div class="wr"><span>Ad set</span><b>The Garden Suite</b></div><div class="wr"><span>Stands apart</span><b>The only side-by-side layout</b></div>
+      <button type="button" class="wback">&larr; Back to the ad</button>
+    </div>
+  </div>
+  <div class="adtag"><em>&#9679;</em>&ensp;Two suites &middot; side by side<button type="button" class="whyb">Why it works &#8635;</button></div>
+</div>
+<div class="adcell xa-cell k-xa-prints">
+  <div class="xa-set" style="--c:#13283A"><i></i><span>Ad set &middot; The Ocean Suite</span><b>03<small>/20</small></b></div>
+  <div class="adflip">
+  <div class="fb">
+    <div class="fbh"><div class="fbav brav"><img src="assets/brand-avatar.png" alt=""></div>
+      <div class="fbid"><div class="nm">Kestrel Bay Resort</div><div class="sp">Sponsored &middot; <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5c.9 0 2 1.9 2.3 4.2H5.7C6 4.4 7.1 2.5 8 2.5Zm-3.8 4.2H2.7A5.5 5.5 0 0 1 5.6 3a11 11 0 0 0-1.4 3.7Zm0 2.6c.2 1.4.7 2.7 1.4 3.7a5.5 5.5 0 0 1-2.9-3.7h1.5Zm1.5 0h4.6C10 11.6 8.9 13.5 8 13.5s-2-1.9-2.3-4.2Zm6.1 0h1.5a5.5 5.5 0 0 1-2.9 3.7c.7-1 1.2-2.3 1.4-3.7Zm0-2.6a11 11 0 0 0-1.4-3.7 5.5 5.5 0 0 1 2.9 3.7h-1.5Z"/></svg></div></div>
+      <div class="fbx"><svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><circle cx="4" cy="10" r="1.6"/><circle cx="10" cy="10" r="1.6"/><circle cx="16" cy="10" r="1.6"/></svg><svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></div></div>
+    <div class="fbt">The Ocean Suite: 52&nbsp;m&sup2;, one bedroom, a daybed on the balcony and an ocean outlook. <b>Interconnecting options for families.</b> US$260,000. <span class="mr">&#8230; See more</span></div>
+    <div class="fbi xa-fbi"><div class="cr xa-cr xa-prints"><div class="p-hd"><div class="xa-eb">The Ocean Suite</div><div class="p-t">52 m&sup2;, <em>room by room.</em></div></div><div class="p-st">Interconnecting<br>options</div><div class="pol a"><img src="assets/ph-suite-b.jpg" alt="" style="object-position:40% 55%"><span>the bedroom</span></div><div class="pol b"><img src="assets/ph-suite-b2.jpg" alt="" style="object-position:50% 55%"><span>the lounge</span></div><div class="pol c"><img src="assets/ph-view.jpg" alt="" style="object-position:50% 50%"><span>the outlook</span></div><div class="p-pk">Artist&rsquo;s impressions</div><div class="p-ft"><span>US$260,000 &middot; <b>about A$375k</b></span><img class="xa-wm" src="assets/brand-wordmark-light.png" alt="Kestrel Bay Resort"></div></div></div>
+    <div class="fbl"><div class="lk"><div class="dm">Form on Facebook</div><div class="hl">The Ocean Suite &middot; US$260,000</div></div><div class="fbc">Learn more</div></div>
+    <div class="fba"><div><svg viewBox="0 0 16 16"><path d="M8 1.5 6 5H3.2A1.2 1.2 0 0 0 2 6.2v6.6A1.2 1.2 0 0 0 3.2 14h8.3c.6 0 1.1-.4 1.2-1l1.2-5.4c.2-.8-.4-1.6-1.2-1.6H9.3l.4-2.6A1.5 1.5 0 0 0 8 1.5Z"/></svg>Like</div><div><svg viewBox="0 0 16 16"><path d="M8 1.8c-3.6 0-6.5 2.4-6.5 5.4 0 1.7.9 3.2 2.4 4.2l-.6 2.3 2.5-1.3c.7.2 1.4.3 2.2.3 3.6 0 6.5-2.4 6.5-5.5S11.6 1.8 8 1.8Z"/></svg>Comment</div><div><svg viewBox="0 0 16 16"><path d="M14.5 8 8 2.5v3C4.4 5.9 2.2 8.3 1.5 12c1.6-1.9 3.7-2.8 6.5-2.8v3L14.5 8Z"/></svg>Share</div></div>
+  </div>
+  <div class="adback" aria-hidden="true">
+      <div class="wk">Why it works</div>
+      <div class="wa">Room by room</div>
+      <div class="wl">Buyers want to see inside before they enquire, so three rooms are laid out like prints on a table.</div>
+      <div class="wr"><span>Audience</span><b>Couples and families looking at the bigger suite</b></div><div class="wr"><span>Format</span><b>Print set &middot; 1:1 &middot; artist&rsquo;s impressions</b></div><div class="wr"><span>Ad set</span><b>The Ocean Suite</b></div><div class="wr"><span>Stands apart</span><b>The only light, tactile layout</b></div>
+      <button type="button" class="wback">&larr; Back to the ad</button>
+    </div>
+  </div>
+  <div class="adtag"><em>&#9679;</em>&ensp;Ocean Suite &middot; print set<button type="button" class="whyb">Why it works &#8635;</button></div>
+</div>
+<div class="adcell xa-cell k-xa-four">
+  <div class="xa-set" style="--c:#13283A"><i></i><span>Ad set &middot; The Ocean Suite</span><b>04<small>/20</small></b></div>
+  <div class="adflip">
+  <div class="fb">
+    <div class="fbh"><div class="fbav brav"><img src="assets/brand-avatar.png" alt=""></div>
+      <div class="fbid"><div class="nm">Kestrel Bay Resort</div><div class="sp">Sponsored &middot; <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5c.9 0 2 1.9 2.3 4.2H5.7C6 4.4 7.1 2.5 8 2.5Zm-3.8 4.2H2.7A5.5 5.5 0 0 1 5.6 3a11 11 0 0 0-1.4 3.7Zm0 2.6c.2 1.4.7 2.7 1.4 3.7a5.5 5.5 0 0 1-2.9-3.7h1.5Zm1.5 0h4.6C10 11.6 8.9 13.5 8 13.5s-2-1.9-2.3-4.2Zm6.1 0h1.5a5.5 5.5 0 0 1-2.9 3.7c.7-1 1.2-2.3 1.4-3.7Zm0-2.6a11 11 0 0 0-1.4-3.7 5.5 5.5 0 0 1 2.9 3.7h-1.5Z"/></svg></div></div>
+      <div class="fbx"><svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><circle cx="4" cy="10" r="1.6"/><circle cx="10" cy="10" r="1.6"/><circle cx="16" cy="10" r="1.6"/></svg><svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></div></div>
+    <div class="fbt">Kids under 12 stay free at Kestrel Bay Resort, with their own Kids&rsquo; Club and a lagoon pool. <b>The Ocean Suite has interconnecting options.</b> <span class="mr">&#8230; See more</span></div>
+    <div class="fbi xa-fbi"><div class="cr xa-cr xa-four"><div class="f-g"><div class="f-t"><img src="assets/ph-kids.jpg" alt="" style="object-position:50% 50%"><div class="f-l"><b>Kids&rsquo; Club</b><span>On site</span></div></div><div class="f-t"><img src="assets/ph-family.jpg" alt="" style="object-position:62% 55%"><div class="f-l"><b>Lagoon</b><span>The main pool</span></div></div><div class="f-t"><img src="assets/ph-suite-day.jpg" alt="" style="object-position:50% 50%"><div class="f-l"><b>Ocean Suite</b><span>Interconnecting</span></div></div><div class="f-t"><img src="assets/ph-dining.jpg" alt="" style="object-position:40% 50%"><div class="f-l"><b>Dining</b><span>Poolside</span></div></div></div><div class="f-c"><small>For families</small><b>Kids under 12 <em>stay free.</em></b><img class="xa-logo" src="assets/brand-logo-dark.png" alt="Kestrel Bay Resort"></div></div></div>
+    <div class="fbl"><div class="lk"><div class="dm">Form on Facebook</div><div class="hl">A suite for the family holidays</div></div><div class="fbc">Learn more</div></div>
+    <div class="fba"><div><svg viewBox="0 0 16 16"><path d="M8 1.5 6 5H3.2A1.2 1.2 0 0 0 2 6.2v6.6A1.2 1.2 0 0 0 3.2 14h8.3c.6 0 1.1-.4 1.2-1l1.2-5.4c.2-.8-.4-1.6-1.2-1.6H9.3l.4-2.6A1.5 1.5 0 0 0 8 1.5Z"/></svg>Like</div><div><svg viewBox="0 0 16 16"><path d="M8 1.8c-3.6 0-6.5 2.4-6.5 5.4 0 1.7.9 3.2 2.4 4.2l-.6 2.3 2.5-1.3c.7.2 1.4.3 2.2.3 3.6 0 6.5-2.4 6.5-5.5S11.6 1.8 8 1.8Z"/></svg>Comment</div><div><svg viewBox="0 0 16 16"><path d="M14.5 8 8 2.5v3C4.4 5.9 2.2 8.3 1.5 12c1.6-1.9 3.7-2.8 6.5-2.8v3L14.5 8Z"/></svg>Share</div></div>
+  </div>
+  <div class="adback" aria-hidden="true">
+      <div class="wk">Why it works</div>
+      <div class="wa">Kids stay free</div>
+      <div class="wl">One fact in the middle and four reasons around it, so a parent sees what the kids get before the price.</div>
+      <div class="wr"><span>Audience</span><b>Parents who holiday in Bali</b></div><div class="wr"><span>Format</span><b>Four-tile grid &middot; 1:1</b></div><div class="wr"><span>Ad set</span><b>The Ocean Suite</b></div><div class="wr"><span>Stands apart</span><b>The only grid</b></div>
+      <button type="button" class="wback">&larr; Back to the ad</button>
+    </div>
+  </div>
+  <div class="adtag"><em>&#9679;</em>&ensp;Kids stay free &middot; tile grid<button type="button" class="whyb">Why it works &#8635;</button></div>
+</div>
+<div class="adcell xa-cell k-xa-dir">
+  <div class="xa-set" style="--c:#B57A2E"><i></i><span>Ad set &middot; The Garden Suite</span><b>05<small>/20</small></b></div>
+  <div class="adflip">
+  <div class="fb">
+    <div class="fbh"><div class="fbav brav"><img src="assets/brand-avatar.png" alt=""></div>
+      <div class="fbid"><div class="nm">Kestrel Bay Resort</div><div class="sp">Sponsored &middot; <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5c.9 0 2 1.9 2.3 4.2H5.7C6 4.4 7.1 2.5 8 2.5Zm-3.8 4.2H2.7A5.5 5.5 0 0 1 5.6 3a11 11 0 0 0-1.4 3.7Zm0 2.6c.2 1.4.7 2.7 1.4 3.7a5.5 5.5 0 0 1-2.9-3.7h1.5Zm1.5 0h4.6C10 11.6 8.9 13.5 8 13.5s-2-1.9-2.3-4.2Zm6.1 0h1.5a5.5 5.5 0 0 1-2.9 3.7c.7-1 1.2-2.3 1.4-3.7Zm0-2.6a11 11 0 0 0-1.4-3.7 5.5 5.5 0 0 1 2.9 3.7h-1.5Z"/></svg></div></div>
+      <div class="fbx"><svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><circle cx="4" cy="10" r="1.6"/><circle cx="10" cy="10" r="1.6"/><circle cx="16" cy="10" r="1.6"/></svg><svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></div></div>
+    <div class="fbt">Lagoon pool, adults&rsquo; pool, spa, gym, yoga deck and beach-club access &mdash; <b>all at Kestrel Bay Resort.</b> Suites from US$165,000 (about A$240k). <span class="mr">&#8230; See more</span></div>
+    <div class="fbi xa-fbi"><div class="cr xa-cr xa-dir"><img class="xa-ph" src="assets/ph-wellness.jpg" alt=""><div class="d-sc"></div><div class="d-pn"><img class="xa-logo" src="assets/brand-logo-light.png" alt="Kestrel Bay Resort"><div class="d-k">On site</div><ul><li>Lagoon pool<i>&rarr;</i></li><li>Adults&rsquo; pool<i>&rarr;</i></li><li>Kids&rsquo; club<i>&rarr;</i></li><li>Spa<i>&rarr;</i></li><li>Gym &amp; yoga deck<i>&rarr;</i></li><li>Poolside dining<i>&rarr;</i></li><li>Beach-club access<i>&rarr;</i></li></ul><div class="d-h">All at the resort. <em>Suites from US$165,000.</em></div></div><div class="xa-ai">Spa &middot; artist&rsquo;s impression</div></div></div>
+    <div class="fbl"><div class="lk"><div class="dm">Form on Facebook</div><div class="hl">Everything on site &middot; from US$165,000</div></div><div class="fbc">Learn more</div></div>
+    <div class="fba"><div><svg viewBox="0 0 16 16"><path d="M8 1.5 6 5H3.2A1.2 1.2 0 0 0 2 6.2v6.6A1.2 1.2 0 0 0 3.2 14h8.3c.6 0 1.1-.4 1.2-1l1.2-5.4c.2-.8-.4-1.6-1.2-1.6H9.3l.4-2.6A1.5 1.5 0 0 0 8 1.5Z"/></svg>Like</div><div><svg viewBox="0 0 16 16"><path d="M8 1.8c-3.6 0-6.5 2.4-6.5 5.4 0 1.7.9 3.2 2.4 4.2l-.6 2.3 2.5-1.3c.7.2 1.4.3 2.2.3 3.6 0 6.5-2.4 6.5-5.5S11.6 1.8 8 1.8Z"/></svg>Comment</div><div><svg viewBox="0 0 16 16"><path d="M14.5 8 8 2.5v3C4.4 5.9 2.2 8.3 1.5 12c1.6-1.9 3.7-2.8 6.5-2.8v3L14.5 8Z"/></svg>Share</div></div>
+  </div>
+  <div class="adback" aria-hidden="true">
+      <div class="wk">Why it works</div>
+      <div class="wa">All on site</div>
+      <div class="wl">The resort reads like a hotel sign, so the buyer sees the lifestyle before the price.</div>
+      <div class="wr"><span>Audience</span><b>Buyers who want a full resort, not just a room</b></div><div class="wr"><span>Format</span><b>Directory sign &middot; 1:1</b></div><div class="wr"><span>Ad set</span><b>The Garden Suite</b></div><div class="wr"><span>Stands apart</span><b>The only signage layout</b></div>
+      <button type="button" class="wback">&larr; Back to the ad</button>
+    </div>
+  </div>
+  <div class="adtag"><em>&#9679;</em>&ensp;All on site &middot; directory sign<button type="button" class="whyb">Why it works &#8635;</button></div>
+</div>
+    </div>
+  </div>
+</section>

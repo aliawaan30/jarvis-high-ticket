@@ -1,0 +1,58 @@
+{
+  "source": "/Users/blakestephens/Movies/LocalLoom/2026-11-05_2246.mp4",
+  "duration": "21:18",
+  "inspection": "Full local timestamped ASR transcript read; eight scene frames and eleven targeted chronological screen frames inspected. Not continuous playback.",
+  "transcription": {
+    "first_attempt": "Configured OpenAI Whisper returned insufficient quota",
+    "completed": "Cached local MLX Whisper large-v3-turbo, 306 segments, approximately 32.7 seconds; no new API credits required",
+    "file": "transcript-local.txt",
+    "caution": "ASR wording may contain transcription errors."
+  },
+  "strengths": [
+    {
+      "time": "00:39-03:19",
+      "observation": "Generic AI receptionist becomes niche-specific after-hours intake, pricing, urgent-call routing and handoff workflow for plumbing/dental examples."
+    },
+    {
+      "time": "10:39-11:38",
+      "observation": "Existing experience/access in a niche is an advantage; adapt service to that knowledge."
+    },
+    {
+      "time": "11:38-14:26",
+      "observation": "Student must understand problem, service and delivery to explain and sell simply; knowledge supports conviction."
+    },
+    {
+      "time": "14:45-16:18",
+      "observation": "Real business-owner research calls complement Jarvis desk research; repeated pain may inform an implementation."
+    },
+    {
+      "time": "18:07-21:03",
+      "observation": "Translate buyer/result/timeframe/remedy into short marketing headline and mechanism subheadline; roofing example uses five jobs."
+    }
+  ],
+  "suggested_edits_not_applied": [
+    {
+      "time": "00:00-00:19",
+      "change": "Trim recording/setup apology."
+    },
+    {
+      "time": "12:00-12:34",
+      "change": "Trim distracting war analogy; the later water analogy already explains knowing what you sell."
+    },
+    {
+      "time": "17:19-17:52",
+      "change": "Trim tab-search interruption; a private access link is briefly visible. Do not reproduce its key."
+    },
+    {
+      "time": "17:36",
+      "change": "Landing-page screen still says 30 roofing jobs while course graphic and spoken example use five. Align the shown asset before distribution."
+    }
+  ],
+  "recommended_placement": "Teaching on niche selection and shaping the offer, followed by a separate practical Jarvis run from student background to saved offer and pages.",
+  "boundaries": [
+    "No original footage edited",
+    "No course video embedded or published",
+    "No private screenshots/transcript added to shared repo or public site",
+    "Do not treat market-awareness generalisations or proposed service guarantees as externally validated facts"
+  ]
+}

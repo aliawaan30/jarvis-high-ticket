@@ -1,0 +1,238 @@
+{
+  "inspection_date": "2026-11-02",
+  "scope": "20 additional case/service entries; not 20 distinct services or independently audited wins",
+  "entries": [
+    {
+      "id": "E01",
+      "example": "Precision AI Growth / Sleep Treatment Direct, Florida.",
+      "notes": "Agency built a Meta acquisition and appointment-setting campaign for a sleep-apnea treatment business. It reports over $18,000 contracted treatment revenue after six weeks and over $30,000 by late April 2026. These are contracted figures, not demonstrated cash or profit. The page says dedicated setter; it does not establish that setter was AI. [Source](https://precisionaigrowth.com/clientresults).",
+      "source_urls": [
+        "https://precisionaigrowth.com/clientresults"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E02",
+      "example": "Precision AI Growth / Sleeping Solutions & Wellness, Detroit.",
+      "notes": "Same agency describes landing page/funnel build plus Meta and Google advertising. Claims 27 new patients in 60 days, followed by 10\u201315 additional patients per month. Supports an agency selling an acquisition system; AI's exact role and campaign costs are unstated. [Source](https://precisionaigrowth.com/clientresults).",
+      "source_urls": [
+        "https://precisionaigrowth.com/clientresults"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E03",
+      "example": "Results Grow / field-service client.",
+      "notes": "Zapier describes an agency building a ChatGPT and Tables booking chatbot for a client whose leads waited up to three days. Reports $134,000+ annual revenue improvement and 30% of appointments booked by the chatbot. Named agency and operator, unnamed end client; no independent attribution or current acquisition cost. [Source](https://zapier.com/customer-stories/results-grow).",
+      "source_urls": [
+        "https://zapier.com/customer-stories/results-grow"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E04",
+      "example": "American Standard / Regal.",
+      "notes": "Immediate response to home-remodeling enquiries, structured qualification and handoffs. Vendor reports $1.5 million in revenue from AI-led interactions in under five months. High-volume enterprise setting, not a small-contractor forecast; exact incrementality and margins unavailable. [Source](https://www.regal.ai/case-study/american-standard-o7kb3).",
+      "source_urls": [
+        "https://www.regal.ai/case-study/american-standard-o7kb3"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E05",
+      "example": "Bone Dry Roofing / Hatch.",
+      "notes": "Reports over $7 million closed from rehash and follow-up in one year, with a dedicated four-person team operating across 17 instances. Better evidence for a managed process than an autonomous bot. Large multi-state operator; no controlled counterfactual. [Source](https://www.usehatchapp.com/case-studies/bone-dry-roofing).",
+      "source_urls": [
+        "https://www.usehatchapp.com/case-studies/bone-dry-roofing"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E06",
+      "example": "Crown Roofing & Waterproofing / Hatch.",
+      "notes": "Florida contractor describes Salesforce-connected response, after-hours intake, estimate follow-up and nurture. Reports $365,000 in sales attributed to Hatch in 60 days. Attribution is not proof all revenue was incremental or collected; the vendor's 100\u00d7 ROI is not independently audited. [Source](https://www.usehatchapp.com/case-studies/crown-roofing-and-waterproofing).",
+      "source_urls": [
+        "https://www.usehatchapp.com/case-studies/crown-roofing-and-waterproofing"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E07",
+      "example": "Pella operations described in Hatch's East Coast case.",
+      "notes": "Past-customer recontact, quote nurture and rep-specific boards. Operator reports over 30% annual growth without extra scheduling/coordinating headcount and a six-figure whole-house sale from a recontacted buyer. The page describes a seven-state operation and a Richmond-based COO; do not claim this is all national Pella activity or AI alone caused growth. Long-running platform relationship, not evidence every historical action used present-day AI. [Source](https://www.usehatchapp.com/case-studies/pella).",
+      "source_urls": [
+        "https://www.usehatchapp.com/case-studies/pella"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E08",
+      "example": "Anonymous Indiana roofing contractor / Hatch.",
+      "notes": "Consolidated 8\u201310 lead sources, integrated AccuLynx, and added qualification and rehash. Reports about $100,000 booked from rehash in one month. Appointments rose 400\u2192700, which is 75%, despite the page's \u201cdoubled\u201d headline. Unnamed company, changed first names, multi-channel activity; weaker identification than Bone Dry. [Source](https://www.usehatchapp.com/case-studies/indiana-roofing-company).",
+      "source_urls": [
+        "https://www.usehatchapp.com/case-studies/indiana-roofing-company"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E09",
+      "example": "Peaden / Hatch.",
+      "notes": "Florida HVAC, plumbing and electrical business integrated voice AI with ServiceTitan, supplemented by recontact and slow-season campaigns. Reports nearly triple conversion on after-hours/overflow calls and 3,600 calls handled monthly. Large existing operation; \u201crevenue influenced\u201d is not new cash caused solely by AI. [Source](https://www.usehatchapp.com/case-studies/peaden-voice).",
+      "source_urls": [
+        "https://www.usehatchapp.com/case-studies/peaden-voice"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E10",
+      "example": "Clancy Relocation & Logistics / Regal.",
+      "notes": "Replaced an inconsistent outsourced after-hours answering service with AI qualification and structured follow-ups. Reports 96% faster answer time. Strong example of replacing existing paid work; not an audited revenue-lift result. [Source](https://www.regal.ai/case-study/clancy-relocation-logistics).",
+      "source_urls": [
+        "https://www.regal.ai/case-study/clancy-relocation-logistics"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E11",
+      "example": "5 Star Dentists Sugar Land/Telfair / RevenueWell.",
+      "notes": "Current vendor page contains a named treatment-coordinator account of AI collecting missing patient information; platform also offers PMS-connected scheduling. The site's estimated appointment revenue is not case-specific collected cash. Health-data and appointment integration requirements make this more demanding than generic call forwarding. [Source](https://www.revenuewell.com/dental-ai-receptionist).",
+      "source_urls": [
+        "https://www.revenuewell.com/dental-ai-receptionist"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E12",
+      "example": "Conversica's Fill Your Service Bay program.",
+      "notes": "Explicit automotive offer: connect DMS, re-engage unscheduled customers, follow up declined work and support recurring service booking. Includes onboarding, strategy and ongoing performance work. Current offered program, not a named-customer outcome case. Its October 20 cohort reference is stale on the inspection date. [Source](https://www.conversica.com/fill-your-service-bay-program).",
+      "source_urls": [
+        "https://www.conversica.com/fill-your-service-bay-program"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E13",
+      "example": "Open Late Collective.",
+      "notes": "Named agency and its own service site corroborate vendor partnership. Gorgias reports one merchant reached 30\u201340% automation in 30 days; ongoing work includes dedicated ownership, QA and weekly refinement. Own site lists Chicago address and public service pricing. Anonymous AI merchant and varying four-month/six-month \u201ctwo agents\u201d timing mean do not turn that into a fixed promise. [Partner case](https://www.gorgias.com/partner-stories/open-late-collective), [agency service site](https://openlatecollective.com/).",
+      "source_urls": [
+        "https://www.gorgias.com/partner-stories/open-late-collective",
+        "https://openlatecollective.com/"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E14",
+      "example": "Avenue Z / Gorgias.",
+      "notes": "US agency configures conversational support as part of ecommerce growth work. Reports up to 60% tickets resolved with AI and 65% agent time released; customer base is primarily US, generally $25 million+ revenue. Evidence of agency-mediated implementation, not a novice benchmark or automatically avoided payroll. [Source](https://www.gorgias.com/partner-stories/avenue-z).",
+      "source_urls": [
+        "https://www.gorgias.com/partner-stories/avenue-z"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E15",
+      "example": "Retailogists / Gorgias.",
+      "notes": "Agency with Montreal/New York presence says it onboarded 15+ ecommerce brands; a client achieved 29% chat conversion during BFCM. Support actions and product recommendations integrated with Shopify. North American/European mix; individual result not identified as US-only or generalizable. [Source](https://www.gorgias.com/partner-stories/retailogists).",
+      "source_urls": [
+        "https://www.gorgias.com/partner-stories/retailogists"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E16",
+      "example": "Pepper / Gorgias.",
+      "notes": "Named brand implements support plus shopping assistance; reports 54% average automation, 19% conversion among AI-assisted sales conversations and 18% higher AOV. These are not a 19% site-wide lift or a randomized causal result. Large brand; ticket volume drives fit. [Source](https://www.gorgias.com/customers/pepper).",
+      "source_urls": [
+        "https://www.gorgias.com/customers/pepper"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E17",
+      "example": "Free Agency / Hatch.",
+      "notes": "Fractional CMO service for trades, with named clients and Hatch deployment across its accounts. Reports $70 million in client revenue influenced/passed through Hatch over 12 months\u2014not $70 million incremental AI-generated revenue or agency revenue. Their own site confirms service + software, marketing leadership and revenue reporting. This is a mature operating model, not a weekend beginner build. [Case](https://www.usehatchapp.com/case-studies/free-agency), [agency site](https://freeagency.ai/).",
+      "source_urls": [
+        "https://www.usehatchapp.com/case-studies/free-agency",
+        "https://freeagency.ai/"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E18",
+      "example": "Aprende Institute / Regal.",
+      "notes": "US/Latin America vocational education platform uses qualification and transfers to advisors, with Salesforce/Five9 integration. Reports 100,000+ advisor minutes saved monthly and conversion parity with humans. Shows why telephony, handoff engineering and ongoing support matter; much larger than a first student client. [Source](https://www.regal.ai/case-study/aprende-institute).",
+      "source_urls": [
+        "https://www.regal.ai/case-study/aprende-institute"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E19",
+      "example": "a360inc / Regal.",
+      "notes": "AI contacts notaries, collects bids and sends structured results into the company's system. Useful example of staffing/dispatch/vendor coordination rather than consumer lead generation. Reports 80% lower cost per call, but the page mixes $400,000 and $1 million savings figures; neither used as a reliable combined total. [Source](https://www.regal.ai/case-study/a360).",
+      "source_urls": [
+        "https://www.regal.ai/case-study/a360"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    },
+    {
+      "id": "E20",
+      "example": "Southwest Recovery Services / Skit.ai.",
+      "notes": "Dallas collections operator deploys inbound/outbound voice AI; vendor reports over 400,000 automated outbound calls. This establishes an advanced implemented category, not a beginner-ready debt-chasing package. Specialized collections expertise, permitted contact practices and oversight are part of delivery; no legal suitability assessed here. [Source](https://skit.ai/resource/case-studies/every-call-answered-every-account-reached/).",
+      "source_urls": [
+        "https://skit.ai/resource/case-studies/every-call-answered-every-account-reached/"
+      ],
+      "inspection": "Relevant case/offer passages opened and inspected; partial page text, not full-site or video review",
+      "evidence_status": "Provider/partner-reported or current advertised service; no independent audit",
+      "current_meta_activity_verified": false
+    }
+  ],
+  "additional_limitations": [
+    "Current US AI reactivation Meta page stayed blank/loading; no new per-page ad counts verified",
+    "No buyer outreach, transaction validation or student pilot",
+    "NEE Canadian case and Easy Aiz geography-unknown example kept supplementary",
+    "Do not add results across cases or transfer enterprise results to novice buyers"
+  ],
+  "artifacts": [
+    "EXPANDED-RESEARCH.md",
+    "EVIDENCE.json"
+  ]
+}

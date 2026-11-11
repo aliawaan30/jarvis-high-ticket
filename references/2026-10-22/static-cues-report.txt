@@ -1,0 +1,31 @@
+
+# watch: video report
+
+- **Source:** /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-lesson/download/video.mp4
+- **Title:** video.mp4
+- **Duration:** 18:23 (1102.7s)
+- **Resolution:** 1280x720 (av1)
+- **Detail:** transcript
+- **Cue frames:** 6 at transcript-flagged timestamps (transcript-cue)
+- **Frame size:** max 1280px wide, max 1998px tall
+- **Transcript:** none available
+
+## Frames
+
+Frames live at: `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-cues/frames`
+
+**Read each frame path below with the Read tool to view the image.** Frames are in chronological order; `t=MM:SS` is the absolute timestamp in the source video.
+
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-cues/frames/cue_0000.jpg` (t=02:33, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-cues/frames/cue_0001.jpg` (t=02:55, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-cues/frames/cue_0002.jpg` (t=03:05, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-cues/frames/cue_0003.jpg` (t=11:50, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-cues/frames/cue_0004.jpg` (t=12:10, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-cues/frames/cue_0005.jpg` (t=14:28, reason=transcript-cue)
+
+## Transcript
+
+_No transcript available at transcript detail. Captions were missing and Whisper was unavailable or failed, so there is no visual fallback here. Re-run with `--detail balanced` for frames._
+
+---
+_Work dir: `/Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/static-cues` — delete when done._

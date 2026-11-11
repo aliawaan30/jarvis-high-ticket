@@ -1,0 +1,56 @@
+<section class="slide" id="forecast">
+<style>
+  #forecast .ctl.locked .lab .v { font-variant-numeric:tabular-nums; }
+  #forecast .lockbar { position:relative; height:3px; border-radius:3px; background:var(--rule2); margin-top:12px; overflow:hidden; }
+  #forecast .lockbar i { position:absolute; inset:0; border-radius:3px; background:linear-gradient(90deg,rgba(181,122,46,.35),var(--sand)); }
+  #forecast .ctl.locked .rn span:last-child { font-style:italic; letter-spacing:.04em; text-transform:none; }
+  #forecast .benchnote { font-size:11px; line-height:1.6; color:var(--soft); margin-top:11px; padding:10px 13px; background:var(--teal-lite);
+    border-radius:9px; border:1px solid rgba(181,122,46,.25); }
+  #forecast .benchnote b { color:var(--ink); font-weight:600; }
+  #forecast .benchnote .src { display:block; margin-top:6px; padding-top:6px; border-top:1px solid rgba(181,122,46,.22); font-size:9.5px; letter-spacing:.04em; color:var(--taupe); font-style:italic; }
+  @media print { #forecast .wrap { zoom:.86; } #forecast .benchnote { font-size:10px; padding:8px 11px; margin-top:9px; } }
+  #forecast .orow.less .t small { display:block; font-size:10.5px; letter-spacing:0; text-transform:none; color:var(--taupe); font-weight:400; margin-top:3px; }
+  #forecast .orow.less .t small b { color:var(--soft); font-weight:600; }
+  #forecast .orow.less .v { color:var(--taupe); }
+</style>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">Your numbers, not ours</div>
+      <h2>What a quarter of buyers<br><em>could be worth to you.</em></h2>
+      <div class="note"><b>Do this live &mdash; hand them the sliders and stay quiet</b>Two questions, in order. <b>&ldquo;How many genuine enquiries do you usually need before one reserves?&rdquo;</b> If they don&rsquo;t know for Australians yet: <b>&ldquo;we haven&rsquo;t put our own number on your page. That&rsquo;s ⟦the publisher⟧&rsquo;s &mdash; ⟦what their figure measured, in one plain line; choose one from the hard end⟧. It&rsquo;s the hard end, so your real number can only move this one way.&rdquo;</b> Then: <b>&ldquo;which suite do you expect most Australians to buy?&rdquo;</b> It opens on the Garden Suite, the cautious case; drag it toward the Ocean Suite if they say so. Read the last three lines: <b>&ldquo;sales value, less the ad spend behind it.&rdquo;</b> Then stop. <b>Don&rsquo;t mention our fee on this page</b> &mdash; the ad spend is shown because it&rsquo;s the cost that moves with the pace; the rest comes in chapter three.</div>
+    </div>
+    <div class="calc rv">
+      <div class="cgrid">
+        <div>
+          <div class="ctl locked">
+            <div class="lab"><span class="t">Verified enquiries &middot; the quarter</span><span class="v" id="vQ">480</span></div>
+            <div class="lockbar"><i></i></div>
+            <div class="rn"><span id="qMo">&#8776; 160 a month</span><span>Set by the pace on the previous page</span></div>
+          </div>
+          <div class="ctl">
+            <div class="lab"><span class="t">Enquiries per sale</span><span class="v" id="vS">150</span></div>
+            <!-- ⟦replace: value="150" with the sourced enquiries-per-sale figure below (keep it on the 10s, or change step)⟧ -->
+            <input type="range" id="sS" min="40" max="250" step="10" value="150">
+            <div class="rn"><span>40 &middot; A sharp team</span><span>250 &middot; Cautious</span></div>
+            <div class="benchnote"><b>⟦150⟧ is ⟦the publisher⟧&rsquo;s figure, not ours.</b> ⟦A published, citable enquiries-per-sale figure for this market &mdash; source, date⟧. Your page opens at ⟦150⟧ so the model runs on a published number rather than anything we have claimed. Move it to whatever your own sales team does.<span class="src">Source: ⟦publisher, dataset and period, as reported on a date⟧.</span></div>
+          </div>
+          <div class="ctl">
+            <div class="lab"><span class="t">Average sale &middot; AUD</span><span class="v" id="vP">A$240k</span></div>
+            <input type="range" id="sP" min="240" max="375" step="5" value="240">
+            <div class="rn"><span>A$240k &middot; Garden Suite</span><span>A$375k &middot; Ocean Suite</span></div>
+            <div class="rn" style="margin-top:4px;"><span style="text-transform:none;letter-spacing:.02em;">Your prices: US$165,000 and US$260,000, at 0.69 to the Australian dollar.</span></div>
+          </div>
+        </div>
+        <div class="out">
+          <div class="orow"><span class="t">Verified buyers in your database</span><span class="v" id="regTot">480</span></div>
+          <div class="orow"><span class="t">Suites sold from the quarter&rsquo;s enquiries</span><span class="v" id="fSale">3.2</span></div>
+          <div class="orow"><span class="t">Sales value per suite</span><span class="v" id="fPer">$240,000</span></div>
+          <div class="orow"><span class="t">Sales value &middot; the quarter</span><span class="v" id="fComm">$768,000</span></div>
+          <div class="orow less"><span class="t">Less ad spend &middot; the quarter <small>at the pace set on the previous page &middot; about <b id="fAdPer">$3,750</b> per sale</small></span><span class="v" id="fAd">&minus;$12,000</span></div>
+          <div class="orow hero"><span class="t">Sales value, after ad spend <small style="display:block;font-size:9.5px;letter-spacing:.14em;color:var(--taupe);font-weight:500;margin-top:2px;">about <span id="fRoas">64&times;</span> the ad spend &middot; on your own conversion and price</small></span><span class="v" id="fNet">$756,000</span></div>
+        </div>
+      </div>
+      <p class="cfoot"><b>Bali sales take time.</b> A buyer who enquires this quarter may reserve next quarter, so this counts the sales that come from the quarter&rsquo;s enquiries, whenever they land. The database is the part that compounds: <b><span id="regCopy">480</span> verified Australians</b> in a quarter &mdash; each scored on suite, purpose, budget, timing and funding, and <b>yours to keep</b>. When Kestrel Developments launches its next project, it goes to an audience you already own. Figures follow your sliders &mdash; a model, not a promise.</p>
+    </div>
+  </div>
+</section>

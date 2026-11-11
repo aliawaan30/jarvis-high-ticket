@@ -1,0 +1,207 @@
+{
+  "module": "m2",
+  "student_entry_prompt": "Help me work through Module 2 alongside the course. Use the course guide, find where I am up to and help me understand and complete the next step using my own business.",
+  "principle": "Student studies the course; Jarvis explains and helps execute. Study status and work status are separate.",
+  "lessons": [
+    {
+      "lesson_id": "m2-the-irresistible-offer",
+      "title": "The Irresistible Offer",
+      "course_link": "https://jarvis-review-b8f2a64c9e7d4301a5c6.blakeyyyyyy.chatgpt.site/#m2-the-irresistible-offer",
+      "sections": [
+        {
+          "id": "offer",
+          "title": "What is an offer?"
+        },
+        {
+          "id": "value",
+          "title": "What is the problem costing them?"
+        },
+        {
+          "id": "awareness",
+          "title": "What does the buyer already understand?"
+        }
+      ],
+      "goal": "Understand the offer",
+      "student_studies": "Read the explanation of an offer, the cost of the problem and buyer awareness.",
+      "jarvis_helps": "Explain any confusing section with their niche as the example. Do not start researching a niche unless they request it.",
+      "skills": [],
+      "save": [
+        "questions_or_notes"
+      ]
+    },
+    {
+      "lesson_id": "m2-three-ways-to-find-an-offer-that-scales",
+      "title": "AI services you can sell",
+      "course_link": "https://jarvis-review-b8f2a64c9e7d4301a5c6.blakeyyyyyy.chatgpt.site/#m2-three-ways-to-find-an-offer-that-scales",
+      "sections": [
+        {
+          "id": "start",
+          "title": "Explore the services"
+        },
+        {
+          "id": "service-1",
+          "title": "AI receptionist"
+        },
+        {
+          "id": "service-2",
+          "title": "AI appointment-setting agency"
+        },
+        {
+          "id": "service-3",
+          "title": "Old-lead and unsold-quote recovery"
+        },
+        {
+          "id": "service-4",
+          "title": "Outbound appointment-setting agency"
+        },
+        {
+          "id": "service-5",
+          "title": "Custom AI CRM"
+        },
+        {
+          "id": "service-6",
+          "title": "AI website agency"
+        },
+        {
+          "id": "service-7",
+          "title": "AI content engine and editing"
+        },
+        {
+          "id": "service-8",
+          "title": "A niche AI automation agency"
+        }
+      ],
+      "goal": "Explore services",
+      "student_studies": "Read the service descriptions and client-specific variants for the options that interest them.",
+      "jarvis_helps": "Compare relevant services and explain workflow, human handoffs and realistic delivery.",
+      "skills": [
+        "jarvis-offer-menu"
+      ],
+      "save": [
+        "service_preferences"
+      ]
+    },
+    {
+      "lesson_id": "m2-choose-your-niche",
+      "title": "Choose Your Niche",
+      "course_link": "https://jarvis-review-b8f2a64c9e7d4301a5c6.blakeyyyyyy.chatgpt.site/#m2-choose-your-niche",
+      "sections": [
+        {
+          "id": "choose",
+          "title": "How to choose"
+        },
+        {
+          "id": "group-1",
+          "title": "Trades and home services"
+        },
+        {
+          "id": "group-2",
+          "title": "Clinics and appointment businesses"
+        },
+        {
+          "id": "group-3",
+          "title": "Property and construction"
+        },
+        {
+          "id": "group-4",
+          "title": "Professional and B2B services"
+        },
+        {
+          "id": "group-5",
+          "title": "Other service businesses"
+        },
+        {
+          "id": "pick",
+          "title": "Choose your starting point"
+        }
+      ],
+      "goal": "Choose a niche",
+      "student_studies": "Read how service and niche fit together and browse relevant niche groups.",
+      "jarvis_helps": "Use background, interests and location to compare up to three combinations; preserve an existing niche or service choice.",
+      "skills": [
+        "jarvis-offer-menu"
+      ],
+      "save": [
+        "chosen_buyer",
+        "location",
+        "chosen_service",
+        "choice_reason"
+      ]
+    },
+    {
+      "lesson_id": "m2-write-the-offer",
+      "title": "What an Irresistible Offer Looks Like",
+      "course_link": "https://jarvis-review-b8f2a64c9e7d4301a5c6.blakeyyyyyy.chatgpt.site/#m2-write-the-offer",
+      "sections": [
+        {
+          "id": "example",
+          "title": "The finished offer"
+        },
+        {
+          "id": "use",
+          "title": "Where do you use your offer?"
+        }
+      ],
+      "goal": "See a finished offer",
+      "student_studies": "Read the six-line roofing example, why the owner would want it and where it is used.",
+      "jarvis_helps": "Explain result vs mechanism, result timing vs setup and approved vs proposed remedies. The example is not the student’s default offer.",
+      "skills": [
+        "jarvis-course-guide"
+      ],
+      "save": [
+        "questions_or_notes"
+      ]
+    },
+    {
+      "lesson_id": "m2-create-your-offer",
+      "title": "Create Your Offer",
+      "course_link": "https://jarvis-review-b8f2a64c9e7d4301a5c6.blakeyyyyyy.chatgpt.site/#m2-create-your-offer",
+      "sections": [
+        {
+          "id": "buyer",
+          "title": "1. Choose the buyer"
+        },
+        {
+          "id": "problem",
+          "title": "2. Find the problem"
+        },
+        {
+          "id": "service",
+          "title": "3. Define the service"
+        },
+        {
+          "id": "offer",
+          "title": "4. Write the offer"
+        }
+      ],
+      "goal": "Create their offer",
+      "student_studies": "Read each practical step, then do it with Jarvis.",
+      "jarvis_helps": "Choose buyer; research problem and value; define service and delivery; invoke six-line offer skill; review with student and save.",
+      "skills": [
+        "jarvis-offer-menu",
+        "jarvis-offer-creation"
+      ],
+      "save": [
+        "chosen_buyer",
+        "location",
+        "chosen_service",
+        "problem_value_brief",
+        "service_brief",
+        "six_line_offer",
+        "review_status",
+        "next_action"
+      ]
+    }
+  ],
+  "finish_line": [
+    "Student can explain who buys, the problem and its estimated financial consequence.",
+    "Student understands what the service does, its limits, human involvement and delivery route.",
+    "Student has chosen a niche/service and reviewed their six-line offer.",
+    "Approved or explicitly proposed offer is saved for the landing-page skill."
+  ],
+  "optional_research_routes": {
+    "ad_library": "jarvis-ad-library-offer-research",
+    "custom_workflow": "jarvis-custom-opportunity-finder"
+  },
+  "runtime_status": "Instruction and content handoff only. Target Jarvis 2.0 retrieval, tools, persistence and learner journey require validation."
+}

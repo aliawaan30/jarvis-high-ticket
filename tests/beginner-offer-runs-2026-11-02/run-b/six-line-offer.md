@@ -1,0 +1,6 @@
+Niche: US industrial-supply distributors whose staff repeatedly retype emailed purchase orders from three regular customers and whose existing software cannot already handle that intake adequately.
+Outcome: Turn those orders into checked, import-ready drafts with less retyping, while your team keeps control of product, quantity and order release; this is a pilot hypothesis, not a proven saving.
+Timeframe: Proposed four-week pilot after sample orders, approved product/unit mappings, the target CSV specification and technical feasibility sign-off are supplied.
+Risk reversal: Proposed done-for-you terms: refund the pilot setup fee if the agreed sample-to-reviewed-CSV acceptance test still fails after one ten-business-day correction period; requires agreed inputs and reviewer participation, covers this bounded pilot only, and awaits contract approval.
+Authority / proof: I bring an office/admin background and a fictional offline workflow demonstration; I have no agency delivery results or measured client savings yet, and a technical specialist must validate the production build.
+Unique mechanism: Read the customer’s order into draft fields, check its customer and product codes against your approved lists, hold duplicates or unclear units, then let your reviewer approve a CSV draft before any ERP import.

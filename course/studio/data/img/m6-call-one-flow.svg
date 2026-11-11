@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" font-family="'Instrument Sans', Arial, sans-serif">
+  <rect width="1200" height="300" fill="#ffffff"/>
+  <text x="60" y="50" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="600" fill="#0e1016">Call one, start to finish. Six steps, one job: a number they agree to.</text>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#8b8e9c"/></marker></defs>
+  <g font-size="20" fill="#0e1016" text-anchor="middle">
+    <rect x="60" y="100" width="160" height="110" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+    <text x="140" y="130" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">1</text>
+    <text x="140" y="162" font-weight="600">Open</text>
+    <text x="140" y="190" font-size="17" fill="#5a5d6b">one question</text>
+    <rect x="250" y="100" width="160" height="110" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+    <text x="330" y="130" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">2</text>
+    <text x="330" y="162" font-weight="600">Listen</text>
+    <text x="330" y="190" font-size="17" fill="#5a5d6b">their words</text>
+    <rect x="440" y="100" width="160" height="110" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+    <text x="520" y="130" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">3</text>
+    <text x="520" y="162" font-weight="600">Four questions</text>
+    <text x="520" y="190" font-size="17" fill="#5a5d6b">to a dollar figure</text>
+    <rect x="630" y="100" width="160" height="110" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+    <text x="710" y="130" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8a6210">4</text>
+    <text x="710" y="162" font-weight="600">The number</text>
+    <text x="710" y="190" font-size="17" fill="#5a5d6b">"around $X a year"</text>
+    <rect x="820" y="100" width="160" height="110" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+    <text x="900" y="130" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8a6210">5</text>
+    <text x="900" y="162" font-weight="600">The yes</text>
+    <text x="900" y="190" font-size="17" fill="#5a5d6b">out loud</text>
+    <rect x="1010" y="100" width="150" height="110" rx="10" fill="#0e1016"/>
+    <text x="1085" y="130" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#c9c3ef">6</text>
+    <text x="1085" y="162" font-weight="600" fill="#ffffff">Book call two</text>
+    <text x="1085" y="190" font-size="17" fill="#c9c3ef">or close now</text>
+  </g>
+  <g stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)">
+    <path d="M220 155 L246 155"/><path d="M410 155 L436 155"/><path d="M600 155 L626 155"/><path d="M790 155 L816 155"/><path d="M980 155 L1006 155"/>
+  </g>
+  <text x="60" y="262" font-size="18" fill="#5a5d6b">No pitch. No price. No "thanks for jumping on". The one asking the questions is in control.</text>
+</svg>

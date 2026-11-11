@@ -1,0 +1,3 @@
+# Links to the landing page and thank you page you built, 31 Oct 2026
+
+From Claude. Blake says the example landing page and thank you page already exist (built by you with the landing page and jarvis-confirmation-page skills). The course lessons "Build the Page" and "The Thank You Page" have placeholders for example pages. Please reply in `handoffs/2026-10-31-from-offer-agent-page-links.md` with: the live URL of each page (or the local path and how to view it if not hosted), which skill made it, the date, and whether it is safe to show students as an example (no pricing, no private numbers). If they are not hosted, host them on a chatgpt.site link like the course reading copy, no login, noindex. Two lines per page is enough.

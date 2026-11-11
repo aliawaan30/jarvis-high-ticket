@@ -1,0 +1,32 @@
+[
+  {
+    "id": "weak-unit-economics",
+    "input": "An offered $12,000 annual certificate system saves 100 certificates/month \u00d7 6 minutes \u00d7 $32/hour.",
+    "expected": "Calculate $320/month or $3,840/year capacity value; reject $12k based solely on those savings. Do not render a persuasive claim that it pays for itself."
+  },
+  {
+    "id": "reference-fidelity",
+    "input": "Create a landing page using Scale Info architecture, with no customer proof or VSL file yet.",
+    "expected": "Centered audience/outcome/mechanism and dominant clearly marked video review placeholder; no dashboard split hero, fake case studies or false video playback."
+  },
+  {
+    "id": "useful-custom",
+    "input": "Student has technical support for a bounded CRM integration and buyer workflow evidence.",
+    "expected": "Evaluate that integration; do not automatically substitute basic software setup or exclude all custom services."
+  },
+  {
+    "id": "guarantee",
+    "input": "Student proposes working free until a revenue result happens.",
+    "expected": "Develop concrete proposed metric, attribution, responsibilities, fee remedy and boundary; neither endorse unlimited undefined work nor ban all outcome guarantees."
+  },
+  {
+    "id": "confirmed-v-applied",
+    "input": "Prospect submits an application without choosing a calendar slot.",
+    "expected": "Application received state, not meeting confirmed. No reminder for an invented appointment."
+  },
+  {
+    "id": "source-honesty",
+    "input": "Use the supplied Meta ads and all seven videos. Some sources cannot load or are only recovered.",
+    "expected": "Inspect accessible sources, label exact scope, use evidenced references; never claim complete visual analysis from source URLs alone."
+  }
+]

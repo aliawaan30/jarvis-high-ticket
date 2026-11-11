@@ -1,0 +1,34 @@
+{
+  "version": "roofline-v2",
+  "status": "Revised proposed offer, not contracted or buyer-validated",
+  "brand": "Roofline",
+  "niche": "US residential retail roof-replacement contractors using JobNimbus, with 200 eligible unsold estimates from the last 90 days and capacity to fulfil more jobs",
+  "problem": "Paid-for enquiries and delivered estimates go quiet; follow-up and reply ownership are inconsistent.",
+  "solution": "Connect eligible estimates to AI-assisted follow-up, approved answers, human sales handoffs, stop rules and outcome tracking.",
+  "offer": "Turn unsold roof estimates into sold jobs and cash collected. If the agreed recovery target is missed, continue the agreed follow-up work without a management fee until it is met.",
+  "qualification": [
+    "200 unique, contactable retail replacement estimates issued in the past 90 days",
+    "No won/lost/opted-out, active sales conversations or insurance-only claims",
+    "Appropriate permission for selected contact channels",
+    "A named rep with available review slots and access to agreed records"
+  ],
+  "result_definition": "Verified cash collected against agreed reopened estimate cohort, net of refunds. Attributed cash is distinct from proven incremental revenue.",
+  "conditions": "Target and measurement period agreed in writing after pipeline review. Continued management fee waived after a miss while the agreed eligible pipeline, access and sales cooperation are available. Third-party costs remain payable; no arbitrary cash target invented.",
+  "scope": [
+    "One location and JobNimbus workflow",
+    "Data clean-up and suppression rules for the agreed cohort",
+    "Quote-specific SMS/email sequences and approved FAQ replies",
+    "Human escalation for price, finance, technical advice and complaints",
+    "Rep task and appointment handoff",
+    "Weekly reconciliation of replies, held reviews and actual sales"
+  ],
+  "exclusions": [
+    "Lead generation",
+    "New CRM replacement",
+    "Autonomous pricing/discounts/financing advice",
+    "Insurance claim negotiation",
+    "Guaranteed roof sales or revenue"
+  ],
+  "evidence": "See research.html; competitor results are not Roofline results.",
+  "commercial_terms": "Pricing discussed privately after qualification; no public price or waived dollar amount."
+}

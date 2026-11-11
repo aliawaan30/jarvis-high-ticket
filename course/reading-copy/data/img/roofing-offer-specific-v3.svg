@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" font-family="'Instrument Sans', Arial, sans-serif">
+  <rect width="1200" height="640" fill="#ffffff"/>
+  <text x="60" y="54" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="600" fill="#0e1016">One offer, written out in full</text>
+  <text x="60" y="84" font-size="18" fill="#5a5d6b">Six lines. One clear service.</text>
+  <g font-family="'IBM Plex Mono', Menlo, monospace" font-size="14" letter-spacing="2" fill="#4b2fc4">
+    <text x="60" y="150">NICHE</text>
+    <text x="60" y="230">OUTCOME</text>
+    <text x="60" y="310">TIMEFRAME</text>
+    <text x="60" y="390">RISK REVERSAL</text>
+    <text x="60" y="490">AUTHORITY</text>
+    <text x="60" y="570">UNIQUE MECHANISM</text>
+  </g>
+  <g stroke="#e6e7ec" stroke-width="1.5">
+    <line x1="60" y1="176" x2="1140" y2="176"/>
+    <line x1="60" y1="256" x2="1140" y2="256"/>
+    <line x1="60" y1="336" x2="1140" y2="336"/>
+    <line x1="60" y1="446" x2="1140" y2="446"/>
+    <line x1="60" y1="516" x2="1140" y2="516"/>
+  </g>
+  <g font-size="24" fill="#0e1016">
+    <text x="340" y="152">Residential roofers with unsold replacement estimates</text>
+    <text x="340" y="232">We'll get you <tspan font-weight="700">5 more paid roofing jobs</tspan></text>
+    <text x="340" y="312">Within 30 days of campaign launch</text>
+    <text x="340" y="386">Or we work for free until we do</text>
+    <text x="340" y="492">See the estimate follow-up system demonstrated live</text>
+    <text x="340" y="572">The Estimate Recovery System</text>
+  </g>
+  <path d="M60 162 L300 162" stroke="#4b2fc4" stroke-width="2" opacity="0.25"/>
+</svg>

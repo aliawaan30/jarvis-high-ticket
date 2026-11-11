@@ -1,0 +1,322 @@
+<section class="slide" id="stories">
+<style>
+  /* eight 9:16 stories, drawn in container units (100cqw = the story's width, 177.8cqw its height).
+     Safe zones: nothing that matters above 25cqw (progress bar + name) or below 142cqw (the swipe-up). */
+  #stories .xs-grid { grid-template-columns:repeat(4,minmax(0,1fr)); max-width:940px; margin:0 auto; gap:18px; }
+  #stories .xs-cell { display:flex; flex-direction:column; gap:8px; min-width:0; }
+  #stories .xs-tag { text-align:center; font-size:8.5px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:var(--taupe); }
+  #stories .xs-tag em { font-style:normal; color:var(--sand); }
+  #stories .story.xs { container-type:inline-size; color:#fff; }
+  #stories .story.xs.xs-wal, #stories .story.xs.xs-wal .w-t { color:#13283A; }
+  #stories .story.xs.xs-note, #stories .story.xs.xs-note li, #stories .story.xs.xs-note .o-t { color:#1C1C1E; }
+  #stories .xs .xs-ph { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  #stories .xs .xs-lg { display:block; height:auto; }
+  #stories .xs .xs-eb { font-family:'Jost',sans-serif; font-size:3.4cqw; letter-spacing:.2em; text-transform:uppercase; font-weight:700; line-height:1.35; }
+  #stories .xs em { font-style:italic; }
+  #stories .xs .pb, #stories .xs .wh, #stories .xs .ct { z-index:5; }
+  #stories .xs .wh .av { background:#fff; }
+  #stories .xs .wh .av img { object-fit:cover !important; transform:none !important; background:#fff !important; }
+  #stories .xs .pb.dk { background:rgba(19,40,58,.18); } #stories .xs .pb.dk i { background:#13283A; }
+  #stories .xs .wh.dk { color:#13283A; }
+  #stories .xs .ct .cv.dk { color:#13283A; } #stories .xs .ct .pl.dk { background:#13283A; color:var(--gold-lite); }
+
+  /* 1 · the type stack — own a suite at Kestrel Bay */
+  #stories .xs-type .xs-ph { object-position:50% 50%; }
+  #stories .xs-type .sc { position:absolute; inset:0; background:linear-gradient(180deg,rgba(10,22,32,.62) 0%,rgba(10,22,32,.45) 30%,rgba(10,22,32,.62) 58%,rgba(10,22,32,.93) 76%,rgba(10,22,32,.95) 100%); }
+  #stories .xs-type .t-in { position:absolute; left:8cqw; right:8cqw; top:30cqw; }
+  #stories .xs-type .xs-eb { color:var(--gold-lite); }
+  #stories .xs-type .t-w { font-family:'Anton',sans-serif; font-size:23cqw; line-height:.92; letter-spacing:.005em; color:#FBF7F0; margin-top:3cqw; text-transform:uppercase; }
+  #stories .xs-type .t-w span { display:block; }
+  #stories .xs-type .t-w span:last-child { color:var(--gold-lite); }
+  #stories .xs-type .t-ft { position:absolute; left:8cqw; right:8cqw; top:116cqw; display:flex; align-items:flex-end; justify-content:space-between; gap:3cqw; }
+  #stories .xs-type .t-ft .xs-lg { width:30cqw; }
+  #stories .xs-type .t-ft span { font-family:'Jost',sans-serif; font-size:3cqw; letter-spacing:.12em; text-transform:uppercase; font-weight:600; text-align:right; line-height:1.45; }
+  #stories .xs-type .t-ft span b { display:block; font-family:'Playfair',serif; font-size:6cqw; letter-spacing:0; text-transform:none; font-weight:500; color:var(--gold-lite); line-height:1.1; }
+
+  /* 2 · the incoming call — the sales team */
+  #stories .xs-call { background:#13283A; }
+  #stories .xs-call .xs-ph { filter:blur(1.4cqw) brightness(.42) saturate(.9); transform:scale(1.15); object-position:60% 50%; }
+  #stories .xs-call .c-eb { position:absolute; left:6cqw; right:6cqw; top:29cqw; text-align:center; color:var(--gold-lite); }
+  #stories .xs-call .c-av { position:absolute; left:50%; top:42cqw; width:32cqw; height:32cqw; margin-left:-16cqw; border-radius:50%; background:#FBF7F0;
+    display:flex; align-items:center; justify-content:center; box-shadow:0 0 0 2.4cqw rgba(251,247,240,.12),0 0 0 5cqw rgba(251,247,240,.06); }
+  #stories .xs-call .c-av img { width:22cqw; height:auto; }
+  #stories .xs-call .c-nm { position:absolute; left:4cqw; right:4cqw; top:82cqw; text-align:center; font-size:8cqw; font-weight:500; letter-spacing:-.01em; }
+  #stories .xs-call .c-sb { position:absolute; left:4cqw; right:4cqw; top:93cqw; text-align:center; font-size:3.8cqw; color:rgba(255,255,255,.75); }
+  #stories .xs-call .c-bt { position:absolute; left:10cqw; right:10cqw; top:110cqw; display:flex; justify-content:space-between; }
+  #stories .xs-call .c-b { display:flex; flex-direction:column; align-items:center; gap:2cqw; font-size:3.4cqw; }
+  #stories .xs-call .c-b i { width:17cqw; height:17cqw; border-radius:50%; display:flex; align-items:center; justify-content:center; }
+  #stories .xs-call .c-b svg { width:8cqw; height:8cqw; fill:#fff; }
+  #stories .xs-call .c-b.no i { background:#FF3B30; } #stories .xs-call .c-b.no svg { transform:rotate(135deg); }
+  #stories .xs-call .c-b.ok i { background:#34C759; }
+
+  /* 3 · the news lower-third — kids stay free */
+  #stories .xs-news .xs-ph { object-position:44% 50%; }
+  #stories .xs-news .sc { position:absolute; inset:0; background:linear-gradient(180deg,rgba(10,22,32,.72) 0%,rgba(10,22,32,.55) 38%,rgba(10,22,32,.12) 56%,rgba(10,22,32,.8) 100%); }
+  #stories .xs-news .n-k { position:absolute; left:7cqw; top:29cqw; display:flex; align-items:center; gap:2cqw; font-family:'Jost',sans-serif; font-size:3.2cqw; letter-spacing:.18em; text-transform:uppercase; font-weight:700; }
+  #stories .xs-news .n-k b { background:#B57A2E; padding:1cqw 2.2cqw .8cqw; border-radius:.8cqw; letter-spacing:.2em; }
+  #stories .xs-news .n-h { position:absolute; left:7cqw; right:7cqw; top:37cqw; font-family:'Playfair',serif; font-size:12cqw; line-height:1.02; text-shadow:0 .4cqw 3cqw rgba(0,0,0,.5); }
+  #stories .xs-news .n-h em { color:var(--gold-lite); }
+  #stories .xs-news .n-lt { position:absolute; left:0; right:4cqw; top:100cqw; display:flex; box-shadow:0 1.6cqw 4cqw rgba(0,0,0,.4); }
+  #stories .xs-news .n-lt b { flex:none; background:#13283A; color:var(--gold-lite); font-family:'Anton',sans-serif; font-weight:400; font-size:6cqw; letter-spacing:.06em; padding:2.4cqw 3cqw 2cqw 6cqw; line-height:1; display:flex; align-items:center; }
+  #stories .xs-news .n-lt span { background:#FBF7F0; color:#13283A; font-family:'Jost',sans-serif; font-size:3.5cqw; font-weight:700; line-height:1.22; padding:2cqw 3cqw; }
+  #stories .xs-news .n-lt span small { display:block; font-size:2.6cqw; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:#8C8173; margin-top:.6cqw; }
+  #stories .xs-news .n-tk { position:absolute; left:0; right:0; top:121cqw; background:#B57A2E; overflow:hidden; white-space:nowrap; padding:1.8cqw 0 1.6cqw;
+    font-family:'Jost',sans-serif; font-size:3cqw; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:#fff; }
+  #stories .xs-news .n-tk span { display:inline-block; padding-left:6cqw; }
+  #stories .xs-news .n-lg { position:absolute; right:6cqw; top:129cqw; width:24cqw; }
+
+  /* 4 · the split-flap board — two suites, two prices */
+  #stories .xs-flap { background:#0E1A24; }
+  #stories .xs-flap .xs-ph { height:74cqw; object-position:50% 50%; }
+  #stories .xs-flap .sc { position:absolute; left:0; right:0; top:0; height:76cqw; background:linear-gradient(180deg,rgba(14,26,36,.6) 0%,rgba(14,26,36,.1) 40%,#0E1A24 100%); }
+  #stories .xs-flap .a-bd { position:absolute; left:5cqw; right:5cqw; top:46cqw; background:#16222C; border-radius:2cqw; padding:3cqw 3cqw 2.6cqw; box-shadow:0 1.6cqw 4cqw rgba(0,0,0,.5); font-family:'Bebas Neue',sans-serif; }
+  #stories .xs-flap .a-tt { display:flex; justify-content:space-between; align-items:center; font-size:5.6cqw; color:var(--gold-lite); letter-spacing:.06em; line-height:1; }
+  #stories .xs-flap .a-tt span { font-family:'Jost',sans-serif; font-size:2.5cqw; letter-spacing:.16em; color:rgba(255,255,255,.5); font-weight:600; }
+  #stories .xs-flap .a-r { display:grid; grid-template-columns:1.55fr .62fr 1.1fr .82fr; gap:1.2cqw; margin-top:1.6cqw; }
+  #stories .xs-flap .a-r.h { font-family:'Jost',sans-serif; font-size:2.2cqw; letter-spacing:.14em; color:rgba(255,255,255,.45); font-weight:700; margin-top:2.6cqw; }
+  #stories .xs-flap .a-r:not(.h) span { position:relative; background:#24303A; border-radius:.8cqw; font-size:4.8cqw; line-height:1; padding:1.4cqw 1.3cqw 1cqw; letter-spacing:.05em; color:#F4F1EA; white-space:nowrap; overflow:hidden; }
+  #stories .xs-flap .a-r:not(.h) span::after { content:''; position:absolute; left:0; right:0; top:50%; border-top:.25cqw solid #0E1A24; }
+  #stories .xs-flap .a-r span.s { color:var(--gold-lite); }
+  #stories .xs-flap .a-st { margin-top:2.4cqw; padding-top:2cqw; border-top:.25cqw solid rgba(255,255,255,.1); font-family:'Jost',sans-serif; font-size:2.6cqw; letter-spacing:.14em; text-transform:uppercase; font-weight:600; color:rgba(255,255,255,.62); display:flex; justify-content:space-between; }
+  #stories .xs-flap .a-st b { color:var(--gold-lite); font-weight:700; }
+  #stories .xs-flap .a-h { position:absolute; left:6cqw; right:6cqw; top:103cqw; font-family:'Playfair',serif; font-size:9cqw; line-height:1.04; }
+  #stories .xs-flap .a-h em { color:var(--gold-lite); }
+  #stories .xs-flap .a-fn { position:absolute; left:6cqw; right:6cqw; top:126cqw; display:flex; justify-content:space-between; align-items:flex-end; font-family:'Jost',sans-serif; font-size:2.5cqw; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.5); font-weight:600; }
+  #stories .xs-flap .a-fn .xs-lg { width:22cqw; }
+
+  /* 5 · the native poll sticker — what's it for? */
+  #stories .xs-poll .xs-ph { object-position:50% 50%; }
+  #stories .xs-poll .sc { position:absolute; inset:0; background:linear-gradient(180deg,rgba(10,22,32,.78) 0%,rgba(10,22,32,.62) 32%,rgba(10,22,32,.3) 50%,rgba(10,22,32,.35) 70%,rgba(10,22,32,.82) 100%); }
+  #stories .xs-poll .p-h { position:absolute; left:6cqw; right:6cqw; top:29cqw; text-align:center; font-family:'Playfair',serif; font-size:10.4cqw; line-height:1.04; text-shadow:0 .4cqw 3cqw rgba(0,0,0,.55); }
+  #stories .xs-poll .p-h em { color:var(--gold-lite); }
+  #stories .xs-poll .p-st { position:absolute; left:11cqw; right:11cqw; top:76cqw; background:#fff; border-radius:4cqw; padding:4cqw 4cqw 4.4cqw; color:#111; text-align:center; box-shadow:0 2cqw 5cqw rgba(0,0,0,.35); transform:rotate(-2deg); }
+  #stories .xs-poll .p-q { font-size:3.8cqw; font-weight:800; letter-spacing:.04em; background:linear-gradient(90deg,#B57A2E,#2F7F9A); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  #stories .xs-poll .p-o { position:relative; overflow:hidden; margin-top:2.4cqw; border-radius:10cqw; background:#F1EEEA; font-size:4.6cqw; font-weight:700; padding:2.8cqw 3cqw; }
+  #stories .xs-poll .p-note { position:absolute; left:8cqw; right:8cqw; top:119cqw; text-align:center; font-family:'Caveat',cursive; font-weight:700; font-size:6.4cqw; color:#FFE9A8; text-shadow:0 .3cqw 2cqw rgba(0,0,0,.6); transform:rotate(-3deg); }
+  #stories .xs-poll .p-lg { position:absolute; left:50%; top:129cqw; width:26cqw; margin-left:-13cqw; }
+
+  /* 6 · the owners' club as a stack of wallet passes — every perk's header stays readable */
+  #stories .xs-wal { background:radial-gradient(90% 60% at 50% 60%,#FFFFFF,#F1E9DC 75%); color:#13283A; }
+  #stories .xs-wal .w-hd { position:absolute; left:7cqw; right:7cqw; top:27cqw; text-align:center; }
+  #stories .xs-wal .w-hd .xs-eb { color:var(--gold-d); }
+  #stories .xs-wal .w-t { font-family:'Playfair',serif; font-size:11cqw; line-height:1.02; margin-top:1.4cqw; }
+  #stories .xs-wal .w-t em { color:var(--gold-d); }
+  #stories .xs-wal .w-ps { position:absolute; left:6cqw; right:6cqw; top:52cqw; height:84cqw; }
+  #stories .xs-wal .w-p { position:absolute; left:0; right:0; height:48cqw; border-radius:3cqw; color:#fff; padding:3cqw 4cqw; display:flex; justify-content:space-between; align-items:flex-start;
+    font-family:'Jost',sans-serif; box-shadow:0 -.6cqw 2cqw rgba(19,40,58,.18); }
+  #stories .xs-wal .w-p b { font-size:3.6cqw; font-weight:700; line-height:1.15; }
+  #stories .xs-wal .w-p small { font-size:2.4cqw; letter-spacing:.16em; font-weight:700; opacity:.75; padding-top:.6cqw; }
+  #stories .xs-wal .w-p.p1 { top:0; background:#2F7F9A; } #stories .xs-wal .w-p.p2 { top:9.5cqw; background:#B57A2E; }
+  #stories .xs-wal .w-p.p3 { top:19cqw; background:#6B7F4E; } #stories .xs-wal .w-p.p4 { top:28.5cqw; background:#24445E; }
+  #stories .xs-wal .w-fr { position:absolute; left:0; right:0; top:38cqw; height:46cqw; border-radius:3cqw; overflow:hidden; box-shadow:0 1.6cqw 4cqw rgba(19,40,58,.35); }
+  #stories .xs-wal .w-fr img.bg { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  #stories .xs-wal .w-fr::after { content:''; position:absolute; inset:0; background:linear-gradient(160deg,rgba(19,40,58,.55) 0%,rgba(19,40,58,.88) 70%); }
+  #stories .xs-wal .w-in { position:absolute; inset:0; z-index:2; padding:4cqw 4.6cqw; display:flex; flex-direction:column; color:#fff; font-family:'Jost',sans-serif; }
+  #stories .xs-wal .w-in .w-top { display:flex; justify-content:space-between; align-items:flex-start; }
+  #stories .xs-wal .w-in .xs-lg { width:22cqw; }
+  #stories .xs-wal .w-in .w-k { font-size:2.4cqw; letter-spacing:.18em; text-transform:uppercase; font-weight:700; color:var(--gold-lite); text-align:right; line-height:1.4; }
+  #stories .xs-wal .w-in .w-nm { margin-top:auto; font-family:'Playfair',serif; font-size:5.6cqw; line-height:1.1; }
+  #stories .xs-wal .w-in .w-v { display:flex; justify-content:space-between; align-items:flex-end; margin-top:2cqw; padding-top:2cqw; border-top:.3cqw solid rgba(255,255,255,.25); }
+  #stories .xs-wal .w-in .w-v small { font-size:2.4cqw; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:rgba(255,255,255,.7); }
+  #stories .xs-wal .w-in .w-v b { font-family:'Anton',sans-serif; font-weight:400; font-size:7cqw; line-height:1; color:var(--gold-lite); }
+
+  /* 7 · the number tiles — Kestrel builds it, Tidewater runs it */
+  #stories .xs-tiles { background:#13283A; }
+  #stories .xs-tiles .r-ph { position:absolute; left:5cqw; right:5cqw; top:26cqw; height:48cqw; border-radius:2cqw; overflow:hidden; }
+  #stories .xs-tiles .r-ph img { width:100%; height:100%; object-fit:cover; object-position:50% 40%; }
+  #stories .xs-tiles .r-rb { position:absolute; right:0; top:3cqw; background:var(--gold-lite); color:#13283A; font-family:'Jost',sans-serif; font-size:2.9cqw; letter-spacing:.16em; text-transform:uppercase; font-weight:800;
+    padding:1.4cqw 3cqw 1.2cqw 3.6cqw; clip-path:polygon(2cqw 0,100% 0,100% 100%,2cqw 100%,0 50%); }
+  #stories .xs-tiles .r-nm { position:absolute; left:6cqw; right:6cqw; top:79cqw; font-family:'Playfair',serif; font-size:8.4cqw; line-height:1.06; color:#FBF7F0; }
+  #stories .xs-tiles .r-nm em { color:var(--gold-lite); }
+  #stories .xs-tiles .r-cd { position:absolute; left:6cqw; right:6cqw; top:100cqw; display:grid; grid-template-columns:repeat(3,1fr); gap:2.4cqw; }
+  #stories .xs-tiles .r-cd div { background:#1C3850; border-radius:1.6cqw; text-align:center; padding:2.4cqw 1cqw 2cqw; border:.3cqw solid rgba(226,184,114,.28); }
+  #stories .xs-tiles .r-cd b { display:block; font-family:'Anton',sans-serif; font-weight:400; font-size:8.4cqw; line-height:1; color:#FBF7F0; }
+  #stories .xs-tiles .r-cd small { display:block; font-family:'Jost',sans-serif; font-size:2.3cqw; letter-spacing:.12em; text-transform:uppercase; color:rgba(251,247,240,.62); font-weight:700; margin-top:1.2cqw; line-height:1.3; }
+  #stories .xs-tiles .r-s { position:absolute; left:6cqw; right:6cqw; top:124cqw; display:flex; justify-content:space-between; align-items:center; gap:3cqw; font-family:'Jost',sans-serif; font-size:3.2cqw; line-height:1.4; color:rgba(251,247,240,.85); }
+  #stories .xs-tiles .r-s b { color:#FBF7F0; }
+  #stories .xs-tiles .r-s .xs-lg { width:20cqw; flex:none; }
+
+  /* 8 · the notes-app list — on site */
+  #stories .xs-note { background:#FFFDF6; color:#1C1C1E; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; }
+  #stories .xs-note .o-bar { position:absolute; left:5cqw; right:5cqw; top:25cqw; display:flex; justify-content:space-between; color:#D39E1C; font-size:4.2cqw; font-weight:500; }
+  #stories .xs-note .o-t { position:absolute; left:6cqw; right:6cqw; top:34cqw; font-size:7.6cqw; font-weight:700; line-height:1.08; letter-spacing:-.01em; }
+  #stories .xs-note .o-d { position:absolute; left:6cqw; right:6cqw; top:52cqw; font-size:3cqw; color:#8E8E93; }
+  #stories .xs-note ul { position:absolute; left:6cqw; right:6cqw; top:58cqw; list-style:none; margin:0; padding:0; }
+  #stories .xs-note li { display:flex; align-items:flex-start; gap:3cqw; font-size:4.1cqw; line-height:1.25; padding:2.1cqw 0; border-bottom:.25cqw solid #ECE8DE; }
+  #stories .xs-note li::before { content:''; flex:none; width:5cqw; height:5cqw; border-radius:50%; border:.45cqw solid #C7C7CC; box-sizing:border-box; margin-top:-.1cqw; }
+  #stories .xs-note .o-hl { position:absolute; left:6cqw; right:10cqw; top:119cqw; font-family:'Caveat',cursive; font-weight:700; font-size:6.6cqw; line-height:1.05; color:#13283A;
+    background:linear-gradient(transparent 55%,rgba(255,213,74,.7) 55%); display:inline; }
+  #stories .xs-note .o-lg { position:absolute; right:6cqw; top:128cqw; width:24cqw; }
+
+  @keyframes xsFill { from { width:0; } to { width:100%; } }
+  @keyframes xsRing { 0%,100% { transform:scale(1); box-shadow:0 0 0 0 rgba(52,199,89,.6); } 50% { transform:scale(1.08); box-shadow:0 0 0 3cqw rgba(52,199,89,0); } }
+  @keyframes xsTick { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+  @keyframes xsFlap { 0% { transform:rotateX(90deg); opacity:.3; } 100% { transform:none; opacity:1; } }
+  @keyframes xsCheck { to { background:#D39E1C; border-color:#D39E1C; box-shadow:inset 0 0 0 1cqw #FFFDF6; } }
+  @keyframes xsIn { from { opacity:0; transform:translateY(4cqw); } }
+  @media (prefers-reduced-motion:no-preference) {
+    body.anim #stories .xs-grid.in .story .pb i { animation:xsFill 6s linear infinite; }
+    body.anim #stories .xs-grid.in .xs-cell:nth-child(2n) .pb i { animation-delay:-2s; }
+    body.anim #stories .xs-grid.in .xs-cell:nth-child(3n) .pb i { animation-delay:-4s; }
+    body.anim #stories .xs-grid.in .xs-type .t-w span { animation:xsIn .6s cubic-bezier(.2,.75,.2,1) both; }
+    body.anim #stories .xs-grid.in .xs-type .t-w span:nth-child(2) { animation-delay:.25s; } body.anim #stories .xs-grid.in .xs-type .t-w span:nth-child(3) { animation-delay:.5s; }
+    body.anim #stories .xs-grid.in .xs-call .c-b.ok i { animation:xsRing 1.6s ease-in-out infinite; }
+    body.anim #stories .xs-grid.in .xs-news .n-tk span { animation:xsTick 16s linear infinite; }
+    body.anim #stories .xs-grid.in .xs-flap .a-r:not(.h) span { animation:xsFlap .5s ease both; }
+    body.anim #stories .xs-grid.in .xs-flap .a-r:nth-child(4) span { animation-delay:.3s; }
+    body.anim #stories .xs-grid.in .xs-wal .w-p, body.anim #stories .xs-grid.in .xs-wal .w-fr { animation:xsIn .6s cubic-bezier(.2,.75,.2,1) both; }
+    body.anim #stories .xs-grid.in .xs-wal .w-p.p2 { animation-delay:.12s; } body.anim #stories .xs-grid.in .xs-wal .w-p.p3 { animation-delay:.24s; }
+    body.anim #stories .xs-grid.in .xs-wal .w-p.p4 { animation-delay:.36s; } body.anim #stories .xs-grid.in .xs-wal .w-fr { animation-delay:.5s; }
+    body.anim #stories .xs-grid.in .xs-tiles .r-cd div { animation:xsFlap .5s ease both; }
+    body.anim #stories .xs-grid.in .xs-tiles .r-cd div:nth-child(2) { animation-delay:.25s; } body.anim #stories .xs-grid.in .xs-tiles .r-cd div:nth-child(3) { animation-delay:.5s; }
+    body.anim #stories .xs-grid.in .xs-note li::before { animation:xsCheck .3s ease both; }
+    body.anim #stories .xs-grid.in .xs-note li:nth-child(1)::before { animation-delay:1s; } body.anim #stories .xs-grid.in .xs-note li:nth-child(2)::before { animation-delay:1.4s; }
+    body.anim #stories .xs-grid.in .xs-note li:nth-child(3)::before { animation-delay:1.8s; } body.anim #stories .xs-grid.in .xs-note li:nth-child(4)::before { animation-delay:2.2s; }
+    body.anim #stories .xs-grid.in .xs-note li:nth-child(5)::before { animation-delay:2.6s; } body.anim #stories .xs-grid.in .xs-note li:nth-child(6)::before { animation-delay:3s; }
+  }
+  @media screen and (max-width:760px){ #stories .xs-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; max-width:440px !important; } }
+  @media print {
+    #stories .wrap { zoom:.72 !important; }
+    #stories .xs-grid { grid-template-columns:repeat(4,1fr) !important; max-width:900px !important; }
+    #stories .xs-news .n-tk span { transform:none !important; }
+  }
+</style>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">The buyer campaign&ensp;&middot;&ensp;full screen</div>
+      <h2>The same four angles. <em>Full screen.</em></h2>
+      <div class="note"><b>Say this</b>&ldquo;These run in Stories and Reels, where the ad fills the whole phone for a few seconds &mdash; eight different treatments, so the same idea never shows twice.&rdquo; Point at the call screen: <b>&ldquo;it looks like the phone, not an ad &mdash; that&rsquo;s why people stop.&rdquo;</b> Then the board: &ldquo;the Garden Suite and the Ocean Suite, both prices, read in two seconds.&rdquo;</div>
+    </div>
+    <div class="stgrid xs-grid rv">
+
+      <div class="xs-cell">
+        <div class="story xs xs-type">
+          <img class="xs-ph" src="assets/ph-resort-tall.jpg" alt="">
+          <div class="sc"></div>
+          <div class="pb"><i></i></div>
+          <div class="wh"><div class="av"><img src="assets/brand-avatar.png" alt=""></div><div><div class="nm">Kestrel Bay Resort</div><div class="sp2">Sponsored</div></div></div>
+          <div class="t-in"><div class="xs-eb">Kestrel Bay Resort &middot; Bali</div><div class="t-w"><span>Own a</span><span>suite at</span><span>Kestrel.</span></div></div>
+          <div class="t-ft"><img class="xs-lg" src="assets/brand-logo-light.png" alt="Kestrel Bay Resort"><span>Suites from<b>US$165,000</b>about A$240k</span></div>
+          <div class="ct"><div class="cv">&#65086;</div><div class="pl">Learn more</div></div>
+        </div>
+        <div class="xs-tag"><em>&#9679;</em>&ensp;Own a suite &middot; type stack</div>
+      </div>
+
+      <div class="xs-cell">
+        <div class="story xs xs-call">
+          <img class="xs-ph" src="assets/ph-balcony.jpg" alt="">
+          <div class="pb"><i style="width:40%;"></i></div>
+          <div class="wh"><div class="av"><img src="assets/brand-avatar.png" alt=""></div><div><div class="nm">Kestrel Bay Resort</div><div class="sp2">Sponsored</div></div></div>
+          <div class="c-eb xs-eb">Questions about a suite?</div>
+          <div class="c-av"><img src="assets/brand-logo-dark.png" alt="Kestrel Bay Resort"></div>
+          <div class="c-nm">Kestrel Bay Resort</div>
+          <div class="c-sb">Sales team &middot; Bali</div>
+          <div class="c-bt">
+            <div class="c-b no"><i><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg></i>Later</div>
+            <div class="c-b ok"><i><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg></i>Book a call</div>
+          </div>
+          <div class="ct"><div class="cv">&#65086;</div><div class="pl">Book a private call</div></div>
+        </div>
+        <div class="xs-tag"><em>&#9679;</em>&ensp;Talk to the team &middot; call screen</div>
+      </div>
+
+      <div class="xs-cell">
+        <div class="story xs xs-news">
+          <img class="xs-ph" src="assets/ph-family.jpg" alt="">
+          <div class="sc"></div>
+          <div class="pb"><i style="width:62%;"></i></div>
+          <div class="wh"><div class="av"><img src="assets/brand-avatar.png" alt=""></div><div><div class="nm">Kestrel Bay Resort</div><div class="sp2">Sponsored</div></div></div>
+          <div class="n-k"><b>Families</b>Kestrel Bay Resort</div>
+          <div class="n-h">Kids under 12 <em>stay free.</em></div>
+          <div class="n-lt"><b>KESTREL</b><span>Their own Kids&rsquo; Club, on site<small>Kestrel Bay Resort &middot; Bali</small></span></div>
+          <div class="n-tk"><span>Garden Suite from US$165,000 &middot; about A$240k &middot; Ocean Suite US$260,000 &middot; about A$375k &middot; interconnecting options &middot; Garden Suite from US$165,000 &middot; about A$240k &middot; Ocean Suite US$260,000 &middot; about A$375k &middot; interconnecting options &middot;</span></div>
+          <img class="n-lg" src="assets/brand-logo-light.png" alt="Kestrel Bay Resort">
+          <div class="ct"><div class="cv">&#65086;</div><div class="pl">See the suites</div></div>
+        </div>
+        <div class="xs-tag"><em>&#9679;</em>&ensp;Kids stay free &middot; news lower-third</div>
+      </div>
+
+      <div class="xs-cell">
+        <div class="story xs xs-flap">
+          <img class="xs-ph" src="assets/ph-hero-pool.jpg" alt="">
+          <div class="sc"></div>
+          <div class="pb"><i style="width:84%;"></i></div>
+          <div class="wh"><div class="av"><img src="assets/brand-avatar.png" alt=""></div><div><div class="nm">Kestrel Bay Resort</div><div class="sp2">Sponsored</div></div></div>
+          <div class="a-bd">
+            <div class="a-tt">Kestrel Bay Resort &middot; suites<span>Bali</span></div>
+            <div class="a-r h"><div>SUITE</div><div>M&sup2;</div><div>US$</div><div>&asymp; A$</div></div>
+            <div class="a-r"><span>GARDEN</span><span>34</span><span>165,000</span><span class="s">240K</span></div>
+            <div class="a-r"><span>OCEAN</span><span>52</span><span>260,000</span><span class="s">375K</span></div>
+            <div class="a-st"><span>Both one bedroom</span><b>Owners&rsquo; club</b></div>
+          </div>
+          <div class="a-h">Two suites. <em>Two prices.</em></div>
+          <div class="a-fn"><span>A$ approx. at 0.69</span><img class="xs-lg" src="assets/brand-logo-light.png" alt="Kestrel Bay Resort"></div>
+          <div class="ct"><div class="cv">&#65086;</div><div class="pl">Compare the suites</div></div>
+        </div>
+        <div class="xs-tag"><em>&#9679;</em>&ensp;Two suites &middot; split-flap board</div>
+      </div>
+
+      <div class="xs-cell">
+        <div class="story xs xs-poll">
+          <img class="xs-ph" src="assets/ph-venue-3.jpg" alt="">
+          <div class="sc"></div>
+          <div class="pb"><i style="width:30%;"></i></div>
+          <div class="wh"><div class="av"><img src="assets/brand-avatar.png" alt=""></div><div><div class="nm">Kestrel Bay Resort</div><div class="sp2">Sponsored</div></div></div>
+          <div class="p-h">What would you use a suite <em>for?</em></div>
+          <div class="p-st"><div class="p-q">BE HONEST</div><div class="p-o">Holidays at Kestrel Bay</div><div class="p-o">Rental income</div></div>
+          <div class="p-note">(a bit of both? tell us)</div>
+          <img class="p-lg" src="assets/brand-logo-light.png" alt="Kestrel Bay Resort">
+          <div class="ct"><div class="cv">&#65086;</div><div class="pl">Tell us yours</div></div>
+        </div>
+        <div class="xs-tag"><em>&#9679;</em>&ensp;What&rsquo;s it for? &middot; native poll</div>
+      </div>
+
+      <div class="xs-cell">
+        <div class="story xs xs-wal">
+          <div class="pb dk"><i style="width:46%;"></i></div>
+          <div class="wh dk"><div class="av"><img src="assets/brand-avatar.png" alt=""></div><div><div class="nm">Kestrel Bay Resort</div><div class="sp2">Sponsored</div></div></div>
+          <div class="w-hd"><div class="xs-eb">The Owners&rsquo; Club</div><div class="w-t">What owners <em>get.</em></div></div>
+          <div class="w-ps">
+            <div class="w-p p1"><b>Complimentary resort stays</b><small>01</small></div>
+            <div class="w-p p2"><b>Priority bookings</b><small>02</small></div>
+            <div class="w-p p3"><b>Member rates at Tidewater venues</b><small>03</small></div>
+            <div class="w-p p4"><b>Invitations to events</b><small>04</small></div>
+            <div class="w-fr"><img class="bg" src="assets/ph-aerial.jpg" alt=""><div class="w-in"><div class="w-top"><img class="xs-lg" src="assets/brand-logo-light.png" alt="Kestrel Bay Resort"><div class="w-k">Suite<br>owners</div></div>
+              <div class="w-nm">The Owners&rsquo; Club</div><div class="w-v"><small>Valued up to</small><b>US$15,000</b></div></div></div>
+          </div>
+          <div class="ct"><div class="cv dk">&#65086;</div><div class="pl dk">See the membership</div></div>
+        </div>
+        <div class="xs-tag"><em>&#9679;</em>&ensp;The owners&rsquo; club &middot; wallet passes</div>
+      </div>
+
+      <div class="xs-cell">
+        <div class="story xs xs-tiles">
+          <div class="r-ph"><img src="assets/ph-team-signing.jpg" alt=""><div class="r-rb">Kestrel &times; Tidewater</div></div>
+          <div class="pb"><i style="width:64%;"></i></div>
+          <div class="wh"><div class="av"><img src="assets/brand-avatar.png" alt=""></div><div><div class="nm">Kestrel Bay Resort</div><div class="sp2">Sponsored</div></div></div>
+          <div class="r-nm">Built by Kestrel. <em>Run by Tidewater.</em></div>
+          <div class="r-cd"><div><b>18</b><small>Years building</small></div><div><b>600+</b><small>Units delivered</small></div><div><b>9</b><small>Developments</small></div></div>
+          <div class="r-s"><span>Tidewater: <b>close to 900,000 guests a year</b> across 12 venues.</span><img class="xs-lg" src="assets/brand-logo-light.png" alt="Kestrel Bay Resort"></div>
+          <div class="ct"><div class="cv">&#65086;</div><div class="pl">Meet the team behind it</div></div>
+        </div>
+        <div class="xs-tag"><em>&#9679;</em>&ensp;Who&rsquo;s behind it &middot; number tiles</div>
+      </div>
+
+      <div class="xs-cell">
+        <div class="story xs xs-note">
+          <div class="pb dk"><i style="width:80%;"></i></div>
+          <div class="wh dk"><div class="av"><img src="assets/brand-avatar.png" alt=""></div><div><div class="nm">Kestrel Bay Resort</div><div class="sp2">Sponsored</div></div></div>
+          <div class="o-bar"><span>&lsaquo; Notes</span><span>Done</span></div>
+          <div class="o-t">On site at Kestrel Bay Resort</div>
+          <div class="o-d">Kestrel Bay Resort &middot; Bali</div>
+          <ul><li>Lagoon pool and adults&rsquo; pool</li><li>Kids&rsquo; club &mdash; kids under 12 stay free</li><li>Spa and gym</li><li>Yoga deck</li><li>Poolside dining</li><li>Beach-club access</li></ul>
+          <div class="o-hl">Suites from US$165,000.</div>
+          <img class="o-lg" src="assets/brand-logo-dark.png" alt="Kestrel Bay Resort">
+          <div class="ct"><div class="cv dk">&#65086;</div><div class="pl dk">See the suites</div></div>
+        </div>
+        <div class="xs-tag"><em>&#9679;</em>&ensp;On site &middot; notes list</div>
+      </div>
+
+    </div>
+  </div>
+</section>

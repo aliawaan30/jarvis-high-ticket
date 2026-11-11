@@ -1,0 +1,10 @@
+{
+  "browser": "156.0.8078.80",
+  "checks": [
+    "desktop: VSL/no-VSL modes; all five application steps, validation and Back retention; honest review fallback; pre-booking calendar section; Compass-style confirmation; six internal booking/attendance cases; spoofed query rejected; safe URL/text rendering; separate proposal/demo navigation; no overflow or JS errors",
+    "iphone: VSL/no-VSL modes; all five application steps, validation and Back retention; honest review fallback; pre-booking calendar section; Compass-style confirmation; six internal booking/attendance cases; spoofed query rejected; safe URL/text rendering; separate proposal/demo navigation; no overflow or JS errors"
+  ],
+  "errors": [],
+  "scope": "Local synthetic fixtures, not real integrations or Base44 tests.",
+  "proposalPrintContentHeightPx": 678.5
+}

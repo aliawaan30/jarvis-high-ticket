@@ -1,0 +1,106 @@
+[
+  {
+    "id": "S1",
+    "title": "Conexiom / Revere Electric case study",
+    "url": "https://cdn.featuredcustomers.com/CustomerCaseStudy.document/conexiom_revere-electric-supply-co_0.pdf",
+    "inspection": "Vendor-authored deployment case, older/undated document; read background and solution/results portions",
+    "finding": "An electrical distributor used order automation alongside Eclipse. It demonstrates adoption of this category, not our delivery performance or NetSuite compatibility.",
+    "accessed": "2026-10-25"
+  },
+  {
+    "id": "S2",
+    "title": "Celigo: non-EDI order processing",
+    "url": "https://docs.celigo.com/hc/en-us/articles/57443753206811-Process-orders-from-trading-partners-that-don-t-use-EDI",
+    "inspection": "Primary technical documentation, dated 19 October 2026; workflow and validation sections read",
+    "finding": "Documents an existing email/file-to-ERP route with checks and exception handling. Important contrary evidence: the basic capability is already available; we sell scoped implementation, not invented technology.",
+    "accessed": "2026-10-25"
+  },
+  {
+    "id": "S3",
+    "title": "Prokeep product",
+    "url": "https://www.prokeep.com/",
+    "inspection": "Primary product page; relevant product and demo text inspected",
+    "finding": "Markets distributor order capture, quoting and ERP connections. Strong direct alternative; no claim that our concept has unique features.",
+    "accessed": "2026-10-25"
+  },
+  {
+    "id": "S4",
+    "title": "Prokeep pricing",
+    "url": "https://www.prokeep.com/pricing",
+    "inspection": "Primary pricing page; plans and implementation support portions read",
+    "finding": "Pricing is custom and branch based. Order automation appears under Pro; vendor also provides implementation support. No numerical quote verified.",
+    "accessed": "2026-10-25"
+  },
+  {
+    "id": "S5",
+    "title": "Celigo pricing",
+    "url": "https://www.celigo.com/platform/pricing/",
+    "inspection": "Primary pricing page; visible pricing principles and edition information inspected",
+    "finding": "Account-specific licensing must be checked. No verified dollar price for the proposed configuration; do not treat the model allowance as a vendor quote.",
+    "accessed": "2026-10-25"
+  },
+  {
+    "id": "S6",
+    "title": "Celigo integration partners",
+    "url": "https://www.celigo.com/partners/system-integrators/",
+    "inspection": "Primary partner page; programme and service descriptions read",
+    "finding": "There is an established ecosystem selling integrations. This supports a delivery route, not evidence that a client will pay our proposed fee.",
+    "accessed": "2026-10-25"
+  },
+  {
+    "id": "S7",
+    "title": "Wholesale ordering discussion",
+    "url": "https://www.reddit.com/r/Netsuite/comments/1k4j2m7/anyone_found_a_good_way_to_handle_wholesale_orders/",
+    "inspection": "Anonymous buyer/practitioner discussion; original post and relevant replies inspected, not independently verified",
+    "finding": "A poster describes manual NetSuite entry for small-retailer orders; a commenter describes improving a distributor workflow. Useful discovery language, not a measured market study.",
+    "accessed": "2026-10-25"
+  },
+  {
+    "id": "S8",
+    "title": "Manual order-processing discussion",
+    "url": "https://www.reddit.com/r/manufacturing/comments/1ijv9gh/why_is_sales_order_processing_still_so_manual_in/",
+    "inspection": "Anonymous thread; original post and early replies inspected; some replies suspect promotion",
+    "finding": "Shows format/exception concerns, but also a counterexample: some orders are entered in only a few minutes. Weak corroboration; low-volume/fast-entry firms can be poor prospects.",
+    "accessed": "2026-10-25"
+  },
+  {
+    "id": "S9",
+    "title": "QuoteWerks",
+    "url": "https://quotewerks.com/",
+    "inspection": "Primary product page/search material; partial inspection only",
+    "finding": "Alternative quoting tools exist for CRM/PSA/supplier workflows. Breadth scan only; no separate market recommendation.",
+    "accessed": "2026-10-25"
+  },
+  {
+    "id": "S10",
+    "title": "BuildOps preventive maintenance",
+    "url": "https://buildops.com/features/preventative-maintenance",
+    "inspection": "Primary product page; feature and result sections partially inspected",
+    "finding": "Maintenance agreement operations and renewals are a native software category. Breadth scan, not a researched gap.",
+    "accessed": "2026-10-25"
+  },
+  {
+    "id": "S11",
+    "title": "Bullhorn candidate re-engagement",
+    "url": "https://kb.bullhorn.com/automation/Content/Automation/Topics/Recipes/CandidateReengagement.htm",
+    "inspection": "Primary instructions; trigger/filter/sequence sections read",
+    "finding": "Basic candidate re-engagement already has a native recipe. It needs a stronger service case than setting up a sequence.",
+    "accessed": "2026-10-25"
+  },
+  {
+    "id": "S12",
+    "title": "Front / Load One",
+    "url": "https://front.com/customer-stories/load-one",
+    "inspection": "Vendor case study; solution/API workflow portions read",
+    "finding": "A freight operator connected email with its proprietary quoting workflow. Real implementation example reported by vendor; more integration dependencies than the selected bounded pilot.",
+    "accessed": "2026-10-25"
+  },
+  {
+    "id": "S13",
+    "title": "Celigo / Call One",
+    "url": "https://f.hubspotusercontent30.net/hubfs/5812834/Case%20Studies/CallOne_Case_Study.pdf",
+    "inspection": "Vendor case study PDF; background and challenge inspected",
+    "finding": "Telecom-products distributor needed to connect order/product workflows across systems. Product-feed opportunity remains a lightly scanned lead.",
+    "accessed": "2026-10-25"
+  }
+]

@@ -1,0 +1,141 @@
+{
+  "example": false,
+  "client": "ACT Certification",
+  "supplier": "Growth AI",
+  "project": "ACT CRM proposal",
+  "date": "31 October 2026",
+  "purpose": "Build a CRM that connects requests, proposal preparation, signing, payment and assessment in one job record.",
+  "outcome": "Reduce repeated admin and give the team a clear owner, current documents and next task for each job.",
+  "problems": [
+    {
+      "problem": "Duplicate request entry",
+      "detail": "Read the request email, then enter the same details in the job system.",
+      "impact": "Paid staff time is spent repeating information the customer already supplied."
+    },
+    {
+      "problem": "Proposal and document preparation",
+      "detail": "Find the right template, fees and forms; check the current plan revision.",
+      "impact": "Each job needs manual assembly and checking before it can progress."
+    },
+    {
+      "problem": "Signing, payment and booking checks",
+      "detail": "Check separate systems and tell the next person when the job is ready.",
+      "impact": "Staff spend time checking status and chasing the handover."
+    }
+  ],
+  "cost": {
+    "confirmed": false,
+    "volume": null,
+    "current_minutes": null,
+    "target_minutes": null,
+    "hourly_cost": null,
+    "source": "ACT retained discovery notes describe the work but do not quantify the cost."
+  },
+  "build_summary": "One staff workspace connected to the tools the business already uses.",
+  "deliverables": [
+    {
+      "name": "Intake and job record",
+      "does": "Capture the request, contacts and uploaded plans. Assign a quoting owner and task.",
+      "fixes": "Repeated data entry and unclear responsibility."
+    },
+    {
+      "name": "Proposals and documents",
+      "does": "Use approved templates, fee schedules and forms. Keep current files distinct from superseded revisions.",
+      "fixes": "Manual document assembly and version checking."
+    },
+    {
+      "name": "Signing and payment",
+      "does": "Connect DocuSign and Xero status to the job. Assign assessment only at the approved payment milestone.",
+      "fixes": "Separate acceptance/payment checks and handover chasing."
+    },
+    {
+      "name": "Tasks and inspections",
+      "does": "Assign work, connect the Microsoft calendar and record agreed booking reminders and replies.",
+      "fixes": "Manual status updates and booking coordination."
+    }
+  ],
+  "human_control": "Staff approve fees, proposal content and certification decisions. AI may suggest an approved template; staff can override it.",
+  "scope_boundary": "First agreed workflow, approved templates and staff roles. Historical migration and extra reports require an agreed inventory before the scope is signed.",
+  "workflow": [
+    {
+      "title": "Request received",
+      "owner": "QUOTING OWNER",
+      "detail": "The submitted details and plans are on one enquiry. A named staff member checks the information and prepares the proposal."
+    },
+    {
+      "title": "Proposal approved",
+      "owner": "STAFF APPROVAL",
+      "detail": "Staff check the approved template, fee lines, documents and signers. Missing information stays as a staff task; nothing sends without approval."
+    },
+    {
+      "title": "Signed and paid",
+      "owner": "FINANCE HANDOVER",
+      "detail": "Signed documents return to the record. The payment milestone is checked separately before an assessment task is assigned."
+    },
+    {
+      "title": "Assessment and inspection",
+      "owner": "ASSIGNED ASSESSOR",
+      "detail": "The assessor receives the current plans and checklist. Inspection bookings and replies stay linked to the job; changes create an action for staff."
+    }
+  ],
+  "timeline": {
+    "confirmed": false,
+    "rows": [
+      {
+        "when": "[DATE TO AGREE]",
+        "stage": "Design",
+        "work": "Confirm the workflow, screens, templates, access and exact first-release scope.",
+        "approval": "Approve the design"
+      },
+      {
+        "when": "[DATE TO AGREE]",
+        "stage": "Build and connect",
+        "work": "Build the workspace and connect the agreed request, signing, invoice and booking workflow.",
+        "approval": "Review working screens and connections"
+      },
+      {
+        "when": "[DATE TO AGREE]",
+        "stage": "Test and train",
+        "work": "Run representative jobs and exceptions, correct defects and train staff.",
+        "approval": "Buyer accepts the workflow"
+      },
+      {
+        "when": "[DATE TO AGREE]",
+        "stage": "Launch and hand over",
+        "work": "Complete the agreed cutover and hand over access, documentation and support.",
+        "approval": "Approve launch"
+      }
+    ],
+    "condition": "Confirm dates after technical scoping, ACT access and the exact migration inventory."
+  },
+  "dependencies": "A named client contact, approved templates and fees, sample jobs, account access and feedback at the review points.",
+  "commercial": {
+    "approved": false,
+    "build": null,
+    "support": null,
+    "tools": null,
+    "payments": [
+      {
+        "label": "[Agreed initial payment]",
+        "share": null
+      },
+      {
+        "label": "[Agreed delivery milestone]",
+        "share": null
+      },
+      {
+        "label": "[Agreed acceptance payment]",
+        "share": null
+      }
+    ],
+    "conditions": "Final fees, payment stages and support terms to be approved before issue."
+  },
+  "support_scope": "[Confirm support fee, hours, response times and defect cover before issue.]",
+  "decision": "Proceed with the agreed CRM scope and commercial terms.",
+  "next_steps": [
+    "Sign the implementation agreement and pay the initial invoice.",
+    "Nominate the client contact and provide the agreed accounts and materials.",
+    "Hold the kickoff and confirm the first design review."
+  ],
+  "start": null
+}

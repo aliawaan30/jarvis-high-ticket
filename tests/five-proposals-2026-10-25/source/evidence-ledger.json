@@ -1,0 +1,52 @@
+{
+  "reviewed": "2026-10-25",
+  "method": "Opened provider case pages and read the relevant workflow sections; compared each proposed service with the incumbent product in those sources. No interviews, buyer intent test, API execution or implementation price validation. Sources establish category use, not demand for our specific agency offer.",
+  "sources": [
+    {
+      "url": "https://buildops.com/resources/sloan-mechanical-build-ops",
+      "provider": "BuildOps \u00b7 Sloan Mechanical",
+      "read_scope": "Relevant case-study sections; partial page read",
+      "finding": "A named commercial HVAC customer describes same-day quoting and connected service operations. This supports the workflow\u2019s relevance; it does not establish demand for our custom service.",
+      "contrary_evidence": "BuildOps already combines service, quoting and CRM. Start by checking the customer\u2019s native setup; our possible opening is disconnected intake or a specific integration gap, not rebuilding BuildOps.",
+      "supports": "Workflow relevance and existing solution; not proposed fee, result or guarantee"
+    },
+    {
+      "url": "https://www.clearstory.build/customers/pci",
+      "provider": "Clearstory \u00b7 PCI",
+      "read_scope": "Relevant case-study sections; partial page read",
+      "finding": "PCI describes lost or incomplete field tags and a rollout of Clearstory. This is a named example of the problem and an established alternative, not evidence of an untouched market.",
+      "contrary_evidence": "Clearstory already supplies digital extra-work tags, pricing, requests and integrations. A custom layer needs a specific existing-system or capture gap.",
+      "supports": "Workflow relevance and existing solution; not proposed fee, result or guarantee"
+    },
+    {
+      "url": "https://www.withvector.com/success-stories/tiger-lines-streamlines/",
+      "provider": "Vector \u00b7 Tiger Lines",
+      "read_scope": "Relevant case-study sections; partial page read",
+      "finding": "Tiger Lines describes manual document handling and connecting capture to billing. The case reports shorter delivery-to-invoice time; it is a vendor account, not proof of our proposed performance.",
+      "contrary_evidence": "Vector already offers mobile capture and rendition billing. The agency opportunity is a scoped integration or rollout for a specific disconnected process, not a generic PDF-reading bot.",
+      "supports": "Workflow relevance and existing solution; not proposed fee, result or guarantee"
+    },
+    {
+      "url": "https://zangabee.com/zangabees-shopify-netsuite-returns-exchanges-solution-becomes-a-celigo-template/",
+      "provider": "ZangaBee \u00b7 Shopify\u2013NetSuite implementation",
+      "read_scope": "Relevant case-study sections; partial page read",
+      "finding": "A provider describes a customer\u2019s conditional exchange implementation, including waiting for a warehouse receipt. The client and sale value are not disclosed. This is an example of implementation work, not proof of our pricing.",
+      "contrary_evidence": "Loop/Gorgias already share returns data. ZangaBee describes a Shopify\u2013NetSuite workflow that became a Celigo template. Test that template before proposing custom code.",
+      "supports": "Workflow relevance and existing solution; not proposed fee, result or guarantee"
+    },
+    {
+      "url": "https://www.candidately.com/customers/casestudies/twelve10",
+      "provider": "Candidately \u00b7 TWELVE10",
+      "read_scope": "Relevant case-study sections; partial page read",
+      "finding": "A named boutique recruiter describes adopting connected candidate presentations and improving feedback flow. It supports the problem, but the existing product is a serious alternative to a custom build.",
+      "contrary_evidence": "Candidately already provides Bullhorn-linked presentations and a client portal. Use or configure it where it fits; do not charge a custom-build fee to recreate the same feature.",
+      "supports": "Workflow relevance and existing solution; not proposed fee, result or guarantee"
+    },
+    {
+      "url": "https://info.loopreturns.com/hubfs/Loop%20x%20Gorgias%20One%20Pager.pdf",
+      "provider": "Loop/Gorgias",
+      "read_scope": "Full one-page PDF text",
+      "finding": "Native integration surfaces return details in the help desk. Custom work needs a distinct ERP/warehouse gap."
+    }
+  ]
+}

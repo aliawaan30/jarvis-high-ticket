@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find the Market Nobody Is Serving</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#fbfbfc; --surface:#ffffff; --sunk:#f5f5f8;
+  --ink:#0e1016; --ink-2:#333945; --ink-3:#69707e; --ink-4:#9aa1ad;
+  --rule:#e6e6ec; --rule-2:#d2d2dc;
+  --accent:#4b2fc4; --accent-soft:#f1edfd; --accent-line:#cfc2f6;
+  --brass:#8a6210; --brass-soft:#fbf4e6; --brass-line:#e7d2a4;
+  --display:'Fraunces',Georgia,serif;
+  --body:'Instrument Sans',system-ui,-apple-system,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink-2);font-family:var(--body);
+  font-size:18px;line-height:1.68;-webkit-font-smoothing:antialiased;}
+::selection{background:#e3dafb;color:#2c1a7a}
+a{color:var(--accent)}
+
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px 120px;}
+.grid{display:block}
+@media(min-width:1060px){
+  .grid{display:grid;grid-template-columns:200px minmax(0,1fr);gap:56px;align-items:start}
+}
+
+/* ---------- masthead ---------- */
+.top{border-bottom:1px solid var(--rule);background:var(--surface);}
+.top-in{max-width:1140px;margin:0 auto;padding:16px 24px;display:flex;gap:14px;
+  align-items:baseline;justify-content:space-between;}
+.brandmark{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--ink-4);text-decoration:none}
+.brandmark b{color:var(--ink-2);font-weight:600}
+.top a.back{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  text-decoration:none;color:var(--ink-3)}
+.top a.back:hover{color:var(--accent)}
+
+/* ---------- head of the briefing ---------- */
+.head{padding:76px 0 0;max-width:720px}
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 20px}
+.kicker span{color:var(--ink-4)}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(38px,5.6vw,60px);line-height:1.02;
+  letter-spacing:-0.02em;color:var(--ink);margin:0 0 26px;text-wrap:balance;
+  font-variation-settings:'opsz' 60,'SOFT' 0,'WONK' 1;}
+.thesis{font-family:var(--display);font-weight:400;font-size:clamp(21px,2.6vw,26px);line-height:1.38;
+  color:var(--ink);margin:0 0 30px;padding:0 0 0 20px;border-left:2px solid var(--accent);
+  font-variation-settings:'opsz' 20,'WONK' 1;}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;font-family:var(--mono);font-size:11.5px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-4);
+  border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:13px 0;margin:0 0 8px}
+.meta b{font-weight:500;color:var(--ink-3)}
+
+/* ---------- contents rail ---------- */
+.rail{margin:40px 0 0}
+@media(min-width:1060px){.rail{position:sticky;top:34px;margin:118px 0 0}}
+.rail h2{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--ink-4);font-weight:500;margin:0 0 14px}
+.rail ol{list-style:none;margin:0;padding:0}
+.rail li{margin:0 0 2px}
+.rail a{display:flex;gap:10px;align-items:baseline;padding:6px 0;text-decoration:none;
+  font-size:14.5px;line-height:1.3;color:var(--ink-3);border-top:1px solid var(--rule)}
+.rail li:first-child a{border-top:0}
+.rail a i{font-style:normal;font-family:var(--mono);font-size:10.5px;color:var(--ink-4);flex:0 0 18px}
+.rail a:hover{color:var(--accent)}
+.rail a.on{color:var(--ink);font-weight:600}
+.rail a.on i{color:var(--accent)}
+
+/* ---------- body ---------- */
+.main{max-width:720px}
+section.beat{padding:54px 0 0;scroll-margin-top:24px}
+.beat-n{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--ink-4);margin:0 0 10px;display:flex;align-items:center;gap:11px}
+.beat-n::after{content:'';flex:1;height:1px;background:var(--rule)}
+h2.beat-h{font-family:var(--display);font-weight:600;font-size:clamp(26px,3.4vw,34px);line-height:1.12;
+  letter-spacing:-0.015em;color:var(--ink);margin:0 0 20px;text-wrap:balance;
+  font-variation-settings:'opsz' 36,'WONK' 1}
+h3{font-family:var(--body);font-weight:600;font-size:19px;color:var(--ink);margin:30px 0 10px}
+p{margin:0 0 19px}
+.main>section p:first-of-type{font-size:18px}
+strong{color:var(--ink);font-weight:600}
+ul,ol.plain{margin:0 0 19px;padding-left:22px}
+li{margin:0 0 8px}
+.lead{font-size:19.5px;line-height:1.6;color:var(--ink-2)}
+
+/* ---------- framework card ---------- */
+.frame{margin:30px 0;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);
+  overflow:hidden}
+.frame-h{padding:15px 22px;border-bottom:1px solid var(--rule);background:var(--sunk);
+  font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
+.frame-b{padding:6px 22px 8px}
+.frame-row{display:flex;gap:18px;padding:16px 0;border-top:1px solid var(--rule)}
+.frame-row:first-child{border-top:0}
+.frame-row dt{flex:0 0 108px;font-family:var(--display);font-weight:600;font-size:17px;color:var(--ink);
+  font-variation-settings:'opsz' 18}
+.frame-row dd{margin:0;flex:1 1 auto;font-size:16.5px;line-height:1.55;color:var(--ink-2)}
+.frame-row dd em{font-style:normal;display:block;margin-top:4px;color:var(--ink-4);font-size:14.5px}
+
+/* ---------- worked example ---------- */
+.work-ex{margin:30px 0;padding:26px 24px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:4px}
+.work-ex .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 12px}
+.work-ex h3{margin-top:0}
+table{width:100%;border-collapse:collapse;margin:18px 0 10px;font-size:16px}
+th,td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-4);font-weight:500}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--ink);text-align:right;
+  padding-right:0;white-space:nowrap}
+th.n{text-align:right;padding-right:0}
+.sum td{border-bottom:0;border-top:2px solid var(--ink);font-weight:600;color:var(--ink);padding-top:12px}
+
+/* ---------- aside ---------- */
+.aside{margin:28px 0;padding:18px 20px;border-left:2px solid var(--rule-2);background:transparent}
+.aside p{margin:0;font-size:16.5px;color:var(--ink-3)}
+.aside p+p{margin-top:12px}
+.aside b{color:var(--ink-2)}
+
+/* ---------- the work panel ---------- */
+.do{margin:26px 0;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)}
+.do-h{display:flex;gap:12px;align-items:baseline;padding:16px 22px;border-bottom:1px solid var(--rule)}
+.do-h b{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink-4);font-weight:500}
+.do-h span{font-family:var(--display);font-size:18px;font-weight:600;color:var(--ink);
+  font-variation-settings:'opsz' 18}
+.do-b{padding:20px 22px 22px}
+.do-b p:last-child{margin-bottom:0}
+.paste{position:relative;margin:16px 0;background:#12131a;border-radius:4px;overflow:hidden}
+.paste .plab{display:flex;justify-content:space-between;align-items:center;padding:9px 14px;
+  border-bottom:1px solid #23242e;font-family:var(--mono);font-size:10px;letter-spacing:.18em;
+  text-transform:uppercase;color:#7f8699}
+.paste pre{margin:0;padding:16px 14px;overflow-x:auto;font-family:var(--mono);font-size:13.5px;
+  line-height:1.62;color:#d8dbe6;white-space:pre-wrap;word-break:break-word}
+.paste button{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  background:#23242e;color:#c3c8d6;border:0;border-radius:3px;padding:5px 11px;cursor:pointer}
+.paste button:hover{background:#30323f;color:#fff}
+.paste button.did{background:var(--accent);color:#fff}
+.expect{margin:16px 0 0;padding:14px 16px;background:var(--sunk);border-radius:4px;font-size:16px;
+  color:var(--ink-2)}
+.expect b{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-4);display:block;margin-bottom:5px;font-weight:500}
+
+/* ---------- decision ---------- */
+.decide{margin:34px 0 0;padding:28px 26px;background:var(--brass-soft);border:1px solid var(--brass-line);
+  border-radius:4px}
+.decide .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--brass);margin:0 0 12px}
+.decide h3{margin-top:0;font-family:var(--display);font-size:22px;font-variation-settings:'opsz' 22}
+.decide ol{margin:0;padding-left:22px}
+.decide li{color:var(--ink-2);margin-bottom:9px}
+.decide li:last-child{margin-bottom:0}
+
+/* ---------- video ---------- */
+.session{margin:34px 0;border:1px solid var(--rule);border-radius:4px;overflow:hidden;background:var(--surface)}
+.session-h{padding:14px 20px;border-bottom:1px solid var(--rule);font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--ink-4)}
+.session-f{position:relative;padding-top:56.25%}
+.session-f iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.session-c{padding:12px 20px;font-size:15.5px;color:var(--ink-3)}
+
+/* ---------- foot ---------- */
+.foot{margin:72px 0 0;padding:28px 0 0;border-top:1px solid var(--rule);display:flex;
+  justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:baseline}
+.foot a{text-decoration:none;color:var(--ink)}
+.foot .nxt b{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--ink-4);margin-bottom:5px;font-weight:500}
+.foot .nxt span{font-family:var(--display);font-size:20px;font-weight:600;
+  font-variation-settings:'opsz' 20}
+.foot .nxt:hover span{color:var(--accent)}
+.foot .ask{font-size:15px;color:var(--ink-4);max-width:300px}
+</style>
+</head>
+<body>
+<div class="top"><div class="top-in">
+<a class="brandmark" href="/index.html">The <b>High Ticket</b> Course</a>
+<a class="back" href="/index.html">All briefings</a>
+</div></div>
+
+<div class="wrap">
+<header class="head">
+<p class="kicker">Module 2, The Irresistible Offer <span>&middot; Briefing B of G</span></p>
+<h1>Find the Market Nobody Is Serving</h1>
+<p class="thesis">You are not looking for a market you can build something for. You are looking for a market that is losing money in a way nobody has bothered to fix.</p>
+<p class="meta"><span><b>Read</b> 9 min</span><span><b>Work</b> 60 to 90 min</span><span><b>You leave with</b> One market, chosen in writing, with the evidence and the number behind it</span></p>
+</header>
+
+<div class="grid">
+<nav class="rail">
+<h2>In this briefing</h2>
+<ol><li><a href="#b1"><i>01</i><span>The idea</span></a></li><li><a href="#b2"><i>02</i><span>Why it works</span></a></li><li><a href="#b3"><i>03</i><span>In practice</span></a></li><li><a href="#b4"><i>04</i><span>The work</span></a></li><li><a href="#b5"><i>05</i><span>The decision</span></a></li></ol>
+</nav>
+
+<div class="main">
+<section class="beat" id="b1"><p class="beat-n">01 &middot; The idea</p>
+<p class="lead">Almost everyone picks their market backwards. They learn to build a thing, then go looking for somebody who might want it. That is why so many people end up selling websites to cafes for four hundred dollars, competing with a hundred others doing exactly the same, arguing about price.</p>
+
+<p>Work the other way around. Find a market that is <strong>bleeding money through a hole nobody has plugged</strong>, then build whatever plugs it. You are not choosing what to make. You are choosing whose problem you want to own.</p>
+
+<p>This sounds obvious until you notice how it changes your conversations. When you sell a website, you are one of a hundred people offering the same thing, and the buyer's only real question is how much. When you turn up having understood how a specific industry loses ninety thousand dollars a year on something they have accepted as normal, there is nobody to compare you to. There is no market price for the thing you are offering, because the thing you are offering does not exist yet.</p>
+
+<p>That is the whole reason this course starts with research instead of a service. The research <em>is</em> the product. Everything after it, the outreach, the funnel, the calls, is downstream of choosing well here.</p>
+</section><section class="beat" id="b2"><p class="beat-n">02 &middot; Why it works</p>
+<p>Price is never set by your costs. It is set by <strong>what the buyer can compare you to</strong>.</p>
+
+<p>In a crowded market the comparison is three other quotes, so you converge on the cheapest. In an underserved market there is no quote to compare against, so the comparison becomes the cost of the problem itself. If the problem costs them ninety thousand a year, twenty eight thousand to make it stop is not expensive, it is obvious. Same work, same you, entirely different conversation, because of a decision you made before you ever picked up the phone.</p>
+
+<p>So the job in this briefing is to find a market where four things are true at once. Any three without the fourth and you will waste a month proving it.</p>
+
+<div class="frame">
+<div class="frame-h">The four tests</div>
+<div class="frame-b">
+<dl>
+<div class="frame-row"><dt>Volume</dt><dd>Enough businesses that you can run a pipeline into it for a year without running out of people to talk to.<em>Rule of thumb: five hundred reachable businesses. Fewer than that and you burn the market in a quarter.</em></dd></div>
+<div class="frame-row"><dt>Money</dt><dd>The problem costs them more every year than you intend to charge once.<em>If you cannot find the number, you do not understand the problem yet. Go back.</em></dd></div>
+<div class="frame-row"><dt>Pain</dt><dd>They already know it is a problem and have already tried to fix it badly.<em>A problem they have not noticed is education, and education is a much more expensive sale than you think.</em></dd></div>
+<div class="frame-row"><dt>Vacancy</dt><dd>Nobody is already doing this well for them. Not nobody at all, just nobody good.<em>A market with no competitors at all usually means no money. Look for bad competitors, not absent ones.</em></dd></div>
+</dl>
+</div>
+</div>
+
+<p>Vacancy is the one people get wrong. An empty market feels like a gift and is usually a warning. What you actually want is a market served badly by people who are expensive, slow, or built for someone ten times the size. That proves the money exists and tells you exactly where to stand.</p>
+</section><section class="beat" id="b3"><p class="beat-n">03 &middot; In practice</p>
+<p>Here is the shape of a good answer, so you know one when the research hands it to you.</p>
+
+<div class="work-ex">
+<p class="tag">Worked example</p>
+<h3>Wholesale food distribution, independent operators</h3>
+<p>Orders arrive by phone, text message and email, all day, from the same restaurants and cafes every week. Somebody in the office keys every one of them into the system by hand. Everyone in the industry does it this way and nobody thinks of it as a problem. It is just Tuesday.</p>
+
+<table>
+<tr><th>What is happening</th><th class="n">Per year</th></tr>
+<tr><td>40 orders a day, about 6 minutes each to take and key in</td><td class="n">$62,000</td></tr>
+<tr><td>Roughly 2 percent keyed wrong, so redelivery plus credit</td><td class="n">$36,000</td></tr>
+<tr class="sum"><td>What the hole costs them</td><td class="n">$98,000</td></tr>
+</table>
+
+<p>Now the offer writes itself. An order intake system that reads the text, the voicemail and the email, drops a structured order into their existing system, and flags only the ones it is unsure about. Six minutes becomes one. Two percent becomes a fraction of one.</p>
+
+<table>
+<tr><th>The offer</th><th class="n">Amount</th></tr>
+<tr><td>What they get back in year one</td><td class="n">$75,000</td></tr>
+<tr><td>What you charge to install it</td><td class="n">$28,000</td></tr>
+<tr><td>Support and improvements, monthly</td><td class="n">$1,500</td></tr>
+</table>
+
+<p>Read that last table from the buyer's side. They are not being asked for twenty eight thousand dollars. They are being asked whether they would like to stop losing seventy five.</p>
+</div>
+
+<div class="aside">
+<p><b>Those numbers are an illustration, not research.</b> They are the right shape and the right order of magnitude for a real high ticket offer, which is the only reason they are here. Your own numbers have to come out of an actual business you have actually spoken to, and in Module 6 you will be building them live on a discovery call.</p>
+</div>
+
+<p>Notice what is not in the example. No mention of what you would build it with. No AI, no platform, no tooling. The buyer does not care and bringing it up early makes you sound like a supplier instead of someone who understood their business. How it gets built is Module 7's problem.</p>
+</section><section class="beat" id="b4"><p class="beat-n">04 &middot; The work</p>
+<p>Sixty to ninety minutes. You are running the research skill, reading what it returns like a sceptic, and coming out the other side with one market.</p>
+
+<div class="do">
+<div class="do-h"><b>One</b><span>Run the research</span></div>
+<div class="do-b">
+<p>Give Jarvis as much as you can about where you are and what you already know. Markets you have worked in beat markets you have read about, every time, because you can already tell when someone is lying to you about how their day works.</p>
+<div class="paste"><div class="plab"><span>PASTE INTO JARVIS</span><button type="button">Copy</button></div><pre>Run the underserved market research skill.
+
+Here is my situation:
+- I am based in [city, country] and can work with businesses anywhere in [country].
+- Industries I have worked in or understand well: [list them, or write none].
+- I am looking for businesses turning over roughly [range] a year.
+
+Find me five markets where there is a workflow costing them real money every
+year, where they already know it is a problem, and where whoever is serving
+them today is doing it badly.
+
+For each market, give me:
+- who the business is and roughly how many of them exist I can reach
+- the workflow that is broken, described the way someone in that industry
+  would describe it
+- what it plausibly costs them per year, and how you got to that number
+- who is serving them today and why that is not good enough
+- the single strongest reason this market is a bad idea
+
+Rank them. Be hard on this. I would rather have two real ones than five
+comfortable ones.</pre></div>
+<div class="expect">Five markets, each with a number attached and a named reason it might be wrong. Vague answers like small businesses or tradies mean it did not understand the brief. Give it a revenue range and run it again.</div>
+</div>
+</div>
+
+<div class="do">
+<div class="do-h"><b>Two</b><span>Attack what comes back</span></div>
+<div class="do-b">
+<p>Research that agrees with you is worthless. Put every market through the four tests yourself, out loud, and throw away anything that fails one. Then make it defend what survived.</p>
+<div class="paste"><div class="plab"><span>PASTE INTO JARVIS</span><button type="button">Copy</button></div><pre>Take the top three markets from that list. For each one, tell me:
+
+1. Where the yearly cost number came from, and what would have to be true for
+   it to be wrong by half.
+2. Whether they already know this is a problem, and what they have tried.
+3. Who is selling to them today, what those people charge, and what their
+   customers complain about.
+4. How I would get a decision maker on the phone in the next two weeks.
+
+If you cannot answer any of these from real evidence, say so plainly instead
+of filling the gap.</pre></div>
+<div class="expect">At least one market falls over at this step. That is the step working. If all three survive untouched, you are being told what you want to hear.</div>
+</div>
+</div>
+
+<div class="do">
+<div class="do-h"><b>Three</b><span>Check it against you</span></div>
+<div class="do-b">
+<p>Last filter, and it is not a soft one. You are going to be talking about this market every working day for the next six months. On the phone, in DMs, on calls with people who do it for a living.</p>
+<ul>
+<li>Can you get a conversation with one of these owners this week, through anyone you already know?</li>
+<li>Can you hold a ten minute conversation about how their business runs without sounding like a stranger?</li>
+<li>Are you willing to become genuinely interested in this industry, not just the invoice?</li>
+</ul>
+<p>Two out of three is enough. Zero out of three means pick the second one on your list instead, even if the numbers are slightly worse. Interest beats a marginally bigger market every time, because interest is what keeps you dialling in week five.</p>
+</div>
+</div>
+
+<div class="aside">
+<p><b>On the research skill itself.</b> It is built to go and look, not to guess from memory. If an answer comes back with no source behind it, treat it as a hypothesis you still have to prove on the phone, not as a finding. Anything you cannot stand behind on a call, do not put in an offer.</p>
+</div>
+</section><section class="beat" id="b5"><p class="beat-n">05 &middot; The decision</p>
+<p>One market. Written down, with the reasoning attached, before you open the next briefing. Everything from here uses it: the implementation research, the offer, the account list, the ads, the call script. Changing your mind later is not free.</p>
+
+<div class="decide">
+<p class="tag">Before you move on</p>
+<h3>Write this into Jarvis</h3>
+<ol>
+<li>The market, named as specifically as you can. Not hospitality. Independent wholesale food distributors turning over two to ten million.</li>
+<li>The workflow that is broken, in their words.</li>
+<li>What you believe it costs them a year, and where that number came from.</li>
+<li>Who serves them today and why that is not good enough.</li>
+<li>The one thing that would prove you wrong, and how you would find out.</li>
+</ol>
+</div>
+
+<p>That last line matters more than the other four. You are going to spend the next two briefings building an offer on top of this choice. Knowing in advance what would prove you wrong is how you find out in a week instead of a quarter.</p>
+
+<p>Markets two and three stay on the bench. Do not work them, do not email them, do not think about them. One market, properly, beats three at thirty percent effort.</p>
+</section>
+
+<div class="foot">
+<a class="nxt" href="m2-c.html"><b>Next briefing</b><span>Find What They Actually Need Built &rarr;</span></a>
+<p class="ask">Stuck, or want this looked at on your own business? Bring it to the next implementation session.</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+(function(){
+  document.querySelectorAll('.paste').forEach(function(box){
+    var btn=box.querySelector('button'), pre=box.querySelector('pre');
+    if(!btn||!pre)return;
+    btn.addEventListener('click',function(){
+      var t=pre.innerText;
+      function ok(){btn.textContent='Copied';btn.classList.add('did');
+        setTimeout(function(){btn.textContent='Copy';btn.classList.remove('did');},1800);}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,function(){});}
+      else{var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();
+        try{document.execCommand('copy');ok();}catch(e){}a.remove();}
+    });
+  });
+  var links=[].slice.call(document.querySelectorAll('.rail a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function mark(){
+    var y=window.scrollY+140, cur=0;
+    secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i;});
+    links.forEach(function(a,i){a.classList.toggle('on',i===cur);});
+  }
+  window.addEventListener('scroll',mark,{passive:true});mark();
+})();
+</script>
+</body>
+</html>

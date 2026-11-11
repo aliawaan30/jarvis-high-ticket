@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="'Instrument Sans', Arial, sans-serif">
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#8b8e9c"/></marker></defs>
+  <text x="60" y="54" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="600" fill="#0e1016">From call notes to a working system</text>
+  <!-- inputs -->
+  <rect x="60" y="110" width="250" height="150" rx="10" fill="#fbfbfc" stroke="#e6e7ec" stroke-width="1.5"/>
+  <text x="80" y="138" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8b8e9c">YOU PASTE IN</text>
+  <text x="80" y="168" font-size="19" fill="#0e1016">Call one notes and brief</text>
+  <text x="80" y="194" font-size="19" fill="#0e1016">Call two notes</text>
+  <text x="80" y="220" font-size="19" fill="#0e1016">The proposal as presented</text>
+  <text x="80" y="246" font-size="19" fill="#0e1016">Anything the client sent</text>
+  <!-- agent -->
+  <rect x="390" y="110" width="250" height="150" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="410" y="138" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">JARVIS</text>
+  <text x="410" y="170" font-size="22" font-weight="600" fill="#0e1016">Scoping skill</text>
+  <text x="410" y="198" font-size="18" fill="#5a5d6b">Writes the full build plan</text>
+  <text x="410" y="224" font-size="18" fill="#5a5d6b">and the unknowns list</text>
+  <!-- plan -->
+  <rect x="720" y="110" width="250" height="150" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="740" y="138" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8a6210">ONE DOCUMENT</text>
+  <text x="740" y="170" font-size="22" font-weight="600" fill="#0e1016">Build plan</text>
+  <text x="740" y="198" font-size="18" fill="#5a5d6b">Modules, integrations, edge cases,</text>
+  <text x="740" y="224" font-size="18" fill="#5a5d6b">milestones, acceptance tests</text>
+  <path d="M310 185 L380 185" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M640 185 L710 185" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <!-- unknowns loop -->
+  <path d="M845 260 L845 300 L520 300 L520 270" stroke="#8a6210" stroke-width="1.5" fill="none" stroke-dasharray="6 6" marker-end="url(#a)"/>
+  <text x="560" y="322" font-size="16" fill="#8a6210">Unknowns go to the client, answers go back in, before anyone builds</text>
+  <!-- builders -->
+  <rect x="390" y="370" width="250" height="90" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="410" y="398" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">ARBITRAGE</text>
+  <text x="410" y="430" font-size="21" font-weight="600" fill="#0e1016">Developer builds from it</text>
+  <rect x="720" y="370" width="250" height="90" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="740" y="398" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">SELF FULFILMENT</text>
+  <text x="740" y="430" font-size="21" font-weight="600" fill="#0e1016">Jarvis builds from it</text>
+  <path d="M800 260 C800 330 515 310 515 360" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M880 260 L880 360" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <!-- end -->
+  <rect x="1010" y="370" width="130" height="90" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="1030" y="398" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8a6210">THEN</text>
+  <text x="1030" y="426" font-size="19" font-weight="600" fill="#0e1016">Test</text>
+  <text x="1030" y="450" font-size="19" font-weight="600" fill="#0e1016">Hand over</text>
+  <path d="M970 415 L1000 415" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M640 415 L710 415" stroke="#8b8e9c" stroke-width="1.5" fill="none" stroke-dasharray="6 6"/>
+  <text x="60" y="520" font-size="18" fill="#5a5d6b">The same acceptance tests decide when a milestone is paid, whoever built it.</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" font-family="'Instrument Sans', Arial, sans-serif">
+  <rect width="1200" height="400" fill="#ffffff"/>
+  <text x="60" y="54" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="600" fill="#0e1016">The thirty days after sign off</text>
+  <line x1="100" y1="200" x2="1100" y2="200" stroke="#e6e7ec" stroke-width="4"/>
+  <circle cx="100" cy="200" r="12" fill="#4b2fc4"/>
+  <circle cx="760" cy="200" r="12" fill="#4b2fc4"/>
+  <circle cx="1100" cy="200" r="12" fill="#8a6210"/>
+  <rect x="100" y="188" width="660" height="24" rx="12" fill="#efecfb"/>
+  <text x="100" y="140" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">DAY 0</text>
+  <text x="100" y="168" font-size="22" font-weight="600" fill="#0e1016">Sign off. Invoice goes out.</text>
+  <text x="430" y="250" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4" text-anchor="middle">DAYS 1 TO 30</text>
+  <text x="430" y="280" font-size="22" font-weight="600" fill="#0e1016" text-anchor="middle">Support window, included</text>
+  <text x="430" y="308" font-size="18" fill="#5a5d6b" text-anchor="middle">Fixes and questions. New modules are quoted, not built for free.</text>
+  <text x="760" y="140" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4" text-anchor="middle">DAY 30</text>
+  <text x="760" y="168" font-size="22" font-weight="600" fill="#0e1016" text-anchor="middle">Ten minute call. Offer the retainer.</text>
+  <text x="1100" y="250" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8a6210" text-anchor="end">MONTH 2 ON</text>
+  <text x="1100" y="280" font-size="22" font-weight="600" fill="#0e1016" text-anchor="end">Retainer, case study, higher price</text>
+  <text x="1100" y="308" font-size="18" fill="#5a5d6b" text-anchor="end">The most profitable money in the deal.</text>
+</svg>

@@ -1,0 +1,523 @@
+[
+  {
+    "id": "fieldquote",
+    "name": "Fieldquote",
+    "tag": "COMMERCIAL HVAC",
+    "color": "#c46032",
+    "light": "#f8e9df",
+    "headline": "Turn field findings<br>into <em>repair work.</em>",
+    "sub": "Your technician finds a fault. Your office gets a checked repair quote to approve\u2014without rebuilding the visit from scattered notes.",
+    "buyer": "Commercial HVAC service companies with a busy maintenance book and an office team preparing repair quotes.",
+    "owner": "Owner or service operations manager",
+    "problem": "The visit is finished. The repair quote is not.",
+    "pains": [
+      "Technicians describe the fault in notes, photos and calls. The office has to piece it together.",
+      "Missing model numbers and uncertain parts send the quote back to the technician.",
+      "Repair opportunities wait while customers still need a clear price and a next step."
+    ],
+    "offer": "We turn your technicians\u2019 completed findings into clear, approval-ready repair quotes inside your existing workflow, so useful repair opportunities reach the customer sooner.",
+    "system": "An intake and quote-preparation workflow: read the visit, match approved equipment and price-book records, flag gaps, prepare the quote, then hand it to your estimator.",
+    "scope": [
+      "One service team and one repair category",
+      "Visit-note intake and equipment matching",
+      "Approved price-book lookup and quote draft",
+      "Estimator review, handoff and status tracking"
+    ],
+    "exclude": "No AI diagnosis, guessed parts, autonomous pricing or replacement of your field-service platform.",
+    "dependency": "Sample visits, a current price book, equipment records, permission to connect the existing software, and an estimator who owns approvals.",
+    "accept": "On an agreed test set, each complete visit creates a traceable draft; unknown parts block the quote; nothing sends without estimator approval.",
+    "fit": "Start with a team producing enough repair quotes to have a measurable queue. Reject the custom build if its field-service platform already covers the process well.",
+    "alternative": "BuildOps already combines service, quoting and CRM. Start by checking the customer\u2019s native setup; our possible opening is disconnected intake or a specific integration gap, not rebuilding BuildOps.",
+    "source": "https://buildops.com/resources/sloan-mechanical-build-ops",
+    "source_name": "BuildOps \u00b7 Sloan Mechanical",
+    "evidence": "A named commercial HVAC customer describes same-day quoting and connected service operations. This supports the workflow\u2019s relevance; it does not establish demand for our custom service.",
+    "strength": "Named vendor case; custom-service demand untested",
+    "acquire": "Call service managers at regional commercial HVAC firms. Offer to trace three recent maintenance visits through to the quote. Use a short screen demo in a personal follow-up email; broad ads come after a repeated pain is confirmed.",
+    "question": "Show us the last repair quote that took too long. What was missing, who touched it, and when did the customer receive it?",
+    "metric": "Quotes per month",
+    "volume": 180,
+    "before": 25,
+    "after": 10,
+    "rate": 40,
+    "unit": "quotes",
+    "extra": "Additional repair wins could matter more than time saved, but we have not assumed any increase in sales.",
+    "complexity": "Moderate \u00b7 field-service integration and price-book quality",
+    "input_title": "TECHNICIAN\u2019S PHONE",
+    "input_type": "voice",
+    "input_text": "\u201cRTU-04 has a worn belt. Photo attached. Recommend replacement. Need the exact belt size checked.\u201d",
+    "input_meta": "Northside Offices \u00b7 Maintenance visit 482",
+    "output_title": "ESTIMATOR\u2019S DESK",
+    "output_name": "Repair quote \u00b7 RTU-04",
+    "rows": [
+      [
+        "Customer",
+        "Northside Offices"
+      ],
+      [
+        "Asset",
+        "RTU-04"
+      ],
+      [
+        "Repair",
+        "Replace worn belt"
+      ],
+      [
+        "Parts",
+        "Awaiting approved match"
+      ]
+    ],
+    "steps": [
+      [
+        "Capture the finding",
+        "The visit note and equipment photo arrive together.",
+        "Visit captured",
+        "Read the note"
+      ],
+      [
+        "Build the draft",
+        "The workflow links the asset and prepares the repair description.",
+        "Equipment record linked",
+        "Match the asset"
+      ],
+      [
+        "Stop at the missing detail",
+        "The belt size is uncertain. Pricing stays blocked until the estimator checks it.",
+        "Belt size needs review",
+        "Flag the gap"
+      ],
+      [
+        "A person makes the decision",
+        "Simulated estimator action: confirms the approved part and checks the price.",
+        "Part confirmed by estimator",
+        "Human approval"
+      ],
+      [
+        "Ready for the customer",
+        "The approved quote is ready for the normal send process. It is not a sold job yet.",
+        "Quote ready to send",
+        "Prepare the quote"
+      ]
+    ],
+    "exception": "Asset not found. Route to the estimator; do not invent equipment or a price.",
+    "deal": "Optional outcome target: reduce visit-to-approved-quote time. Set the target only after measuring a sample; do not guarantee extra sales.",
+    "route": "Implementation/configuration first; custom intake only if the gap survives the native-software check.",
+    "finalValue": "Approved part confirmed"
+  },
+  {
+    "id": "changeproof",
+    "name": "Changeproof",
+    "tag": "SPECIALTY CONTRACTORS",
+    "color": "#3c67ae",
+    "light": "#e6edf8",
+    "headline": "You did the extra work.<br><em>Make it billable.</em>",
+    "sub": "Turn field notes, labour and photos into a complete change-order request\u2014before the evidence disappears into someone\u2019s phone.",
+    "buyer": "Electrical, mechanical and drywall subcontractors handling recurring extra work on commercial projects.",
+    "owner": "Owner, commercial manager or project director",
+    "problem": "Extra work happens on site. The paperwork falls behind.",
+    "pains": [
+      "The crew completes extra work, but the instruction, hours and photos live in different places.",
+      "Project managers chase missing detail days later, when memories are already fading.",
+      "Requests arrive late or incomplete and become harder to substantiate."
+    ],
+    "offer": "We connect your field records to your change-order process, so extra work becomes a complete, priced request your project manager can review and submit.",
+    "system": "An evidence-to-request workflow: capture the instruction, link labour and materials, check required evidence, apply approved rates, and assemble the request for a project manager.",
+    "scope": [
+      "One project and one extra-work workflow",
+      "Mobile note/photo intake linked to the job",
+      "Evidence checklist and approved rate lookup",
+      "Draft request, review queue and submission log"
+    ],
+    "exclude": "No automatic entitlement decisions, contract interpretation, fabricated signatures or promise that the main contractor will pay.",
+    "dependency": "Project rules, approved rates, real sample extra-work records, a field champion and the project manager responsible for submission.",
+    "accept": "Every pilot request links to its source records; missing authorisation blocks submission; the project manager can revise, approve and trace the final packet.",
+    "fit": "Suitable when extra-work records genuinely get lost between field and office. If a configured Clearstory workflow fixes it, implement that instead of selling redundant custom software.",
+    "alternative": "Clearstory already supplies digital extra-work tags, pricing, requests and integrations. A custom layer needs a specific existing-system or capture gap.",
+    "source": "https://www.clearstory.build/customers/pci",
+    "source_name": "Clearstory \u00b7 PCI",
+    "evidence": "PCI describes lost or incomplete field tags and a rollout of Clearstory. This is a named example of the problem and an established alternative, not evidence of an untouched market.",
+    "strength": "Named vendor case and existing paid platform",
+    "acquire": "Target project directors at regional subcontractors through association directories and LinkedIn. Call about the last disputed or late extra-work request; send a walkthrough using a redacted example they provide.",
+    "question": "Which extra-work request was last delayed or rejected because the supporting records were missing?",
+    "metric": "Requests per month",
+    "volume": 100,
+    "before": 40,
+    "after": 15,
+    "rate": 55,
+    "unit": "requests",
+    "extra": "Recovering previously unbilled work is a separate upside. Only count it after entitlement, approval and collection are established; it is not included here.",
+    "complexity": "Moderate \u00b7 project rules and rate control",
+    "input_title": "FOREMAN\u2019S FIELD LOG",
+    "input_type": "ticket",
+    "input_text": "Level 3 \u00b7 reroute cable tray around revised ductwork. Two electricians \u00d7 4 hours. Photos and site instruction attached.",
+    "input_meta": "Project Riverside \u00b7 Extra work EW-028",
+    "output_title": "PROJECT MANAGER\u2019S DESK",
+    "output_name": "Change request \u00b7 EW-028",
+    "rows": [
+      [
+        "Project",
+        "Riverside / Level 3"
+      ],
+      [
+        "Labour",
+        "8 hours"
+      ],
+      [
+        "Evidence",
+        "2 photos + site instruction"
+      ],
+      [
+        "Authorisation",
+        "Needs PM review"
+      ]
+    ],
+    "steps": [
+      [
+        "Capture the extra work",
+        "A foreman records the work while the details are still fresh.",
+        "Field record received",
+        "Capture"
+      ],
+      [
+        "Assemble the evidence",
+        "Hours, photos and the site instruction are linked to the same job.",
+        "Evidence packet assembled",
+        "Connect records"
+      ],
+      [
+        "Check before pricing",
+        "The instruction is present, but its approval status needs the project manager.",
+        "Authorisation needs review",
+        "Check the gap"
+      ],
+      [
+        "The manager signs off",
+        "Simulated PM action: confirms the instruction and checks the approved rates.",
+        "Scope and rates reviewed",
+        "Human approval"
+      ],
+      [
+        "A complete request",
+        "The request is ready for submission with a traceable evidence pack. Payment is still the customer\u2019s decision.",
+        "Request ready to submit",
+        "Prepare request"
+      ]
+    ],
+    "exception": "Missing site instruction. Hold the request and assign the PM to obtain evidence; do not manufacture approval.",
+    "deal": "Potential outcome target: complete eligible requests ready for review within an agreed interval. Do not promise payment of disputed work.",
+    "route": "Configure the specialist platform first; integrate field capture if a genuine gap remains.",
+    "finalValue": "PM reviewed"
+  },
+  {
+    "id": "loadclear",
+    "name": "Loadclear",
+    "tag": "FREIGHT CARRIERS",
+    "color": "#247e79",
+    "light": "#e2f1ec",
+    "headline": "The load is delivered.<br><em>Get the invoice moving.</em>",
+    "sub": "Collect delivery documents, match them to the load and prepare the billing packet\u2014without the office chasing every driver.",
+    "buyer": "Regional trucking companies whose delivery documents delay invoicing across drivers or depots.",
+    "owner": "Billing manager, controller or owner",
+    "problem": "The truck is back on the road. The invoice is still waiting.",
+    "pains": [
+      "Delivery receipts arrive as photos, scans and attachments with missing load numbers.",
+      "Billing staff chase signatures and extra-charge receipts before an invoice can go out.",
+      "Completed loads sit unbilled while the team sorts the documents."
+    ],
+    "offer": "We connect driver paperwork to your billing workflow, so complete deliveries become invoice-ready packets and missing documents get a clear owner.",
+    "system": "A delivery-to-billing workflow: read uploaded documents, match the load, check customer-required paperwork, chase missing items internally, and prepare the packet for billing approval.",
+    "scope": [
+      "One depot and one customer billing pattern",
+      "Document intake and load matching",
+      "Missing-document queue and internal reminders",
+      "Invoice packet preparation and billing handoff"
+    ],
+    "exclude": "No invented signatures, automatic accessorial approval, collection guarantee or unapproved invoice sending.",
+    "dependency": "TMS access, customer billing requirements, sample delivery documents, duplicate rules and a billing approver.",
+    "accept": "A complete sample packet matches the right load once; a missing signature or mismatch blocks billing; the billing team can inspect and approve the packet.",
+    "fit": "Start where the office can show delivered loads waiting for paperwork. If its TMS or Vector deployment already does this, improve that configuration rather than duplicate it.",
+    "alternative": "Vector already offers mobile capture and rendition billing. The agency opportunity is a scoped integration or rollout for a specific disconnected process, not a generic PDF-reading bot.",
+    "source": "https://www.withvector.com/success-stories/tiger-lines-streamlines/",
+    "source_name": "Vector \u00b7 Tiger Lines",
+    "evidence": "Tiger Lines describes manual document handling and connecting capture to billing. The case reports shorter delivery-to-invoice time; it is a vendor account, not proof of our proposed performance.",
+    "strength": "Named vendor implementation; exact agency offer untested",
+    "acquire": "Build a focused list of regional carriers, then call billing managers. Ask for their delivered-but-not-invoiced report. A personalised email with a mock packet supports the call; mass SMS is not the starting route.",
+    "question": "How many delivered loads are waiting to be invoiced today, and which documents are holding them up?",
+    "metric": "Loads per month",
+    "volume": 1200,
+    "before": 9,
+    "after": 3,
+    "rate": 32,
+    "unit": "loads",
+    "extra": "Earlier invoicing may release working capital. That is not new revenue, and payment timing still depends on customers.",
+    "complexity": "Moderate \u00b7 TMS access and document matching",
+    "input_title": "DRIVER\u2019S UPLOAD",
+    "input_type": "document",
+    "input_text": "Proof of delivery \u00b7 Load 8421. Delivered to West Depot. Three pallets. Receiver signature is hard to read.",
+    "input_meta": "Load 8421 \u00b7 Delivery paperwork",
+    "output_title": "BILLING DESK",
+    "output_name": "Invoice packet \u00b7 8421",
+    "rows": [
+      [
+        "Load",
+        "8421"
+      ],
+      [
+        "Delivery receipt",
+        "Received"
+      ],
+      [
+        "Rate confirmation",
+        "Matched"
+      ],
+      [
+        "Receiver signature",
+        "Needs clearer scan"
+      ]
+    ],
+    "steps": [
+      [
+        "The driver uploads",
+        "The receipt arrives against the delivery record.",
+        "Document received",
+        "Capture"
+      ],
+      [
+        "Match the load",
+        "Load number and destination are checked against the transport system.",
+        "Load and rate matched",
+        "Match"
+      ],
+      [
+        "Catch the blocker",
+        "The receiver signature cannot be verified from this scan. Billing stays on hold.",
+        "Clearer receipt required",
+        "Check"
+      ],
+      [
+        "Billing checks the replacement",
+        "Simulated staff action: a clearer receipt is supplied and reviewed.",
+        "Documents approved",
+        "Human review"
+      ],
+      [
+        "Ready to invoice",
+        "The packet joins the billing queue with its supporting records. No invoice has been sent in this demo.",
+        "Packet ready for billing",
+        "Handoff"
+      ]
+    ],
+    "exception": "Load number does not match the delivery destination. Quarantine the document; never attach it to a guessed load.",
+    "deal": "Potential outcome target: reduce delivery-to-invoice-ready time for complete records. It is not a promise of collection or new revenue.",
+    "route": "Existing document/billing product plus bounded TMS integration; verify access before quoting.",
+    "finalValue": "Replacement scan approved"
+  },
+  {
+    "id": "exchangeflow",
+    "name": "Exchangeflow",
+    "tag": "ECOMMERCE OPERATIONS",
+    "color": "#aa4e65",
+    "light": "#f7e6eb",
+    "headline": "An exchange should not<br><em>be an office project.</em>",
+    "sub": "Connect the customer request, warehouse receipt and replacement order\u2014so your team can resolve exchanges without chasing three systems.",
+    "buyer": "Shopify retailers also using NetSuite, with enough exchanges to need a dedicated operations process.",
+    "owner": "Head of ecommerce, operations director or customer-experience lead",
+    "problem": "The customer wants another size. Your systems disagree.",
+    "pains": [
+      "Support sees the request, the warehouse sees the parcel, and finance sees a different status.",
+      "Replacements wait on manual checks\u2014or get released before the returned item is received.",
+      "Customers ask for updates while the team switches between tools to reconstruct what happened."
+    ],
+    "offer": "We connect one clearly defined exchange flow across your store and back office, with a visible hold until the warehouse confirms the return and staff approve any exception.",
+    "system": "A same-price exchange workflow: identify the order, draft the support response, check policy and stock, create a held request, then release it after the required warehouse event.",
+    "scope": [
+      "One store and same-price size exchanges",
+      "Order, policy and stock lookups",
+      "Warehouse-receipt hold and release logic",
+      "Exception queue, status sync and audit trail"
+    ],
+    "exclude": "No full ERP migration, autonomous refunds, price-difference accounting or tax changes. AI drafts language; deterministic rules control financial and stock actions.",
+    "dependency": "Shopify/NetSuite sandbox access, return policy, a warehouse event owner, integration licence review and finance approval of the test cases.",
+    "accept": "A duplicate event cannot create a second exchange; no replacement releases before verified receipt; unavailable stock and policy exceptions stay in a staff queue.",
+    "fit": "This is the advanced option. Skip small stores whose normal returns app already covers the whole process; target a demonstrable store-to-ERP gap.",
+    "alternative": "Loop/Gorgias already share returns data. ZangaBee describes a Shopify\u2013NetSuite workflow that became a Celigo template. Test that template before proposing custom code.",
+    "source": "https://zangabee.com/zangabees-shopify-netsuite-returns-exchanges-solution-becomes-a-celigo-template/",
+    "source_name": "ZangaBee \u00b7 Shopify\u2013NetSuite implementation",
+    "evidence": "A provider describes a customer\u2019s conditional exchange implementation, including waiting for a warehouse receipt. The client and sale value are not disclosed. This is an example of implementation work, not proof of our pricing.",
+    "strength": "Provider implementation account; anonymous buyer",
+    "source2": "https://info.loopreturns.com/hubfs/Loop%20x%20Gorgias%20One%20Pager.pdf",
+    "acquire": "Find ecommerce operations leads whose companies publicly use Shopify and NetSuite. Confirm the stack and exchange volume on a discovery call; demonstrate the hold-and-release workflow to operations and finance together.",
+    "question": "Walk through the last exchange that needed support, warehouse and finance to intervene. Where did the status stop updating?",
+    "metric": "Exchanges per month",
+    "volume": 600,
+    "before": 12,
+    "after": 4,
+    "rate": 32,
+    "unit": "exchanges",
+    "extra": "Retained sales and repeat purchases are not included. This model values handling capacity only.",
+    "complexity": "Advanced \u00b7 inventory and financial-system integration",
+    "input_title": "CUSTOMER SUPPORT",
+    "input_type": "chat",
+    "input_text": "\u201cMy jacket arrived but medium is too small. Can I exchange it for a large?\u201d",
+    "input_meta": "Order #1048 \u00b7 Same-price size exchange",
+    "output_title": "OPERATIONS DESK",
+    "output_name": "Exchange \u00b7 #1048",
+    "rows": [
+      [
+        "Original",
+        "Jacket / Medium"
+      ],
+      [
+        "Requested",
+        "Jacket / Large"
+      ],
+      [
+        "Policy + stock",
+        "Eligible / Available"
+      ],
+      [
+        "Warehouse receipt",
+        "Not received"
+      ]
+    ],
+    "steps": [
+      [
+        "Understand the request",
+        "The message is linked to the order and a response is drafted from the store policy.",
+        "Order identified",
+        "Read request"
+      ],
+      [
+        "Check the rules",
+        "The workflow checks the approved return window and available size.",
+        "Policy and stock checked",
+        "Check"
+      ],
+      [
+        "Hold the replacement",
+        "The replacement stays on hold until the returned item is physically confirmed.",
+        "Waiting for warehouse receipt",
+        "Hold"
+      ],
+      [
+        "The warehouse confirms",
+        "Simulated warehouse action: staff receive and inspect the returned item.",
+        "Receipt confirmed by staff",
+        "Human event"
+      ],
+      [
+        "Release the exchange",
+        "The approved replacement moves to fulfilment and the customer update is prepared.",
+        "Replacement ready for fulfilment",
+        "Release"
+      ]
+    ],
+    "exception": "Large is out of stock. Keep the replacement on hold and ask support to offer approved options; never promise unavailable stock.",
+    "deal": "Commit to the tested hold, duplicate protection and exception routing\u2014not a guaranteed increase in retained revenue.",
+    "route": "Template-led integration with an experienced ERP specialist. Not a first unsupported beginner build.",
+    "finalValue": "Received by warehouse"
+  },
+  {
+    "id": "shortlist",
+    "name": "Shortlist",
+    "tag": "RECRUITMENT AGENCIES",
+    "color": "#7759a9",
+    "light": "#eee7f6",
+    "headline": "Great candidates.<br><em>Ready to present.</em>",
+    "sub": "Turn the CV and your interview notes into a clear, source-linked candidate brief\u2014then give the recruiter the final say.",
+    "buyer": "Specialist recruitment agencies preparing frequent bespoke candidate submissions for hiring managers.",
+    "owner": "Agency founder or recruitment operations manager",
+    "problem": "The candidate is ready. The submission is still being rewritten.",
+    "pains": [
+      "Recruiters copy the same experience, salary and availability into another client template.",
+      "Interview notes and CV details conflict, so someone has to check the story before sending.",
+      "Hiring-manager feedback disappears across forwarded emails."
+    ],
+    "offer": "We connect candidate records, interview notes and your client template to prepare accurate submission packs, with recruiter approval and a clear feedback handoff.",
+    "system": "A submission-preparation workflow: extract supported facts, map them to the role brief, flag contradictions, format the profile, and prepare a client share for recruiter approval.",
+    "scope": [
+      "One recruiting team and submission format",
+      "CV and approved interview-note intake",
+      "Fact-linked brief and contradiction checks",
+      "Recruiter approval and client feedback record"
+    ],
+    "exclude": "No automated candidate rejection or ranking, invented achievements, reference verification or sending personal data without authorised review.",
+    "dependency": "Approved candidate data, the role brief, ATS access, retention/access rules and a recruiter who checks facts and permission to share.",
+    "accept": "Each material claim traces to a source; conflicting salary or availability stays flagged; sharing requires recruiter approval; access can be revoked.",
+    "fit": "A simple tool may be enough. Only sell implementation where bespoke templates, permissions or disconnected intake create a real recurring gap.",
+    "alternative": "Candidately already provides Bullhorn-linked presentations and a client portal. Use or configure it where it fits; do not charge a custom-build fee to recreate the same feature.",
+    "source": "https://www.candidately.com/customers/casestudies/twelve10",
+    "source_name": "Candidately \u00b7 TWELVE10",
+    "evidence": "A named boutique recruiter describes adopting connected candidate presentations and improving feedback flow. It supports the problem, but the existing product is a serious alternative to a custom build.",
+    "strength": "Named vendor case; weakest custom-build differentiation",
+    "acquire": "Approach specialist agency founders via LinkedIn and phone with a sample submission in their format. Ask to time the preparation of one real pack before proposing any integration.",
+    "question": "What does your team still rewrite by hand after the CV and interview are complete, and why does your current ATS not handle it?",
+    "metric": "Submissions per month",
+    "volume": 300,
+    "before": 25,
+    "after": 8,
+    "rate": 45,
+    "unit": "submissions",
+    "extra": "Placement fees are not included. Faster presentation does not by itself establish extra placements.",
+    "complexity": "Moderate \u00b7 ATS access, privacy and source accuracy",
+    "input_title": "RECRUITER\u2019S WORKSPACE",
+    "input_type": "profile",
+    "input_text": "Alex Morgan \u00b7 Operations lead. CV: warehouse team leadership. Interview: available in four weeks. ATS record: two weeks.",
+    "input_meta": "Synthetic candidate \u00b7 Interview + CV",
+    "output_title": "CLIENT PRESENTATION",
+    "output_name": "Candidate brief \u00b7 Alex Morgan",
+    "rows": [
+      [
+        "Role",
+        "Operations lead"
+      ],
+      [
+        "Experience",
+        "Source-linked summary"
+      ],
+      [
+        "Availability",
+        "Conflicting records"
+      ],
+      [
+        "Share status",
+        "Recruiter approval needed"
+      ]
+    ],
+    "steps": [
+      [
+        "Bring the sources together",
+        "The CV, interview notes and job brief form the starting record.",
+        "Sources attached",
+        "Collect"
+      ],
+      [
+        "Prepare the candidate brief",
+        "The assistant drafts only claims supported by those records.",
+        "Draft with source links",
+        "Draft"
+      ],
+      [
+        "Spot the contradiction",
+        "Two sources give different start dates. The draft stays unshared.",
+        "Availability needs confirmation",
+        "Check"
+      ],
+      [
+        "The recruiter confirms",
+        "Simulated recruiter action: confirms four weeks and approves the brief for the named client.",
+        "Availability and sharing approved",
+        "Human approval"
+      ],
+      [
+        "A clear client handoff",
+        "The pack is ready to share, with feedback assigned back to the recruiter.",
+        "Pack ready for client",
+        "Present"
+      ]
+    ],
+    "exception": "A claimed certification has no supporting source. Remove the claim and ask the recruiter; do not infer it from the job title.",
+    "deal": "Potential outcome target: reduce preparation time while passing an agreed factual-review checklist. Never guarantee placements.",
+    "route": "Configure existing presentation software first. Custom work only for a verified gap.",
+    "finalValue": "Approved by recruiter"
+  }
+]

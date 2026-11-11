@@ -1,0 +1,125 @@
+SETTER TRAINING: HOW TO HANDLE TECHNICAL AI QUESTIONS
+Recording script • Approx. 7–9 minutes • Blake’s Jarvis programme
+Purpose: help setters answer accurately, understand what the prospect actually needs and hand off useful context to the closer. Examples describe how systems can work, not a claim that every integration is included or already live.
+
+0:00 — YOUR JOB IN THIS CONVERSATION
+[Camera on Blake. On screen: Explain → Example → Clarify → Next step.]
+
+“If someone asks what an API is, what MCP means, or whether Jarvis can connect to their CRM, don’t panic and don’t start throwing technical words back at them.
+
+Your job is to give a clear answer, connect it to something useful, and understand why they’re asking. They might know more about the technology than you. That’s completely fine. What destroys trust is confidently making something up.
+
+Use this pattern: answer their actual question, give one example, then ask what they’re trying to achieve. If they want deeper technical detail, capture it properly for the closer or technical team. Don’t dodge the question with ‘book a call and we’ll tell you.’ Give them the useful answer you do know first.”
+
+0:50 — WHAT IS AN API?
+[On screen: CRM ← requests and responses → connected application.]
+
+“API stands for Application Programming Interface. In plain English, it’s a defined way for one piece of software to request information or actions from another.
+
+Imagine a CRM offers an API that lets another application read a lead or create a task. A connected system can request those actions without a person clicking through the CRM each time.
+
+Having an API doesn’t mean we can do absolutely anything inside that app. The provider decides which actions are available, and the account needs the right access.
+
+So your short answer is: ‘An API is how software talks to other software. For example, it could let an authorised system read a lead from your CRM or update its status. Which CRM and action are you thinking about?’”
+
+1:40 — WHAT IS MCP, AND HOW IS IT DIFFERENT?
+[On screen: AI application → MCP connector → business software/API. Label: one common architecture.]
+
+“MCP stands for Model Context Protocol. It’s a standard way for an AI application to connect with external tools and information.
+
+Think of an API as the functions a software product makes available. An MCP server can package functions into tools an AI application knows how to request. It will often use the software’s API behind the scenes.
+
+They’re not competing things. An integration can use both. MCP is not the AI model, and you don’t need MCP for every automation. The connection still needs permissions and working tools.
+
+Say: ‘MCP gives AI applications a standard way to work with connected tools and data. An API is often the connection underneath. The useful question is what you want the agent to read or do in your system.’
+
+If they ask whether our specific connector can publish campaigns, don’t answer yes just because it says Meta. It might support reporting but not publishing. Confirm the actual action.”
+
+2:40 — MODEL, AGENT, SKILL AND AUTOMATION
+[On screen: Model: interprets • Skill: instructions • Tools: actions • Workflow: sequence.]
+
+“The model generates and interprets language. The agent is the broader system using a model, instructions and tools to work toward a task.
+
+A skill is a reusable set of instructions, examples or procedures. It teaches the agent how we want a particular job done. A skill file by itself doesn’t give the agent a phone number, access to a CRM or a video-rendering machine.
+
+A workflow defines when steps happen and how they connect. Some steps can be fixed rules. Other steps can use AI judgment.
+
+A webhook is an event notification. For example, a supported CRM can notify a connected workflow when a reply arrives. That notification can start the next step. A schedule can also trigger work. You shouldn’t have to open a chat to trigger every task once the workflow is properly connected.
+
+Autonomous means it can carry out the agreed workflow within its permissions. It does not mean it should make every business decision with no oversight.”
+
+3:45 — WALK THROUGH ONE REALISTIC EXAMPLE
+[Show a labelled example, not a fabricated live demonstration.]
+
+“Picture a business receiving a new enquiry. An event starts the workflow. The system reads the relevant lead details. It checks the rules: should it respond, has someone already handled this, has the person opted out?
+
+The model can help draft or interpret a message. A connected messaging tool actually sends it if that action is authorised. The CRM records what happened. If the person asks something outside the approved information, the system hands it to a person.
+
+That’s the difference between a chatbot giving you advice and a connected system doing a defined job. The pieces all have to work together. A good demo shows the task completing and the record updating, not just an impressive chat response.”
+
+4:35 — QUESTIONS YOU WILL GET
+[Cut between Blake and each question on screen.]
+
+“‘Isn’t this just Claude or ChatGPT?’
+‘Those are examples of underlying AI products. The value we need to demonstrate is the workflow around the model: the business instructions, connected tools, context and execution. What are you currently trying to automate?’
+Don’t claim we invented the underlying model or that every customer has a custom-trained model.
+
+‘Can it connect to my software?’
+‘Potentially. Which product and plan are you on, and what exactly should it read or change? We need to confirm those actions, not just whether a connector exists.’
+If you already have a verified integration sheet, answer from that sheet.
+
+‘Can it run twenty-four seven?’
+‘A deployed workflow can run on schedules or events without you sitting in chat. The runtime has to stay available, and there are usage limits, error handling and monitoring to consider. We’ll confirm how that works for the particular workflow.’
+
+‘Does it remember my entire business?’
+‘It uses the context and records made available to it. Useful business memory needs to be stored and maintained; it isn’t automatic perfect recall of everything you’ve ever said.’
+
+‘Where is my data stored? Is it secure?’
+‘That depends on the platform and connected services. I’ll get you the actual information on storage, access and model providers for the setup you’re considering.’
+Never guess a hosting country, claim data never leaves a device, or promise a compliance certification you haven’t verified.
+
+‘Will I have to code?’
+‘Some services can be delivered using existing tools and templates; custom integrations can require development. We scope the service and delivery route before promising what you can build.’
+Don’t promise any student they can deliver any custom system with one prompt.
+
+‘Can you guarantee I’ll make twenty thousand a month?’
+‘That’s the business target we’re helping people work toward, not an automatic income result. Your offer, acquisition, sales and delivery all matter.’
+Use only the programme’s actual approved terms when discussing a guarantee.”
+
+6:40 — WHEN THEY ASK SOMETHING YOU DON’T KNOW
+[On screen: Be specific about what needs checking.]
+
+“Here’s a strong answer: ‘I understand what you want it to do. I can explain the workflow, but I don’t want to guess about that platform’s write permissions. Let me capture the exact requirement so our technical team can confirm it.’
+
+That’s much stronger than pretending. And don’t stop at ‘I’ll ask someone’. Put these details in the CRM: their software and plan, the task, the trigger, the information it needs, the action it should take, any data restrictions, and the exact unanswered question.
+
+For example: ‘Uses HubSpot. Wants replies classified and owner notified. Asked whether their plan allows writing the classification to a custom field. Unverified; needs technical confirmation.’
+
+The closer now has an actual brief instead of ‘technical guy, lots of questions’.”
+
+7:30 — CLOSE THE TRAINING
+[On screen: Explain the task clearly. Never invent the capability.]
+
+“A sophisticated prospect doesn’t need you to sound like an engineer. They need you to understand the job, explain the system clearly and know what’s verified.
+
+Before you take these calls, practise explaining an API and MCP in your own words. Then walk through a lead-response example and identify what triggers it, what the AI decides, what tool performs the action, and where a human steps in.
+
+If you can do that, you can have a useful technical conversation without overselling or getting lost.”
+
+PRODUCER NOTES
+• Film as one talking-head lesson; add the simple text overlays above. No elaborate production required.
+• Have a second setter play a prospect for a short practice clip: “Can this integrate with our CRM and send follow-ups automatically?”
+• Do not insert a live product demo unless that exact workflow has been tested. Otherwise label it “Example workflow”.
+• Before sharing, append your verified product facts: supported platform/connectors and actions; included services; setup owner; hosting/data information; support boundaries; technical escalation contact. None are invented here.
+
+QUICK ROLE-PLAY CHECK
+1. Explain API and MCP in 30 seconds without saying either gives unlimited access.
+2. Ask which exact CRM action the prospect needs.
+3. Distinguish drafting a message from actually sending it.
+4. Answer an unknown security question without guessing.
+5. Record a specific technical handoff, then explain the agreed next step.
+
+SOURCE NOTES (not spoken)
+API and request/response explanation: IBM, https://www.ibm.com/think/topics/api (read 22 Oct 2026).
+MCP definition and tool/data connection: official MCP documentation, https://modelcontextprotocol.io/docs/getting-started/intro (read 22 Oct 2026).
+The role-play, sales phrasing and example workflow are our training design, not documentation of current Jarvis capabilities. This is a recording script, not a produced video.

@@ -1,0 +1,272 @@
+[
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/READ-ME-TEST-RESULTS.txt",
+    "bytes": 4866,
+    "sha256": "7b964ae3290fbc018c542120abcc1cd2728e4cf9a94f3cdafd250d219be87a72"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/Close-Jarvis-Setter-Brief.txt",
+    "bytes": 2236,
+    "sha256": "781f903fb35284af607aaea4cafceac70730518162681329ef84afdcceb3baf9"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/base44-upload/jarvis-offer-discovery.md",
+    "bytes": 10987,
+    "sha256": "9c960cb17cfdc893b8804268dd6376d52b1e6ad3ee654f11d802633f6f1c3447"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/base44-upload/jarvis-targeted-outbound.md",
+    "bytes": 5264,
+    "sha256": "0905e99ea898dd61e9ae6a6f73aa2c278e0f9eba35309331a5ae5e44eeedd40c"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/base44-upload/jarvis-vsl-writer.md",
+    "bytes": 2558,
+    "sha256": "ab0810da10a82f98e2422606271615853f191c760f38766c50d21d98cabc586e"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/base44-upload/jarvis-confirmation-page.md",
+    "bytes": 1991,
+    "sha256": "041f0bb8e3bead695389da4c141ac90d98d1a72d5a9489ed36325d2bd169a3b1"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/base44-upload/jarvis-precall-followup.md",
+    "bytes": 2599,
+    "sha256": "b37900f2f595c20afe94465f0239498f61852d331a35a48874f2c2ab0c7c8489"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/base44-upload/jarvis-opportunity-finder.md",
+    "bytes": 7496,
+    "sha256": "1e1ffa106bac81d5f02ba8aca2f46e4687741445e9dd49d56ed688d097de869c"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/base44-upload/jarvis-static-ad-creator.md",
+    "bytes": 4132,
+    "sha256": "a42ba87ad58905cc3c0195fd7ca615e4729906e6d845d90fcd9c7cdeb4b32c52"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/base44-upload/jarvis-landing-page.md",
+    "bytes": 2097,
+    "sha256": "99015bfde7b3b0fe727a448ec204b57784e404dea00e0a62fffffcb2843b41ec"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/Recovered-earlier-skills/jarvis-offer-discovery.md",
+    "bytes": 11300,
+    "sha256": "ad5277a562e3aed7230b38281b93c41866cdf6bf93e1358c493293204afc5b24"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/Recovered-earlier-skills/jarvis-call-review.md",
+    "bytes": 9357,
+    "sha256": "0c45d7c63d0f535e94767e0713a1467de827b65a15097054ada772198ec8c457"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/Recovered-earlier-skills/jarvis-client-onboarding.md",
+    "bytes": 5237,
+    "sha256": "0292b911fb07156f1757b2e2423ceadb89c4b9d3ec3fce8719c153739c19b58d"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/Recovered-earlier-skills/jarvis-marketing-research.md",
+    "bytes": 9149,
+    "sha256": "5d4adaea6231fb47a705c130f6537af0aac514302cc27ce7b6083c940962edaf"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/Recovered-earlier-skills/jarvis-solution-scoping.md",
+    "bytes": 5709,
+    "sha256": "bad6a14822f9cf23c74a4ecb4edc08d3d41307ee072795661c99eb8f7ce40e7f"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-20/test-c-independent-review.txt",
+    "bytes": 3076,
+    "sha256": "5f5c7a1078db8091138aa5570b90bf64dc9f0999b76de031da09bc5e7bc65e21"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-20/jarvis-offer-discovery-v3-candidate.md",
+    "bytes": 16199,
+    "sha256": "2e14f7dd1412702424450e9abfd8283a59ce0fe6dbadedd266cafeda585db040"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-20/jarvis-offer-discovery-v2-candidate.md",
+    "bytes": 13905,
+    "sha256": "3c3806bc1a55326a0284630de6339e3dce547722c8d97a89b62cf7b36e2a87af"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-20/baseline-skill.md",
+    "bytes": 10122,
+    "sha256": "70812f9422528929aabfbb44ec317f1c4c75fc52b8d26129f328ce425eb89d04"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-20/evaluation.txt",
+    "bytes": 6613,
+    "sha256": "edc6e5876bddeb7238f233c50d00556d6a8dd8c859845ba26ec1ab20af88256c"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-20/validation-v3/SKILL.md",
+    "bytes": 16199,
+    "sha256": "2e14f7dd1412702424450e9abfd8283a59ce0fe6dbadedd266cafeda585db040"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/SYSTEM-TEST-RESULTS.txt",
+    "bytes": 3365,
+    "sha256": "0fbb57c7ad7ed3b3412a4254ffd6636d5ef501deb0445428313671466dc7ce77"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/jarvis-offer-discovery-before-v4.md",
+    "bytes": 16390,
+    "sha256": "60e1238172b268e0898e9651ea9490d7393328120b551c497eb433d8d4200d22"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/outbound-trial/sources.md",
+    "bytes": 1744,
+    "sha256": "8ebde3831fda557956595bcede9790a1d7f6964d199d93460cb0944c19d21b2a"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/outbound-trial/assessment-and-connector-status.md",
+    "bytes": 2960,
+    "sha256": "2ed16ad59de2630ee72e73349cc4a81aa401c80ef74912977c7332546c73b07c"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/outbound-trial/campaign-brief.md",
+    "bytes": 2056,
+    "sha256": "14383c94d201f685c8d62ef2ffa8f538285a2548a578d982fb08c3ec977449de"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/outbound-trial/accounts.json",
+    "bytes": 6450,
+    "sha256": "e0277d827dc71b0421e2a3d5e3ebff48cf628fba959174e5ac5a4d7a7f42da8e"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/outbound-trial/outreach-and-call-brief.md",
+    "bytes": 4202,
+    "sha256": "ce4afc762837977073f0eb3b007715f0313976940bf62d90e04faac1c1a78686"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/opportunity-trial/evidence.md",
+    "bytes": 4197,
+    "sha256": "8247a2950bc5e2d3c7dfe28379802c6b17ce697b8e6d1293adee5fb13b490bf1"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/opportunity-trial/student-output.md",
+    "bytes": 10998,
+    "sha256": "12fe60e766b2cb7a99c6f69ebac7615e300dbec848f0eda1c95b02714b4e4683"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/opportunity-trial/assessment.md",
+    "bytes": 2620,
+    "sha256": "06da9b84186c345f22fb7cb4b3ae40f67b2f704df066cbb8116c802fc0f634d5"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/baseline-skill.md",
+    "bytes": 5664,
+    "sha256": "b37211637275c11e0088f8b07bfea64d9031cd0b15f375819d60a5b7a2082b14"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/RESULTS.txt",
+    "bytes": 4383,
+    "sha256": "85f4280a3024f4f6d15c5d1fb58b95203220b0a7d7708179a6124cce421e1f08"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/evaluation-criteria.txt",
+    "bytes": 1289,
+    "sha256": "06fe2917f34d3cd2a15c23cb14cc87e62df36b803c72355574c66a1fc37c008c"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/v2-fresh/student-answer.md",
+    "bytes": 3506,
+    "sha256": "40a559ddba0b6e4070203cf7473bc73e0497b33f832a8fde108b9d5a4619c3e4"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/v2-fresh/research-evidence.md",
+    "bytes": 11257,
+    "sha256": "1732b5f044b4ad8951fbe1a94598b325087e5f023249d9d749de6c55453f268d"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/v2-fresh/assessment.md",
+    "bytes": 3400,
+    "sha256": "736656d26d29c5e04dcc854bdea94e9611223f61615b461cbc285e29d587265f"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/a/source-ledger.md",
+    "bytes": 2815,
+    "sha256": "f07fbabce29bc0747cbd1873a0781bf4f283b4f04fd9ffb22659313a7c8b1e1a"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/a/output.md",
+    "bytes": 11509,
+    "sha256": "481f9362ea21da7fc6fe792b371b43f55fe7d86bb341caf411ba7aabc2235f43"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/a/v2-scenario.txt",
+    "bytes": 4531,
+    "sha256": "5a02ba4cd71e0169de07b127178d1eaa9b0cd91cd294d0d61a43f555880469c5"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/a/assessment.md",
+    "bytes": 2501,
+    "sha256": "62613179dce0438210e4ac82480880de133c09589d08c10e46659d6d84d93e2a"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/c/opportunities.md",
+    "bytes": 14459,
+    "sha256": "97c14f16e2b04fa1a313998824f065c8063fc9e07ad211fbfd7fbf1a0ed81541"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/c/assessment.md",
+    "bytes": 2674,
+    "sha256": "8d639e47c88166717769609fab3e0efff02b7668db40d978bd78ba1f3b1a50b7"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/b/source-ledger.md",
+    "bytes": 3924,
+    "sha256": "d750af5591eceee8e82ba8d8551b2fecfb04fa73ce5d1d163e76c30dadb3e91c"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/b/output.md",
+    "bytes": 12168,
+    "sha256": "81e6a56c004cc697cf657552eb7d7df48cfdabe5f062dd4e54a12efa038cc639"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/testing/2026-10-21/gym/b/assessment.md",
+    "bytes": 2632,
+    "sha256": "c0e5da558898201a2ced775822c3acde1bb9f1685ca4d7734f5fcbdef1a2335e"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/skills/jarvis-landing-page/SKILL.md",
+    "bytes": 2097,
+    "sha256": "99015bfde7b3b0fe727a448ec204b57784e404dea00e0a62fffffcb2843b41ec"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/skills/jarvis-precall-followup/SKILL.md",
+    "bytes": 2599,
+    "sha256": "b37900f2f595c20afe94465f0239498f61852d331a35a48874f2c2ab0c7c8489"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/skills/jarvis-static-ad-creator/SKILL.md",
+    "bytes": 4132,
+    "sha256": "a42ba87ad58905cc3c0195fd7ca615e4729906e6d845d90fcd9c7cdeb4b32c52"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/skills/jarvis-targeted-outbound/SKILL.md",
+    "bytes": 5264,
+    "sha256": "0905e99ea898dd61e9ae6a6f73aa2c278e0f9eba35309331a5ae5e44eeedd40c"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/skills/jarvis-confirmation-page/SKILL.md",
+    "bytes": 1991,
+    "sha256": "041f0bb8e3bead695389da4c141ac90d98d1a72d5a9489ed36325d2bd169a3b1"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/skills/jarvis-opportunity-finder/SKILL.md",
+    "bytes": 7496,
+    "sha256": "1e1ffa106bac81d5f02ba8aca2f46e4687741445e9dd49d56ed688d097de869c"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/skills/jarvis-vsl-writer/SKILL.md",
+    "bytes": 2558,
+    "sha256": "ab0810da10a82f98e2422606271615853f191c760f38766c50d21d98cabc586e"
+  },
+  {
+    "path": "/Users/blakestephens/Downloads/Jarvis-Course-Pack/skills/jarvis-offer-discovery/SKILL.md",
+    "bytes": 10987,
+    "sha256": "9c960cb17cfdc893b8804268dd6376d52b1e6ad3ee654f11d802633f6f1c3447"
+  }
+]

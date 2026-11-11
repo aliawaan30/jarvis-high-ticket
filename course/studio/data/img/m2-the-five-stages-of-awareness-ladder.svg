@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="'Instrument Sans', Arial, sans-serif">
+  <rect width="1200" height="720" fill="#ffffff"/>
+  <text x="60" y="58" font-family="'Fraunces', Georgia, serif" font-size="30" font-weight="600" fill="#0e1016">The five stages of awareness</text>
+  <text x="60" y="92" font-size="20" fill="#5a5d6b">Eugene Schwartz, Breakthrough Advertising, 1966. What the buyer knows changes what you need to explain.</text>
+  <!-- band -->
+  <rect x="60" y="300" width="1080" height="218" rx="14" fill="#efecfb"/>
+  <text x="1120" y="330" font-family="'IBM Plex Mono', Menlo, monospace" font-size="12" fill="#4b2fc4" text-anchor="end" letter-spacing="2">WHAT THE BUYER ALREADY KNOWS</text>
+  <!-- rungs -->
+  <g>
+    <rect x="100" y="540" width="420" height="90" rx="10" fill="#ffffff" stroke="#e6e7ec" stroke-width="1.5"/>
+    <text x="124" y="576" font-size="22" font-weight="600" fill="#0e1016">1. Unaware</text>
+    <text x="124" y="606" font-size="17" fill="#5a5d6b">"Business is fine." Does not see a problem.</text>
+  </g>
+  <g>
+    <rect x="200" y="432" width="420" height="90" rx="10" fill="#ffffff" stroke="#4b2fc4" stroke-width="1.5"/>
+    <text x="224" y="468" font-size="22" font-weight="600" fill="#0e1016">2. Problem aware</text>
+    <text x="224" y="498" font-size="17" fill="#5a5d6b">"We keep missing calls." Feels it, no fix yet.</text>
+  </g>
+  <g>
+    <rect x="300" y="324" width="420" height="90" rx="10" fill="#ffffff" stroke="#4b2fc4" stroke-width="1.5"/>
+    <text x="324" y="360" font-size="22" font-weight="600" fill="#0e1016">3. Solution aware</text>
+    <text x="324" y="390" font-size="17" fill="#5a5d6b">"AI could probably do this." Knows a fix exists.</text>
+  </g>
+  <g>
+    <rect x="400" y="216" width="420" height="90" rx="10" fill="#ffffff" stroke="#e6e7ec" stroke-width="1.5"/>
+    <text x="424" y="252" font-size="22" font-weight="600" fill="#0e1016">4. Product aware</text>
+    <text x="424" y="282" font-size="17" fill="#5a5d6b">"I've seen your demo." Comparing you to options.</text>
+  </g>
+  <g>
+    <rect x="500" y="108" width="420" height="90" rx="10" fill="#ffffff" stroke="#e6e7ec" stroke-width="1.5"/>
+    <text x="524" y="144" font-size="22" font-weight="600" fill="#0e1016">5. Most aware</text>
+    <text x="524" y="174" font-size="17" fill="#5a5d6b">"Send me the proposal." Just needs the deal.</text>
+  </g>
+  <!-- right labels: what you lead with -->
+  <text x="935" y="585" font-family="'IBM Plex Mono', Menlo, monospace" font-size="12" fill="#8b8e9c">LEAD WITH THE SYMPTOM</text>
+  <text x="935" y="477" font-family="'IBM Plex Mono', Menlo, monospace" font-size="12" fill="#4b2fc4">LEAD WITH THE PROBLEM</text>
+  <text x="935" y="369" font-family="'IBM Plex Mono', Menlo, monospace" font-size="12" fill="#4b2fc4">LEAD WITH THE SOLUTION</text>
+  <text x="935" y="261" font-family="'IBM Plex Mono', Menlo, monospace" font-size="12" fill="#8b8e9c">LEAD WITH THE PRODUCT</text>
+  <text x="935" y="153" font-family="'IBM Plex Mono', Menlo, monospace" font-size="12" fill="#8b8e9c">LEAD WITH THE DEAL</text>
+  <text x="600" y="690" font-size="17" fill="#8b8e9c" text-anchor="middle">Understand what the buyer knows, then explain the offer from there.</text>
+</svg>

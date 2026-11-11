@@ -1,0 +1,80 @@
+[
+  {
+    "proposal": "fieldquote",
+    "passed": [
+      "autoplay advances",
+      "pause holds",
+      "manual exception and final steps",
+      "replay resets",
+      "exception pauses",
+      "calculator base and zero",
+      "modal open and Escape close",
+      "390px no horizontal overflow",
+      "no JS errors"
+    ]
+  },
+  {
+    "proposal": "changeproof",
+    "passed": [
+      "autoplay advances",
+      "pause holds",
+      "manual exception and final steps",
+      "replay resets",
+      "exception pauses",
+      "calculator base and zero",
+      "modal open and Escape close",
+      "390px no horizontal overflow",
+      "no JS errors"
+    ]
+  },
+  {
+    "proposal": "loadclear",
+    "passed": [
+      "autoplay advances",
+      "pause holds",
+      "manual exception and final steps",
+      "replay resets",
+      "exception pauses",
+      "calculator base and zero",
+      "modal open and Escape close",
+      "390px no horizontal overflow",
+      "no JS errors"
+    ]
+  },
+  {
+    "proposal": "exchangeflow",
+    "passed": [
+      "autoplay advances",
+      "pause holds",
+      "manual exception and final steps",
+      "replay resets",
+      "exception pauses",
+      "calculator base and zero",
+      "modal open and Escape close",
+      "390px no horizontal overflow",
+      "no JS errors"
+    ]
+  },
+  {
+    "proposal": "shortlist",
+    "passed": [
+      "autoplay advances",
+      "pause holds",
+      "manual exception and final steps",
+      "replay resets",
+      "exception pauses",
+      "calculator base and zero",
+      "modal open and Escape close",
+      "390px no horizontal overflow",
+      "no JS errors"
+    ]
+  },
+  {
+    "check": "reduced motion defaults to paused",
+    "passed": true
+  },
+  {
+    "check": "After visual-review correction: all five final states, separate candidate availability/share approval, unique DOM IDs",
+    "passed": true
+  }
+]

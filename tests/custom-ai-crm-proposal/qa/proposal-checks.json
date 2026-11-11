@@ -1,0 +1,114 @@
+{
+  "environment": "Local macOS Chrome via Playwright; static HTML prototype",
+  "checks": [
+    {
+      "check": "Scrolling proposal has a clear title and example status",
+      "passed": true
+    },
+    {
+      "check": "Executive overview has two substantive paragraphs",
+      "passed": true
+    },
+    {
+      "check": "Nine proposal sections appear in sales-call order",
+      "passed": true
+    },
+    {
+      "check": "Business pains are clearly marked as example assumptions",
+      "passed": true
+    },
+    {
+      "check": "Custom-vs-standard fit and do-nothing option are visible",
+      "passed": true
+    },
+    {
+      "check": "Full system describes six CRM workstreams",
+      "passed": true
+    },
+    {
+      "check": "Interactive CRM mock-up exposes its prototype status",
+      "passed": true
+    },
+    {
+      "check": "Interactive demo starts with sourced lead assignment",
+      "passed": true
+    },
+    {
+      "check": "Demo moves to proposal approval and does not claim a send",
+      "passed": true
+    },
+    {
+      "check": "Demo walks through project blocker and sourced Jarvis answer",
+      "passed": true
+    },
+    {
+      "check": "Scope has deliverable and acceptance criteria for each of six workstreams",
+      "passed": true
+    },
+    {
+      "check": "Roadmap has five gated implementation phases",
+      "passed": true
+    },
+    {
+      "check": "Example calculator computes annual labour and released capacity",
+      "passed": true
+    },
+    {
+      "check": "Cost comparison carries retained subscriptions into the proposed future cost",
+      "passed": true
+    },
+    {
+      "check": "No-build alternative remains explicit and investment is not fabricated",
+      "passed": true
+    },
+    {
+      "check": "Zero calculator inputs remain finite and readable",
+      "passed": true
+    },
+    {
+      "check": "Calculator recomputes scenario when inputs change",
+      "passed": true
+    },
+    {
+      "check": "Trust section avoids invented team, testimonials and certifications",
+      "passed": true
+    },
+    {
+      "check": "Decision section names client inputs and next decision",
+      "passed": true
+    },
+    {
+      "check": "Presenter cues are separately collapsed",
+      "passed": true
+    },
+    {
+      "check": "390px mobile page has no viewport overflow",
+      "passed": true
+    },
+    {
+      "check": "Mobile contents navigation scrolls to the demo",
+      "passed": true
+    },
+    {
+      "check": "Mobile sticky contents bar does not cover section heading",
+      "passed": true
+    },
+    {
+      "check": "Print layout hides navigation controls and keeps proposal body",
+      "passed": true
+    },
+    {
+      "check": "No browser JavaScript errors in exercised proposal",
+      "passed": true
+    }
+  ],
+  "passed": 25,
+  "errors": [],
+  "not_tested": [
+    "Real buyer discovery or commercial approval",
+    "Live CRM integrations or persistence",
+    "Production authentication/security",
+    "Actual AI model behavior",
+    "Client interviews or conversion"
+  ]
+}

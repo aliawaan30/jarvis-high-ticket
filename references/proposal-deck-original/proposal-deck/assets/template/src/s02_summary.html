@@ -1,0 +1,75 @@
+<section class="slide" id="summary">
+<style>
+  #summary .stage { cursor:pointer; transition:box-shadow .2s ease, border-color .2s ease; }
+  #summary .stage h3 { text-wrap:balance; }
+  #summary .stage:hover { border-color:rgba(181,122,46,.45); }
+  #summary .stage.open { border-color:var(--sand); box-shadow:0 3px 8px rgba(19,40,58,.08), 0 18px 40px rgba(19,40,58,.12); }
+  #summary .stg-tog { display:inline-flex; align-items:center; gap:7px; margin-top:12px; padding:0; border:0; background:none; cursor:pointer;
+    font:inherit; font-size:9.5px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:var(--gold-d); }
+  #summary .stg-tog i { display:inline-block; width:7px; height:7px; border-right:1.6px solid currentColor; border-bottom:1.6px solid currentColor;
+    transform:rotate(45deg) translateY(-2px); transition:transform .2s ease; }
+  #summary .stage.open .stg-tog i { transform:rotate(-135deg) translateY(-1px); }
+  #summary .stage.open .stg-tog b::after { content:' less'; }
+  #summary .stage:not(.open) .stg-tog b::after { content:' the detail'; }
+  #summary .stg-tog b { font-weight:700; }
+  #summary .stg-more { display:grid; grid-template-rows:0fr; transition:grid-template-rows .3s ease; }
+  #summary .stg-more > div { overflow:hidden; }
+  #summary .stage.open .stg-more { grid-template-rows:1fr; }
+  #summary .stg-more ul { list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:10px 18px; margin-top:14px; padding-top:14px; border-top:1px solid var(--rule); }
+  #summary .stg-more li { position:relative; padding-left:16px; font-size:12.5px; line-height:1.55; color:var(--soft); }
+  #summary .stg-more li::before { content:''; position:absolute; left:0; top:7px; width:6px; height:6px; border-radius:50%; background:var(--sand); }
+  #summary .stg-more li b { color:var(--ink); font-weight:600; }
+  #summary .sum-hint { text-align:center; margin:-22px 0 22px; font-size:10px; letter-spacing:.2em; text-transform:uppercase; font-weight:600; color:var(--taupe); }
+  @media (max-width:760px){ #summary .stg-more ul { grid-template-columns:1fr; } }
+  @media (prefers-reduced-motion:reduce){ #summary .stg-more, #summary .stg-tog i { transition:none; } }
+  @media print {
+    #summary .stg-more { grid-template-rows:1fr !important; }
+    #summary .stg-tog, #summary .sum-hint { display:none !important; }
+    #summary .stg-more ul { margin-top:8px; padding-top:8px; gap:4px 14px; }
+    #summary .stg-more li { font-size:10px; line-height:1.4; }
+    #summary .wrap { zoom:.7 !important; }
+  }
+</style>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">Where we&rsquo;re up to</div>
+      <h2>Kestrel Bay Resort is under construction.<br><em>Now it needs Australian buyers.</em></h2>
+    </div>
+
+    <div class="stages">
+      <div class="stage rv" tabindex="0">
+        <div class="stg-n">01<small>Situation</small></div>
+        <div>
+          <h3>Kestrel has delivered 600+ units, and Tidewater will run the resort. <em>You need a steady flow of Australian buyers for its suites.</em></h3>
+          <p>Kestrel Bay Resort has two suites from US$165,000 and an owners&rsquo; membership. What&rsquo;s missing is qualified Australian buyers, and a system that gets each one to your sales team while they&rsquo;re still keen.</p>
+          <div class="stg-more"><div><ul><li><b>Two clear prices:</b> the Garden Suite from US$165,000 (about A$240,000) and the Ocean Suite at US$260,000 (about A$375,000).</li><li><b>One development,</b> so every ad, question and call is about Kestrel Bay Resort.</li><li><b>The Owners&rsquo; Club,</b> valued up to US$15,000, so an owner gets more than the suite.</li><li><b>Sales, not cheap leads,</b> with the numbers to prove which is which.</li></ul></div></div>
+          <button class="stg-tog" type="button"><i></i><b>See</b></button>
+        </div>
+      </div>
+      <div class="stg-arrow rv"><i></i></div>
+
+      <div class="stage rv" tabindex="0">
+        <div class="stg-n">02<small>Plan</small></div>
+        <div>
+          <h3>One campaign brings in verified Australian buyers, <em>and your sales team books them in.</em></h3>
+          <p>The campaign runs in every Australian state. Every enquiry answers six questions, confirms their mobile and email by code, reaches your sales team the same minute, and gets a private call booked.</p>
+          <div class="stg-more"><div><ul><li>Four ad sets run all quarter: the Garden Suite, the Ocean Suite, the Owners&rsquo; Club, and Kestrel &times; Tidewater.</li><li>Six questions and two codes, so your team only calls real buyers.</li><li>Every enquiry lands in your CRM, and the follow-ups, bookings and reminders run on their own.</li><li>Once a message is proven, a short film goes in front of the form.</li></ul></div></div>
+          <button class="stg-tog" type="button"><i></i><b>See</b></button>
+        </div>
+      </div>
+      <div class="stg-arrow rv"><i></i></div>
+
+      <div class="stage rv" tabindex="0">
+        <div class="stg-n">03<small>Work</small></div>
+        <div>
+          <h3>We build and run the campaign and the system. <em>Your sales team makes the sales.</em></h3>
+          <p>The ads, the enquiry form, the set-up and automations in your CRM, and the call script with training for your team. We go through the numbers with you every week.</p>
+          <div class="stg-more"><div><ul><li>Live within six days of onboarding.</li><li>You approve every ad and message before it runs.</li><li>Everything is built in Kestrel&rsquo;s name and stays yours.</li></ul></div></div>
+          <button class="stg-tog" type="button"><i></i><b>See</b></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="note"><b>Three cards, one line each</b>Read each headline and move on. Open a card only if they ask &mdash; card one holds both suite prices in both currencies, if the price comes up early. Our price and the guarantee come at the end.</div>
+  </div>
+</section>

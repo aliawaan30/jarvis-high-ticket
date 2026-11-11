@@ -1,0 +1,92 @@
+[
+  {
+    "id": "goh",
+    "url": "https://gohconsulting.app/funnel/vsl",
+    "purpose": "Landing/VSL visual structure",
+    "status": "Desktop/mobile screenshots and page text inspected; see references/funnel-visual-analysis.md"
+  },
+  {
+    "id": "scaleinfo",
+    "url": "https://scaleinfo.com.au/",
+    "purpose": "Landing/VSL visual structure",
+    "status": "Desktop/mobile screenshots and page text inspected; see references/funnel-visual-analysis.md"
+  },
+  {
+    "id": "tim-confirm",
+    "url": "https://timchao.ai/confirmation-page",
+    "purpose": "Confirmation page",
+    "status": "Desktop/mobile screenshots and page text inspected; see references/funnel-visual-analysis.md"
+  },
+  {
+    "id": "meta-scaleinfo",
+    "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AU&q=%22scale%20info%22&search_type=keyword_exact_phrase",
+    "purpose": "Static ads",
+    "status": "Attempted via browser twice and web; blank/throttled. Actual ads NOT inspected."
+  },
+  {
+    "id": "liam-offer",
+    "url": "https://fathom.video/share/yGJyH78oYG-m_GZqV8gPMQ5bgGxzKsAu",
+    "purpose": "User-supplied offer creation recording",
+    "status": "Attempted browser/web; blank/inaccessible. Recording NOT inspected."
+  },
+  {
+    "id": "earlier-call",
+    "url": "https://fathom.video/share/jjy3ZUw_CNZmYKxhcSyLMZ24quqoHqZS",
+    "purpose": "Earlier strategy recording",
+    "status": "supplied; recovery inspection pending"
+  },
+  {
+    "id": "static-lesson",
+    "url": "https://www.youtube.com/watch?v=4C-2ab6rD9M",
+    "purpose": "Static formats",
+    "status": "Transcript and selected actual creative frames inspected; see references/static-visual-analysis.md"
+  },
+  {
+    "id": "vsl-1",
+    "url": "https://www.youtube.com/watch?v=Zv6SD4EVSHk",
+    "purpose": "VSL/funnel source",
+    "status": "Native transcript recovered; full analysis pending; no claim of visual inspection."
+  },
+  {
+    "id": "vsl-2",
+    "url": "https://www.youtube.com/watch?v=Lm_PEN6PH-M",
+    "purpose": "VSL/funnel source",
+    "status": "Full native transcript read; visuals not watched."
+  },
+  {
+    "id": "vsl-3",
+    "url": "https://www.youtube.com/watch?v=j8RV1aQqewk",
+    "purpose": "VSL/funnel source",
+    "status": "Native transcript recovered; full analysis pending; no claim of visual inspection."
+  },
+  {
+    "id": "vsl-4",
+    "url": "https://www.youtube.com/watch?v=rL1FIHwg8PE",
+    "purpose": "VSL/funnel source",
+    "status": "Native transcript recovered; 01:24\u201305:14 inspected; visuals not watched."
+  },
+  {
+    "id": "vsl-5",
+    "url": "https://www.youtube.com/watch?v=tZot4E4BnSg",
+    "purpose": "VSL/funnel source",
+    "status": "Native transcript recovered; full analysis pending; no claim of visual inspection."
+  },
+  {
+    "id": "vsl-6",
+    "url": "https://www.youtube.com/watch?v=WEwwAvTY1B4",
+    "purpose": "VSL/funnel source",
+    "status": "Native transcript recovered; full analysis pending; no claim of visual inspection."
+  },
+  {
+    "id": "vsl-7",
+    "url": "https://www.youtube.com/watch?v=sISIM77msf4",
+    "purpose": "VSL/funnel source",
+    "status": "Native transcript recovered; full analysis pending; no claim of visual inspection."
+  },
+  {
+    "id": "goh-confirm",
+    "url": "https://gohconsulting.app/funnel/vsl/confirm",
+    "purpose": "Confirmation sequence",
+    "status": "Screenshot/page text inspected; see funnel-visual-analysis.md"
+  }
+]

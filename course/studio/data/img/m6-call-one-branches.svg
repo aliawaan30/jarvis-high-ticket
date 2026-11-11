@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="'Instrument Sans', Arial, sans-serif">
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <text x="60" y="54" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="600" fill="#0e1016">Call one has two branches. The opening question tells you which.</text>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#8b8e9c"/></marker></defs>
+  <!-- open -->
+  <rect x="300" y="90" width="600" height="104" rx="10" fill="#0e1016"/>
+  <text x="324" y="118" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#c9c3ef">THE OPEN</text>
+  <text x="324" y="150" font-size="20" fill="#ffffff">"Was there anything specific you're having problems</text>
+  <text x="324" y="176" font-size="20" fill="#ffffff">with currently? Walk me through it."</text>
+  <!-- arrows -->
+  <path d="M480 194 L330 240" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M720 194 L870 240" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <!-- problem aware -->
+  <rect x="60" y="250" width="500" height="250" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="84" y="282" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">PROBLEM AWARE</text>
+  <text x="84" y="316" font-size="22" font-weight="600" fill="#0e1016">"Yeah, it's our follow up. We lose leads."</text>
+  <text x="84" y="352" font-size="18" fill="#5a5d6b">They came for one fix. Your ad named it.</text>
+  <text x="84" y="384" font-size="18" fill="#0e1016">1. Let them tell the story in their words</text>
+  <text x="84" y="412" font-size="18" fill="#0e1016">2. How does it hit them, uniquely</text>
+  <text x="84" y="440" font-size="18" fill="#0e1016">3. The four questions, to a dollar figure</text>
+  <text x="84" y="468" font-size="18" fill="#0e1016">4. Book call two</text>
+  <!-- ai aware -->
+  <rect x="640" y="250" width="500" height="250" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="664" y="282" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8a6210">AI AWARE</text>
+  <text x="664" y="316" font-size="22" font-weight="600" fill="#0e1016">"We know we need AI. Not sure where."</text>
+  <text x="664" y="352" font-size="18" fill="#5a5d6b">They came for a direction. Full discovery.</text>
+  <text x="664" y="384" font-size="18" fill="#0e1016">1. Map the whole business, team, systems</text>
+  <text x="664" y="412" font-size="18" fill="#0e1016">2. Find where time and money leak</text>
+  <text x="664" y="440" font-size="18" fill="#0e1016">3. Pick the biggest leak, four questions</text>
+  <text x="664" y="468" font-size="18" fill="#0e1016">4. Book call two, bring options</text>
+  <text x="60" y="540" font-size="16" fill="#8b8e9c">Both branches end in the same place: a number they agreed to, and a second call in the diary.</text>
+</svg>

@@ -1,0 +1,40 @@
+{
+  "version": "roofline-v1",
+  "status": "Research-backed test offer; no customers or conversion validation",
+  "brand": "Roofline",
+  "niche": "US residential retail roof-replacement contractors using JobNimbus, with 200 eligible unsold estimates from the last 90 days and capacity to fulfil more jobs",
+  "problem": "Paid-for enquiries and delivered estimates go quiet; follow-up and reply ownership are inconsistent.",
+  "solution": "Connect eligible estimates to AI-assisted follow-up, approved answers, human sales handoffs, stop rules and outcome tracking.",
+  "offer": "A 60-day estimate recovery pilot: five held, qualified estimate-review conversations or the final $1,500 is waived.",
+  "price": {
+    "upfront_usd": 1500,
+    "result_payment_usd": 1500,
+    "duration_days": 60,
+    "software": "Actual pre-approved charges; reject or rescope if projected incremental software exceeds $500/month.",
+    "ongoing": "Optional $1,000/month after pilot, only where continuing quote volume and measured value justify it."
+  },
+  "qualification": [
+    "200 unique, contactable retail replacement estimates issued in the past 90 days",
+    "No won/lost/opted-out, active sales conversations or insurance-only claims",
+    "Appropriate permission for selected contact channels",
+    "A named rep with available review slots and access to agreed records"
+  ],
+  "result_definition": "Five unique homeowners with an eligible unsold estimate attend a substantive phone/video/in-person conversation with the roofing rep to review that estimate; acknowledgements, no-shows, duplicates and existing active conversations do not count.",
+  "conditions": "60 days begins after data, channel approval and agreed access are ready. Client supplies agreed rep availability and records outcomes. Any client-caused pause must be documented and agreed; no automatic extension or automatic billing.",
+  "scope": [
+    "One location and JobNimbus workflow",
+    "Data clean-up and suppression rules for the agreed cohort",
+    "Quote-specific SMS/email sequences and approved FAQ replies",
+    "Human escalation for price, finance, technical advice and complaints",
+    "Rep task and appointment handoff",
+    "Weekly reconciliation of replies, held reviews and actual sales"
+  ],
+  "exclusions": [
+    "Lead generation",
+    "New CRM replacement",
+    "Autonomous pricing/discounts/financing advice",
+    "Insurance claim negotiation",
+    "Guaranteed roof sales or revenue"
+  ],
+  "evidence": "See research.html; competitor results are not Roofline results."
+}

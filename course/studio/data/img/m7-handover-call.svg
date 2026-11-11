@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" font-family="'Instrument Sans', Arial, sans-serif">
+  <rect width="1200" height="420" fill="#ffffff"/>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#8b8e9c"/></marker></defs>
+  <text x="60" y="54" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="600" fill="#0e1016">The handover call. About an hour, on a screen share.</text>
+  <g>
+    <rect x="60" y="110" width="196" height="200" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+    <text x="78" y="138" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">1 · 2 MIN</text>
+    <text x="78" y="172" font-size="21" font-weight="600" fill="#0e1016">Remind them</text>
+    <text x="78" y="196" font-size="21" font-weight="600" fill="#0e1016">why</text>
+    <text x="78" y="228" font-size="17" fill="#5a5d6b">The problem in their</text>
+    <text x="78" y="252" font-size="17" fill="#5a5d6b">words, the number it</text>
+    <text x="78" y="276" font-size="17" fill="#5a5d6b">was costing them.</text>
+  </g>
+  <g>
+    <rect x="281" y="110" width="196" height="200" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+    <text x="299" y="138" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">2 · 10 MIN</text>
+    <text x="299" y="172" font-size="21" font-weight="600" fill="#0e1016">Walk a job</text>
+    <text x="299" y="196" font-size="21" font-weight="600" fill="#0e1016">through, live</text>
+    <text x="299" y="228" font-size="17" fill="#5a5d6b">The clean one, then</text>
+    <text x="299" y="252" font-size="17" fill="#5a5d6b">the messy one so they</text>
+    <text x="299" y="276" font-size="17" fill="#5a5d6b">see a flag land.</text>
+  </g>
+  <g>
+    <rect x="502" y="110" width="196" height="200" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+    <text x="520" y="138" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">3 · 10 MIN</text>
+    <text x="520" y="172" font-size="21" font-weight="600" fill="#0e1016">Go live with</text>
+    <text x="520" y="196" font-size="21" font-weight="600" fill="#0e1016">one real job</text>
+    <text x="520" y="228" font-size="17" fill="#5a5d6b">Load real records</text>
+    <text x="520" y="252" font-size="17" fill="#5a5d6b">with them watching.</text>
+    <text x="520" y="276" font-size="17" fill="#5a5d6b">Fix nothing live.</text>
+  </g>
+  <g>
+    <rect x="723" y="110" width="196" height="200" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+    <text x="741" y="138" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">4 · 20 MIN</text>
+    <text x="741" y="172" font-size="21" font-weight="600" fill="#0e1016">Their team</text>
+    <text x="741" y="196" font-size="21" font-weight="600" fill="#0e1016">does their part</text>
+    <text x="741" y="228" font-size="17" fill="#5a5d6b">Each role clicks their</text>
+    <text x="741" y="252" font-size="17" fill="#5a5d6b">own buttons while</text>
+    <text x="741" y="276" font-size="17" fill="#5a5d6b">you watch.</text>
+  </g>
+  <g>
+    <rect x="944" y="110" width="196" height="200" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+    <text x="962" y="138" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8a6210">5 · 5 MIN</text>
+    <text x="962" y="172" font-size="21" font-weight="600" fill="#0e1016">Sign off and</text>
+    <text x="962" y="196" font-size="21" font-weight="600" fill="#0e1016">support window</text>
+    <text x="962" y="228" font-size="17" fill="#5a5d6b">Tick the checklist</text>
+    <text x="962" y="252" font-size="17" fill="#5a5d6b">together. Written</text>
+    <text x="962" y="276" font-size="17" fill="#5a5d6b">yes. Then invoice.</text>
+  </g>
+  <text x="60" y="370" font-size="20" fill="#5a5d6b">Not technical? Someone technical is on the call flicking the switches. You run the conversation.</text>
+</svg>

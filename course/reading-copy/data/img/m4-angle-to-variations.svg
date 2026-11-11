@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="'Instrument Sans', Arial, sans-serif">
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <text x="60" y="54" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="600" fill="#0e1016">Test angles. Find the winner. Make versions of the winner.</text>
+  <!-- column 1: angles tested -->
+  <text x="60" y="110" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8b8e9c">1. ANGLES TESTED</text>
+  <rect x="60" y="130" width="300" height="56" rx="10" fill="#fbfbfc" stroke="#e6e7ec" stroke-width="1.5"/>
+  <text x="84" y="165" font-size="20" fill="#5a5d6b">Costly problem</text>
+  <rect x="60" y="202" width="300" height="56" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="84" y="237" font-size="20" font-weight="600" fill="#0e1016">Desired result</text>
+  <rect x="60" y="274" width="300" height="56" rx="10" fill="#fbfbfc" stroke="#e6e7ec" stroke-width="1.5"/>
+  <text x="84" y="309" font-size="20" fill="#5a5d6b">The objection</text>
+  <rect x="60" y="346" width="300" height="56" rx="10" fill="#fbfbfc" stroke="#e6e7ec" stroke-width="1.5"/>
+  <text x="84" y="381" font-size="20" fill="#5a5d6b">How it works</text>
+  <rect x="60" y="418" width="300" height="56" rx="10" fill="#fbfbfc" stroke="#e6e7ec" stroke-width="1.5"/>
+  <text x="84" y="453" font-size="20" fill="#5a5d6b">Proof</text>
+  <!-- arrow to winner -->
+  <line x1="360" y1="230" x2="440" y2="230" stroke="#4b2fc4" stroke-width="1.5"/>
+  <polygon points="440,224 452,230 440,236" fill="#4b2fc4"/>
+  <!-- column 2: winner -->
+  <text x="460" y="110" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">2. THE WINNER</text>
+  <rect x="460" y="190" width="260" height="80" rx="10" fill="#4b2fc4"/>
+  <text x="484" y="224" font-size="20" font-weight="600" fill="#ffffff">Desired result</text>
+  <text x="484" y="252" font-size="16" fill="#c9c3ef">booked calls under target</text>
+  <!-- fan arrows -->
+  <line x1="720" y1="230" x2="800" y2="150" stroke="#8a6210" stroke-width="1.5"/>
+  <line x1="720" y1="230" x2="800" y2="210" stroke="#8a6210" stroke-width="1.5"/>
+  <line x1="720" y1="230" x2="800" y2="270" stroke="#8a6210" stroke-width="1.5"/>
+  <line x1="720" y1="230" x2="800" y2="330" stroke="#8a6210" stroke-width="1.5"/>
+  <line x1="720" y1="230" x2="800" y2="390" stroke="#8a6210" stroke-width="1.5"/>
+  <!-- column 3: versions -->
+  <text x="820" y="110" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8a6210">3. VERSIONS OF THE WINNER</text>
+  <rect x="820" y="124" width="320" height="52" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="844" y="157" font-size="20" fill="#0e1016">New opening line</text>
+  <rect x="820" y="184" width="320" height="52" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="844" y="217" font-size="20" fill="#0e1016">Different story in the middle</text>
+  <rect x="820" y="244" width="320" height="52" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="844" y="277" font-size="20" fill="#0e1016">Shorter cut</text>
+  <rect x="820" y="304" width="320" height="52" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="844" y="337" font-size="20" fill="#0e1016">Filmed somewhere else</text>
+  <rect x="820" y="364" width="320" height="52" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="844" y="397" font-size="20" fill="#0e1016">Static image version</text>
+  <text x="60" y="530" font-size="16" fill="#8b8e9c">Run the versions while the next batch of angles is tested. The library of winners grows every month.</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" font-family="'Instrument Sans', Arial, sans-serif">
+  <rect width="1200" height="420" fill="#ffffff"/>
+  <text x="60" y="54" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="600" fill="#0e1016">One conversation, two calls</text>
+  <line x1="60" y1="150" x2="1140" y2="150" stroke="#e6e7ec" stroke-width="1.5"/>
+  <!-- call one -->
+  <rect x="60" y="100" width="300" height="100" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="80" y="128" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">CALL ONE</text>
+  <text x="80" y="160" font-size="22" font-weight="600" fill="#0e1016">Find the pain</text>
+  <text x="80" y="186" font-size="18" fill="#5a5d6b">Diagnose. Get the number. No price.</text>
+  <!-- between -->
+  <rect x="450" y="100" width="300" height="100" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="470" y="128" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8a6210">BETWEEN CALLS</text>
+  <text x="470" y="160" font-size="22" font-weight="600" fill="#0e1016">Prescribe and price</text>
+  <text x="470" y="186" font-size="18" fill="#5a5d6b">Jarvis brief, tech cost, proposal, demo.</text>
+  <!-- call two -->
+  <rect x="840" y="100" width="300" height="100" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="860" y="128" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">CALL TWO</text>
+  <text x="860" y="160" font-size="22" font-weight="600" fill="#0e1016">Present and close</text>
+  <text x="860" y="186" font-size="18" fill="#5a5d6b">Recap, show, anchor, wait, sign.</text>
+  <!-- arrows -->
+  <path d="M360 150 L440 150" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M750 150 L830 150" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#8b8e9c"/></marker></defs>
+  <!-- timing -->
+  <text x="60" y="250" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8b8e9c">DAY 1 · 30 TO 45 MIN</text>
+  <text x="450" y="250" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8b8e9c">1 TO 3 DAYS</text>
+  <text x="840" y="250" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8b8e9c">DAY 2 TO 4 · 30 TO 45 MIN</text>
+  <!-- outputs -->
+  <text x="60" y="300" font-size="18" fill="#0e1016">Leaves with: the problem in their words,</text>
+  <text x="60" y="326" font-size="18" fill="#0e1016">a dollar figure they agreed to, call two booked.</text>
+  <text x="450" y="300" font-size="18" fill="#0e1016">Leaves with: a prescribed solution, a real</text>
+  <text x="450" y="326" font-size="18" fill="#0e1016">build cost, a price, a proposal and a demo.</text>
+  <text x="840" y="300" font-size="18" fill="#0e1016">Leaves with: a yes, a deposit date and</text>
+  <text x="840" y="326" font-size="18" fill="#0e1016">an onboarding call in the diary.</text>
+  <text x="60" y="390" font-size="16" fill="#8b8e9c">Timing is a working guide. The shape is the rule.</text>
+</svg>

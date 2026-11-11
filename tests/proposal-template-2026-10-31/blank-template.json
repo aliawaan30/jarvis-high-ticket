@@ -1,0 +1,141 @@
+{
+  "example": false,
+  "client": "[CLIENT]",
+  "supplier": "[YOUR BUSINESS]",
+  "project": "[PROJECT] proposal",
+  "date": "[DATE]",
+  "purpose": "[PURPOSE]",
+  "outcome": "[OUTCOME]",
+  "problems": [
+    {
+      "problem": "[PROBLEM]",
+      "detail": "[DETAIL]",
+      "impact": "[IMPACT]"
+    },
+    {
+      "problem": "[PROBLEM]",
+      "detail": "[DETAIL]",
+      "impact": "[IMPACT]"
+    },
+    {
+      "problem": "[PROBLEM]",
+      "detail": "[DETAIL]",
+      "impact": "[IMPACT]"
+    }
+  ],
+  "cost": {
+    "confirmed": false,
+    "volume": null,
+    "current_minutes": null,
+    "target_minutes": null,
+    "hourly_cost": null,
+    "source": "[SOURCE]"
+  },
+  "build_summary": "[BUILD SUMMARY]",
+  "deliverables": [
+    {
+      "name": "[NAME]",
+      "does": "[DOES]",
+      "fixes": "[FIXES]"
+    },
+    {
+      "name": "[NAME]",
+      "does": "[DOES]",
+      "fixes": "[FIXES]"
+    },
+    {
+      "name": "[NAME]",
+      "does": "[DOES]",
+      "fixes": "[FIXES]"
+    },
+    {
+      "name": "[NAME]",
+      "does": "[DOES]",
+      "fixes": "[FIXES]"
+    }
+  ],
+  "human_control": "[HUMAN CONTROL]",
+  "scope_boundary": "[SCOPE BOUNDARY]",
+  "workflow": [
+    {
+      "title": "[TITLE]",
+      "owner": "[OWNER]",
+      "detail": "[DETAIL]"
+    },
+    {
+      "title": "[TITLE]",
+      "owner": "[OWNER]",
+      "detail": "[DETAIL]"
+    },
+    {
+      "title": "[TITLE]",
+      "owner": "[OWNER]",
+      "detail": "[DETAIL]"
+    },
+    {
+      "title": "[TITLE]",
+      "owner": "[OWNER]",
+      "detail": "[DETAIL]"
+    }
+  ],
+  "timeline": {
+    "confirmed": false,
+    "rows": [
+      {
+        "when": "[WHEN]",
+        "stage": "[STAGE]",
+        "work": "[WORK]",
+        "approval": "[APPROVAL]"
+      },
+      {
+        "when": "[WHEN]",
+        "stage": "[STAGE]",
+        "work": "[WORK]",
+        "approval": "[APPROVAL]"
+      },
+      {
+        "when": "[WHEN]",
+        "stage": "[STAGE]",
+        "work": "[WORK]",
+        "approval": "[APPROVAL]"
+      },
+      {
+        "when": "[WHEN]",
+        "stage": "[STAGE]",
+        "work": "[WORK]",
+        "approval": "[APPROVAL]"
+      }
+    ],
+    "condition": "[CONDITION]"
+  },
+  "dependencies": "[DEPENDENCIES]",
+  "commercial": {
+    "approved": false,
+    "build": null,
+    "support": null,
+    "tools": null,
+    "payments": [
+      {
+        "label": "[LABEL]",
+        "share": null
+      },
+      {
+        "label": "[LABEL]",
+        "share": null
+      },
+      {
+        "label": "[LABEL]",
+        "share": null
+      }
+    ],
+    "conditions": "[CONDITIONS]"
+  },
+  "support_scope": "[SUPPORT SCOPE]",
+  "decision": "[DECISION]",
+  "next_steps": [
+    "[NEXT STEPS]",
+    "[NEXT STEPS]",
+    "[NEXT STEPS]"
+  ],
+  "start": "[START]"
+}

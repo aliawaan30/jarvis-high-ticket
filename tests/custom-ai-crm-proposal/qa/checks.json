@@ -1,0 +1,14 @@
+{
+  "passed": [
+    "autoplay advances",
+    "pause holds",
+    "five manual steps",
+    "replay",
+    "modal and Escape",
+    "unique IDs",
+    "no JS errors",
+    "390px no horizontal overflow",
+    "reduced motion pauses"
+  ],
+  "scope": "Local illustrative HTML only; no CRM connections; no research requested or performed"
+}

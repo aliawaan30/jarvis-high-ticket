@@ -1,0 +1,36 @@
+
+# watch: video report
+
+- **Source:** /Users/blakestephens/Movies/LocalLoom/2026-11-05_2246.mp4
+- **Title:** 2026-11-05_2246.mp4
+- **Duration:** 21:18 (1277.6s)
+- **Resolution:** 2560x1654 (h264)
+- **Detail:** transcript
+- **Cue frames:** 11 at transcript-flagged timestamps (transcript-cue)
+- **Frame size:** max 1280px wide, max 1998px tall
+- **Transcript:** none available
+
+## Frames
+
+Frames live at: `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/cues/frames`
+
+**Read each frame path below with the Read tool to view the image.** Frames are in chronological order; `t=MM:SS` is the absolute timestamp in the source video.
+
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/cues/frames/cue_0000.jpg` (t=01:00, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/cues/frames/cue_0001.jpg` (t=03:00, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/cues/frames/cue_0002.jpg` (t=05:00, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/cues/frames/cue_0003.jpg` (t=07:00, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/cues/frames/cue_0004.jpg` (t=09:00, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/cues/frames/cue_0005.jpg` (t=11:00, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/cues/frames/cue_0006.jpg` (t=13:00, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/cues/frames/cue_0007.jpg` (t=15:00, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/cues/frames/cue_0008.jpg` (t=17:00, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/cues/frames/cue_0009.jpg` (t=19:00, reason=transcript-cue)
+- `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/cues/frames/cue_0010.jpg` (t=21:00, reason=transcript-cue)
+
+## Transcript
+
+_No transcript available at transcript detail. Captions were missing and Whisper was unavailable or failed, so there is no visual fallback here. Re-run with `--detail balanced` for frames._
+
+---
+_Work dir: `/Users/blakestephens/co-founder/projects/high-ticket-program/reviews/2026-11-05-local-loom/cues` — delete when done._

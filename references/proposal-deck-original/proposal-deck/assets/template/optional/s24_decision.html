@@ -1,0 +1,66 @@
+<section class="slide" id="decision">
+<style>
+  /* OPTIONAL MODULE: next steps, said softly. Four stops straight down, no prices and no buttons (see optional/README.md). */
+  #decision .stepflow { max-width:760px; margin:0 auto; }
+  #decision .sf { display:grid; grid-template-columns:150px 1fr; gap:22px; align-items:center;
+    background:var(--paper); border:1px solid var(--rule); border-radius:12px; padding:20px 26px; box-shadow:var(--sh); }
+  #decision .sf-when { font-size:10px; letter-spacing:.24em; text-transform:uppercase; color:var(--teal); font-weight:700; line-height:1.5; }
+  #decision .sf-main h4 { font-family:'Playfair',serif; font-size:23px; font-weight:500; line-height:1.2; }
+  #decision .sf-main p { font-size:13px; color:var(--soft); line-height:1.55; margin-top:5px; }
+  #decision .sf.win { border-color:var(--teal); background:#fff;
+    box-shadow:0 2px 5px rgba(19,40,58,.14), 0 16px 38px rgba(19,40,58,.20); }
+  #decision .sf-arrow { display:flex; justify-content:center; padding:9px 0; }
+  #decision .sf-arrow span { display:block; width:2px; height:26px; background:var(--stone); position:relative; }
+  #decision .sf-arrow span::after { content:''; position:absolute; left:50%; bottom:-1px; transform:translateX(-50%);
+    border-left:6px solid transparent; border-right:6px solid transparent; border-top:8px solid var(--stone); }
+  @media (max-width:620px){
+    #decision .sf { grid-template-columns:1fr; gap:6px; padding:16px 18px; }
+  }
+  @media print {
+    #decision .sf { padding:14px 22px; }
+    #decision .sf-main h4 { font-size:19px; } #decision .sf-main p { font-size:11.5px; margin-top:3px; }
+    #decision .sf-arrow { padding:6px 0; } #decision .sf-arrow span { height:20px; }
+  }
+</style>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">Next steps</div>
+      <h2>From a green light <em>to the first enquiry.</em></h2>
+      <p>Four steps from here. Nothing goes live until you have approved it.</p>
+      <div class="note"><b>Walk it, don&rsquo;t push it</b>Run your finger down the four steps and keep your voice level. <b>&ldquo;Today is only a green light. We can read the agreement together now, or we&rsquo;ll send it over and you can read it in your own time.&rdquo;</b> Then: &ldquo;This week, an onboarding call: access to your page and ad account, your CRM connected, the six questions signed off. Within six days the campaign is live, and the first verified enquiry lands that same week.&rdquo; <b>Then ask one question and stop</b>&ldquo;What would you want to see before you give us the green light?&rdquo; Their answer is the real question &mdash; answer that one, and leave the next step to them.</div>
+    </div>
+    <div class="stepflow rv">
+      <div class="sf">
+        <div class="sf-when">Today</div>
+        <div class="sf-main">
+          <h4>Your green light</h4>
+          <p>The agreement puts the quarter, the price and the guarantees you have just seen in writing. We can read it together now, or we&rsquo;ll send it over to read in your own time.</p>
+        </div>
+      </div>
+      <div class="sf-arrow"><span></span></div>
+      <div class="sf">
+        <div class="sf-when">This week</div>
+        <div class="sf-main">
+          <h4>Book the onboarding call</h4>
+          <p>Access to your page and ad account, your CRM connected, and the six questions signed off with your sales team.</p>
+        </div>
+      </div>
+      <div class="sf-arrow"><span></span></div>
+      <div class="sf">
+        <div class="sf-when">Within six days</div>
+        <div class="sf-main">
+          <h4>The campaign is live</h4>
+          <p>You approve every ad, question and message first, so nothing runs without your yes.</p>
+        </div>
+      </div>
+      <div class="sf-arrow"><span></span></div>
+      <div class="sf win">
+        <div class="sf-when">The same week</div>
+        <div class="sf-main">
+          <h4>Your first enquiry</h4>
+          <p>A verified buyer lands in your CRM and on your sales team&rsquo;s phones the same minute, with all six answers and a score.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

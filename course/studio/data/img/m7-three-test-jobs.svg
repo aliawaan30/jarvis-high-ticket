@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" font-family="'Instrument Sans', Arial, sans-serif">
+  <rect width="1200" height="440" fill="#ffffff"/>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#8b8e9c"/></marker></defs>
+  <text x="60" y="54" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="600" fill="#0e1016">Three jobs, start to finish, before the client sees anything</text>
+  <rect x="60" y="110" width="320" height="150" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="80" y="138" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">JOB 1</text>
+  <text x="80" y="170" font-size="22" font-weight="600" fill="#0e1016">The clean job</text>
+  <text x="80" y="198" font-size="18" fill="#5a5d6b">Everything present, everything normal.</text>
+  <text x="80" y="224" font-size="18" fill="#5a5d6b">Goes all the way through on its own.</text>
+  <rect x="440" y="110" width="320" height="150" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="460" y="138" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">JOB 2</text>
+  <text x="460" y="170" font-size="22" font-weight="600" fill="#0e1016">The messy job</text>
+  <text x="460" y="198" font-size="18" fill="#5a5d6b">Missing field, wrong format, duplicate.</text>
+  <text x="460" y="224" font-size="18" fill="#5a5d6b">Flagged to a person, never dropped.</text>
+  <rect x="820" y="110" width="320" height="150" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="840" y="138" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">JOB 3</text>
+  <text x="840" y="170" font-size="22" font-weight="600" fill="#0e1016">From their seat</text>
+  <text x="840" y="198" font-size="18" fill="#5a5d6b">On a phone, logged in as their staff,</text>
+  <text x="840" y="224" font-size="18" fill="#5a5d6b">not as you with full access.</text>
+  <path d="M220 260 L220 310" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M600 260 L600 310" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M980 260 L980 310" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <rect x="60" y="320" width="1080" height="80" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="80" y="352" font-size="22" font-weight="600" fill="#0e1016">All three pass from the start, after the last fix. Then send the client a recording of job 1.</text>
+  <text x="80" y="382" font-size="18" fill="#5a5d6b">A fix in step four can break step two. Rerun from the top every time.</text>
+</svg>

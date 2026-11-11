@@ -1,0 +1,408 @@
+{
+  "status": "passed",
+  "browser": "installed Google Chrome",
+  "results": [
+    {
+      "width": 1440,
+      "id": "m2-the-irresistible-offer",
+      "section": "offer",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-the-irresistible-offer",
+      "section": "value",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-the-irresistible-offer",
+      "section": "awareness",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "start",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-1",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-2",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-3",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-4",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-5",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-6",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-7",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-8",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-choose-your-niche",
+      "section": "choose",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-choose-your-niche",
+      "section": "group-1",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-choose-your-niche",
+      "section": "group-2",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-choose-your-niche",
+      "section": "group-3",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-choose-your-niche",
+      "section": "group-4",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-choose-your-niche",
+      "section": "group-5",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-choose-your-niche",
+      "section": "pick",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-write-the-offer",
+      "section": "example",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-write-the-offer",
+      "section": "use",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-create-your-offer",
+      "section": "buyer",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-create-your-offer",
+      "section": "problem",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-create-your-offer",
+      "section": "service",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 1440,
+      "id": "m2-create-your-offer",
+      "section": "offer",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-the-irresistible-offer",
+      "section": "offer",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-the-irresistible-offer",
+      "section": "value",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-the-irresistible-offer",
+      "section": "awareness",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "start",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-1",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-2",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-3",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-4",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-5",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-6",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-7",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-three-ways-to-find-an-offer-that-scales",
+      "section": "service-8",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-choose-your-niche",
+      "section": "choose",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-choose-your-niche",
+      "section": "group-1",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-choose-your-niche",
+      "section": "group-2",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-choose-your-niche",
+      "section": "group-3",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-choose-your-niche",
+      "section": "group-4",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-choose-your-niche",
+      "section": "group-5",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-choose-your-niche",
+      "section": "pick",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-write-the-offer",
+      "section": "example",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-write-the-offer",
+      "section": "use",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-create-your-offer",
+      "section": "buyer",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-create-your-offer",
+      "section": "problem",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-create-your-offer",
+      "section": "service",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    },
+    {
+      "width": 390,
+      "id": "m2-create-your-offer",
+      "section": "offer",
+      "visible": 1,
+      "overflow": false,
+      "style": "normal"
+    }
+  ],
+  "errors": [],
+  "scope": "Reading/navigation checks, not a student learning or execution test"
+}

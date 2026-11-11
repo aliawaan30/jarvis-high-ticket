@@ -1,0 +1,30 @@
+{
+  "version": "orderlane-v1-2026-10-25",
+  "status": "Discovery-ready hypothesis; fictional buyer scenario; not approved or sold",
+  "brand": "Orderlane (fictional demonstration brand)",
+  "buyer": "US independent industrial supply distributors using NetSuite, initially with an existing Celigo account and repeated emailed purchase orders",
+  "problem": "Staff retype customer purchase orders and resolve product, quantity, price and delivery-address mismatches before orders can move to fulfilment.",
+  "outcome": "Process more orders with the existing team; reduce manual handling while retaining staff approval.",
+  "offer": "We turn emailed purchase orders into checked sales-order drafts inside your existing workflow, so your team can handle more orders without more retyping.",
+  "scope": [
+    "One shared mailbox and one NetSuite subsidiary",
+    "Up to five recurring customer document families, selected for volume",
+    "Customer/item/unit/price/address checks and duplicate protection",
+    "Staff approval and an exception queue; no autonomous fulfilment",
+    "Training, runbook, baseline and pilot result report"
+  ],
+  "timeline": "Six-week implementation planning assumption after access and technical sign-off, followed by a 30-day measured pilot.",
+  "proposed_guarantee": "Reduce median staff handling time by 30% on the agreed order cohort in the first 30 live days, or continue the agreed optimisation work without a management fee until achieved. Proposed, conditional on baseline and technical approval.",
+  "pricing_status": "Internal commercial hypothesis only; main proposal is an unsigned concept with fees to agree.",
+  "setup_usd": 15000,
+  "monthly_support_usd": 750,
+  "incremental_tools_budget_usd": 600,
+  "orders_per_month": 3000,
+  "baseline_minutes": 7,
+  "after_minutes": 3,
+  "loaded_hour_usd": 35,
+  "software_status": "Vendor pricing and IDP/ERP entitlements require an account-specific quote. $600 is a sensitivity assumption, not a quoted tier.",
+  "real_prospect": null,
+  "discovery_call": null,
+  "technical_signoff": false
+}

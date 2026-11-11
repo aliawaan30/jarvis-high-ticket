@@ -1,0 +1,18 @@
+[watch] working dir: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/Lm_PEN6PH-M
+[watch] checking metadata/captions via yt-dlp…
+[youtube] Extracting URL: https://www.youtube.com/watch?v=Lm_PEN6PH-M
+[youtube] Lm_PEN6PH-M: Downloading webpage
+[youtube] Lm_PEN6PH-M: Downloading visionos player API JSON
+[youtube] Lm_PEN6PH-M: Downloading m3u8 information
+[info] Lm_PEN6PH-M: Downloading subtitles: en-orig, en
+[info] Lm_PEN6PH-M: Downloading 1 format(s): 400+251-7
+[info] Writing video subtitles to: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/Lm_PEN6PH-M/download/video.en-orig.vtt
+[download] Destination: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/Lm_PEN6PH-M/download/video.en-orig.vtt
+[download]    1.00KiB at  Unknown B/s (00:00:01)[download]    3.00KiB at    1.12MiB/s (00:00:01)[download]    7.00KiB at    2.12MiB/s (00:00:01)[download]   15.00KiB at    1.77MiB/s (00:00:01)[download]   31.00KiB at  881.84KiB/s (00:00:01)[download]   49.94KiB at    1.15MiB/s (00:00:01)[download] 100% of   49.94KiB in 00:00:01 at 34.78KiB/s
+[info] Writing video subtitles to: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/Lm_PEN6PH-M/download/video.en.vtt
+[download] Destination: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/Lm_PEN6PH-M/download/video.en.vtt
+[download]    1.00KiB at  Unknown B/s (00:00:11)[download]    3.00KiB at  Unknown B/s (00:00:11)[download]    7.00KiB at    2.58MiB/s (00:00:11)[download]   15.00KiB at  256.95KiB/s (00:00:11)[download]   31.00KiB at  511.10KiB/s (00:00:11)[download]   49.94KiB at  752.77KiB/s (00:00:11)[download] 100% of   49.94KiB in 00:00:11 at 4.31KiB/s
+[info] Writing video metadata as JSON to: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/Lm_PEN6PH-M/download/video.info.json
+[SubtitlesConvertor] Converting subtitles
+[SubtitlesConvertor] Subtitle file for vtt is already in the requested format
+[SubtitlesConvertor] Subtitle file for vtt is already in the requested format

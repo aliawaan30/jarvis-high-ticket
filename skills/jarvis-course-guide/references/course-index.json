@@ -1,0 +1,343 @@
+{
+  "version": "2026-11-08-course-guide",
+  "snapshot_sha256": "2ccacf1de9d87d06d188288ad917479c439cda5a59730376eb486a3b28ad155b",
+  "modules": [
+    {
+      "slug": "m1",
+      "num": "Module 1",
+      "name": "Jarvis 2.0",
+      "lessons": [
+        {
+          "id": "m1-your-unfair-advantage-set-up-first",
+          "title": "Your Unfair Advantage, Set Up First",
+          "file": "lessons/m1-your-unfair-advantage-set-up-first.json",
+          "has_body": true,
+          "sha256": "880bed36afb5be1594599f045502132a8304e49103eb73376f91b8d6d516e694"
+        },
+        {
+          "id": "m1-install-jarvis-2-0",
+          "title": "Install Jarvis 2.0",
+          "file": "lessons/m1-install-jarvis-2-0.json",
+          "has_body": false,
+          "sha256": "c58ddd5b3f93505e6b0b4e178ee17438ffaf6b7d01aa28a4b323bf435e5fa36e"
+        },
+        {
+          "id": "m1-load-the-high-ticket-skill-pack",
+          "title": "Load the High Ticket Skill Pack",
+          "file": "lessons/m1-load-the-high-ticket-skill-pack.json",
+          "has_body": true,
+          "sha256": "379ff996c99492ea47eb1dbc4f90f2089561e8f207ddebc91a61a3f3703f5c86"
+        },
+        {
+          "id": "m1-connect-your-pipeline",
+          "title": "Connect Your Pipeline",
+          "file": "lessons/m1-connect-your-pipeline.json",
+          "has_body": false,
+          "sha256": "bf6189749ce772320034ac4af5651f6d6e104e3b7139abfb2be48e0eeb11bc6f"
+        },
+        {
+          "id": "m1-prove-it-on-something-real",
+          "title": "Prove It on Something Real",
+          "file": "lessons/m1-prove-it-on-something-real.json",
+          "has_body": false,
+          "sha256": "b05126c67aa3fbf2d1e530e26a9c2bc3ca385dcd3bdaec0dab9a2f91390a7bf8"
+        }
+      ]
+    },
+    {
+      "slug": "m2",
+      "num": "Module 2",
+      "name": "The Irresistible Offer",
+      "lessons": [
+        {
+          "id": "m2-the-irresistible-offer",
+          "title": "The Irresistible Offer",
+          "file": "lessons/m2-the-irresistible-offer.json",
+          "has_body": true,
+          "sha256": "4878a326dfc013edea7a2ed423d88c8f026bfb7b64d9f39f381a53b46525c1e7"
+        },
+        {
+          "id": "m2-three-ways-to-find-an-offer-that-scales",
+          "title": "AI services you can sell",
+          "file": "lessons/m2-three-ways-to-find-an-offer-that-scales.json",
+          "has_body": true,
+          "sha256": "961190054b4fc0dbc86fa0d618ec028e03325c2cc9d243c80f51eee0386fa828"
+        },
+        {
+          "id": "m2-choose-your-niche",
+          "title": "Choose Your Niche",
+          "file": "lessons/m2-choose-your-niche.json",
+          "has_body": true,
+          "sha256": "2b7c2c5da3b4babe6897d8245b1a568b981d8e25904cdc14b37866a0d6211389"
+        },
+        {
+          "id": "m2-write-the-offer",
+          "title": "What an Irresistible Offer Looks Like",
+          "file": "lessons/m2-write-the-offer.json",
+          "has_body": true,
+          "sha256": "f00390f874aa814a7db69528c86ba488cea06f3a529a59b5f3167061afd368aa"
+        },
+        {
+          "id": "m2-create-your-offer",
+          "title": "Create Your Offer",
+          "file": "lessons/m2-create-your-offer.json",
+          "has_body": true,
+          "sha256": "6fcda57a7739636b0eecde4d1cc9f22c1b7d50907743036939849469d067fc8c"
+        }
+      ],
+      "review_status": {
+        "state": "done",
+        "label": "Done",
+        "source": "Blake, 9 November 2026"
+      }
+    },
+    {
+      "slug": "m5",
+      "num": "Module 3",
+      "name": "Funnels",
+      "lessons": [
+        {
+          "id": "m5-your-crm",
+          "title": "Your CRM",
+          "file": "lessons/m5-your-crm.json",
+          "has_body": true,
+          "sha256": "fb4e5c21f07b3172d7dec362a1a0dac6077b1a17a746d27a5e62f7b9e1c0e791"
+        },
+        {
+          "id": "m5-what-the-funnel-is-actually-for",
+          "title": "Website vs Landing Page",
+          "file": "lessons/m5-what-the-funnel-is-actually-for.json",
+          "has_body": true,
+          "sha256": "75bb4d9a5c55074cab2cd09ef96669776fa68cf91e9f3d073250c5f58c1925ec"
+        },
+        {
+          "id": "m5-build-the-page",
+          "title": "Build Your Landing Page",
+          "file": "lessons/m5-build-the-page.json",
+          "has_body": true,
+          "sha256": "3a5b3c3dc9ecb905723b20591a3fa7cea5bc7fbe0fab192cb736249e94895cba"
+        },
+        {
+          "id": "m5-get-them-to-show-up-ready",
+          "title": "The Confirmation Page",
+          "file": "lessons/m5-get-them-to-show-up-ready.json",
+          "has_body": true,
+          "sha256": "8a3a1435a70ce0bf0cbb4a608a2121bbb648f8eb43591111bbaa820d97e9dea4"
+        },
+        {
+          "id": "m5-the-follow-up-that-runs-without-you",
+          "title": "Set Up Your Booking Reminders",
+          "file": "lessons/m5-the-follow-up-that-runs-without-you.json",
+          "has_body": true,
+          "sha256": "df63e2be0c43bd7a254b657b7202c9e9cc1a122e9bcd190c63da0e624ac1ab7a"
+        }
+      ],
+      "review_status": {
+        "state": "testing",
+        "label": "Ready for testing",
+        "source": "Blake, 9 November 2026"
+      }
+    },
+    {
+      "slug": "m3",
+      "num": "Module 4",
+      "name": "Client Acquisition: Outreach",
+      "lessons": [
+        {
+          "id": "m3-the-whole-system-on-one-page",
+          "title": "The Whole System on One Page",
+          "file": "lessons/m3-the-whole-system-on-one-page.json",
+          "has_body": true,
+          "sha256": "7fe960fbc92187dc78a02439eca2e0f745db3278358dc4109ebd3d0366b064bd"
+        },
+        {
+          "id": "m3-build-the-account-list",
+          "title": "Build the Account List",
+          "file": "lessons/m3-build-the-account-list.json",
+          "has_body": false,
+          "sha256": "d1c4ce3553f6d37eb1b9bc6c423612c57d40b572952c27a9c523923108cf3f6f"
+        },
+        {
+          "id": "m3-enrich-it",
+          "title": "Enrich It",
+          "file": "lessons/m3-enrich-it.json",
+          "has_body": false,
+          "sha256": "71e8c1c57e56f0962238311a52a23eac3dd1056b87a05d1d976ae66fb1ed205c"
+        },
+        {
+          "id": "m3-cold-calling",
+          "title": "Cold Calling",
+          "file": "lessons/m3-cold-calling.json",
+          "has_body": false,
+          "sha256": "289c04da567e03663d65a1a0db761489ae52e2b920248b5b3162a028ae78acc8"
+        },
+        {
+          "id": "m3-linkedin",
+          "title": "LinkedIn",
+          "file": "lessons/m3-linkedin.json",
+          "has_body": false,
+          "sha256": "5593eb75b5a73cdf086914bbebac2e9ecad959869b2ffea399e8c94a6c139f37"
+        },
+        {
+          "id": "m3-dm-outreach",
+          "title": "DM Outreach",
+          "file": "lessons/m3-dm-outreach.json",
+          "has_body": false,
+          "sha256": "60cec9f8744a9524c8000ac4c28148e7e66ff3ef5459a32ddbed99a0dcbed221"
+        },
+        {
+          "id": "m3-email-and-sms",
+          "title": "Email and SMS",
+          "file": "lessons/m3-email-and-sms.json",
+          "has_body": false,
+          "sha256": "78047330e1475eb6d0c461210204e805c43467534e780799a4d891508d3626ad"
+        },
+        {
+          "id": "m3-package-it-all-together",
+          "title": "Package It All Together",
+          "file": "lessons/m3-package-it-all-together.json",
+          "has_body": false,
+          "sha256": "ac04d26bbfc1eb4f5052c50f1e17dc5e102313affeff3490a3e43c897ac9ffa4"
+        }
+      ],
+      "review_status": {
+        "state": "done",
+        "label": "Done",
+        "source": "Blake, 9 November 2026"
+      }
+    },
+    {
+      "slug": "m4",
+      "num": "Module 5",
+      "name": "Client Acquisition: Paid Ads",
+      "lessons": [
+        {
+          "id": "m4-how-ads-actually-work",
+          "title": "How Ads Actually Work",
+          "file": "lessons/m4-how-ads-actually-work.json",
+          "has_body": true,
+          "sha256": "5cf0d9c891393f8f24851f4e72fef10b66574e624f1812deda2c52e20f9767d8"
+        },
+        {
+          "id": "m4-the-ad-skills",
+          "title": "The Ad Skills: Script, Record, Edit, Statics, Set Up",
+          "file": "lessons/m4-the-ad-skills.json",
+          "has_body": true,
+          "sha256": "c106ff124f7fd1a5769ede659a2aceccc1b1b31b8846ad42cee67bb60b4f36af"
+        }
+      ]
+    },
+    {
+      "slug": "m6",
+      "num": "Module 6",
+      "name": "Sales",
+      "lessons": [
+        {
+          "id": "m6-one-conversation-two-calls",
+          "title": "One Conversation, Two Calls",
+          "file": "lessons/m6-one-conversation-two-calls.json",
+          "has_body": true,
+          "sha256": "77ad468224107fb271b34638350c4117b54f3cda0c596549f0ccf9f9189faf12"
+        },
+        {
+          "id": "m6-call-one-find-the-pain",
+          "title": "Call One: Find the Pain",
+          "file": "lessons/m6-call-one-find-the-pain.json",
+          "has_body": true,
+          "sha256": "c78319256528ca45fb026f192c0552e7ba770d071e56b9295c3fb8be122bf187"
+        },
+        {
+          "id": "m6-prescribe-the-solution",
+          "title": "Prescribe the Solution",
+          "file": "lessons/m6-prescribe-the-solution.json",
+          "has_body": true,
+          "sha256": "e11f87e1c591c0d1c4aecf970efd4d748ab66746ad777039d222aa5214e6ca6c"
+        },
+        {
+          "id": "m6-the-proposal-and-demo-generator",
+          "title": "The Short Proposal and Separate Demo",
+          "file": "lessons/m6-the-proposal-and-demo-generator.json",
+          "has_body": true,
+          "sha256": "694ec418d34c828b763487798b64546df40abe62f49f008a5303b04c5f6fbf57"
+        },
+        {
+          "id": "m6-call-two-present-and-close",
+          "title": "Call Two: Present and Close",
+          "file": "lessons/m6-call-two-present-and-close.json",
+          "has_body": true,
+          "sha256": "0ad6fe2b3477020683c45823b5d53e647e388ea9e0b04efcc83d5bee38f3a076"
+        },
+        {
+          "id": "m6-objections",
+          "title": "Objections",
+          "file": "lessons/m6-objections.json",
+          "has_body": true,
+          "sha256": "2e259d4eac5d01d4714914620511f8454e2641b73f678d9ba21ad7ae0cc78971"
+        },
+        {
+          "id": "m6-get-your-calls-reviewed",
+          "title": "Get Your Calls Reviewed",
+          "file": "lessons/m6-get-your-calls-reviewed.json",
+          "has_body": true,
+          "sha256": "61ef44eff4370ade6bcba5072172ca28a8f47b36ac1fb18cf9468eac843d228a"
+        }
+      ]
+    },
+    {
+      "slug": "m7",
+      "num": "Module 7",
+      "name": "Fulfilment",
+      "lessons": [
+        {
+          "id": "m7-two-ways-to-deliver",
+          "title": "Two Ways To Deliver",
+          "file": "lessons/m7-two-ways-to-deliver.json",
+          "has_body": true,
+          "sha256": "d1292bb44424538ae31134ee1bc53cd740605c8145fc4333a957454afc0b0326"
+        },
+        {
+          "id": "m7-arbitrage-find-and-vet-developers",
+          "title": "Arbitrage: Find and Vet Developers",
+          "file": "lessons/m7-arbitrage-find-and-vet-developers.json",
+          "has_body": true,
+          "sha256": "01c8057ee13849290cb794fbe7fe503322263db9667c023836b52026b1354c10"
+        },
+        {
+          "id": "m7-arbitrage-scope-hand-off-keep-the-margin",
+          "title": "Arbitrage: Scope, Hand Off, Keep the Margin",
+          "file": "lessons/m7-arbitrage-scope-hand-off-keep-the-margin.json",
+          "has_body": true,
+          "sha256": "a6cb3e582d66264c268484f171749447c5b8c003ebdda2ec3f6fa78f265443d5"
+        },
+        {
+          "id": "m7-self-fulfilment-build-it-with-jarvis",
+          "title": "Self Fulfilment: Build It With Jarvis",
+          "file": "lessons/m7-self-fulfilment-build-it-with-jarvis.json",
+          "has_body": true,
+          "sha256": "82e0221658fe689aa6ae397a773140a7b03ad2ccd79f823fce3e47cf8d0228d8"
+        },
+        {
+          "id": "m7-self-fulfilment-test-it-like-the-client-will",
+          "title": "Self Fulfilment: Test It Like the Client Will",
+          "file": "lessons/m7-self-fulfilment-test-it-like-the-client-will.json",
+          "has_body": true,
+          "sha256": "a65f8a65019c7b0ed0aeb503887f9a515fedc89e3d48c980bc2485995b771522"
+        },
+        {
+          "id": "m7-onboard-hand-over-get-paid",
+          "title": "Onboard, Hand Over, Get Paid",
+          "file": "lessons/m7-onboard-hand-over-get-paid.json",
+          "has_body": true,
+          "sha256": "bcd145e57b956f414f2c5a92fe96e485f6b16c70d9cbe7a91b6d1fe6bb4d7c18"
+        },
+        {
+          "id": "m7-support-retainer-and-raising-the-price",
+          "title": "Support, Retainer and Raising the Price",
+          "file": "lessons/m7-support-retainer-and-raising-the-price.json",
+          "has_body": true,
+          "sha256": "e5ffc5c4e1028ed88829b4edc45faf05a637dd853059ee3215feeb27c5849404"
+        }
+      ]
+    }
+  ]
+}

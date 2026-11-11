@@ -1,0 +1,12 @@
+# Beginner: zero to one saved offer
+
+Use when the student starts without a niche or asks for the full simple path. Preserve an existing chosen buyer or service rather than forcing them back to zero. Reuse their saved background, interests, location and delivery support. Ask one focused question when those are genuinely absent.
+
+1. **Choose one service and buyer.** Compare up to three plausible niches based on their knowledge/access. If they already prefer a service, compare niches for that service; if they know a niche, explore its problems before choosing a service. Help them choose one combination and save the buyer/location. Do not pretend a desk score proves demand.
+2. **Find one problem and match a service.** Research current buyer workflows and real agency examples. Explain the consequence, estimate its financial value with clearly identified inputs, and show why a buyer might pay. Recommend one service, with alternatives only where useful. Examples are optional; an outside idea is valid. Public evidence supports a hypothesis; don't invent a buyer quote or financial loss.
+3. **Understand the service and delivery.** Save the buyer/problem, what gets installed, before/after workflow, why it helps, what people still do, expected setup/result timing, delivery route and claims/evidence. Flag the technical or commercial unknown that changes the promise. A full custom CRM requires experienced-developer scoping before pricing or a guarantee; simpler service instructions are not unlimited technical capability.
+4. **Write the six lines.** Invoke jarvis-offer-creation on the saved brief. It returns exactly six lines. Only after that output, prepare a separate short marketing translation: buyer callout, desired-result headline and one-sentence mechanism subheadline. Do not replace the six-line card with a service description, and don't silently add an unsupported target or guarantee.
+
+Check whether the student can explain who buys, the pain, what changes and how it is delivered in two plain sentences. Then save the approved or proposed offer version for the landing skill. Do not make every student read a full research report or manually fill a worksheet.
+
+For an audit-led custom agency, the first marketing offer is the diagnostic audit. The eventual build follows business discovery and scope, not an invented pre-call implementation guarantee. Ad Library research, service examples and deeper custom research remain different entry routes into this same buyer/problem/solution record.

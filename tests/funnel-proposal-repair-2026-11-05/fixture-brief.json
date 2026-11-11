@@ -1,0 +1,28 @@
+{
+  "status": "synthetic teaching inputs, not buyer proof",
+  "roofing": {
+    "target": "5 jobs in 30 days",
+    "claimApproval": "proposed only",
+    "qualificationRules": null,
+    "calendar": null,
+    "submission": "not connected"
+  },
+  "proposal": {
+    "client": "Northline Services (fictional)",
+    "monthlyRecords": 400,
+    "minutesPerRecord": 5,
+    "loadedHourlyUSD": 40,
+    "buildUSD": 12000,
+    "supportUSDPerMonth": 300,
+    "softwareBudgetUSDPerMonth": 100,
+    "weeks": 4
+  },
+  "bookingStates": [
+    "missing",
+    "awaiting",
+    "confirmed",
+    "unknown",
+    "cancelled",
+    "rescheduled"
+  ]
+}

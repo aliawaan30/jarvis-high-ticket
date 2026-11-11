@@ -1,0 +1,18 @@
+[watch] working dir: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/WEwwAvTY1B4
+[watch] checking metadata/captions via yt-dlp…
+[youtube] Extracting URL: https://www.youtube.com/watch?v=WEwwAvTY1B4
+[youtube] WEwwAvTY1B4: Downloading webpage
+[youtube] WEwwAvTY1B4: Downloading visionos player API JSON
+[youtube] WEwwAvTY1B4: Downloading m3u8 information
+[info] WEwwAvTY1B4: Downloading subtitles: en-orig, en
+[info] WEwwAvTY1B4: Downloading 1 format(s): 137+251-9
+[info] Writing video subtitles to: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/WEwwAvTY1B4/download/video.en-orig.vtt
+[download] Destination: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/WEwwAvTY1B4/download/video.en-orig.vtt
+[download]    1.00KiB at  Unknown B/s (00:00:00)[download]    3.00KiB at  Unknown B/s (00:00:00)[download]    7.00KiB at    1.78MiB/s (00:00:00)[download]   15.00KiB at    1.81MiB/s (00:00:00)[download]   31.00KiB at  824.42KiB/s (00:00:00)[download]   63.00KiB at    1.03MiB/s (00:00:00)[download]  127.00KiB at  855.51KiB/s (00:00:00)[download]  255.00KiB at  762.86KiB/s (00:00:00)[download]  451.90KiB at 1001.53KiB/s (00:00:01)[download] 100% of  451.90KiB in 00:00:01 at 429.77KiB/s
+[info] Writing video subtitles to: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/WEwwAvTY1B4/download/video.en.vtt
+[download] Destination: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/WEwwAvTY1B4/download/video.en.vtt
+[download]    1.00KiB at  Unknown B/s (00:00:00)[download]    3.00KiB at  307.19KiB/s (00:00:00)[download]    7.00KiB at  664.65KiB/s (00:00:00)[download]   15.00KiB at    1.09MiB/s (00:00:00)[download]   31.00KiB at  680.36KiB/s (00:00:00)[download]   63.00KiB at  702.94KiB/s (00:00:00)[download]  127.00KiB at  659.23KiB/s (00:00:00)[download]  255.00KiB at  749.16KiB/s (00:00:00)[download]  451.90KiB at    1.02MiB/s (00:00:01)[download] 100% of  451.90KiB in 00:00:01 at 446.77KiB/s
+[info] Writing video metadata as JSON to: /Users/blakestephens/co-founder/projects/high-ticket-program/references/2026-10-22/WEwwAvTY1B4/download/video.info.json
+[SubtitlesConvertor] Converting subtitles
+[SubtitlesConvertor] Subtitle file for vtt is already in the requested format
+[SubtitlesConvertor] Subtitle file for vtt is already in the requested format

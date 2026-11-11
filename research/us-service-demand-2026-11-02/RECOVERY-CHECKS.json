@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-02",
+  "course_source": "/Users/blakestephens/co-founder/projects/high-ticket-course/studio/data/lessons/m2-three-ways-to-find-an-offer-that-scales.json",
+  "course_sha256": "a5c441ba22e7fa187fb5efaec3c4c303d717c1c591c081bc3228df145d72dbc2",
+  "checks": [
+    "valid JSON",
+    "non-body lesson fields unchanged",
+    "sections 1-4 and 6 onward unchanged",
+    "three service lanes and paid-work outcome present",
+    "six-line teaching draft and inspected case source linked"
+  ],
+  "limits": [
+    "Source content checks only; no browser lesson QA or live republish",
+    "New service examples are provider-described; no agency price or underserved-market validation"
+  ],
+  "artifacts": [
+    "RECOVERY-COURSE-INSERT.html",
+    "CROWN-SYSTEM-MAP.md",
+    "OTHER-SERVICE-FAMILIES.md",
+    "course-lesson-before-recovery.json"
+  ]
+}

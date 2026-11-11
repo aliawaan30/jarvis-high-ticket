@@ -1,0 +1,14 @@
+{
+  "change": "Connected Module 2 learning sections",
+  "module_path": [
+    "Understand",
+    "Explore services",
+    "See an example",
+    "Build yours"
+  ],
+  "ui": "One section visible at a time; jump buttons, Back/Continue, section counter and bookmarkable section route; ordinary lesson navigation retained at the end.",
+  "content": "Existing long-form teaching segmented without deleting its concepts. Service catalogue separated into browseable entries. Practical steps share a roofing teaching example with clear student decisions and actual offer-menu/offer-creation prompts.",
+  "local_notes": "Pre-existing raw Write the Offer notes preserved outside the repo in high-ticket-program/reviews/2026-11-08-module2-before before replacing with the worked example.",
+  "test_environment": "Installed Google Chrome 156; desktop1440x1000, phone390x844 and width320; screenshots visually inspected.",
+  "limits": "No real beginner teach-back, agent execution or Base44/provider validation. Sample replies are teaching examples, not observed research results. No changes to Ali\u2019s CRM or outreach."
+}

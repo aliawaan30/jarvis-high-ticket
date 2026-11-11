@@ -1,0 +1,18 @@
+{
+  "browser": "156.0.8078.80",
+  "checks": [
+    "desktop: m2-the-irresistible-offer, all 4 sections, Continue/Back, jump buttons, single visible section, deep-link reload, final lesson handoff and no horizontal overflow",
+    "desktop: m2-three-ways-to-find-an-offer-that-scales, all 9 sections, Continue/Back, jump buttons, single visible section, deep-link reload, final lesson handoff and no horizontal overflow",
+    "desktop: m2-write-the-offer, all 3 sections, Continue/Back, jump buttons, single visible section, deep-link reload, final lesson handoff and no horizontal overflow",
+    "desktop: m2-create-your-offer, all 4 sections, Continue/Back, jump buttons, single visible section, deep-link reload, final lesson handoff and no horizontal overflow",
+    "desktop: direct worked-offer link and landing-page transition work; other modules unaffected by section controls",
+    "iphone: m2-the-irresistible-offer, all 4 sections, Continue/Back, jump buttons, single visible section, deep-link reload, final lesson handoff and no horizontal overflow",
+    "iphone: m2-three-ways-to-find-an-offer-that-scales, all 9 sections, Continue/Back, jump buttons, single visible section, deep-link reload, final lesson handoff and no horizontal overflow",
+    "iphone: m2-write-the-offer, all 3 sections, Continue/Back, jump buttons, single visible section, deep-link reload, final lesson handoff and no horizontal overflow",
+    "iphone: m2-create-your-offer, all 4 sections, Continue/Back, jump buttons, single visible section, deep-link reload, final lesson handoff and no horizontal overflow",
+    "iphone: direct worked-offer link and landing-page transition work; other modules unaffected by section controls",
+    "320px: module path and section buttons wrap without horizontal page overflow"
+  ],
+  "errors": [],
+  "scope": "Section navigation, route persistence, reading and prompt layout; not a real beginner or Jarvis/Base44 execution test."
+}

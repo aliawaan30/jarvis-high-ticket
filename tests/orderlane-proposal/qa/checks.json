@@ -1,0 +1,113 @@
+{
+  "environment": "Local macOS Chrome via Playwright; static HTML, prototype only",
+  "checks": [
+    {
+      "check": "Eight-step proposal walkthrough exists",
+      "passed": true
+    },
+    {
+      "check": "Initial state presents recommendation only",
+      "passed": true
+    },
+    {
+      "check": "Agenda labels use the intended buyer-call sequence",
+      "passed": true
+    },
+    {
+      "check": "Walkthrough contains: current process",
+      "passed": true
+    },
+    {
+      "check": "Walkthrough contains: desired end state",
+      "passed": true
+    },
+    {
+      "check": "Walkthrough contains: The proposed system",
+      "passed": true
+    },
+    {
+      "check": "Walkthrough contains: What the team receives",
+      "passed": true
+    },
+    {
+      "check": "Walkthrough contains: Launch gate",
+      "passed": true
+    },
+    {
+      "check": "Walkthrough contains: Investment quoted after feasibility",
+      "passed": true
+    },
+    {
+      "check": "Walkthrough contains: Decision requested",
+      "passed": true
+    },
+    {
+      "check": "Next advances to current pain / end state",
+      "passed": true
+    },
+    {
+      "check": "Back returns to recommendation",
+      "passed": true
+    },
+    {
+      "check": "Agenda jumps to the order demo",
+      "passed": true
+    },
+    {
+      "check": "Unclear unit blocks demo pending approval",
+      "passed": true
+    },
+    {
+      "check": "Staff decision leads to prepared draft state",
+      "passed": true
+    },
+    {
+      "check": "Duplicate PO stops progression",
+      "passed": true
+    },
+    {
+      "check": "Demo reset clears exception and duplicate switch",
+      "passed": true
+    },
+    {
+      "check": "Capacity calculator default: 150 hours and $63,000/year",
+      "passed": true
+    },
+    {
+      "check": "Changed order volume recomputes value to $31,500",
+      "passed": true
+    },
+    {
+      "check": "Zero inputs stay finite and readable",
+      "passed": true
+    },
+    {
+      "check": "390px mobile layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "check": "Mobile Next control advances slide",
+      "passed": true
+    },
+    {
+      "check": "Mobile agenda reaches the decision slide",
+      "passed": true
+    },
+    {
+      "check": "Internal review contains 13 labelled sources and links back",
+      "passed": true
+    },
+    {
+      "check": "No browser JavaScript errors in exercised walkthrough",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "not_tested": [
+    "Actual ERP/AI execution",
+    "Base44 runtime",
+    "Buyer validation",
+    "Real baseline or commercial acceptance",
+    "Production mail/ERP access"
+  ]
+}

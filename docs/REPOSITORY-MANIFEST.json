@@ -1,0 +1,1685 @@
+{
+  "scope": "Current repository files excluding this manifest and Git-ignored local state",
+  "modules": 7,
+  "lessons": 39,
+  "lessons_with_body": 29,
+  "canonical_skills": 16,
+  "files": {
+    ".gitignore": {
+      "bytes": 220,
+      "sha256": "f0a1e717bdc93abcaf199d41509163e933cf1899a03aa5074764c9b65f0c46f4"
+    },
+    "AGENTS.md": {
+      "bytes": 1495,
+      "sha256": "166b65596bdff5513f3dbc72b3bcfa2188d61faae97db7c150fbdc2a8cf3e5d9"
+    },
+    "README.md": {
+      "bytes": 4381,
+      "sha256": "b989ae9be0431ff2d8d7d1396f5f4cc8c29e5ed8441173932d4e3f7e6579051b"
+    },
+    "TECHNICAL-REVIEW.md": {
+      "bytes": 8141,
+      "sha256": "ccdf1c6cbf25798616784d6199a54b9d18101418529febca200d595a6839572d"
+    },
+    "archive/planning/COURSE-MAP.md": {
+      "bytes": 4446,
+      "sha256": "36ca61893307aef0933c5364524489afed697faa22b1e728d403f000899414af"
+    },
+    "archive/planning/SKILLS-NEEDED.md": {
+      "bytes": 4239,
+      "sha256": "af6f125238ea9ca7165f9b0f30136342a698d0527c0534df4a544b7121b86dc0"
+    },
+    "archive/recovered-skills/README.md": {
+      "bytes": 1362,
+      "sha256": "2a673126e9b74de8b8c80f4693b43c918e1578acfcbb2fcb2bc0b77b9c3b680e"
+    },
+    "archive/recovered-skills/jarvis-call-review/SKILL.md": {
+      "bytes": 9357,
+      "sha256": "0c45d7c63d0f535e94767e0713a1467de827b65a15097054ada772198ec8c457"
+    },
+    "archive/recovered-skills/jarvis-client-onboarding/SKILL.md": {
+      "bytes": 5237,
+      "sha256": "0292b911fb07156f1757b2e2423ceadb89c4b9d3ec3fce8719c153739c19b58d"
+    },
+    "archive/recovered-skills/jarvis-marketing-research/SKILL.md": {
+      "bytes": 9149,
+      "sha256": "5d4adaea6231fb47a705c130f6537af0aac514302cc27ce7b6083c940962edaf"
+    },
+    "archive/recovered-skills/jarvis-solution-scoping/SKILL.md": {
+      "bytes": 5709,
+      "sha256": "bad6a14822f9cf23c74a4ecb4edc08d3d41307ee072795661c99eb8f7ce40e7f"
+    },
+    "course/COURSE-MAP.md": {
+      "bytes": 871,
+      "sha256": "0d4cb2d632b72b2a67871d15cd8b9394b9bc91a7cfaa284dcbb1b5f3fd70ebfc"
+    },
+    "course/SKILLS-NEEDED.md": {
+      "bytes": 1691,
+      "sha256": "f5dbba2003d38f5b8039e207315d55494f4defaaf9049ec040adfca09035bd3f"
+    },
+    "course/crm/BRIEF.md": {
+      "bytes": 4955,
+      "sha256": "541549162dead04da10fda611034d0f9c0748e5ae9ee227500146a540fcc5ee3"
+    },
+    "course/crm/DECISION.md": {
+      "bytes": 1747,
+      "sha256": "32a06635ffdf948be80d53e42213bcf2948ba6228880d2a16eb6967786c43aea"
+    },
+    "course/crm/DESIGN-REFERENCE.md": {
+      "bytes": 2645,
+      "sha256": "f77e80b3d8863efc17cdf9bc373a6c979dc286f5c335f5d13a0336ce5d91284f"
+    },
+    "course/crm/PLAN.md": {
+      "bytes": 7915,
+      "sha256": "6320e245daed1cdc02ab1a7f10941d1fc805195397b9d0ba7852eb512c70e16f"
+    },
+    "course/crm/PROOF.md": {
+      "bytes": 7477,
+      "sha256": "5f6f7226cc7ed98e230dd3bbc455b86a3905509e5b2d41b9696ff9ca950afb0e"
+    },
+    "course/crm/SPEC.md": {
+      "bytes": 4960,
+      "sha256": "a2949cf37e1fe8271edb2aba7a5fc76708496434054dd26d36edd6f9caa11fdd"
+    },
+    "course/crm/reference/01-main-table.jpg": {
+      "bytes": 59326,
+      "sha256": "118326bc85504cff91bbdd3ac1d9cc46648d5790e78360a96c2daad6470137bb"
+    },
+    "course/crm/reference/02-detail-panel.jpg": {
+      "bytes": 36144,
+      "sha256": "ec32f0673ef547573a3af7d87d00b46d53f1b0806b2a39a4e6d7e20160841596"
+    },
+    "course/crm/reference/03-leads-table.jpg": {
+      "bytes": 53143,
+      "sha256": "e0ec9a559f96b7eccc7f60cbc4877e5633b029205d40a33bb4c0b0c7b4179e57"
+    },
+    "course/crm/reference/04-import-modal.jpg": {
+      "bytes": 32152,
+      "sha256": "5d39e0290c5e33912163cecc65aec9bbd9d1107c79aec95640d4e19c0d7e7aca"
+    },
+    "course/crm/reference/video-transcript.txt": {
+      "bytes": 13381,
+      "sha256": "308f84b916df0ad865df8e43339cef963a6520f10820f1ed0c326b6d8870fc2e"
+    },
+    "course/examples/roofline/README.md": {
+      "bytes": 1136,
+      "sha256": "dff516dc58888834e8b5954b5d4f6b952c266217558d9d1140aeae86b744fb4f"
+    },
+    "course/examples/roofline/app.js": {
+      "bytes": 4433,
+      "sha256": "bbf81710257fe37e75be5b6af16617fa96c67b44ecec6d27490f2638bc00c386"
+    },
+    "course/examples/roofline/booking.html": {
+      "bytes": 1081,
+      "sha256": "3e9c27b05f7703958ee186ac602a503d83c3c133c2962c25c086adc8e55fa541"
+    },
+    "course/examples/roofline/confirmation.html": {
+      "bytes": 1081,
+      "sha256": "3e9c27b05f7703958ee186ac602a503d83c3c133c2962c25c086adc8e55fa541"
+    },
+    "course/examples/roofline/index.html": {
+      "bytes": 2159,
+      "sha256": "d975e08fdff3d688d714b0f5eac18d2fd51a04e9e2959b58ba8ff99000dd2879"
+    },
+    "course/examples/roofline/offer-testing.html": {
+      "bytes": 2036,
+      "sha256": "f3ef8d21f010eef7576094452092d94fb6cfe293dd88eedaafd21d7a46707347"
+    },
+    "course/examples/roofline/style.css": {
+      "bytes": 10622,
+      "sha256": "bc213db40c57d297c9b9d68b3bb036a1daaeaba47cd7b92c21ae6a41ab645cd9"
+    },
+    "course/outreach/LEAN-PATH.md": {
+      "bytes": 3573,
+      "sha256": "119bb0394196bce11de50f3d225c6f91e0a492be2d09c06ffee2cb1a0eed6c74"
+    },
+    "course/outreach/SYSTEM.md": {
+      "bytes": 23352,
+      "sha256": "5353ed61f54faa39bb8a2a9616e60a90694a5dd8da755df38f8e249092695b53"
+    },
+    "course/outreach/research-compliance-intl.md": {
+      "bytes": 32856,
+      "sha256": "ad047c35b23eeeaceabdf3ee15ad068bd945cb2ffefbd3e1611d8a20f27fc9ab"
+    },
+    "course/outreach/research-compliance.md": {
+      "bytes": 31399,
+      "sha256": "4c62b7799ae1a92c72140eac0545e1d66cf8f96f41ea1d7ce34456267221701a"
+    },
+    "course/outreach/research-tools.md": {
+      "bytes": 18612,
+      "sha256": "76a1209bdcf82d94dc3ec8ecd7a1f64dbe382e47fce1dfa253c30272a255919e"
+    },
+    "course/outreach/skills/jarvis-outreach-coordinator/SKILL.md": {
+      "bytes": 4873,
+      "sha256": "90a8da0f28e8ad405cc77e7f86634d6800b84c312a474a12fb3e0721bdec0ef1"
+    },
+    "course/outreach/skills/jarvis-outreach-coordinator/references/clay.md": {
+      "bytes": 1411,
+      "sha256": "be23db0a734e90aa971b1c60571904da7a97548c88561267c3c14debd92ac519"
+    },
+    "course/outreach/skills/jarvis-outreach-coordinator/references/crm-and-execution.md": {
+      "bytes": 3547,
+      "sha256": "638532f97cb673e5e08128df560f2144559191e567b8be45e4e89829e766d5b3"
+    },
+    "course/outreach/skills/jarvis-outreach-coordinator/references/enrich.md": {
+      "bytes": 2574,
+      "sha256": "70b5343ea4de2790218bfa66bab65c4a030e12e737ba20b22a89162e685561bc"
+    },
+    "course/outreach/skills/jarvis-outreach-coordinator/references/lab.md": {
+      "bytes": 3780,
+      "sha256": "6f029eb63dee3c82f5604381813c8054fa20bbf8a9ac079375ddb98b5c9b61a7"
+    },
+    "course/outreach/skills/jarvis-outreach-coordinator/references/list.md": {
+      "bytes": 2227,
+      "sha256": "44708a84f1ed04844103a5da36fb7664449a8e53db7c46bf4d0bfedcef1c9cfd"
+    },
+    "course/outreach/skills/jarvis-outreach-coordinator/references/score.md": {
+      "bytes": 1754,
+      "sha256": "ad051c780157a97bd51c95ac03c773cc6644fd2b2141513741a635f0353561f3"
+    },
+    "course/reading-copy/README.md": {
+      "bytes": 763,
+      "sha256": "169000e0a16f1e755422b857f34c344627102c63ac84c37304dc9d7f7c64f62f"
+    },
+    "course/reading-copy/build.py": {
+      "bytes": 19338,
+      "sha256": "385b3c5908b9ca0a0c53c5a7ef0db751f6964a10b1dfd7b280e4f779f764c150"
+    },
+    "course/reading-copy/data/demos/confirmation/index.html": {
+      "bytes": 3354,
+      "sha256": "df42e9fae17ac1f5b5a5d112f69aa3dbe5a9e7d1b4366c6b4d2c215d00fce2ef"
+    },
+    "course/reading-copy/data/demos/confirmation/style.css": {
+      "bytes": 4514,
+      "sha256": "2b3ad9b10d8c6d328caf47ee593110207f553cd7c6ee92e6f6c332ab1f4f425e"
+    },
+    "course/reading-copy/data/img/m2-build-the-demo.svg": {
+      "bytes": 2566,
+      "sha256": "81e31f5b8247652f7e0e276ebe9b3e2af2d4069113415a7100fbc1cecf4958fd"
+    },
+    "course/reading-copy/data/img/m2-get-your-offer-checked.svg": {
+      "bytes": 1847,
+      "sha256": "8e94368a5d466712b0342d2b5960f23ec80295b6852dc044cd5e64fd33414a3e"
+    },
+    "course/reading-copy/data/img/m2-offer-showcase.svg": {
+      "bytes": 1943,
+      "sha256": "03332ed12817cf2bdd7a4101b64e65c23040645d5cf65647aba3077decec48e9"
+    },
+    "course/reading-copy/data/img/m2-offer-six-lines.svg": {
+      "bytes": 4053,
+      "sha256": "b4ede8256ddf60b9205bfb088bd48959f67eedfb60b445706cb9f7388a1fb6f3"
+    },
+    "course/reading-copy/data/img/m2-the-five-stages-of-awareness-ladder.svg": {
+      "bytes": 3264,
+      "sha256": "bec3781a1c15731ce323cc4651830fc5525cac301f4da168e45cf7f565986ab2"
+    },
+    "course/reading-copy/data/img/m2-the-irresistible-offer-process.svg": {
+      "bytes": 2394,
+      "sha256": "e4084c06bedb5ea9036c28b65b72b5c2bfa0ced62d5f037eed731e64cdab4566"
+    },
+    "course/reading-copy/data/img/m2-three-ways.svg": {
+      "bytes": 3283,
+      "sha256": "0f7af3dffaf7fc7213337deee2cdef197f1928686814d1fee5262fc48a48f143"
+    },
+    "course/reading-copy/data/img/m2-value-equation.svg": {
+      "bytes": 1243,
+      "sha256": "26a581032b799f8ed3f24a9c42c170ab87ade60db1e846d19689432e35c3e9eb"
+    },
+    "course/reading-copy/data/img/m2-what-a-desired-market-is-grid.svg": {
+      "bytes": 2803,
+      "sha256": "5476bd9b65fbdd0cedd550d5410027304f7f507eab398102b8c48b5a47c491a3"
+    },
+    "course/reading-copy/data/img/m2-why-people-pay-five-figures-loss-curve.svg": {
+      "bytes": 2455,
+      "sha256": "a1667decaadedf5792bfb640b095728d674657179c2c032275acc234ab670772"
+    },
+    "course/reading-copy/data/img/m3-the-whole-system.svg": {
+      "bytes": 4331,
+      "sha256": "ecb222087c52072069c52e3a37447e9c57cd739f43d464cd467af4e9ff0767ee"
+    },
+    "course/reading-copy/data/img/m4-angle-to-variations.svg": {
+      "bytes": 3773,
+      "sha256": "dcdd4d504fb835650680ad4734ff7feb1265e6c978b06c6431640be2e5721163"
+    },
+    "course/reading-copy/data/img/m4-cac-vs-ticket.svg": {
+      "bytes": 2795,
+      "sha256": "ef3416947267af89a31c1357e9221ab528267ac23be3488b19d2fad2d6422bf6"
+    },
+    "course/reading-copy/data/img/m4-one-to-many.svg": {
+      "bytes": 3540,
+      "sha256": "5c55c09a13b729e0bbaa0dcc626011faf60a5b0ca4ef7f44d49b91dcc70517e4"
+    },
+    "course/reading-copy/data/img/m5-pipeline-stages.svg": {
+      "bytes": 2552,
+      "sha256": "3837cf4809f47bc2174b4da5cda963d746c4ecf89c8d898397f81416fd4e4ddd"
+    },
+    "course/reading-copy/data/img/m5-website-vs-funnel.svg": {
+      "bytes": 3117,
+      "sha256": "3292bc5fed54fa6c273e83f95b4d9bfbd2cd9b9892f7f78f3f19bb6d88505c1d"
+    },
+    "course/reading-copy/data/img/m6-anchor-ladder.svg": {
+      "bytes": 2107,
+      "sha256": "23a6948244759542d60d6f3c21bb535402a213188b2c5d248bc060d26a44d163"
+    },
+    "course/reading-copy/data/img/m6-call-one-branches.svg": {
+      "bytes": 3071,
+      "sha256": "4f5e70c35eb8b951253b16cb5aa63204a45524bfab0e9c97fd3af5114eb92e6b"
+    },
+    "course/reading-copy/data/img/m6-call-one-flow.svg": {
+      "bytes": 3238,
+      "sha256": "50105bf0b365e16b74c489225ea992281ed4a83318e7566d295fc4d9e41c26b6"
+    },
+    "course/reading-copy/data/img/m6-one-or-two.svg": {
+      "bytes": 2132,
+      "sha256": "1d22cceee456fc825a453cf0633f8252047f82e48428cc969b8cdeee23bbec60"
+    },
+    "course/reading-copy/data/img/m6-two-call-timeline.svg": {
+      "bytes": 3360,
+      "sha256": "19ce0c9c13ec82d98e330364f775b4a923615db73012f0bd6743418abb8e2768"
+    },
+    "course/reading-copy/data/img/m7-build-loop.svg": {
+      "bytes": 3478,
+      "sha256": "0691eca4200d1fb98079f47ce2c53695c81ad26f2f4bd27da6e9d15bf1f45731"
+    },
+    "course/reading-copy/data/img/m7-first-thirty-days.svg": {
+      "bytes": 2011,
+      "sha256": "286c59e50afc63256b1ae17712914c50fea4a3dc69a86390820fc1c5d4893507"
+    },
+    "course/reading-copy/data/img/m7-handover-call.svg": {
+      "bytes": 4139,
+      "sha256": "e543fade66866deb21f59bdb014601487ec76636423c2373c938553593596880"
+    },
+    "course/reading-copy/data/img/m7-scope-to-build.svg": {
+      "bytes": 4363,
+      "sha256": "cdd2020a9d268fa5bc30707bd77e4f41fe732187c80f5a88b8d03e626d3f19f1"
+    },
+    "course/reading-copy/data/img/m7-three-test-jobs.svg": {
+      "bytes": 2811,
+      "sha256": "9988d9dd7a02cef993841654b99825c992876d68f56b2069dd533316f8309a33"
+    },
+    "course/reading-copy/data/img/m7-two-paths.svg": {
+      "bytes": 3095,
+      "sha256": "e727db721ff7768fc599017ea9c4bb9843b6be691693a8d60575af1216f1c082"
+    },
+    "course/reading-copy/data/img/roofing-offer-six-lines-v2.png": {
+      "bytes": 75041,
+      "sha256": "93e9b31d1fff4b43a076a12ec2db105b362f3c4076ef897499d29e8419c1546b"
+    },
+    "course/reading-copy/data/img/roofing-offer-specific-v3.svg": {
+      "bytes": 1661,
+      "sha256": "a6c87e0318f54e4f0d19b47dfc4fcdc2851a7a0aa8511f3650d9037a9d064409"
+    },
+    "course/reading-copy/data/sketches/m1-your-unfair-advantage-set-up-first.png": {
+      "bytes": 38366,
+      "sha256": "5ff77be66273daaed49198f0c66066e8ef9cfb0c3ddfc5c77a7c3b0981982f24"
+    },
+    "course/reading-copy/downloads/Jarvis-High-Ticket-Skills.zip": {
+      "bytes": 220632,
+      "sha256": "64390f9afb66938d4961a6ffb3571bc5f188b20d966e44a5efce06dfb1eb924c"
+    },
+    "course/reading-copy/index.html": {
+      "bytes": 190052,
+      "sha256": "95e8814db51d2246d260c8c32a3466f6bd4463e789a7cf804762474513968628"
+    },
+    "course/research/offer-links.md": {
+      "bytes": 4490,
+      "sha256": "bedb9e2c4c9a299478d9db883676801a40d7fddaf0421ab4c226124298024347"
+    },
+    "course/research/offers-scaling-2026-10-30.md": {
+      "bytes": 10054,
+      "sha256": "d33d43a7ced7e601566929177e3ec89bfa667a0da95f214f0acb8580bdf3f5ab"
+    },
+    "course/research/outreach-stack-2026-11-02.md": {
+      "bytes": 35753,
+      "sha256": "6717b3544ee8450810e86fda489350a438704565d314288329490d35ca8db4f1"
+    },
+    "course/studio/CONVENTIONS.md": {
+      "bytes": 2724,
+      "sha256": "e802b90eb7d327dc18db4a800ab8d285feb04e8662e9e412df2c939a1376d8d7"
+    },
+    "course/studio/CUTS-2026-10-31.md": {
+      "bytes": 5653,
+      "sha256": "b2736f859f3babe1484575a684f4ade92d3b3102ba9393b0919a9f955e6ab76f"
+    },
+    "course/studio/README.md": {
+      "bytes": 2550,
+      "sha256": "32287ba855782cc99ee2010a26a645aa7c2b1633c032cf78e6d0ebcc9de94a3e"
+    },
+    "course/studio/VOICE.md": {
+      "bytes": 7315,
+      "sha256": "6bda5fe777cb4d911a33e55ef2e8e409f1a48175f477050a592234f7abf4b033"
+    },
+    "course/studio/app.html": {
+      "bytes": 44138,
+      "sha256": "a13fac831cbec9c120f16bdbd3a6b0c55143f7d5d7e4de8fce290144d8bd54c8"
+    },
+    "course/studio/data/demos/confirmation/index.html": {
+      "bytes": 3354,
+      "sha256": "df42e9fae17ac1f5b5a5d112f69aa3dbe5a9e7d1b4366c6b4d2c215d00fce2ef"
+    },
+    "course/studio/data/demos/confirmation/style.css": {
+      "bytes": 4514,
+      "sha256": "2b3ad9b10d8c6d328caf47ee593110207f553cd7c6ee92e6f6c332ab1f4f425e"
+    },
+    "course/studio/data/img/m2-build-the-demo.svg": {
+      "bytes": 2566,
+      "sha256": "81e31f5b8247652f7e0e276ebe9b3e2af2d4069113415a7100fbc1cecf4958fd"
+    },
+    "course/studio/data/img/m2-get-your-offer-checked.svg": {
+      "bytes": 1847,
+      "sha256": "8e94368a5d466712b0342d2b5960f23ec80295b6852dc044cd5e64fd33414a3e"
+    },
+    "course/studio/data/img/m2-offer-showcase.svg": {
+      "bytes": 1943,
+      "sha256": "03332ed12817cf2bdd7a4101b64e65c23040645d5cf65647aba3077decec48e9"
+    },
+    "course/studio/data/img/m2-offer-six-lines.svg": {
+      "bytes": 4053,
+      "sha256": "b4ede8256ddf60b9205bfb088bd48959f67eedfb60b445706cb9f7388a1fb6f3"
+    },
+    "course/studio/data/img/m2-the-five-stages-of-awareness-ladder.svg": {
+      "bytes": 3264,
+      "sha256": "bec3781a1c15731ce323cc4651830fc5525cac301f4da168e45cf7f565986ab2"
+    },
+    "course/studio/data/img/m2-the-irresistible-offer-process.svg": {
+      "bytes": 2394,
+      "sha256": "e4084c06bedb5ea9036c28b65b72b5c2bfa0ced62d5f037eed731e64cdab4566"
+    },
+    "course/studio/data/img/m2-three-ways.svg": {
+      "bytes": 3283,
+      "sha256": "0f7af3dffaf7fc7213337deee2cdef197f1928686814d1fee5262fc48a48f143"
+    },
+    "course/studio/data/img/m2-value-equation.svg": {
+      "bytes": 1243,
+      "sha256": "26a581032b799f8ed3f24a9c42c170ab87ade60db1e846d19689432e35c3e9eb"
+    },
+    "course/studio/data/img/m2-what-a-desired-market-is-grid.svg": {
+      "bytes": 2803,
+      "sha256": "5476bd9b65fbdd0cedd550d5410027304f7f507eab398102b8c48b5a47c491a3"
+    },
+    "course/studio/data/img/m2-why-people-pay-five-figures-loss-curve.svg": {
+      "bytes": 2455,
+      "sha256": "a1667decaadedf5792bfb640b095728d674657179c2c032275acc234ab670772"
+    },
+    "course/studio/data/img/m3-the-whole-system.svg": {
+      "bytes": 4331,
+      "sha256": "ecb222087c52072069c52e3a37447e9c57cd739f43d464cd467af4e9ff0767ee"
+    },
+    "course/studio/data/img/m4-angle-to-variations.svg": {
+      "bytes": 3773,
+      "sha256": "dcdd4d504fb835650680ad4734ff7feb1265e6c978b06c6431640be2e5721163"
+    },
+    "course/studio/data/img/m4-cac-vs-ticket.svg": {
+      "bytes": 2795,
+      "sha256": "ef3416947267af89a31c1357e9221ab528267ac23be3488b19d2fad2d6422bf6"
+    },
+    "course/studio/data/img/m4-one-to-many.svg": {
+      "bytes": 3540,
+      "sha256": "5c55c09a13b729e0bbaa0dcc626011faf60a5b0ca4ef7f44d49b91dcc70517e4"
+    },
+    "course/studio/data/img/m5-pipeline-stages.svg": {
+      "bytes": 2552,
+      "sha256": "3837cf4809f47bc2174b4da5cda963d746c4ecf89c8d898397f81416fd4e4ddd"
+    },
+    "course/studio/data/img/m5-website-vs-funnel.svg": {
+      "bytes": 3117,
+      "sha256": "3292bc5fed54fa6c273e83f95b4d9bfbd2cd9b9892f7f78f3f19bb6d88505c1d"
+    },
+    "course/studio/data/img/m6-anchor-ladder.svg": {
+      "bytes": 2107,
+      "sha256": "23a6948244759542d60d6f3c21bb535402a213188b2c5d248bc060d26a44d163"
+    },
+    "course/studio/data/img/m6-call-one-branches.svg": {
+      "bytes": 3071,
+      "sha256": "4f5e70c35eb8b951253b16cb5aa63204a45524bfab0e9c97fd3af5114eb92e6b"
+    },
+    "course/studio/data/img/m6-call-one-flow.svg": {
+      "bytes": 3238,
+      "sha256": "50105bf0b365e16b74c489225ea992281ed4a83318e7566d295fc4d9e41c26b6"
+    },
+    "course/studio/data/img/m6-one-or-two.svg": {
+      "bytes": 2132,
+      "sha256": "1d22cceee456fc825a453cf0633f8252047f82e48428cc969b8cdeee23bbec60"
+    },
+    "course/studio/data/img/m6-two-call-timeline.svg": {
+      "bytes": 3360,
+      "sha256": "19ce0c9c13ec82d98e330364f775b4a923615db73012f0bd6743418abb8e2768"
+    },
+    "course/studio/data/img/m7-build-loop.svg": {
+      "bytes": 3478,
+      "sha256": "0691eca4200d1fb98079f47ce2c53695c81ad26f2f4bd27da6e9d15bf1f45731"
+    },
+    "course/studio/data/img/m7-first-thirty-days.svg": {
+      "bytes": 2011,
+      "sha256": "286c59e50afc63256b1ae17712914c50fea4a3dc69a86390820fc1c5d4893507"
+    },
+    "course/studio/data/img/m7-handover-call.svg": {
+      "bytes": 4139,
+      "sha256": "e543fade66866deb21f59bdb014601487ec76636423c2373c938553593596880"
+    },
+    "course/studio/data/img/m7-scope-to-build.svg": {
+      "bytes": 4363,
+      "sha256": "cdd2020a9d268fa5bc30707bd77e4f41fe732187c80f5a88b8d03e626d3f19f1"
+    },
+    "course/studio/data/img/m7-three-test-jobs.svg": {
+      "bytes": 2811,
+      "sha256": "9988d9dd7a02cef993841654b99825c992876d68f56b2069dd533316f8309a33"
+    },
+    "course/studio/data/img/m7-two-paths.svg": {
+      "bytes": 3095,
+      "sha256": "e727db721ff7768fc599017ea9c4bb9843b6be691693a8d60575af1216f1c082"
+    },
+    "course/studio/data/img/roofing-offer-six-lines-v2.png": {
+      "bytes": 75041,
+      "sha256": "93e9b31d1fff4b43a076a12ec2db105b362f3c4076ef897499d29e8419c1546b"
+    },
+    "course/studio/data/img/roofing-offer-specific-v3.svg": {
+      "bytes": 1661,
+      "sha256": "a6c87e0318f54e4f0d19b47dfc4fcdc2851a7a0aa8511f3650d9037a9d064409"
+    },
+    "course/studio/data/lessons/.trash/m2-f8pgjr.json": {
+      "bytes": 1899,
+      "sha256": "cbd62a3f045172ad6a8f3f1b27d7cf72ef61786cca3413e9af0bc514659b2da4"
+    },
+    "course/studio/data/lessons/.trash/m2-find-the-custom-implementations.json": {
+      "bytes": 684,
+      "sha256": "794f4c87c3eb3dc1b7092f2d26338f6ceb583a8543f6ab663c691fab49036325"
+    },
+    "course/studio/data/lessons/.trash/m2-find-the-underserved-markets.json": {
+      "bytes": 660,
+      "sha256": "af53eefc970b1bb83b1886b87c0ecd3c06ddb20f2010705f7b202ebf0a013b08"
+    },
+    "course/studio/data/lessons/.trash/m2-qnzrwv.json": {
+      "bytes": 127,
+      "sha256": "22d21b4605a9ae0e9b0723a8bef29ba177be20d1bb4d2046654e1deb7f857cb1"
+    },
+    "course/studio/data/lessons/.trash/m2-s6utrm.json": {
+      "bytes": 97,
+      "sha256": "77eeabc0a002c50950fb9d92cdf7525a01d5a4a199210e0fcb9f0191e90aa9a7"
+    },
+    "course/studio/data/lessons/.trash/m2-scope-it-with-a-technical-partner.json": {
+      "bytes": 375,
+      "sha256": "42a911b70672db34b6198825a1c226bf27d88918a1772a2de7dc4217e6c5d0f0"
+    },
+    "course/studio/data/lessons/.trash/m2-the-five-stages-of-awareness.json": {
+      "bytes": 7910,
+      "sha256": "3d873b2b3be02af887dea2e60865620c39143ee13daa95926d81881c4c12e617"
+    },
+    "course/studio/data/lessons/.trash/m2-the-offer-strategy-session.json": {
+      "bytes": 300,
+      "sha256": "21f6529c313328e0bf02b47b955fbf0b125ff59610c458fa60fa7f2ee602b664"
+    },
+    "course/studio/data/lessons/.trash/m2-what-a-desired-market-is.json": {
+      "bytes": 9297,
+      "sha256": "6162ab4653f9f9a6052bff895317bbf9cf6f902f646b093f18d48600f5eb593d"
+    },
+    "course/studio/data/lessons/.trash/m2-why-people-pay-five-figures.json": {
+      "bytes": 7870,
+      "sha256": "58b14ae75f6eb8a1e5c011e244691bec0a415c1d101a4d539c398ae229660236"
+    },
+    "course/studio/data/lessons/.trash/m4-from-offer-to-angle.json": {
+      "bytes": 314,
+      "sha256": "c95be570337ea3f03d5692aa0b56674faa4bf6e024e0414ca64b1840e9fa3126"
+    },
+    "course/studio/data/lessons/.trash/m4-launch-it.json": {
+      "bytes": 285,
+      "sha256": "6530fef11ea4fcf0eaa7a35706636093befed1ca97890ca957cc734e96af990e"
+    },
+    "course/studio/data/lessons/.trash/m4-make-the-creative.json": {
+      "bytes": 302,
+      "sha256": "82e0d1e7fffedaad73c9d3a2038eb4cf6fd169648305af90c3836e6e80d8fa2d"
+    },
+    "course/studio/data/lessons/.trash/m4-scale-fix-or-kill.json": {
+      "bytes": 2366,
+      "sha256": "8bf95f128322a44fe6f580c7d39673c55a295dbd47cb60291f9de48bca7aba6c"
+    },
+    "course/studio/data/lessons/.trash/m5-qualify-and-book.json": {
+      "bytes": 287,
+      "sha256": "1af5cc94da1514c87f2ef45b5b2b5b5aa5c3fd1a181101956897e729205c1d26"
+    },
+    "course/studio/data/lessons/m1-connect-your-pipeline.json": {
+      "bytes": 317,
+      "sha256": "d683e43e55b86308e85b7ecb295395f98b4ea6118984c739692901317f83680d"
+    },
+    "course/studio/data/lessons/m1-install-jarvis-2-0.json": {
+      "bytes": 309,
+      "sha256": "52b15cfc2d3a21cb3d0b84a7d2d64160e510597ae8e98c658992884b5dd40772"
+    },
+    "course/studio/data/lessons/m1-load-the-high-ticket-skill-pack.json": {
+      "bytes": 3226,
+      "sha256": "11ad31bfaf0fca6bc9afb129582439d8c75ac2af49211923bf8965468f9274d5"
+    },
+    "course/studio/data/lessons/m1-prove-it-on-something-real.json": {
+      "bytes": 327,
+      "sha256": "92eb8a8a1143204125da7637f2569d825498eceb7311ec2959dd5c8f79b45973"
+    },
+    "course/studio/data/lessons/m1-your-unfair-advantage-set-up-first.json": {
+      "bytes": 1046,
+      "sha256": "164cc6f59a7459034debbaade4f3fda083c51185290e35193edb1fc441f5b38d"
+    },
+    "course/studio/data/lessons/m2-choose-your-niche.json": {
+      "bytes": 9677,
+      "sha256": "de43818ae6d9495b0b9980a2cdf74554dcd26910a044e795c34808cb7b515b86"
+    },
+    "course/studio/data/lessons/m2-create-your-offer.json": {
+      "bytes": 5264,
+      "sha256": "d4e19a506099fb7e3de8ffad04fa7a9d16ea6e7b8ecc3126dc6b74ba7b259499"
+    },
+    "course/studio/data/lessons/m2-the-irresistible-offer.json": {
+      "bytes": 6563,
+      "sha256": "cf31eaf1c5beacd18edd35e894edaff799dff92389af83b80882bc4afc93613f"
+    },
+    "course/studio/data/lessons/m2-three-ways-to-find-an-offer-that-scales.json": {
+      "bytes": 15678,
+      "sha256": "d08e0d9b7626ca087a4839f5a2fe7dcedb346556b9da4d2292eed18458c48d4f"
+    },
+    "course/studio/data/lessons/m2-write-the-offer.json": {
+      "bytes": 3323,
+      "sha256": "1f78198e3af5fb2cd6f1873bb26db4d46b6a5a1a718a7a796da14f7568884c7c"
+    },
+    "course/studio/data/lessons/m3-build-the-account-list.json": {
+      "bytes": 362,
+      "sha256": "3986542ce29834800a708529793c51ffac7afd63be37a61de1e27eb7e3fd239a"
+    },
+    "course/studio/data/lessons/m3-cold-calling.json": {
+      "bytes": 333,
+      "sha256": "4f1221a1f728c19688fb7764cdae7a1a88f64eb20d29e58a8f7fd3f8b2cc7589"
+    },
+    "course/studio/data/lessons/m3-dm-outreach.json": {
+      "bytes": 300,
+      "sha256": "517e85cc5be435640606695d3663bbd3fed350d7debc12824c3251f361e9874f"
+    },
+    "course/studio/data/lessons/m3-email-and-sms.json": {
+      "bytes": 323,
+      "sha256": "5b7d5e8f9c04e45f08b4aa89d240ddf9c52fcd829f7297c32e23ca085237257b"
+    },
+    "course/studio/data/lessons/m3-enrich-it.json": {
+      "bytes": 325,
+      "sha256": "52b00b64dc71904aeec99dd91f2788425f7418ce9b05d1eaf66e1d4a08307006"
+    },
+    "course/studio/data/lessons/m3-linkedin.json": {
+      "bytes": 282,
+      "sha256": "13b3281623012e398ca8f7c774a276934b6da367b2582cc0cd56b959643d65f9"
+    },
+    "course/studio/data/lessons/m3-package-it-all-together.json": {
+      "bytes": 375,
+      "sha256": "09ba55e205fc528b85c7a7e6d7179002cadf814f4ee9b2fd8ade0fd4e54af681"
+    },
+    "course/studio/data/lessons/m3-the-whole-system-on-one-page.json": {
+      "bytes": 4559,
+      "sha256": "1ffbee3556aff9f9469e7ee3d8e1637f2342447996c971c1765d5fa3c6c56925"
+    },
+    "course/studio/data/lessons/m4-how-ads-actually-work.json": {
+      "bytes": 8476,
+      "sha256": "e2c8181623c0eb7939ac8d7cb927500db92724fc3a7b15edb0c1f712d72c6fff"
+    },
+    "course/studio/data/lessons/m4-the-ad-skills.json": {
+      "bytes": 7117,
+      "sha256": "ec8934cbf5f74740b850995c5f5ecca22b9f110b8b24dbb88708a3d61bddc495"
+    },
+    "course/studio/data/lessons/m5-build-the-page.json": {
+      "bytes": 2642,
+      "sha256": "1c84c98f86c9bc2893883c91734ebb03ae591dcee3147ac2228de45e049b23b3"
+    },
+    "course/studio/data/lessons/m5-get-them-to-show-up-ready.json": {
+      "bytes": 2688,
+      "sha256": "f2fb2a775b77d759ecd2a88c87bac0ff041baa6ea16046d7a0c3b5c8de89702e"
+    },
+    "course/studio/data/lessons/m5-the-follow-up-that-runs-without-you.json": {
+      "bytes": 2434,
+      "sha256": "96028f6c158f4e6798db609429cceedf0c503e295cafcaa025f5c03f160649f4"
+    },
+    "course/studio/data/lessons/m5-what-the-funnel-is-actually-for.json": {
+      "bytes": 1145,
+      "sha256": "f52f3da6993fbf34705059fa0f27e315c931ce09497ff201b908465a8f22652e"
+    },
+    "course/studio/data/lessons/m5-your-crm.json": {
+      "bytes": 3039,
+      "sha256": "0f4f12643072037fc7bf98f41bf425d2748230a8a79ab2717c93bafcba797625"
+    },
+    "course/studio/data/lessons/m6-call-one-find-the-pain.json": {
+      "bytes": 7813,
+      "sha256": "bd42507d221ec5ecb970dfbd63fba99ed8c8871de5b2300c58b1193ea6245cb5"
+    },
+    "course/studio/data/lessons/m6-call-two-present-and-close.json": {
+      "bytes": 8378,
+      "sha256": "6a5ac019e9563998a20e9f5749c140b967d85190188ec76757f0d879be0b44ef"
+    },
+    "course/studio/data/lessons/m6-get-your-calls-reviewed.json": {
+      "bytes": 3039,
+      "sha256": "ab836c9907fcce9b06566201348c554ca4ff08557d5d8729b346172553ed160d"
+    },
+    "course/studio/data/lessons/m6-objections.json": {
+      "bytes": 6236,
+      "sha256": "9edf05d81656226ccfaad58ca88589d35c7a0f3c9f9b73c708069d56e8cba492"
+    },
+    "course/studio/data/lessons/m6-one-conversation-two-calls.json": {
+      "bytes": 4992,
+      "sha256": "2e2e8afc043286a519f2720800111a6b10e3a2cef905c109d006c02dc83b7909"
+    },
+    "course/studio/data/lessons/m6-prescribe-the-solution.json": {
+      "bytes": 5660,
+      "sha256": "927878d58da2895c521b85a63fe16f93994ad5d9892f45b52e8fcc6dff95b10d"
+    },
+    "course/studio/data/lessons/m6-the-proposal-and-demo-generator.json": {
+      "bytes": 2885,
+      "sha256": "e288ade187716723c7b06e7acdd720bcaa80e8c1f1af01935eca8c59904a2ba4"
+    },
+    "course/studio/data/lessons/m7-arbitrage-find-and-vet-developers.json": {
+      "bytes": 5392,
+      "sha256": "ec97c669053591a6b040285fc2313899ecc6d4bdbc66d6d324e4a523b16b79ae"
+    },
+    "course/studio/data/lessons/m7-arbitrage-scope-hand-off-keep-the-margin.json": {
+      "bytes": 6320,
+      "sha256": "3b192a5da1e168c41196139bbf020c8679d6913d11e0fcd9f9f149eec8b8a79f"
+    },
+    "course/studio/data/lessons/m7-onboard-hand-over-get-paid.json": {
+      "bytes": 4792,
+      "sha256": "dc5db8c4e560ad08eecc197cf1cc745fe679bbafcb507e5a0980a71abd621c8b"
+    },
+    "course/studio/data/lessons/m7-self-fulfilment-build-it-with-jarvis.json": {
+      "bytes": 5456,
+      "sha256": "75646dd617125a9b8012a9c4bae918d27633f5797311aee425b6f7fc0ade91cb"
+    },
+    "course/studio/data/lessons/m7-self-fulfilment-test-it-like-the-client-will.json": {
+      "bytes": 3904,
+      "sha256": "00067dc931c5020aca19aa5009b32e7d763673d05d7f1eb041af52167ad829f8"
+    },
+    "course/studio/data/lessons/m7-support-retainer-and-raising-the-price.json": {
+      "bytes": 6189,
+      "sha256": "d3dad3e04aa1f738e78110e0fcdacb6678aa7489b7da1dd104fd9ea6409cdd7c"
+    },
+    "course/studio/data/lessons/m7-two-ways-to-deliver.json": {
+      "bytes": 5990,
+      "sha256": "592530a92a7ab521db95d8b982e6aa23587815db698fb71f7952773f4504838e"
+    },
+    "course/studio/data/outline.json": {
+      "bytes": 7991,
+      "sha256": "3260ca431e0ea1406f24e1a57fa25691faa998df299f933cf8c94e834f921e06"
+    },
+    "course/studio/data/sketches/m1-your-unfair-advantage-set-up-first.png": {
+      "bytes": 38366,
+      "sha256": "5ff77be66273daaed49198f0c66066e8ef9cfb0c3ddfc5c77a7c3b0981982f24"
+    },
+    "course/studio/export/COURSE.md": {
+      "bytes": 131471,
+      "sha256": "350a66675ada76eaa5926ccbca2361cac66c0b447ee790f1016549b53b0ecb1d"
+    },
+    "course/studio/server.py": {
+      "bytes": 9491,
+      "sha256": "5b7a334b065ac7608c349f9569601e6500cfcb27be476ada1d7b5b07f2184a2f"
+    },
+    "course/studio/start.command": {
+      "bytes": 141,
+      "sha256": "36e5ac79816d407c5881591ba466bd9c149d953ed4c7ac2fb1ddc065a9eed856"
+    },
+    "dependencies/free-course-skills/README.md": {
+      "bytes": 682,
+      "sha256": "c0fc8a017065c07601090190eea35bcdcc97de631cbc3ed190f4322c292d9581"
+    },
+    "dependencies/free-course-skills/caller-lead-finder/SKILL.md": {
+      "bytes": 4746,
+      "sha256": "7d91006f13ad488e34295acd8521df5c27a79341a49d83b03e3d8d6a944c9286"
+    },
+    "dependencies/free-course-skills/lead-crm/SKILL.md": {
+      "bytes": 3463,
+      "sha256": "8ec1a0db3d035d4387d1549f982667c7b98f4cde3a80fc4135a6e07e2a289988"
+    },
+    "dependencies/free-course-skills/walkthrough-lead-finder/SKILL.md": {
+      "bytes": 3280,
+      "sha256": "0c22d91d54eebc5214c548a6ee0072a76cd29575a31860fd214ba0b783139083"
+    },
+    "dependencies/free-course-skills/website-lead-finder/SKILL.md": {
+      "bytes": 3591,
+      "sha256": "63cffae9e57ff4cc92c3fc8cd974a48991c312164d7248690a9a093be42b7d5f"
+    },
+    "docs/COURSE-STATUS.md": {
+      "bytes": 5916,
+      "sha256": "260039d53e1897b0cc54ec133425de1f4b2363e3694f8ead7ef4ecde2b029728"
+    },
+    "docs/HANDOFF-CHECKS.md": {
+      "bytes": 1691,
+      "sha256": "f06afc21b31d2457ed09c6e878d5b9d3678eaf9fac4b326560bc6f208b3dc784"
+    },
+    "docs/decisions/funnel-and-outreach-2026-11-02.md": {
+      "bytes": 12314,
+      "sha256": "ce653cf93346222a0714f8a790ed8277c108c38351725cdf7089ba6848985621"
+    },
+    "docs/decisions/page-proposal-repair-2026-11-05.md": {
+      "bytes": 3466,
+      "sha256": "44b9335a294162655d9b83e3b3f26add3286b9df2601813c8736c3009a420d72"
+    },
+    "handoffs/offer-module-jarvis2/ACCEPTANCE-CHECKS.md": {
+      "bytes": 2903,
+      "sha256": "9f001b41c49068907c5610026e7b873f48c0a81f3fa2005aa78f41e04fe4ca5c"
+    },
+    "handoffs/offer-module-jarvis2/Jarvis-Offer-Module-Handoff.zip": {
+      "bytes": 547827,
+      "sha256": "87d3aabb97969b579967a9b4cc9bab6929b4afe409c6e261dea1481a848fd069"
+    },
+    "handoffs/offer-module-jarvis2/START-HERE.md": {
+      "bytes": 8600,
+      "sha256": "49ae498a4a1acaa3c1aa4b3cb40275b85b70bf8501fa3ff287ce2ac6bf0eeca4"
+    },
+    "handoffs/offer-module-jarvis2/student-record.example.json": {
+      "bytes": 878,
+      "sha256": "0f470b5ae9d5d26b10d2d73d1ba5a4b4d3e454fb69a7aa316e08da5b5f2c21f8"
+    },
+    "scripts/build_offer_module_handoff.py": {
+      "bytes": 3933,
+      "sha256": "ce1eb89d6674ee9e9469983340b3434aca56ab2f08f82365800487c16cc5b4e6"
+    },
+    "scripts/build_reading_copy.py": {
+      "bytes": 1611,
+      "sha256": "208944af973962300618788c754125b54a79c961a1268dd90461209a5ab1456d"
+    },
+    "scripts/build_student_pack.py": {
+      "bytes": 2866,
+      "sha256": "b9e51e63b0294cf3edefadf72c9a71deea545efe6e5a3f18d5834b063a79aad4"
+    },
+    "scripts/review_inventory.py": {
+      "bytes": 6777,
+      "sha256": "b088c7c1553fc592928ad61da3fe43de1c6973399cc4dcc57909e21a8789741c"
+    },
+    "skills/README.md": {
+      "bytes": 7882,
+      "sha256": "bdba934c229336611e8fe075f1dd763739101f310fb83c53b54048527b6b7aa3"
+    },
+    "skills/jarvis-ad-library-offer-research/SKILL.md": {
+      "bytes": 4771,
+      "sha256": "f0516cc40b57a5d52a054885559eccc5473e8d83c1a024ccebd6b3ef2969be37"
+    },
+    "skills/jarvis-ad-scripting/SKILL.md": {
+      "bytes": 5704,
+      "sha256": "a2b91100355fe76520b6db817d3151ed75b2386fbd4f15f9029ac9ff54af6b0c"
+    },
+    "skills/jarvis-confirmation-page/SKILL.md": {
+      "bytes": 5924,
+      "sha256": "6a66e75c598cc3bc6bdd885e547d65ac011146dc4c44fb059886ca580a2a6bf7"
+    },
+    "skills/jarvis-confirmation-page/assets/course-demo/index.html": {
+      "bytes": 3354,
+      "sha256": "df42e9fae17ac1f5b5a5d112f69aa3dbe5a9e7d1b4366c6b4d2c215d00fce2ef"
+    },
+    "skills/jarvis-confirmation-page/assets/course-demo/style.css": {
+      "bytes": 4514,
+      "sha256": "2b3ad9b10d8c6d328caf47ee593110207f553cd7c6ee92e6f6c332ab1f4f425e"
+    },
+    "skills/jarvis-confirmation-page/assets/roofline/booking-state.js": {
+      "bytes": 3086,
+      "sha256": "4817a2b57a2728e02a6987bff917adf6df291f5c06babff2dc2af094db227fa2"
+    },
+    "skills/jarvis-confirmation-page/assets/roofline/style.css": {
+      "bytes": 13477,
+      "sha256": "e7bd92d8927ccd9b595059c044a9374167deb4527678848be29e438bd6702286"
+    },
+    "skills/jarvis-confirmation-page/assets/roofline/thank-you.html": {
+      "bytes": 2414,
+      "sha256": "c1a8c37e67715df05cd03979e26eaceedd9919ab4b7e80e1619a39e47ae88bec"
+    },
+    "skills/jarvis-confirmation-page/references/compass-confirmation.md": {
+      "bytes": 2811,
+      "sha256": "ba719642e41acf3177f4398e39e9e1cbf8ec639d9a4256e2b7f20bc163b91c76"
+    },
+    "skills/jarvis-confirmation-page/references/funnel-visual-analysis.md": {
+      "bytes": 4935,
+      "sha256": "f80ebb2c7dc4af3d95a851fe520f479b5e91000a5b617b6c0ad10eb17b2dd70f"
+    },
+    "skills/jarvis-course-guide/SKILL.md": {
+      "bytes": 4225,
+      "sha256": "aed6c566a930b440c611b8710213c473503a8bb0eeec3b6fd980c292572f018b"
+    },
+    "skills/jarvis-course-guide/references/course-index.json": {
+      "bytes": 12744,
+      "sha256": "bf35d79fc65cf826bcf7c1d882f0c299da0357df3dc79357fe81fbb3f89f2254"
+    },
+    "skills/jarvis-course-guide/references/demos/confirmation/index.html": {
+      "bytes": 3354,
+      "sha256": "df42e9fae17ac1f5b5a5d112f69aa3dbe5a9e7d1b4366c6b4d2c215d00fce2ef"
+    },
+    "skills/jarvis-course-guide/references/demos/confirmation/style.css": {
+      "bytes": 4514,
+      "sha256": "2b3ad9b10d8c6d328caf47ee593110207f553cd7c6ee92e6f6c332ab1f4f425e"
+    },
+    "skills/jarvis-course-guide/references/images/m2-the-five-stages-of-awareness-ladder.svg": {
+      "bytes": 3264,
+      "sha256": "bec3781a1c15731ce323cc4651830fc5525cac301f4da168e45cf7f565986ab2"
+    },
+    "skills/jarvis-course-guide/references/images/m3-the-whole-system.svg": {
+      "bytes": 4331,
+      "sha256": "ecb222087c52072069c52e3a37447e9c57cd739f43d464cd467af4e9ff0767ee"
+    },
+    "skills/jarvis-course-guide/references/images/m4-angle-to-variations.svg": {
+      "bytes": 3773,
+      "sha256": "dcdd4d504fb835650680ad4734ff7feb1265e6c978b06c6431640be2e5721163"
+    },
+    "skills/jarvis-course-guide/references/images/m4-cac-vs-ticket.svg": {
+      "bytes": 2795,
+      "sha256": "ef3416947267af89a31c1357e9221ab528267ac23be3488b19d2fad2d6422bf6"
+    },
+    "skills/jarvis-course-guide/references/images/m4-one-to-many.svg": {
+      "bytes": 3540,
+      "sha256": "5c55c09a13b729e0bbaa0dcc626011faf60a5b0ca4ef7f44d49b91dcc70517e4"
+    },
+    "skills/jarvis-course-guide/references/images/m5-pipeline-stages.svg": {
+      "bytes": 2552,
+      "sha256": "3837cf4809f47bc2174b4da5cda963d746c4ecf89c8d898397f81416fd4e4ddd"
+    },
+    "skills/jarvis-course-guide/references/images/m6-anchor-ladder.svg": {
+      "bytes": 2107,
+      "sha256": "23a6948244759542d60d6f3c21bb535402a213188b2c5d248bc060d26a44d163"
+    },
+    "skills/jarvis-course-guide/references/images/m6-call-one-flow.svg": {
+      "bytes": 3238,
+      "sha256": "50105bf0b365e16b74c489225ea992281ed4a83318e7566d295fc4d9e41c26b6"
+    },
+    "skills/jarvis-course-guide/references/images/m6-one-or-two.svg": {
+      "bytes": 2132,
+      "sha256": "1d22cceee456fc825a453cf0633f8252047f82e48428cc969b8cdeee23bbec60"
+    },
+    "skills/jarvis-course-guide/references/images/m6-two-call-timeline.svg": {
+      "bytes": 3360,
+      "sha256": "19ce0c9c13ec82d98e330364f775b4a923615db73012f0bd6743418abb8e2768"
+    },
+    "skills/jarvis-course-guide/references/images/m7-build-loop.svg": {
+      "bytes": 3478,
+      "sha256": "0691eca4200d1fb98079f47ce2c53695c81ad26f2f4bd27da6e9d15bf1f45731"
+    },
+    "skills/jarvis-course-guide/references/images/m7-first-thirty-days.svg": {
+      "bytes": 2011,
+      "sha256": "286c59e50afc63256b1ae17712914c50fea4a3dc69a86390820fc1c5d4893507"
+    },
+    "skills/jarvis-course-guide/references/images/m7-scope-to-build.svg": {
+      "bytes": 4363,
+      "sha256": "cdd2020a9d268fa5bc30707bd77e4f41fe732187c80f5a88b8d03e626d3f19f1"
+    },
+    "skills/jarvis-course-guide/references/images/m7-two-paths.svg": {
+      "bytes": 3095,
+      "sha256": "e727db721ff7768fc599017ea9c4bb9843b6be691693a8d60575af1216f1c082"
+    },
+    "skills/jarvis-course-guide/references/images/roofing-offer-specific-v3.svg": {
+      "bytes": 1661,
+      "sha256": "a6c87e0318f54e4f0d19b47dfc4fcdc2851a7a0aa8511f3650d9037a9d064409"
+    },
+    "skills/jarvis-course-guide/references/lessons/m1-connect-your-pipeline.json": {
+      "bytes": 206,
+      "sha256": "bf6189749ce772320034ac4af5651f6d6e104e3b7139abfb2be48e0eeb11bc6f"
+    },
+    "skills/jarvis-course-guide/references/lessons/m1-install-jarvis-2-0.json": {
+      "bytes": 193,
+      "sha256": "c58ddd5b3f93505e6b0b4e178ee17438ffaf6b7d01aa28a4b323bf435e5fa36e"
+    },
+    "skills/jarvis-course-guide/references/lessons/m1-load-the-high-ticket-skill-pack.json": {
+      "bytes": 3096,
+      "sha256": "379ff996c99492ea47eb1dbc4f90f2089561e8f207ddebc91a61a3f3703f5c86"
+    },
+    "skills/jarvis-course-guide/references/lessons/m1-prove-it-on-something-real.json": {
+      "bytes": 196,
+      "sha256": "b05126c67aa3fbf2d1e530e26a9c2bc3ca385dcd3bdaec0dab9a2f91390a7bf8"
+    },
+    "skills/jarvis-course-guide/references/lessons/m1-your-unfair-advantage-set-up-first.json": {
+      "bytes": 868,
+      "sha256": "880bed36afb5be1594599f045502132a8304e49103eb73376f91b8d6d516e694"
+    },
+    "skills/jarvis-course-guide/references/lessons/m2-choose-your-niche.json": {
+      "bytes": 9603,
+      "sha256": "2b7c2c5da3b4babe6897d8245b1a568b981d8e25904cdc14b37866a0d6211389"
+    },
+    "skills/jarvis-course-guide/references/lessons/m2-create-your-offer.json": {
+      "bytes": 5142,
+      "sha256": "6fcda57a7739636b0eecde4d1cc9f22c1b7d50907743036939849469d067fc8c"
+    },
+    "skills/jarvis-course-guide/references/lessons/m2-the-irresistible-offer.json": {
+      "bytes": 6421,
+      "sha256": "4878a326dfc013edea7a2ed423d88c8f026bfb7b64d9f39f381a53b46525c1e7"
+    },
+    "skills/jarvis-course-guide/references/lessons/m2-three-ways-to-find-an-offer-that-scales.json": {
+      "bytes": 15561,
+      "sha256": "961190054b4fc0dbc86fa0d618ec028e03325c2cc9d243c80f51eee0386fa828"
+    },
+    "skills/jarvis-course-guide/references/lessons/m2-write-the-offer.json": {
+      "bytes": 3208,
+      "sha256": "f00390f874aa814a7db69528c86ba488cea06f3a529a59b5f3167061afd368aa"
+    },
+    "skills/jarvis-course-guide/references/lessons/m3-build-the-account-list.json": {
+      "bytes": 243,
+      "sha256": "d1c4ce3553f6d37eb1b9bc6c423612c57d40b572952c27a9c523923108cf3f6f"
+    },
+    "skills/jarvis-course-guide/references/lessons/m3-cold-calling.json": {
+      "bytes": 202,
+      "sha256": "289c04da567e03663d65a1a0db761489ae52e2b920248b5b3162a028ae78acc8"
+    },
+    "skills/jarvis-course-guide/references/lessons/m3-dm-outreach.json": {
+      "bytes": 189,
+      "sha256": "60cec9f8744a9524c8000ac4c28148e7e66ff3ef5459a32ddbed99a0dcbed221"
+    },
+    "skills/jarvis-course-guide/references/lessons/m3-email-and-sms.json": {
+      "bytes": 193,
+      "sha256": "78047330e1475eb6d0c461210204e805c43467534e780799a4d891508d3626ad"
+    },
+    "skills/jarvis-course-guide/references/lessons/m3-enrich-it.json": {
+      "bytes": 188,
+      "sha256": "71e8c1c57e56f0962238311a52a23eac3dd1056b87a05d1d976ae66fb1ed205c"
+    },
+    "skills/jarvis-course-guide/references/lessons/m3-linkedin.json": {
+      "bytes": 168,
+      "sha256": "5593eb75b5a73cdf086914bbebac2e9ecad959869b2ffea399e8c94a6c139f37"
+    },
+    "skills/jarvis-course-guide/references/lessons/m3-package-it-all-together.json": {
+      "bytes": 233,
+      "sha256": "ac04d26bbfc1eb4f5052c50f1e17dc5e102313affeff3490a3e43c897ac9ffa4"
+    },
+    "skills/jarvis-course-guide/references/lessons/m3-the-whole-system-on-one-page.json": {
+      "bytes": 4459,
+      "sha256": "7fe960fbc92187dc78a02439eca2e0f745db3278358dc4109ebd3d0366b064bd"
+    },
+    "skills/jarvis-course-guide/references/lessons/m4-how-ads-actually-work.json": {
+      "bytes": 8350,
+      "sha256": "5cf0d9c891393f8f24851f4e72fef10b66574e624f1812deda2c52e20f9767d8"
+    },
+    "skills/jarvis-course-guide/references/lessons/m4-the-ad-skills.json": {
+      "bytes": 7028,
+      "sha256": "c106ff124f7fd1a5769ede659a2aceccc1b1b31b8846ad42cee67bb60b4f36af"
+    },
+    "skills/jarvis-course-guide/references/lessons/m5-build-the-page.json": {
+      "bytes": 2487,
+      "sha256": "3a5b3c3dc9ecb905723b20591a3fa7cea5bc7fbe0fab192cb736249e94895cba"
+    },
+    "skills/jarvis-course-guide/references/lessons/m5-get-them-to-show-up-ready.json": {
+      "bytes": 2574,
+      "sha256": "8a3a1435a70ce0bf0cbb4a608a2121bbb648f8eb43591111bbaa820d97e9dea4"
+    },
+    "skills/jarvis-course-guide/references/lessons/m5-the-follow-up-that-runs-without-you.json": {
+      "bytes": 2311,
+      "sha256": "df63e2be0c43bd7a254b657b7202c9e9cc1a122e9bcd190c63da0e624ac1ab7a"
+    },
+    "skills/jarvis-course-guide/references/lessons/m5-what-the-funnel-is-actually-for.json": {
+      "bytes": 1040,
+      "sha256": "75bb4d9a5c55074cab2cd09ef96669776fa68cf91e9f3d073250c5f58c1925ec"
+    },
+    "skills/jarvis-course-guide/references/lessons/m5-your-crm.json": {
+      "bytes": 2902,
+      "sha256": "fb4e5c21f07b3172d7dec362a1a0dac6077b1a17a746d27a5e62f7b9e1c0e791"
+    },
+    "skills/jarvis-course-guide/references/lessons/m6-call-one-find-the-pain.json": {
+      "bytes": 7748,
+      "sha256": "c78319256528ca45fb026f192c0552e7ba770d071e56b9295c3fb8be122bf187"
+    },
+    "skills/jarvis-course-guide/references/lessons/m6-call-two-present-and-close.json": {
+      "bytes": 8286,
+      "sha256": "0ad6fe2b3477020683c45823b5d53e647e388ea9e0b04efcc83d5bee38f3a076"
+    },
+    "skills/jarvis-course-guide/references/lessons/m6-get-your-calls-reviewed.json": {
+      "bytes": 2950,
+      "sha256": "61ef44eff4370ade6bcba5072172ca28a8f47b36ac1fb18cf9468eac843d228a"
+    },
+    "skills/jarvis-course-guide/references/lessons/m6-objections.json": {
+      "bytes": 6158,
+      "sha256": "2e259d4eac5d01d4714914620511f8454e2641b73f678d9ba21ad7ae0cc78971"
+    },
+    "skills/jarvis-course-guide/references/lessons/m6-one-conversation-two-calls.json": {
+      "bytes": 4866,
+      "sha256": "77ad468224107fb271b34638350c4117b54f3cda0c596549f0ccf9f9189faf12"
+    },
+    "skills/jarvis-course-guide/references/lessons/m6-prescribe-the-solution.json": {
+      "bytes": 5574,
+      "sha256": "e11f87e1c591c0d1c4aecf970efd4d748ab66746ad777039d222aa5214e6ca6c"
+    },
+    "skills/jarvis-course-guide/references/lessons/m6-the-proposal-and-demo-generator.json": {
+      "bytes": 2781,
+      "sha256": "694ec418d34c828b763487798b64546df40abe62f49f008a5303b04c5f6fbf57"
+    },
+    "skills/jarvis-course-guide/references/lessons/m7-arbitrage-find-and-vet-developers.json": {
+      "bytes": 5285,
+      "sha256": "01c8057ee13849290cb794fbe7fe503322263db9667c023836b52026b1354c10"
+    },
+    "skills/jarvis-course-guide/references/lessons/m7-arbitrage-scope-hand-off-keep-the-margin.json": {
+      "bytes": 6189,
+      "sha256": "a6cb3e582d66264c268484f171749447c5b8c003ebdda2ec3f6fa78f265443d5"
+    },
+    "skills/jarvis-course-guide/references/lessons/m7-onboard-hand-over-get-paid.json": {
+      "bytes": 4709,
+      "sha256": "bcd145e57b956f414f2c5a92fe96e485f6b16c70d9cbe7a91b6d1fe6bb4d7c18"
+    },
+    "skills/jarvis-course-guide/references/lessons/m7-self-fulfilment-build-it-with-jarvis.json": {
+      "bytes": 5345,
+      "sha256": "82e0221658fe689aa6ae397a773140a7b03ad2ccd79f823fce3e47cf8d0228d8"
+    },
+    "skills/jarvis-course-guide/references/lessons/m7-self-fulfilment-test-it-like-the-client-will.json": {
+      "bytes": 3810,
+      "sha256": "a65f8a65019c7b0ed0aeb503887f9a515fedc89e3d48c980bc2485995b771522"
+    },
+    "skills/jarvis-course-guide/references/lessons/m7-support-retainer-and-raising-the-price.json": {
+      "bytes": 6088,
+      "sha256": "e5ffc5c4e1028ed88829b4edc45faf05a637dd853059ee3215feeb27c5849404"
+    },
+    "skills/jarvis-course-guide/references/lessons/m7-two-ways-to-deliver.json": {
+      "bytes": 5848,
+      "sha256": "d1292bb44424538ae31134ee1bc53cd740605c8145fc4333a957454afc0b0326"
+    },
+    "skills/jarvis-course-guide/references/offer-module-flow.json": {
+      "bytes": 6839,
+      "sha256": "d741668f9ad12ba38d6c39cfbe3fabbabaf208912b0e7c181aae0cc8538a87c6"
+    },
+    "skills/jarvis-custom-opportunity-finder/SKILL.md": {
+      "bytes": 1617,
+      "sha256": "201489cada347d03fff0117b80f2919c035044e5dd422cb022a665230a523f35"
+    },
+    "skills/jarvis-custom-opportunity-finder/references/research-method.md": {
+      "bytes": 10987,
+      "sha256": "b556734a39a4eb047c194ad0b7fbfe48467ae6e1c76c39e8272103d6b32fb301"
+    },
+    "skills/jarvis-landing-page/SKILL.md": {
+      "bytes": 7974,
+      "sha256": "ed1d251cbb80e1d40650f7e8c1aa500ead779d3cb1b649206576293d8c015d70"
+    },
+    "skills/jarvis-landing-page/assets/roofline/app.js": {
+      "bytes": 4360,
+      "sha256": "80d37f9df7e31bb37836907c877e25a2e71e50c28755c6529e015606279741f4"
+    },
+    "skills/jarvis-landing-page/assets/roofline/application-review.html": {
+      "bytes": 807,
+      "sha256": "3d453647c7e2d991e2f30a00ffbfe37a6e1662eb3c6e99dc44bc659761dbae3a"
+    },
+    "skills/jarvis-landing-page/assets/roofline/benchmark.json": {
+      "bytes": 2167,
+      "sha256": "afda74bd216fdef675deb82a9309a15a6d272e4718280f005a10cabba3043c63"
+    },
+    "skills/jarvis-landing-page/assets/roofline/booking.html": {
+      "bytes": 1298,
+      "sha256": "6b0c6f3996ea9585658aec0dffd1ece2df4aad21ef88f5c7199400370a8bd853"
+    },
+    "skills/jarvis-landing-page/assets/roofline/confirmation.html": {
+      "bytes": 1298,
+      "sha256": "6b0c6f3996ea9585658aec0dffd1ece2df4aad21ef88f5c7199400370a8bd853"
+    },
+    "skills/jarvis-landing-page/assets/roofline/index.html": {
+      "bytes": 2192,
+      "sha256": "5ea3fa16839bc12c0fa5cc6b9b14af52551da50f9b72b173b31b09096a951c51"
+    },
+    "skills/jarvis-landing-page/assets/roofline/offer-testing.html": {
+      "bytes": 2069,
+      "sha256": "7c6e3a092beaa7e4b0d9c2e6adad3530f7eefb840d5b42601b3af142e90b4b5b"
+    },
+    "skills/jarvis-landing-page/assets/roofline/style.css": {
+      "bytes": 11117,
+      "sha256": "4d2b73e64af85cebe7fd728e5549701a19573eab1aa95d807a0c7d868156a72e"
+    },
+    "skills/jarvis-landing-page/references/funnel-visual-analysis.md": {
+      "bytes": 5721,
+      "sha256": "a214a85e1c5593ea331602af13ce4b500fc0e79180bc421ee3fdf71db685b466"
+    },
+    "skills/jarvis-meta-campaign-setup/SKILL.md": {
+      "bytes": 9147,
+      "sha256": "349d44e577ac56ff9d4f7294de8d5ba3ee08f4e2e71756d6d67cf61955720eda"
+    },
+    "skills/jarvis-offer-creation/SKILL.md": {
+      "bytes": 3731,
+      "sha256": "b0c7d9a0491ddf15f89d27621d6a75ffd48923d3c8bbb9ddc861cd21800999b1"
+    },
+    "skills/jarvis-offer-discovery/SKILL.md": {
+      "bytes": 10987,
+      "sha256": "b556734a39a4eb047c194ad0b7fbfe48467ae6e1c76c39e8272103d6b32fb301"
+    },
+    "skills/jarvis-offer-menu/SKILL.md": {
+      "bytes": 8824,
+      "sha256": "74eecd7562abe305f3813e0a7c461b4dc78c7c7352031bd0bb051e70596de179"
+    },
+    "skills/jarvis-offer-menu/references/agency-examples-2026-11-04.json": {
+      "bytes": 2923,
+      "sha256": "5aaf32caa597a049ea69db65de54cf622620980e81d88f9ed2c5023634d1c212"
+    },
+    "skills/jarvis-offer-menu/references/beginner-offer-path.md": {
+      "bytes": 2520,
+      "sha256": "c2857d1a7764e93012d3e51f3d8f48843a93ffd725296c80f84a202f9563282c"
+    },
+    "skills/jarvis-offer-menu/references/common-services-2026-11-02.md": {
+      "bytes": 11733,
+      "sha256": "744c9540204d6e3ce993a5f1122af584ef9ad0c6b647db016c496dbb8bfaf305"
+    },
+    "skills/jarvis-offer-menu/references/library.md": {
+      "bytes": 1194,
+      "sha256": "68c7c4cfa6ffc9ca5e534358983a31c3bfac2b8a3860c7c29d693241666de458"
+    },
+    "skills/jarvis-offer-menu/references/offers-scaling-2026-10-30.md": {
+      "bytes": 10054,
+      "sha256": "d33d43a7ced7e601566929177e3ec89bfa667a0da95f214f0acb8580bdf3f5ab"
+    },
+    "skills/jarvis-offer-menu/references/precall-value-research.md": {
+      "bytes": 2063,
+      "sha256": "09d60d3ea7a4b24b2b5c07c04b8ca48ceedea40b1002997822e8554d0f0f168c"
+    },
+    "skills/jarvis-offer-menu/references/simple-service-to-offer-process.md": {
+      "bytes": 8086,
+      "sha256": "6992e5b37b96665626c9c9d086ce64b1af0cc656fbf975f3262f85b4785ec7f3"
+    },
+    "skills/jarvis-offer-menu/references/simple-services-current.md": {
+      "bytes": 2317,
+      "sha256": "2c98cb176c6a22fa8c0218d40e9cfe9ca0b559db9209eea57486d4fab7d705b3"
+    },
+    "skills/jarvis-offer-menu/references/us-sector-agencies-2026-11-02.md": {
+      "bytes": 8325,
+      "sha256": "56aa4171be36a47ddf405d42835c7371c64c2e73b1afeef0f40cce5dcd72c264"
+    },
+    "skills/jarvis-opportunity-finder/SKILL.md": {
+      "bytes": 8675,
+      "sha256": "42fbcacad59024a92da565b13b56df562854c46075552406080303e303168209"
+    },
+    "skills/jarvis-precall-followup/SKILL.md": {
+      "bytes": 5146,
+      "sha256": "65efa8ff8c7b1068216433bdea142040e7afcc42376eeab022d3336d230c1252"
+    },
+    "skills/jarvis-precall-followup/references/booking-reminders.md": {
+      "bytes": 3606,
+      "sha256": "21f8db8916784e582cab68375a8735a5bc015707041cdacc35973b0736a7a371"
+    },
+    "skills/jarvis-proposal-builder/SKILL.md": {
+      "bytes": 5342,
+      "sha256": "ed5a9dd3811ab6474bf5d1a7f0c705a6c25fcdc6bbbd842478cc31e7d18cf320"
+    },
+    "skills/jarvis-proposal-builder/assets/call-two/CALL-ONE-INPUTS.md": {
+      "bytes": 1818,
+      "sha256": "a42fbbef95435cf2a55ede4d6d101d04de027900330b140ced5bd30b1d8e530e"
+    },
+    "skills/jarvis-proposal-builder/assets/call-two/PRESENTER-NOTES.md": {
+      "bytes": 1354,
+      "sha256": "59d93599e18191dd819e0160c8b789a9bb9d69ebbfd93f9703c67983fa764f4a"
+    },
+    "skills/jarvis-proposal-builder/assets/call-two/PROPOSAL-TEMPLATE.md": {
+      "bytes": 1693,
+      "sha256": "d253f32b051febd2d3de5f663c5f7ad5602f86c5ac28e8fe1f5b132b4224eb36"
+    },
+    "skills/jarvis-proposal-builder/references/demo-patterns.md": {
+      "bytes": 3003,
+      "sha256": "e0637d6fbe5cb7ab2833940077053e3f347951351ac8ce83eea17f24dcb05e9d"
+    },
+    "skills/jarvis-scoping-agent/SKILL.md": {
+      "bytes": 5310,
+      "sha256": "d7d8bc6db00d3352f0a521233a54bceb6d565cdf79260026a9103a2cfe5e8564"
+    },
+    "skills/jarvis-static-ad-creator/SKILL.md": {
+      "bytes": 4246,
+      "sha256": "42d492cbe39d85e1791d8ee61a3f56f535a554573cd7ba5c2c1b7966c7f8948c"
+    },
+    "skills/jarvis-static-ad-creator/references/static-visual-analysis.md": {
+      "bytes": 3150,
+      "sha256": "56fb6a4e564af712bab5c5a524d70e0f3472e74edd6f521f001a790f15748644"
+    },
+    "skills/jarvis-vsl-writer/SKILL.md": {
+      "bytes": 5115,
+      "sha256": "2791dcdc6990658ff9387a429965f46c5700bb2e93ecbbd6a0b725c36d46c515"
+    },
+    "skills/jarvis-vsl-writer/references/vsl-source-notes.md": {
+      "bytes": 1621,
+      "sha256": "380102f44f4fea970118b10b45d0707457f507b11e03ebcf333512fca3612bc6"
+    },
+    "tests/beginner-offer-runs-2026-11-02/SUMMARY.md": {
+      "bytes": 6933,
+      "sha256": "16880e54c54d74e22904061f322e4c13f23d668c0a59688d5013b346f1a92a3b"
+    },
+    "tests/beginner-offer-runs-2026-11-02/index.html": {
+      "bytes": 7241,
+      "sha256": "9511f7dd7913e0f09d86f17834a465d2d5db2455f2915949588745b0d6c2726a"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-a/REPORT.md": {
+      "bytes": 16304,
+      "sha256": "6395e5d8597ac514a3feebf0640fd390d47d8891828d5c41763c296059ff1f55"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-a/checks.txt": {
+      "bytes": 1026,
+      "sha256": "8f5cc09d52031ead083348c624213598be76d5a4708c24a366895fa52c306059"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-a/demo-preview.png": {
+      "bytes": 159243,
+      "sha256": "24bc1392e514c92dccf8a7e689a8733f224d7491e8deb4a447f2e124432c750f"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-a/demo.html": {
+      "bytes": 6949,
+      "sha256": "c118984d3ee8ea0edce5b78182c37e30634de59ca5e8fd409365aa9d834d682d"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-a/evidence.md": {
+      "bytes": 3723,
+      "sha256": "b3adbe41d1de7d14dd8ece5e5c90ee308206c073cf0e07de7e6c860e35af0b59"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-a/rejected-quote-followup/REPORT.md": {
+      "bytes": 16471,
+      "sha256": "3034c8eba1c9ad2c03ad016805c6619a6ae1a89be074ee81ed93be4e2e0a2be6"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-a/rejected-quote-followup/demo.html": {
+      "bytes": 6026,
+      "sha256": "7eb965bf253417ec9cd36c2d120c22bad9cc0a4f17c97e1fefed3d804ec348f6"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-a/rejected-quote-followup/evidence.md": {
+      "bytes": 4117,
+      "sha256": "0b988b70af3292232c0cb8aa8d19015d0cd79b014732a8f774ebb0ce388a85cf"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-a/rejected-quote-followup/six-line-offer.md": {
+      "bytes": 844,
+      "sha256": "72cd8b444b097278ae0abef22beb300d58abaef47e5c5d460fe01358b9c4396a"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-a/six-line-offer.md": {
+      "bytes": 931,
+      "sha256": "3f82d6b1c36f329cda9e2312b5233596aadbfb57c9c144d47a8eaa10efc357b1"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-b/REPORT.md": {
+      "bytes": 17256,
+      "sha256": "c436de21f43df48b67f8874e3fc301aa9ed5cd65950c863cf2a640b87933626e"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-b/check-demo.cjs": {
+      "bytes": 1953,
+      "sha256": "6e09713814836320bcc81ae72cd92ef0408412613a64af60305e7c95ce2d862b"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-b/demo.html": {
+      "bytes": 6004,
+      "sha256": "406d26dae8e68a3aeb29c88728acfae478d9b1900aa95369d4b15c7232e26adb"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-b/evidence.md": {
+      "bytes": 4652,
+      "sha256": "b43012dfdfedc3c33e17bf06867d5b9926ecda6419947d6dd3f871aea4884e6c"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-b/rejected-cleaning-demo.html": {
+      "bytes": 6364,
+      "sha256": "113918a07b9b42b2a3cf368f15fefe439e40897a66f73eb0b0d0b5578b39e444"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-b/six-line-offer.md": {
+      "bytes": 1322,
+      "sha256": "5ff51e2b70bfd27d6d803f11aca17594b3492110348a26803492de7ae1dedb9a"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-c/REPORT.md": {
+      "bytes": 21548,
+      "sha256": "f5ded5f8e630c9cb31ea3df1684695932b101aa7ed86b65d175d912dc63bff72"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-c/browser-check.cjs": {
+      "bytes": 3102,
+      "sha256": "299bde3495e979dd2a4214f8d1f3f4380b8dbb5e89c30dbfe3a6c9c41a9e6b02"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-c/demo-desktop.png": {
+      "bytes": 215662,
+      "sha256": "e169d75b8c18244033030da5823c9e84820566a0996256325ba85c06213524cb"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-c/demo-mobile.png": {
+      "bytes": 180757,
+      "sha256": "8793dfe28aa72d91dfe074b9def3ce6eb848dc82e73ef6a086b9472503e4bcbf"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-c/demo.html": {
+      "bytes": 5869,
+      "sha256": "d1be68cfc4a3534eee5a0b16db9cf34d79a9a1f233bb62bb2db10be642f6630f"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-c/evidence.md": {
+      "bytes": 5374,
+      "sha256": "86f63d2b964e1d235cfa861b717337ad6b9fc48d9c847192abbef9bc24e0ebef"
+    },
+    "tests/beginner-offer-runs-2026-11-02/run-c/six-line-offer.md": {
+      "bytes": 1116,
+      "sha256": "b343121b008e91249a2c5adc21ec9bddd60b06c1a8b20e91f82c7fa219168140"
+    },
+    "tests/confirmation-original-2026-11-09/1440-confirmation.png": {
+      "bytes": 317758,
+      "sha256": "b21a1cc105ec878a285c175629aea8820b44119fe33fc6dbf5db5f11c2bbc41a"
+    },
+    "tests/confirmation-original-2026-11-09/1440-course-status.png": {
+      "bytes": 336705,
+      "sha256": "778f69dec51903a0a3db4dd3e9021cf797e5c5a7468566ab8293a83e784f703c"
+    },
+    "tests/confirmation-original-2026-11-09/390-confirmation.png": {
+      "bytes": 150609,
+      "sha256": "da0836314e724048f5dfd45ec79d6384bef87ad9d4e3902c4ac0214cee65c29c"
+    },
+    "tests/confirmation-original-2026-11-09/390-course-status.png": {
+      "bytes": 273280,
+      "sha256": "064facf18a3be2f672dd51de2191e612fdf9768f19d1731b3f721561a2887a0a"
+    },
+    "tests/confirmation-original-2026-11-09/review.json": {
+      "bytes": 703,
+      "sha256": "5adbe0bfcf833aadd23295400fa916d7a09b22b1c7b2e23cf799a4d516ab94d3"
+    },
+    "tests/course-guide-2026-11-08/1440-niches.png": {
+      "bytes": 243816,
+      "sha256": "fd8c9549846ee5faa20c7196c9b8db26d4646354684c639b57a02786a8cdaf20"
+    },
+    "tests/course-guide-2026-11-08/1440-problem-cost.png": {
+      "bytes": 364974,
+      "sha256": "d50ceefcd924dc9b176d13c162005bec6d62508c6ee38e79ed0d9db61f372ec4"
+    },
+    "tests/course-guide-2026-11-08/390-niches.png": {
+      "bytes": 167388,
+      "sha256": "3a82722e349ba44c33096c97e409c98073ae78fdbabfc379dacf5c6ec3ecc879"
+    },
+    "tests/course-guide-2026-11-08/390-problem-cost.png": {
+      "bytes": 299657,
+      "sha256": "3de60acdc414c2625739742b46985b37088bb0b409f9a0428286794b91a1ed41"
+    },
+    "tests/course-guide-2026-11-08/awareness-visual.png": {
+      "bytes": 48725,
+      "sha256": "311368ce0cc36832d56ca68c22e5739650f6df8b47a605ef79b02309092bd297"
+    },
+    "tests/course-guide-2026-11-08/review.json": {
+      "bytes": 8924,
+      "sha256": "489b91e40d3d691195d7183287ad8d67b0f8c5785ca9cac0bf35ba57c15ba0c3"
+    },
+    "tests/fresh-lesson-only-2026-11-05/result.json": {
+      "bytes": 1306,
+      "sha256": "37eed3b783af4ca5b459d191e0095089612dd61ff506c6547a5b390304c88ff6"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/EVIDENCE.json": {
+      "bytes": 1366,
+      "sha256": "5a1e2e8055b3826a2ec4ccd49399d7d10e35ff028e042482d383c4dbbfd66528"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/REVIEW.md": {
+      "bytes": 2899,
+      "sha256": "5d12a0995b3557179d4e1f6655ed046d06cc6feb98bcfbfc3464889e198c7284"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/fixture-brief.json": {
+      "bytes": 623,
+      "sha256": "c0515d99f76945abbbd3a80c6fde11cfeaa8e7d23e1fa955259293f9319ab5f8"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/check.cjs": {
+      "bytes": 5766,
+      "sha256": "65b13bc93c4ffd5699b79ec996273b2dbe46cd30e128e61cb62e3ad18fd72a01"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/desktop-application.png": {
+      "bytes": 68957,
+      "sha256": "66ab39f593191a4a86b49245815f85a616b691e4297be7aee7c37981a6ec4e48"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/desktop-congratulations.png": {
+      "bytes": 91437,
+      "sha256": "d6025f5d51833af1bd7af9f5cc6c6fdf2904eb21714ccf5e92ae567c9d525530"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/desktop-landing.png": {
+      "bytes": 150031,
+      "sha256": "510f5e6fee0a4524be7da9fac0ce1868ab2d773b4762b47ef527789eecaa6688"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/desktop-proposal.png": {
+      "bytes": 156939,
+      "sha256": "204c8042189eb4c8d53b9e78799e213de98d422d6416fc0efd66b81a105722b3"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/desktop-thank-you-awaiting.png": {
+      "bytes": 122682,
+      "sha256": "4f1fff591431f79f05dd07058e6ab7a69181f602d41f4e5148b92037e56c47da"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/desktop-thank-you-cancelled.png": {
+      "bytes": 42251,
+      "sha256": "883c6a9c3a04b8dec56ddc0fc3b5e0afe106a8dda60b320fdcaa1b8a367fedd0"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/desktop-thank-you-confirmed.png": {
+      "bytes": 70953,
+      "sha256": "8fd775cfb5fc39cca8285b36e81a3bb4337a652bc3a1769151e914cb0cbe4f2e"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/desktop-thank-you-missing.png": {
+      "bytes": 39211,
+      "sha256": "bddebad3596bfe9e61753f4c26a725a61ad7d01d62c385acf6fe350523f72cd9"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/desktop-thank-you-rescheduled.png": {
+      "bytes": 123274,
+      "sha256": "210dc6f04b2ec38efac5e9937514654abc4bfa6fb16faab23a494ba1d5fef1c4"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/desktop-thank-you-unknown.png": {
+      "bytes": 122682,
+      "sha256": "4f1fff591431f79f05dd07058e6ab7a69181f602d41f4e5148b92037e56c47da"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/iphone-application.png": {
+      "bytes": 42202,
+      "sha256": "30cbd28a4b40810df7937b400617046bb5f21d09e3821464944af25033dcfe36"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/iphone-congratulations.png": {
+      "bytes": 72516,
+      "sha256": "089767b9cf2c3f7bb23a8fc71428c274bf538be351d893e69b522e3c2a77e426"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/iphone-landing.png": {
+      "bytes": 112574,
+      "sha256": "37fcf5cf47b3c8e4916f5c1df9cac03f76b554c184cecd7b54562f6c319828ab"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/iphone-proposal.png": {
+      "bytes": 138894,
+      "sha256": "6f9ae38e8885d1e4b8ab981562d30e6015ab2d3af762e4c80fc8a30bc3beda64"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/iphone-thank-you-awaiting.png": {
+      "bytes": 97964,
+      "sha256": "e8b2584ed3df115f9e1baabe181767f6d8f87a9eb26c0cdf51807393e0721c5e"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/iphone-thank-you-cancelled.png": {
+      "bytes": 30326,
+      "sha256": "e8ad003247539b8035986374a7afaa5fd506913c0d83b2febb73772d31b88705"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/iphone-thank-you-confirmed.png": {
+      "bytes": 53979,
+      "sha256": "6887a41cf162fbf5b111faf39178c31f546fedb4ff289ebd4850de85cb59eb92"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/iphone-thank-you-missing.png": {
+      "bytes": 29033,
+      "sha256": "42f7e7ea14a36a666cb0f118c362292a4fdcdf7968d2fb575fc64dc6c40a5ec4"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/iphone-thank-you-rescheduled.png": {
+      "bytes": 98672,
+      "sha256": "ec94b9ec2bf4d21179790454d100c472624a08ebf9a994fd9665f39df8de4bad"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/iphone-thank-you-unknown.png": {
+      "bytes": 97964,
+      "sha256": "e8b2584ed3df115f9e1baabe181767f6d8f87a9eb26c0cdf51807393e0721c5e"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/qa/results.json": {
+      "bytes": 831,
+      "sha256": "b7313ec3fb73e4d7d7c5c1270a2fb7d9aff3947e249659ab3dc4897aa7d1f506"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/reference-compass/desktop.png": {
+      "bytes": 1673610,
+      "sha256": "ffa8e278e13d5ba09590dd3fdb8ccf391f8418e71356700b3f0c3fbfb5417f47"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/reference-compass/mobile-top.png": {
+      "bytes": 123689,
+      "sha256": "7c6da8fec6223246f5544bc896b0c36a40a2633ecb652a4f1a18c9f0a02cd11e"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/reference-compass/text.txt": {
+      "bytes": 5527,
+      "sha256": "cf3e4561d4139cf5e902ae36180e829f7298eac840890be6fd33c600387465f8"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/app.js": {
+      "bytes": 4360,
+      "sha256": "80d37f9df7e31bb37836907c877e25a2e71e50c28755c6529e015606279741f4"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/application-review.html": {
+      "bytes": 807,
+      "sha256": "3d453647c7e2d991e2f30a00ffbfe37a6e1662eb3c6e99dc44bc659761dbae3a"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/benchmark.json": {
+      "bytes": 1993,
+      "sha256": "2beed82135887b7644cc26303308e0ccd04f12d9eab4d65d275c5d2a722fa408"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/booking-state.js": {
+      "bytes": 3086,
+      "sha256": "4817a2b57a2728e02a6987bff917adf6df291f5c06babff2dc2af094db227fa2"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/booking.html": {
+      "bytes": 1298,
+      "sha256": "6b0c6f3996ea9585658aec0dffd1ece2df4aad21ef88f5c7199400370a8bd853"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/confirmation.html": {
+      "bytes": 1298,
+      "sha256": "6b0c6f3996ea9585658aec0dffd1ece2df4aad21ef88f5c7199400370a8bd853"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/demo.html": {
+      "bytes": 1008,
+      "sha256": "ba0ebbae1c821469371770982a136b2b61d0ee2bba2a9356cfda67cc6c60eaf3"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/fixture-state.js": {
+      "bytes": 1146,
+      "sha256": "845e515e305545f7e639232f1304575366ef9d15708b90216c8c56669d010a1d"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/index.html": {
+      "bytes": 2192,
+      "sha256": "5ea3fa16839bc12c0fa5cc6b9b14af52551da50f9b72b173b31b09096a951c51"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/offer-testing.html": {
+      "bytes": 2069,
+      "sha256": "7c6e3a092beaa7e4b0d9c2e6adad3530f7eefb840d5b42601b3af142e90b4b5b"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/proposal.html": {
+      "bytes": 3104,
+      "sha256": "a34c7253e14f795fcae2e20eee3d65d898de51444bb1d3f6e47668971409e8e9"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/review.html": {
+      "bytes": 995,
+      "sha256": "0241d2583bb75004be3e671cad623ec60f50b2075e5ffd342334723360c6e9a5"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/style.css": {
+      "bytes": 13477,
+      "sha256": "e7bd92d8927ccd9b595059c044a9374167deb4527678848be29e438bd6702286"
+    },
+    "tests/funnel-proposal-repair-2026-11-05/site/thank-you.html": {
+      "bytes": 2460,
+      "sha256": "06a1bf1f6619d36c2ba3cdb9ed2981d72f5c8cdda5b91fa1d3d271f38334c449"
+    },
+    "tests/module2-revision-2026-11-08/1440-niches.png": {
+      "bytes": 215140,
+      "sha256": "576f53a0953190d261f586ac9885d673974b545bc376cdd31c0786bc51ac3973"
+    },
+    "tests/module2-revision-2026-11-08/1440-problem-cost.png": {
+      "bytes": 304330,
+      "sha256": "06e398a541780baa51404a5e4d2a87656a59e774439a3b5595c51617cbaa3129"
+    },
+    "tests/module2-revision-2026-11-08/390-niches.png": {
+      "bytes": 133368,
+      "sha256": "3e03fa909ddf18d0b331f9a75986f6dede61c29133a4247347ff9631dd444426"
+    },
+    "tests/module2-revision-2026-11-08/390-problem-cost.png": {
+      "bytes": 241036,
+      "sha256": "789eeb4e8c92b8476a7fad020f4b2ea589bfa35b9bb4a10e7572ef40f52dce89"
+    },
+    "tests/module2-revision-2026-11-08/review.json": {
+      "bytes": 8924,
+      "sha256": "489b91e40d3d691195d7183287ad8d67b0f8c5785ca9cac0bf35ba57c15ba0c3"
+    },
+    "tests/module2-sections-2026-11-08/qa/check.cjs": {
+      "bytes": 3880,
+      "sha256": "c22896ec126f28b242936936dd05440d88a6ef204738e1fc399e4ee12e87cd04"
+    },
+    "tests/module2-sections-2026-11-08/qa/desktop-m2-create-your-offer-first.png": {
+      "bytes": 237314,
+      "sha256": "32052090c7a3b076ff2f2f3a5e7b41ac5c1f812acc1a445e720bd722cf8bc75d"
+    },
+    "tests/module2-sections-2026-11-08/qa/desktop-m2-the-irresistible-offer-first.png": {
+      "bytes": 242219,
+      "sha256": "0f204f1da9982d88069eec2f20676cd64eb68c6bcbf828fa37c45c7f70806296"
+    },
+    "tests/module2-sections-2026-11-08/qa/desktop-m2-three-ways-to-find-an-offer-that-scales-first.png": {
+      "bytes": 296251,
+      "sha256": "110231e6fba8da6c71d1bb06a45c4ae059f45ac22dc56fb4b1b86c755bab5182"
+    },
+    "tests/module2-sections-2026-11-08/qa/desktop-m2-write-the-offer-first.png": {
+      "bytes": 223579,
+      "sha256": "e62ee5f719dfe2bf6eca25d045bc5683a6bd7da89fcb79dcbf11099031e33be9"
+    },
+    "tests/module2-sections-2026-11-08/qa/desktop-simplified-pain.png": {
+      "bytes": 318257,
+      "sha256": "461f4cc2913310cc181c3aaa0986f5ad13666511cc9c36e84e5e42a9ed1b91b5"
+    },
+    "tests/module2-sections-2026-11-08/qa/desktop-worked-offer.png": {
+      "bytes": 280327,
+      "sha256": "0a0b95ad472d1aa672dc3ce864d63e69841252ed3040343fdf0da3ce54a43b21"
+    },
+    "tests/module2-sections-2026-11-08/qa/iphone-m2-create-your-offer-first.png": {
+      "bytes": 165297,
+      "sha256": "e4c40a0bc085f27ed4e8bcb076ea0a8261d7d7b64aecbcda42bd3c5667fc2dd3"
+    },
+    "tests/module2-sections-2026-11-08/qa/iphone-m2-the-irresistible-offer-first.png": {
+      "bytes": 180841,
+      "sha256": "05fca3a904303cfa39255ee1fc3bf1d053d032f259d14182e4d8bc699c03bd1a"
+    },
+    "tests/module2-sections-2026-11-08/qa/iphone-m2-three-ways-to-find-an-offer-that-scales-first.png": {
+      "bytes": 231427,
+      "sha256": "5d94c0d2451fa86349f22e985f3c801d964b819594580a18667d94e2038d08f8"
+    },
+    "tests/module2-sections-2026-11-08/qa/iphone-m2-write-the-offer-first.png": {
+      "bytes": 123712,
+      "sha256": "454a990afc90267af5956f4ffb650e4ae1d3e926aaf3c96a9ca7ba54c000ae89"
+    },
+    "tests/module2-sections-2026-11-08/qa/iphone-simplified-pain.png": {
+      "bytes": 225498,
+      "sha256": "28e76302ab37aa817e14f7566eaf73c997451076ae2403c90d9f021d5280248f"
+    },
+    "tests/module2-sections-2026-11-08/qa/iphone-worked-offer.png": {
+      "bytes": 202811,
+      "sha256": "04e097b623dfdc2949c0a88fd4cca67ea830dc58bd951af44063c10754dc7980"
+    },
+    "tests/module2-sections-2026-11-08/qa/results.json": {
+      "bytes": 1952,
+      "sha256": "a65d24fe2bc96a77eab2e164f14305a7a483667609176e3e4e853a9066e7ed6b"
+    },
+    "tests/module2-sections-2026-11-08/review.json": {
+      "bytes": 1108,
+      "sha256": "a468b91e97ccefb13e694f639ff5fb2567820082a9fa2188d6c443a062d42011"
+    },
+    "tests/offer-path-and-reminders-2026-11-05/REVIEW.md": {
+      "bytes": 1501,
+      "sha256": "99fd3059e5cc27a390951d0fbd58e21c06fc8dbc4d2be2ca4e8368c98139e0c6"
+    },
+    "tests/offer-path-and-reminders-2026-11-05/qa/check.cjs": {
+      "bytes": 1856,
+      "sha256": "7265f0b3decbf65124bd3d062da4c415ce0ee6fdc3f8800f78610b132149a134"
+    },
+    "tests/offer-path-and-reminders-2026-11-05/qa/desktop-m2-create-your-offer.png": {
+      "bytes": 318395,
+      "sha256": "3d86a5ca9b86eed8721838725965263424edc8fa176abf79605953aa005c7c8d"
+    },
+    "tests/offer-path-and-reminders-2026-11-05/qa/desktop-m2-write-the-offer.png": {
+      "bytes": 363665,
+      "sha256": "55ab57a830d42af6e0beec40ac329b628fe60699cb67803dfa0177884a507fa6"
+    },
+    "tests/offer-path-and-reminders-2026-11-05/qa/desktop-m5-the-follow-up-that-runs-without-you.png": {
+      "bytes": 297313,
+      "sha256": "6abc31e099a96671f25cfb883d707d125faf202276b57f3c746c736e87f9d1f2"
+    },
+    "tests/offer-path-and-reminders-2026-11-05/qa/iphone-m2-create-your-offer.png": {
+      "bytes": 251591,
+      "sha256": "606373531ea71177ede359cc6c986071cac4cbc249e0d57ed233bb77a775e4f6"
+    },
+    "tests/offer-path-and-reminders-2026-11-05/qa/iphone-m2-write-the-offer.png": {
+      "bytes": 261331,
+      "sha256": "1da6635aef49ed1d88537ce82527a37c296272e79d67fab91564919fce53b061"
+    },
+    "tests/offer-path-and-reminders-2026-11-05/qa/iphone-m5-the-follow-up-that-runs-without-you.png": {
+      "bytes": 227601,
+      "sha256": "39b20ddce47ec9789df447003b73c82e83c82fffd0c65c153877fa6598bda8de"
+    },
+    "tests/offer-path-and-reminders-2026-11-05/qa/results.json": {
+      "bytes": 737,
+      "sha256": "549e7b160fe0fa462db20ce04d2e957355e80a4dcf41bf6fda778df6c70b9ae4"
+    },
+    "tests/proposal-template-2026-10-31/CALL-ONE-INPUTS.md": {
+      "bytes": 1818,
+      "sha256": "a42fbbef95435cf2a55ede4d6d101d04de027900330b140ced5bd30b1d8e530e"
+    },
+    "tests/proposal-template-2026-10-31/PRESENTER-NOTES.md": {
+      "bytes": 2113,
+      "sha256": "4fb21a6c022e3b72e107cbb6d7b6f5ba574f48b62481f8763d763fc799d2762c"
+    },
+    "tests/proposal-template-2026-10-31/PROPOSAL-TEMPLATE.md": {
+      "bytes": 2679,
+      "sha256": "bd746f969370fb4713d02949ddd69b7c6fb721fcd7ce3f41d4ebc957261f3c78"
+    },
+    "tests/proposal-template-2026-10-31/REVIEW.md": {
+      "bytes": 2863,
+      "sha256": "367c577ace2df3fdd3704c05191df7cd4bfd6dd17e98f99b759c7554772e83a8"
+    },
+    "tests/proposal-template-2026-10-31/act-review.json": {
+      "bytes": 5845,
+      "sha256": "7a3e5fd76e285a2f6f0d1aafd9d449d43e1ce88ce1cb2a7aaa718aff8a326d8c"
+    },
+    "tests/proposal-template-2026-10-31/blank-template.json": {
+      "bytes": 2726,
+      "sha256": "18b6e44211e652b77f92b8fe086973196700529c18b5426785cd441de42238a3"
+    },
+    "tests/proposal-template-2026-10-31/build.py": {
+      "bytes": 11491,
+      "sha256": "9e069cd77931c06b8455062eeb03bd842577667a479b2d884d9a911ab5d5358a"
+    },
+    "tests/proposal-template-2026-10-31/proposal.css": {
+      "bytes": 4208,
+      "sha256": "a2d0613682ae46aed59d10153c3bd9e8e2593e71d16bef182b6b4beba3727fca"
+    },
+    "tests/proposal-template-2026-10-31/worked-example.json": {
+      "bytes": 5469,
+      "sha256": "04b11862eef92b1cb7ba08a86aa39cac915c613f2758ad3e342b502eb783455a"
+    }
+  }
+}

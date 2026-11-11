@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-22",
+  "offer": "roofline-v1",
+  "commercial": "Conditional pilot hypothesis; competing native/managed platforms identified; no buyer validation",
+  "visual": "All four feed images, four story images in contact sheet, desktop hero and full mobile page inspected. Hero revised to shorten hierarchy. Goh sequence compared; no fake proof wall.",
+  "functional": {
+    "pageErrors": [],
+    "mobileHorizontalOverflow": false,
+    "storyboardSixScenes": true,
+    "fitAndNonfitStates": true,
+    "noNetworkForm": true,
+    "exports": 8
+  },
+  "limits": [
+    "No live CRM/sender/calendar",
+    "Five-conversation promise and pricing are proposed, not validated",
+    "No filmed presenter VSL",
+    "Actual incremental revenue unknown"
+  ],
+  "next": "Blake review of one package before more variations; then real buyer/technical scope."
+}

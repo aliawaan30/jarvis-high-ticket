@@ -1,0 +1,3 @@
+/Users/blakestephens/Downloads/Jarvis-Technical-Handoff-2026-10-23.zip
+/Users/blakestephens/Downloads/Jarvis-Technical-Handoff-2026-10-23
+Document relative links resolve in the Downloads package.

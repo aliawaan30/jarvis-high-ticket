@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="'Instrument Sans', Arial, sans-serif">
+  <rect width="1200" height="520" fill="#ffffff"/>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#8b8e9c"/></marker></defs>
+  <text x="60" y="54" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="600" fill="#0e1016">Two ways to deliver, one plan, one handover</text>
+  <!-- start -->
+  <rect x="60" y="210" width="240" height="100" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="80" y="238" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8a6210">SIGNED DEAL</text>
+  <text x="80" y="270" font-size="22" font-weight="600" fill="#0e1016">Scoping plan</text>
+  <text x="80" y="296" font-size="18" fill="#5a5d6b">Same plan for both paths</text>
+  <!-- arbitrage -->
+  <rect x="420" y="100" width="360" height="110" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="440" y="128" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">ARBITRAGE</text>
+  <text x="440" y="160" font-size="22" font-weight="600" fill="#0e1016">Vetted developer builds it</text>
+  <text x="440" y="186" font-size="18" fill="#5a5d6b">Fixed price, three milestones. You keep the margin.</text>
+  <!-- self -->
+  <rect x="420" y="310" width="360" height="110" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="440" y="338" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#4b2fc4">SELF FULFILMENT</text>
+  <text x="440" y="370" font-size="22" font-weight="600" fill="#0e1016">You build it with Jarvis</text>
+  <text x="440" y="396" font-size="18" fill="#5a5d6b">One module at a time, on test data.</text>
+  <!-- end -->
+  <rect x="900" y="210" width="240" height="100" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="920" y="238" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8a6210">EVERY DEAL</text>
+  <text x="920" y="270" font-size="22" font-weight="600" fill="#0e1016">Test, hand over</text>
+  <text x="920" y="296" font-size="18" fill="#5a5d6b">Sign off, invoice, retainer</text>
+  <!-- arrows -->
+  <path d="M300 240 C360 240 360 155 410 155" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M300 280 C360 280 360 365 410 365" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M780 155 C840 155 840 240 890 240" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M780 365 C840 365 840 280 890 280" stroke="#8b8e9c" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <!-- rule -->
+  <line x1="60" y1="460" x2="1140" y2="460" stroke="#e6e7ec" stroke-width="1.5"/>
+  <text x="60" y="495" font-size="20" fill="#5a5d6b">Not technical? Take the top path, or bring someone technical in. Your hours belong on the client and the next deal.</text>
+</svg>

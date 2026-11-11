@@ -1,0 +1,12 @@
+{
+  "note": "Proposed shape only; fictional values, no implemented storage API.",
+  "student_project_id": "provided-by-your-runtime",
+  "course": {"snapshot_sha256": "read-from-course-index", "lesson_id": "m2-create-your-offer", "section_id": "problem"},
+  "study_progress": {"m2-the-irresistible-offer": {"status": "student_reports_studied", "questions": []}},
+  "choices": {"buyer": "Plumbing businesses", "location": "Dallas", "service": "AI receptionist", "approved_by_student": true},
+  "artifacts": {"problem_value_brief": null, "service_brief": null, "six_line_offer": null},
+  "work_status": "research_pending",
+  "unresolved": ["What share of unanswered calls are genuine new enquiries?", "Does this implementation book jobs or capture messages?"],
+  "next_action": "Research relevant benchmarks and explain the estimates before defining the offer.",
+  "revision": 1
+}

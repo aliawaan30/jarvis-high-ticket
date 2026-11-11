@@ -1,0 +1,88 @@
+<section class="slide" id="reporting">
+<style>
+  #reporting .rep-kpi { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--rule); }
+  #reporting .rep-kpi div { padding:7px 12px 8px; border-right:1px solid var(--rule); border-bottom:1px solid var(--rule); }
+  #reporting .rep-kpi div:nth-child(3n) { border-right:none; }
+  #reporting .rep-kpi span { display:block; font-size:7.5px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:var(--taupe); }
+  #reporting .rep-kpi b { display:block; font-family:'Playfair',serif; font-weight:500; font-size:15px; color:var(--ink); margin-top:2px; }
+  #reporting .zline { display:flex; align-items:center; justify-content:center; gap:12px; margin-top:18px; font-size:15px; color:var(--soft); }
+  #reporting .zline i { width:10px; height:10px; border-radius:50%; background:var(--sand); box-shadow:0 0 0 5px rgba(181,122,46,.15); }
+  #reporting .zline b { color:var(--ink); }
+  /* the client logo is a stacked mark (≈1.7:1): sized so it and the week line sit inside the 104px header */
+  #reporting .rep-logo { width:88px !important; }
+  #reporting .rep-wk { margin-top:7px; }
+</style>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">Reporting</div>
+      <h2>The weekly report, <em>straight to your inbox.</em></h2>
+      <p>A short note every Friday with the report attached &mdash; this one is an example of week three, at the pace set earlier. Click the attachment to open it.</p>
+      <div class="note"><b>Do this live</b>Click the attachment and let the report straighten up. Then: &ldquo;Your Kestrel Bay sales team gets that every Friday &mdash; the numbers from ad to private call &mdash; cost per enquiry and per qualified enquiry, booking and show-up rates, your best segment &mdash; what we changed, and the ads that actually ran. Plain English, no dashboard homework. And once a month we jump on Zoom together &mdash; what worked, what we changed, what&rsquo;s next.&rdquo; Twenty seconds, move on.</div>
+    </div>
+    <div class="mailgrid rv">
+      <div class="mail">
+        <div class="mailbar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <div class="subj">Kestrel Bay Resort &mdash; week 3 report</div>
+        </div>
+        <div class="mailmeta">
+          <div class="av2">HL</div>
+          <div class="mm">
+            <div class="from">Alex Morgan <span>&middot; Harbour Lane Media</span></div>
+            <div class="to">to the Kestrel Bay Resort sales team, Kestrel Developments</div>
+          </div>
+          <div class="when">Fri 4:02 pm</div>
+        </div>
+        <div class="mailbody">
+          <p class="greet">Afternoon team,</p>
+          <p class="greet">Please find this week&rsquo;s report attached. We&rsquo;re at <span data-live="wkN">37</span> verified enquiries at <span data-live="cpe">$25</span> each &mdash; Perth and Brisbane leading, Sydney trending positively &mdash; with ten private calls booked with your team. The Owners&rsquo; Club ad is out-pulling everything and the Garden Suite ad is the cheapest enquiry in the account, so spend has moved toward both.</p>
+          <p class="greet">Two new designs go live on Tuesday, and your day-30 review is a fortnight away. Wishing you a fantastic weekend &#128591;</p>
+          <p class="sign">Alex</p>
+          <button class="attach" id="attachBtn">
+            <span class="clip">&#128206;</span>
+            <span class="at-n">Kestrel Bay Resort &mdash; Week 3 Report.pdf<span>1 page &middot; click to open</span></span>
+          </button>
+        </div>
+      </div>
+
+      <figure class="report" id="reportDoc">
+        <div class="rep-hero">
+          <img src="assets/ph-pool-2.jpg" alt="" style="object-position:50% 60%;">
+          <div class="rep-sc"></div>
+          <div class="rep-ttl">
+            <img class="rep-logo" src="assets/brand-logo-light.png" alt="Kestrel Bay Resort">
+            <div class="rep-wk">Weekly Report &middot; Week 3</div>
+          </div>
+        </div>
+        <div class="rep-nums">
+          <div><b data-live="wk">$925</b><span>Ad spend</span></div>
+          <div><b data-live="wkN">37</b><span>Verified enquiries</span></div>
+          <div><b data-live="cpe">$25</b><span>Each</span></div>
+          <div><b>10</b><span>Private calls booked</span></div>
+        </div>
+        <div class="rep-kpi">
+          <div><span>Per verified enquiry</span><b data-live="cpe">$25</b></div>
+          <div><span>Per qualified enquiry</span><b data-live="cpq">$38</b></div>
+          <div><span>Booked a private call</span><b>27%</b></div>
+          <div><span>Showed up</span><b>80%</b></div>
+          <div><span>Best segment</span><b>WA &middot; 45&ndash;54</b></div>
+          <div><span>Sales value per ad dollar</span><b>After first reservation</b></div>
+        </div>
+        <div class="rep-secs">
+          <div class="rs"><h4>What we changed</h4><p>Moved a third of the Sydney budget to Perth and Brisbane, and nudged spend toward the Owners&rsquo; Club and Garden Suite ads &mdash; the two cheapest verified enquiries in the account.</p></div>
+          <div class="rs"><h4>What is next</h4><p>Two new designs go live Tuesday, and the Ocean Suite ads get a new photo after a slow week.</p></div>
+        </div>
+        <div class="rep-ads">
+          <div class="ra-l">Ads running this week</div>
+          <div class="ra-row">
+            <img src="assets/ph-suite-a.jpg" alt="">
+            <img src="assets/ph-family.jpg" alt="">
+            <img src="assets/ph-venue-2.jpg" alt="">
+            <img src="assets/ph-hero-pool.jpg" alt="">
+          </div>
+        </div>
+      </figure>
+    </div>
+    <div class="zline rv"><i></i><span><b>Plus, once a month:</b> a 30-minute Zoom &mdash; what worked, and what&rsquo;s next.</span></div>
+  </div>
+</section>

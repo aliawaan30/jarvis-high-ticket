@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="'Instrument Sans', Arial, sans-serif">
+  <rect width="1200" height="520" fill="#ffffff"/>
+  <text x="60" y="54" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="600" fill="#0e1016">Higher ticket: more you can pay per call, fewer people who can pay you.</text>
+  <text x="60" y="84" font-size="16" fill="#8b8e9c">Illustrative figures. Your own account is the only benchmark that counts.</text>
+  <!-- header row -->
+  <text x="60" y="140" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8b8e9c">OFFER PRICE</text>
+  <text x="330" y="140" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8b8e9c">YOU CAN AFFORD PER BOOKED CALL</text>
+  <text x="860" y="140" font-family="'IBM Plex Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8b8e9c">POOL OF BUYERS</text>
+  <!-- row 1 -->
+  <rect x="60" y="160" width="240" height="64" rx="10" fill="#fbfbfc" stroke="#e6e7ec" stroke-width="1.5"/>
+  <text x="84" y="200" font-size="22" fill="#0e1016">$1,000</text>
+  <rect x="330" y="160" width="120" height="64" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="354" y="200" font-size="20" fill="#0e1016">~$60</text>
+  <rect x="860" y="160" width="280" height="64" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="884" y="200" font-size="20" fill="#0e1016">Large</text>
+  <!-- row 2 -->
+  <rect x="60" y="248" width="240" height="64" rx="10" fill="#fbfbfc" stroke="#e6e7ec" stroke-width="1.5"/>
+  <text x="84" y="288" font-size="22" fill="#0e1016">$8,000</text>
+  <rect x="330" y="248" width="300" height="64" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="354" y="288" font-size="20" fill="#0e1016">~$500</text>
+  <rect x="860" y="248" width="180" height="64" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="884" y="288" font-size="20" fill="#0e1016">Medium</text>
+  <!-- row 3 -->
+  <rect x="60" y="336" width="240" height="64" rx="10" fill="#fbfbfc" stroke="#e6e7ec" stroke-width="1.5"/>
+  <text x="84" y="376" font-size="22" fill="#0e1016">$35,000</text>
+  <rect x="330" y="336" width="500" height="64" rx="10" fill="#efecfb" stroke="#4b2fc4" stroke-width="1.5"/>
+  <text x="354" y="376" font-size="20" fill="#0e1016">~$2,000 or more</text>
+  <rect x="860" y="336" width="100" height="64" rx="10" fill="#f8f1df" stroke="#8a6210" stroke-width="1.5"/>
+  <text x="884" y="376" font-size="20" fill="#0e1016">Small</text>
+  <text x="60" y="470" font-size="16" fill="#8b8e9c">The floor is the same at every price: acquire the client for less than they pay you. The target is as far under that as you can get.</text>
+</svg>

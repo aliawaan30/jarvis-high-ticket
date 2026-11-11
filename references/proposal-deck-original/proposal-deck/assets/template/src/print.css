@@ -1,0 +1,13 @@
+/* ═══ print — only used if someone prints from the browser. The client PDF is NOT made this way:
+   it is one screenshot per slide (scripts/shoot.mjs + scripts/make_pdf.py), because browser print shifts and splits slides. ═══ */
+@media print {
+  /* the report and its monthly recap share one page */
+  #reporting .wrap { zoom:.72 !important; }
+
+  /* the package — the stack and its total share one page */
+  #included .wrap { zoom:.64 !important; }
+
+  /* next steps (if you add that slide) — the steps and the ask on one page */
+  #decision .wrap { zoom:.7 !important; }
+  #decision .bkp { display:none !important; }
+}

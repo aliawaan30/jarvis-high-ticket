@@ -1,0 +1,39 @@
+{
+  "artifacts": [
+    "REVIEW.md",
+    "fixture-brief.json",
+    "site/",
+    "qa/"
+  ],
+  "checks": [
+    {
+      "command": "quick_validate.py for landing, confirmation and proposal skills",
+      "exitCode": 0,
+      "summary": "All three skill structures valid."
+    },
+    {
+      "command": "node qa/check.cjs",
+      "exitCode": 0,
+      "summary": "Chrome desktop and phone-width synthetic checks passed with zero console/page errors; six booking states, form interaction, honest review fallback and separate proposal/demo checked."
+    },
+    {
+      "command": "Build reading copy and review_inventory.py --write/--check",
+      "exitCode": 0,
+      "summary": "Current lessons and canonical resources reconcile; this is not agent execution validation."
+    },
+    {
+      "command": "ZIP integrity and file-by-file comparison with canonical skill files",
+      "exitCode": 0,
+      "summary": "Current local ZIP matches 43 canonical files across 15 skills."
+    },
+    {
+      "command": "Visual inspection of desktop congratulations, phone thank-you and scrolling proposal screenshots",
+      "exitCode": 0,
+      "summary": "Compact reference structure and plain document proposal checked separately from runtime."
+    }
+  ],
+  "limits": [
+    "Synthetic fixtures; no Base44/provider/student test.",
+    "No public deployment or outreach edits."
+  ]
+}

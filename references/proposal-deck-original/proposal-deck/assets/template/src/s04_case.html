@@ -1,0 +1,63 @@
+<section class="slide" id="case">
+<style>
+  #case .dv { display:grid; grid-template-columns:44px minmax(0,1fr) auto; gap:12px; align-items:center; margin-top:12px; padding:10px 14px; border-radius:14px; background:var(--teal); color:#FBF7F0; }
+  #case .dv-b { width:44px; height:44px; border-radius:50%; border:0; background:var(--gold-lite); cursor:pointer; position:relative; }
+  #case .dv-b i { position:absolute; left:17px; top:14px; border-left:13px solid #13283A; border-top:8px solid transparent; border-bottom:8px solid transparent; }
+  #case .dv.on .dv-b i { left:15px; top:14px; width:14px; height:16px; border:0; border-left:4px solid #13283A; border-right:4px solid #13283A; }
+  #case .dv-m b { display:block; font-size:13px; font-weight:600; } #case .dv-m small { display:block; font-size:10px; color:rgba(251,247,240,.6); }
+  #case .dv-bar { position:relative; height:6px; border-radius:4px; background:rgba(251,247,240,.18); margin-top:8px; cursor:pointer; touch-action:none; }
+  #case .dv-bar::after { content:""; position:absolute; inset:-8px 0; }
+  #case .dv-bar u { position:absolute; top:50%; width:14px; height:14px; margin:-7px 0 0 -7px; border-radius:50%; background:#FBF7F0; left:0; box-shadow:0 1px 4px rgba(0,0,0,.4); }
+  #case .dv-sk { display:flex; align-items:center; gap:6px; }
+  #case .dv-k { font:inherit; font-size:10.5px; font-weight:700; color:#FBF7F0; background:rgba(251,247,240,.12); border:0; border-radius:12px; padding:5px 8px 4px; cursor:pointer; }
+  #case .dv-k:hover { background:rgba(226,184,114,.3); }
+  #case .dv-bar i { display:block; height:100%; width:0; border-radius:4px; background:var(--gold-lite); }
+  #case .dv-t { font-size:12px; font-variant-numeric:tabular-nums; color:rgba(251,247,240,.75); }
+  @media print { #case .dv-b, #case .dv-bar, #case .dv-k { display:none; } #case .dv { grid-template-columns:1fr auto; } }
+</style>
+
+<style>.mp .roas{display:inline-block;margin-top:8px;font-style:normal;font-family:"Playfair",serif;font-size:20px;color:var(--gold-d);background:rgba(181,122,46,.12);border-radius:20px;padding:3px 12px 2px}.mp .roas small{font-family:"Jost",sans-serif;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--taupe);margin-left:6px}</style>
+
+<style>
+  /* the money tile reads as money — extra.css keys these to the old section id, so this slide carries its own copy */
+  #case .mp.gci { background:var(--teal); border-color:var(--teal); }
+  #case .mp.gci b { color:var(--gold-lite); }
+  #case .mp.gci span { color:rgba(251,247,240,.74); }
+  #case .mp.gci .roas { color:var(--gold-lite); background:rgba(226,184,114,.16); }
+  #case .mp.gci .roas small { color:rgba(251,247,240,.7); }
+  @media print { #case .wrap { zoom:.86; } }
+  /* phone: the case card and its three tiles stack, instead of squeezing side by side */
+  @media screen and (max-width:640px) { #case .g2 { grid-template-columns:1fr !important; } }
+</style>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">Our most recent development</div>
+      <h2>The last development <em>that ran this play.</em></h2>
+    </div>
+    <div class="g2 rv" style="grid-template-columns:1.35fr 1fr;">
+      <div class="case">
+        <div class="cph" style="height:266px;"><img src="assets/ph-case-study.jpg" alt="" style="object-position:50% 42%;"><div class="sc2"></div><div class="sect">⟦Project name⟧ &middot; ⟦Place⟧ &middot; sold with this exact journey</div></div>
+        <div class="cbd" style="padding:22px 26px 26px;">
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:12px;">
+            <div>
+              <h4 style="margin:0;">⟦Project name⟧</h4>
+              <div style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--taupe);font-weight:600;margin-top:2px;">⟦Project type⟧ &middot; ⟦Place⟧</div>
+            </div>
+          </div>
+          <div class="tmnl">
+            <q>&ldquo;⟦A real client’s words, verbatim, with their permission — never write one⟧&rdquo;</q>
+            <div class="att">⟦Name · role · project · how long in⟧</div>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;justify-content:center;">
+        <div class="mproof" style="grid-template-columns:1fr;gap:14px;margin-top:0;">
+          <div class="mp"><b>⟦N weeks⟧</b><span>From launch to the first sale</span></div>
+          <div class="mp"><b>⟦≈$N⟧</b><span>Ad spend</span></div>
+          <div class="mp gci"><b>⟦A$Nk⟧</b><span>⟦what sold⟧</span><em class="roas">⟦≈N×⟧<small>Return on ad spend</small></em></div>
+        </div>
+      </div>
+    </div>
+    <div class="note"><b>Let the quote land, then walk the arc</b>Read the quote aloud, slowly, and stop on the line where they say what changed their mind &mdash; ⟦the line to stop on⟧. A developer saying it in their own words does more than anything we could say. Then the tiles: <b>&ldquo;⟦the time to first sale, in words⟧ after going live, with about ⟦the ad spend, in words⟧ of ad spend in, the first ⟦unit⟧ was signed &mdash; ⟦the sale value, in words⟧ across ⟦what sold⟧, about ⟦the return on ad spend, in words⟧ times the ad spend.&rdquo;</b> Then: &ldquo;that&rsquo;s ⟦name, and who they are⟧ &mdash; ⟦how they sent it, e.g. a voice note⟧, happy to play it for you.&rdquo; For Kestrel: <b>&ldquo;⟦what the two projects share &mdash; the same Australian buyers⟧ &mdash; the same audiences we&rsquo;re about to point at Kestrel Bay Resort. ⟦Name⟧ had to explain who they were. You start with eighteen years, 600-plus units delivered and Tidewater running the resort.&rdquo;</b></div>
+  </div>
+</section>

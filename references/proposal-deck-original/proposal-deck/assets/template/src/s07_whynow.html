@@ -1,0 +1,143 @@
+<section class="slide" id="whynow">
+<style>
+  #whynow .wrap { max-width:1180px; }
+  /* ── the three photo tiles (kept) ── */
+  #whynow .wn3 { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:8px; }
+  #whynow .wt { position:relative; overflow:hidden; border-radius:24px; min-height:360px; padding:26px 24px 22px; color:#FBF7F0; display:flex; flex-direction:column; justify-content:flex-end;
+    background:#13283A center/cover; box-shadow:var(--sh-lg); }
+  #whynow .wt::before { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(10,22,32,.62) 0%,rgba(10,22,32,.12) 24%,rgba(10,22,32,.5) 52%,rgba(10,22,32,.94) 100%); }
+  #whynow .wt > * { position:relative; }
+  #whynow .wt em { position:absolute; top:22px; left:24px; font-style:normal; font-size:10px; letter-spacing:.24em; text-transform:uppercase; font-weight:700; color:var(--gold-lite); }
+  #whynow .wt b { font-family:'Playfair',serif; font-weight:500; font-size:64px; line-height:.95; letter-spacing:-.01em; }
+  #whynow .wt b i { font-style:italic; color:var(--gold-lite); font-size:.62em; }
+  #whynow .wt p { font-size:15px; line-height:1.45; color:rgba(251,247,240,.88); margin-top:10px; }
+  #whynow .wt small { display:block; font-size:9.5px; letter-spacing:.06em; color:rgba(251,247,240,.5); margin-top:12px; }
+  @keyframes wnUp { from { opacity:0; transform:translateY(16px); } }
+  @media (prefers-reduced-motion:no-preference) { body.anim #whynow .wn3.in .wt { animation:wnUp .6s cubic-bezier(.2,.8,.2,1) both; } body.anim #whynow .wn3.in .wt:nth-child(2) { animation-delay:.15s; } body.anim #whynow .wn3.in .wt:nth-child(3) { animation-delay:.3s; } }
+
+  /* ── in the news: two clippings under each tile ── */
+  #whynow .wnx-bar { display:flex; align-items:center; gap:14px; margin:40px 0 16px; }
+  #whynow .wnx-bar b { font-size:10.5px; letter-spacing:.26em; text-transform:uppercase; font-weight:700; color:var(--ink); white-space:nowrap; }
+  #whynow .wnx-bar i { flex:1; height:1px; background:var(--rule); }
+  #whynow .wnx-bar span { font-size:11px; color:var(--taupe); white-space:nowrap; }
+  #whynow .wnx-news { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px 14px; }
+    #whynow .wnx-clip { position:relative; background:#FFFEFB; border:1px solid var(--rule); border-radius:4px; padding:14px 18px 14px; box-shadow:0 1px 0 rgba(19,40,58,.04), 0 10px 26px -18px rgba(19,40,58,.35); display:flex; flex-direction:column; }
+  #whynow .wnx-mast { display:flex; align-items:baseline; justify-content:space-between; gap:10px; padding-bottom:8px; border-bottom:3px double rgba(19,40,58,.28); }
+  #whynow .wnx-o { font-size:11.5px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; color:var(--ink); }
+  #whynow .wnx-o.wnx-serif { font-family:'Playfair',serif; font-weight:600; letter-spacing:.2em; }
+  #whynow .wnx-o small { font-weight:600; letter-spacing:.12em; color:var(--taupe); font-size:9px; margin-left:6px; }
+  #whynow .wnx-mast time { font-size:10.5px; color:var(--taupe); white-space:nowrap; font-variant-numeric:tabular-nums; }
+  #whynow .wnx-clip h4 { font-family:'Playfair',serif; font-weight:500; font-size:18px; line-height:1.28; color:var(--ink); margin-top:10px; text-wrap:pretty; }
+  #whynow .wnx-clip h4[lang="id"] { font-size:16.5px; font-style:italic; }
+  #whynow .wnx-tr { font-size:11px; line-height:1.4; color:var(--taupe); margin-top:4px; }
+  #whynow .wnx-clip p { font-size:13px; line-height:1.45; color:var(--soft); margin:8px 0 9px; }
+  #whynow .wnx-clip a { align-self:flex-start; margin-top:auto; padding-top:9px; font-size:10.5px; letter-spacing:.04em; color:var(--gold-d); text-decoration:none; border-bottom:1px solid rgba(154,100,32,.3); }
+  #whynow .wnx-clip a:hover { border-bottom-color:var(--gold-d); }
+
+  /* ── the numbers, sourced ── */
+  #whynow .wnx-stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); margin-top:26px; background:var(--paper); border:1px solid var(--rule); border-radius:18px; overflow:hidden; box-shadow:var(--sh); }
+  #whynow .wnx-s { padding:16px 14px 14px; border-right:1px solid var(--rule); display:flex; flex-direction:column; }
+  #whynow .wnx-s:last-child { border-right:0; }
+  #whynow .wnx-s b { font-family:'Playfair',serif; font-weight:500; font-size:27px; line-height:1; color:var(--ink); white-space:nowrap; letter-spacing:-.01em; }
+  #whynow .wnx-s b i { font-style:italic; color:var(--gold-d); font-size:.7em; }
+  #whynow .wnx-s span { font-size:12px; line-height:1.35; color:var(--soft); margin-top:7px; }
+  #whynow .wnx-s small { margin-top:auto; padding-top:8px; font-size:9.5px; letter-spacing:.04em; color:var(--taupe); }
+  #whynow .wnx-src { font-size:10.5px; line-height:1.5; color:var(--taupe); margin-top:12px; text-align:center; }
+
+  @keyframes wnxIn { from { opacity:0; transform:translateY(12px); } }
+  @media (prefers-reduced-motion:no-preference) {
+    body.anim #whynow .wnx-news.in .wnx-clip { animation:wnxIn .55s cubic-bezier(.2,.8,.2,1) both; animation-delay:var(--d,0s); }
+    body.anim #whynow .wnx-stats.in .wnx-s { animation:wnxIn .5s ease both; animation-delay:var(--d,0s); }
+  }
+
+    @media screen and (max-width:960px){
+    #whynow .wn3 { grid-template-columns:1fr; } #whynow .wt { min-height:280px; }
+    #whynow .wnx-news { grid-template-columns:1fr; }
+    #whynow .wnx-bar span { display:none; }
+  }
+  @media screen and (max-width:620px){
+    #whynow .wnx-stats { grid-template-columns:1fr; } #whynow .wnx-s { border-right:0; border-bottom:1px solid var(--rule); }
+    #whynow .wnx-s { border-right:0; border-bottom:1px solid var(--rule); }
+    #whynow .wnx-s:nth-child(odd) { border-right:1px solid var(--rule); }
+    #whynow .wnx-s:last-child { grid-column:1 / -1; border-right:0; border-bottom:0; }
+    #whynow .wnx-s b { font-size:24px; }
+    #whynow .wnx-clip h4 { font-size:17px; }
+  }
+
+  /* print: page 1 = the three tiles, page 2 = the news and the numbers */
+  @media print {
+    #whynow { height:auto !important; min-height:0 !important; display:block !important; overflow:visible !important; padding:10mm 14mm !important;
+      break-inside:auto !important; page-break-inside:auto !important; }
+    #whynow .wrap { zoom:.84; width:calc(100% / .84) !important; }
+    #whynow .wn3 { grid-template-columns:repeat(3,1fr) !important; }
+    #whynow .wt { min-height:560px; }
+    #whynow .head { margin-bottom:30px; }
+    #whynow .wnx-bar { break-before:page; page-break-before:always; margin-top:0; padding-top:8mm; }
+    #whynow .wnx-news { grid-template-columns:repeat(3,1fr) !important; }
+    #whynow .wnx-clip { break-inside:avoid; }
+    #whynow .wnx-stats { grid-template-columns:repeat(3,1fr) !important; break-inside:avoid; }
+    #whynow .wnx-s { border-right:1px solid var(--rule) !important; border-bottom:0 !important; }
+    #whynow .wnx-s:last-child { border-right:0 !important; grid-column:auto !important; }
+  }
+</style>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">The opportunity &middot; 1 of 2</div>
+      <h2>Why Bali. <em>Why now.</em></h2>
+    </div>
+    <div class="wn3 rv">
+      <div class="wt" style="background-image:url(assets/ph-plane.jpg)"><em>The demand</em><b>⟦1 <i>in</i> N⟧</b><p>⟦A demand fact: who is already buying or going there &mdash; <strong>and that it&rsquo;s rising</strong>⟧</p><small>⟦Source &middot; period⟧</small></div>
+      <div class="wt" style="background-image:url(assets/ph-location-wide.jpg)"><em>The push from home</em><b>⟦$Nk⟧</b><p>⟦A push fact: why buyers are looking now &mdash; <strong>what&rsquo;s pressing on them at home</strong>⟧</p><small>⟦Source, date &middot; source, date⟧</small></div>
+      <div class="wt" style="background-image:url(assets/ph-signing.jpg)"><em>The new rules</em><b>⟦Rule <i>N/YYYY</i>⟧</b><p>⟦A rules or timing fact: what changed and when &mdash; <strong>and why buyers now check who they buy from</strong>⟧</p><small>⟦Issuing body &middot; the rule&rsquo;s name⟧</small></div>
+    </div>
+
+    <div class="wnx-bar rv"><b>In the news</b><i></i><span>Headlines as published &middot; the one-liners are ours</span></div>
+    <div class="wnx-news rv">
+        <article class="wnx-clip" style="--d:.0s">
+          <div class="wnx-mast"><span class="wnx-o">⟦Publication⟧</span><time>⟦date⟧</time></div>
+          <h4>⟦Headline exactly as published &mdash; the demand story⟧</h4>
+          <p>⟦Our one-line takeaway: the demand number, in plain words⟧</p>
+          <a href="⟦link to the article⟧" target="_blank" rel="noopener">⟦domain⟧ &#8599;</a>
+        </article>
+        <article class="wnx-clip" style="--d:.08s">
+          <div class="wnx-mast"><span class="wnx-o">⟦Publication⟧</span><time>⟦date⟧</time></div>
+          <h4>⟦Headline exactly as published &mdash; the push from home⟧</h4>
+          <p>⟦Our one-line takeaway: what is pressing on buyers at home⟧</p>
+          <a href="⟦link to the article⟧" target="_blank" rel="noopener">⟦domain⟧ &#8599;</a>
+        </article>
+        <article class="wnx-clip" style="--d:.16s">
+          <div class="wnx-mast"><span class="wnx-o wnx-serif">⟦Publication⟧</span><time>⟦date⟧</time></div>
+          <h4 lang="id">⟦Headline exactly as published, in the original language &mdash; the new rules⟧</h4>
+          <div class="wnx-tr">In English: &ldquo;⟦a faithful translation of the headline⟧&rdquo;</div>
+          <p>⟦Our one-line takeaway: what the rule now bans or requires⟧</p>
+          <a href="⟦link to the article⟧" target="_blank" rel="noopener">⟦domain⟧ &#8599;</a>
+        </article>
+        <article class="wnx-clip" style="--d:.24s">
+          <div class="wnx-mast"><span class="wnx-o">⟦Publication⟧<small>⟦Media release⟧</small></span><time>⟦date⟧</time></div>
+          <h4>⟦Headline exactly as published &mdash; official travel or visitor data⟧</h4>
+          <p>⟦Our one-line takeaway: where the destination ranks for your buyers⟧</p>
+          <a href="⟦link to the article⟧" target="_blank" rel="noopener">⟦domain⟧ &#8599;</a>
+        </article>
+        <article class="wnx-clip" style="--d:.32s">
+          <div class="wnx-mast"><span class="wnx-o">⟦Publication⟧</span><time>⟦date⟧</time></div>
+          <h4>⟦Headline exactly as published &mdash; a tax, lending or housing change at home⟧</h4>
+          <p>⟦Our one-line takeaway: what changes for buyers, and from when⟧</p>
+          <a href="⟦link to the article⟧" target="_blank" rel="noopener">⟦domain⟧ &#8599;</a>
+        </article>
+        <article class="wnx-clip" style="--d:.4s">
+          <div class="wnx-mast"><span class="wnx-o">⟦Publication⟧</span><time>⟦date⟧</time></div>
+          <h4>⟦Headline exactly as published &mdash; your buyers&rsquo; own media covering the client, the operator or the area⟧</h4>
+          <p>⟦Our one-line takeaway: their name is already in your buyers&rsquo; feed⟧</p>
+          <a href="⟦link to the article⟧" target="_blank" rel="noopener">⟦domain⟧ &#8599;</a>
+        </article>
+    </div>
+
+    <div class="wnx-stats rv" aria-label="The numbers, with sources">
+      <div class="wnx-s" style="--d:.0s"><b>⟦N.NM⟧</b><span>⟦How many of your buyers went there last year, in one line⟧</span><small>⟦Source⟧</small></div>
+      <div class="wnx-s" style="--d:.06s"><b>⟦+N%⟧</b><span>⟦How much that has grown, and against which year⟧</span><small>⟦Source⟧</small></div>
+      <div class="wnx-s" style="--d:.12s"><b>⟦#N⟧</b><span>⟦Where the destination ranks among your buyers&rsquo; trips⟧</span><small>⟦Source &middot; period⟧</small></div>
+    </div>
+    <div class="wnx-src">General information only &mdash; not tax, legal or financial advice. Nothing here is a forecast of prices or returns.</div>
+    <div class="note"><b>Three numbers, then the proof</b>Say only the line under each number. Then drop to the clippings: <b>&ldquo;this isn&rsquo;t us saying it &mdash; it&rsquo;s ⟦the publications on the cards⟧.&rdquo;</b> One per column is enough: the demand, the push from home, the new rules. Point at the last one: <b>&ldquo;and that&rsquo;s ⟦an outlet your buyers read⟧ writing about ⟦Tidewater, Kestrel or the area⟧. Your name is already in their feed.&rdquo;</b> Only say it if that clipping is real. Close on the three numbers: <b>&ldquo;⟦one line that sums up the three numbers⟧. That&rsquo;s who we advertise to for Kestrel Bay Resort.&rdquo;</b></div>
+  </div>
+</section>

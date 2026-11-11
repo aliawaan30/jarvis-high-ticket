@@ -1,0 +1,303 @@
+<section class="slide" id="leadform">
+<style>
+  /* OPTIONAL MODULE: the enquiry form, exactly as it runs. Three paginated screens, then the card the sales team receives.
+     The live score needs the SCORES block in optional/SCORES.js.txt merged into src/script.js (see optional/README.md).
+     Every data-v below must match facts.md, the film and the SCORES keys character for character. */
+  #leadform .wrap { max-width:1180px; }
+  #leadform .head { max-width:920px; }
+  #leadform .taphint { display:flex; align-items:center; justify-content:center; gap:7px; margin:0 0 14px;
+    font-size:10px; letter-spacing:.2em; text-transform:uppercase; font-weight:600; color:var(--teal); }
+  #leadform .taphint i { width:14px; height:14px; border:1.5px solid var(--teal); border-radius:50%;
+    position:relative; animation:lfoRing 2.4s ease-out infinite; }
+  #leadform .taphint i::after { content:''; position:absolute; inset:3px; border-radius:50%; background:var(--teal); }
+  @keyframes lfoRing { 0%,60%,100%{ box-shadow:0 0 0 0 rgba(19,40,58,.4);} 30%{ box-shadow:0 0 0 7px rgba(19,40,58,0);} }
+
+  /* three screens → the arrow → the card */
+  #leadform .lfgrid { display:grid; grid-template-columns:1fr 1fr 1fr 62px 1.45fr; gap:0 12px;
+    align-items:start; max-width:none; margin:0; }
+  #leadform .lfarrow { display:flex; flex-direction:column; align-items:center; gap:9px;
+    width:100%; max-width:none; margin-top:150px; }
+  #leadform .lfarrow .ln { position:relative; width:100%; height:2px;
+    background:linear-gradient(90deg, rgba(19,40,58,.25), var(--teal)); }
+  #leadform .lfarrow .ln::after { content:''; position:absolute; right:0; top:50%;
+    transform:translateY(-50%) rotate(45deg); width:8px; height:8px;
+    border-top:2px solid var(--teal); border-right:2px solid var(--teal); }
+  #leadform .lfarrow .ln i { position:absolute; top:-2.5px; left:0; width:7px; height:7px; border-radius:50%;
+    background:var(--sand); box-shadow:0 0 10px rgba(181,122,46,.9); animation:lfoRun 3.4s ease-in-out infinite; }
+  @keyframes lfoRun { 0%{left:0;opacity:0} 12%{opacity:1} 78%{opacity:1} 90%,100%{left:calc(100% - 7px);opacity:0} }
+  #leadform .lfarrow b { font-size:8px; letter-spacing:.18em; text-transform:uppercase; color:var(--taupe);
+    font-weight:600; text-align:center; line-height:1.5; }
+
+  /* the phones, sized so three fit side by side */
+  #leadform .phone { border-radius:13px; }
+  #leadform .phh { padding:9px; }
+  #leadform .phh .t { font-size:11px; }
+  #leadform .phi { aspect-ratio:16/5; }
+  #leadform .phb { padding:9px 10px 11px; }
+  #leadform .phb h4 { font-size:10.5px; line-height:1.3; }
+  #leadform .phb .s { font-size:8.5px; line-height:1.4; margin-top:3px; }
+  #leadform .q { margin-top:8px; }
+  #leadform .q .ql { font-size:9px; margin-bottom:3px; }
+  #leadform .opt { padding:5px 7px; font-size:8.6px; margin-bottom:3.5px; gap:6px; }
+  #leadform .opt .dt { width:11px; height:11px; padding:0; }
+  #leadform .opt.sel .dt { border-width:3.5px; }
+  #leadform .go { padding:7px; font-size:10.5px; margin-top:9px; }
+  #leadform .go.alt { background:#fff; color:#0866FF; border:1px solid #0866FF; }
+  #leadform .phv { font-size:7.6px; line-height:1.4; margin-top:7px; text-align:center; }
+
+  /* the form's own progress bar, one per screen */
+  #leadform .stepbar { padding:7px 10px 0; }
+  #leadform .stepbar .sl { display:flex; justify-content:space-between; align-items:baseline;
+    font-size:7px; letter-spacing:.18em; text-transform:uppercase; font-weight:700; color:#65676B; }
+  #leadform .stepbar .tr { height:3px; border-radius:3px; background:#E4E6EB; margin-top:5px; overflow:hidden; }
+  #leadform .stepbar .tr i { display:block; height:100%; border-radius:3px; background:#0866FF; }
+
+  /* screen three: the details the platform prefills, each confirmed with a tick */
+  #leadform .fld { margin-top:8px; }
+  #leadform .fld .fk { font-size:7.6px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; color:#65676B; }
+  #leadform .fld .fv { display:flex; align-items:center; gap:7px; border:1px solid #CED0D4; border-radius:7px;
+    padding:6px 8px; margin-top:3px; background:#F7F8FA; font-size:9.2px; color:#050505; }
+  #leadform .fld .fv em { font-style:normal; margin-left:auto; flex:0 0 auto; width:13px; height:13px;
+    border-radius:50%; background:#0866FF; position:relative; }
+  #leadform .fld .fv em::after { content:''; position:absolute; left:3.6px; top:4px; width:5px; height:2.4px;
+    border-left:1.5px solid #fff; border-bottom:1.5px solid #fff; transform:rotate(-45deg); }
+  #leadform .cons { display:flex; align-items:flex-start; gap:6px; margin-top:9px; font-size:7.8px; line-height:1.45; color:#3d4148; }
+  #leadform .cons i { flex:0 0 auto; width:11px; height:11px; border-radius:3px; background:#0866FF; position:relative; margin-top:1px; }
+  #leadform .cons i::after { content:''; position:absolute; left:2.6px; top:3px; width:4.6px; height:2.2px;
+    border-left:1.4px solid #fff; border-bottom:1.4px solid #fff; transform:rotate(-45deg); }
+  #leadform .revbox { margin-top:9px; border:1px solid #0866FF; background:#F5F9FF; border-radius:8px; padding:7px 9px 8px; }
+  #leadform .revbox b { display:block; font-size:8.4px; font-weight:700; color:#0866FF; letter-spacing:.04em; }
+  #leadform .revbox span { display:block; font-size:8px; line-height:1.5; color:#3d4148; margin-top:3px; }
+  #leadform .phpriv { font-size:7.4px; color:#8a8d91; margin-top:7px; text-align:center; }
+
+  /* the enquiry card the sales team receives */
+  #leadform .enq { position:relative; border-radius:16px; overflow:hidden; color:#EDEAE2;
+    background:linear-gradient(155deg, #24352F 0%, #1B2A30 45%, #14202A 100%);
+    box-shadow:0 3px 8px rgba(20,32,42,.22), 0 26px 60px rgba(20,32,42,.34); }
+  #leadform .enq::before { content:''; position:absolute; inset:0; pointer-events:none;
+    background:radial-gradient(120% 80% at 88% 0%, rgba(181,122,46,.16), transparent 58%); }
+  #leadform .enq .eqh { display:flex; align-items:center; gap:9px; padding:11px 16px;
+    background:rgba(0,0,0,.22); border-bottom:1px solid rgba(237,234,226,.09); position:relative; }
+  #leadform .enq .eqh .wa { width:9px; height:9px; border-radius:50%; background:#37C978;
+    box-shadow:0 0 0 0 rgba(55,201,120,.5); animation:lfoPulse 2.1s infinite; }
+  @keyframes lfoPulse { 70%{box-shadow:0 0 0 10px rgba(55,201,120,0);} 100%{box-shadow:0 0 0 0 rgba(55,201,120,0);} }
+  #leadform .enq .eqh .who { font-size:9px; letter-spacing:.22em; text-transform:uppercase; color:rgba(237,234,226,.62); font-weight:600; }
+  #leadform .enq .eqh .lg { margin-left:auto; width:54px; height:auto; filter:none; opacity:1; }
+  #leadform .enq .eqb { padding:17px 18px 16px; position:relative; }
+  #leadform .enq .eyeb { display:flex; align-items:center; gap:10px; font-size:8.5px; letter-spacing:.26em;
+    text-transform:uppercase; color:var(--sand); font-weight:700; }
+  #leadform .enq .eyeb s { flex:1; height:1px; background:linear-gradient(90deg, rgba(181,122,46,.55), transparent); text-decoration:none; }
+  #leadform .enq .nme { font-family:'Playfair',serif; font-size:27px; line-height:1.1; margin:8px 0 2px; color:#fff; }
+  #leadform .enq .sub2b { font-size:9.5px; letter-spacing:.14em; text-transform:uppercase; color:rgba(237,234,226,.5); }
+  #leadform .enq .vchips { display:grid; grid-template-columns:1fr 1fr; gap:7px; margin-top:12px; }
+  #leadform .enq .vc { display:flex; align-items:center; gap:7px; background:rgba(55,201,120,.10);
+    border:1px solid rgba(55,201,120,.32); border-radius:8px; padding:7px 9px; min-width:0; }
+  #leadform .enq .vc i { flex:0 0 auto; width:14px; height:14px; border-radius:50%; background:#37C978; position:relative; }
+  #leadform .enq .vc i::after { content:''; position:absolute; left:4px; top:4.4px; width:5px; height:2.4px;
+    border-left:1.5px solid #0F1F19; border-bottom:1.5px solid #0F1F19; transform:rotate(-45deg); }
+  #leadform .enq .vc div { min-width:0; }
+  #leadform .enq .vc b { display:block; font-size:9.4px; font-weight:600; color:#F3F1EA; line-height:1.2;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  #leadform .enq .vc span { display:block; font-size:6.8px; letter-spacing:.14em; text-transform:uppercase;
+    color:rgba(85,214,146,.92); font-weight:700; margin-top:3px; }
+  #leadform .enq .rows { margin-top:12px; }
+  #leadform .enq .er2 { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:7.5px 0;
+    border-bottom:1px solid rgba(237,234,226,.09); }
+  #leadform .enq .er2:last-child { border-bottom:none; }
+  #leadform .enq .er2 .l { flex:0 0 auto; font-size:8.5px; letter-spacing:.2em; text-transform:uppercase; color:rgba(237,234,226,.42); font-weight:600; }
+  #leadform .enq .er2 .r { font-size:12px; font-weight:500; text-align:right; color:#F3F1EA; font-variant-numeric:tabular-nums; }
+  #leadform .enq .er2 .r.gold { color:var(--gold-lite, #E2B872); font-weight:600; }
+  #leadform .enq .lsc { display:inline-flex; align-items:center; gap:8px; }
+  #leadform .enq .lsc .sbar { display:inline-block; width:84px; height:5px; border-radius:4px; background:rgba(237,234,226,.16); overflow:hidden; }
+  #leadform .enq .lsc .sbar i { display:block; height:100%; border-radius:4px;
+    background:linear-gradient(90deg, var(--sand), var(--gold-lite, #E2B872)); transition:width .35s ease; }
+  #leadform .enq .lsc b { font-family:'Jost',sans-serif; font-size:13px; font-weight:600; color:var(--gold-lite, #E2B872); min-width:2ch; text-align:right; }
+  #leadform .enq .pri { display:inline-flex; align-items:center; gap:6px; padding:4px 11px 3px; border-radius:20px;
+    font-size:9px; letter-spacing:.16em; text-transform:uppercase; font-weight:700;
+    background:rgba(181,122,46,.16); border:1px solid rgba(181,122,46,.5); color:var(--gold-lite, #E2B872); }
+  #leadform .enq .pri i { width:5px; height:5px; border-radius:50%; background:var(--sand); }
+  #leadform .enq .eqf { margin:14px -18px -16px; padding:12px 18px 14px; background:rgba(0,0,0,.24);
+    border-top:1px solid rgba(237,234,226,.09); font-size:10px; line-height:1.55; color:rgba(237,234,226,.6); }
+  #leadform .enq .eqf b { color:var(--gold-lite, #E2B872); font-weight:600; }
+
+  /* the rebuttal, in three steps */
+  #leadform .vband { margin-top:26px; border:1px solid rgba(19,40,58,.24); border-radius:12px; overflow:hidden; background:var(--paper); }
+  #leadform .vband .vb-k { background:var(--teal); color:rgba(255,255,255,.74); font-size:8.5px;
+    letter-spacing:.28em; text-transform:uppercase; font-weight:700; padding:7px 18px 6px; }
+  #leadform .vband .vb-steps { display:grid; grid-template-columns:repeat(3,1fr); }
+  #leadform .vband .vb { padding:13px 18px 14px; border-right:1px solid var(--rule); }
+  #leadform .vband .vb:last-child { border-right:0; }
+  #leadform .vband .vb > b { font-family:'Playfair',serif; font-size:17px; color:var(--sand); line-height:1; font-weight:500; }
+  #leadform .vband .vb h6 { font-size:11.5px; font-weight:700; color:var(--ink); margin-top:5px; }
+  #leadform .vband .vb p { font-size:10.5px; line-height:1.6; color:var(--soft); margin-top:5px; }
+  #leadform .vband .vb p b { color:var(--ink); font-weight:600; }
+  #leadform .vfine { text-align:center; font-size:11.5px; line-height:1.6; color:var(--taupe); margin-top:12px; font-style:italic; }
+  #leadform .vfine b { color:var(--ink); font-style:normal; font-weight:600; }
+
+  @media (max-width:1100px){
+    #leadform .lfgrid { grid-template-columns:repeat(3,1fr); gap:16px 12px; }
+    #leadform .lfarrow { grid-column:1 / -1; margin:2px 0 0; }
+    #leadform .lfarrow .ln { width:2px; height:30px; background:linear-gradient(180deg, rgba(19,40,58,.25), var(--teal)); }
+    #leadform .lfarrow .ln::after { top:auto; bottom:0; right:50%; transform:translateX(50%) rotate(135deg); }
+    #leadform .lfarrow .ln i { display:none; }
+    #leadform .enq { grid-column:1 / -1; width:100%; max-width:440px; justify-self:center; }
+    #leadform .vband .vb-steps { grid-template-columns:1fr; }
+    #leadform .vband .vb { border-right:0; border-bottom:1px solid var(--rule); }
+    #leadform .vband .vb:last-child { border-bottom:0; }
+  }
+  @media (max-width:700px){
+    #leadform .lfgrid { grid-template-columns:minmax(0,1fr); justify-items:center; }
+    #leadform .phone { max-width:320px; }
+  }
+  @media (prefers-reduced-motion:reduce){
+    #leadform .lfarrow .ln i, #leadform .taphint i, #leadform .enq .eqh .wa { animation:none !important; }
+  }
+  @media print {
+    #leadform .wrap { zoom:.66; }
+    #leadform .head { margin-bottom:10px; }
+    #leadform .taphint { display:none; }
+    #leadform .lfgrid { grid-template-columns:1fr 1fr 1fr 62px 1.45fr !important; max-width:none; }
+    #leadform .lfarrow { grid-column:auto; margin-top:150px; }
+    #leadform .lfarrow .ln { width:100%; height:2px; }
+    #leadform .lfarrow .ln::after { top:50%; bottom:auto; right:0; transform:translateY(-50%) rotate(45deg); }
+    #leadform .lfarrow .ln i { display:none; }
+    #leadform .enq { grid-column:auto; max-width:none; box-shadow:none; }
+    #leadform .vband .vb-steps { grid-template-columns:repeat(3,1fr) !important; }
+    #leadform .vband .vb { border-right:1px solid var(--rule); border-bottom:0; }
+    #leadform .phone, #leadform .enq, #leadform .vband { break-inside:avoid; }
+  }
+</style>
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">The enquiry form &middot; exactly as it runs</div>
+      <h2>Six questions. <em>Then a code, before it counts.</em></h2>
+      <p><b>If you have run lead ads before, you already know the problem: a name, an email, and a number that never answers.</b> This form is the fix. Here it is screen by screen, as a buyer meets it inside Instagram. Six taps tell your sales team the suite, the purpose, the budget, the timing, the funding and whether they know Tidewater. Then the buyer confirms their name, mobile and email, prefilled from their own account. Then a <b>six-digit code goes to the mobile and another to the email.</b> No code, no enquiry, so every number that reaches your team answers.</p>
+      <div class="note"><b>Open on the objection &mdash; agree with it completely</b>Say it before they do: <b>&ldquo;If you&rsquo;ve run lead ads before, we&rsquo;d bet most of the leads were names, emails and numbers that ring out. That&rsquo;s not Facebook failing &mdash; it&rsquo;s a two-field form anyone can fill in by accident with their thumb.&rdquo;</b> If they tell you their own story, let them finish it &mdash; the more they say, the more this page is the answer. Then: &ldquo;So here&rsquo;s what we run instead.&rdquo; <b>Do this live &mdash; walk the three screens in order</b>Screens one and two: tap a couple of answers and let the card on the right rebuild. &ldquo;Suite, budget, timing, funding &mdash; your team knows all of it before they dial.&rdquo; Tap &ldquo;Just researching&rdquo; and let them watch the score drop and the priority change, then tap &ldquo;In the next 3 months&rdquo; back: &ldquo;that&rsquo;s why the score exists. Your team rings the call-first buyers within five minutes and follows up the rest in order.&rdquo; <b>Screen three &mdash; slow right down</b>&ldquo;Their details come from their own account and they confirm them. Then a code goes to the mobile and another to the email, and they enter both. No code, no enquiry.&rdquo; Finish on the honest part, said as a strength: <b>&ldquo;this gives you fewer enquiries than a form without codes. That&rsquo;s the point, and it&rsquo;s already inside the twenty-five dollars.&rdquo;</b></div>
+    </div>
+    <div class="taphint rv"><i></i>Tap the answers &mdash; the card updates live</div>
+    <div class="lfgrid rv">
+
+      <div class="phone">
+        <div class="phh"><span class="x">&#10005;</span><div class="t">Kestrel Bay Resort</div></div>
+        <div class="phi"><img src="assets/ph-hero-pool.jpg" alt="" style="object-position:50% 60%;"></div>
+        <div class="stepbar"><div class="sl"><span>Step 1 of 3 &middot; your suite</span><span>1/3</span></div><div class="tr"><i style="width:33%"></i></div></div>
+        <div class="phb">
+          <h4>Own a suite at Kestrel Bay Resort</h4>
+          <div class="s">Six quick questions, so our sales team calls you with the right prices and photos.</div>
+          <div class="q">
+            <div class="ql">1. Which suite?</div>
+            <div class="opt sel" data-q="0" data-v="Garden Suite · from US$165k"><span class="dt"></span>Garden Suite &middot; from US$165k</div>
+            <div class="opt" data-q="0" data-v="Ocean Suite · US$260k"><span class="dt"></span>Ocean Suite &middot; US$260k</div>
+            <div class="opt" data-q="0" data-v="Not sure yet"><span class="dt"></span>Not sure yet</div>
+          </div>
+          <div class="q">
+            <div class="ql">2. What&rsquo;s it for?</div>
+            <div class="opt" data-q="1" data-v="Rental income"><span class="dt"></span>Rental income</div>
+            <div class="opt" data-q="1" data-v="Holidays"><span class="dt"></span>Holidays</div>
+            <div class="opt sel" data-q="1" data-v="A bit of both"><span class="dt"></span>A bit of both</div>
+          </div>
+          <div class="q">
+            <div class="ql">3. Budget (AUD)?</div>
+            <div class="opt sel" data-q="2" data-v="Around A$250k"><span class="dt"></span>Around A$250k</div>
+            <div class="opt" data-q="2" data-v="A$250k–A$400k"><span class="dt"></span>A$250k&ndash;A$400k</div>
+            <div class="opt" data-q="2" data-v="A$400k+"><span class="dt"></span>A$400k+</div>
+          </div>
+          <div class="go alt">Continue</div>
+          <div class="phv">Answers save as they tap. Nothing is sent until the last screen.</div>
+        </div>
+      </div>
+
+      <div class="phone">
+        <div class="phh"><span class="x">&#10005;</span><div class="t">Kestrel Bay Resort</div></div>
+        <div class="stepbar"><div class="sl"><span>Step 2 of 3 &middot; your timing</span><span>2/3</span></div><div class="tr"><i style="width:66%"></i></div></div>
+        <div class="phb">
+          <div class="q" style="margin-top:4px;">
+            <div class="ql">4. When are you looking to buy?</div>
+            <div class="opt sel" data-q="3" data-v="In the next 3 months"><span class="dt"></span>In the next 3 months</div>
+            <div class="opt" data-q="3" data-v="3–6 months"><span class="dt"></span>3&ndash;6 months</div>
+            <div class="opt" data-q="3" data-v="Just researching"><span class="dt"></span>Just researching</div>
+          </div>
+          <div class="q">
+            <div class="ql">5. How would you fund it?</div>
+            <div class="opt sel" data-q="4" data-v="Savings or equity, ready"><span class="dt"></span>Savings or equity, ready</div>
+            <div class="opt" data-q="4" data-v="Arranging finance"><span class="dt"></span>Arranging finance</div>
+            <div class="opt" data-q="4" data-v="Selling something first"><span class="dt"></span>Selling something first</div>
+          </div>
+          <div class="q">
+            <div class="ql">6. Have you stayed at a Tidewater venue?</div>
+            <div class="opt sel" data-q="5" data-v="Many times"><span class="dt"></span>Many times</div>
+            <div class="opt" data-q="5" data-v="Once or twice"><span class="dt"></span>Once or twice</div>
+            <div class="opt" data-q="5" data-v="Not yet"><span class="dt"></span>Not yet</div>
+          </div>
+          <div class="go alt">Continue</div>
+          <div class="phv">Last screen next: your details, then send.</div>
+        </div>
+      </div>
+
+      <div class="phone">
+        <div class="phh"><span class="x">&#10005;</span><div class="t">Kestrel Bay Resort</div></div>
+        <div class="stepbar"><div class="sl"><span>Step 3 of 3 &middot; your details</span><span>3/3</span></div><div class="tr"><i style="width:100%"></i></div></div>
+        <div class="phb">
+          <h4>Your contact details</h4>
+          <div class="s">Prefilled from your Instagram account. Tap any field to change it.</div>
+          <div class="fld"><div class="fk">Full name</div><div class="fv">Sarah Mitchell<em></em></div></div>
+          <div class="fld"><div class="fk">Mobile number</div><div class="fv">0491 &bull;&bull;&bull; 156<em></em></div></div>
+          <div class="fld"><div class="fk">Email</div><div class="fv">s&bull;&bull;&bull;&bull;&bull;&bull;@gmail.com<em></em></div></div>
+          <div class="cons"><i></i><span>I agree to Kestrel Developments contacting me by phone, text and email about Kestrel Bay Resort.</span></div>
+          <div class="revbox">
+            <b>Review before you send</b>
+            <span>Check the details above. When you press Confirm &amp; send, we text a six-digit code to your mobile and email one to you. Enter both and your enquiry goes through.</span>
+          </div>
+          <div class="go">Confirm &amp; send</div>
+          <div class="phpriv">Privacy Policy &middot; Kestrel Developments</div>
+        </div>
+      </div>
+
+      <div class="lfarrow">
+        <div class="ln"><i></i></div>
+        <b>Both codes<br>entered</b>
+      </div>
+
+      <div class="enq">
+        <div class="eqh">
+          <span class="wa"></span>
+          <span class="who">Your CRM &middot; just now</span>
+          <img class="lg" src="assets/brand-logo-light.png" alt="Kestrel Bay Resort">
+        </div>
+        <div class="eqb">
+          <div class="eyeb">New verified enquiry<s></s>Kestrel Bay</div>
+          <div class="nme">Sarah Mitchell</div>
+          <div class="sub2b">Perth, WA &middot; via Instagram</div>
+          <div class="vchips">
+            <div class="vc"><i></i><div><b>0491 &bull;&bull;&bull; 156</b><span>Mobile verified by code</span></div></div>
+            <div class="vc"><i></i><div><b>s&bull;&bull;&bull;&bull;&bull;&bull;@gmail.com</b><span>Email verified by code</span></div></div>
+          </div>
+          <div class="rows">
+            <div class="er2"><span class="l">Suite</span><span class="r" id="k0">Garden Suite &middot; from US$165k</span></div>
+            <div class="er2"><span class="l">For</span><span class="r" id="k1">A bit of both</span></div>
+            <div class="er2"><span class="l">Budget</span><span class="r" id="k2">Around A$250k</span></div>
+            <div class="er2"><span class="l">Timeframe</span><span class="r gold" id="k3">In the next 3 months</span></div>
+            <div class="er2"><span class="l">Funding</span><span class="r gold" id="k4">Savings or equity, ready</span></div>
+            <div class="er2"><span class="l">Stayed at Tidewater</span><span class="r gold" id="k5">Many times</span></div>
+            <div class="er2"><span class="l">Lead score</span><span class="r"><span class="lsc"><span class="sbar"><i id="kScoreBar" style="width:88%"></i></span><b id="kScoreN">88</b></span></span></div>
+            <div class="er2"><span class="l">Priority</span><span class="r"><span class="pri" id="kPri"><i></i>Call first</span></span></div>
+          </div>
+          <div class="eqf">Both details were confirmed by code before this enquiry existed. It reached your CRM and your sales team&rsquo;s phones the same minute, so <b>a call-first buyer is rung within five minutes.</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vband rv">
+      <div class="vb-k">Why every number that reaches your team answers</div>
+      <div class="vb-steps">
+        <div class="vb"><b>01</b><h6>Prefilled, then confirmed by the buyer</h6>
+          <p>The name, mobile and email come from the buyer&rsquo;s own Facebook or Instagram account, and they confirm them on the last screen. <b>Nothing is typed with a thumb</b>, so nothing is mistyped.</p></div>
+        <div class="vb"><b>02</b><h6>A code to the mobile and the email</h6>
+          <p>Press Confirm &amp; send and a six-digit code goes to the mobile and another to the email. <b>No code, no enquiry.</b> That is why every number your team rings answers.</p></div>
+        <div class="vb"><b>03</b><h6>Scored before your team sees it</h6>
+          <p>All six answers arrive with a lead score, so <b>your team calls the call-first buyers within five minutes</b> and follows up the rest in order.</p></div>
+      </div>
+    </div>
+    <div class="vfine rv">This delivers <b>fewer</b> enquiries than a form without codes. That is the point, and it is already priced into the <span data-live="cpe">$25</span>.</div>
+  </div>
+</section>

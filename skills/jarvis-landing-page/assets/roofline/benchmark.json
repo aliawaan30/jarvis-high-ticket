@@ -1,0 +1,37 @@
+{
+  "status": "Blake-approved visual layout; 5 November copy adaptation and prototype only",
+  "purpose": "Reuse layout, hierarchy and application interaction; replace business-specific content from saved offer.",
+  "replace_for_each_member": [
+    "identity and brand",
+    "niche callout",
+    "outcome and approved guarantee",
+    "mechanism subheadline",
+    "video or no-video mode",
+    "qualification rules",
+    "calendar",
+    "CRM submission and booking events",
+    "contact/privacy details",
+    "submission success, review and outside-scope outcomes"
+  ],
+  "limits": [
+    "Do not inherit the numeric promise for other offers.",
+    "The included form validates inputs and routes to an honest review preview; it does not implement actual qualification, save leads or connect a calendar. Replace the prototype completion handler before production.",
+    "confirmation.html is historically named; it is the qualified pre-booking page. Post-booking confirmation is a separate skill.",
+    "Meta non-affiliation footer wording is optional, not a verified universal requirement."
+  ],
+  "checks": [
+    "Headline and subheadline match saved offer.",
+    "One fit question per screen; final name/email/phone together.",
+    "Back preserves answers and invalid input cannot advance.",
+    "Qualification routes match agreed rules.",
+    "CRM stores a test submission exactly once.",
+    "Calendar creates the intended booking.",
+    "Post-booking page and messages trigger only after actual booking.",
+    "Mobile readability and no-VSL variant checked."
+  ],
+  "example_headline": "We’ll Get You 5 More Roofing Jobs in 30 Days. Or We Work for Free.",
+  "claim_status": "Illustrative target from 4 November call, not verified results or an approved student guarantee. Check pipeline, sales capacity and remedy before real use.",
+  "canonical_booking_page": "booking.html",
+  "legacy_alias": "confirmation.html is a pre-booking compatibility copy, not a post-booking thank-you page",
+  "calendar_section": "Required: actual calendar embed and fallback link once supplied. Local review may show a labelled integration slot, with no pretend available times."
+}
