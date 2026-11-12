@@ -1,46 +1,88 @@
 ---
 name: jarvis-proposal-builder
-description: Create a short private AI implementation sales proposal after discovery, with executive overview, buyer problems and impact, proposed build, timeline and costs. Keep any demonstration in a separate file or link.
+description: Write a one page client proposal after a sales call, in one fixed premium design. Use when the student says "write the proposal for [business]" or asks for a proposal, quote or pricing document for a prospect. Reads the deal from Agency HQ, suggests a price from the course method, renders the page and saves it back to Agency HQ.
 ---
 
-# Plain sales proposal
+# Proposal builder
 
-Revised 5 November 2026 from Blake's November corrections and call. The default is a concise scrolling document that can be read together on a sales call, not a marketing slide deck. Aim for one readable A4 page when the scope fits. If necessary use a second page or a separate scope appendix rather than shrinking text or omitting important terms. No fixed eight-page structure.
+Version: 2026-11-11.1
 
-Student prompt: **“Run the proposal skill for this prospect using my saved discovery and approved scope. Keep the demo separate.”**
+Student prompt: **"Write the proposal for [business]."**
 
-## Read the actual discovery
+## Before you start
 
-Reuse the prospect's saved discovery, offer, feasibility/scoping notes and approved commercial terms. Read [the input checklist](assets/call-two/CALL-ONE-INPUTS.md) for missing facts. Establish the business, buyer, incidents, workaround, volume, current cost and desired change. Do not ask for known inputs again or restart niche research.
+1. Agency HQ must exist and you must have its app ID saved. If not, stop and say: "I need Agency HQ set up first. Install the Agency HQ skill and say 'set up my CRM'."
+2. Find the deal for this business in Agency HQ. If there is none, ask the student for the business name and create nothing until they confirm.
+3. Check the tables' fields before you write anything. Write only to Agency HQ, never to another app.
 
-Use buyer-confirmed figures with sources, units and period. Separate time/capacity released from cash savings and revenue/contribution. Do not add overlapping benefits or assume all wages disappear. If figures are missing, explain the actual consequence without inventing a cost. Record missing commercial decisions in private review notes.
+## Step 1: pick the mode
 
-Confirm the proposed workflows, integration access, human approvals, dependencies, exclusions, delivery estimate, build/support/tool costs, currency, tax and payment terms. No automatic percentage pricing, arbitrary timeline, invented quote or guarantee. For a whole-build proposal after call one, write as if the project has not started; existing build records may inform scope, not turn it into a progress update.
+1. **Quick mode.** The student sells a fixed offer (for example an AI receptionist) and the deal has no solution design. Build from the approved offer in the Offer table. This must be fast enough to use live on call one.
+2. **Custom mode.** The deal has a call brief and a solution design. Build from those.
 
-## Client document
+Tell the student which mode you picked in one line.
 
-Use [the short template](assets/call-two/PROPOSAL-TEMPLATE.md):
+## Step 2: gather the facts
 
-- **[Project] proposal / executive overview:** company, proposed build, problem and intended result. Two or three clear sentences.
-- **The problem and its impact:** two to four specific buyer problems and the consequences. Include one transparent cost calculation if the underlying inputs are confirmed. Cost comes before solution.
-- **Proposed build out:** three to five concrete included parts, each tied to the problem it fixes. Include important human approvals, integrations and scope boundary. Explain a workflow in one sentence when useful, without building an interactive demo into the document.
-- **Timeline:** agreed stages, reviews, testing, training, handover and what the client must provide. No invented dates.
-- **Costs and next step:** approved fee, recurring support, additional software/usage, currency/tax, payment milestones and clear next decision. Keep material terms readable; use a separate agreement for the full legal contract.
+Read from Agency HQ: the call brief, the solution design (custom mode), the approved offer, the student's brand (logo, main colour) and business details (name, city, email, phone).
 
-These are reading sections within a short document, not a request for one slide per heading. The buyer should quickly understand the problem, impact, change, price and how to proceed. Use plain headings such as “Proposed build out”, “Timeline” and “Costs”. No agency history, slogans, buzzwords, package theatrics or repeated conclusions.
+You need all of these. Never invent any of them:
 
-## Demonstration is a separate asset
+1. The client's business name and contact name.
+2. One or two problems, each with a number the owner gave on the call.
+3. The yearly cost of the problem the owner agreed to out loud, and how it was worked out. If there is no agreed number, leave the cost graphic out.
+4. What gets built: two to four parts, each tied to a problem.
+5. Timeline stages and what the client must provide.
+6. Price, currency, payment terms, monthly running costs, support.
 
-If a demo exists or is requested, deliver it separately from the proposal. Use [demo patterns](references/demo-patterns.md) to choose one useful workflow with a meaningful exception. Provide its own local file/link and status: illustrative mock-up or connected test. Open it separately during the call; a simple optional link in the document is enough. Do not embed players, animated walkthroughs, fake dashboards or a mandatory demo section in the proposal.
+Ask for everything missing in **one** message, as a short numbered list. Then wait.
 
-A missing demo does not justify inventing one or expanding a short proposal. Prototype behaviour is not delivered functionality or client proof. Any live-tool demo must use authorised test records and avoid unintended sends/writes.
+Use the client's local currency. Keep time freed up separate from cash saved. Never add benefits that overlap.
 
-## Format and review
+## Step 3: suggest the price (student approves)
 
-Default to clean scrolling HTML or the user's requested document format, with separate [presenter notes](assets/call-two/PRESENTER-NOTES.md). A one-page PDF should look like a readable document, not a compressed slide deck. Use restrained typography and spacing; a simple cost graphic is optional only when it makes verified facts clearer. Keep calculators, assumptions, margin, editing controls and drafting instructions private.
+Skip this if the student already gave a price.
 
-Check the proposal against the discovery and approved terms, read it as the owner, inspect desktop/mobile and print output where supplied. Check the separate demo only if one is delivered. Flag missing scope/price decisions privately; an incomplete internal draft is not ready to issue. Record functional, buyer-clarity and commercial review separately. Do not send or publish without authorisation, or call it a proven closing template from a rendering test.
+1. Suggest a build price of 5 to 10 percent of the agreed yearly problem cost. Show the range and your suggestion.
+2. Check it against the build cost in the solution design. If 5 percent does not cover the build cost with margin, say so plainly: the problem is too small or the build is too big.
+3. Show the monthly running costs separately.
+4. Ask: "Use [price], or tell me the number you want." Do not render until they approve.
 
-## Source precedence
+## Step 4: write the content
 
-Blake's 3-5 November direction supersedes the old eight-section deck and embedded demo default: executive overview, actual pain/impact, proposed build, timeline and costs; demo outside the document. The earlier proposal-deck, Ian Koniak video and supplied PDF inform buyer-story thinking only. Their layouts, prices and claims are not mandatory.
+Plain words a business owner uses. No AI jargon, slogans, agency history or hype. No em or en dashes. Stay inside these limits or the page will not fit:
+
+1. Title: up to 8 words, names the system, not the agency.
+2. Overview: up to 60 words. The problem in their words, what we will build, the result.
+3. Problems: 1 or 2. Each has a number, a short unit and up to 25 words.
+4. Calculation: up to 70 words, using only the owner's figures, ending with when they gave them.
+5. Build parts: 2 to 4, each up to 25 words. Then what it connects to, what people still decide, and what is not included.
+6. Timeline: 2 to 4 stages, each up to 12 words, plus what we need from the client.
+7. Next step: up to 35 words. Sign the agreement, pay the deposit, book the kickoff.
+
+No proof section, no guarantee box, no demo link, no accept button. The proposal is one page.
+
+## Step 5: render it
+
+1. Write the content to `proposal.json` in the same shape as `assets/example-proposal.json`.
+2. Run `python3 assets/render_proposal.py proposal.json proposal-[business].html`.
+3. If it prints "NOT RENDERED", fix each listed problem and run it again. Never edit the HTML by hand and never change the design.
+4. Show the student the page and ask: "Anything to change before you send it?"
+
+## Step 6: save and follow up
+
+1. Save to the Proposals table: deal, version, price, currency, date, status "draft", and the file.
+2. Put the link on the deal's proposal_link.
+3. Only when the student says they have sent it: set the status to "sent", move the deal to "proposal sent", and add a due item in 2 days: "Follow up [business] on the proposal."
+4. If they change anything later, save it as a new version. Keep the old one.
+
+## Step 7: presenter notes
+
+Give the student the call two notes from `references/presenter-notes.md`, filled with this client's words and numbers. These are private. They never go in the proposal.
+
+## Rules
+
+1. Every number comes from the owner or the student. If you calculated it, show how.
+2. Nothing marked proposed goes to the client until the student approves it.
+3. Never send the proposal yourself.
+4. If the deal or offer changes, the proposal is out of date. Say so and offer a new version.

@@ -14,3 +14,18 @@ Added:
 - CHANGES-ALI.md
 
 Archived: none yet.
+
+## Batch 2a, 11 Nov 2026
+Archived (moved, not deleted):
+- skills/jarvis-proposal-builder (Blake's 5 Nov version) to archive/proposal-builder-blake-2026-11-05/
+
+Added (replaces the archived version):
+- skills/jarvis-proposal-builder/SKILL.md (version 2026-11-11.1, draft, tested locally, not yet on Base44)
+- skills/jarvis-proposal-builder/assets/render_proposal.py
+- skills/jarvis-proposal-builder/assets/example-proposal.json
+- skills/jarvis-proposal-builder/references/presenter-notes.md
+- skills/jarvis-proposal-builder/references/discovery-checklist.md
+
+Updated:
+- docs/decisions/2026-11-11.md (proposal decisions)
+- CHANGES-ALI.md

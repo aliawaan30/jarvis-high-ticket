@@ -1,0 +1,30 @@
+{
+  "agency": {"name": "Ridgeline AI", "brand_color": "#1D4ED8", "logo_url": "", "location": "Austin TX", "contact": "sam@ridgeline.ai, (512) 555 0148"},
+  "client": {"business": "Coastline Plumbing", "contact_name": "Dave Morales"},
+  "prepared_by": "Sam Carter",
+  "date": "11 November 2026",
+  "title": "Missed call and job intake system",
+  "overview": "Coastline misses after hours calls and re-types every job into Jobber by hand. We will install an AI receptionist that answers those calls, books suitable jobs and creates them in Jobber, with a short summary for you each morning.",
+  "problems": [
+    {"number": "28", "unit": "new customer calls missed a month", "text": "Calls after 5pm go to voicemail. Most of those customers ring the next plumber."},
+    {"number": "12 hours", "unit": "a week re-typing call notes", "text": "Every enquiry is copied into Jobber by hand, so quotes go out a day late."}
+  ],
+  "calc": "28 calls x 20% that become jobs x $1,400 average job = about $94,000 a year in potential work. Office time: 12 hours x $32 an hour = about $20,000 a year, time freed up rather than cash saved. Figures from our call on 6 November.",
+  "problem_cost_year": 114000,
+  "build": [
+    {"name": "After hours receptionist", "text": "Answers missed and after hours calls on your number, takes the details and books suitable jobs."},
+    {"name": "Job intake", "text": "Every booking becomes a Jobber job with the caller's details, so nobody re-types notes."},
+    {"name": "Morning summary", "text": "One message at 7am with new jobs, urgent calls and anything that needs a person."}
+  ],
+  "connects": "your phone line, Google Calendar and Jobber",
+  "people_decide": "quotes and emergency call outs",
+  "not_included": "website, ads or quoting",
+  "timeline": [
+    {"when": "Week 1", "name": "Agree and connect", "text": "Call script, booking rules and access."},
+    {"when": "Week 2", "name": "Build and test", "text": "Tested on sample calls, not live customers."},
+    {"when": "Week 3", "name": "Train and go live", "text": "Your team tries it, then we switch it on."}
+  ],
+  "needs": "phone forwarding access, a Jobber login and 10 example calls.",
+  "costs": {"build_price": 7500, "currency": "USD", "payment": "50% to start, 50% at go live", "running_monthly": 290, "running_what": "calls, number and hosting", "support": "First 30 days included"},
+  "next_step": "sign the one page agreement, pay the $3,750 deposit and we book the kickoff call for next week."
+}
