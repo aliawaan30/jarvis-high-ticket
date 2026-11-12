@@ -56,3 +56,9 @@ The strategy call selects one niche + problem + system. Technical review confirm
 Before advancing a workflow, distinguish 'software can do it' from 'a business has a meaningful reason to buy our implementation'. Seek both existing implementations and buyer-side symptoms/spend/urgency; if either remains weak, deepen the research or mark it unready instead of filling a quota. Beginner-friendly means understandable and bounded, not merely cheap configuration. Do not force complex regulated niches or default to five admin-efficiency services. Compare commercial outcomes as well as labour savings where causation is plausible; separate recovered revenue, contribution and capacity.
 
 The next deliverable is an opportunity brief for offer creation, not a finished offer. Handoff must include buyer, observed pain, desired result, actual workflow, existing alternatives, evidence, economics, delivery route and acquisition route. Then use the offer-creation process to develop mechanism, packaging and risk reversal before commissioning a funnel. If a requested test renders a weak hypothesis anyway, label it as an intentional negative test internally, never as a recommended student offer.
+
+## HQ (Jarvis 2.0)
+In Jarvis 2.0, "saved offer", "offer brief", "funnel record", "campaign record", "project record" and "CRM" all mean the HQ tables in the jarvis-hq skill. Do not keep a second copy anywhere else.
+Read first: Offer. Do not ask the member for anything HQ already holds.
+Write when done: Offer: shortlisted options as draft rows, active set to no until approved.
+After writing, read the rows back and confirm they saved before you tell the member it is done.

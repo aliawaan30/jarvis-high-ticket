@@ -23,3 +23,9 @@ Extract the buyer, outcome, mechanism, timeframe, risk reversal, proof and quali
 Recommend a meaningful adaptation for the same niche or a similar mechanism for a different niche with the relevant problem and delivery route. Changing a niche label is not enough. Do not copy branding or unsupported claims.
 
 Return one short decision card: observed offer and links; activity evidence and limits; proposed niche; plain-English problem/solution; adaptation; one next validation action. Save detailed source records separately. If access is blocked, request an export or manual inspection rather than claiming to have viewed it. Hand the chosen idea to `jarvis-offer-creation`. No campaigns launched.
+
+## HQ (Jarvis 2.0)
+In Jarvis 2.0, "saved offer", "offer brief", "funnel record", "campaign record", "project record" and "CRM" all mean the HQ tables in the jarvis-hq skill. Do not keep a second copy anywhere else.
+Read first: Offer (niche and problem, if any). Do not ask the member for anything HQ already holds.
+Write when done: Offer: research links and a draft offer idea with active set to no until the member approves it.
+After writing, read the rows back and confirm they saved before you tell the member it is done.

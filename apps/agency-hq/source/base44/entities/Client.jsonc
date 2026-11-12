@@ -1,0 +1,63 @@
+{
+  "name": "Client",
+  "type": "object",
+  "properties": {
+    "business": {
+      "type": "string"
+    },
+    "account_id": {
+      "type": "string"
+    },
+    "what": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "Kickoff",
+        "Build",
+        "Test",
+        "Handover",
+        "Live"
+      ],
+      "default": "Kickoff"
+    },
+    "go_live_date": {
+      "type": "string"
+    },
+    "build_price": {
+      "type": "number"
+    },
+    "monthly_retainer": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "business"
+  ],
+  "rls": {
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

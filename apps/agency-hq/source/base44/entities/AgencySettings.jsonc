@@ -1,0 +1,65 @@
+{
+  "name": "AgencySettings",
+  "type": "object",
+  "properties": {
+    "inbox_email": {
+      "type": "string"
+    },
+    "daily_cap": {
+      "type": "number"
+    },
+    "send_window_start": {
+      "type": "number"
+    },
+    "send_window_end": {
+      "type": "number"
+    },
+    "postal_address": {
+      "type": "string"
+    },
+    "opt_out_line": {
+      "type": "string"
+    },
+    "booking_page": {
+      "type": "string"
+    },
+    "brief_time": {
+      "type": "string"
+    },
+    "brief_days": {
+      "type": "string"
+    },
+    "working_hours": {
+      "type": "string"
+    },
+    "do_not_contact": {
+      "type": "string"
+    },
+    "retell_public_key": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "rls": {
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

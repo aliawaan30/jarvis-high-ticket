@@ -15,12 +15,13 @@ The plan never invents. Everything in it traces to something the member pasted i
 
 ## Inputs
 
-Ask for all four. Proceed with what is given, and record what is missing in the unknowns section.
+Ask for all of these. Proceed with what is given, and record what is missing in the unknowns section.
 
 1. Call one notes or transcript, the call one brief built from them, and the agreed annual cost of the problem.
 2. Call two notes, including anything added, asked for or pushed back on at the end.
 3. The proposal exactly as presented, with the prescribed solution, the deliverables, exclusions and the price.
 4. Client materials: screenshots of current systems, exports, the list of tools they use, the roles of the people who will use the system.
+5. The solution design from jarvis-solution-design, if one was made before call two. Reuse its integration statuses, build route and riskiest assumption. Anything it marked unknown stays unknown here until the client confirms it.
 
 Optional: the developer budget and the start date. Without them, leave the budget split and dates as unknowns rather than inventing figures.
 
@@ -58,3 +59,9 @@ Offer three follow ups, do not run them unasked:
 - Start a build log with one row per module (Module 7, Build It With Jarvis).
 
 When the member reports a module built or a test passed, update the build log, not the plan. The plan changes only when the client changes the scope, and then the change is dated and the follow on list or the budget is updated with it.
+
+## HQ (Jarvis 2.0)
+In Jarvis 2.0, "saved offer", "offer brief", "funnel record", "campaign record", "project record" and "CRM" all mean the HQ tables in the jarvis-hq skill. Do not keep a second copy anywhere else.
+Read first: Deals, Calls, Proposals, the solution design. Do not ask the member for anything HQ already holds.
+Write when done: Clients: build route, milestones, go live date once the plan is approved. Deals: link to the build plan.
+After writing, read the rows back and confirm they saved before you tell the member it is done.

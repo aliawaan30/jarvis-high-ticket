@@ -1,0 +1,56 @@
+{
+  "name": "Mission",
+  "type": "object",
+  "properties": {
+    "number": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "locked",
+        "active",
+        "done"
+      ],
+      "default": "locked"
+    },
+    "started_date": {
+      "type": "string"
+    },
+    "done_date": {
+      "type": "string"
+    },
+    "proof_link": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "number",
+    "name"
+  ],
+  "rls": {
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

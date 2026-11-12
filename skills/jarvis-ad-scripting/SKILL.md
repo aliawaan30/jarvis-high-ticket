@@ -80,3 +80,9 @@ Read every script aloud in your head as the business owner. Reject and rewrite a
 - sounds like an ad rather than a person.
 
 Finish with a one line note on which two scripts to record first and why, based on the awareness stage.
+
+## HQ (Jarvis 2.0)
+In Jarvis 2.0, "saved offer", "offer brief", "funnel record", "campaign record", "project record" and "CRM" all mean the HQ tables in the jarvis-hq skill. Do not keep a second copy anywhere else.
+Read first: Offer, Campaigns (past angles and results). Do not ask the member for anything HQ already holds.
+Write when done: Campaigns: one draft row per script set, with the angle of each script.
+After writing, read the rows back and confirm they saved before you tell the member it is done.

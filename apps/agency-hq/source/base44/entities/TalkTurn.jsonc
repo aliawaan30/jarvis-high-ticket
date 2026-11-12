@@ -1,0 +1,58 @@
+{
+  "name": "TalkTurn",
+  "type": "object",
+  "properties": {
+    "turn_id": {
+      "type": "string"
+    },
+    "conversation_id": {
+      "type": "string"
+    },
+    "message_id": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "sending",
+        "answered",
+        "failed"
+      ],
+      "default": "sending"
+    },
+    "reply": {
+      "type": "string"
+    },
+    "error": {
+      "type": "string"
+    },
+    "started_ms": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "turn_id"
+  ],
+  "rls": {
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "create": {
+      "user_condition": {
+        "role": "service"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "service"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "service"
+      }
+    }
+  }
+}

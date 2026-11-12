@@ -1,45 +1,31 @@
 ---
 name: jarvis-precall-followup
-description: Prepare the booking-confirmation email/SMS and reminder flow from the saved funnel, with a one-hour call task for unconfirmed prospects. Connect only through authorised calendar, sender and CRM tools.
+description: Create offer-specific pre-call email and SMS sequences and a precise event workflow for booked prospects, including replies, reschedules and cancellation handling.
 ---
 
-# Jarvis booking reminders
+# Jarvis Pre-call Follow-up
+Recovery draft. Copy and workflow are not a connected sending system.
 
-Revised 5 November 2026 from Blake's reminder schedule. These instructions prepare the flow; actual senders and booking/attendance events still need connection and tests.
+## One-line entry and shared context
 
-Student prompt: **“Run the pre-call follow up skill for my saved offer and funnel using this reminder schedule. Calendar: [tool or link].”** Older “for my offer and my landing page” prompts remain valid.
+Student prompt: **“Run the pre-call follow up skill for my offer and my landing page. Calendar: [tool].”**
 
-Read the saved offer, booking/confirmation pages, video/proof, calendar, sender settings and CRM records. Do not ask the student to paste them again. Resolve only missing settings needed for the flow. The student CRM is being developed by Ali; use its agreed event contract rather than inventing a competing CRM or schema.
+Read the current member's saved offer, funnel pages/URLs, proof, preparation video, calendar setup and booked-call records. Do not ask the student to paste the offer, landing copy or proof again. Use the existing funnel record; ask which offer only if the active one is ambiguous. Ask only for missing information needed to prepare the sequence, such as an unavailable calendar configuration or intended call host.
 
-## The flow
+The qualified booking page comes before an appointment; the confirmation/thank-you page comes after a booking is created. Start pre-call messages from the real booking-created event. Reuse the post-booking page and preparation video; keep attendance/invite acceptance separate from booking creation. Do not enrol an unbooked applicant into appointment reminders.
 
-Start on an actual booking-created event, never application submission or a page view. Calendly is the intended booking tool; check its actual event notification settings. Calendar invitations and email confirmations are provider settings, not interchangeable evidence of invite acceptance. The attendance email must contain the real secure action used by the confirmation page.
+Prepare useful drafts even when senders are not connected. Before activation, resolve the sender email/number, account access, event integration and recipient channel permissions that are actually missing. Use connected provider tools only within authorised scope; the skill itself does not establish a working email/SMS sender. Save copy, workflow version, page references and integration status in the member's existing funnel/campaign record.
 
-| When | Recipient and action |
-|---|---|
-| Immediately on booking | Prospect: confirmation email and SMS with time/timezone, confirmation-page link and the real attendance action. Calendar provider sends the configured invitation. |
-| 48 hours before | Prospect: email reminder and relevant useful offer/preparation content. |
-| 24 hours before | Prospect: email and SMS reminder. |
-| 2 hours before | Prospect: email with meeting details. |
-| 1 hour before, only if attendance is still unconfirmed | Student: notification/call task with prospect, time, contact details and the script below. No automated prospect SMS at one hour. |
-| 5 minutes before | Prospect: brief email and SMS with the meeting link. |
+Use the canonical offer, booking state, timezone, appointment link and genuine preparation/proof assets. The goal is a prepared, suitable prospect who attends, not message volume. Booking confirmation comes first; useful education and reminders follow. Avoid repeated generic 'just checking in'.
 
-The five-minute email follows Blake's final email list; SMS at 24 hours and five minutes follows his accompanying spoken schedule. Keep this default configurable if he changes the cadence. No past-due reminders on short-notice bookings; immediate confirmation still sends. Don't replay missed offsets or duplicate a just-sent message when a booking falls exactly on a reminder boundary. Check any existing Calendly notifications to prevent a second sender repeating the same reminder.
+Produce a small sequence suited to the actual booking lead time. Each touch has one job: confirm logistics, answer a major objection with a relevant asset, help them prepare, or remind them of the appointment. For a same-day booking compress the sequence rather than firing every queued touch. SMS is concise; email can carry the explanation. Do not invent customer results or send placeholders.
 
-## One-hour call script
+Define the event workflow as well as copy: trigger, recipient, offset/local time, required fields, stop conditions and reply routing. Stop or rebuild scheduled reminders on cancellation/reschedule. Stop prospect nurture after won/lost disposition where appropriate. A human reply pauses robotic follow-ups and creates a handoff. Honour opt-outs across the relevant sender's workflow. Use event IDs to prevent duplicate sends and record delivery errors for review.
 
-“Hey [name], it’s [your name]. I was just going through my calendar and noticed your appointment hasn’t been confirmed yet. Are you still all good to show up for [time]?”
+Deliver: message drafts, event table, required integration fields and a sandbox test plan covering booking, reply, reschedule, cancellation, opt-out and duplicate webhook. Do not say a Base44/CRM integration is connected unless it has been tested in that environment. A missing sender affects execution status, not our ability to prepare useful copy.
 
-On yes, verify the time and meeting link, then record the manual attendance confirmation. On no, help reschedule and rebuild reminders. The original “everyone else confirmed” comparison may only be used if the actual records establish it; it is not required or invented social proof.
-
-## Connection and event rules
-
-- Keep booking state, attendance confirmation and calendar-invite acceptance distinct. A secure email-confirmation action or an explicitly logged human confirmation may update attendance. A normal reply must be interpreted by a person rather than treated as an automatic yes. Calendar acceptance can count only under the configured policy and actual provider event.
-- Recheck the current booking and attendance before creating the one-hour task. Confirmed means no call task; unknown status creates a check-and-call task rather than asserting refusal. Deduplicate by booking ID, version and action. If attendance is confirmed after task creation, close the obsolete task where supported.
-- Cancellation stops future reminders and tasks. Rescheduling invalidates the old schedule and uses the new time/version. Replies pause automated nurture for human review; don't silently discard essential meeting logistics or reschedule/cancel updates. Record permission and routing before activation.
-- Honour channel opt-outs. Missing SMS permission suppresses SMS, not a fake delivered status. Handle invalid contact details and delivery failures without blind retries. Use the CRM's booking timezone and real meeting links, not manually guessed dates or placeholders.
-- Store attendance tokens in the authorised provider/backend, not exported scripts or public examples. Do not enrol a cold prospect in appointment messages. This skill is booked-call follow-up, not outreach, long-term nurture or no-show campaigns.
-
-## Deliver and test
-
-Deliver the message drafts, offset/event table, one-hour task/script and actual connection status. Use [the handoff specification](references/booking-reminders.md) when wiring the calendar/senders/CRM. Test a long-lead and short-notice booking, confirmed and unconfirmed attendance, a duplicate event, reply, opt-out, cancellation and reschedule using owned test recipients before activation. No real sends or calls without authorisation. Record local schedule checks separately from tested provider execution.
+## HQ (Jarvis 2.0)
+In Jarvis 2.0, "saved offer", "offer brief", "funnel record", "campaign record", "project record" and "CRM" all mean the HQ tables in the jarvis-hq skill. Do not keep a second copy anywhere else.
+Read first: Offer, Funnel, Deals. Do not ask the member for anything HQ already holds.
+Write when done: Funnel: pre-call sequence version, sender email, SMS sender, integration status.
+After writing, read the rows back and confirm they saved before you tell the member it is done.

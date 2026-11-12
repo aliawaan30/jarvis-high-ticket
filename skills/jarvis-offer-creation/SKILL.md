@@ -59,3 +59,9 @@ A performance guarantee must say what counts toward the target and what the clie
 Before showing the offer, check the lines agree: the same target and the same time window in the outcome, timeframe and risk reversal, no line contradicting another, and the guarantee only in the risk reversal line. Use the local currency of the member's market, for example AUD in Australia.
 
 If problem value is missing and the member asks for pre-call preparation, use jarvis-offer-menu's pre-call value research method first. Keep that sourced estimate in the saved brief. Then return the six lines from this skill; do not bury research in the offer card or pretend scenario values are confirmed client results.
+
+## HQ (Jarvis 2.0)
+In Jarvis 2.0, "saved offer", "offer brief", "funnel record", "campaign record", "project record" and "CRM" all mean the HQ tables in the jarvis-hq skill. Do not keep a second copy anywhere else.
+Read first: Offer (and any research links). Do not ask the member for anything HQ already holds.
+Write when done: Offer: a new version with the six line offer and every field you can fill, active set to no. Never edit the active row. Set the new version to active, with approved by member yes and the date, only after the member approves it, then set the old version to no. A risk reversal or guarantee needs their explicit yes on that line.
+After writing, read the rows back and confirm they saved before you tell the member it is done.

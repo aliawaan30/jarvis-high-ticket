@@ -1,0 +1,49 @@
+{
+  "name": "WeekNumbers",
+  "type": "object",
+  "properties": {
+    "week_start": {
+      "type": "string"
+    },
+    "target_calls": {
+      "type": "number"
+    },
+    "calls_booked": {
+      "type": "number"
+    },
+    "proposals_sent": {
+      "type": "number"
+    },
+    "deals_won": {
+      "type": "number"
+    },
+    "cash_collected": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "week_start"
+  ],
+  "rls": {
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

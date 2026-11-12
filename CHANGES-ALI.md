@@ -29,3 +29,21 @@ Added (replaces the archived version):
 Updated:
 - docs/decisions/2026-11-11.md (proposal decisions)
 - CHANGES-ALI.md
+
+## Batch 3, 12 Nov 2026: Jarvis 2.0 (pack 2026-11-12.1709, Agency HQ v3.13)
+Added, core: skills/jarvis-2-brain, jarvis-hq, jarvis-missions, jarvis-rhythm
+Added, Module 4: skills/jarvis-lead-hunter, jarvis-email-setup, jarvis-outreach-coordinator, jarvis-call-card, jarvis-reply-desk, jarvis-sms
+Added, Module 6: skills/jarvis-solution-design, playbook-call-to-close
+Added: apps/agency-hq/ (v3.13 source, install, release notes, talk mode notes, Retell setup, previews)
+Added: docs/jarvis-2/ (INSTALL, STRUCTURE, CHANGELOG, THIRD-PARTY-NOTICES from the pack)
+Archived: archive/jarvis-2.0-pack-2026-11-12.1709.json (single pack format retired; its module copies of offer, landing page, proposal and Meta are older than the repo)
+Archived (moved): course/outreach/skills/jarvis-outreach-coordinator to archive/outreach-coordinator-blake-draft/
+Archived (moved): skills/jarvis-confirmation-page and skills/jarvis-precall-followup (Blake's folders with old references) to archive/, replaced by Ali's single file versions from the pack
+
+Replaced SKILL.md with the pack version (Blake's text plus the HQ (Jarvis 2.0) section, references inlined):
+jarvis-ad-library-offer-research, jarvis-custom-opportunity-finder, jarvis-offer-discovery, jarvis-opportunity-finder, jarvis-vsl-writer, jarvis-ad-scripting, jarvis-static-ad-creator, jarvis-scoping-agent
+
+Merged: Ali's 11 Nov versions of jarvis-offer-creation, jarvis-offer-menu, jarvis-landing-page plus the pack's HQ (Jarvis 2.0) section appended.
+
+Not taken from the pack (repo is newer): jarvis-proposal-builder (batch 2a), jarvis-meta-campaign-setup (batch 2b, still to push).
+Missing from the pack: jarvis-ad-editing.

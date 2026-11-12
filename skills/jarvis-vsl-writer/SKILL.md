@@ -4,7 +4,7 @@ description: Write offer-specific VSLs, demonstrations and pre-call videos using
 ---
 
 # Jarvis VSL Writer
-Reference-grounded recovery candidate. Read references/vsl-source-notes.md. Do not claim all seven supplied videos were fully analysed.
+Reference-grounded recovery candidate. Read the appendix "vsl source notes" below. Do not claim all seven supplied videos were fully analysed.
 
 ## First establish the decision
 Use the current offer brief: buyer, problem, awareness, desired outcome, mechanism, deliverables, evidence, alternatives, price/terms and intended next action. Identify whether this is an acquisition VSL, system demonstration or already-booked prospect video. Do not write the same CTA for all three.
@@ -32,3 +32,26 @@ Can the buyer understand what they get, why it matters, why this approach and wh
 ## Blake’s marketing preferences  -  confirmed 22 October 2026
 For this programme’s student marketing: do not publish offer prices, deposits, retainers or dollar-valued fee waivers in ads, landing pages, VSLs or the public offer statement. Keep pricing/economics in private sales and planning documents. Lead with the buyer’s actual desired outcome (for example sold jobs and cash collected), then explain the mechanism. Intermediate metrics such as replies or appointments support diagnosis; do not automatically make them the main promise. Do not invent a revenue number to make the headline stronger.
 A work-free remedy means continued agreed work without the specified management fee until the agreed result; define the target, measurement, responsibilities and costs behind the plain-language promise. Make material conditions accessible. Do not silently replace that remedy with a published price discount.
+
+## HQ (Jarvis 2.0)
+In Jarvis 2.0, "saved offer", "offer brief", "funnel record", "campaign record", "project record" and "CRM" all mean the HQ tables in the jarvis-hq skill. Do not keep a second copy anywhere else.
+Read first: Offer, Funnel. Do not ask the member for anything HQ already holds.
+Write when done: Funnel: VSL status (script written).
+After writing, read the rows back and confirm they saved before you tell the member it is done.
+
+---
+
+## Appendix: vsl source notes
+(Formerly the appendix "vsl source notes" below.)
+
+### VSL sources and decisions  -  22 October 2026
+
+These are transcript observations, not claims that the videos were visually watched or that their performance claims were verified.
+
+- MoreMozi, https://www.youtube.com/watch?v=Lm_PEN6PH-M : full transcript recovered and read. 00:20–01:39 establishes promise, pain, proof and process with a short introduction. 01:42–02:49 works through buyer beliefs with explanation and examples. 02:55 onward distinguishes the acquisition and pre-call video by examples and next action. Adaptation: answer a genuine objection accurately; do not presume every buyer concern is wrong.
+- Jeremy Haynes, https://www.youtube.com/watch?v=rL1FIHwg8PE : transcript section 01:24–05:14 inspected. Front-load a 60–90-second summary; let the rest expand it. Chapters let viewers find their question. Delaying a CTA is a contextual test, not a universal rule.
+- The other five supplied VSL/messaging videos have native transcripts saved in the dated reference folder. They are not fully analysed; do not attribute a comprehensive synthesis to them yet.
+
+Blake's requirement: actually show the system working, what the client gets, the business outcome and how implementation works. Give useful understanding, sell the implementation. Use the offer as the common input to the VSL, page, ads and follow-up.
+
+Our design inference: for a new student without client results, a clear demonstration is stronger than an invented case study. Demonstration proves the shown function, not future revenue. Length follows the decision and necessary explanation; there is no compulsory 20-minute script.

@@ -1,0 +1,89 @@
+{
+  "name": "Touch",
+  "type": "object",
+  "properties": {
+    "account_id": {
+      "type": "string"
+    },
+    "account_name": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "channel": {
+      "type": "string",
+      "enum": [
+        "email",
+        "call",
+        "text",
+        "linkedin",
+        "note"
+      ]
+    },
+    "direction": {
+      "type": "string",
+      "enum": [
+        "out",
+        "in"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "draft",
+        "sent",
+        "received",
+        "logged",
+        "cancelled"
+      ]
+    },
+    "step": {
+      "type": "string"
+    },
+    "due_date": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "full_text": {
+      "type": "string"
+    },
+    "outcome": {
+      "type": "string"
+    },
+    "gate_result": {
+      "type": "string"
+    },
+    "cancelled_reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "account_id"
+  ],
+  "rls": {
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

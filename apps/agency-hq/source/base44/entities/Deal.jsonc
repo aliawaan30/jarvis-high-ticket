@@ -1,0 +1,86 @@
+{
+  "name": "Deal",
+  "type": "object",
+  "properties": {
+    "account_id": {
+      "type": "string"
+    },
+    "account_name": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "call booked",
+        "call done",
+        "proposal sent",
+        "won",
+        "lost"
+      ]
+    },
+    "problem_cost_per_year": {
+      "type": "number"
+    },
+    "problem_cost_confirmed": {
+      "type": "string"
+    },
+    "proposed_price": {
+      "type": "number"
+    },
+    "monthly_retainer": {
+      "type": "number"
+    },
+    "booked_via_channel": {
+      "type": "string"
+    },
+    "booked_via_signal": {
+      "type": "string"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "next_action_date": {
+      "type": "string"
+    },
+    "won_date": {
+      "type": "string"
+    },
+    "call_brief": {
+      "type": "string"
+    },
+    "call_review": {
+      "type": "string"
+    },
+    "solution_design": {
+      "type": "string"
+    },
+    "proposal_link": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "account_id"
+  ],
+  "rls": {
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

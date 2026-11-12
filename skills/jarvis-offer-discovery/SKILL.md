@@ -97,3 +97,9 @@ Then show the implementation examples with providers and links, followed by the 
 Keep dense technical details and the ledger below the decision summary or in files. Save an implementation library, evidence ledger and decision brief when file tools are available; report only files actually saved. Do not force ten briefs before the user can understand one service.
 
 After the strategy call, maintain one approved, versioned offer brief that marketing, sales and delivery can reuse. Research hypothesis, coach-selected, technically scoped, buyer-tested and delivery-proven are different statuses.
+
+## HQ (Jarvis 2.0)
+In Jarvis 2.0, "saved offer", "offer brief", "funnel record", "campaign record", "project record" and "CRM" all mean the HQ tables in the jarvis-hq skill. Do not keep a second copy anywhere else.
+Read first: Offer. Do not ask the member for anything HQ already holds.
+Write when done: Offer: a draft with research links and evidence, active set to no until approved.
+After writing, read the rows back and confirm they saved before you tell the member it is done.

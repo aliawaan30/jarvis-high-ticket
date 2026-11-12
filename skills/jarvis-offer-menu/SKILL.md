@@ -65,3 +65,11 @@ When the member needs rough numbers before discovery, research the chosen niche,
 ## Adapt the service to the client
 
 A niche is not restricted to one service. Suggest several applicable services before narrowing to the actual problem. Scope each implementation: a receptionist can take messages, transfer calls, book appointments or trigger approved CRM actions through integrations. Those are optional capabilities, not automatic inclusions. For every service establish the client's desired outcome, agreed actions, tools/access, human handoffs, limits, delivery/support and measure of success. Explain the workflow in plain words. A message-only agent cannot support a booked-jobs promise without a credible booking/sales path.
+
+## HQ (Jarvis 2.0)
+In Jarvis 2.0, "saved offer", "offer brief", "funnel record", "campaign record", "project record" and "CRM" all mean the HQ tables in the jarvis-hq skill. Do not keep a second copy anywhere else.
+Read first: Offer. Do not ask the member for anything HQ already holds.
+Write when done: Offer: the chosen example as a draft row, active set to no until approved.
+After writing, read the rows back and confirm they saved before you tell the member it is done.
+
+---

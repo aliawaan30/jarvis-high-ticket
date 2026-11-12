@@ -102,3 +102,11 @@ Before publishing, make a simple /privacy page from the student's business name,
 ## Review and deliver
 
 Deliver the page files/preview, saved funnel record and a short list of missing connections. Test desktop and phone widths, every form step, Back, invalid input, retry, successful storage, each qualification route and the calendar-to-thank-you handoff where connected. In a draft, identify which checks are local simulations and which real integrations remain untested. Separately review buyer clarity, promise congruence, reference fidelity and mobile readability. Do not call the course, funnel or Base44 integration ready because HTML renders.
+
+## HQ (Jarvis 2.0)
+In Jarvis 2.0, "saved offer", "offer brief", "funnel record", "campaign record", "project record" and "CRM" all mean the HQ tables in the jarvis-hq skill. Do not keep a second copy anywhere else.
+Read first: Offer, Funnel. Do not ask the member for anything HQ already holds.
+Write when done: Funnel: landing page, application form and booking page URLs, fit rules, calendar link, VSL status.
+After writing, read the rows back and confirm they saved before you tell the member it is done.
+
+---

@@ -1,0 +1,156 @@
+{
+  "name": "Account",
+  "type": "object",
+  "properties": {
+    "business_name": {
+      "type": "string"
+    },
+    "niche": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "time_zone": {
+      "type": "string"
+    },
+    "entity_type": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "owner_name": {
+      "type": "string"
+    },
+    "owner_source_url": {
+      "type": "string"
+    },
+    "owner_linkedin_url": {
+      "type": "string"
+    },
+    "company_linkedin_url": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "email_status": {
+      "type": "string",
+      "enum": [
+        "published",
+        "verified",
+        "risky",
+        "invalid",
+        "contact form only",
+        "none published"
+      ]
+    },
+    "email_allowed": {
+      "type": "string"
+    },
+    "call_allowed": {
+      "type": "string"
+    },
+    "channel_reason": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "can_pay_score": {
+      "type": "number"
+    },
+    "problem_score": {
+      "type": "number"
+    },
+    "reachable_score": {
+      "type": "number"
+    },
+    "signals": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new lead",
+        "contacted",
+        "replied",
+        "call booked",
+        "call done",
+        "proposal sent",
+        "won",
+        "lost",
+        "not now",
+        "do not contact"
+      ],
+      "default": "new lead"
+    },
+    "source": {
+      "type": "string"
+    },
+    "campaign": {
+      "type": "string"
+    },
+    "value_estimate": {
+      "type": "number"
+    },
+    "call_card": {
+      "type": "string"
+    },
+    "call_card_date": {
+      "type": "string"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "next_action_date": {
+      "type": "string"
+    },
+    "last_touch_date": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "business_name"
+  ],
+  "rls": {
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Campaign",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "approved",
+        "live",
+        "paused",
+        "done"
+      ],
+      "default": "draft"
+    },
+    "can_pay_rule": {
+      "type": "string"
+    },
+    "daily_limit": {
+      "type": "number"
+    },
+    "opt_out_line": {
+      "type": "string"
+    },
+    "postal_address": {
+      "type": "string"
+    },
+    "booking_page": {
+      "type": "string"
+    },
+    "approved_date": {
+      "type": "string"
+    },
+    "sent": {
+      "type": "number"
+    },
+    "replies": {
+      "type": "number"
+    },
+    "booked": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "name"
+  ],
+  "rls": {
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
