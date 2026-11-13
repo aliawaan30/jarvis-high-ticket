@@ -32,7 +32,7 @@ When a lead replies with interest inside calling hours, the reply desk alerts th
 
 ## After each call
 Ask one question: "How did it go?" with quick answers: no answer, left voicemail, gatekeeper, call back later, booked, not interested, do not call. Then:
-1. Booked: send the Cal.com link if needed, move the deal to call one booked, save booked via channel (call) and booked via signal (the signal on the card), stop every other outreach for that account.
+1. Booked: send the Cal.com link if needed, move the deal to call booked, save booked via channel (call) and booked via signal (the signal on the card), stop every other outreach for that account.
 2. Do not call or not interested with a request to stop: mark do not contact everywhere.
 3. Call back: set the next action with the time they said.
 4. Note anything new they said in the account.

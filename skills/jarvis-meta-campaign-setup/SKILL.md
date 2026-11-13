@@ -1,89 +1,136 @@
 ---
 name: jarvis-meta-campaign-setup
-description: "Walk a member through setting up one Meta campaign for a booked call objective, step by step in plain language, and produce the plan that goes with it: naming, starting budget worked from ticket size, one ad per angle, broad targeting by country, and the 24 hour, 72 hour and 7 day checks with scale, fix or kill rules. Not a media buying service, not for ecom, not for campaigns with no booking page behind them."
+description: Plan and set up the student's first Meta ad campaign, then check it at 24 hours, 72 hours and 7 days from Ads Manager screenshots. Use when the student says "set up my Meta ads", "launch my ads", "check my ads" or shares an Ads Manager screenshot. Jarvis guides and records; the student does every click in Meta.
 ---
 
-# Jarvis Meta Campaign Setup
+# Meta campaign setup (basic version)
 
-Draft, 29 October 2026. Built for Module 4 of the high ticket course. Since Meta's Andromeda ranking, the creative does the targeting, so the setup is deliberately simple: one campaign, one ad set, broad by country, one ad per angle. This skill tells the member what to click and gives them the plan to click it against.
+Version: 2026-11-13.1
 
-Meta moves its interface around. Every instruction about the screen below carries this rule: check the current screen, Meta moves things. When what the member sees does not match, ask them to describe the screen and find the current path from there. Never insist the button is where it used to be.
+Student prompts:
+1. **"Set up my Meta ads."**
+2. **"Check my ads"** with an Ads Manager screenshot attached.
 
-## Inputs, read before producing anything
+Jarvis never logs in to Meta and never publishes anything. The student clicks. Jarvis plans, guides, reads screenshots and records decisions.
 
-1. The offer price, and the member's four target numbers from the ads lesson: the most they will spend to win one client, the most a qualified booked call can cost, the most a lead can cost, and the guessed close and booking rates behind them. If they do not have these, work them out with the member first, labelled as guesses.
-2. The ads ready to upload: how many videos, how many statics, and the angle each one tests.
-3. The booking page link, and confirmation that the member has tested the booking flow themselves, start to finish, on a phone. If not tested, stop and tell them to test it before anything is turned on.
-4. The country or countries they sell in.
-5. Whether a Meta pixel or dataset is installed on the booking page. If unknown, step 1 below covers it.
+## Before you start
 
-## What Jarvis produces
+1. Agency HQ must exist and its app ID must be saved. If not, stop and say: "I need Agency HQ set up first. Install the Agency HQ skill and say 'set up my CRM'."
+2. The landing page must be live and the student must have tested it on their phone, start to finish. If not, stop and say: "Let's finish and test your landing page first. Ads only go on once it works."
+3. Save everything as jarvis-hq says. The Campaign row is in the Agency HQ app; spend, budget, targets, ad names and decisions go in CampaignExtra in your Data area, linked by the Campaign's id. Never add fields to the app.
 
-A single campaign plan document, then the walkthrough. The plan contains:
+## Step 1: work out the numbers
 
-- **Naming convention.** Campaign: `[Offer] · Booked calls · [Month Year]`. Ad set: `[Country] · Broad`. Ads: `[Angle] · [V1 / S1 for video or static] · [date]`. Names are how the member reads results in a month. Insist on them.
-- **Starting daily budget**, worked from ticket size, all illustrative until the account has data. A working rule: start at roughly the target cost of one qualified booked call per day, with a floor that lets Meta deliver across every ad in the set (around $10 to $15 per ad per day as a rough minimum). For an $8,000 offer with a $500 target per booked call and five ads, that suggests a start near $75 a day. Say clearly that this is a starting point, not a prediction, and that the member should never run a daily figure they cannot afford for two weeks with nothing to show.
-- **The structure.** One campaign, objective leads or booked calls through the website. One ad set, broad targeting, country only, no interests, no job titles, age 25 to 65 unless the offer says otherwise. One ad per angle, video and static as separate ads. Advantage plus or automatic placements left on.
-- **The check schedule.** What to look at and what to do at 24 hours, 72 hours and 7 days, written as a checklist the member can paste into their CRM.
-- **The decision rules.** Scale, fix or kill, with the member's own target numbers filled in.
+Read the offer price from the Offer table. Ask for anything missing in **one** message:
 
-## The walkthrough, step by step
+1. The most they will spend to win one client. Suggest 25 percent of the price.
+2. Their guess at how many booked calls become clients. Suggest 1 in 4.
+3. Their guess at how many applications become booked calls. Suggest 1 in 3.
+4. The most they can afford to lose in the first 2 weeks with no results.
+5. The country they sell in.
 
-Give these to the member one block at a time. Each step says what they click, what they should see, and what to tell Jarvis if it does not match. Check the current screen, Meta moves things.
+Then work out and show:
 
-### Step 1. Ad account, page and pixel check
-1. Open Meta Business Suite, then Ads Manager. Confirm they are in the right ad account (the account name is at the top left) and that it has a payment method attached.
-2. Confirm the Facebook page and, if they have one, the Instagram account are connected to the business.
-3. Open Events Manager. Look for a dataset or pixel. If there is none, create one and install it on the booking page. The member's page builder (from the funnels module) usually has a field for the pixel ID; if not, paste the base code into the page head. Test with the Test Events tab by loading the booking page on a phone.
-4. Set up one event that fires when a call is booked (a thank you page view or a lead event). This is the event the campaign optimises for.
-Do not continue until the event fires in Test Events.
+1. Target cost per booked call = most per client x close rate.
+2. Target cost per application = target cost per booked call x booking rate.
+3. Daily budget = 2 x target cost per application, but never more than (2 week loss limit / 14).
+4. Number of ads from the daily budget: under 50 a day, 2 ads. 50 to 149 a day, 3 or 4 ads. 150 a day or more, up to 6 ads. Fewer ads means each one gets enough spend to be judged.
 
-### Step 2. Create the campaign
-1. Ads Manager, Create. Choose the leads objective (the name of this objective changes; it is the one for leads, enquiries or bookings through a website).
-2. Name it from the plan. Leave campaign budget off at the start so the budget sits on the ad set, unless the current screen only offers campaign level budget, in which case set the daily figure there.
-3. No A/B test, no special ad category unless the member's offer legally requires one.
+Use the student's own currency for every number. Label every guessed number as a guess. Never round a budget up past what the student said they can lose.
 
-### Step 3. Create the ad set
-1. Conversion location: website. Performance goal: maximise conversions, with the booked call event from step 1 as the event.
-2. Name it from the plan. Daily budget from the plan. Start date today, no end date.
-3. Audience: country only. Remove every interest and job title. Age 25 to 65. All genders. Leave Advantage plus audience or the broad default on if offered.
-4. Placements: automatic.
-Explain why in one line: the ad copy does the targeting now, and narrowing the audience only makes the ad more expensive to show.
+**Budget too small:** if the daily budget is under 20 a day, say plainly: "At this budget Meta can't learn much, and you'll likely spend it all without a clear answer. I'd start with outreach (Module 4) and come back to ads when you can put in more." Only continue if the student still wants to, with 2 ads.
 
-### Step 4. Create the ads, one per angle
-For each video or static:
-1. Create a new ad inside the ad set. Name it from the plan.
-2. Identity: the Facebook page and Instagram account.
-3. Upload the video (vertical, 9:16) or the static (feed and story versions separately if the member has both). Do not stretch one into the other.
-4. Primary text: the first two lines of the script, or the static's primary text. Headline: the angle in six words or fewer. No price, no urgency, no invented result.
-5. Website URL: the booking page. Add a simple UTM so the member can see which angle booked the call: `?utm_source=meta&utm_campaign=[offer]&utm_content=[angle]`.
-6. Call to action button: Learn more or Book now, whichever reads honestly for a booking page.
-7. Duplicate the ad for the next angle and change only the creative, the name, the text and the UTM content.
-Publish the whole set together. Then leave it alone for 24 hours.
+**Example (USD):** $8,000 offer, $2,000 per client, 1 in 4 close, 1 in 3 book. Target per booked call $500, per application about $167. Suggested budget $333 a day. Student can lose $1,400 in 2 weeks, so the budget is $100 a day with 3 or 4 ads.
 
-### Step 5. Turn on the tracking in the CRM
-Before the first dollar: a line per ad in the member's CRM with the angle, the date it went live, and empty columns for spend, leads, booked calls, cost per booked call, decision and reason.
+## Step 2: write the plan
 
-## The check schedule
+Show the plan and wait for approval:
 
-**24 hours.** Is it spending? Is every ad delivering at least some impressions? Is the booked call event firing? Fix delivery problems only: a rejected ad, an ad with zero impressions, an event not firing. Judge nothing else. Day one numbers mean nothing.
+1. **Campaign name:** [Niche] Leads [Month Year]. Example: Plumbers Leads Nov 2026.
+2. **Ad set name:** [Country] Broad.
+3. **Ads:** the number from Step 1, each a genuinely different angle. Use the finished videos from the ad editing skill and the statics. Name each ad [Angle] [Hook number] [Video or Static]. Example: Missed calls Hook1 Video.
+4. **Daily budget** from Step 1.
+5. **Landing page link** with tracking added to each ad: `?utm_source=meta&utm_campaign=[campaign name]&utm_content=[ad name]`, spaces replaced with hyphens.
 
-**72 hours.** Look at CTR and cost per lead by ad. If one ad has a CTR far below the others and no leads, its hook is not landing; note it, do not kill it yet unless it has spent the cost of a booked call with nothing. If leads are arriving but no bookings, the problem is the page or the qualifying questions, not the ads. Fix that first.
+Ask: "Ready to set it up? I'll walk you through it one step at a time."
 
-**7 days.** Every ad that has spent about the cost of one to two target booked calls gets a decision:
+## Step 3: walk through the setup
 
-- **Scale.** Cost per qualified booked call at or under target. Raise the ad set budget by around 20 percent, wait two or three days, raise again if it holds. Ask the member to run the ad scripting skill's variation mode on this angle and add the versions as new ads. Do not edit the winning ad.
-- **Fix.** One step is broken, the rest is fine. High CTR, expensive leads: the page does not match the ad; rewrite the page's first screen in the ad's words. Cheap leads, no bookings: the qualifying questions or the calendar step; shorten the form, check the calendar works on a phone. Bookings but low show rate: the reminders and the pre call content from the funnels module. Fix one step, wait 72 hours, judge again.
-- **Kill.** It has had fair spend and the cost per qualified booked call is well over target, or it is not getting clicks at all. Turn it off. Write one line in the CRM on why. Replace it with the next angle in the queue.
+Give **one block at a time**. After each block ask the student to reply "Done" or describe what they see. Meta moves buttons often: if the screen does not match, ask what they see and find the current path from there. Never insist a button is where it used to be.
 
-Repeat the 7 day check weekly. After four weeks, produce a short review for the member: which angles won, which died and why, what the real booking and close rates turned out to be, and whether the four target numbers should change.
+**Block 1: account check.**
+1. Open Meta Ads Manager. Check the ad account name at the top left is their business.
+2. A payment method is added, ideally a card in the business's name.
+3. Two factor login is switched on for their Facebook account.
+4. Their Facebook page (and Instagram, if they have one) is connected.
+5. Set the account spending limit to their 2 week loss limit: Billing and payments, then Account spending limit. This is a hard ceiling inside Meta, so spending stops there even if a check is late. Ask them to confirm the number they set.
+6. If Meta shows the account as restricted or disabled at any point: stop the setup. Ask them to open Account Quality and follow Meta's steps (usually identity or business verification). Never create a new ad account to get around a restriction; that makes it worse.
+
+**Block 2: tracking check.**
+1. Open Events Manager and find the pixel saved in their Funnel record.
+2. Open Test Events, submit a test application on the landing page from their phone, and confirm a **Lead** event appears.
+3. Find that test application in Agency HQ and mark it as a test (or delete it once the student confirms), so it never counts as a real lead.
+Do not continue until the Lead event shows.
+
+**Block 3: create the campaign.**
+1. Click Create. Choose the **Leads** objective.
+2. Name it from the plan.
+3. Keep Meta's recommended setup (Advantage+) switched on. Set the daily budget at campaign level from the plan.
+4. No special ad category unless the offer is credit, jobs, housing, financial products or politics.
+
+**Block 4: the ad set.**
+1. Conversion location: **Website**. Conversion event: **Lead**.
+2. Name it from the plan.
+3. Audience: set only the **country** and **minimum age 25**. Add no interests or job titles. Leave Advantage+ audience on.
+4. Placements: leave on Advantage+.
+Explain in one line: "Your ad's words do the targeting now. Narrowing the audience only makes ads cost more."
+
+**Block 5: the ads, one per angle.**
+1. Create the ad and name it from the plan. Identity: their Facebook page and Instagram.
+2. Upload the video (vertical) or static.
+3. Primary text: the first two lines of the script or the static's text. Headline: the angle in 6 words or fewer.
+4. Website URL: the landing page with that ad's tracking link.
+5. Button: Apply now or Learn more.
+6. Open the creative enhancements and **switch off text improvements**. Meta must not rewrite their words.
+7. Duplicate for the next angle. Change only the video, name, text and tracking link.
+
+**Block 6: publish.**
+1. Check every ad has its own name and tracking link.
+2. Publish. Ads go into review, usually within a day.
+3. Say: "Now leave it alone for 24 hours. Send me a screenshot tomorrow and say 'check my ads'."
+
+Save the campaign: in the app's Campaign table the name, status "live" and approved_date; in CampaignExtra the date live, daily budget, spending limit, each ad's name and angle, and the target numbers.
+
+## Step 4: the checks
+
+Ask for a screenshot of Ads Manager **on a computer, not the phone app**, on the **Ads** tab, with these columns: Amount spent, Results, Cost per result, Link clicks, CTR (link). If columns are missing, tell them how to add them. If the screenshot is unclear, ask for a clearer one. Never guess a number.
+
+Also read Agency HQ for applications and booked calls from each ad (the "came from" field).
+
+**24 hours:** delivery only. Is it spending? Any ad rejected or with no impressions? Is the Lead event recording? Judge nothing else.
+
+**72 hours:** note each ad's CTR and cost per application. If clicks come in but no applications, the landing page or application is the problem, not the ad. Change nothing yet unless something is broken.
+
+**7 days, then weekly:** decide on each ad once it has spent at least 1 x the target cost per application, or at day 14, whichever comes first. An ad below both stays running until next week.
+
+1. **Scale:** cost per application at or under target, and it has produced at least one booked call in Agency HQ. Raise the campaign budget by about 20 percent. Wait 3 days before the next increase. Never make two changes at once.
+2. **Fix:** one step is broken. Clicks but no applications on **every** ad: fix the page's first screen to match the ads. If other ads get applications from the same page, the page is fine; leave this ad running until the kill rule. Applications but no bookings: check the application questions and calendar on a phone. Bookings but no shows: check the reminders. Fix one thing, then wait 72 hours.
+3. **Kill:** no application after spending 2 x the target cost per application, no application by day 14, or cost per application above 2 x target. Turn it off and write one line on why.
+4. **Keep running:** anything else. Check again next week.
+
+**Hard stop (check every time):** add up total spend. If it has reached the student's 2 week loss limit and Agency HQ shows no booked call, tell them to pause the campaign now. Then review the offer, the landing page and the application with them before any more money goes in. Never suggest continuing past the loss limit without a booked call.
+
+Tell the student which ads to scale, fix or kill, in plain words, with the numbers.
+
+## Step 5: log every decision
+
+Save each check to CampaignExtra: date, each ad's spend, applications, booked calls, cost per application, decision and reason. After 4 weeks, give a short review: which angles won, which died and why, and whether the target numbers should change.
 
 ## Rules
 
-- Never turn on a campaign pointing at an untested booking page.
-- Never put a price, a discount or urgency in an ad, headline or description.
-- Never claim a result the member has not earned.
-- Never recommend a daily budget the member has said they cannot afford to lose over two weeks.
-- Never narrow the audience to interests or job titles to "fix" performance. Fix the creative or the page.
-- No em dashes anywhere in the output.
-- Jarvis does not have access to the member's Meta account and does not publish anything. The member clicks; Jarvis guides and records.
+1. Jarvis never logs in to Meta, never publishes and never changes a budget. The student does.
+2. Never suggest a budget the student cannot afford to lose over 2 weeks. Always set the account spending limit and enforce the hard stop. Never tell them to raise the spending limit while there is no booked call.
+3. If the account is restricted, never suggest a new ad account.
+4. No price, discount, urgency or invented result in any ad.
+5. Never narrow the audience to fix results. Fix the ad or the page.
+6. Use the student's currency. Plain language. No em or en dashes.

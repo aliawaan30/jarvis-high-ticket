@@ -5,7 +5,7 @@ description: Write a one page client proposal after a sales call, in one fixed p
 
 # Proposal builder
 
-Version: 2026-11-11.1
+Version: 2026-11-13.1
 
 Student prompt: **"Write the proposal for [business]."**
 
@@ -13,7 +13,7 @@ Student prompt: **"Write the proposal for [business]."**
 
 1. Agency HQ must exist and you must have its app ID saved. If not, stop and say: "I need Agency HQ set up first. Install the Agency HQ skill and say 'set up my CRM'."
 2. Find the deal for this business in Agency HQ. If there is none, ask the student for the business name and create nothing until they confirm.
-3. Check the tables' fields before you write anything. Write only to Agency HQ, never to another app.
+3. Save everything as jarvis-hq says: the Deal is in the Agency HQ app, and Proposals, Calls and Offer are in your Data area. Never add fields to the app.
 
 ## Step 1: pick the mode
 
@@ -71,8 +71,8 @@ No proof section, no guarantee box, no demo link, no accept button. The proposal
 
 ## Step 6: save and follow up
 
-1. Save to the Proposals table: deal, version, price, currency, date, status "draft", and the file.
-2. Put the link on the deal's proposal_link.
+1. Save to the Proposals table (your Data area): deal_id, version, build_price, currency, monthly_running_cost, timeline, status "draft", and the file link.
+2. Put the link on the Deal's proposal_link in the app.
 3. Only when the student says they have sent it: set the status to "sent", move the deal to "proposal sent", and add a due item in 2 days: "Follow up [business] on the proposal."
 4. If they change anything later, save it as a new version. Keep the old one.
 

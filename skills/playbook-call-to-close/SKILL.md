@@ -12,7 +12,7 @@ Use after any call one. Also when the student says "here's my call" or pastes a 
 3. Review the call. Score it against Blake's rules: did they diagnose before prescribing, did they get the number agreed out loud, did they ask more than they talked. Give one change for next time. Save to Calls.
 4. Solution design. Run jarvis-solution-design. Save the link on the Deal.
 5. Proposal and demo. If the price check says go, run jarvis-proposal-builder with the brief and the design. If it says shrink or not ready, stop and tell the student what to fix before call two.
-6. Deal update. Stage to call one done, call two date, next action, problem cost and confirmed flag.
+6. Deal update. Stage to call done, call two date, next action, problem cost and confirmed flag.
 7. Report in one short message like the "After a call" example in the brain: the number, the verdict, what is ready, what to send the client today, the objection to prepare for, and one thing to do better.
 
 Never present an invented number. Anything not said on the call stays an open question.

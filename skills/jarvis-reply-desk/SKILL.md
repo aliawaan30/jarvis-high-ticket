@@ -36,4 +36,4 @@ The member approves each reply until they tell you otherwise for a class (for ex
 3. Never keep a sequence running after any reply.
 
 ## HQ (Jarvis 2.0)
-Read first: Accounts, Campaigns, Offer, Funnel (booking link). Write when done: Accounts: status, last reply, reply class, next action. Deals: new deal at call one booked when a time is agreed, with booked via channel (email, linkedin or text) and booked via signal (the signal the outreach used).
+Read first: Accounts, Campaigns, Offer, Funnel (booking link). Write when done: Accounts: status, last reply, reply class, next action. Deals: new deal at call booked when a time is agreed, with booked via channel (email, linkedin or text) and booked via signal (the signal the outreach used).

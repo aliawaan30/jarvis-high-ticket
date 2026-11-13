@@ -20,12 +20,12 @@ Version 1, 4 November 2026. People stay when they see progress. Every day should
 | 1 | Jarvis 2.0 is live | install check note saved |
 | 2 | Goal set | target, date and weekly calls saved; this week's Numbers row exists |
 | 3 | First 10 leads | 10 Accounts saved today or later, each with a reason and a source link |
-| 4 | Your CRM is ready | Agency HQ built by you in the member's empty app, every table and page in the spec checked, and all HQ data living there (moved with matching counts if it started in your Data area) |
+| 4 | Your CRM is ready | Agency HQ app installed by the member from the course package, "Checking the app" in jarvis-hq passed, and all HQ data living there (moved with matching counts if it started in your Data area) |
 | 5 | Niche and problem picked | an Offer draft with niche and problem filled |
 | 6 | Offer approved | an Offer row with approved by member yes (after Blake's group call) |
 | 7 | Funnel live | Funnel row with landing page and booking page URLs, and one test application seen |
 | 8 | The Money Map | 30 Accounts for the approved offer, at least 10 A-tier |
-| 9 | Sending ready | Gmail connected and the test email's From address confirmed (or Instantly connected), and send-check in Agency HQ passed its good and bad test |
+| 9 | Sending ready | Gmail connected and the test email's From address confirmed (or Instantly connected), and sendCheck in Agency HQ passed its good and bad test |
 | 10 | First 6 of 6 email | a first email for an A-tier account, scored 6 of 6 on "Would they reply?", saved as a draft |
 | 11 | First campaign live | a Campaign approved by the member and its first emails sent through the send gate |
 | 12 | First 10 calls | 10 call Touches logged with outcomes |

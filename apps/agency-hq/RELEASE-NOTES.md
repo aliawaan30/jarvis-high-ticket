@@ -1,5 +1,8 @@
 # Agency HQ release notes
 
+## v3.14 (13 Nov 2026)
+- New backend function sendCheck (function 19): the email send gate every outreach email passes before it is sent. Reads the app's yes or no text values correctly and accepts the do not contact list as text. Tested with 20 good emails (all pass) and 15 bad ones (all blocked).
+
 ## v3.13 (12 Nov 2026)
 - Owner messages after a call go out within 3 minutes: the one-time workflow runs right away, or is scheduled 1 to 2 minutes ahead, never with a safety buffer.
 

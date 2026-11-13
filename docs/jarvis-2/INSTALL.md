@@ -28,7 +28,7 @@ If any install fails, retry once. If it fails again, note it and continue.
 4. Follow the "Your name" section of jarvis-2-brain. A name the member gave you is kept. If they never named you, you are Jarvis. Jarvis 2.0 is the version, never your name.
 
 ## Step 4. Build HQ
-Read the jarvis-hq skill. If the member's Agency HQ app is already connected, use it. If not, ask for the empty Agency HQ app as the jarvis-hq skill says, and build their CRM in it now; this is part of their setup. If they say later, create the eleven tables in your Data area for now and build the CRM at mission 4. Do not delete any existing table.
+Read the jarvis-hq skill. If the member's Agency HQ app is already connected, use it. If not, guide the member through installing the Agency HQ app as the jarvis-hq skill says ("Installing the app"); this is part of their setup. If they say later, keep every HQ table in your Data area for now and install the app at mission 4. Do not delete any existing table.
 
 ## Step 5. Fill HQ from what you already know
 Use your memory of the member: name, location, timezone, niche, service, target market, goals. Where they live and where they sell can differ. The market they sell to (niche and city or region) comes only from what they said about their service, never from where they live.
@@ -62,7 +62,7 @@ Check the real current state of each item, not what you set up or intended. A wo
 1. Count the skills from this pack that are now installed. Compare with the pack's skill count. Then open every installed skill from this pack and confirm each shows "Pack version:" equal to this pack's version field. Any skill that shows an older version, or no version, was not replaced: install it again with your skill tool and check it again. List any still failing in the install check note. Never report the install as done while an older version is installed.
 1c. Save the pack's version in memory as "Jarvis 2.0 version", and write it at the top of the install check note.
 1b. Confirm "Update data" is on: from memory if already confirmed, otherwise by asking the member once.
-2. Count the HQ tables. There should be 11, in Agency HQ or your Data area.
+2. Check HQ: if the Agency HQ app is installed, run "Checking the app" from jarvis-hq; otherwise confirm the HQ tables exist in your Data area.
 3. List every active workflow on this agent, including any the goal created by itself. Count the Jarvis 2.0 ones: 5, or 3 if no inbox is connected yet.
 4. Confirm the goal is running.
 5. Read "Jarvis 2.0 code" back from memory.

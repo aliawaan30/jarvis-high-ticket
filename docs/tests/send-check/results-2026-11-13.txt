@@ -1,0 +1,25 @@
+OLD: good passed 0/20, bad blocked 13/15
+  GOOD BLOCKED: email 1, two insights -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+  GOOD BLOCKED: mentions their own website -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+  GOOD BLOCKED: congratulations opener -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule); banned phrases: congratulations
+  GOOD BLOCKED: footer on one line -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+  GOOD BLOCKED: footer different case and spacing -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule); postal address footer missing; opt out line missing
+  GOOD BLOCKED: curly apostrophe in footer -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule); opt out line missing
+  GOOD BLOCKED: email 2 with booking link -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+  GOOD BLOCKED: step written as text 'email 2' -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+  GOOD BLOCKED: email 3 with our own site link -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+  GOOD BLOCKED: published email status -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+  GOOD BLOCKED: email_allowed stored as true -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop
+  GOOD BLOCKED: window edge 8am -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+  GOOD BLOCKED: 4pm local -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+  GOOD BLOCKED: 9 of 10 sent today -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+  GOOD BLOCKED: reply, no footer needed -> account is marked do not contact
+  GOOD BLOCKED: reply with empty subject -> account is marked do not contact
+  GOOD BLOCKED: test email to own address -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (member's own address)
+  GOOD BLOCKED: mentions Jobber and Google Ads, no domains -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+  GOOD BLOCKED: sentence with e.g. and numbers -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+  GOOD BLOCKED: doNotContact list as text -> CRASH: (s.doNotContact || []).map is not a function
+  BAD NOT CAUGHT: campaign not approved -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+  BAD NOT CAUGHT: link in email 1 -> account is marked do not contact; account has replied: sequence must stop; account has booked: sequence must stop; cold email not allowed for this account (country or entity type rule)
+
+NEW: good passed 20/20, bad blocked 15/15
