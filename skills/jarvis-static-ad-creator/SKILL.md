@@ -51,7 +51,7 @@ Source: Jeremy Haynes, https://www.youtube.com/watch?v=4C-2ab6rD9M . Full native
 - 14:28, static-cues/frames/cue_0005.jpg: a short genuine-looking testimonial screenshot dominates the frame. Lesson: one specific credible voice rather than tiny quote cards. Source authenticity/results not independently audited; use only authorised own testimonials in production.
 
 ## What the lesson says about funnel fit
-02:27–03:35 discusses images and the risk that VSL-call leads arrive undereducated; evaluate the entire call funnel, not CPC alone. 03:37–05:08 distinguishes text-over-B-roll reels from still images and stresses readable, curiosity-led text. 11:47–12:28 discusses carousel sequences, including native-text presentations. 13:27–14:12 distinguishes curiosity from buying intent for memes. 14:14–15:06 says execution/context matter for testimonials.
+02:27 to 03:35 discusses images and the risk that VSL-call leads arrive undereducated; evaluate the entire call funnel, not CPC alone. 03:37 to 05:08 distinguishes text-over-B-roll reels from still images and stresses readable, curiosity-led text. 11:47 to 12:28 discusses carousel sequences, including native-text presentations. 13:27 to 14:12 distinguishes curiosity from buying intent for memes. 14:14 to 15:06 says execution/context matter for testimonials.
 
 ## Blake's separate preference
 Blake explicitly wants direct callout, story-post-like ads as an option. That is a user creative direction, not something verified from the inaccessible Scale Info Ad Library. Keep it in the skill and test it; don't incorrectly attribute it to an inspected Meta ad.

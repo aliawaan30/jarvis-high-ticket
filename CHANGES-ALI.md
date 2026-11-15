@@ -54,3 +54,8 @@ Agency HQ app v3.14: added base44/shared/send-check.ts and base44/functions/send
 Rewritten: skills/jarvis-hq (matches app v3.14, install guide, exact tables, Data area and Extra tables, app check).
 Updated: skills/jarvis-2-brain (8 step programme, solve it rules, deal stage names), jarvis-missions (mission 4 and 9), jarvis-email-setup (calls the app's sendCheck), jarvis-call-card, jarvis-reply-desk, playbook-call-to-close (deal stage names), jarvis-proposal-builder 2026-11-13.1 and jarvis-meta-campaign-setup 2026-11-13.1 (save as jarvis-hq says), docs/jarvis-2/INSTALL.md (guided app install, app check).
 Added: docs/tests/ (Meta scenario test and mock screenshots, send-check tests and results), docs/decisions/2026-11-11.md (updated), docs/decisions/2026-11-13.md, docs/onboarding-map-2026-11-11.md (exported by Ali).
+
+## Batch 3c, 15 Nov 2026
+Archived (moved): skills/jarvis-offer-discovery and skills/jarvis-opportunity-finder to archive/ (retired; custom opportunity finder carries its own copy of the research method). skills/README.md index updated.
+Removed em and en dashes: jarvis-offer-menu (references/common-services-2026-11-02.md), jarvis-static-ad-creator (SKILL.md, references/static-visual-analysis.md), jarvis-vsl-writer (SKILL.md, references/vsl-source-notes.md).
+Added: START-HERE.md (system overview for Blake and reviewing agents).

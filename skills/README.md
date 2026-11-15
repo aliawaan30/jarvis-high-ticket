@@ -18,8 +18,6 @@ Updated 8 November 2026. The current folders below supersede the October ZIPs an
 | [jarvis-meta-campaign-setup](jarvis-meta-campaign-setup/SKILL.md) | 5 | Offer/funnel and budget → campaign setup guidance and review plan. | Meta access if execution is requested; not a verified autonomous media buyer. |
 | [jarvis-proposal-builder](jarvis-proposal-builder/SKILL.md) | 6 | Call-one discovery and scoped terms → plain private call-two proposal. | Short document template included; buyer impact before solution, demo separate. Rendering is not closing proof. |
 | [jarvis-scoping-agent](jarvis-scoping-agent/SKILL.md) | 7 | Accepted proposal and discovery → complete delivery/build plan. | Accepted scope and actual integration details; not the pre-sale pricing/feasibility step. |
-| [jarvis-opportunity-finder](jarvis-opportunity-finder/SKILL.md) | Compatibility | Earlier broader opportunity-finding instructions. | Retained for compatibility; avoid presenting another competing default route. |
-| [jarvis-offer-discovery](jarvis-offer-discovery/SKILL.md) | Supporting research | Detailed research method used by advanced custom finding. | Historical evaluations are not proof the latest revision is end-to-end tested. |
 
 ## One-line funnel entries
 
