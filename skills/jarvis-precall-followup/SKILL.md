@@ -3,6 +3,8 @@ name: jarvis-precall-followup
 description: Create offer-specific pre-call email and SMS sequences and a precise event workflow for booked prospects, including replies, reschedules and cancellation handling.
 ---
 
+Version: 2026-11-15.1
+
 # Jarvis Pre-call Follow-up
 Recovery draft. Copy and workflow are not a connected sending system.
 

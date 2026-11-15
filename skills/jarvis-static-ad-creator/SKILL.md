@@ -3,6 +3,8 @@ name: jarvis-static-ad-creator
 description: Create original callout, proof, scene-led and carousel static ads from a real offer and inspected visual references, with rendered exports and creative review.
 ---
 
+Version: 2026-11-15.1
+
 # Jarvis Static Ad Creator
 Recovery candidate, 22 October 2026. Read the appendix "static visual analysis" below. It distinguishes viewed examples, Blake's preferences and the still-inaccessible Scale Info ad library. Never claim this is a library of proven winning ads.
 

@@ -3,6 +3,8 @@ name: jarvis-offer-creation
 description: "Turn a selected buyer/problem/solution into exactly six offer lines: niche, outcome, timeframe, risk reversal, authority/proof and unique mechanism. Use after offer finding, without producing a larger planning report."
 ---
 
+Version: 2026-11-15.1
+
 # Create the six-line offer
 
 Read the selected opportunity, actual delivery capability, evidence and member preferences. Reuse the choice; do not restart research. If a critical fact is absent, ask one concise question before the card, or mark the field “to confirm” when asked for a draft.

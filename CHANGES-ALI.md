@@ -59,3 +59,8 @@ Added: docs/tests/ (Meta scenario test and mock screenshots, send-check tests an
 Archived (moved): skills/jarvis-offer-discovery and skills/jarvis-opportunity-finder to archive/ (retired; custom opportunity finder carries its own copy of the research method). skills/README.md index updated.
 Removed em and en dashes: jarvis-offer-menu (references/common-services-2026-11-02.md), jarvis-static-ad-creator (SKILL.md, references/static-visual-analysis.md), jarvis-vsl-writer (SKILL.md, references/vsl-source-notes.md).
 Added: START-HERE.md (system overview for Blake and reviewing agents).
+
+## Batch 3d, 15 Nov 2026
+Version stamps: every skill now carries a Version line (baseline 2026-11-15.1 where none existed), so "Update these skills" and "Am I up to date?" work.
+Rewritten: skills/README.md, the index of all 26 skills with module, student prompt, version and honest test status.
+Updated: docs/jarvis-2/INSTALL.md (upgrade also removes jarvis-offer-discovery and jarvis-opportunity-finder); jarvis-custom-opportunity-finder (removed the retired skill's embedded header from its appendix and reference file); START-HERE.md (points to the index).

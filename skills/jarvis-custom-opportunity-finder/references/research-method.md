@@ -1,7 +1,4 @@
----
-name: jarvis-offer-discovery
-description: Discover sellable AI implementation opportunities by researching real services and deployments, matching recurring buyer problems to niches, then developing an evidence-backed offer for a strategy call.
----
+# Research method
 
 # Jarvis Offer Discovery
 

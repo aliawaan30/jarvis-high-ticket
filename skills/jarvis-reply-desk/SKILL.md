@@ -3,6 +3,8 @@ name: jarvis-reply-desk
 description: Handle every reply to outreach fast: classify it, stop the sequence on every channel, draft the answer, and get booked calls onto the calendar. Use when a prospect replies by email or the member pastes a reply, and inside the reply watch workflow.
 ---
 
+Version: 2026-11-15.1
+
 # Reply desk
 
 Version 1, 3 November 2026. A reply is the most valuable thing in the pipeline. Answer it within the hour in working hours.

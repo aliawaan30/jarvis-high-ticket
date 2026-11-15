@@ -3,6 +3,8 @@ name: jarvis-scoping-agent
 description: Turn discovery call notes, call two notes, the presented proposal and anything the client supplied into one full build plan per job, written so a developer or Jarvis can build from it without another discovery call. Produces a fixed set of sections ending in an explicit list of unknowns to confirm with the client. Use after a deal is signed or a proposal is accepted; not for pricing, selling or inventing scope.
 ---
 
+Version: 2026-11-15.1
+
 # Jarvis Scoping Agent
 
 Draft candidate, 29 October 2026. Introduced in High Ticket Module 7 (Fulfilment). It sits after the proposal builder: the proposal says what was sold, this skill says exactly what gets built.

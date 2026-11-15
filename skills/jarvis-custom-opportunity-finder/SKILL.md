@@ -3,6 +3,8 @@ name: jarvis-custom-opportunity-finder
 description: Find underserved buyer workflows worth a custom AI implementation, using real deployments, buyer problems and existing alternatives to prepare a targeted-outreach opportunity.
 ---
 
+Version: 2026-11-15.1
+
 # Find a custom implementation opportunity
 
 Use for AI arbitrage: find a valuable problem inside a buyer group and a custom solution to scope with technical help. Read [Research method](appendix "research method" below) for evidence, economics, delivery and market checks. That method guides investigation, not the length of the student-facing answer.
@@ -24,14 +26,8 @@ After writing, read the rows back and confirm they saved before you tell the mem
 ---
 
 ## Appendix: research method
-(Formerly the appendix "research method" below.)
 
----
-name: jarvis-offer-discovery
-description: Discover sellable AI implementation opportunities by researching real services and deployments, matching recurring buyer problems to niches, then developing an evidence-backed offer for a strategy call.
----
-
-### Jarvis Offer Discovery
+### Research method
 
 Version 4  -  implementation-first test version. Revised after live Base44 evaluations; this revision has not yet been behaviour-tested.
 

@@ -3,6 +3,8 @@ name: jarvis-lead-hunter
 description: The Money Map. Find businesses that can pay for the member's offer, have the problem now, and have an owner the member can reach, with sources for every fact. Scores each on can pay, has the problem and reachable, finds the owner, and keeps a weekly watchlist. Use when the member asks for leads, prospects, a list, more calls, or when the pipeline is below target. Recommends Apollo when they are ready to scale.
 ---
 
+Version: 2026-11-15.1
+
 # Lead hunter: the Money Map
 
 Version 2, 4 November 2026. Fewer, bigger, better leads. Every lead has a named owner where one can be found, evidence they can afford a high ticket offer, a reason to talk this week,.

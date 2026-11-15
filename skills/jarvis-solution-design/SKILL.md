@@ -3,6 +3,8 @@ name: jarvis-solution-design
 description: Turn a call one transcript or brief into the real technical build that solves the client's problem, before call two. Produces a plain prescribed solution for the proposal, a technical design, a build route (Jarvis or a developer), effort and running cost estimates, a price check against the agreed problem cost, the riskiest assumption to test, and a quote request for a developer. Use this whenever the member has finished a discovery or audit call and asks what to build, how to solve it, whether it can be built, what it will cost to build, or for a scoping request for their technical partner, even if they do not name this skill. Not for the post-sale build plan (use jarvis-scoping-agent after the client accepts).
 ---
 
+Version: 2026-11-15.1
+
 # Jarvis Solution Design
 
 Draft 1, 2 November 2026, written from the technical lead's delivery experience. Module 6 (Sales), between Call One and the proposal. It replaces the long "prescribe the solution" prompt in that lesson.

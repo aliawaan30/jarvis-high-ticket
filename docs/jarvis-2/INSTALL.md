@@ -17,7 +17,7 @@ The pack's files list holds each skill as a folder containing one SKILL.md, unde
 1. Install it with your skill tool, using the folder name as the skill name. SKILL.md is the main file. Install any other files in that folder as part of the same skill, keeping their relative paths.
 2. Never write skills straight into the .agents folder. Only the skill tool keeps them across conversations.
 3. If a skill with the same name exists, replace it with this version.
-4. Retired skills from earlier versions: if any of these are installed, remove them with your skill tool, because they are no longer part of Jarvis 2.0: jarvis-warm-paths, jarvis-calls, jarvis-fathom, jarvis-proof-page. Record what you removed in the install check note.
+4. Retired skills from earlier versions: if any of these are installed, remove them with your skill tool, because they are no longer part of Jarvis 2.0: jarvis-warm-paths, jarvis-calls, jarvis-fathom, jarvis-proof-page, jarvis-offer-discovery, jarvis-opportunity-finder. Record what you removed in the install check note.
 If any install fails, retry once. If it fails again, note it and continue.
 
 ## Step 3. Switch on the brain

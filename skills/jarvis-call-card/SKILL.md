@@ -3,6 +3,8 @@ name: jarvis-call-card
 description: Prepare one-screen call cards for cold calls and log the outcome after each call. Use when the member is about to call leads, asks who to call, asks for a script or opener, a lead just replied with interest, or when they report how a call went.
 ---
 
+Version: 2026-11-15.1
+
 # Call card
 
 Version 1, 3 November 2026. People make the calls, never AI voice. Jarvis prepares the member so every call sounds like they did their homework, and logs what happened.

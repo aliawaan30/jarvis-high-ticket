@@ -3,6 +3,8 @@ name: jarvis-landing-page
 description: Build a compact offer-led landing page, progressive application and qualified booking page from the saved offer. Use for a student B2B service funnel, with a VSL or a no-video offer-testing mode.
 ---
 
+Version: 2026-11-15.1
+
 # Jarvis Landing Page
 
 Reference-inspected instruction draft. Revised 5 November 2026 from Blake's page corrections and 4 November call. This is the student service funnel, not the longer high-ticket programme demonstration from J-374.

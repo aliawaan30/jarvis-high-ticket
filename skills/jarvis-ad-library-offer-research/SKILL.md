@@ -3,6 +3,8 @@ name: jarvis-ad-library-offer-research
 description: Find offer ideas by inspecting Meta Ad Library ads and their destination pages, then recommend a specific niche and offer adaptation.
 ---
 
+Version: 2026-11-15.1
+
 # Find an offer through the Ad Library
 
 Default the Ad Library research country to **United States (US)** unless the member explicitly chooses another research country. This is the benchmark market to study, not a requirement to sell to US businesses: keep the member's selling market separate and check local relevance when adapting an offer. Use their service interests and delivery support. The team's 30 October 2026 test used Claude with the Meta Ads connector and an account with an active ad account. This tested search is not available inside a Base44 Jarvis. Have the member run it in that connected environment and bring the results back to Jarvis, or use another available, permitted source without pretending it has the same fields or coverage.

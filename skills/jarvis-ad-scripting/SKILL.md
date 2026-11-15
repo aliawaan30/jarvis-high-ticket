@@ -3,6 +3,8 @@ name: jarvis-ad-scripting
 description: Write 5 to 10 spoken video ad scripts, each testing one angle, from the member's approved offer, market research and buyer awareness stage. 30 to 60 seconds, hook in the first three seconds, plain language, one call to action to the booking page. Includes a variation mode that turns a winning script into five versions. Not for writing landing pages, statics or anything with a price in it.
 ---
 
+Version: 2026-11-15.1
+
 # Jarvis Ad Scripting
 
 Draft, 29 October 2026. Built for Module 4 of the high ticket course. The member records these on a phone, talking to camera. Write for a voice, not a page.

@@ -3,6 +3,8 @@ name: playbook-call-to-close
 description: Run after any sales call one, or when the member says "here's my call", pastes or uploads a call, or asks about a recent call. Also helps them set up call recording. Turns the transcript into a call brief, a call review, a solution design and a proposal, and updates the deal in HQ.
 ---
 
+Version: 2026-11-15.1
+
 # Playbook: call to close
 
 Use after any call one. Also when the student says "here's my call" or pastes a transcript.

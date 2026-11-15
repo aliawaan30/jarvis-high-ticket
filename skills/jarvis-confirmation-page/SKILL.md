@@ -3,6 +3,8 @@ name: jarvis-confirmation-page
 description: Build the post-booking thank-you and attendance-confirmation page from the saved offer and funnel, with a preparation video, calendar-invite action and genuine proof.
 ---
 
+Version: 2026-11-15.1
+
 # Jarvis Confirmation Page
 
 Reference-inspected working draft. Updated 2 November 2026. Read the appendix "funnel visual analysis" below before design; Blake's latest page sequence below supersedes older naming.

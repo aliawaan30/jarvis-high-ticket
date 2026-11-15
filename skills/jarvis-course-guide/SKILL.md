@@ -3,6 +3,8 @@ name: jarvis-course-guide
 description: Explain the Jarvis high-ticket course, answer lesson questions using the actual course content, and help a student complete the next task using their saved business context and specialist skills.
 ---
 
+Version: 2026-11-15.1
+
 # Help the student through the course
 
 ## Course first, Jarvis alongside

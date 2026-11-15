@@ -3,6 +3,8 @@ name: jarvis-email-setup
 description: Set up and run cold email the easy way: the member's own Gmail connected to Jarvis, a strict daily cap, the send gate on every email, and an upgrade to Instantly when they want bulk campaigns. Use before any cold email is sent, when the member asks about sending, inboxes, limits or deliverability, or wants to send more emails.
 ---
 
+Version: 2026-11-15.1
+
 # Email setup
 
 Version 2, 4 November 2026. Easiest start: the member's own Gmail, connected to Jarvis in a minute. Volume stays low and quality stays high, which protects their inbox. Instantly is the upgrade for bulk.

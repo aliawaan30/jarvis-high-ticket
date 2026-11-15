@@ -3,6 +3,8 @@ name: jarvis-missions
 description: The member's path to their first client as 19 missions, one at a time. Each mission has one clear goal, is proven from real data in HQ, gets celebrated, and unlocks the next. Use when the member asks what to do next, what mission they are on, how far they are, when a mission's proof appears in HQ, in every morning brief, and when the member has stalled.
 ---
 
+Version: 2026-11-15.1
+
 # Missions
 
 Version 1, 4 November 2026. People stay when they see progress. Every day should end with something done.

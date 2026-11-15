@@ -3,6 +3,8 @@ name: jarvis-sms
 description: Text messages to people who opted in or already replied, the easy way: Jarvis writes the text and the member sends it from their own phone with one tap. Telnyx automation is the upgrade. Use when the member wants to text a lead or client, send a booking reminder, or asks about SMS. Never for cold outreach.
 ---
 
+Version: 2026-11-15.1
+
 # SMS
 
 Version 2, 4 November 2026. Cold texting is not allowed under our rules in any of the 7 countries. In the US, texting without consent can cost $500 to $1,500 per message. So texts only go to people who said yes.

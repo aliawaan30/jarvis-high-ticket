@@ -3,6 +3,8 @@ name: jarvis-2-brain
 description: The Jarvis 2.0 operator brain for high ticket members. Always active: how Jarvis runs the business, the operating loop, stages, skill routing, reflexes, verification rules and guardrails.
 ---
 
+Version: 2026-11-15.1
+
 # Jarvis 2.0 brain
 
 Draft 4, 3 November 2026. For the high ticket program. Install as a skill named jarvis-2-brain and put the Who you are section in the agent's identity. Built on features tested on Base44 on 2 Nov: goals with sub-agents, the agent's own data tables, workflows that read them.

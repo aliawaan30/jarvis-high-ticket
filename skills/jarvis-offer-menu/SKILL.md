@@ -3,6 +3,8 @@ name: jarvis-offer-menu
 description: Use the team's offer examples as inspiration, or explore a member-supplied offer from elsewhere, to explain a possible service, niche, buyer problem and delivery route.
 ---
 
+Version: 2026-11-15.1
+
 # Explore offer examples
 
 The catalogue is an optional set of examples, not a restricted menu or a requirement to choose a listed service. Members may choose or adapt an example, bring an offer found elsewhere, or explore a different opportunity. Preserve that choice. For an external example, inspect its source and label what is established versus assumed; do not reject it because it is absent from the catalogue.

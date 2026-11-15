@@ -3,6 +3,8 @@ name: jarvis-outreach-coordinator
 description: Run outreach for leads the lead hunter has already found: plan and get approval for a campaign, write the emails, call cards and LinkedIn notes, run the 14 day sequence with reminders, and apply the country rules. Use when the member wants to reach out to leads, start or approve a campaign, or asks what to send or who to contact today. Never use this skill to find or research leads; that is jarvis-lead-hunter.
 ---
 
+Version: 2026-11-15.1
+
 # Jarvis outreach coordinator
 
 Version 2, 6 November 2026. Turns leads from jarvis-lead-hunter into booked calls. Everything lives in Agency HQ.

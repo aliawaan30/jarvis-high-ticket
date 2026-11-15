@@ -3,6 +3,8 @@ name: jarvis-rhythm
 description: The five Jarvis 2.0 workflows: morning brief, reply watch, after the call, evening log and Friday numbers. Use when setting up or changing scheduled or triggered work.
 ---
 
+Version: 2026-11-15.1
+
 # Rhythm: what Jarvis does without being asked
 
 Five workflows. Create them once HQ is set up and the student has given their timezone, working days and morning time. Keep it to these five, plus one more only while an outreach campaign is live: Campaign runner. Every run costs credits. Workflows run in the background, so the same fence as the goal applies: they only read HQ and the funnel's Applications table, add new applications to HQ, run the weekly watchlist check on Fridays, report, draft messages for leads and replies, and update Numbers. The only thing they may send is an email from a campaign the member approved, through the Campaign runner, within its limits, after re-checking the account. They apply opt outs straight away. They never start offer, pricing, funnel, ads or script work. Suggest it in the message instead. Reply watch and after the call need a connected inbox: if there is none yet, wait and create them when one is connected.

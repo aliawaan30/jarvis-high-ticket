@@ -3,6 +3,8 @@ name: jarvis-vsl-writer
 description: Write offer-specific VSLs, demonstrations and pre-call videos using the shared offer, buyer objections and inspected source structure, including what to show and film.
 ---
 
+Version: 2026-11-15.1
+
 # Jarvis VSL Writer
 Reference-grounded recovery candidate. Read the appendix "vsl source notes" below. Do not claim all seven supplied videos were fully analysed.
 
