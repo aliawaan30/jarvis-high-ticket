@@ -14,8 +14,8 @@ Students of The AI Agency Builder upgrade the free Jarvis (a Base44 Superagent) 
 
 | Layer | What it is | Where |
 | --- | --- | --- |
-| Core skills | jarvis-2-brain (how Jarvis thinks, the 8 step programme, solve-it rules), jarvis-hq (where every table and field lives), jarvis-rhythm (6 automatic jobs: morning brief, reply watch, after the call, evening log, Friday numbers, campaign runner), jarvis-missions (19 missions to the first client live) | skills/ |
-| Agency HQ app | Base44 app v3.14: 18 tables, 19 backend functions (including sendCheck, the email send gate), 1 workflow, HUD, pipeline, lead pages, campaigns, clients, results, Talk to Jarvis (voice stage with a particle orb, Base44 voice or Retell) | apps/agency-hq/ |
+| Core skills | jarvis-2-brain (how Jarvis thinks, the 8 step programme, solve-it rules), jarvis-hq (where every table and field lives), jarvis-rhythm (a morning brief and an afternoon check-in every working day, sent to the student's WhatsApp, Telegram or other connected channel, plus reply watch, after the call, Friday numbers and the campaign runner), jarvis-missions (19 missions to the first client live) | skills/ |
+| Agency HQ app | Base44 app v3.15.1: 19 tables, 20 backend functions (including sendCheck, the email send gate, and connections, which keeps every key in one Settings screen), 1 workflow, HUD, pipeline, lead pages, campaigns, clients, results, Talk to Jarvis (voice stage with a particle orb, Base44 voice or Retell) | apps/agency-hq/ |
 | Module skills | Module 2 offer (offer menu, offer creation, ad library research, custom opportunity finder), Module 3 funnel (landing page, confirmation page, VSL writer, pre-call follow up), Module 4 outreach (lead hunter, email setup, outreach coordinator, call card, reply desk, SMS), Module 5 ads (ad scripting, static ad creator, Meta campaign setup; ad editing still to add), Module 6 sales (call to close playbook, solution design, proposal builder), Module 7 fulfilment (scoping agent) | skills/ |
 | Data rule | Tables the app has live in Agency HQ. Offer, Funnel, Calls and Proposals live in Jarvis's own Data area. Extra fields go in "Extra" tables (for example CampaignExtra). Jarvis never edits the app | skills/jarvis-hq/SKILL.md |
 | Course | Blake's 39 lesson course text, plus a 42 lesson redesign preview with the prompt for every skill lesson | course/studio/export/COURSE.md, previews/ |
@@ -42,16 +42,16 @@ Built and tested locally (not yet on Base44): proposal builder and its render sc
 
 Built and tested on Base44 earlier: Jarvis 2.0 core install, Agency HQ (v3.13), Module 4 skills, landing page and offer skills (before the latest fixes).
 
-Not yet run end to end: a fresh Base44 test of the whole flow with Agency HQ v3.14 and the current skills. This is the next step.
+Not yet run end to end: a fresh Base44 test of the whole flow with Agency HQ v3.15.1 and the current skills. This is the next step.
 
 ## 5. Open items before launch
 
-1. Fresh Base44 run: upgrade a free Jarvis, install HQ v3.14, run offer, landing page, proposal. Confirm Jarvis can remove old skills, and that every "Use the [skill] skill" prompt triggers the right skill.
-2. Install format: today the upgrade uses a code plus a single pack file; the target is one zip per module. Decide which the course teaches.
-3. Ad editing skill is missing from the repo.
+1. Fresh Base44 run: upgrade a free Jarvis, install HQ v3.15.1 (including Settings, Connections and Set up my voice), run offer, landing page, proposal. Confirm Jarvis can remove old skills, and that every "Use the [skill] skill" prompt triggers the right skill.
+2. Install format: decided, one zip per module (course/downloads/jarvis-2 in GitHub). Confirm each installs cleanly in the fresh Base44 run.
+3. Ad editing skill: ships a day or two after launch.
 4. Calendar switch: 5 skills still mention Calendly or Cal.com (call card, lead hunter, reply desk, confirmation page, SMS). They need rewording for Google or Microsoft calendar.
 5. Missions order: mission 3 "First 10 leads" comes before the lead hunter is installed (Module 4). Reorder to match the course.
-6. Course text: Module 6 objection 8 contradicts the offer guarantee; the pricing example maths is wrong; "Your CRM" lesson describes the old CRM.
+6. Course text: Module 1, the old CRM lesson, the guarantee objection and the install steps are done. Still to do: the Module 6 pricing example maths, and the Module 4 lesson structure.
 7. Prerequisite checks: 16 module skills still need the opening check that refuses to run out of order (ad library research, ad scripting, call card, confirmation page, custom opportunity finder, email setup, landing page, lead hunter, offer creation, pre-call follow up, reply desk, scoping agent, SMS, static ad creator, VSL writer, call to close playbook). The core gates in jarvis-2-brain already stop most out-of-order runs; these are the second lock.
 8. Retell voice uses a clone of the film JARVIS voice: IP and publicity risk, decide before any public use.
 9. Support systems the course promises (weekly session, developer list, call reviews) have no owner yet.
@@ -60,7 +60,7 @@ Not yet run end to end: a fresh Base44 test of the whole flow with Agency HQ v3.
 
 | Folder | What's in it |
 | --- | --- |
-| skills/ | All 26 current skills, one folder each. skills/README.md is the index: student prompt, version and test status for every skill |
+| skills/ | All 26 current skills, one folder each. skills/README.md is the index: student prompt, version and test notes for every skill |
 | apps/agency-hq/ | The HUD app source, install prompt, release notes, Retell setup, talk mode notes, 3 screenshots |
 | docs/ | Decisions, course status, test results (Meta scenarios, sendCheck), Jarvis 2.0 install steps |
 | course/ | Blake's full course text (studio/export/COURSE.md), his writing rules (studio/VOICE.md), CRM and outreach specs |

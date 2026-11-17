@@ -359,7 +359,7 @@ export async function handleAfterCallPoll(req, { createClientFromRequest, secret
   try { base44 = createClientFromRequest(req); user = await base44.auth.me(); } catch { return responseJson({ ok: false, error: 'unauthorized' }, 401); }
   if (!user) return responseJson({ ok: false, error: 'unauthorized' }, 401);
   if (user.role !== 'admin') return responseJson({ ok: false, error: 'forbidden' }, 403);
-  const pat = secrets.get('JARVIS_NATIVE_TOKEN');
+  const pat = secrets.get('JARVIS_NATIVE_TOKEN') || await base44.asServiceRole.entities.Vault.filter({ name: 'JARVIS_NATIVE_TOKEN' }).then((r) => (r && r[0] && r[0].value) || null).catch(() => null);
   const result = await runAfterCallPoll({ store: { control: base44.asServiceRole.entities.CallControl, receipt: base44.asServiceRole.entities.CallReceipt, profile: base44.asServiceRole.entities.Profile }, fetchImpl, pat });
   return responseJson(result);
 }

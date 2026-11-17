@@ -2,6 +2,7 @@
 
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.44';
 import { secrets } from 'base44:runtime';
+import { getKey } from './keys.ts';
 
 export const MAX_BODY_BYTES = 100 * 1024;
 
@@ -161,11 +162,11 @@ export function brisbaneTodayISO() {
 // server-verified Base44 admin/owner session. Never trusts browser-supplied
 // identity. Returns { ok, base44, user } on success, { ok:false, status } otherwise.
 export async function authorizeWrite(req) {
-  const expected = secrets.get("HUD_KEY");
+  const base44 = createClientFromRequest(req);
   const provided = req.headers.get("x-hud-key");
+  const expected = provided ? await getKey("HUD_KEY", base44) : null;
   const hudAuthed = !!(expected && provided && provided === expected);
 
-  const base44 = createClientFromRequest(req);
   if (hudAuthed) return { ok: true, base44, user: null };
 
   try {

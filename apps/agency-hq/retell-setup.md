@@ -1,5 +1,7 @@
 # Retell setup for Jarvis voice (Agency HQ)
 
+Easiest (v3.15 and later): the owner pastes their Retell key in Settings, Connections and presses Set up my voice. The app does every step below by itself. Use this file only if that button reports a problem.
+
 For Jarvis. The member has a Retell account and wants the real-time Jarvis voice in their Agency HQ app (the HUD). Follow this file exactly. It is the free course's proven Retell build.
 
 Before you start:

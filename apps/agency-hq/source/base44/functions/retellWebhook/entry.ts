@@ -2,6 +2,7 @@ import { createClientFromRequest } from 'npm:@base44/sdk@0.8.49';
 import { secrets, waitUntil } from 'base44:runtime';
 import { AUTO_CONTINUE_DELAY_MS, hudBaseUrl, postWithDeliveryConfirmation } from '../../shared/after-call-bridge.ts';
 import { autoContinueReceipt } from '../../shared/auto-continue.ts';
+import { getKey } from '../../shared/keys.ts';
 
 const CALL_ANALYZED = 'call_analyzed';
 const RETELL_API = 'https://api.retellai.com';
@@ -139,12 +140,11 @@ async function dispatchBackground({ receipts, logs, pat, callId, transcript, cal
 export default async function(req) {
   if (req.method !== 'POST') return text({ error: 'method_not_allowed' }, 405);
   const rawBody = await req.text();
-  const secret = secrets.get('RETELL_API_KEY');
-  if (!secret) return text({ error: 'RETELL_API_KEY not set' }, 503);
-
   let base44 = null;
   try { base44 = createClientFromRequest(req); } catch {}
   if (!base44) return text({ error: 'sdk_unavailable' }, 503);
+  const secret = await getKey('RETELL_API_KEY', base44);
+  if (!secret) return text({ error: 'RETELL_API_KEY not set' }, 503);
 
   // Owner-specific Retell agent id and Base44 Superagent id are read from the
   // Profile record at runtime, so this exact function installs for any owner.
@@ -222,7 +222,7 @@ export default async function(req) {
   const existing = await receipts.filter({ call_id: receiptKey }, '-created_date', 1);
   if (existing.length) return text({ ok: true, duplicate: true }, 200);
 
-  let pat = secrets.get('JARVIS_NATIVE_TOKEN');
+  let pat = await getKey('JARVIS_NATIVE_TOKEN', base44);
   if (!noTranscript && !pat) return text({ error: 'JARVIS_NATIVE_TOKEN not set' }, 503);
 
   const receipt = await receipts.create({

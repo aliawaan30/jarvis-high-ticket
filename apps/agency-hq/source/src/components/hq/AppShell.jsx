@@ -35,7 +35,7 @@ export default function AppShell({ children, alert = false, profile }) {
           </div>
           <span className="hq-clock" style={{ fontFamily: MONO, fontSize: 15, color: '#8FD9EA' }}>{now.toLocaleTimeString('en-GB', { hour12: false })}</span>
           {goal && <span className="hq-objective" style={{ border: '1px solid #6B5320', background: 'rgba(245,183,74,.08)', color: C.amber, fontFamily: MONO, fontSize: 12, letterSpacing: '.1em', padding: '7px 12px', borderRadius: 6, textTransform: 'uppercase', maxWidth: 360, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} title={goal}>Objective: {goal}</span>}
-          <div className="hq-actions" style={{ marginLeft: 'auto' }}><HeaderActionsV2 voiceProvider={profile?.voice_provider || 'base44'} ownerName={profile?.owner_name || ''} /></div>
+          <div className="hq-actions" style={{ marginLeft: 'auto' }}><HeaderActionsV2 voiceProvider={profile?.voice_provider || 'base44'} ownerName={profile?.owner_name || ''} agentGreets={!!profile?.retell_greets} /></div>
         </div>
         <nav aria-label="Agency HQ" className="hq-nav" style={{ display: 'flex', flexWrap: 'wrap', gap: 4, padding: '0 22px 10px' }}>
           {NAV.map(([label, to]) => (

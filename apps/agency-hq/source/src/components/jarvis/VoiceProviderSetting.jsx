@@ -3,8 +3,8 @@ import { base44 } from '@/api/base44Client';
 import { HUD } from '@/lib/jarvis';
 
 const OPTIONS = [
-  { value: 'base44', label: 'Base44 agent, works out of the box' },
-  { value: 'retell', label: 'Retell Jarvis, needs your Retell API key and a Retell number' },
+  { value: 'base44', label: 'Browser voice, free. Jarvis answers live with every skill' },
+  { value: 'retell', label: 'Retell voice, add-on. Set it up in Connections first' },
 ];
 
 const fieldCls = 'font-mono text-[12px] tracking-[0.06em] bg-hud-panel border border-hud-border text-hud-text px-3 py-2 w-full focus:outline-none focus-visible:border-hud-accent';

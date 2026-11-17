@@ -2,6 +2,7 @@ import { buildCrmBriefing } from '../../shared/crm-context.ts';
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.49';
 import { secrets } from 'base44:runtime';
 import { buildRevenueLines } from '../../shared/call-context.ts';
+import { getKey } from '../../shared/keys.ts';
 
 const CONTROL_NAME = 'owner_native_call';
 const IN_FLIGHT_MS = 10_000;
@@ -54,7 +55,7 @@ export default async function(req) {
     const dryRun = input?.dry_run === true;
     const message = typeof input?.message === 'string' ? input.message.slice(0, 400) : '';
 
-    const apiKey = secrets.get('RETELL_API_KEY');
+    const apiKey = await getKey('RETELL_API_KEY', base44);
     if (typeof apiKey !== 'string' || !apiKey.trim()) {
       return json({ error: 'missing_secret', message: 'Retell is not set up yet. Open Settings and pick Retell Jarvis to finish setup.' }, 503);
     }

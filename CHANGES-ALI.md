@@ -62,5 +62,28 @@ Added: START-HERE.md (system overview for Blake and reviewing agents).
 
 ## Batch 3d, 15 Nov 2026
 Version stamps: every skill now carries a Version line (baseline 2026-11-15.1 where none existed), so "Update these skills" and "Am I up to date?" work.
-Rewritten: skills/README.md, the index of all 26 skills with module, student prompt, version and honest test status.
+Rewritten: skills/README.md, the index of all 26 skills with module, student prompt, version and test notes.
 Updated: docs/jarvis-2/INSTALL.md (upgrade also removes jarvis-offer-discovery and jarvis-opportunity-finder); jarvis-custom-opportunity-finder (removed the retired skill's embedded header from its appendix and reference file); START-HERE.md (points to the index).
+
+## Batch 3e, 17 Nov 2026
+Twice-daily check-ins (Blake's feedback): jarvis-rhythm 2026-11-17.1 replaces the evening log with an afternoon check-in 6 hours after the morning brief. Check-ins go to the student's connected channel (WhatsApp, Telegram, iMessage, Slack or LINE, else Base44 chat), always in three parts (since last time, one next task, momentum), adapt to wins and silence, and are never skipped to save credits.
+Updated: jarvis-2-brain 2026-11-17.1 (afternoon check-in example), docs/jarvis-2/INSTALL.md, skills/README.md, START-HERE.md.
+
+## Batch 3f, 17 Nov 2026: course text and skill downloads
+Course (course/studio): Module 1 rewritten: Install Jarvis 2.0, How Jarvis 2.0 Works (was Load the High Ticket Skill Pack), Your Jarvis HUD (was Connect Your Pipeline, now the new CRM). Removed from the outline: Prove It on Something Real, and Module 3 Your CRM (old CRM). Module 6 Objections: removed "Can you guarantee it'll work?", nine objections now. An install section opens the first lesson of Modules 2 to 7. Small fixes in Create Your Offer and The Ad Skills (no more single skill pack). export/COURSE.md regenerated with the studio's own export code.
+Downloads (course/downloads/jarvis-2): jarvis-skills-module-1-core.zip to module-7-delivery.zip (all 26 skills, each in one module; core includes the install steps) and agency-hq-v3.14.zip.
+Added: docs/decisions/2026-11-17.md.
+
+## Batch 3g, 17 Nov 2026: Agency HQ v3.15
+App (apps/agency-hq, v3.15): Settings, Connections (every key in one place with a ? help, saved in a new backend-only Vault table, last 4 characters only; HUD key created automatically with Copy for Jarvis; Set up my voice builds the Retell agent in one press). New table Vault, new function connections, shared module keys; every function reads keys through it (Base44 Secrets still win). HUD home agentic layer: Scout, Writer, Closer and Ops around the core from real tasks, who is working on what, next check-in, Needs you, Message Jarvis with the real reply, roles on the live feed. Full production build passes; connections logic tested (9 checks) and Set up my voice tested against a stand-in Retell (4 scenarios).
+Skills: jarvis-hq 2026-11-17.1 (guides the Connections screen).
+Course: Your Jarvis HUD lesson uses Connections and the v3.15 package. Downloads: agency-hq-v3.15.zip replaces v3.14, core skill zip rebuilt.
+
+## Batch 3h, 17 Nov 2026: Agency HQ v3.15.1
+Voice simplified: Browser voice (free) or Retell voice (add-on). Fish Audio hidden from students (existing keys still work). Agents built by Set up my voice greet in their own voice (new Profile field retell_greets). HUD: diag lines hidden from the live feed, feed entries clamp to 3 lines with click to expand, Closer counts replies to call. Downloads: agency-hq-v3.15.1.zip replaces v3.15.
+
+## Batch 3i, 17 Nov 2026: Agency HQ v3.15.2
+Talk to Jarvis is the main HUD button (filled cyan, microphone icon, under the status line); tapping the core also opens Talk. Only Hud.jsx and hq.css changed. Downloads: agency-hq-v3.15.2.zip replaces v3.15.1.
+
+## Combined push, 17 Nov 2026
+One update carrying everything from batches 3e to 3i at their latest versions, plus docs/previews (agentic HUD, Talk button, course and proposal previews), docs/updates/jarvis-2-updates-2026-11-17.md and docs/case-study (brief, captions, 11 images).

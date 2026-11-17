@@ -49,6 +49,9 @@
       ],
       "default": "base44"
     },
+    "retell_greets": {
+      "type": "boolean"
+    },
     "retell_agent_id": {
       "type": "string"
     },

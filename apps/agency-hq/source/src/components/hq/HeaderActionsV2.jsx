@@ -7,7 +7,7 @@ import { C, MONO } from '@/lib/hq';
 // restyled for Agency HQ v2. Settings lives in the main menu, so it is not repeated here.
 const POLL_MS = 3000, MAX_POLL_MS = 180000, IN_FLIGHT_MS = 10000, TOAST_MS = 5000;
 
-export default function HeaderActionsV2({ voiceProvider = 'base44', ownerName = '' }) {
+export default function HeaderActionsV2({ voiceProvider = 'base44', ownerName = '', agentGreets = false }) {
   const [calling, setCalling] = useState(false);
   const [talkOpen, setTalkOpen] = useState(false);
   const [toast, setToast] = useState(null);
@@ -76,7 +76,7 @@ export default function HeaderActionsV2({ voiceProvider = 'base44', ownerName = 
         <span className="hq-act-label">{calling ? 'Calling...' : 'Call me'}</span>
       </button>
       {telegramUrl && <button type="button" className="hq-btn" onClick={() => window.open(telegramUrl, '_blank', 'noopener,noreferrer')} style={btn}>Text</button>}
-      <VoiceStage open={talkOpen} onClose={() => setTalkOpen(false)} voiceProvider={voiceProvider} ownerName={ownerName} />
+      <VoiceStage open={talkOpen} onClose={() => setTalkOpen(false)} voiceProvider={voiceProvider} ownerName={ownerName} agentGreets={agentGreets} />
       <div aria-live="polite" style={{ position: 'absolute', right: 0, top: '100%', marginTop: 8, zIndex: 50, pointerEvents: 'none' }}>
         {toast && <div style={{ maxWidth: 320, fontFamily: MONO, fontSize: 12, background: '#0A1626', border: `1px solid ${toast.red ? 'rgba(240,140,130,.5)' : C.line2}`, color: toast.red ? C.red : C.text, borderRadius: 8, padding: '8px 12px' }}>{toast.msg}</div>}
       </div>

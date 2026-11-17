@@ -1,0 +1,19 @@
+{
+  // Connection keys saved from Settings, Connections. Only the app's backend
+  // (service role) can read or write this table; the browser never sees a key.
+  "name": "Vault",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "enum": ["HUD_KEY", "JARVIS_NATIVE_TOKEN", "RETELL_API_KEY", "FISH_API_KEY"] },
+    "value": { "type": "string" },
+    "last4": { "type": "string" },
+    "saved_at": { "type": "string" }
+  },
+  "required": ["name", "value"],
+  "rls": {
+    "read": { "user_condition": { "role": "service" } },
+    "create": { "user_condition": { "role": "service" } },
+    "update": { "user_condition": { "role": "service" } },
+    "delete": { "user_condition": { "role": "service" } }
+  }
+}

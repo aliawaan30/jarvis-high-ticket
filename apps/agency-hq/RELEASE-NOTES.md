@@ -1,5 +1,22 @@
 # Agency HQ release notes
 
+## v3.15.2 (17 Nov 2026)
+- Talk to Jarvis is the main action on the HUD: a filled cyan button with a microphone, directly under the status line, with a soft glow. The next check-in moves below it.
+- Tapping the Jarvis core opens Talk too (keyboard: Enter or Space).
+- Only src/pages/hq/Hud.jsx and src/components/hq/hq.css changed.
+
+## v3.15.1 (17 Nov 2026)
+- Voice is one simple choice: Browser voice (free, Jarvis answers live with every skill) or Retell voice (add-on). Fish Audio is no longer shown to students; existing Fish keys keep working.
+- Agents built by Set up my voice greet in their own Retell voice ("Hey <first name>, how can I help you today?"), so the HUD no longer plays its own greeting for them. Older agents keep the HUD greeting. New Profile field retell_greets.
+- HUD: diagnostic lines are hidden from the live feed; long feed entries show 3 lines and expand on click; Closer counts replies waiting for a call.
+
+## v3.15 (17 Nov 2026)
+- Settings, Connections: every key in one place, each with a ? explaining what it is, what it costs and where to get it. Keys are saved in a new Vault table that only the app's backend can read, and are never shown again (last 4 characters only). Base44 Secrets still work and take priority.
+- The HUD key is created automatically; Copy for Jarvis hands it over in one paste.
+- Set up my voice: one button builds the Jarvis voice agent in the owner's Retell account (voice, tools with the HUD key, webhook, publish) and saves it on the Profile. Reuses an existing Jarvis agent instead of creating a second one.
+- New table Vault, new function connections, shared module keys; every function now reads keys through it.
+- HUD home, agentic layer: Scout, Writer, Closer and Ops around the core, lit when a matching task is running; who is working on what; the next check-in; a Needs you list (drafts to approve, your next task); Message Jarvis with the real reply; roles on the live feed. Every function from v3.14 is unchanged.
+
 ## v3.14 (13 Nov 2026)
 - New backend function sendCheck (function 19): the email send gate every outreach email passes before it is sent. Reads the app's yes or no text values correctly and accepts the do not contact list as text. Tested with 20 good emails (all pass) and 15 bad ones (all blocked).
 

@@ -1,263 +1,256 @@
 {
-  "title": "High Ticket Course",
-  "modules": [
+ "title": "High Ticket Course",
+ "modules": [
+  {
+   "slug": "m1",
+   "num": "Module 1",
+   "name": "Jarvis 2.0",
+   "blurb": "Install the version of Jarvis that runs a high ticket business, not a side hustle. Research, offer building, outreach, proposals and delivery all come out of this one thing, so it gets built first.",
+   "lessons": [
     {
-      "slug": "m1",
-      "num": "Module 1",
-      "name": "Jarvis 2.0",
-      "blurb": "Install the version of Jarvis that runs a high ticket business, not a side hustle. Research, offer building, outreach, proposals and delivery all come out of this one thing, so it gets built first.",
-      "lessons": [
-        {
-          "id": "m1-your-unfair-advantage-set-up-first",
-          "title": "Your Unfair Advantage, Set Up First",
-          "written": true,
-          "sketched": false
-        },
-        {
-          "id": "m1-install-jarvis-2-0",
-          "title": "Install Jarvis 2.0"
-        },
-        {
-          "id": "m1-load-the-high-ticket-skill-pack",
-          "title": "Load the High Ticket Skill Pack",
-          "written": true
-        },
-        {
-          "id": "m1-connect-your-pipeline",
-          "title": "Connect Your Pipeline"
-        },
-        {
-          "id": "m1-prove-it-on-something-real",
-          "title": "Prove It on Something Real"
-        }
-      ]
+     "id": "m1-your-unfair-advantage-set-up-first",
+     "title": "Your Unfair Advantage, Set Up First",
+     "written": true,
+     "sketched": false
     },
     {
-      "slug": "m2",
-      "num": "Module 2",
-      "name": "The Irresistible Offer",
-      "blurb": "Understand the offer, explore services and niches, then create yours with Jarvis.",
-      "lessons": [
-        {
-          "id": "m2-the-irresistible-offer",
-          "title": "The Irresistible Offer",
-          "written": true
-        },
-        {
-          "id": "m2-three-ways-to-find-an-offer-that-scales",
-          "title": "AI services you can sell",
-          "written": true
-        },
-        {
-          "id": "m2-choose-your-niche",
-          "title": "Choose Your Niche",
-          "written": true
-        },
-        {
-          "id": "m2-write-the-offer",
-          "title": "What an Irresistible Offer Looks Like",
-          "written": true
-        },
-        {
-          "id": "m2-create-your-offer",
-          "title": "Create Your Offer",
-          "written": true
-        }
-      ],
-      "review_status": {
-        "state": "done",
-        "label": "Done",
-        "source": "Blake, 9 November 2026"
-      }
+     "id": "m1-install-jarvis-2-0",
+     "title": "Install Jarvis 2.0",
+     "written": true
     },
     {
-      "slug": "m5",
-      "num": "Module 3",
-      "name": "Funnels",
-      "blurb": "This comes before outreach on purpose. Every lead you generate needs a page to land on, a booking step that qualifies them, and follow up that runs without you. A high ticket funnel does not sell. It puts the right person on your calendar already half sold, and your CRM is where all of it lives.",
-      "lessons": [
-        {
-          "id": "m5-your-crm",
-          "title": "Your CRM",
-          "written": true
-        },
-        {
-          "id": "m5-what-the-funnel-is-actually-for",
-          "title": "Website vs Landing Page",
-          "written": true
-        },
-        {
-          "id": "m5-build-the-page",
-          "title": "Build Your Landing Page",
-          "written": true
-        },
-        {
-          "id": "m5-get-them-to-show-up-ready",
-          "title": "The Confirmation Page",
-          "written": true
-        },
-        {
-          "id": "m5-the-follow-up-that-runs-without-you",
-          "title": "Set Up Your Booking Reminders",
-          "written": true
-        }
-      ],
-      "review_status": {
-        "state": "testing",
-        "label": "Ready for testing",
-        "source": "Blake, 9 November 2026"
-      }
+     "id": "m1-load-the-high-ticket-skill-pack",
+     "title": "How Jarvis 2.0 Works",
+     "written": true
     },
     {
-      "slug": "m3",
-      "num": "Module 4",
-      "name": "Client Acquisition: Outreach",
-      "blurb": "Build the list, enrich it, then hit it from the phone, LinkedIn, DMs, email and SMS with one message and one pipeline behind it. Channels on their own are a hobby. Packaged together they are a machine.",
-      "lessons": [
-        {
-          "id": "m3-the-whole-system-on-one-page",
-          "title": "The Whole System on One Page",
-          "written": true
-        },
-        {
-          "id": "m3-build-the-account-list",
-          "title": "Build the Account List"
-        },
-        {
-          "id": "m3-enrich-it",
-          "title": "Enrich It"
-        },
-        {
-          "id": "m3-cold-calling",
-          "title": "Cold Calling"
-        },
-        {
-          "id": "m3-linkedin",
-          "title": "LinkedIn"
-        },
-        {
-          "id": "m3-dm-outreach",
-          "title": "DM Outreach"
-        },
-        {
-          "id": "m3-email-and-sms",
-          "title": "Email and SMS"
-        },
-        {
-          "id": "m3-package-it-all-together",
-          "title": "Package It All Together"
-        }
-      ],
-      "review_status": {
-        "state": "done",
-        "label": "Done",
-        "source": "Blake, 9 November 2026"
-      }
-    },
-    {
-      "slug": "m4",
-      "num": "Module 5",
-      "name": "Client Acquisition: Paid Ads",
-      "blurb": "Ads do not fix a weak offer, they expose it faster. Once outreach has proven people will pay, this is how you buy the same conversations without picking up the phone.",
-      "lessons": [
-        {
-          "id": "m4-how-ads-actually-work",
-          "title": "How Ads Actually Work",
-          "written": true
-        },
-        {
-          "id": "m4-the-ad-skills",
-          "title": "The Ad Skills: Script, Record, Edit, Statics, Set Up",
-          "written": true
-        }
-      ]
-    },
-    {
-      "slug": "m6",
-      "num": "Module 6",
-      "name": "Sales",
-      "blurb": "Two calls. The first one finds the problem and puts a number on it. The second one presents the thing you scoped and closes it. No pitching in call one, ever.",
-      "lessons": [
-        {
-          "id": "m6-one-conversation-two-calls",
-          "title": "One Conversation, Two Calls",
-          "written": true
-        },
-        {
-          "id": "m6-call-one-find-the-pain",
-          "title": "Call One: Find the Pain",
-          "written": true
-        },
-        {
-          "id": "m6-prescribe-the-solution",
-          "title": "Prescribe the Solution",
-          "written": true
-        },
-        {
-          "id": "m6-the-proposal-and-demo-generator",
-          "title": "The Proposal and Demo Generator",
-          "written": true
-        },
-        {
-          "id": "m6-call-two-present-and-close",
-          "title": "Call Two: Present and Close",
-          "written": true
-        },
-        {
-          "id": "m6-objections",
-          "title": "Objections",
-          "written": true
-        },
-        {
-          "id": "m6-get-your-calls-reviewed",
-          "title": "Get Your Calls Reviewed",
-          "written": true
-        }
-      ]
-    },
-    {
-      "slug": "m7",
-      "num": "Module 7",
-      "name": "Fulfilment",
-      "blurb": "Two ways to deliver what you just sold. Arbitrage means somebody technical builds it and you own the client. Self fulfilment means you and Jarvis build it. Most people end up doing both, one per deal.",
-      "lessons": [
-        {
-          "id": "m7-two-ways-to-deliver",
-          "title": "Two Ways To Deliver",
-          "written": true
-        },
-        {
-          "id": "m7-arbitrage-find-and-vet-developers",
-          "title": "Arbitrage: Find and Vet Developers",
-          "written": true,
-          "sketched": false
-        },
-        {
-          "id": "m7-arbitrage-scope-hand-off-keep-the-margin",
-          "title": "Arbitrage: Scope, Hand Off, Keep the Margin",
-          "written": true
-        },
-        {
-          "id": "m7-self-fulfilment-build-it-with-jarvis",
-          "title": "Self Fulfilment: Build It With Jarvis",
-          "written": true
-        },
-        {
-          "id": "m7-self-fulfilment-test-it-like-the-client-will",
-          "title": "Self Fulfilment: Test It Like the Client Will",
-          "written": true
-        },
-        {
-          "id": "m7-onboard-hand-over-get-paid",
-          "title": "Onboard, Hand Over, Get Paid",
-          "written": true
-        },
-        {
-          "id": "m7-support-retainer-and-raising-the-price",
-          "title": "Support, Retainer and Raising the Price",
-          "written": true
-        }
-      ]
+     "id": "m1-connect-your-pipeline",
+     "title": "Your Jarvis HUD",
+     "written": true
     }
-  ]
+   ]
+  },
+  {
+   "slug": "m2",
+   "num": "Module 2",
+   "name": "The Irresistible Offer",
+   "blurb": "Understand the offer, explore services and niches, then create yours with Jarvis.",
+   "lessons": [
+    {
+     "id": "m2-the-irresistible-offer",
+     "title": "The Irresistible Offer",
+     "written": true
+    },
+    {
+     "id": "m2-three-ways-to-find-an-offer-that-scales",
+     "title": "AI services you can sell",
+     "written": true
+    },
+    {
+     "id": "m2-choose-your-niche",
+     "title": "Choose Your Niche",
+     "written": true
+    },
+    {
+     "id": "m2-write-the-offer",
+     "title": "What an Irresistible Offer Looks Like",
+     "written": true
+    },
+    {
+     "id": "m2-create-your-offer",
+     "title": "Create Your Offer",
+     "written": true
+    }
+   ],
+   "review_status": {
+    "state": "done",
+    "label": "Done",
+    "source": "Blake, 9 November 2026"
+   }
+  },
+  {
+   "slug": "m5",
+   "num": "Module 3",
+   "name": "Funnels",
+   "blurb": "This comes before outreach on purpose. Every lead you generate needs a page to land on, a booking step that qualifies them, and follow up that runs without you. A high ticket funnel does not sell. It puts the right person on your calendar already half sold, and your CRM is where all of it lives.",
+   "lessons": [
+    {
+     "id": "m5-what-the-funnel-is-actually-for",
+     "title": "Website vs Landing Page",
+     "written": true
+    },
+    {
+     "id": "m5-build-the-page",
+     "title": "Build Your Landing Page",
+     "written": true
+    },
+    {
+     "id": "m5-get-them-to-show-up-ready",
+     "title": "The Confirmation Page",
+     "written": true
+    },
+    {
+     "id": "m5-the-follow-up-that-runs-without-you",
+     "title": "Set Up Your Booking Reminders",
+     "written": true
+    }
+   ],
+   "review_status": {
+    "state": "testing",
+    "label": "Ready for testing",
+    "source": "Blake, 9 November 2026"
+   }
+  },
+  {
+   "slug": "m3",
+   "num": "Module 4",
+   "name": "Client Acquisition: Outreach",
+   "blurb": "Build the list, enrich it, then hit it from the phone, LinkedIn, DMs, email and SMS with one message and one pipeline behind it. Channels on their own are a hobby. Packaged together they are a machine.",
+   "lessons": [
+    {
+     "id": "m3-the-whole-system-on-one-page",
+     "title": "The Whole System on One Page",
+     "written": true
+    },
+    {
+     "id": "m3-build-the-account-list",
+     "title": "Build the Account List"
+    },
+    {
+     "id": "m3-enrich-it",
+     "title": "Enrich It"
+    },
+    {
+     "id": "m3-cold-calling",
+     "title": "Cold Calling"
+    },
+    {
+     "id": "m3-linkedin",
+     "title": "LinkedIn"
+    },
+    {
+     "id": "m3-dm-outreach",
+     "title": "DM Outreach"
+    },
+    {
+     "id": "m3-email-and-sms",
+     "title": "Email and SMS"
+    },
+    {
+     "id": "m3-package-it-all-together",
+     "title": "Package It All Together"
+    }
+   ],
+   "review_status": {
+    "state": "done",
+    "label": "Done",
+    "source": "Blake, 9 November 2026"
+   }
+  },
+  {
+   "slug": "m4",
+   "num": "Module 5",
+   "name": "Client Acquisition: Paid Ads",
+   "blurb": "Ads do not fix a weak offer, they expose it faster. Once outreach has proven people will pay, this is how you buy the same conversations without picking up the phone.",
+   "lessons": [
+    {
+     "id": "m4-how-ads-actually-work",
+     "title": "How Ads Actually Work",
+     "written": true
+    },
+    {
+     "id": "m4-the-ad-skills",
+     "title": "The Ad Skills: Script, Record, Edit, Statics, Set Up",
+     "written": true
+    }
+   ]
+  },
+  {
+   "slug": "m6",
+   "num": "Module 6",
+   "name": "Sales",
+   "blurb": "Two calls. The first one finds the problem and puts a number on it. The second one presents the thing you scoped and closes it. No pitching in call one, ever.",
+   "lessons": [
+    {
+     "id": "m6-one-conversation-two-calls",
+     "title": "One Conversation, Two Calls",
+     "written": true
+    },
+    {
+     "id": "m6-call-one-find-the-pain",
+     "title": "Call One: Find the Pain",
+     "written": true
+    },
+    {
+     "id": "m6-prescribe-the-solution",
+     "title": "Prescribe the Solution",
+     "written": true
+    },
+    {
+     "id": "m6-the-proposal-and-demo-generator",
+     "title": "The Proposal and Demo Generator",
+     "written": true
+    },
+    {
+     "id": "m6-call-two-present-and-close",
+     "title": "Call Two: Present and Close",
+     "written": true
+    },
+    {
+     "id": "m6-objections",
+     "title": "Objections",
+     "written": true
+    },
+    {
+     "id": "m6-get-your-calls-reviewed",
+     "title": "Get Your Calls Reviewed",
+     "written": true
+    }
+   ]
+  },
+  {
+   "slug": "m7",
+   "num": "Module 7",
+   "name": "Fulfilment",
+   "blurb": "Two ways to deliver what you just sold. Arbitrage means somebody technical builds it and you own the client. Self fulfilment means you and Jarvis build it. Most people end up doing both, one per deal.",
+   "lessons": [
+    {
+     "id": "m7-two-ways-to-deliver",
+     "title": "Two Ways To Deliver",
+     "written": true
+    },
+    {
+     "id": "m7-arbitrage-find-and-vet-developers",
+     "title": "Arbitrage: Find and Vet Developers",
+     "written": true,
+     "sketched": false
+    },
+    {
+     "id": "m7-arbitrage-scope-hand-off-keep-the-margin",
+     "title": "Arbitrage: Scope, Hand Off, Keep the Margin",
+     "written": true
+    },
+    {
+     "id": "m7-self-fulfilment-build-it-with-jarvis",
+     "title": "Self Fulfilment: Build It With Jarvis",
+     "written": true
+    },
+    {
+     "id": "m7-self-fulfilment-test-it-like-the-client-will",
+     "title": "Self Fulfilment: Test It Like the Client Will",
+     "written": true
+    },
+    {
+     "id": "m7-onboard-hand-over-get-paid",
+     "title": "Onboard, Hand Over, Get Paid",
+     "written": true
+    },
+    {
+     "id": "m7-support-retainer-and-raising-the-price",
+     "title": "Support, Retainer and Raising the Price",
+     "written": true
+    }
+   ]
+  }
+ ]
 }

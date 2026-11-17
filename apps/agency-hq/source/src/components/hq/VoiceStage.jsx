@@ -144,7 +144,7 @@ function skillFor(text) {
   return '';
 }
 
-export default function VoiceStage({ open, onClose, voiceProvider = 'base44', ownerName = '' }) {
+export default function VoiceStage({ open, onClose, voiceProvider = 'base44', ownerName = '', agentGreets = false }) {
   const useRetell = voiceProvider === 'retell';
   const [status, setStatus] = useState('idle');
   const [lines, setLines] = useState([]);
@@ -652,7 +652,8 @@ export default function VoiceStage({ open, onClose, voiceProvider = 'base44', ow
       if (greetCache.text !== greet || !greetCache.buffer) await Promise.race([prepareGreeting(greet), wait(1500)]);
       if (cancelled || !aliveRef.current) return;
       if (useRetell) {
-        // The Retell agent lets the user speak first, so Jarvis only greets once.
+        // Agents built by Set up my voice greet in their own voice; older agents let the user speak first, so the HUD greets.
+        if (agentGreets) return;
         if (!playGreeting()) speakAckBrowser(greet);
       } else {
         setStatus('speaking');

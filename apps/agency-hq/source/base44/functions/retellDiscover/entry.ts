@@ -1,5 +1,6 @@
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.49';
 import { secrets } from 'base44:runtime';
+import { getKey } from '../../shared/keys.ts';
 
 const LIST_AGENTS_URL = 'https://api.retellai.com/list-agents';
 const LIST_PHONE_NUMBERS_URL = 'https://api.retellai.com/list-phone-numbers';
@@ -57,7 +58,7 @@ export default async function(req) {
     if (!user) return json({ error: 'unauthorized' }, 401);
     if (user.role !== 'admin') return json({ error: 'forbidden' }, 403);
 
-    const apiKey = secrets.get('RETELL_API_KEY');
+    const apiKey = await getKey('RETELL_API_KEY', base44);
     if (typeof apiKey !== 'string' || !apiKey.trim()) {
       return json({ missing_secret: true, message: 'Add your Retell API key in the app secrets first, then Publish' }, 503);
     }

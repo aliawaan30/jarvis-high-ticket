@@ -3,6 +3,7 @@ import { base44 } from '@/api/base44Client';
 import { useAuth } from '@/lib/AuthContext';
 import VoiceProviderSetting from '@/components/jarvis/VoiceProviderSetting';
 import JarvisAgentSetting from '@/components/jarvis/JarvisAgentSetting';
+import Connections from '@/components/hq/Connections';
 import AppShell, { panel, label } from '@/components/hq/AppShell';
 import { C, useRows } from '@/lib/hq';
 
@@ -119,6 +120,8 @@ export default function Settings() {
           {dncDomains.map((d) => (<div key={d} style={{ display: 'flex', justifyContent: 'space-between', padding: '12px 0', borderBottom: '1px solid #12202F', fontSize: 14 }}><span>{d}</span><span style={{ color: C.muted }}>whole address or domain</span></div>))}
         </section>
       </div>
+
+      <Connections canEdit={canEdit} onVoiceReady={loadProfile} />
 
       <section aria-label="Jarvis connection" style={{ ...panel, marginTop: 18 }}>
         <div style={label}>JARVIS CONNECTION AND VOICE</div>

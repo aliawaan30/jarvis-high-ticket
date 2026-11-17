@@ -47,7 +47,7 @@ Drop any question you already know the answer to and renumber. A check-in time f
 ## Step 6. Start the rhythm
 First, background work needs permission to write to HQ. If memory already says "Update data is on", do not ask again. Otherwise ask the member, in one line, to switch on Agent Settings, Security, "Update data", wait until they say it is on, then save "Update data is on" in memory. Without it, the brief and every background job stall.
 Read the jarvis-rhythm skill. Create its workflows with the member's timezone, working days and brief time.
-1. Morning brief, evening log and Friday numbers: create them now.
+1. Morning brief, afternoon check-in (6 hours after the brief) and Friday numbers: create them now, sent to their connected channel as jarvis-rhythm says.
 2. Reply watch and after the call need a connected inbox. If Gmail or Outlook is connected, create them now. If not, do not create them. Save in memory "Jarvis 2.0 waiting on inbox: reply watch, after the call", and create both the moment an inbox is connected.
 If a Jarvis 2.0 workflow already exists, update it instead of creating a new one. Only switch on workflows you created in this install. A workflow or goal that already exists and is paused stays paused: the member may have paused it to save credits. List it in the install check note and add one line to the final message: "Your [names] are paused. Say 'resume them' when you want them back." Do not create any other workflows yourself.
 

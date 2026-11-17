@@ -2,6 +2,7 @@ import { createClientFromRequest } from 'npm:@base44/sdk';
 import { secrets, waitUntil } from 'base44:runtime';
 import { hudBaseUrl, postWithDeliveryConfirmation } from '../../shared/after-call-bridge.ts';
 import { buildRevenueLines } from '../../shared/call-context.ts';
+import { getKey } from '../../shared/keys.ts';
 
 const CONTROL_NAME = 'owner_native_call';
 const IN_FLIGHT_MS = 10_000;
@@ -148,7 +149,7 @@ export default async function(req) {
     if (!input || typeof input !== 'object' || Array.isArray(input) || ('dry_run' in input && typeof input.dry_run !== 'boolean')) return json({ error: 'invalid_body' }, 400);
   } catch { return json({ error: 'invalid_json' }, 400); }
 
-  const token = secrets.get('JARVIS_NATIVE_TOKEN');
+  const token = await getKey('JARVIS_NATIVE_TOKEN', base44);
   if (!token) return json({ requestAccepted: false, error: 'native_token_not_configured' }, 503);
 
   // The Superagent id and owner name come from the Profile at runtime. Without a

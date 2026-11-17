@@ -1,5 +1,6 @@
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.49';
 import { secrets } from 'base44:runtime';
+import { getKey } from '../../shared/keys.ts';
 
 // Speaks text in the Jarvis voice through Fish Audio and returns MP3 audio as
 // base64. Used by Talk (Base44 brain) so replies sound like Jarvis instead of
@@ -31,7 +32,7 @@ export default async function(req) {
     if (!user) return json({ error: 'unauthorized' }, 401);
     if (user.role !== 'admin') return json({ error: 'forbidden' }, 403);
 
-    const apiKey = secrets.get('FISH_API_KEY');
+    const apiKey = await getKey('FISH_API_KEY', base44);
     if (typeof apiKey !== 'string' || !apiKey.trim()) {
       return json({ error: 'missing_secret', message: 'Add the FISH_API_KEY secret to use the Jarvis voice.' }, 503);
     }

@@ -12,6 +12,7 @@
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.49';
 import { secrets, waitUntil } from 'base44:runtime';
 import { runAfterCallPoll } from '../../shared/after-call-bridge.ts';
+import { getKey } from '../../shared/keys.ts';
 
 function text(body, status = 200) {
   return new Response(typeof body === 'string' ? body : JSON.stringify(body), {
@@ -32,7 +33,9 @@ export default async function (req) {
   if (new TextEncoder().encode(raw).length > 100_000) return text('body_too_large', 413);
 
   const url = new URL(req.url);
-  const expected = secrets.get('HUD_KEY');
+  let early = null;
+  try { early = createClientFromRequest(req); } catch { /* checked below */ }
+  const expected = await getKey('HUD_KEY', early);
   const provided = url.searchParams.get('key') || req.headers.get('x-hud-key');
   if (!expected || !provided || provided !== expected) return text('unauthorized', 401);
 
@@ -46,7 +49,7 @@ export default async function (req) {
   let base44;
   try { base44 = createClientFromRequest(req); } catch { return text('sdk_unavailable', 503); }
 
-  const pat = secrets.get('JARVIS_NATIVE_TOKEN');
+  const pat = await getKey('JARVIS_NATIVE_TOKEN', base44);
   if (!pat) return text('native_token_not_configured', 503);
 
   // Same poll, same locks, same receipt store as the scheduled bridge. The

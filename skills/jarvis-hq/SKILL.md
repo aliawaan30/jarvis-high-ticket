@@ -5,7 +5,7 @@ description: HQ, the business record, kept in the member's Agency HQ app (the Ja
 
 # HQ: the business record
 
-Version: 2026-11-13.1 (matches Agency HQ app v3.14)
+Version: 2026-11-17.1 (matches Agency HQ app v3.15)
 
 HQ is the member's whole business in one place. Every skill reads from it and writes back to it. Chat memory holds who the member is. HQ holds the business.
 
@@ -24,12 +24,13 @@ You cannot create or install apps. The member does it in the Base44 builder; you
 
 1. Ask them to create a new empty app in Base44 named "Agency HQ" (or open their existing Jarvis HUD app, which is upgraded in place).
 2. In that app's builder chat, they attach the Agency HQ package zip from the course lesson and paste the install prompt from the same lesson, in one message.
-3. Ask them to send you a screenshot of the builder's report. Check it shows: 18 tables, 19 functions deployed (none returning 404, including sendCheck, retellWebhook and jarvisVoice), the "Jarvis after-call execution bridge" workflow active, and the build passing. If anything is missing, write them the exact follow-up message for the builder ("Deploy the [function] function exactly as written, then report its status") and check again. Do not move on until all four are confirmed.
-4. Secrets (app Dashboard, Secrets). Never ask the member to paste a secret into chat; use the secure secret card if you need one yourself.
-   1. **JARVIS_NATIVE_TOKEN (required):** in your Agent settings, Developer, Create access token: One app or Superagent, the entry with the Agent badge, Full access. Walk them through it.
-   2. **HUD_KEY (required):** you generate it, 32 random hex characters, and give it to them once to save as the secret.
-   3. **RETELL_API_KEY and FISH_API_KEY (optional, voice only):** only if they want the real-time Jarvis voice. Follow retell-setup.md for Retell. Without them, Talk still works in Base44 mode with the browser voice.
-5. They publish, then publish again. Secrets do nothing until published.
+3. Ask them to send you a screenshot of the builder's report. Check it shows: 19 tables, 20 functions deployed (none returning 404, including connections, sendCheck, retellWebhook and jarvisVoice), the "Jarvis after-call execution bridge" workflow active, and the build passing. If anything is missing, write them the exact follow-up message for the builder ("Deploy the [function] function exactly as written, then report its status") and check again. Do not move on until all four are confirmed.
+4. They publish, then publish again. Connections needs the published app.
+5. Connections, in the app's Settings (v3.15). Every key has a ? that explains it, so keep your guidance short.
+   1. **Jarvis access (required):** in your Agent settings, Developer, Create access token: One app or Superagent, the entry with the Agent badge, Full access. They paste it in Connections and press Save.
+   2. **HUD key (required, automatic):** the app creates it. They press Copy for Jarvis and paste it to you. Save it as a secret straight away and never repeat it in chat.
+   3. **Live voice (Retell add-on, optional):** they paste their Retell key, press Test key, then Set up my voice. The app builds the voice agent itself. Only fall back to retell-setup.md if the button reports a problem. Without Retell, Talk works with the Base44 voice.
+   4. Keys already in Base44 Secrets keep working and take priority. Never ask the member to paste a key into chat, except the HUD key handover above.
 6. In the published app's Settings they add your agent ID and their name, and choose a voice provider (Base44 if they have no Retell account).
 7. They give you cross-app access to the app (Agent settings, General). Save its app ID in memory as "Agency HQ app ID".
 8. Then run "Checking the app". Only say it is ready when the check passes.
@@ -37,7 +38,7 @@ You cannot create or install apps. The member does it in the Base44 builder; you
 ## Checking the app
 
 Run this after install, after any update, and whenever a write fails.
-1. Read each table you use: Account, Touch, Deal, Campaign, Client, Mission, WeekNumbers, AgencySettings, Profile, Task. Each must exist and accept a read.
+1. Read each table you use: Account, Touch, Deal, Campaign, Client, Mission, WeekNumbers, AgencySettings, Profile, Task. Each must exist and accept a read. Vault is locked to the app itself; you cannot and should not read it.
 2. Write one test Task with title "HQ check", read it back, then mark it done.
 3. If a read or write fails: check cross-app access first, then "Update data", then the app ID in memory. Fix what you can, and walk the member through what only they can do. If a table or function is missing, give them the exact message for the app builder. Never fix the app yourself.
 
@@ -61,7 +62,7 @@ Field names are exact. Use only the listed values for fields with a fixed list.
 9. **Profile** (who the member is, shown in the HUD): business_name, owner_name, niche, service, suburbs, timezone, goal_90_day, call_hours, phone, owner_phone, voice_provider, superagent_id, hud_app_id, and the rest as the app defines. Keep it in step with your memory of the member.
 10. **Task** (jobs agreed with the member, including in voice calls): title, status (todo, doing, done), priority, due_date, notes, source, execution_owner (jarvis, owner), progress_note, done_at.
 11. **Memory** and **ActivityLog**: written by the HUD's voice mode and after-call bridge. Read them for context; add to them only as the after-call rules say.
-12. **Do not use:** Lead is the old free course table. Never write new leads there; Account is the only lead table. CallControl, CallReceipt, SessionLog, TalkTurn and User belong to the app itself. Never write to them.
+12. **Do not use:** Vault holds the connection keys and only the app's backend can read it. Lead is the old free course table. Never write new leads there; Account is the only lead table. CallControl, CallReceipt, SessionLog, TalkTurn and User belong to the app itself. Never write to them.
 
 ## Tables in your Data area
 

@@ -1,12 +1,16 @@
-# High ticket course working text
+# High ticket course
 
-Generated from current studio JSON. Drafts and empty lessons remain visible. Technical status is in docs/COURSE-STATUS.md.
+Exported from the studio. One heading per module, one block per lesson.
 
-## Module 1 Jarvis 2.0
+## Module 1. Jarvis 2.0
 
-### Your Unfair Advantage, Set Up First
+Install the version of Jarvis that runs a high ticket business, not a side hustle. Research, offer building, outreach, proposals and delivery all come out of this one thing, so it gets built first.
 
-Everything in this course runs through Jarvis. Before you pick a market or write an offer, the thing that does the work needs to exist.
+### m1.1 Your Unfair Advantage, Set Up First
+
+*Everything in this course runs through Jarvis. Before you pick a market or write an offer, the thing that does the work needs to exist.*
+
+**They leave with:** A clear picture of what Jarvis 2.0 does at every stage of this course, and the one outcome you are driving it toward.
 
 In this module, you’ll set up your own Jarvis, give it your business details and load the skills we use throughout the business.
 
@@ -14,72 +18,176 @@ You’re doing this first so you can give Jarvis a task and have it work from yo
 
 **By the end, you’ll have Jarvis set up with your skills and business context, your pipeline ready and a first task tested.**
 
-### Install Jarvis 2.0
+### m1.2 Install Jarvis 2.0
 
-One sitting. At the end of it, Jarvis knows who you are, what you sell and what you are chasing.
+*Upgrade the Jarvis you already have. It keeps what it knows about you and gets everything it needs to run your agency.*
 
-No lesson body written yet.
+**They leave with:** They leave with Jarvis 2.0 installed, their goal set and their first mission waiting.
 
-### Load the High Ticket Skill Pack
+One message. Jarvis does the rest and asks you four quick things.
 
-The skills are the product. Each one is a job Jarvis can do properly instead of improvising.
-
-A skill is a set of instructions for a specific job. The pack tells Jarvis how to research an opportunity, write an offer, build a funnel and prepare a proposal. Your business details and saved work give it the context.
-
-## Load the pack
-
-Download the current skill pack. Keep the folder together so the reference files stay with each skill. Attach the ZIP to your Jarvis agent. If it cannot open ZIP files, extract it and upload the relevant skill folder with its references.
+## Upgrade Jarvis
+Download **jarvis-skills-module-1-core.zip** from this lesson. Open your Jarvis chat, attach the file and send this with the code from your welcome email.
 
 ```
-Read the attached skill pack, tell me which skills you can access and save them using your available persistent project storage. Tell me if anything cannot be saved or used.
+Upgrade me to Jarvis 2.0. My code is [your code]. Follow the install steps in the attached file.
 
 ```
 
-Start a fresh conversation with the same agent and ask it to find the offer creation skill. If it cannot, keep the pack in its project knowledge or reattach the relevant folder. Uploading a file does not connect your email, calendar or CRM.
+> EXAMPLE: **You:** Upgrade me to Jarvis 2.0. My code is J2-4821. Follow the install steps in the attached file.
 
-## Test one job
+**Jarvis:** Upgrading you now. Give me a few minutes.
+
+**Jarvis:** Here’s what I know: Sam, Dallas, roofing. Right? You also have 6 old skills from the free course. I’ll remove them so nothing old gets in the way. OK?
+
+**You:** Yes to both.
+
+**Jarvis:** Four quick ones: your monthly target and by when, sales calls a week, what time for your morning brief and which days, and how many new leads a day. I’d start with 5.
+
+**You:** $20k a month by March. 5 calls a week. 8am weekdays. 5 leads.
+
+**Before continuing:** answer Jarvis’s questions. Don’t skip the target. Everything Jarvis does is measured against it.
+
+Jarvis works in the background for you. It needs permission to save what it does.
+
+## Switch on one setting
+- Open your Jarvis agent’s settings.
+- Go to Security.
+- Switch on **Update data**.
+- Tell Jarvis it’s on.
+
+Jarvis checks its own work before it says it’s ready.
+
+## You’re on Jarvis 2.0
+Jarvis tests everything it set up, then sends one message with your goal, when your first morning brief lands, and your first mission. From now on it checks in with you twice every working day: a morning brief and an afternoon check-in. Connect WhatsApp or Telegram in Jarvis’s Channels if you want them on your phone.
+
+**Before continuing:** you see “You’re on Jarvis 2.0” and your first mission.
+
+**If it looks different:** tell Jarvis what you see, or send a screenshot. It knows this step and will sort it out with you.
+
+### m1.3 How Jarvis 2.0 Works
+
+*Jarvis 2.0 doesn’t wait for you to ask. It runs your agency with you, every day, toward one number.*
+
+**They leave with:** They leave knowing what runs on its own, what they do, and how every lesson works from here.
+
+Know what’s running, so you know what to expect from it.
+
+## Four parts that work together
+
+| Part | What it does for you | 
+| **The brain** | How Jarvis thinks. It looks at your business, works out what makes money soonest and does that first. Sales calls beat outreach, every time. | 
+| **The rhythm** | What Jarvis does on its own. A morning brief and an afternoon check-in every working day, your numbers every Friday, and it watches your replies all day. Check-ins come to WhatsApp or Telegram if you connect them. | 
+| **The missions** | Your path to your first client, in 19 steps, one at a time. Each one only counts when the proof is in your HUD. | 
+| **The HUD** | Your agency on one screen: what needs you, your pipeline, leads, campaigns, clients and results. You can talk to Jarvis from it. | Learn it once. Every module works the same way.
+
+## How every Jarvis lesson works
+- **Install, once per module.** The module’s first lesson gives you a file. Attach it in Jarvis and send the install message. Jarvis lists what it installed.
+- **Run.** Each lesson gives you one message that names the skill it uses, like “Use the offer creation skill to write my offer.” You never paste what Jarvis already knows.
+- **Check.** Each lesson tells you what you should see when it worked.
+
+When a skill gets better, a lesson tells you. Attach the new file and send:
 
 ```
-Use the offer menu skill to explain an AI receptionist service for local trades, then use the offer creation skill to draft the six lines with demo proof.
+Update these skills. Keep all my data. Tell me which versions changed.
+
+```
+And whenever you’re not sure what’s next:
+
+```
+Where am I?
+
+```
+The reason students finish this course.
+
+## Why this is different
+Most AI tools wait for you to know what to ask. Jarvis knows where you are, what’s next and what’s making money, and it tells you before you ask. It checks its own work, it never makes up a number, and when something breaks it fixes it with you instead of handing you an error.
+
+**Before continuing:** you can name the four parts and the three steps of every lesson.
+
+### m1.4 Your Jarvis HUD
+
+*Your HUD is your CRM and your command centre: what needs you, pipeline, leads, campaigns, clients, results and Talk to Jarvis. About 20 minutes.*
+
+**They leave with:** They leave with their HUD live, connected to Jarvis, and their missions on the dashboard.
+
+Jarvis walks you through every step and checks each one before the next.
+
+## Start it in Jarvis
+
+```
+Use the jarvis-hq skill to set up my Agency HQ.
 
 ```
 
-Check that you understand what the business gets. You should see a service you can explain and an offer written in six lines.
+> EXAMPLE: **You:** Use the jarvis-hq skill to set up my Agency HQ.
 
-## Keep your version current
+**Jarvis:** Let’s do it. First, in Base44 click Create new app and name it Agency HQ. Don’t type anything into it yet. Tell me when it’s there.
 
-Keep your business information and approved offer in your own project. When I release a new pack, download it and ask Jarvis to replace the previous skill instructions while keeping your business records. Test the changed skill again before using it with a client.
+This message goes into the new app’s builder chat, not into Jarvis.
 
-## Let Jarvis help you through the course
-**Go through the course yourself, with Jarvis alongside you.** Read the lesson or watch the video, then use Jarvis to explain anything unclear and help you do the exercise. It keeps the context of your business as you progress.
-
-The pack includes a course guide skill and the current course text and diagrams. Keep the whole guide folder in the same Jarvis project so it can explain lessons using your business and help you do the work.
-
-```
-Use the course guide skill. Check that you can read the course content, find where I am up to and help me with the next step. Save my progress using the project storage you actually have.
+## Install the app
+- Open your new Agency HQ app in Base44.
+- In its builder chat, attach **agency-hq-v3.15.zip** from this lesson.
+- Paste the message below in the same message and send it.
 
 ```
-On each lesson, use “Copy prompt for Jarvis” when you want help. You can ask it to explain a section, give an example for your niche or help you complete the task. It should use your saved choices instead of making you start again.
+Install the attached Agency HQ v3.15 package into this app as the exact source of truth. Unzip it and copy every file under source/ into this project at the same paths, replacing what is there.
 
-If Jarvis cannot access the course files or save progress, it should tell you. Keep the files in project knowledge or reattach them, and save the progress note it gives you. The course guide does not connect your business tools.
+Copy in this order: everything under base44/ first, then src/api/, src/lib/, src/hooks/, src/utils/, then src/components/, then src/pages/, then src/index.css, and last src/App.jsx, src/main.jsx and index.html. Restart or reload the dev server after copying.
 
-### Connect Your Pipeline
+Make sure every entity in base44/entities/ exists exactly as defined (19 tables). Deploy every backend function in base44/functions/ exactly as written (20 functions), including connections, sendCheck, retellWebhook, which Retell calls from outside without a login because it checks Retell&#x27;s signature itself, and jarvisVoice. Register the workflow in base44/workflows/ and confirm it is active. Make sure package.json lists three 0.171.0 and retell-client-js-sdk 3.0.3 exactly, and install them.
 
-Jarvis is only useful if it can see your deals, your calendar and your inbox, and write back into them.
+Never rename or move a file and never change an import path to work around an error. Keep the app&#x27;s login requirement on. Do not redesign, simplify or recreate any page, component, style, entity, function, shared module or workflow. Run the build and fix only genuine build errors.
 
-No lesson body written yet.
+Report: every table, every deployed function (send each an empty POST and give the status code; none may be 404), the workflow status, and the build result. Do not publish.
 
-### Prove It on Something Real
+```
+**Before continuing:** send Jarvis a screenshot of the builder’s report. If anything is missing, Jarvis gives you the exact message to send the builder.
 
-A setup you have not used is not a setup. Give it one real job and watch it finish.
+Your HUD only connects once it is published. Publishing twice makes sure everything has loaded.
 
-No lesson body written yet.
+## Publish twice
+- Click Publish. When it’s done, click Publish again.
+- Open your published HUD, then Settings.
 
-## Module 2 The Irresistible Offer
+Settings, Connections. Every line has a ? that tells you what it is and where to get it.
 
-### The Irresistible Offer
+## Connect everything in one place
 
-Understand what makes an offer valuable before you create your own.
+| Connection | What to do | 
+| Jarvis access | Make an access token in Jarvis (Settings, Developer, Create access token, One app or Superagent, the Agent entry, Full access), paste it, press Save. | 
+| HUD key | Already created for you. Press Copy for Jarvis, paste it into your Jarvis chat and send it. | 
+| Live voice (optional add-on) | Paste your Retell key, press Test key, then Set up my voice. The app builds your Jarvis voice for you. | Keys are saved securely and never shown again. Only their last 4 characters appear, so you can see which one is saved.
+
+- Still in Settings, add your Jarvis agent ID and your name. For voice, choose Base44, or Retell if you set up the add-on.
+- In Jarvis’s settings, General, give Jarvis access to the Agency HQ app.
+- Tell Jarvis “Done”. It checks every part.
+
+**Before continuing:** every line in Connections you need says Connected, your HUD shows your missions, and Talk to Jarvis answers “What’s next?”
+
+**If it looks different:** send Jarvis a screenshot. It knows each step and will fix it with you.
+
+## Module 2. The Irresistible Offer
+
+Understand the offer, explore services and niches, then create yours with Jarvis.
+
+### m2.1 The Irresistible Offer
+
+*Understand what makes an offer valuable before you create your own.*
+
+**They leave with:** Understand the offer, the cost of the problem and what the buyer needs explained.
+
+Once, at the start of the module. Every Jarvis step in this module needs them.
+
+## Give Jarvis this module’s skills
+Download **jarvis-skills-module-2-offer.zip** from this lesson, attach it in your Jarvis chat and send the message below. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
+
+```
+Install these skills: offer menu, offer creation, ad library offer research and custom opportunity finder. Replace any older versions. Don&#x27;t run them yet. List what you installed and each version.
+
+```
+**Before continuing:** Jarvis lists all 4 skills with a version next to each.
 
 ## What you will do in this module
 Read each lesson, then do the exercise with Jarvis. If something does not make sense, ask it to explain the section using your business. The course teaches the process; Jarvis helps you apply it.
@@ -149,9 +257,11 @@ This is buyer awareness: **what they already know about the problem and the ways
 
 You do not need to memorise these stages. Remember this: if the owner does not understand the problem yet, explain it before expecting them to want your solution. If they already understand it, spend less time explaining the basics and more time showing why your offer fits.
 
-### AI services you can sell
+### m2.2 AI services you can sell
 
-Understand the service before choosing who to sell it to.
+*Understand the service before choosing who to sell it to.*
+
+**They leave with:** A suitable agency service and real examples to investigate for the chosen niche.
 
 ## Choose a service you want to explore
 **These are service categories, not identical packages.** You adapt what you build to the business. Start with the result they need, then agree which tasks and connections belong in the service.
@@ -292,9 +402,11 @@ The audit identifies the project; it does not commit you to automating everythin
 
 These are offer examples to adapt. Set your target, timing and guarantee around what you can deliver. A straightforward receptionist setup can take 2 to 5 working days once the details and access are ready. Start with one niche, identify a worthwhile problem and use Jarvis to develop the service and offer together.
 
-### Choose Your Niche
+### m2.3 Choose Your Niche
 
-Explore 25 types of business and choose who you want to help.
+*Explore 25 types of business and choose who you want to help.*
+
+**They leave with:** One service and niche to investigate.
 
 ## A niche is the type of customer you serve
 “Plumbing businesses” is a niche. “AI receptionist” is a service. Your offer connects the two: answering missed calls for plumbing businesses so they can book more jobs.
@@ -432,9 +544,11 @@ Use the offer menu skill to help me choose one service and niche. Ask about my e
 ```
 When you have chosen, continue to the finished offer example. Then you will build yours step by step.
 
-### What an Irresistible Offer Looks Like
+### m2.4 What an Irresistible Offer Looks Like
 
-See a complete roofing offer, why it works and where you use it.
+*See a complete roofing offer, why it works and where you use it.*
+
+**They leave with:** You understand the six lines and how the same offer appears in your marketing.
 
 See one complete offer before writing yours.
 
@@ -468,11 +582,13 @@ That is the shape of the roofing example. The number needs a suitable pipeline a
 
 The headline sells the result. The subheadline explains the mechanism. The VSL explains the service in more depth. Your application finds the right businesses, then the booking page gets them onto a call.
 
-### Create Your Offer
+### m2.5 Create Your Offer
 
-Use these four prompts in order to finish your offer with Jarvis.
+*Use these four prompts in order to finish your offer with Jarvis.*
 
-Keep this in the same Jarvis project with your skill pack loaded. Jarvis uses your earlier answers, researches the service and writes the offer. You choose what to keep.
+**They leave with:** One niche, one understood service and one saved offer ready to use on a landing page.
+
+Keep this in the same Jarvis chat, with this module’s skills installed in The Irresistible Offer. Jarvis uses your earlier answers, researches the service and writes the offer. You choose what to keep.
 
 Start with who you can understand and reach.
 
@@ -541,45 +657,26 @@ Use my saved service brief and the offer creation skill to write my six lines. R
 
 Then build your landing page from that same offer. The headline sells the result; the subheadline explains how.
 
-## Module 3 Funnels
+## Module 3. Funnels
 
-### Your CRM
+This comes before outreach on purpose. Every lead you generate needs a page to land on, a booking step that qualifies them, and follow up that runs without you. A high ticket funnel does not sell. It puts the right person on your calendar already half sold, and your CRM is where all of it lives.
 
-One place for every lead, every call and every dollar. I build it, you get a login.
+### m5.1 Website vs Landing Page
 
-In this module, you’ll build the path from someone seeing your offer to becoming a lead and booking a sales call. That includes your CRM, landing page, application, booking page and follow-up.
+*A website tells people who you are. A landing page takes one problem, says it out loud, and puts the right person on your calendar.*
 
-The point is to stop interested people getting lost between clicking, applying and showing up. Jarvis will help you build the pages and connect the steps using the offer you’ve already created.
+**They leave with:** The difference between the website and the landing page, in four sentences.
 
-**By the end, you’ll have your funnel and follow-up connected to your CRM and calendar, with a test enquiry taken through the full journey.**
+Once, at the start of the module. Every Jarvis step in this module needs them.
 
-Most deals in this business die in the gaps. Someone books, nobody confirms. A proposal goes out, nobody chases it. A lead comes in at 9pm and gets a reply on Thursday. So I am building you a CRM. You get a login, your leads only, and Jarvis does the moving.
+## Give Jarvis this module’s skills
+Download **jarvis-skills-module-3-funnel.zip** from this lesson, attach it in your Jarvis chat and send the message below. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
 
-## What is in it
+```
+Install these skills: landing page, confirmation page, VSL writer and pre-call follow up. Replace any older versions. Don&#x27;t run them yet. List what you installed and each version.
 
-- **Leads.** Every lead in one table: name, business, phone, email, where they came from, stage, next action and when. Click a lead and it opens: every message in and out, every call, every stage move, your notes, all on one timeline. When someone rings back after three weeks you know where you left it in five seconds.
-
-- **Pipeline.** One board, nine fixed stages. Drag a card or let Jarvis move it. If a lead is not moving right, something needs to happen today.
-
-- **Follow ups due.** Overdue, today, next seven days. This is the screen you open every morning.
-
-- **Numbers.** Ad spend, leads, cost per lead, calls booked, cost per booked call, show rate, close rate, revenue. Jarvis reads your ad account each morning and writes the spend in.
-
-## How leads get in
-
-Someone fills in your ad form, they appear. Someone books through your page, they appear at Call 1 booked. Jarvis adds the ones you find through outreach. Confirmations, reminders, the no show chase and the proposal chase all send from here, from your own number and your own inbox. You never build an automation and you never debug one.
-
-## The nine stages
-
-![Every lead sits in exactly one stage.](/data/img/m5-pipeline-stages.svg)
-
-Won means paid, not a verbal yes. Lost means a clear no, with the reason in the notes. Not now means right fit, wrong time, and Jarvis keeps them warm for months without you lifting a finger.
-
-This is version one. It grows as you tell me what you need from it.
-
-### Website vs Landing Page
-
-A website tells people who you are. A landing page takes one problem, says it out loud, and puts the right person on your calendar.
+```
+**Before continuing:** Jarvis lists all 4 skills with a version next to each.
 
 A website is for brand awareness. Who you are, what you do, the clients you have worked with, their logos, a bit of story. It makes you look credible. It does not sell.
 
@@ -589,9 +686,11 @@ Have both if you want. But every ad you run and every message you send points at
 
 The copy is not new work. It is your six lines, said to one person with one problem. If the page is hard to write, go back to the offer.
 
-### Build Your Landing Page
+### m5.2 Build Your Landing Page
 
-Your offer becomes a headline, one mechanism line and an application. Qualified applicants then choose a time.
+*Your offer becomes a headline, one mechanism line and an application. Qualified applicants then choose a time.*
+
+**They leave with:** A compact landing page, progressive application and qualified booking page, with each connection tested before launch.
 
 This lesson turns the offer you already created into a page a business owner can understand quickly. By the end, you will have the landing page, the application and the page where qualified applicants book. The thank-you page comes after a real booking and is built in the next lesson.
 
@@ -618,9 +717,11 @@ If the answers need review, say that. Don’t approve everyone or claim a lead w
 ## Check the whole route
 Read the page as the buyer. Test every question, Back, missing answers and a failed submission. Then test a qualified, review-needed and outside-scope application with the actual connection. Book a test slot and check that the calendar event exists. Only that booking should trigger the next page and reminders.
 
-### The Confirmation Page
+### m5.3 The Confirmation Page
 
-After they book, help them confirm attendance. Video, confirmation email, calendar invite.
+*After they book, help them confirm attendance. Video, confirmation email, calendar invite.*
+
+**They leave with:** A separate post-booking thank-you page, connected to an actual booking event.
 
 The congratulations page is where a qualified applicant books. This page comes after that booking. Its job is to help them confirm they will attend, not give them another form or calendar.
 
@@ -653,9 +754,11 @@ Jarvis reads your saved funnel and checks the booking and confirmation setup. Us
 ## Test the connection
 Book a test slot, find the confirmation email, use the attendance action and accept the invite. Check the meeting details and that the provider records the actual action. Until the sender and event are connected, the page is a draft. Internal error-state tests are not extra customer pages.
 
-### Set Up Your Booking Reminders
+### m5.4 Set Up Your Booking Reminders
 
-Confirm the booking, keep them engaged and remind them to show up.
+*Confirm the booking, keep them engaged and remind them to show up.*
+
+**They leave with:** A simple email and SMS reminder flow, plus a call task for an unconfirmed appointment.
 
 Someone books a call. They should get the details straight away, know how to confirm, and get reminded before the meeting. That is what this automation does.
 
@@ -663,12 +766,12 @@ Calendly handles the booking and calendar invitation. Your connected email and S
 
 ## The reminder flow
 
-| When | What happens |
-| As soon as they book | Confirmation email and SMS with the time, confirmation-page link and how to confirm attendance. They also receive the calendar invitation. |
-| 48 hours before | Email reminder. Include something useful about the problem you will help them solve. |
-| 24 hours before | Email and SMS reminder. |
-| 2 hours before | Email with the meeting details. |
-| 1 hour before, if they have not confirmed | You get a notification to call them. This is a task for you, not another automated SMS. |
+| When | What happens | 
+| As soon as they book | Confirmation email and SMS with the time, confirmation-page link and how to confirm attendance. They also receive the calendar invitation. | 
+| 48 hours before | Email reminder. Include something useful about the problem you will help them solve. | 
+| 24 hours before | Email and SMS reminder. | 
+| 2 hours before | Email with the meeting details. | 
+| 1 hour before, if they have not confirmed | You get a notification to call them. This is a task for you, not another automated SMS. | 
 | 5 minutes before | Short email and SMS with the meeting link. | If they book closer to the meeting, skip reminders whose time has already passed. Don’t send the whole sequence at once. If they cancel or move the call, stop the old reminders and use the new booking time.
 
 ## The confirmation call
@@ -686,11 +789,26 @@ Run the pre-call follow up skill for my saved offer and funnel using this remind
 ```
 Put one test booking through it. Check the email, SMS, calendar invitation and the one-hour call task before switching it on.
 
-## Module 4 Client Acquisition: Outreach
+## Module 4. Client Acquisition: Outreach
 
-### The Whole System on One Page
+Build the list, enrich it, then hit it from the phone, LinkedIn, DMs, email and SMS with one message and one pipeline behind it. Channels on their own are a hobby. Packaged together they are a machine.
 
-Six steps, one list, one message on every channel. I want you to see the whole thing before you build any one piece of it.
+### m3.1 The Whole System on One Page
+
+*Six steps, one list, one message on every channel. I want you to see the whole thing before you build any one piece of it.*
+
+**They leave with:** The whole outreach system in your head.
+
+Once, at the start of the module. Every Jarvis step in this module needs them.
+
+## Give Jarvis this module’s skills
+Download **jarvis-skills-module-4-outreach.zip** from this lesson, attach it in your Jarvis chat and send the message below. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
+
+```
+Install these skills: lead hunter, email setup, outreach coordinator, call card, reply desk and SMS. Replace any older versions. Don&#x27;t run them yet. List what you installed and each version.
+
+```
+**Before continuing:** Jarvis lists all 6 skills with a version next to each.
 
 In this module, you’ll use Jarvis to find businesses that fit your offer, identify the right person and prepare your outreach. You’ll learn how to use calls, email, LinkedIn and messages together.
 
@@ -738,53 +856,82 @@ They find more emails and they are faster past a few hundred accounts a month. N
 
 - Cold email from one business inbox is fine at this volume. Never buy a list and blast it. That burns a domain you need for the next five years.
 
-### Build the Account List
+### m3.2 Build the Account List
 
-The list is the campaign. A sharp list of two hundred beats a scraped pile of ten thousand, and Jarvis builds it for you from Google Maps.
+*The list is the campaign. A sharp list of two hundred beats a scraped pile of ten thousand, and Jarvis builds it for you from Google Maps.*
 
-No lesson body written yet.
+**They leave with:** a clean list of target businesses in your market, in your CRM, deduped and ready to work.
 
-### Enrich It
+_blank_
 
-Names, emails, the owner and a reason to call this week. This is what makes your outreach stop sounding cold.
+### m3.3 Enrich It
 
-No lesson body written yet.
+*Names, emails, the owner and a reason to call this week. This is what makes your outreach stop sounding cold.*
 
-### Cold Calling
+**They leave with:** every account with a named owner, a way to reach them, and one specific reason you are contacting them now.
 
-The fastest way to find out whether your offer is any good. Thirty dials will teach you more than a week of thinking.
+_blank_
 
-No lesson body written yet.
+### m3.4 Cold Calling
 
-### LinkedIn
+*The fastest way to find out whether your offer is any good. Thirty dials will teach you more than a week of thinking.*
 
-Where the person who signs actually reads things. Slower than the phone, warmer than email.
+**They leave with:** your dial block in your calendar, a script you can say out loud, and your first conversations logged.
 
-No lesson body written yet.
+_blank_
 
-### DM Outreach
+### m3.5 LinkedIn
 
-Instagram and Facebook, where owners read their own messages. Short, human, no pitch in the first message.
+*Where the person who signs actually reads things. Slower than the phone, warmer than email.*
 
-No lesson body written yet.
+**They leave with:** a profile that sells for you and a daily LinkedIn routine running against your list.
 
-### Email and SMS
+_blank_
 
-The cheapest touch you own and the easiest one to ruin. Get delivery right first, then worry about volume.
+### m3.6 DM Outreach
 
-No lesson body written yet.
+*Instagram and Facebook, where owners read their own messages. Short, human, no pitch in the first message.*
 
-### Package It All Together
+**They leave with:** a DM sequence running daily against your list, with replies landing in one inbox.
 
-One prospect, every channel, one pipeline. This is what separates someone running a system from someone doing random outreach.
+_blank_
 
-No lesson body written yet.
+### m3.7 Email and SMS
 
-## Module 5 Client Acquisition: Paid Ads
+*The cheapest touch you own and the easiest one to ruin. Get delivery right first, then worry about volume.*
 
-### How Ads Actually Work
+**They leave with:** your own mailbox sending through your CRM, a sequence running daily, and replies coming back to you.
 
-Ads are the most consistent way I know to scale this business. They come down to what you say on camera and four numbers.
+_blank_
+
+### m3.8 Package It All Together
+
+*One prospect, every channel, one pipeline. This is what separates someone running a system from someone doing random outreach.*
+
+**They leave with:** one sequence running across every channel, every touch logged, and a daily board that tells you what to do next.
+
+_blank_
+
+## Module 5. Client Acquisition: Paid Ads
+
+Ads do not fix a weak offer, they expose it faster. Once outreach has proven people will pay, this is how you buy the same conversations without picking up the phone.
+
+### m4.1 How Ads Actually Work
+
+*Ads are the most consistent way I know to scale this business. They come down to what you say on camera and four numbers.*
+
+**They leave with:** How ads work, your four numbers, and the scale, fix or kill rule.
+
+Once, at the start of the module. Every Jarvis step in this module needs them.
+
+## Give Jarvis this module’s skills
+Download **jarvis-skills-module-5-ads.zip** from this lesson, attach it in your Jarvis chat and send the message below. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
+
+```
+Install these skills: ad scripting, static ad creator and Meta campaign setup. Replace any older versions. Don&#x27;t run them yet. List what you installed and each version.
+
+```
+**Before continuing:** Jarvis lists all 3 skills with a version next to each.
 
 In this module, you’ll turn your offer into ads and learn how to set up and manage a campaign. Jarvis helps with the scripts and statics; you film when you choose to use video.
 
@@ -825,22 +972,22 @@ It also depends on your ticket. At $35,000 you can afford a far higher cost per 
 ## Your four numbers
 Work backwards from your price, before you spend a dollar. Say you sell at $8,000 and you want CAC under 25 percent. That gives you $2,000 per client won. Close one in four qualified calls and each booked call can cost up to $500. One in three leads books a call, so each lead can cost up to about $165. Made up ratios to show the shape; yours come from your own calls, and your first guesses are fine.
 
-| Number | Example at $8,000 | Yours |
-| Your price | $8,000 |  |
-| Most you will spend to win one client | $2,000 |  |
-| Most one qualified booked call can cost | $500 |  |
-| Most one lead can cost | $165 |  |
+| Number | Example at $8,000 | Yours | 
+| Your price | $8,000 |  | 
+| Most you will spend to win one client | $2,000 |  | 
+| Most one qualified booked call can cost | $500 |  | 
+| Most one lead can cost | $165 |  | 
 ## The numbers inside Meta
 The ones that matter, in the order the buyer moves through them.
 
-| Number | What it means | What moves it |
-| CPM | What Meta charges to show your ad a thousand times. | Who you are reaching. Mostly out of your hands. |
-| CTR | Of the people who saw it, how many clicked. | The hook. First three seconds, first line of text. |
-| CPC | What each click costs. | Fix the hook and this falls on its own. |
-| Cost per lead | What one person giving you their details costs. | The match between the ad and the page. |
-| Cost per qualified call booked | What one real buyer on your calendar costs. | Your qualifying questions and booking flow. Plan your budget around this one. |
-| Show rate | Of the calls booked, how many turned up. | Your follow up. Below 60 percent, fix that before you touch the ads. |
-| Close rate | Of the calls that happened, how many bought. | Your sales process. Ads cannot fix a weak call. |
+| Number | What it means | What moves it | 
+| CPM | What Meta charges to show your ad a thousand times. | Who you are reaching. Mostly out of your hands. | 
+| CTR | Of the people who saw it, how many clicked. | The hook. First three seconds, first line of text. | 
+| CPC | What each click costs. | Fix the hook and this falls on its own. | 
+| Cost per lead | What one person giving you their details costs. | The match between the ad and the page. | 
+| Cost per qualified call booked | What one real buyer on your calendar costs. | Your qualifying questions and booking flow. Plan your budget around this one. | 
+| Show rate | Of the calls booked, how many turned up. | Your follow up. Below 60 percent, fix that before you touch the ads. | 
+| Close rate | Of the calls that happened, how many bought. | Your sales process. Ads cannot fix a weak call. | 
 | CAC | Total spend divided by clients won. | Everything above. The only number that decides whether ads are working. | Half of these are not ad numbers. Show rate and close rate live in your funnel and on your calls. Cheap clicks with a weak funnel behind them is how most people lose money on Meta. Track the whole line, click to cash.
 
 ## One winner, many versions
@@ -855,20 +1002,22 @@ Give each ad the cost of one or two booked calls before you judge it, and never 
 
 Log every decision in your CRM: ad, outcome, reason, next action. In a month that record tells you exactly what this market responds to.
 
-### The Ad Skills: Script, Record, Edit, Statics, Set Up
+### m4.2 The Ad Skills: Script, Record, Edit, Statics, Set Up
 
-Jarvis writes the scripts, you film them, Jarvis edits them, makes the statics and sets the campaign up with you. One order, every time.
+*Jarvis writes the scripts, you film them, Jarvis edits them, makes the statics and sets the campaign up with you. One order, every time.*
 
-Five steps in a fixed order, with you in the middle holding the phone: Jarvis writes the scripts, you film them, Jarvis edits them, makes the statics, then walks you through setting the campaign up inside Meta. If you skipped the skill pack, paste each skill file into Jarvis and ask it to save it as a skill first.
+**They leave with:** Video ads, static ads and a Meta campaign ready to turn on.
+
+Five steps in a fixed order, with you in the middle holding the phone: Jarvis writes the scripts, you film them, Jarvis edits them, makes the statics, then walks you through setting the campaign up inside Meta. If Jarvis says a skill is missing, go back to How Ads Actually Work and install this module’s skills first.
 
 ## The order
 
-| Step | Who does it | What comes out |
-| 1. Script | Ad Scripting skill | Five to ten video scripts, each on a different angle, 30 to 60 seconds |
-| 2. Record | You and your phone | Each script filmed, a few takes, best take picked |
-| 3. Edit | Ad Editing skill | Each take cut to the hook, captioned, three cuts per script |
-| 4. Statics | Static Ad Creator skill | Image ads on the same angles, for people who do not watch video |
-| 5. Set up | Meta Campaign Setup skill | One campaign, one ad set, one ad per angle, named, budgeted, with a check schedule |
+| Step | Who does it | What comes out | 
+| 1. Script | Ad Scripting skill | Five to ten video scripts, each on a different angle, 30 to 60 seconds | 
+| 2. Record | You and your phone | Each script filmed, a few takes, best take picked | 
+| 3. Edit | Ad Editing skill | Each take cut to the hook, captioned, three cuts per script | 
+| 4. Statics | Static Ad Creator skill | Image ads on the same angles, for people who do not watch video | 
+| 5. Set up | Meta Campaign Setup skill | One campaign, one ad set, one ad per angle, named, budgeted, with a check schedule | 
 ## Step 1: scripting
 The Ad Scripting skill takes your offer, your market research and where your buyer sits on the awareness ladder, and turns them into scripts you read to camera. Every script tests one angle and says which one in its heading, so when one wins you know why.
 
@@ -924,11 +1073,26 @@ Your booking page, with the qualifying questions and the follow up behind it. An
 - **No fake testimonials, screenshots or urgency.**
 - **Keep a record.** Every ad gets a line in your CRM: angle, spend, cost per qualified call, decision, reason.
 
-## Module 6 Sales
+## Module 6. Sales
 
-### One Conversation, Two Calls
+Two calls. The first one finds the problem and puts a number on it. The second one presents the thing you scoped and closes it. No pitching in call one, ever.
 
-I am not selling on the first call. I am diagnosing. The sale happens when I come back with the fix, and I want you selling exactly the same way.
+### m6.1 One Conversation, Two Calls
+
+*I am not selling on the first call. I am diagnosing. The sale happens when I come back with the fix, and I want you selling exactly the same way.*
+
+**They leave with:** The call structure, and whether your offer needs one call or two.
+
+Once, at the start of the module. Every Jarvis step in this module needs them.
+
+## Give Jarvis this module’s skills
+Download **jarvis-skills-module-6-sales.zip** from this lesson, attach it in your Jarvis chat and send the message below. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
+
+```
+Install these skills: call to close playbook, solution design and proposal builder. Replace any older versions. Don&#x27;t run them yet. List what you installed and each version.
+
+```
+**Before continuing:** Jarvis lists all 3 skills with a version next to each.
 
 In this module, you’ll learn how to run the sales conversation, understand a business owner’s problem and present the right solution. We’ll use a two-call process, with a proposal and relevant demo prepared between calls.
 
@@ -972,9 +1136,11 @@ Your price is a fraction of what the problem costs them. Until they have told yo
 
 The call one script is next.
 
-### Call One: Find the Pain
+### m6.2 Call One: Find the Pain
 
-The whole job of call one is to understand their business well enough to put a number on what is broken, and hear them agree to it. Here is the script.
+*The whole job of call one is to understand their business well enough to put a number on what is broken, and hear them agree to it. Here is the script.*
+
+**They leave with:** The full call one script, in order.
 
 This is the call that decides the deal. Not because you close here, you usually do not, but because everything you say later is built from what you learn here. Run it well and the second call writes itself. Run it badly and no script on earth saves it.
 
@@ -1076,9 +1242,11 @@ I just finished a discovery call. Here are my raw notes and the transcript if I 
 
 If section 5 has a number in it, you ran the call properly.
 
-### Prescribe the Solution
+### m6.3 Prescribe the Solution
 
-They gave you a problem and a number. Now you design the thing that fixes it, check it can be built, and price it against the problem, not the work.
+*They gave you a problem and a number. Now you design the thing that fixes it, check it can be built, and price it against the problem, not the work.*
+
+**They leave with:** A prescribed solution and a price for one real prospect.
 
 Most people in this space price the work. Hours, tokens, licences, a margin on top. Then they wonder why a $4,000 quote gets ghosted and a $22,000 one gets signed in the same week. I price the problem.
 
@@ -1088,10 +1256,10 @@ Know exactly what the problem is costing them and charge against that. Call one 
 ## The working range
 I charge 5 to 10 percent of the problem's annual cost for the build, and I show the running costs separately and honestly. Anchor at 10, land at 5.
 
-| Problem cost per year (agreed on call one) | 10 percent | 5 percent |
-| $60k | $6k | $3k |
-| $150k | $15k | $7.5k |
-| $300k | $30k | $15k |
+| Problem cost per year (agreed on call one) | 10 percent | 5 percent | 
+| $60k | $6k | $3k | 
+| $150k | $15k | $7.5k | 
+| $300k | $30k | $15k | 
 | $600k | $60k | $30k | The smaller the problem, the smaller the deal. Below a certain size it is not worth a custom build at all.
 
 ## The $22,000 AI CRM
@@ -1132,9 +1300,11 @@ Here is my call one brief: [paste]. Do three things. First, write a prescribed s
 ```
 Send the scoping request to your technical partner the same day. Call two is already booked, so do not sit on it.
 
-### The Short Proposal and Separate Demo
+### m6.4 The Short Proposal and Separate Demo
 
-Use your discovery to create a plain proposal you can read together. Open the demo separately.
+*Use your discovery to create a plain proposal you can read together. Open the demo separately.*
+
+**They leave with:** A short client proposal, with a separate relevant demo when needed.
 
 By this point you know the buyer’s problem and have checked the proposed solution with the delivery team. This lesson turns that into a document you can walk through on the sales call. The buyer should understand what is wrong, what it costs, what changes, when it happens and what they pay.
 
@@ -1170,9 +1340,11 @@ Using this prospect’s saved solution brief, build a separate short demonstrati
 ## Before the sales call
 Can the buyer explain the problem, the change and what they are buying after a quick read? Are scope and costs clear? Does the separate demo work on the screen you will share? Fix those before adding design.
 
-### Call Two: Present and Close
+### m6.5 Call Two: Present and Close
 
-Everything on this call was set up by the last one. Present the proposal properly, speak like the doctor, say the number, then stop talking.
+*Everything on this call was set up by the last one. Present the proposal properly, speak like the doctor, say the number, then stop talking.*
+
+**They leave with:** The full call two script and the anchor, word for word.
 
 Call two is where the money is, and it is the easier call if call one did its job. You are not persuading anyone. You are presenting a fix for a problem they already told you costs them real money, at a fraction of that money.
 
@@ -1283,9 +1455,11 @@ Use the Proposed build out, Timeline and Costs sections of this saved proposal i
 
 Rehearse the anchor out loud with your real numbers, and practise not filling the silence. Hardest five seconds in sales, and where the money is.
 
-### Objections
+### m6.6 Objections
 
-An objection is not a no. It is the last piece of pain you have not found yet. Identify it, then prescribe.
+*An objection is not a no. It is the last piece of pain you have not found yet. Identify it, then prescribe.*
+
+**They leave with:** The nine objections and the words to answer each.
 
 Nobody argues a prospect into a deal. Every objection is handled the same way: stay calm, find the real concern underneath, prescribe. When someone hesitates without saying why, sort it.
 
@@ -1328,17 +1502,12 @@ A fulfilment question in an objection costume. Answer with the support line and 
 
 > SAY THIS: Good question, and it's why the support line is on page five. For [period] after launch I'm the one who fixes it, included. After that it's [monthly retainer], and you saw in the demo it's built to hand things back to [person] rather than guess, so when something's off you know the same minute, not the next month.
 
-## 8. "Can you guarantee it'll work?"
-Guarantee what you control: the build, the launch, the support. Never their revenue.
-
-> SAY THIS: I can't guarantee your revenue, and anyone who says they can is lying to you. What I guarantee is this: it'll do the things on page five, it'll be live by [date], and if it doesn't do what we agreed, I keep working on it at no extra fee until it does. That's a promise about my work, which is the only honest promise I can make.
-
-## 9. "We could build this ourselves"
+## 8. "We could build this ourselves"
 Maybe they could. Agree, then ask what the attempt costs. You sell the outcome by a date, not the code.
 
 > SAY THIS: You probably could, honestly, the tools are out there. The question is whether you want [person] learning to build software for the next three months instead of doing their job, and what it costs you if version one doesn't quite work. You're not paying me for the code. You're paying to have it running by [date], done by someone who's done it before, so you can get back to [their actual business].
 
-## 10. "We're too small for this"
+## 9. "We're too small for this"
 If the number is genuinely small, say so and walk away. If it is real, size is irrelevant.
 
 > SAY THIS: Maybe. Let's look at it. The problem's costing you [number] a year. That's not a big company problem or a small company problem, it's just [number] leaving the business. If it were [much smaller number] I'd tell you not to bother and I'd mean it. At [number], it's worth fixing.
@@ -1351,9 +1520,11 @@ Here is my proposal [paste] and my call one brief [paste]. Based on what this sp
 ```
 Say the three that scare you most out loud until they sound like you.
 
-### Get Your Calls Reviewed
+### m6.7 Get Your Calls Reviewed
 
-You will not get good at this alone in a room. Record every call, review it with Jarvis the same day, and bring the hard ones to me.
+*You will not get good at this alone in a room. Record every call, review it with Jarvis the same day, and bring the hard ones to me.*
+
+**They leave with:** A recorded call, reviewed, and one change for the next one.
 
 Sales is a skill you build by watching yourself do it badly, often, with someone who can tell you why. The people who get good fast turn up to the weekly session with a recording. The ones who stay stuck turn up with a story about one.
 
@@ -1388,11 +1559,26 @@ Add this to my sales log: on [date] I ran a [call one / call two] with [prospect
 ```
 Record your next call, review it within the hour, send it in with one timestamp. Then book another call, because a review is only useful if there is a next call to use it on.
 
-## Module 7 Fulfilment
+## Module 7. Fulfilment
 
-### Two Ways To Deliver
+Two ways to deliver what you just sold. Arbitrage means somebody technical builds it and you own the client. Self fulfilment means you and Jarvis build it. Most people end up doing both, one per deal.
 
-You have money in the bank and a promise to keep. The first decision is who builds it.
+### m7.1 Two Ways To Deliver
+
+*You have money in the bank and a promise to keep. The first decision is who builds it.*
+
+**They leave with:** A rule for every signed deal: a developer builds it, or you build it with Jarvis.
+
+Once, at the start of the module. Every Jarvis step in this module needs them.
+
+## Give Jarvis this module’s skills
+Download **jarvis-skills-module-7-delivery.zip** from this lesson, attach it in your Jarvis chat and send the message below. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
+
+```
+Install these skills: scoping agent. Replace any older versions. Don&#x27;t run them yet. List what you installed and each version.
+
+```
+**Before continuing:** Jarvis lists the skill with a version next to each.
 
 In this module, you’ll learn how to deliver the work you’ve sold, hand it over properly and look after the client afterwards. You can build it yourself with Jarvis or hire a developer and manage the delivery.
 
@@ -1422,13 +1608,13 @@ That is not a comment on your ability. You just proved you can find a business o
 
 Three questions about the deal in front of you. Answer them honestly, not optimistically.
 
-| Question | Hand it to a developer | Build it yourself |
+| Question | Hand it to a developer | Build it yourself | 
 
-| Have I built something like this before, end to end, and had someone else use it? | No, or only a demo | Yes, in a live business |
+| Have I built something like this before, end to end, and had someone else use it? | No, or only a demo | Yes, in a live business | 
 
-| Does it plug into tools I have never connected? Their CRM, accounting, booking, phones. | Yes, more than one | No, or one I know |
+| Does it plug into tools I have never connected? Their CRM, accounting, booking, phones. | Yes, more than one | No, or one I know | 
 
-| What happens to my pipeline if this build takes three times longer than I think? | Outreach stops | Outreach keeps running without me |
+| What happens to my pipeline if this build takes three times longer than I think? | Outreach stops | Outreach keeps running without me | 
 
 Two or more in the middle column: hand it off. Two or more on the right: build it with Jarvis. Split: hand it off this time and sit beside the developer, so the next one is yours.
 
@@ -1455,9 +1641,11 @@ I have just closed a deal. Here is the proposal I presented [paste] and my call 
 
 Write the answer in one line at the top of the deal in your CRM.
 
-### Arbitrage: Find and Vet Developers
+### m7.2 Arbitrage: Find and Vet Developers
 
-Your job is the client and the money. Their job is the build. Getting this bench right is the whole model.
+*Your job is the client and the money. Their job is the build. Getting this bench right is the whole model.*
+
+**They leave with:** Two or three vetted developers, each paid for a test task, with rates agreed.
 
 Handing a build off only works if you have someone to hand it to before you need them. The worst time to find a developer is the week after a deposit lands. Build a bench of two or three people you have already tested, so when a deal closes the build plan goes out the same day.
 
@@ -1504,15 +1692,15 @@ Three things predict whether a developer will deliver. None of them is their pro
 
 **How they reply.** Inside a working day, short plain sentences, a question when unclear, a screenshot when done. Slow or vague on a paid test will be worse on the real build.
 
-| Signal | Pass | Fail |
+| Signal | Pass | Fail | 
 
-| Test task | Works, on time, one clarifying question asked | Late, guessed, or does not run |
+| Test task | Works, on time, one clarifying question asked | Late, guessed, or does not run | 
 
-| Past work | One live system, shown working, similar stack | Screenshots of dashboards, no live use |
+| Past work | One live system, shown working, similar stack | Screenshots of dashboards, no live use | 
 
-| Communication | Same day, plain words, shows rather than tells | Days between replies, jargon, excuses |
+| Communication | Same day, plain words, shows rather than tells | Days between replies, jargon, excuses | 
 
-| Pricing | Fixed price per milestone, happy to do a test | Hourly only, refuses a test, wants 100% up front |
+| Pricing | Fixed price per milestone, happy to do a test | Hourly only, refuses a test, wants 100% up front | 
 
 ## Rates and the shape of the deal
 
@@ -1522,9 +1710,11 @@ Fixed price in three milestones: built on test data, tested and reviewed by you,
 
 Post one job this week, even before you close, framed as a paid test task on your offer's core workflow. Two names you have paid and would pay again. That is the bench.
 
-### Arbitrage: Scope, Hand Off, Keep the Margin
+### m7.3 Arbitrage: Scope, Hand Off, Keep the Margin
 
-A bad handover is how a profitable deal turns into three weeks of unpaid project management.
+*A bad handover is how a profitable deal turns into three weeks of unpaid project management.*
+
+**They leave with:** A full build plan from the scoping skill, handed to a developer with milestones, a budget and a date.
 
 You know more about this client's business than anyone about to build for them, and all of it lives in notes, a proposal and your head. Turn it into one document a developer can build from without a single clarifying call. That document protects your margin.
 
@@ -1538,29 +1728,29 @@ Every expensive build problem is a scoping problem in disguise. The brief said a
 
 The scoping skill is in your Jarvis pack. Feed it your call one notes and the number you agreed, your call two notes, the proposal as presented, and anything the client sent you. It gives back one document, always in this shape.
 
-| Section | What it must contain |
+| Section | What it must contain | 
 
-| Problem summary | The problem in the client's words, who it lands on, what it costs. |
+| Problem summary | The problem in the client's words, who it lands on, what it costs. | 
 
-| What gets built | One paragraph a business owner would agree with, then the modules, each named in a sentence. |
+| What gets built | One paragraph a business owner would agree with, then the modules, each named in a sentence. | 
 
-| Integrations | Every tool it touches, what it reads and writes, who owns the login. |
+| Integrations | Every tool it touches, what it reads and writes, who owns the login. | 
 
-| Data in and out | Each input and output with an example. Which record wins when two disagree. |
+| Data in and out | Each input and output with an example. Which record wins when two disagree. | 
 
-| Edge cases | Missing field, duplicate, uncertain match, person on leave, tool down. Who gets told. |
+| Edge cases | Missing field, duplicate, uncertain match, person on leave, tool down. Who gets told. | 
 
-| Human steps | Every point where a person approves, chooses or is notified. Named by role. |
+| Human steps | Every point where a person approves, chooses or is notified. Named by role. | 
 
-| Milestones | Three: built on test data, tested and reviewed, live and handed over. |
+| Milestones | Three: built on test data, tested and reviewed, live and handed over. | 
 
-| Acceptance tests | For each milestone, the checks that mean it is done, written so a non technical person could run them. |
+| Acceptance tests | For each milestone, the checks that mean it is done, written so a non technical person could run them. | 
 
-| Budget split | The developer budget across the three milestones. Nothing about the client price. |
+| Budget split | The developer budget across the three milestones. Nothing about the client price. | 
 
-| Dates | Start, three milestones, go live, and what the client must provide by when. |
+| Dates | Start, three milestones, go live, and what the client must provide by when. | 
 
-| Unknowns to confirm | Everything the skill could not find in your notes. This goes to the client before the build starts. |
+| Unknowns to confirm | Everything the skill could not find in your notes. This goes to the client before the build starts. | 
 
 ```
 Run the scoping skill on this job. Here are my call one notes and brief [paste], my call two notes [paste], the proposal as presented [paste], and what the client sent me [paste or describe]. Write the full build plan in the standard shape: problem summary, what gets built, modules, integrations, data in and out, edge cases, human steps, milestones, acceptance tests, budget split against a developer budget of [amount], dates from a start of [date], and the unknowns to confirm with the client. Write it for a developer who has never spoken to the client. Do not invent any capability, integration or data that is not in what I gave you. Where you had to guess, put it in the unknowns list instead.
@@ -1593,9 +1783,11 @@ The margin is lost in three places: scope that grew without a price change, mile
 
 Run the skill, clear every unknown with the client today, send the plan to the two developers on your bench for a fixed quote.
 
-### Self Fulfilment: Build It With Jarvis
+### m7.4 Self Fulfilment: Build It With Jarvis
 
-The same Jarvis that helped you sell it can build most of it. Twenty small jobs, in order, each checked before the next.
+*The same Jarvis that helped you sell it can build most of it. Twenty small jobs, in order, each checked before the next.*
+
+**They leave with:** The first working version of the client's system, on test data, with a build log.
 
 The build is not one task. It is twenty small ones, done in order, each checked before the next. Jarvis does most of the typing. You do the ordering, the checking and the judgement. The people who struggle here are not short on skill. They asked Jarvis to build the whole system in one message and spent a week untangling what came back.
 
@@ -1653,9 +1845,11 @@ Create a build log for the [client] deal from the build plan. One row per module
 
 Set up the shell, build module one, run its test, tick the log. The rest is the same loop.
 
-### Self Fulfilment: Test It Like the Client Will
+### m7.5 Self Fulfilment: Test It Like the Client Will
 
-Clients do not use systems the way you built them. Find that out yourself, in private.
+*Clients do not use systems the way you built them. Find that out yourself, in private.*
+
+**They leave with:** A tested build with the edge cases handled and a dated test log.
 
 Every module passed its own test. That is not the same as the system working. The client is going to put a real job through it, start to finish, on a busy Tuesday, from their phone, with a typo in the email address. Before they see it, you run it the way they will, end to end, and fix what breaks in private.
 
@@ -1694,9 +1888,11 @@ Once the three jobs pass clean, send the client a short screen recording of the 
 
 Three passes from the start, dated, in the log. Then book the handover.
 
-### Onboard, Hand Over, Get Paid
+### m7.6 Onboard, Hand Over, Get Paid
 
-As far as the client is concerned, the experience is the product. This is also where referrals get made or lost.
+*As far as the client is concerned, the experience is the product. This is also where referrals get made or lost.*
+
+**They leave with:** A client onboarded, trained, signed off and invoiced.
 
 The system works. Now it has to work for them, run by their people, with their real data. Handover is a process, not a login sent by email. Done properly it is one call and a week of light contact. Done badly it is a month of "quick questions" and a client who never quite trusts the thing they paid for.
 
@@ -1743,9 +1939,11 @@ Then tell Jarvis to mark the deal delivered, record the sign off and invoice dat
 
 Book the call, decide who runs the technical side, get the written sign off, send the invoice the same day.
 
-### Support, Retainer and Raising the Price
+### m7.7 Support, Retainer and Raising the Price
 
-The install was the start. Everything after it is margin, proof and a higher price next time.
+*The install was the start. Everything after it is margin, proof and a higher price next time.*
+
+**They leave with:** A retainer offered, a case study drafted, your next price written down.
 
 You have been paid for the build. Three things in the next thirty days decide whether that was one deal or the start of a business: support it properly, turn it into a monthly retainer, and turn the result into the reason the next client pays more. None of them is hard. All of them get skipped by people already chasing the next sale.
 
@@ -1759,17 +1957,17 @@ Thirty days from sign off, and defined. Included: anything that does not behave 
 
 Systems do not run themselves. Tools update, a login expires, a new hire needs training. The retainer is the monthly fee that keeps the system working and keeps you as the person they call. It is usually the most profitable money in the deal, because the work is light and it adds up across clients.
 
-| The retainer covers | In practice |
+| The retainer covers | In practice | 
 
-| Running costs | Platform, automation seats, AI usage, passed through with a margin. If it costs $300 a month to run, bill $400 to $450. |
+| Running costs | Platform, automation seats, AI usage, passed through with a margin. If it costs $300 a month to run, bill $400 to $450. | 
 
-| Monitoring | A weekly check that jobs are moving and nothing has silently stopped. Jarvis runs most of it. |
+| Monitoring | A weekly check that jobs are moving and nothing has silently stopped. Jarvis runs most of it. | 
 
-| Small changes | A fixed allowance each month. Anything bigger is quoted. |
+| Small changes | A fixed allowance each month. Anything bigger is quoted. | 
 
-| Support and training | Same response times as the support window, plus onboarding new staff. |
+| Support and training | Same response times as the support window, plus onboarding new staff. | 
 
-| A monthly report | One page: jobs through the system, time saved, what was flagged, what changed. Your case study, written for you every month. |
+| A monthly report | One page: jobs through the system, time saved, what was flagged, what changed. Your case study, written for you every month. | 
 
 One flat monthly figure that covers the running costs with margin plus your time, simple enough to say in one sentence. Bring it to the group session and we pressure test it.
 
@@ -1803,3 +2001,4 @@ Your next price is set by your last result. Before this deal you were selling a 
 > EXAMPLE: Made up numbers. First quoting system, $9,000, no retainer. Day thirty you offer $600 a month and they take it. Your next proposal opens with quotes going out the same day instead of in three, prices the build at $14,000, and includes the retainer from the start. Same work. One proof point.
 
 Offer the retainer, draft the case study, write the new price down and tell someone.
+

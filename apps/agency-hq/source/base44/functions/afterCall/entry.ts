@@ -1,13 +1,14 @@
 import { createClientFromRequest } from 'npm:@base44/sdk';
 import { secrets, waitUntil } from 'base44:runtime';
 import { runAfterCallPoll } from '../../shared/after-call-bridge.ts';
+import { getKey } from '../../shared/keys.ts';
 export default async function(req) {
   if(req.method !== 'POST') return Response.json({error:'method_not_allowed'},{status:405});
   const b=createClientFromRequest(req);
   let user;
   try { user=await b.auth.me(); } catch { return Response.json({error:'unauthorized'},{status:401}); }
   if(user?.role!=='admin') return Response.json({error:'forbidden'},{status:403});
-  const pat=secrets.get('JARVIS_NATIVE_TOKEN');
+  const pat=await getKey('JARVIS_NATIVE_TOKEN',b);
   if(!pat) return Response.json({error:'native_token_not_configured'},{status:503});
   // The Base44 Superagent id is read from the Profile at runtime; without it there
   // is no conversation to dispatch, so fail fast in plain words.

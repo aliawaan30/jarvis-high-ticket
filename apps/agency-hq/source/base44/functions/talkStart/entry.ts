@@ -2,6 +2,7 @@ import { buildCrmBriefing } from '../../shared/crm-context.ts';
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.49';
 import { secrets } from 'base44:runtime';
 import { buildRevenueLines } from '../../shared/call-context.ts';
+import { getKey } from '../../shared/keys.ts';
 
 // Talk mode, Retell path. Creates a Retell web call for the owner's own Jarvis
 // voice agent and returns the short lived access token the browser needs to
@@ -38,7 +39,7 @@ export default async function(req) {
     if (!user) return json({ error: 'unauthorized' }, 401);
     if (user.role !== 'admin') return json({ error: 'forbidden' }, 403);
 
-    const apiKey = secrets.get('RETELL_API_KEY');
+    const apiKey = await getKey('RETELL_API_KEY', base44);
     if (typeof apiKey !== 'string' || !apiKey.trim()) {
       return json({ error: 'missing_secret', message: 'Retell is not set up yet. Open Settings and pick Retell Jarvis to finish setup.' }, 503);
     }

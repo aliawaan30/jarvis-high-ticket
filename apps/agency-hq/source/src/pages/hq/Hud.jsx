@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import { base44 } from '@/api/base44Client';
 import { Link } from 'react-router-dom';
 import VoiceStage, { primeVoice } from '@/components/hq/VoiceStage';
 import AppShell, { useProfile, panel, label } from '@/components/hq/AppShell';
@@ -24,6 +25,74 @@ const TICKS = Array.from({ length: 72 }, (_, i) => {
   return { k: i, x1: 250 + r1 * Math.cos(a), y1: 250 + r1 * Math.sin(a), x2: 250 + r2 * Math.cos(a), y2: 250 + r2 * Math.sin(a), major };
 });
 
+// v3.15: the four roles around the core. Status comes only from real rows.
+const ROLES = [
+  { key: 'SCOUT', role: 'Lead hunter', re: /lead|find|hunt|prospect|research/i, pos: { left: '50%', top: '-2%' } },
+  { key: 'WRITER', role: 'Outreach', re: /email|draft|write|campaign|reply|sms|text/i, pos: { left: '101%', top: '47%' } },
+  { key: 'CLOSER', role: 'Calls and proposals', re: /call|proposal|close|deal|meeting/i, pos: { left: '50%', top: '97%' } },
+  { key: 'OPS', role: 'Rhythm and missions', re: /brief|check-in|checkin|numbers|mission|log/i, pos: { left: '-1%', top: '47%' } },
+];
+function roleFor(kind) {
+  const k = String(kind || '').toUpperCase();
+  if (/EMAIL|REPLY|DRAFT|SMS|TEXT/.test(k)) return 'WRITER';
+  if (/CALL/.test(k)) return 'CLOSER';
+  if (/LEAD/.test(k)) return 'SCOUT';
+  return 'JARVIS';
+}
+function briefHour(text) {
+  const m = String(text || '').match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)?/i);
+  if (!m) return 8;
+  let h = Number(m[1]); const ap = (m[3] || '').toLowerCase();
+  if (ap === 'pm' && h < 12) h += 12; if (ap === 'am' && h === 12) h = 0;
+  return Math.min(23, Math.max(0, h));
+}
+function nextCheckIn(briefText) {
+  const h = briefHour(briefText), now = new Date(), cur = now.getHours() + now.getMinutes() / 60;
+  const fmt = (x) => { const hh = ((x + 11) % 12) + 1; return `${hh}:00 ${x < 12 ? 'AM' : 'PM'}`; };
+  if (cur < h) return fmt(h);
+  if (cur < h + 6 && h + 6 < 24) return fmt(h + 6);
+  return 'TOMORROW ' + fmt(h);
+}
+
+function MessageJarvis() {
+  const [text, setText] = useState('');
+  const [reply, setReply] = useState(null);
+  const [busy, setBusy] = useState(false);
+  const conv = React.useRef('');
+  async function send() {
+    const t = text.trim(); if (!t || busy) return;
+    setBusy(true); setText(''); setReply({ kind: 'wait', text: 'Jarvis is on it...' });
+    try {
+      const res = await base44.functions.invoke('talkSend', { text: t, conversation_id: conv.current || undefined });
+      const data = res?.data || {};
+      if (!data.turn_id) throw new Error(data.message || 'no_turn');
+      if (data.conversation_id) conv.current = data.conversation_id;
+      const start = Date.now();
+      while (Date.now() - start < 90000) {
+        await new Promise((r) => setTimeout(r, 1500));
+        let r; try { r = (await base44.functions.invoke('talkReply', { turn_id: data.turn_id }))?.data; } catch { r = null; }
+        if (r?.state === 'answered') { setReply({ kind: 'ok', text: r.reply }); setBusy(false); return; }
+        if (r?.state === 'failed') { setReply({ kind: 'err', text: r.error || 'Jarvis could not answer that. Try again.' }); setBusy(false); return; }
+      }
+      setReply({ kind: 'err', text: 'Jarvis is still working on it. The answer will be in your Jarvis chat.' });
+    } catch (e) {
+      setReply({ kind: 'err', text: (e?.response?.data?.message) || 'That did not go through. Check Settings, Connections.' });
+    }
+    setBusy(false);
+  }
+  return (
+    <div style={{ width: '100%', maxWidth: 640, marginTop: 18 }}>
+      <div style={{ display: 'flex', gap: 8 }}>
+        <input value={text} onChange={(e) => setText(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') send(); }} placeholder="Message Jarvis" aria-label="Message Jarvis"
+          style={{ flex: 1, minWidth: 0, minHeight: 44, padding: '0 14px', borderRadius: 10, border: `1px solid ${C.line2}`, background: '#0A1626', color: C.text, font: `400 14px ${MONO}` }} />
+        <button type="button" onClick={send} disabled={busy || !text.trim()} className="hq-btn"
+          style={{ minHeight: 44, padding: '0 16px', borderRadius: 10, border: '1px solid rgba(95,212,234,.45)', background: 'rgba(95,212,234,.08)', color: C.cyan, font: `500 13px ${MONO}`, letterSpacing: '.08em', cursor: 'pointer' }}>SEND</button>
+      </div>
+      {reply && <div style={{ fontSize: 14, marginTop: 10, lineHeight: 1.5, color: reply.kind === 'err' ? C.red : reply.kind === 'wait' ? C.muted : C.soft }}>{reply.text}</div>}
+    </div>
+  );
+}
+
 export default function Hud() {
   const profile = useProfile();
   const accounts = useRows('Account');
@@ -33,7 +102,9 @@ export default function Hud() {
   const weeks = useRows('WeekNumbers', '-week_start', 10);
   const logs = useRows('ActivityLog', '-created_date', 30);
   const tasks = useRows('Task', '-updated_date', 200);
+  const agency = useRows('AgencySettings', '-updated_date', 1, 60000);
   const [talkOpen, setTalkOpen] = useState(false);
+  const [openFeed, setOpenFeed] = useState(-1);
 
   const d = useMemo(() => {
     const today = todayISO();
@@ -56,9 +127,23 @@ export default function Hud() {
     const feed = [
       ...touches.rows.filter((t) => t.status !== 'planned' && t.status !== 'cancelled' && (t.summary || t.outcome)).slice(0, 12).map((t) => ({ at: t.updated_date || t.created_date, kind: (t.direction === 'in' ? 'REPLY' : (t.channel || 'note').toUpperCase()), text: `${t.account_name || ''}: ${t.summary || t.outcome || ''}`, color: t.direction === 'in' ? C.amber : C.cyan })),
       ...logs.rows.slice(0, 12).map((l) => ({ at: l.created_date, kind: String(l.type || 'note').toUpperCase(), text: l.message || l.task_title || '', color: C.cyan })),
-    ].filter((f) => f.text && f.text.trim() !== ':').sort((a, b) => String(b.at).localeCompare(String(a.at))).slice(0, 7);
-    return { callNow, plannedToday, callsToday, emailsDue, targetCalls, done, active, total: ms.length || 19, cash, target, stageCounts, working, feed };
-  }, [accounts.rows, touches.rows, deals.rows, missions.rows, weeks.rows, logs.rows, tasks.rows, profile]);
+    ].filter((f) => f.text && f.text.trim() !== ':' && !/^\s*diag:/i.test(f.text)).sort((a, b) => String(b.at).localeCompare(String(a.at))).slice(0, 7);
+    const doing = tasks.rows.filter((t) => t.status === 'doing');
+    const drafts = touches.rows.filter((t) => t.status === 'draft').length;
+    const weekAgo = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
+    const newLeads = acc.filter((a) => String(a.created_date || '').slice(0, 10) >= weekAgo).length;
+    const cards = acc.filter((a) => a.call_card && (a.status === 'replied' || a.status === 'call booked')).length;
+    const toCall = callNow.length;
+    const checkIn = nextCheckIn(agency.rows[0]?.brief_time);
+    const roles = ROLES.map((r) => {
+      const task = doing.find((t) => r.re.test(String(t.title || '')));
+      const sub = task ? String(task.title).slice(0, 34) : r.key === 'SCOUT' ? `${newLeads} leads this week` : r.key === 'WRITER' ? (drafts ? `${drafts} drafts waiting` : 'No drafts waiting') : r.key === 'CLOSER' ? (toCall ? `${toCall} repl${toCall === 1 ? 'y' : 'ies'} to call` : cards ? `${cards} call card${cards === 1 ? '' : 's'} ready` : 'No calls due') : `Next check-in ${checkIn.toLowerCase()}`;
+      return { ...r, on: !!task, task, sub };
+    });
+    const busyRole = roles.find((r) => r.on);
+    const ownerTask = tasks.rows.find((t) => t.status === 'todo' && t.execution_owner === 'owner');
+    return { callNow, plannedToday, callsToday, emailsDue, targetCalls, done, active, total: ms.length || 19, cash, target, stageCounts, working, feed, roles, busyRole, drafts, ownerTask, checkIn };
+  }, [accounts.rows, touches.rows, deals.rows, missions.rows, weeks.rows, logs.rows, tasks.rows, agency.rows, profile]);
 
   const needs = d.callNow.length > 0 && !talkOpen;
   const working = d.working && !needs && !talkOpen;
@@ -102,11 +187,18 @@ export default function Hud() {
             <div style={{ fontFamily: MONO, fontSize: 34, color: C.amber, marginTop: 6 }}>{money(d.cash)}</div>
             <div style={{ height: 6, borderRadius: 3, background: '#142233', marginTop: 12, overflow: 'hidden' }}><div style={{ height: '100%', width: `${Math.round(moneyPct * 100)}%`, background: `linear-gradient(90deg,#C98A22,${C.amber})` }} /></div>
           </div>
+          {(d.drafts > 0 || d.ownerTask) && (
+            <div style={{ borderTop: `1px solid ${C.line}`, paddingTop: 12 }}>
+              <div style={label}>NEEDS YOU</div>
+              {d.drafts > 0 && <Link to="/leads" style={{ display: 'block', textDecoration: 'none', borderLeft: `2px solid ${C.amber}`, padding: '6px 0 6px 12px', marginTop: 10 }}><div style={{ font: `500 11.5px ${MONO}`, letterSpacing: '.1em', color: C.amber }}>APPROVE</div><div style={{ fontSize: 14, color: C.text, marginTop: 2 }}>{d.drafts} draft{d.drafts === 1 ? '' : 's'} ready for you</div></Link>}
+              {d.ownerTask && <div style={{ borderLeft: `2px solid ${C.cyan}`, padding: '6px 0 6px 12px', marginTop: 10 }}><div style={{ font: `500 11.5px ${MONO}`, letterSpacing: '.1em', color: C.cyan }}>YOUR NEXT TASK</div><div style={{ fontSize: 14, color: C.text, marginTop: 2 }}>{d.ownerTask.title}</div></div>}
+            </div>
+          )}
         </section>
 
         <section aria-label="Jarvis" className="hq-col-core" style={{ flex: '2 1 460px', minWidth: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
           <div style={{ width: '100%', maxWidth: 520, position: 'relative' }}>
-            <svg viewBox="0 0 500 500" role="img" aria-label={`Jarvis: ${stateText}`} style={{ width: '100%', height: 'auto', display: 'block' }}>
+            <svg viewBox="0 0 500 500" role="button" tabIndex={0} aria-label={`Jarvis: ${stateText}. Tap to talk to Jarvis`} onClick={() => { primeVoice(); setTalkOpen(true); }} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); primeVoice(); setTalkOpen(true); } }} className="hq-core-tap" style={{ cursor: 'pointer', width: '100%', height: 'auto', display: 'block' }}>
               <g className="hq-spin-slow">{TICKS.map((t) => <line key={t.k} x1={t.x1} y1={t.y1} x2={t.x2} y2={t.y2} stroke={t.major ? C.cyan : '#1E3A50'} strokeWidth={t.major ? 2 : 1} />)}</g>
               <circle cx="250" cy="250" r="226" fill="none" stroke={C.line} />
               {segments.map((s) => <path key={s.k} d={s.d} fill="none" stroke={s.color} strokeWidth="10" className={s.cls} />)}
@@ -127,6 +219,14 @@ export default function Hud() {
                 </g>
               )}
             </svg>
+            {!talkOpen && d.roles.map((r) => (
+              <div key={r.key} style={{ position: 'absolute', ...r.pos, transform: 'translate(-50%,-50%)', textAlign: 'center', width: 140, pointerEvents: 'none' }}>
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: 7, font: `500 11px ${MONO}`, letterSpacing: '.16em', padding: '5px 10px', borderRadius: 6, border: `1px solid ${r.on ? C.cyan : C.line2}`, color: r.on ? C.cyan : C.muted, background: 'rgba(10,22,38,.92)', boxShadow: r.on ? '0 0 16px rgba(95,212,234,.25)' : 'none' }}>
+                  <span className={r.on ? 'hq-dot' : ''} style={{ width: 7, height: 7, borderRadius: '50%', background: r.on ? C.cyan : '#2A3D58' }} />{r.key}
+                </div>
+                <div style={{ fontSize: 11.5, color: C.faint, marginTop: 4, lineHeight: 1.3 }}>{r.sub}</div>
+              </div>
+            ))}
             {talkOpen && (
               <div aria-hidden="true" style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%,-50%)', display: 'flex', alignItems: 'center', height: 70 }}>
                 {[0, .15, .3, .45, .3, .15, 0].map((dl, i) => <span key={i} className="hq-bar" style={{ animationDelay: `${dl}s` }} />)}
@@ -136,7 +236,13 @@ export default function Hud() {
           <div style={{ textAlign: 'center' }}>
             <div style={{ fontSize: 30, fontWeight: 500, letterSpacing: '.38em', paddingLeft: '.38em' }}>J.A.R.V.I.S.</div>
             <div aria-live="polite" style={{ fontFamily: MONO, fontSize: 13, letterSpacing: '.14em', color: stateColor, marginTop: 8 }}>{stateText}</div>
-            <button type="button" className="hq-btn" onClick={() => { primeVoice(); setTalkOpen(true); }} style={{ marginTop: 14, minHeight: 44, padding: '0 20px', borderRadius: 22, border: `1px solid ${C.line2}`, background: 'rgba(13,26,43,.8)', color: C.text, font: `500 14px 'Space Grotesk', sans-serif`, cursor: 'pointer' }}>Talk to Jarvis</button>
+            <div><button type="button" className="hq-btn hq-talk" onClick={() => { primeVoice(); setTalkOpen(true); }} aria-label="Talk to Jarvis"
+              style={{ marginTop: 16, minHeight: 52, padding: '0 28px', borderRadius: 26, border: 'none', background: `linear-gradient(180deg,#7FE3F2,${C.cyan})`, color: '#04131B', font: "600 16px 'Space Grotesk', sans-serif", cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: 10, boxShadow: '0 0 0 1px rgba(95,212,234,.35), 0 8px 30px rgba(95,212,234,.28)' }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M5 11a7 7 0 0 0 14 0M12 18v3" /></svg>
+              Talk to Jarvis
+            </button></div>
+            {d.busyRole && !talkOpen && <div style={{ fontSize: 15, color: C.soft, marginTop: 8 }}><span style={{ color: C.cyan }}>{d.busyRole.key.charAt(0) + d.busyRole.key.slice(1).toLowerCase()}</span> is working on: {String(d.busyRole.task.title).slice(0, 70)}</div>}
+            <div style={{ display: 'inline-block', marginTop: 12, font: `500 12px ${MONO}`, letterSpacing: '.1em', color: C.amber, border: '1px solid rgba(245,183,74,.4)', borderRadius: 999, padding: '5px 12px', background: 'rgba(245,183,74,.06)' }}>NEXT CHECK-IN {d.checkIn}</div>
           </div>
           <div aria-label="Pipeline flow" style={{ width: '100%', maxWidth: 640, marginTop: 14 }}>
             <div style={{ position: 'relative', height: 2, background: `linear-gradient(90deg,${C.line},${C.line2},${C.line})`, margin: '0 28px' }}>
@@ -151,6 +257,7 @@ export default function Hud() {
               ))}
             </div>
           </div>
+          <MessageJarvis />
         </section>
 
         <section aria-label="Live" className="hq-col-live" style={{ flex: '1 1 320px', minWidth: 0, maxWidth: 420, display: 'flex', flexDirection: 'column', gap: 16 }}>
@@ -172,15 +279,16 @@ export default function Hud() {
               <div key={i} className="hq-row" style={{ display: 'flex', gap: 12, padding: '13px 16px', borderBottom: '1px solid #12202F' }}>
                 <span style={{ flex: 'none', width: 8, height: 8, borderRadius: '50%', marginTop: 7, background: f.color }} />
                 <div style={{ minWidth: 0 }}>
-                  <div style={{ fontFamily: MONO, fontSize: 11, letterSpacing: '.14em', color: C.faint }}>{f.kind}{f.at ? ' · ' + new Date(f.at).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : ''}</div>
-                  <div style={{ fontSize: 14, color: '#DCE6EF', marginTop: 3, lineHeight: 1.45 }}>{f.text}</div>
+                  <div style={{ fontFamily: MONO, fontSize: 11, letterSpacing: '.14em', color: C.faint }}>{roleFor(f.kind) !== 'JARVIS' ? roleFor(f.kind) + ', ' : ''}{f.kind}{f.at ? ' · ' + new Date(f.at).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : ''}</div>
+                  <div role="button" tabIndex={0} title={openFeed === i ? 'Show less' : 'Show more'} onClick={() => setOpenFeed(openFeed === i ? -1 : i)} onKeyDown={(e) => { if (e.key === 'Enter') setOpenFeed(openFeed === i ? -1 : i); }}
+                    style={{ fontSize: 14, color: '#DCE6EF', marginTop: 3, lineHeight: 1.45, cursor: 'pointer', ...(openFeed === i ? {} : { display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }) }}>{f.text}</div>
                 </div>
               </div>
             ))}
           </div>
         </section>
       </div>
-      <VoiceStage open={talkOpen} onClose={() => setTalkOpen(false)} voiceProvider={profile?.voice_provider || 'base44'} ownerName={profile?.owner_name || ''} />
+      <VoiceStage open={talkOpen} onClose={() => setTalkOpen(false)} voiceProvider={profile?.voice_provider || 'base44'} ownerName={profile?.owner_name || ''} agentGreets={!!profile?.retell_greets} />
     </AppShell>
   );
 }

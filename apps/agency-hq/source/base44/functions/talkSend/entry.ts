@@ -2,6 +2,7 @@ import { buildCrmBriefing } from '../../shared/crm-context.ts';
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.49';
 import { secrets, waitUntil } from 'base44:runtime';
 import { hudBaseUrl } from '../../shared/after-call-bridge.ts';
+import { getKey } from '../../shared/keys.ts';
 
 // Talk mode, Base44 path. The browser turns the owner's speech into text and
 // sends it here. This posts it to the owner's own Jarvis in a voice chat
@@ -117,7 +118,7 @@ export default async function(req) {
     const text = typeof input?.text === 'string' ? input.text.trim().slice(0, MAX_TEXT) : '';
     if (!text) return json({ error: 'empty', message: 'I did not catch anything. Try again.' }, 400);
 
-    const token = secrets.get('JARVIS_NATIVE_TOKEN');
+    const token = await getKey('JARVIS_NATIVE_TOKEN', base44);
     if (!token) return json({ error: 'native_token_not_configured', message: 'Add your JARVIS_NATIVE_TOKEN secret first.' }, 503);
 
     const profile = (await base44.asServiceRole.entities.Profile.list('-updated_date', 1))[0] || null;
