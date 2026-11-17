@@ -2,16 +2,18 @@ import { createClientFromRequest } from 'npm:@base44/sdk@0.8.49';
 import { secrets } from 'base44:runtime';
 import { getKey } from '../../shared/keys.ts';
 
-const LIST_AGENTS_URL = 'https://api.retellai.com/list-agents';
-const LIST_PHONE_NUMBERS_URL = 'https://api.retellai.com/list-phone-numbers';
+// Retell retired GET /list-agents (31 Jul 2026) and GET /list-phone-numbers (15 Jun 2026).
+const LIST_AGENTS_URL = 'https://api.retellai.com/v2/list-agents';
+const LIST_PHONE_NUMBERS_URL = 'https://api.retellai.com/v2/list-phone-numbers?limit=100';
 
 function json(body, status) {
   return Response.json(body, { status, headers: { 'Cache-Control': 'no-store' } });
 }
 
-async function fetchList(url, apiKey) {
+async function fetchList(url, apiKey, body) {
   const response = await fetch(url, {
-    method: 'GET',
+    method: body ? 'POST' : 'GET',
+    body: body ? JSON.stringify(body) : undefined,
     redirect: 'manual',
     signal: AbortSignal.timeout(20_000),
     headers: { Authorization: 'Bearer ' + apiKey, 'Content-Type': 'application/json' },
@@ -23,7 +25,7 @@ async function fetchList(url, apiKey) {
 
 // Dedupe by agent id; carry a human-readable name for the Settings picker.
 function collectAgents(data) {
-  const list = Array.isArray(data) ? data : (Array.isArray(data?.agents) ? data.agents : []);
+  const list = Array.isArray(data) ? data : (Array.isArray(data?.items) ? data.items : (Array.isArray(data?.agents) ? data.agents : []));
   const map = new Map();
   for (const a of list) {
     const id = a?.agent_id;
@@ -34,7 +36,7 @@ function collectAgents(data) {
 }
 
 function collectPhoneNumbers(data) {
-  const list = Array.isArray(data) ? data : (Array.isArray(data?.phone_numbers) ? data.phone_numbers : []);
+  const list = Array.isArray(data) ? data : (Array.isArray(data?.items) ? data.items : (Array.isArray(data?.phone_numbers) ? data.phone_numbers : []));
   const seen = new Set();
   const out = [];
   for (const p of list) {
@@ -64,7 +66,7 @@ export default async function(req) {
     }
 
     const [agentsResponse, numbersResponse] = await Promise.all([
-      fetchList(LIST_AGENTS_URL, apiKey),
+      fetchList(LIST_AGENTS_URL, apiKey, { limit: 100, filter_criteria: { channel: { op: 'eq', value: 'voice' } } }),
       fetchList(LIST_PHONE_NUMBERS_URL, apiKey),
     ]);
     if (!agentsResponse.ok || !numbersResponse.ok) {

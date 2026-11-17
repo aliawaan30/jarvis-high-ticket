@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { base44 } from '@/api/base44Client';
 import { Link } from 'react-router-dom';
-import VoiceStage, { primeVoice } from '@/components/hq/VoiceStage';
+import VoiceStage, { primeVoice, prewarmRetellCall } from '@/components/hq/VoiceStage';
 import AppShell, { useProfile, panel, label } from '@/components/hq/AppShell';
 import { C, MONO, useRows, todayISO, money, STAGES, STAGE_LABEL } from '@/lib/hq';
 
@@ -114,7 +114,8 @@ export default function Hud() {
     const callsToday = touches.rows.filter((t) => t.channel === 'call' && t.status === 'logged' && t.date === today).length;
     const emailsDue = plannedToday.filter((t) => t.channel === 'email').length;
     const week = weeks.rows[0];
-    const targetCalls = Number(week?.target_calls) || 5;
+    const weeklyCalls = Number(week?.target_calls) || 5;
+    const targetCalls = Math.max(1, Math.ceil(weeklyCalls / 5));
     const ms = missions.rows;
     const done = ms.filter((m) => m.status === 'done').length;
     const active = ms.find((m) => m.status === 'active') || ms.find((m) => m.status !== 'done');
@@ -198,7 +199,7 @@ export default function Hud() {
 
         <section aria-label="Jarvis" className="hq-col-core" style={{ flex: '2 1 460px', minWidth: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
           <div style={{ width: '100%', maxWidth: 520, position: 'relative' }}>
-            <svg viewBox="0 0 500 500" role="button" tabIndex={0} aria-label={`Jarvis: ${stateText}. Tap to talk to Jarvis`} onClick={() => { primeVoice(); setTalkOpen(true); }} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); primeVoice(); setTalkOpen(true); } }} className="hq-core-tap" style={{ cursor: 'pointer', width: '100%', height: 'auto', display: 'block' }}>
+            <svg viewBox="0 0 500 500" role="button" tabIndex={0} aria-label={`Jarvis: ${stateText}. Tap to talk to Jarvis`} onClick={() => { primeVoice(); setTalkOpen(true); }} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); primeVoice(); setTalkOpen(true); } }} className="hq-core-tap" onPointerEnter={() => { if ((profile?.voice_provider || 'base44') === 'retell') prewarmRetellCall(); }} style={{ cursor: 'pointer', width: '100%', height: 'auto', display: 'block' }}>
               <g className="hq-spin-slow">{TICKS.map((t) => <line key={t.k} x1={t.x1} y1={t.y1} x2={t.x2} y2={t.y2} stroke={t.major ? C.cyan : '#1E3A50'} strokeWidth={t.major ? 2 : 1} />)}</g>
               <circle cx="250" cy="250" r="226" fill="none" stroke={C.line} />
               {segments.map((s) => <path key={s.k} d={s.d} fill="none" stroke={s.color} strokeWidth="10" className={s.cls} />)}
@@ -220,7 +221,7 @@ export default function Hud() {
               )}
             </svg>
             {!talkOpen && d.roles.map((r) => (
-              <div key={r.key} style={{ position: 'absolute', ...r.pos, transform: 'translate(-50%,-50%)', textAlign: 'center', width: 140, pointerEvents: 'none' }}>
+              <div key={r.key} className="hq-role-ring" style={{ position: 'absolute', ...r.pos, transform: 'translate(-50%,-50%)', textAlign: 'center', width: 140, pointerEvents: 'none' }}>
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: 7, font: `500 11px ${MONO}`, letterSpacing: '.16em', padding: '5px 10px', borderRadius: 6, border: `1px solid ${r.on ? C.cyan : C.line2}`, color: r.on ? C.cyan : C.muted, background: 'rgba(10,22,38,.92)', boxShadow: r.on ? '0 0 16px rgba(95,212,234,.25)' : 'none' }}>
                   <span className={r.on ? 'hq-dot' : ''} style={{ width: 7, height: 7, borderRadius: '50%', background: r.on ? C.cyan : '#2A3D58' }} />{r.key}
                 </div>
@@ -234,9 +235,19 @@ export default function Hud() {
             )}
           </div>
           <div style={{ textAlign: 'center' }}>
+            <div className="hq-roles-grid" aria-label="Jarvis's team">
+              {d.roles.map((r) => (
+                <div key={r.key} style={{ border: `1px solid ${r.on ? C.cyan : C.line}`, borderRadius: 10, padding: '9px 11px', background: 'rgba(10,22,38,.7)', minWidth: 0, textAlign: 'left' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 7, font: `500 11px ${MONO}`, letterSpacing: '.14em', color: r.on ? C.cyan : C.muted }}>
+                    <span className={r.on ? 'hq-dot' : ''} style={{ width: 7, height: 7, borderRadius: '50%', background: r.on ? C.cyan : '#2A3D58', flex: 'none' }} />{r.key}
+                  </div>
+                  <div style={{ fontSize: 12.5, color: C.faint, marginTop: 4, lineHeight: 1.35, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{r.sub}</div>
+                </div>
+              ))}
+            </div>
             <div style={{ fontSize: 30, fontWeight: 500, letterSpacing: '.38em', paddingLeft: '.38em' }}>J.A.R.V.I.S.</div>
             <div aria-live="polite" style={{ fontFamily: MONO, fontSize: 13, letterSpacing: '.14em', color: stateColor, marginTop: 8 }}>{stateText}</div>
-            <div><button type="button" className="hq-btn hq-talk" onClick={() => { primeVoice(); setTalkOpen(true); }} aria-label="Talk to Jarvis"
+            <div><button type="button" className="hq-btn hq-talk" onPointerEnter={() => { if ((profile?.voice_provider || 'base44') === 'retell') prewarmRetellCall(); }} onClick={() => { primeVoice(); setTalkOpen(true); }} aria-label="Talk to Jarvis"
               style={{ marginTop: 16, minHeight: 52, padding: '0 28px', borderRadius: 26, border: 'none', background: `linear-gradient(180deg,#7FE3F2,${C.cyan})`, color: '#04131B', font: "600 16px 'Space Grotesk', sans-serif", cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: 10, boxShadow: '0 0 0 1px rgba(95,212,234,.35), 0 8px 30px rgba(95,212,234,.28)' }}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M5 11a7 7 0 0 0 14 0M12 18v3" /></svg>
               Talk to Jarvis
@@ -257,12 +268,25 @@ export default function Hud() {
               ))}
             </div>
           </div>
+          <div className="hq-call-mobile-wrap" style={{ width: '100%' }}>
+            {lead && (
+            <div className="hq-rise hq-call-mobile" style={{ border: '1px solid #6B5320', background: 'linear-gradient(180deg,rgba(245,183,74,.14),rgba(245,183,74,.04))', borderRadius: 12, padding: 18 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: MONO, fontSize: 12, letterSpacing: '.18em', color: C.amber }}><span className="hq-dot" style={{ width: 8, height: 8, borderRadius: '50%', background: C.amber }} />CALL NOW</div>
+              <div style={{ fontSize: 20, fontWeight: 600, marginTop: 8 }}>{lead.business_name} replied</div>
+              {lead.next_action && <div style={{ fontSize: 14, color: C.soft, marginTop: 6, lineHeight: 1.5 }}>{lead.next_action}</div>}
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginTop: 14 }}>
+                <Link to={`/leads/${lead.id}`} style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, padding: '0 16px', borderRadius: 8, background: C.amber, color: '#1A1206', fontWeight: 600, fontSize: 14, textDecoration: 'none' }}>Open call card</Link>
+                {lead.phone && <a href={`tel:${lead.phone.replace(/[^0-9+]/g, '')}`} style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, padding: '0 16px', borderRadius: 8, border: '1px solid #6B5320', color: C.amber, textDecoration: 'none', fontSize: 14 }}>Call {lead.phone}</a>}
+              </div>
+            </div>
+          )}
+          </div>
           <MessageJarvis />
         </section>
 
         <section aria-label="Live" className="hq-col-live" style={{ flex: '1 1 320px', minWidth: 0, maxWidth: 420, display: 'flex', flexDirection: 'column', gap: 16 }}>
           {lead && (
-            <div className="hq-rise" style={{ border: '1px solid #6B5320', background: 'linear-gradient(180deg,rgba(245,183,74,.14),rgba(245,183,74,.04))', borderRadius: 12, padding: 18 }}>
+            <div className="hq-rise hq-call-desktop" style={{ border: '1px solid #6B5320', background: 'linear-gradient(180deg,rgba(245,183,74,.14),rgba(245,183,74,.04))', borderRadius: 12, padding: 18 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: MONO, fontSize: 12, letterSpacing: '.18em', color: C.amber }}><span className="hq-dot" style={{ width: 8, height: 8, borderRadius: '50%', background: C.amber }} />CALL NOW</div>
               <div style={{ fontSize: 20, fontWeight: 600, marginTop: 8 }}>{lead.business_name} replied</div>
               {lead.next_action && <div style={{ fontSize: 14, color: C.soft, marginTop: 6, lineHeight: 1.5 }}>{lead.next_action}</div>}

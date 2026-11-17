@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { base44 } from '@/api/base44Client';
 import { Link, useParams } from 'react-router-dom';
 import AppShell, { useProfile, panel, label, Chip, Empty } from '@/components/hq/AppShell';
 import { C, MONO, useRows, STAGE_LABEL, statusStyle, todayISO } from '@/lib/hq';
@@ -7,12 +8,69 @@ const TH = { textAlign: 'left', fontFamily: MONO, fontSize: 11, letterSpacing: '
 const TD = { padding: '12px 14px', borderBottom: '1px solid #12202F', fontSize: 14, verticalAlign: 'top' };
 const ST = { live: ['rgba(95,224,180,.14)', C.green], approved: ['rgba(95,224,180,.14)', C.green], draft: ['rgba(245,183,74,.14)', C.amber], paused: ['rgba(148,167,186,.14)', C.soft], done: ['rgba(148,167,186,.14)', C.soft] };
 
+// v3.16: every draft Jarvis wrote, in one place. Approve hands it back to Jarvis, which sends it
+// through the send gate on its next campaign run; nothing is sent from this page.
+function Drafts() {
+  const touches = useRows('Touch', '-updated_date', 1000, 20000);
+  const accounts = useRows('Account', '-updated_date', 1000, 60000);
+  const [open, setOpen] = useState('');
+  const [editing, setEditing] = useState('');
+  const [text, setText] = useState('');
+  const [busy, setBusy] = useState('');
+  const [note, setNote] = useState('');
+  const drafts = touches.rows.filter((t) => t.status === 'draft');
+  const waiting = touches.rows.filter((t) => t.status === 'approved').length;
+  const nameOf = (t) => t.account_name || (accounts.rows.find((a) => a.id === t.account_id) || {}).business_name || 'Lead';
+  async function setStatus(t, fields, msg) {
+    setBusy(t.id); setNote('');
+    try { await base44.entities.Touch.update(t.id, fields); setNote(msg); setEditing(''); await touches.reload(); }
+    catch { setNote('Could not save that. Try again.'); }
+    setBusy('');
+  }
+  if (touches.loading) return null;
+  return (
+    <section aria-label="Drafts" style={{ ...panel, marginTop: 18 }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, flexWrap: 'wrap' }}>
+        <div style={label}>DRAFTS FOR YOU</div>
+        <span style={{ fontSize: 14, color: C.soft }}>{drafts.length ? `${drafts.length} waiting for your OK` : 'Nothing waiting. Jarvis puts every new draft here.'}</span>
+        {waiting > 0 && <span style={{ fontFamily: MONO, fontSize: 11, letterSpacing: '.12em', color: C.green }}>{waiting} APPROVED, SENDING ON JARVIS’S NEXT RUN</span>}
+      </div>
+      {note && <div style={{ fontSize: 13, color: C.green, marginTop: 8 }}>{note}</div>}
+      {drafts.map((t) => {
+        const isOpen = open === t.id, isEdit = editing === t.id;
+        return (
+          <div key={t.id} style={{ borderTop: '1px solid #12202F', padding: '14px 0', marginTop: 10 }}>
+            <div role="button" tabIndex={0} onClick={() => setOpen(isOpen ? '' : t.id)} onKeyDown={(e) => { if (e.key === 'Enter') setOpen(isOpen ? '' : t.id); }} style={{ cursor: 'pointer' }}>
+              <div style={{ fontFamily: MONO, fontSize: 11, letterSpacing: '.12em', color: C.faint }}>{String(t.channel || 'email').toUpperCase()}{t.step ? ', ' + String(t.step).toUpperCase() : ''}{t.due_date ? ', DUE ' + t.due_date : ''}</div>
+              <div style={{ fontSize: 15, fontWeight: 600, marginTop: 3 }}>{nameOf(t)}</div>
+              <div style={{ fontSize: 14, color: C.soft, marginTop: 2 }}>{t.summary || 'Draft'}</div>
+            </div>
+            {(isOpen || isEdit) && (isEdit
+              ? <textarea value={text} onChange={(e) => setText(e.target.value)} rows={10} aria-label="Edit the draft" style={{ width: '100%', marginTop: 10, padding: '10px 12px', borderRadius: 8, border: `1px solid ${C.line2}`, background: '#0A1626', color: C.text, font: "400 14px/1.55 'Space Grotesk', sans-serif" }} />
+              : <pre style={{ whiteSpace: 'pre-wrap', margin: '10px 0 0', padding: '12px 14px', borderRadius: 8, background: '#0A1626', border: `1px solid ${C.line}`, font: "400 14px/1.6 'Space Grotesk', sans-serif", color: C.text }}>{t.full_text || t.summary || ''}</pre>)}
+            <div style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
+              {isEdit
+                ? <><button type="button" className="hq-btn" disabled={busy === t.id || !text.trim()} onClick={() => setStatus(t, { full_text: text, status: 'approved' }, 'Saved and approved. Jarvis sends it on its next run.')} style={{ minHeight: 38, padding: '0 14px', borderRadius: 8, border: 'none', background: C.cyan, color: '#04131B', fontWeight: 600, cursor: 'pointer' }}>Save and approve</button>
+                    <button type="button" className="hq-btn" onClick={() => setEditing('')} style={{ minHeight: 38, padding: '0 14px', borderRadius: 8, border: `1px solid ${C.line2}`, background: 'transparent', color: C.text, cursor: 'pointer' }}>Cancel</button></>
+                : <><button type="button" className="hq-btn" disabled={busy === t.id} onClick={() => setStatus(t, { status: 'approved' }, 'Approved. Jarvis sends it on its next run.')} style={{ minHeight: 38, padding: '0 14px', borderRadius: 8, border: 'none', background: C.cyan, color: '#04131B', fontWeight: 600, cursor: 'pointer' }}>Approve</button>
+                    <button type="button" className="hq-btn" onClick={() => { setEditing(t.id); setText(t.full_text || ''); setOpen(t.id); }} style={{ minHeight: 38, padding: '0 14px', borderRadius: 8, border: `1px solid ${C.line2}`, background: 'transparent', color: C.text, cursor: 'pointer' }}>Edit</button>
+                    <button type="button" className="hq-btn" disabled={busy === t.id} onClick={() => setStatus(t, { status: 'cancelled', cancelled_reason: 'Skipped by you in the HUD' }, 'Skipped. Jarvis will not send it.')} style={{ minHeight: 38, padding: '0 14px', borderRadius: 8, border: `1px solid ${C.line2}`, background: 'transparent', color: C.muted, cursor: 'pointer' }}>Skip</button>
+                    {!isOpen && <button type="button" className="hq-btn" onClick={() => setOpen(t.id)} style={{ minHeight: 38, padding: '0 10px', border: 'none', background: 'transparent', color: C.cyan, cursor: 'pointer' }}>Read it</button>}</>}
+            </div>
+          </div>
+        );
+      })}
+    </section>
+  );
+}
+
 export default function Campaigns() {
   const profile = useProfile();
   const { rows, loading, error } = useRows('Campaign');
   return (
     <AppShell profile={profile}>
-      <div><div style={label}>CAMPAIGNS</div><h1 style={{ margin: '6px 0 0', fontSize: 30, fontWeight: 600 }}>{rows.length} campaigns, {rows.filter((c) => c.status === 'live').length} live</h1></div>
+      <div><div style={label}>CAMPAIGNS</div><h1 style={{ margin: '6px 0 0', fontSize: 30, fontWeight: 600 }}>{rows.length} campaign{rows.length === 1 ? '' : 's'}, {rows.filter((c) => c.status === 'live').length} live</h1></div>
+      <Drafts />
       {error && <div style={{ marginTop: 16, color: C.red }}>{error}</div>}
       {!loading && !error && rows.length === 0 ? <div style={{ marginTop: 18 }}><Empty>No campaigns yet. Once you have leads, ask Jarvis to set up a campaign. You approve it once, and it shows up here.</Empty></div> : (
         <div style={{ overflowX: 'auto', marginTop: 18, border: `1px solid ${C.line}`, borderRadius: 12, background: C.panel }}>

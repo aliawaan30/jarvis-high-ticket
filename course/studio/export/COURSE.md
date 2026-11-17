@@ -128,11 +128,11 @@ This message goes into the new app’s builder chat, not into Jarvis.
 
 ## Install the app
 - Open your new Agency HQ app in Base44.
-- In its builder chat, attach **agency-hq-v3.15.zip** from this lesson.
+- In its builder chat, attach **agency-hq-v3.16.1.zip** from this lesson.
 - Paste the message below in the same message and send it.
 
 ```
-Install the attached Agency HQ v3.15 package into this app as the exact source of truth. Unzip it and copy every file under source/ into this project at the same paths, replacing what is there.
+Install the attached Agency HQ v3.16.1 package into this app as the exact source of truth. Unzip it and copy every file under source/ into this project at the same paths, replacing what is there.
 
 Copy in this order: everything under base44/ first, then src/api/, src/lib/, src/hooks/, src/utils/, then src/components/, then src/pages/, then src/index.css, and last src/App.jsx, src/main.jsx and index.html. Restart or reload the dev server after copying.
 
@@ -157,7 +157,7 @@ Settings, Connections. Every line has a ? that tells you what it is and where to
 
 | Connection | What to do | 
 | Jarvis access | Make an access token in Jarvis (Settings, Developer, Create access token, One app or Superagent, the Agent entry, Full access), paste it, press Save. | 
-| HUD key | Already created for you. Press Copy for Jarvis, paste it into your Jarvis chat and send it. | 
+| HUD key | Already created for you. Press Get it for Jarvis, then Copy, paste it into your Jarvis chat and send it. Then press Test Jarvis connection under Jarvis access: it should say Jarvis is connected. | 
 | Live voice (optional add-on) | Paste your Retell key, press Test key, then Set up my voice. The app builds your Jarvis voice for you. | Keys are saved securely and never shown again. Only their last 4 characters appear, so you can see which one is saved.
 
 - Still in Settings, add your Jarvis agent ID and your name. For voice, choose Base44, or Retell if you set up the add-on.

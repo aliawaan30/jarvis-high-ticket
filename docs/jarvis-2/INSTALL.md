@@ -6,14 +6,17 @@ Say nothing to the member between steps except the Step 1 message and the Step 5
 ## Step 0. Fresh install or re-install
 If memory already has "Jarvis 2.0 version", this is a re-install. Do every step anyway, but never duplicate anything that exists: reuse existing tables, workflows and the goal, and fix what is wrong. Do not ask setup questions you already have answers to.
 
+## Step 0b. Stay in your own lane
+List the apps you can see through Cross-app data access. If you can see any app other than an Agency HQ you installed for this member, do not read or write it, now or later. On a fresh install, ask the member in one line to set Agent Settings, General, Cross-app data access to "No apps" for now: "Quick one first: open my Agent Settings, General, and set Cross-app data access to No apps. We'll connect your HUD in a few minutes." Never change your own display name.
+
 ## Step 1. Tell the member what is happening
-Send one short message, always, as the very first thing, on a fresh install and a re-install: "Upgrading you now. Give me a few minutes."
+Send one short message, always, as the very first thing, on a fresh install and a re-install: "Hey [name], upgrading you to Jarvis 2.0 now. It takes about 3 minutes. Then I'll walk you through everything, one step at a time." Use "Hey," if you don't know their name.
 
 ## Step 1b. Save access details
 Save the member's code in memory as "Jarvis 2.0 code". If it is already saved and matches, leave it. Only replace it if the code they sent is different, and never ask them for it again. Then read it back from memory to confirm it saved. Save in memory: "Jarvis 2.0 pack URL" as the address you fetched without the query string, and "Jarvis 2.0 version" as the pack's version field.
 
 ## Step 2. Install every skill
-The pack's files list holds each skill as a folder containing one SKILL.md, under core/ (Jarvis 2.0 itself) or modules/[module]/ (the module skills). Install core first, then the modules. For every skill folder:
+The attached zip holds each skill as a folder under skills/, each with one SKILL.md and sometimes references or assets. This is the core: install every folder in it. Course modules come later, one zip per module, each with its own install message. For every skill folder:
 1. Install it with your skill tool, using the folder name as the skill name. SKILL.md is the main file. Install any other files in that folder as part of the same skill, keeping their relative paths.
 2. Never write skills straight into the .agents folder. Only the skill tool keeps them across conversations.
 3. If a skill with the same name exists, replace it with this version.
@@ -38,8 +41,9 @@ Use your memory of the member: name, location, timezone, niche, service, target 
 1. What's your monthly target, and by when?
 2. How many sales calls a week are you aiming for?
 3. What time should I send your morning brief, and which days?
-4. How many new leads a day? I'd start with 5, which is what your Gmail can follow up properly. More once you add a bulk sender."
-Drop any question you already know the answer to and renumber. A check-in time from Jarvis Simple is not a morning brief time, so still ask question 3 unless a morning brief time is saved. Ask for an exact city if their timezone is not saved. No other questions, no explanations, no tool names. If you have every answer already, skip the questions and go to Step 6.
+4. How many new leads a day? I'd start with 5, which is what your Gmail can follow up properly. More once you add a bulk sender.
+5. Which city are you in? (So your check-ins arrive at the right time.)"
+Drop any question you already know the answer to and renumber. Set their timezone from the city they live in, never from the browser or the server. Put a blank line between the numbered questions (Base44 chat joins lines without one). A check-in time from Jarvis Simple is not a morning brief time, so still ask question 3 unless a morning brief time is saved. Ask for an exact city if their timezone is not saved. No other questions, no explanations, no tool names. If you have every answer already, skip the questions and go to Step 6.
 3. Wait for the answer. Save it. Create this week's Numbers row, or reuse it if it exists.
 4. If part of an answer is missing, ask once for just that part in one line. If it is still missing, use these defaults and say so in the live message: date 90 days from today, 5 calls a week, brief 7am on weekdays, 5 leads a day.
 5. If the target is far beyond anything reachable by the date (for example 100k a month in 4 weeks from zero), say so in one line with a realistic option, then use whatever they choose.
@@ -47,19 +51,19 @@ Drop any question you already know the answer to and renumber. A check-in time f
 ## Step 6. Start the rhythm
 First, background work needs permission to write to HQ. If memory already says "Update data is on", do not ask again. Otherwise ask the member, in one line, to switch on Agent Settings, Security, "Update data", wait until they say it is on, then save "Update data is on" in memory. Without it, the brief and every background job stall.
 Read the jarvis-rhythm skill. Create its workflows with the member's timezone, working days and brief time.
-1. Morning brief, afternoon check-in (6 hours after the brief) and Friday numbers: create them now, sent to their connected channel as jarvis-rhythm says.
+1. Morning brief, afternoon check-in (6 hours after the brief) and Friday numbers: create them now, sent to their connected channel as jarvis-rhythm says. If no WhatsApp or Telegram is connected, offer it in one line in the live message (see Step 9).
 2. Reply watch and after the call need a connected inbox. If Gmail or Outlook is connected, create them now. If not, do not create them. Save in memory "Jarvis 2.0 waiting on inbox: reply watch, after the call", and create both the moment an inbox is connected.
 If a Jarvis 2.0 workflow already exists, update it instead of creating a new one. Only switch on workflows you created in this install. A workflow or goal that already exists and is paused stays paused: the member may have paused it to save credits. List it in the install check note and add one line to the final message: "Your [names] are paused. Say 'resume them' when you want them back." Do not create any other workflows yourself.
 
 ## Step 7. Set the goal
 Create a goal from their target and date, with exactly this scope:
-"Reach [target] a month by [date]. Weekly targets are in my HQ Numbers table. Background work allowed: one lead hunt a day, only if the new leads saved today are below my leads a day, first message drafts for new leads, and keeping Numbers up to date. Today's first lead hunt runs in chat, so start background hunting from tomorrow. Everything else, including offer, pricing, funnel, ads and scripts, only when I ask in chat. Never change my offer. Never contact anyone without my approval."
+"Reach [target] a month by [date]. Weekly targets are in my HQ Numbers table. Background work allowed: keep Numbers up to date and send the scheduled check-ins. Once the lead hunter skill is installed and my offer is approved: one lead hunt a day, only if the new leads saved today are below my leads a day, with first message drafts saved for my approval. Never in the background: proposals, offers, campaigns, documents, sending anything, or anything I declined or did not ask for."
 You can usually create the goal yourself. If you cannot, give the member that exact text with /goal in front to send you.
-If a goal from an earlier install exists, reuse it: update its text to the scope above if you can. If it is paused, leave it paused and mention it in the final message, as for workflows. If you cannot edit or resume it, give the member the /goal message with that scope, and record the old goal in the note. If the member has to send the /goal message, give it to them and continue with Step 8. If the goal still is not running at Step 8, record it as waiting in the note and add the one line in Step 9.
+If a goal from an earlier install exists, update its text to this scope. If it is paused, leave it paused and mention it in the final message.
 
 ## Step 8. Verify before reporting
 Check the real current state of each item, not what you set up or intended. A workflow or goal only counts as running if it shows as on right now. Items that were already paused before this install count as "paused by the member", not as failures, and stay paused. Check, do not assume:
-1. Count the skills from this pack that are now installed. Compare with the pack's skill count. Then open every installed skill from this pack and confirm each shows "Pack version:" equal to this pack's version field. Any skill that shows an older version, or no version, was not replaced: install it again with your skill tool and check it again. List any still failing in the install check note. Never report the install as done while an older version is installed.
+1. Count the skill folders in the core zip and confirm each is installed. Open every one and confirm it shows a Version line. Any skill that shows an older version, or no version, was not replaced: install it again with your skill tool and check it again. List any still failing in the install check note. Never report the install as done while an older version is installed.
 1c. Save the pack's version in memory as "Jarvis 2.0 version", and write it at the top of the install check note.
 1b. Confirm "Update data" is on: from memory if already confirmed, otherwise by asking the member once.
 2. Check HQ: if the Agency HQ app is installed, run "Checking the app" from jarvis-hq; otherwise confirm the HQ tables exist in your Data area.
@@ -76,8 +80,22 @@ Missions: on a fresh install, create the 19 Missions rows from jarvis-missions, 
 "You're on Jarvis 2.0, [name].
 Goal: [target] a month by [date], with [calls] sales calls a week.
 Every [days] at [time] I'll send who to call, with messages drafted.
-Missions 1 and 2 done. Mission 3 of 19: your first [daily leads] leads in [target city]. Starting now, back shortly."
-If their niche or target city is not known, replace the last line with: "First, tell me the type of business you sell to and the city, and I'll find your first leads."
+Missions 1 and 2 done.
+
+Here's what we do next, one step at a time:
+
+1. Your HUD: your CRM and command centre (about 15 minutes)
+
+2. Your offer (Module 2)
+
+3. Your funnel (Module 3)
+
+4. Your first leads and emails (Module 4)
+
+Reply go when you have 15 minutes and we'll start on your HUD."
+Add one line before the plan if no WhatsApp or Telegram is connected: "Want these check-ins on your phone? Open my Channels, connect WhatsApp or Telegram, and send the code. 1 minute."
+When they reply go, guide the HUD install with jarvis-hq, step by step. Never start a lead hunt from the install.
+
 3. Add up to two extra lines, only for things that need them. If no inbox is connected: "One thing: say "connect my Gmail" so I can catch replies the second they land." If the goal is waiting on their /goal message: "One thing: send the goal message above so I keep working when you're away." If something failed in Step 8: say in one plain line what did not install, and ask them to send "show me the setup check" to their support contact. Nothing else.
 4. On a re-install, skip the first job and the live message. Send one line instead: "All set. Picking up where we left off.", plus up to two extra lines from point 3 for things that need them. Then stop.
 5. On a fresh install, start that first job straight away and report back when it is done. The first job is the lead hunt (jarvis-lead-hunter, at their daily quota), run by you directly in this chat, not handed to the goal or sub-agents, whenever their niche and target city are known. Report only the leads: no offer pitch, no other topics. If they are not known, the live message has already asked for them; start the hunt once they answer. Never start offer, pricing or funnel work as the first job; that happens when the member asks, or in Module 2.

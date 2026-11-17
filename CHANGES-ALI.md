@@ -85,5 +85,10 @@ Voice simplified: Browser voice (free) or Retell voice (add-on). Fish Audio hidd
 ## Batch 3i, 17 Nov 2026: Agency HQ v3.15.2
 Talk to Jarvis is the main HUD button (filled cyan, microphone icon, under the status line); tapping the core also opens Talk. Only Hud.jsx and hq.css changed. Downloads: agency-hq-v3.15.2.zip replaces v3.15.1.
 
-## Combined push, 17 Nov 2026
-One update carrying everything from batches 3e to 3i at their latest versions, plus docs/previews (agentic HUD, Talk button, course and proposal previews), docs/updates/jarvis-2-updates-2026-11-17.md and docs/case-study (brief, captions, 11 images).
+## 18 Nov 2026: fixes from Test 17 (Agency HQ v3.16, skills 2026-11-18.1)
+App: publish crash fixed (src/lib/utils.js guarded), no app rename, Retell on its current API (v2/list-agents, publish-agent-version, v2/list-phone-numbers), Retell call prepared on hover for a faster greeting, HUD key in two steps, Test Jarvis connection, Message Jarvis explains failures, Campaigns Drafts with Approve, Edit and Skip (new Touch status approved), today's calls target, no Australian phone default.
+Skills: jarvis-2-brain (only what was asked or approved, guide every step, message formatting), jarvis-hq (plain-words install guide, reliable HUD key, connection test), jarvis-rhythm (check-ins under 80 words with today's target and one action, campaign runner sends HUD approvals, plain words), jarvis-missions (reordered to match the course, celebrations and module moments, one next action), jarvis-outreach-coordinator (drafts always shown for approval), jarvis-offer-creation (blank lines between the six lines). Install steps: own-app lane, warm welcome, city for timezone, goal scope limited, live message with the plan, no lead hunt from the install, core zip wording.
+Docs: Test 17 report, decisions 2026-11-18, run sheet and Chrome test prompt updated. All module zips rebuilt; agency-hq-v3.16.zip replaces v3.15.2.
+
+## 18 Nov 2026: Agency HQ v3.16.1, phones and tablets
+HUD on phones: roles in a 2 by 2 grid under the ring (they made the page wider than the screen), Call now right under Talk to Jarvis, thumb-sized tap areas on every link on phones and touch screens, "1 campaign". Checked every page at 360, 390 and 768 wide. Downloads: agency-hq-v3.16.1.zip replaces v3.16.

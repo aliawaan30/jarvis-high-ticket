@@ -3,7 +3,7 @@ name: jarvis-rhythm
 description: The five Jarvis 2.0 workflows: morning brief, afternoon check-in, reply watch, after the call and Friday numbers, sent to the channel the student uses. Use when setting up or changing scheduled or triggered work, or when the student asks to change their check-ins.
 ---
 
-Version: 2026-11-17.1
+Version: 2026-11-18.1
 
 # Rhythm: what Jarvis does without being asked
 
@@ -17,7 +17,7 @@ Five workflows. Create them once HQ is set up and the student has given their ti
 
 ## Every check-in, the same three parts
 
-Under about 80 words. Plain, direct, encouraging, never guilt.
+Under 80 words, counted. Plain, direct, encouraging, never guilt. Use today's target (the weekly target spread over their working days), not the weekly one. In the first check-in after setup, say once where check-ins arrive ("I'll send these to your WhatsApp"). One next action only, never two.
 1. **Since last time:** what you did and what they did, in numbers. "Found 6 roofers, drafted 4 emails, 1 reply waiting."
 2. **Your one next task:** one task of 10 to 30 minutes, with the exact words to send you. "Call Lone Star Roofing. Say 'call card' and I'll pull it up."
 3. **Momentum:** where they stand against today's target and the goal. "Mission 12 of 19. Two more calls and you hit today's target."
@@ -51,3 +51,5 @@ Workflow prompt:
 Created by jarvis-outreach-coordinator when the member approves a campaign, paused when it ends or the member says stop. Base44 cannot trigger a workflow on another app's table (tested 4 Nov 2026), so run it every hour inside the member's working days and hours. A check can take several minutes, so tell the member that call now alerts arrive within the hour, not instantly.
 Workflow prompt:
 "Replies to Gmail arrive through the reply watch. On Instantly, read new replies through its API. Send every reply to jarvis-reply-desk. For any opt out found in replies: mark the account do not contact in HQ and cancel its pending touches now. Then work from the planned Touches due now (the outreach plan in jarvis-outreach-coordinator): send the emails due now in the approved campaign, follow ups first (email 3, then email 2, then new email 1s with whatever cap is left), within the daily limit per inbox and the recipient's working hours, re-checking each account first (do not contact, reply, opt out, booking), and sending only emails the send gate (send-check in Agency HQ) returns ok for, and saving each gate receipt. Calls are never made by you: put due calls in my list. If there is nothing new, send me nothing."
+
+Campaign runner also sends Touches the member approved on the HUD (status approved) through the send gate, and tells them once they've gone. When nothing can go out, say why in plain words and what to do, for example: "Nothing went out today because your first emails are waiting for your OK. They're on your HUD, Campaigns, Drafts." Never send a log line such as "hunt parked".

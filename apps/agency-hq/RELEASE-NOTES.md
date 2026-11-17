@@ -1,5 +1,20 @@
 # Agency HQ release notes
 
+## v3.16.1 (18 Nov 2026): phones and tablets
+- HUD on phones: the four roles move from around the ring into a 2 by 2 grid under it (they made the page wider than the screen), and the Call now card appears right under Talk to Jarvis instead of at the bottom. Desktop is unchanged.
+- Every link on phones and touch screens has a thumb-sized tap area (invisible padding, nothing moves).
+- "1 campaign" instead of "1 campaigns".
+- Checked on every page at 360, 390 and 768 pixels wide: nothing wider than the screen, no tap target under 32 pixels, no errors.
+
+## v3.16 (18 Nov 2026), fixes from Test 17
+- Publish crash fixed: src/lib/utils.js read the browser window while loading, which crashed every page Base44 renders on its server (500 HTTPError). Now guarded.
+- The package no longer renames the app (config.jsonc name removed).
+- Retell moved to its current API: Test key and Set up my voice use POST /v2/list-agents and POST /publish-agent-version (the old endpoints were retired in July 2026); the voice picker uses /v2/list-agents and /v2/list-phone-numbers.
+- Faster greeting: the Retell call is prepared when the pointer reaches a Talk button, so it starts the moment it's pressed.
+- Connections: HUD key in two steps (Get it for Jarvis, then Copy) that cannot hang; Test Jarvis connection explains exactly what is wrong (token, agent ID or error code). Message Jarvis now says the real reason too.
+- Campaigns: Drafts for you, with Approve, Edit and Skip. Approved drafts are sent by Jarvis through the send gate on its next run. Touch has a new status: approved.
+- Calls today shows today's target (the weekly target over 5 working days). Phone example no longer defaults to Australia.
+
 ## v3.15.2 (17 Nov 2026)
 - Talk to Jarvis is the main action on the HUD: a filled cyan button with a microphone, directly under the status line, with a soft glow. The next check-in moves below it.
 - Tapping the Jarvis core opens Talk too (keyboard: Enter or Space).

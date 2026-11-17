@@ -137,7 +137,14 @@ export default async function(req) {
           headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json' },
           body: JSON.stringify({ metadata: {} }),
         });
-        if (!response.ok) return json({ error: 'conversation_failed', message: 'Could not open a chat with Jarvis. Check your Jarvis agent ID and access token in Settings.' }, 502);
+        if (!response.ok) {
+          const why = response.status === 401 || response.status === 403
+            ? 'Jarvis did not accept the access token. Make a new one in Jarvis, Agent settings, Developer (One app or Superagent, the Agent entry, Full access) and save it in Settings, Connections.'
+            : response.status === 404
+              ? 'No Jarvis agent with that ID. Copy the 24 characters after /agents/ in Jarvis, Agent settings, Developer, and save them in Settings.'
+              : 'Jarvis answered with error ' + response.status + '. Press Test Jarvis connection in Settings, Connections, and send Jarvis a screenshot.';
+          return json({ error: 'conversation_failed', status: response.status, message: why }, 502);
+        }
         const data = await response.json();
         if (typeof data?.id !== 'string' || !ID.test(data.id)) throw new Error('invalid_conversation');
         conversationId = data.id;

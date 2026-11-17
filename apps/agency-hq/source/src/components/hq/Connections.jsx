@@ -11,7 +11,7 @@ const HELP = {
   JARVIS_NATIVE_TOKEN: {
     title: 'Jarvis access',
     what: 'Lets your HUD hand jobs to Jarvis, like a task you give it by voice. Free.',
-    steps: ['Open your Jarvis agent, then Settings, then Developer.', 'Click Create access token.', 'Choose One app or Superagent, pick the entry with the Agent badge, choose Full access, then copy it and paste it here.'],
+    steps: ['Open your Jarvis agent, then Agent Settings, then Developer.', 'Click Create access token. Choose One app or Superagent, pick the entry with the Agent badge, and choose Full access.', 'Copy it, paste it here and press Save straight away, before you copy anything else.'],
   },
   RETELL_API_KEY: {
     title: 'Live voice (Retell add-on)',
@@ -83,20 +83,31 @@ export default function Connections({ canEdit, onVoiceReady }) {
   const [st, setSt] = useState(null);
   const [voiceMsg, setVoiceMsg] = useState(null);
   const [hudMsg, setHudMsg] = useState(null);
+  const [hudText, setHudText] = useState('');
+  const [jarvisMsg, setJarvisMsg] = useState(null);
   const load = useCallback(async () => {
     let res; try { res = await base44.functions.invoke('connections', { action: 'status' }); } catch (e) { res = e?.response; }
     setSt(res?.data?.ok ? res.data : { error: true });
   }, []);
   useEffect(() => { if (canEdit) load(); }, [canEdit, load]);
 
-  async function copyHudKey() {
-    setHudMsg({ kind: 'busy', text: 'Getting it...' });
-    let res; try { res = await base44.functions.invoke('connections', { action: 'hud_key_for_jarvis' }); } catch (e) { res = e?.response; }
+  const withTimeout = (p, ms) => Promise.race([p, new Promise((_, r) => setTimeout(() => r(new Error('timeout')), ms))]);
+  async function getHudText() {
+    setHudMsg({ kind: 'busy', text: 'Getting your HUD key...' }); setHudText('');
+    let res; try { res = await withTimeout(base44.functions.invoke('connections', { action: 'hud_key_for_jarvis' }), 15000); } catch (e) { res = e?.response; }
     const key = res?.data?.hud_key;
-    if (!key) { setHudMsg({ kind: 'err', text: 'Could not get it. Try again.' }); return; }
-    const text = `Save this as my Agency HQ HUD key, as a secret: ${key}`;
-    try { await navigator.clipboard.writeText(text); setHudMsg({ kind: 'ok', text: 'Copied. Paste it into your Jarvis chat and send it. Jarvis saves it as a secret.' }); }
-    catch { setHudMsg({ kind: 'ok', text }); }
+    if (!key) { setHudMsg({ kind: 'err', text: 'Could not get it. Publish the app, reload this page and try again.' }); return; }
+    setHudText(`Save this as my Agency HQ HUD key, as a secret named HUD_KEY: ${key}`);
+    setHudMsg({ kind: 'ok', text: 'Ready. Press Copy, then paste it into your Jarvis chat and send it.' });
+  }
+  async function copyHudText() {
+    try { await navigator.clipboard.writeText(hudText); setHudMsg({ kind: 'ok', text: 'Copied. Paste it into your Jarvis chat and send it. Jarvis confirms when it is saved.' }); }
+    catch { setHudMsg({ kind: 'warn', text: 'Your browser blocked copying. Select the text in the box, copy it, and paste it into your Jarvis chat.' }); }
+  }
+  async function testJarvis() {
+    setJarvisMsg({ kind: 'busy', text: 'Checking the connection to Jarvis...' });
+    let res; try { res = await withTimeout(base44.functions.invoke('connections', { action: 'test_jarvis' }), 20000); } catch (e) { res = e?.response; }
+    const d = res?.data || {}; setJarvisMsg({ kind: d.ok ? 'ok' : 'err', text: d.message || 'Could not check. Try again in a moment.' });
   }
   async function testRetell() {
     setVoiceMsg({ kind: 'busy', text: 'Checking with Retell...' });
@@ -129,11 +140,19 @@ export default function Connections({ canEdit, onVoiceReady }) {
           <span style={{ fontSize: 15, fontWeight: 600 }}>HUD key</span><span style={{ flex: 1 }} /><StatusPill k={k.HUD_KEY} />
         </div>
         <div style={{ fontSize: 13.5, color: C.soft, marginTop: 8, lineHeight: 1.5 }}>Created for you automatically. It lets Jarvis and voice calls write to your HUD safely. Jarvis needs a copy once.</div>
-        <div style={{ marginTop: 10 }}><button type="button" onClick={copyHudKey} style={btn(false)}>Copy for Jarvis</button></div>
-        {hudMsg && <div style={{ fontSize: 13, marginTop: 8, color: color(hudMsg), wordBreak: 'break-all' }}>{hudMsg.text}</div>}
+        <div style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
+          <button type="button" onClick={getHudText} style={btn(false)}>{hudText ? 'Get it again' : 'Get it for Jarvis'}</button>
+          {hudText && <button type="button" onClick={copyHudText} style={btn(true)}>Copy</button>}
+        </div>
+        {hudText && <textarea readOnly value={hudText} onFocus={(e) => e.target.select()} aria-label="HUD key message for Jarvis" rows={2}
+          style={{ width: '100%', marginTop: 8, padding: '8px 10px', borderRadius: 8, border: `1px solid ${C.line2}`, background: '#0A1626', color: C.soft, font: "400 12.5px 'JetBrains Mono', monospace", resize: 'none' }} />}
+        {hudMsg && <div style={{ fontSize: 13, marginTop: 8, color: color(hudMsg) }}>{hudMsg.text}</div>}
       </div>
 
-      <Card name="JARVIS_NATIVE_TOKEN" status={k.JARVIS_NATIVE_TOKEN} canEdit={canEdit} onSaved={load} />
+      <Card name="JARVIS_NATIVE_TOKEN" status={k.JARVIS_NATIVE_TOKEN} canEdit={canEdit} onSaved={load}>
+        <div style={{ marginTop: 10 }}><button type="button" onClick={testJarvis} disabled={!k.JARVIS_NATIVE_TOKEN || k.JARVIS_NATIVE_TOKEN.source === 'none'} style={btn(false)}>Test Jarvis connection</button></div>
+        {jarvisMsg && <div style={{ fontSize: 13, marginTop: 8, color: color(jarvisMsg) }}>{jarvisMsg.text}</div>}
+      </Card>
       <Card name="RETELL_API_KEY" status={k.RETELL_API_KEY} canEdit={canEdit} onSaved={load}>
         <div style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
           <button type="button" onClick={testRetell} disabled={!retellReady} style={btn(false)}>Test key</button>

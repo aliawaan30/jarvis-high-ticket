@@ -5,7 +5,7 @@ description: HQ, the business record, kept in the member's Agency HQ app (the Ja
 
 # HQ: the business record
 
-Version: 2026-11-17.1 (matches Agency HQ app v3.15)
+Version: 2026-11-18.1 (matches Agency HQ app v3.15)
 
 HQ is the member's whole business in one place. Every skill reads from it and writes back to it. Chat memory holds who the member is. HQ holds the business.
 
@@ -20,6 +20,14 @@ HQ is the member's whole business in one place. Every skill reads from it and wr
 
 ## Installing the app (guide the member, step by step)
 
+Explain each step in plain words before they do it, one step per message, as jarvis-2-brain says. What they will meet, and what to tell them:
+1. **No blank-app button.** Give them this to send in the Base44 build box: "Create an empty app named Agency HQ. Only a single blank placeholder page. Do not add features, entities or designs yet. I will install a package next."
+2. **"Install packages" card:** "Base44 asks before adding code libraries. That's normal. Press Approve."
+3. **"Approve (2)" to test functions:** "It wants to test two functions that can change records. The app is empty, so it's safe. Press Approve."
+4. **"Set secrets" form with 5 fields:** "Press Skip. You don't have these yet; we add them in your HUD in a minute."
+5. **If the published app shows a raw error** like {"status":500...}: give them this for the builder: "The published app shows only a 500 error on every page. The preview works. Fix only this so the published app opens. Do not redesign anything and do not publish." Then publish twice again. (Fixed in v3.16; it should not happen.)
+
+
 You cannot create or install apps. The member does it in the Base44 builder; you guide them one step at a time and check each step before the next.
 
 1. Ask them to create a new empty app in Base44 named "Agency HQ" (or open their existing Jarvis HUD app, which is upgraded in place).
@@ -28,9 +36,10 @@ You cannot create or install apps. The member does it in the Base44 builder; you
 4. They publish, then publish again. Connections needs the published app.
 5. Connections, in the app's Settings (v3.15). Every key has a ? that explains it, so keep your guidance short.
    1. **Jarvis access (required):** in your Agent settings, Developer, Create access token: One app or Superagent, the entry with the Agent badge, Full access. They paste it in Connections and press Save.
-   2. **HUD key (required, automatic):** the app creates it. They press Copy for Jarvis and paste it to you. Save it as a secret straight away and never repeat it in chat.
-   3. **Live voice (Retell add-on, optional):** they paste their Retell key, press Test key, then Set up my voice. The app builds the voice agent itself. Only fall back to retell-setup.md if the button reports a problem. Without Retell, Talk works with the Base44 voice.
-   4. Keys already in Base44 Secrets keep working and take priority. Never ask the member to paste a key into chat, except the HUD key handover above.
+   2. **HUD key (required, automatic):** the app creates it. They press Get it for Jarvis, then Copy, and paste it to you. Base44 may auto-save it under its own name (for example AGENCY_HQ_HUD_KEY). Any secret whose name contains HUD_KEY is the HUD key: use it, confirm in one line ("Got your HUD key. Saved."), and never ask for it again or show a second secrets form. Only if no such secret exists, ask them to send it again.
+   3. **Check the link:** ask them to press Test Jarvis connection under Jarvis access. "Jarvis is connected" means Message Jarvis and Talk will work. Any other result tells them exactly what to fix.
+   4. **Live voice (Retell add-on, optional):** they paste their Retell key, press Test key, then Set up my voice. The app builds the voice agent itself. Only fall back to retell-setup.md if the button reports a problem. Without Retell, Talk works with the Base44 voice.
+   5. Keys already in Base44 Secrets keep working and take priority. Never ask the member to paste a key into chat, except the HUD key handover above.
 6. In the published app's Settings they add your agent ID and their name, and choose a voice provider (Base44 if they have no Retell account).
 7. They give you cross-app access to the app (Agent settings, General). Save its app ID in memory as "Agency HQ app ID".
 8. Then run "Checking the app". Only say it is ready when the check passes.

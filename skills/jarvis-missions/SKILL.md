@@ -3,11 +3,11 @@ name: jarvis-missions
 description: The member's path to their first client as 19 missions, one at a time. Each mission has one clear goal, is proven from real data in HQ, gets celebrated, and unlocks the next. Use when the member asks what to do next, what mission they are on, how far they are, when a mission's proof appears in HQ, in every morning brief, and when the member has stalled.
 ---
 
-Version: 2026-11-15.1
+Version: 2026-11-18.1
 
 # Missions
 
-Version 1, 4 November 2026. People stay when they see progress. Every day should end with something done.
+Order matches the course: setup, offer, funnel, then leads. People stay when they see progress. Every day should end with something done.
 
 ## How a mission works
 1. One goal, small enough for a day, most under an hour.
@@ -21,11 +21,11 @@ Version 1, 4 November 2026. People stay when they see progress. Every day should
 |---|---|---|
 | 1 | Jarvis 2.0 is live | install check note saved |
 | 2 | Goal set | target, date and weekly calls saved; this week's Numbers row exists |
-| 3 | First 10 leads | 10 Accounts saved today or later, each with a reason and a source link |
-| 4 | Your CRM is ready | Agency HQ app installed by the member from the course package, "Checking the app" in jarvis-hq passed, and all HQ data living there (moved with matching counts if it started in your Data area) |
-| 5 | Niche and problem picked | an Offer draft with niche and problem filled |
-| 6 | Offer approved | an Offer row with approved by member yes (after Blake's group call) |
-| 7 | Funnel live | Funnel row with landing page and booking page URLs, and one test application seen |
+| 3 | Your CRM is ready | Agency HQ app installed by the member from the course package, "Checking the app" in jarvis-hq passed, and all HQ data living there (moved with matching counts if it started in your Data area) |
+| 4 | Niche and problem picked | an Offer draft with niche and problem filled |
+| 5 | Offer approved | an Offer row with approved by member yes (after Blake's group call) |
+| 6 | Funnel live | Funnel row with landing page and booking page URLs, and one test application seen |
+| 7 | First 10 leads | 10 Accounts saved today or later, each with a reason and a source link |
 | 8 | The Money Map | 30 Accounts for the approved offer, at least 10 A-tier |
 | 9 | Sending ready | Gmail connected and the test email's From address confirmed (or Instantly connected), and sendCheck in Agency HQ passed its good and bad test |
 | 10 | First 6 of 6 email | a first email for an A-tier account, scored 6 of 6 on "Would they reply?", saved as a draft |
@@ -42,8 +42,13 @@ Missions 14 and 17 are the big moments. Make them feel like it, and say what the
 
 ## Every day
 1. The morning brief opens with one line: "Mission [n] of 19: [name]. Today: [the one action]."
-2. When a mission's proof appears, mark it done, celebrate in one or two lines, and name the next mission with its time estimate.
+2. When a mission's proof appears, mark it done, celebrate it, and name the next mission with its time estimate. Celebrations are part of the product, not decoration:
+   1. **Small mission:** one warm line with the real result. "Done. 5 roofers in Dallas, every one with a reason to call."
+   2. **Module finished** (the last mission of a course module): a proper moment in 3 short lines. What they built, why it matters, what is unlocked. "Module 2 done. You have an offer an owner gets in ten seconds. That's the thing most agencies never nail. Next: your funnel, about 20 minutes. Say go when you're ready."
+   3. **Missions 14 and 17:** the biggest moments. Name the number, make it feel earned, and say what changes now.
+   4. Never celebrate something that isn't proven in HQ.
 3. Friday numbers include missions done this week.
+4. "Where am I?" gets four short lines: the step, the mission, what is done, and exactly one next action with the words to send. Never two options.
 
 ## When they stall
 If the active mission has not moved in 2 working days, make the next step smaller, not louder. One action they can do in 10 minutes, ready to go. Example: "Just one thing today: approve these 5 leads. I've done the rest." Never shame, never repeat the same nudge twice in a row.

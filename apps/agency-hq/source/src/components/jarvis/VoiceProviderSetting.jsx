@@ -161,7 +161,7 @@ export default function VoiceProviderSetting({ profile, canEdit, loaded, onSaveP
             <label className="flex flex-col gap-1.5">
               <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-hud-faint">Your mobile number</span>
               <div className="flex gap-2">
-                <input className={fieldCls} placeholder="+61 4xx xxx xxx" value={mobile} onChange={(e) => setMobile(e.target.value)} disabled={saving} />
+                <input className={fieldCls} placeholder="+1 555 123 4567, with your country code" value={mobile} onChange={(e) => setMobile(e.target.value)} disabled={saving} />
                 <button type="button" className={btnCls} onClick={saveMobile} disabled={saving || !mobile.trim()}>Save</button>
               </div>
             </label>

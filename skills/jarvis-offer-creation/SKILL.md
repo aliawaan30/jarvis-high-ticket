@@ -3,7 +3,7 @@ name: jarvis-offer-creation
 description: "Turn a selected buyer/problem/solution into exactly six offer lines: niche, outcome, timeframe, risk reversal, authority/proof and unique mechanism. Use after offer finding, without producing a larger planning report."
 ---
 
-Version: 2026-11-15.1
+Version: 2026-11-18.1
 
 # Create the six-line offer
 
@@ -15,7 +15,7 @@ Read the selected opportunity, actual delivery capability, evidence and member p
 3. Ask the member, in one message, the two things only they can decide: which guarantee they are comfortable with (for example work free until the target, money back on the setup fee, free revisions, first one free, or none), and how many hours a week they can give. Also ask which size of business they will give the guarantee to, for example "$100k+ a month in revenue". Put it in the niche line and the risk reversal, so only buyers they know they can get the result for are offered it. Build the risk reversal from their answer. Never swap in a different type.
 4. After they answer, send only a short summary (niche, service, guarantee type, hours) and "Ready for me to write your offer?", then stop and wait. Never put the offer in the same message as a question. Write it only after they say yes, or when they ask for it directly.
 
-Return the offer in exactly this format, each label bold on its own line, one sentence per line (two short sentences at most for the risk reversal), then stop:
+Return the offer in exactly this format, each label bold on its own line with a blank line between lines (Base44 chat joins lines without one), one sentence per line (two short sentences at most for the risk reversal), then stop:
 
 Your offer (draft, needs your approval)
 

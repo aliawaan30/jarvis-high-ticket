@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { base44 } from '@/api/base44Client';
-import VoiceStage, { primeVoice } from '@/components/hq/VoiceStage';
+import VoiceStage, { primeVoice, prewarmRetellCall } from '@/components/hq/VoiceStage';
 import { C, MONO } from '@/lib/hq';
 
 // Same backend calls as the classic HeaderActions (callMe, callMeRetell, callStatus, TalkPanel),
@@ -67,7 +67,7 @@ export default function HeaderActionsV2({ voiceProvider = 'base44', ownerName = 
   const btn = { display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 40, padding: '0 14px', borderRadius: 20, border: `1px solid ${C.line2}`, background: 'rgba(13,26,43,.8)', color: C.text, font: "500 13px 'Space Grotesk', sans-serif", cursor: 'pointer' };
   return (
     <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 8 }}>
-      <button type="button" className="hq-btn" onClick={() => { primeVoice(); setTalkOpen(true); }} aria-label="Talk to Jarvis" style={btn}>
+      <button type="button" className="hq-btn" onPointerEnter={() => { if (voiceProvider === 'retell') prewarmRetellCall(); }} onClick={() => { primeVoice(); setTalkOpen(true); }} aria-label="Talk to Jarvis" style={btn}>
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M5 11a7 7 0 0 0 14 0M12 18v3" /></svg>
         <span className="hq-act-label">Talk</span>
       </button>

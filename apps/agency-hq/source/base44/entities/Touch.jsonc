@@ -32,7 +32,7 @@
       "type": "string",
       "enum": [
         "planned",
-        "draft",
+        "draft", "approved",
         "sent",
         "received",
         "logged",

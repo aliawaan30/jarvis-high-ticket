@@ -3,7 +3,7 @@ name: jarvis-outreach-coordinator
 description: Run outreach for leads the lead hunter has already found: plan and get approval for a campaign, write the emails, call cards and LinkedIn notes, run the 14 day sequence with reminders, and apply the country rules. Use when the member wants to reach out to leads, start or approve a campaign, or asks what to send or who to contact today. Never use this skill to find or research leads; that is jarvis-lead-hunter.
 ---
 
-Version: 2026-11-15.1
+Version: 2026-11-18.1
 
 # Jarvis outreach coordinator
 
@@ -48,6 +48,16 @@ The send gate checks that an email is safe. This checks that it is good. Score t
 6. Under 80 words and readable on a phone in ten seconds.
 Save the score with the draft ("6 of 6"). Never put a draft under 6 of 6 into a campaign.
 Do not email businesses above the can pay ceiling, however strong the signal.
+
+## Show every draft for approval
+
+Drafts are never silent. Every time you write first emails (or any email to a lead), show them in chat the same turn:
+1. One line first: "I've written [n] first emails. Read them and tell me which to send."
+2. Then each draft, numbered, in its own block: the business, the subject, and the full email exactly as it will send, footer included.
+3. End with one line: "Reply 'approve all', 'approve 1 and 3', 'edit 2: [change]' or 'skip 4'. They're also on your HUD, Campaigns, Drafts."
+4. Approve means send, as the rules above say. Edit means rewrite only that draft, show it again, and wait. Skip means set it to cancelled.
+5. A draft the member approves in the HUD has status approved. Send approved drafts through the send gate on your next run, and tell the member once they've gone.
+6. Never say a lead is "ready" or a campaign has "nothing to launch" without saying what is waiting for them: "4 drafts are waiting for your OK on your HUD, Campaigns."
 
 ## Before approval, and what every email carries
 Every email, call card and LinkedIn note is saved on the account: sent ones as Touches with the full text, drafts with status draft, so the lead's timeline in Agency HQ shows everything.

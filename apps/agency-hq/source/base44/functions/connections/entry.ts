@@ -111,7 +111,7 @@ async function setupVoice(base44, origin, language) {
   const warnings = tune.ok ? [] : ['Some voice tuning was not accepted by Retell (' + retellError('tune', tune) + '). The agent works with Retell defaults.'];
 
   // 4. Publish, then save the agent on the Profile.
-  const pub = await retell('/publish-agent/' + encodeURIComponent(agentId), apiKey, 'POST', {});
+  const pub = await retell('/publish-agent-version/' + encodeURIComponent(agentId), apiKey, 'POST', {});
   if (!pub.ok) warnings.push('Publishing did not confirm (' + retellError('publish', pub) + '). Open the agent in Retell and press Publish.');
   try {
     if (profile && profile.id) await Profile.update(profile.id, { retell_agent_id: agentId, retell_greets: true });
@@ -155,8 +155,27 @@ export default async function(req) {
     if (action === 'test_retell') {
       const apiKey = await getKey('RETELL_API_KEY', base44);
       if (!apiKey) return json({ ok: false, message: 'No Retell key saved yet.' });
-      const r = await retell('/list-agents', apiKey);
+      const r = await retell('/v2/list-agents', apiKey, 'POST', { limit: 1, filter_criteria: { channel: { op: 'eq', value: 'voice' } } });
       return json(r.ok ? { ok: true, message: 'Retell accepted the key.' } : { ok: false, message: retellError('check the key', r) });
+    }
+
+    if (action === 'test_jarvis') {
+      const token = await getKey('JARVIS_NATIVE_TOKEN', base44);
+      if (!token) return json({ ok: false, message: 'Save your Jarvis access token first.' });
+      const profile = (await base44.asServiceRole.entities.Profile.list('-updated_date', 1).catch(() => []))[0] || {};
+      const agentId = String(profile.superagent_id || '').trim();
+      if (!/^[a-f0-9]{24}$/i.test(agentId)) return json({ ok: false, message: 'Add your Jarvis agent ID below first: the 24 characters after /agents/ in Jarvis, Agent settings, Developer.' });
+      let r;
+      try {
+        r = await fetch('https://app.base44.com/api/apps/' + agentId + '/user-agent/conversations/v2', {
+          method: 'POST', redirect: 'manual', signal: AbortSignal.timeout(15_000),
+          headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json' }, body: JSON.stringify({ metadata: { source: 'hud-connection-test' } }),
+        });
+      } catch { return json({ ok: false, message: 'Could not reach Jarvis. Try again in a moment.' }); }
+      if (r.ok) return json({ ok: true, message: 'Jarvis is connected. Message Jarvis and Talk will work.' });
+      if (r.status === 401 || r.status === 403) return json({ ok: false, message: 'Jarvis did not accept the access token. Make a new one (One app or Superagent, the Agent entry, Full access) and save it above.' });
+      if (r.status === 404) return json({ ok: false, message: 'No Jarvis agent with that ID. Check the agent ID below.' });
+      return json({ ok: false, message: 'Jarvis answered with error ' + r.status + '. Send Jarvis a screenshot of this.' });
     }
 
     if (action === 'setup_voice') {

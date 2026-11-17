@@ -15,7 +15,7 @@ Students of The AI Agency Builder upgrade the free Jarvis (a Base44 Superagent) 
 | Layer | What it is | Where |
 | --- | --- | --- |
 | Core skills | jarvis-2-brain (how Jarvis thinks, the 8 step programme, solve-it rules), jarvis-hq (where every table and field lives), jarvis-rhythm (a morning brief and an afternoon check-in every working day, sent to the student's WhatsApp, Telegram or other connected channel, plus reply watch, after the call, Friday numbers and the campaign runner), jarvis-missions (19 missions to the first client live) | skills/ |
-| Agency HQ app | Base44 app v3.15.1: 19 tables, 20 backend functions (including sendCheck, the email send gate, and connections, which keeps every key in one Settings screen), 1 workflow, HUD, pipeline, lead pages, campaigns, clients, results, Talk to Jarvis (voice stage with a particle orb, Base44 voice or Retell) | apps/agency-hq/ |
+| Agency HQ app | Base44 app v3.16.1: 19 tables, 20 backend functions (including sendCheck, the email send gate, and connections, which keeps every key in one Settings screen), 1 workflow, HUD, pipeline, lead pages, campaigns, clients, results, Talk to Jarvis (voice stage with a particle orb, Base44 voice or Retell) | apps/agency-hq/ |
 | Module skills | Module 2 offer (offer menu, offer creation, ad library research, custom opportunity finder), Module 3 funnel (landing page, confirmation page, VSL writer, pre-call follow up), Module 4 outreach (lead hunter, email setup, outreach coordinator, call card, reply desk, SMS), Module 5 ads (ad scripting, static ad creator, Meta campaign setup; ad editing still to add), Module 6 sales (call to close playbook, solution design, proposal builder), Module 7 fulfilment (scoping agent) | skills/ |
 | Data rule | Tables the app has live in Agency HQ. Offer, Funnel, Calls and Proposals live in Jarvis's own Data area. Extra fields go in "Extra" tables (for example CampaignExtra). Jarvis never edits the app | skills/jarvis-hq/SKILL.md |
 | Course | Blake's 39 lesson course text, plus a 42 lesson redesign preview with the prompt for every skill lesson | course/studio/export/COURSE.md, previews/ |
@@ -42,11 +42,11 @@ Built and tested locally (not yet on Base44): proposal builder and its render sc
 
 Built and tested on Base44 earlier: Jarvis 2.0 core install, Agency HQ (v3.13), Module 4 skills, landing page and offer skills (before the latest fixes).
 
-Not yet run end to end: a fresh Base44 test of the whole flow with Agency HQ v3.15.1 and the current skills. This is the next step.
+Not yet run end to end: a fresh Base44 test of the whole flow with Agency HQ v3.16.1 and the current skills. This is the next step.
 
 ## 5. Open items before launch
 
-1. Fresh Base44 run: upgrade a free Jarvis, install HQ v3.15.1 (including Settings, Connections and Set up my voice), run offer, landing page, proposal. Confirm Jarvis can remove old skills, and that every "Use the [skill] skill" prompt triggers the right skill.
+1. Fresh Base44 run: upgrade a free Jarvis, install HQ v3.16.1 (including Settings, Connections and Set up my voice), run offer, landing page, proposal. Confirm Jarvis can remove old skills, and that every "Use the [skill] skill" prompt triggers the right skill.
 2. Install format: decided, one zip per module (course/downloads/jarvis-2 in GitHub). Confirm each installs cleanly in the fresh Base44 run.
 3. Ad editing skill: ships a day or two after launch.
 4. Calendar switch: 5 skills still mention Calendly or Cal.com (call card, lead hunter, reply desk, confirmation page, SMS). They need rewording for Google or Microsoft calendar.

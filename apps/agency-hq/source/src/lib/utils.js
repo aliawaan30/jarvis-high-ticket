@@ -6,4 +6,5 @@ export function cn(...inputs) {
 } 
 
 
-export const isIframe = window.self !== window.top;
+// Guarded: Base44 renders pages on its server first, where there is no window.
+export const isIframe = typeof window !== 'undefined' && window.self !== window.top;

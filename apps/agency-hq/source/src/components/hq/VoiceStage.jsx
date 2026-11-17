@@ -98,6 +98,18 @@ function getCtx() {
 
 // Load the Retell voice library in advance, so tapping Talk does not wait for the download.
 let retellSdk = null;
+// Prepare the Retell web call while the pointer is on a Talk button, so the call
+// starts the moment it is pressed. A prepared call is used once, within 20 seconds.
+let warmCall = null;
+export function prewarmRetellCall() {
+  if (warmCall && Date.now() - warmCall.at < 20000) return;
+  preloadRetell();
+  warmCall = { at: Date.now(), promise: base44.functions.invoke('talkStart', {}).catch((e) => ({ error: e })) };
+}
+function takeWarmCall() {
+  const w = warmCall; warmCall = null;
+  return w && Date.now() - w.at < 20000 ? w.promise : null;
+}
 export function preloadRetell() { if (!retellSdk) retellSdk = import('retell-client-js-sdk').catch(() => { retellSdk = null; return null; }); return retellSdk; }
 
 // The greeting is prepared in the Jarvis voice when the HUD loads, so tapping Talk
@@ -207,7 +219,9 @@ export default function VoiceStage({ open, onClose, voiceProvider = 'base44', ow
     setStatus('connecting');
     let token, conn = {};
     try {
-      const res = await base44.functions.invoke('talkStart', {});
+      const warm = takeWarmCall();
+      let res = warm ? await warm : null;
+      if (!res || res.error || !res?.data?.access_token) res = await base44.functions.invoke('talkStart', {});
       token = res?.data?.access_token;
       conn = res?.data || {};
       callIdRef.current = conn.call_id || '';

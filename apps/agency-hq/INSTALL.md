@@ -1,4 +1,4 @@
-# Agency HQ v3.15.2 (Jarvis HUD + CRM + cinematic voice): install
+# Agency HQ v3.16.1 (Jarvis HUD + CRM + cinematic voice): install
 
 Agency HQ is the student's command centre: the Jarvis HUD home, the CRM (Pipeline, Leads, lead page, Campaigns, Clients, Results, Settings) and the cinematic voice mode (Talk to Jarvis). Jarvis 2.0 writes into it; the voice mode reads from it.
 
@@ -21,7 +21,7 @@ Agency HQ is the student's command centre: the Jarvis HUD home, the CRM (Pipelin
 ### The prompt to paste with the zip
 
 ```text
-Install the attached Agency HQ v3.15.2 package into this app as the exact source of truth. Unzip it and copy every file under source/ into this project at the same paths, replacing what is there.
+Install the attached Agency HQ v3.16.1 package into this app as the exact source of truth. Unzip it and copy every file under source/ into this project at the same paths, replacing what is there.
 
 Copy in this order: everything under base44/ first, then src/api/, src/lib/, src/hooks/, src/utils/, then src/components/, then src/pages/, then src/index.css, and last src/App.jsx, src/main.jsx and index.html. Restart or reload the dev server after copying.
 
