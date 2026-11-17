@@ -13,7 +13,7 @@ List the apps you can see through Cross-app data access. If you can see any app 
 Send one short message, always, as the very first thing, on a fresh install and a re-install: "Hey [name], upgrading you to Jarvis 2.0 now. It takes about 3 minutes. Then I'll walk you through everything, one step at a time." Use "Hey," if you don't know their name.
 
 ## Step 1b. Save access details
-Save the member's code in memory as "Jarvis 2.0 code". If it is already saved and matches, leave it. Only replace it if the code they sent is different, and never ask them for it again. Then read it back from memory to confirm it saved. Save in memory: "Jarvis 2.0 pack URL" as the address you fetched without the query string, and "Jarvis 2.0 version" as the pack's version field.
+No code is needed to upgrade. If the member sent one, save it in memory as "Jarvis 2.0 code"; if not, skip this and never ask for one.
 
 ## Step 2. Install every skill
 The attached zip holds each skill as a folder under skills/, each with one SKILL.md and sometimes references or assets. This is the core: install every folder in it. Course modules come later, one zip per module, each with its own install message. For every skill folder:
@@ -69,7 +69,7 @@ Check the real current state of each item, not what you set up or intended. A wo
 2. Check HQ: if the Agency HQ app is installed, run "Checking the app" from jarvis-hq; otherwise confirm the HQ tables exist in your Data area.
 3. List every active workflow on this agent, including any the goal created by itself. Count the Jarvis 2.0 ones: 5, or 3 if no inbox is connected yet.
 4. Confirm the goal is running.
-5. Read "Jarvis 2.0 code" back from memory.
+5. If a "Jarvis 2.0 code" was saved, read it back from memory.
 6. List every instruction you still have that conflicts with jarvis-2-brain. Every one must be covered by the switched off list. If any is not, include it in your report under "Conflicts to check".
 
 ## Step 9. Save the check, then go live

@@ -27,7 +27,7 @@ THE STEPS
 
 1. Create the Superagent. In Base44, create a new Superagent named "Jarvis Test 17". PASS: it exists and its chat opens.
 
-2. Install Jarvis 2.0. PAUSE for me to attach jarvis-skills-module-1-core.zip to the Jarvis Test 17 chat. Then send: "Upgrade me to Jarvis 2.0. My code is J2-TEST17. Follow the install steps in the attached file." Answer its questions with the test answers. PASS: it says "You're on Jarvis 2.0" (or similar) and names a first mission. Record every question it asked and how many messages the install took.
+2. Install Jarvis 2.0. PAUSE for me to attach jarvis-skills-module-1-core.zip to the Jarvis Test 17 chat. Then send: "Upgrade me to Jarvis 2.0. Follow the install steps in the attached file." Answer its questions with the test answers. PASS: it says "You're on Jarvis 2.0" (or similar) and names a first mission. Record every question it asked and how many messages the install took.
 
 3. The setting. If Jarvis asks, open its settings, Security, and switch on Update data. PASS: Jarvis confirms it.
 

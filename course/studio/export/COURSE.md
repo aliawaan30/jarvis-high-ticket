@@ -27,14 +27,14 @@ You’re doing this first so you can give Jarvis a task and have it work from yo
 One message. Jarvis does the rest and asks you four quick things.
 
 ## Upgrade Jarvis
-Download **jarvis-skills-module-1-core.zip** from this lesson. Open your Jarvis chat, attach the file and send this with the code from your welcome email.
+Download **jarvis-skills-module-1-core.zip** from this lesson. Open your Jarvis chat, attach the file and send this.
 
 ```
-Upgrade me to Jarvis 2.0. My code is [your code]. Follow the install steps in the attached file.
+Upgrade me to Jarvis 2.0. Follow the install steps in the attached file.
 
 ```
 
-> EXAMPLE: **You:** Upgrade me to Jarvis 2.0. My code is J2-4821. Follow the install steps in the attached file.
+> EXAMPLE: **You:** Upgrade me to Jarvis 2.0. Follow the install steps in the attached file.
 
 **Jarvis:** Upgrading you now. Give me a few minutes.
 

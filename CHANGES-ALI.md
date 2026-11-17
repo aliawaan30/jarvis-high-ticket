@@ -92,3 +92,6 @@ Docs: Test 17 report, decisions 2026-11-18, run sheet and Chrome test prompt upd
 
 ## 18 Nov 2026: Agency HQ v3.16.1, phones and tablets
 HUD on phones: roles in a 2 by 2 grid under the ring (they made the page wider than the screen), Call now right under Talk to Jarvis, thumb-sized tap areas on every link on phones and touch screens, "1 campaign". Checked every page at 360, 390 and 768 wide. Downloads: agency-hq-v3.16.1.zip replaces v3.16.
+
+## 18 Nov 2026: no code needed to upgrade
+The upgrade no longer uses a code: the install message is "Upgrade me to Jarvis 2.0. Follow the install steps in the attached file." Jarvis never asks for a code, and still saves one if a student sends it. Updated: docs/jarvis-2/INSTALL.md, the core skill zip, the Install Jarvis 2.0 lesson and course export, the run sheet and the Test 17 prompt.
