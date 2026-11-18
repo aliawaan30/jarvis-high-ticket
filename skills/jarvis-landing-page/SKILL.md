@@ -3,14 +3,14 @@ name: jarvis-landing-page
 description: Build a compact offer-led landing page, progressive application and qualified booking page from the saved offer. Use for a student B2B service funnel, with a VSL or a no-video offer-testing mode.
 ---
 
-Version: 2026-11-15.1
+Version: 2026-11-18.2
 
 # Jarvis Landing Page
 
 Reference-inspected instruction draft. Revised 5 November 2026 from Blake's page corrections and 4 November call. This is the student service funnel, not the longer high-ticket programme demonstration from J-374.
 
 ## Working rules
-1. Where you may write: only the member's Agency HQ app (their CRM) and their Funnel app (the public pages). Use the saved app IDs. If none are saved, find and confirm them as jarvis-hq describes. Never write to any other app.
+1. Where you may write: only the member's Agency HQ app (their CRM) and their Funnel app (the public pages). Use the saved app IDs. If none are saved, find and confirm them as jarvis-hq describes. Before the first build, guide the member in plain words to create an empty app named after their business plus Funnel (give them the exact message for the Base44 build box, as jarvis-hq does for the Agency HQ). Members keep Cross-app data access on All apps, so check you can see the new app, save its app ID in memory as "Funnel app ID", and work only in it and the Agency HQ by their IDs. Never write to any other app.
 2. Ask first before creating test bookings, deleting any record, changing the brand or colours, or publishing. Label every test submission TEST and remove it after testing, with the member's yes.
 3. Talk like a builder, not an engineer. No test counts, route names, file paths, colour codes or code in your messages. While a build runs, give one useful line instead of status updates. Technical detail only if asked or if the member must do something.
 4. Read, don't recall. When asked about records, read them and quote the actual rows. Use saved dates for "when". Only list open items that exist in the saved record.

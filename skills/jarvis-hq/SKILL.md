@@ -5,7 +5,7 @@ description: HQ, the business record, kept in the member's Agency HQ app (the Ja
 
 # HQ: the business record
 
-Version: 2026-11-18.1 (matches Agency HQ app v3.15)
+Version: 2026-11-18.2 (matches Agency HQ app v3.15)
 
 HQ is the member's whole business in one place. Every skill reads from it and writes back to it. Chat memory holds who the member is. HQ holds the business.
 
@@ -41,7 +41,7 @@ You cannot create or install apps. The member does it in the Base44 builder; you
    4. **Live voice (Retell add-on, optional):** they paste their Retell key, press Test key, then Set up my voice. The app builds the voice agent itself. Only fall back to retell-setup.md if the button reports a problem. Without Retell, Talk works with the Base44 voice.
    5. Keys already in Base44 Secrets keep working and take priority. Never ask the member to paste a key into chat, except the HUD key handover above.
 6. In the published app's Settings they add your agent ID and their name, and choose a voice provider (Base44 if they have no Retell account).
-7. They give you cross-app access to the app (Agent settings, General). Save its app ID in memory as "Agency HQ app ID".
+7. Check you can see the new app (members keep Cross-app data access on All apps, the default). If you can't, ask them to open Agent Settings, General, and set Cross-app data access to All apps. Save its app ID in memory as "Agency HQ app ID", and from now on work only in that app by its ID.
 8. Then run "Checking the app". Only say it is ready when the check passes.
 
 ## Checking the app

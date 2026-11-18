@@ -30,11 +30,11 @@ One message. Jarvis does the rest and asks you four quick things.
 Download **jarvis-skills-module-1-core.zip** from this lesson. Open your Jarvis chat, attach the file and send this.
 
 ```
-Upgrade me to Jarvis 2.0. Follow the install steps in the attached file.
+Hey Jarvis, upgrade me to Jarvis 2.0. Everything you need is in the attached file. Follow its install steps in order, keep what you already know about me, and walk me through anything I need to do.
 
 ```
 
-> EXAMPLE: **You:** Upgrade me to Jarvis 2.0. Follow the install steps in the attached file.
+> EXAMPLE: **You:** Hey Jarvis, upgrade me to Jarvis 2.0. Everything you need is in the attached file. Follow its install steps in order, keep what you already know about me, and walk me through anything I need to do.
 
 **Jarvis:** Upgrading you now. Give me a few minutes.
 
@@ -116,11 +116,11 @@ Jarvis walks you through every step and checks each one before the next.
 ## Start it in Jarvis
 
 ```
-Use the jarvis-hq skill to set up my Agency HQ.
+Let&#x27;s set up my Agency HQ. Use the jarvis-hq skill and guide me one step at a time: tell me exactly what to click, what to send, and what I should see.
 
 ```
 
-> EXAMPLE: **You:** Use the jarvis-hq skill to set up my Agency HQ.
+> EXAMPLE: **You:** Let&#x27;s set up my Agency HQ. Use the jarvis-hq skill and guide me one step at a time: tell me exactly what to click, what to send, and what I should see.
 
 **Jarvis:** Let’s do it. First, in Base44 click Create new app and name it Agency HQ. Don’t type anything into it yet. Tell me when it’s there.
 
@@ -181,10 +181,10 @@ Understand the offer, explore services and niches, then create yours with Jarvis
 Once, at the start of the module. Every Jarvis step in this module needs them.
 
 ## Give Jarvis this module’s skills
-Download **jarvis-skills-module-2-offer.zip** from this lesson, attach it in your Jarvis chat and send the message below. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
+Download **jarvis-skills-module-2-offer.zip** from this lesson, attach it in your Jarvis chat and send the message below. Jarvis installs every skill in the file and tells you the first step. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
 
 ```
-Install these skills: offer menu, offer creation, ad library offer research and custom opportunity finder. Replace any older versions. Don&#x27;t run them yet. List what you installed and each version.
+Install Module 2, The Irresistible Offer, from the attached file. Add every skill inside, replace any older versions, and don&#x27;t run anything yet. When you&#x27;re done, show me what you installed and where we start.
 
 ```
 **Before continuing:** Jarvis lists all 4 skills with a version next to each.
@@ -670,10 +670,10 @@ This comes before outreach on purpose. Every lead you generate needs a page to l
 Once, at the start of the module. Every Jarvis step in this module needs them.
 
 ## Give Jarvis this module’s skills
-Download **jarvis-skills-module-3-funnel.zip** from this lesson, attach it in your Jarvis chat and send the message below. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
+Download **jarvis-skills-module-3-funnel.zip** from this lesson, attach it in your Jarvis chat and send the message below. Jarvis installs every skill in the file and tells you the first step. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
 
 ```
-Install these skills: landing page, confirmation page, VSL writer and pre-call follow up. Replace any older versions. Don&#x27;t run them yet. List what you installed and each version.
+Install Module 3, Funnels, from the attached file. Add every skill inside, replace any older versions, and don&#x27;t run anything yet. When you&#x27;re done, show me what you installed and where we start.
 
 ```
 **Before continuing:** Jarvis lists all 4 skills with a version next to each.
@@ -802,10 +802,10 @@ Build the list, enrich it, then hit it from the phone, LinkedIn, DMs, email and 
 Once, at the start of the module. Every Jarvis step in this module needs them.
 
 ## Give Jarvis this module’s skills
-Download **jarvis-skills-module-4-outreach.zip** from this lesson, attach it in your Jarvis chat and send the message below. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
+Download **jarvis-skills-module-4-outreach.zip** from this lesson, attach it in your Jarvis chat and send the message below. Jarvis installs every skill in the file and tells you the first step. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
 
 ```
-Install these skills: lead hunter, email setup, outreach coordinator, call card, reply desk and SMS. Replace any older versions. Don&#x27;t run them yet. List what you installed and each version.
+Install Module 4, Outreach, from the attached file. Add every skill inside, replace any older versions, and don&#x27;t run anything yet. When you&#x27;re done, show me what you installed and where we start.
 
 ```
 **Before continuing:** Jarvis lists all 6 skills with a version next to each.
@@ -925,10 +925,10 @@ Ads do not fix a weak offer, they expose it faster. Once outreach has proven peo
 Once, at the start of the module. Every Jarvis step in this module needs them.
 
 ## Give Jarvis this module’s skills
-Download **jarvis-skills-module-5-ads.zip** from this lesson, attach it in your Jarvis chat and send the message below. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
+Download **jarvis-skills-module-5-ads.zip** from this lesson, attach it in your Jarvis chat and send the message below. Jarvis installs every skill in the file and tells you the first step. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
 
 ```
-Install these skills: ad scripting, static ad creator and Meta campaign setup. Replace any older versions. Don&#x27;t run them yet. List what you installed and each version.
+Install Module 5, Paid Ads, from the attached file. Add every skill inside, replace any older versions, and don&#x27;t run anything yet. When you&#x27;re done, show me what you installed and where we start.
 
 ```
 **Before continuing:** Jarvis lists all 3 skills with a version next to each.
@@ -1086,10 +1086,10 @@ Two calls. The first one finds the problem and puts a number on it. The second o
 Once, at the start of the module. Every Jarvis step in this module needs them.
 
 ## Give Jarvis this module’s skills
-Download **jarvis-skills-module-6-sales.zip** from this lesson, attach it in your Jarvis chat and send the message below. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
+Download **jarvis-skills-module-6-sales.zip** from this lesson, attach it in your Jarvis chat and send the message below. Jarvis installs every skill in the file and tells you the first step. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
 
 ```
-Install these skills: call to close playbook, solution design and proposal builder. Replace any older versions. Don&#x27;t run them yet. List what you installed and each version.
+Install Module 6, Sales, from the attached file. Add every skill inside, replace any older versions, and don&#x27;t run anything yet. When you&#x27;re done, show me what you installed and where we start.
 
 ```
 **Before continuing:** Jarvis lists all 3 skills with a version next to each.
@@ -1572,10 +1572,10 @@ Two ways to deliver what you just sold. Arbitrage means somebody technical build
 Once, at the start of the module. Every Jarvis step in this module needs them.
 
 ## Give Jarvis this module’s skills
-Download **jarvis-skills-module-7-delivery.zip** from this lesson, attach it in your Jarvis chat and send the message below. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
+Download **jarvis-skills-module-7-delivery.zip** from this lesson, attach it in your Jarvis chat and send the message below. Jarvis installs every skill in the file and tells you the first step. If Jarvis says an earlier step comes first, do that step. It’ll tell you when to come back.
 
 ```
-Install these skills: scoping agent. Replace any older versions. Don&#x27;t run them yet. List what you installed and each version.
+Install Module 7, Fulfilment, from the attached file. Add every skill inside, replace any older versions, and don&#x27;t run anything yet. When you&#x27;re done, show me what you installed and where we start.
 
 ```
 **Before continuing:** Jarvis lists the skill with a version next to each.

@@ -95,3 +95,15 @@ HUD on phones: roles in a 2 by 2 grid under the ring (they made the page wider t
 
 ## 18 Nov 2026: no code needed to upgrade
 The upgrade no longer uses a code: the install message is "Upgrade me to Jarvis 2.0. Follow the install steps in the attached file." Jarvis never asks for a code, and still saves one if a student sends it. Updated: docs/jarvis-2/INSTALL.md, the core skill zip, the Install Jarvis 2.0 lesson and course export, the run sheet and the Test 17 prompt.
+
+## 18 Nov 2026: one short message per module
+Installing a module is now attach the module file and send "Install Module N." (jarvis-2-brain 2026-11-18.2, new section Installing a module: gate check, install every skill folder, run nothing, reply with each skill and version and the first step). Updated the six module lessons, the course export, the core zip, the Test prompt, and the run sheet, which now has a Files panel and per-step download buttons with every file built in.
+
+## 18 Nov 2026: premium prompts
+Every student prompt is one or two warm sentences that name the skill and say what the student wants back: the upgrade, the HUD setup, the module installs ("Install Module 2, The Irresistible Offer, from the attached file..."), offer, leads, email, first emails and the wrap-up. Updated the 8 lessons, the course export, the run sheet and the Test prompt.
+
+## 18 Nov 2026: Funnel app allowed
+The stay-in-your-own-app rule now allows the member's Funnel app from Module 3 (it blocked the landing page). jarvis-2-brain 2026-11-18.3, install steps, and jarvis-landing-page 2026-11-18.1, which now guides creating the Funnel app and adding it to Cross-app data access before the first build. Core and Module 3 zips rebuilt. Test prompt: steps 21 to 24 test the funnel end to end (install, calendar, landing page on desktop and phone, an application landing in the HUD).
+
+## 18 Nov 2026: students keep All apps
+Students keep Cross-app data access on All apps (the default); Jarvis never asks them to restrict it. Safety stays in behaviour: Jarvis works only in the member's own Agency HQ and Funnel app by the app IDs saved in memory, and never reads, changes or deletes any other app it can see. Updated: install steps, jarvis-2-brain 2026-11-18.4, jarvis-hq 2026-11-18.2, jarvis-landing-page 2026-11-18.2, core and Module 3 zips, the student setup guide (new, docs/previews/jarvis-2-setup-guide.html), the run sheet and the Test 18 prompt.
