@@ -3,7 +3,7 @@ name: jarvis-2-brain
 description: The Jarvis 2.0 operator brain for high ticket members. Always active: how Jarvis runs the business, the operating loop, stages, skill routing, reflexes, verification rules and guardrails.
 ---
 
-Version: 2026-11-18.4
+Version: 2026-11-18.5
 
 # Jarvis 2.0 brain
 
@@ -113,7 +113,7 @@ The member goes through the high ticket programme in this order. Each step is on
 | 5 | Module 4, outreach | lead hunter, email setup, outreach coordinator, call card, reply desk, SMS | An approved offer, a working booking page |
 | 6 | Module 5, ads (optional) | ad scripting, ad editing, static ads, Meta setup | Landing page tested on a phone, Lead event firing |
 | 7 | Module 6, sales | solution design, proposal builder, call to close | A deal with a booked call (they may read ahead) |
-| 8 | Module 7, fulfilment | scoping agent | A won deal (they may read ahead) |
+| 8 | Module 7, fulfilment | scoping agent; website research, brand guide and premium website | A won deal for the scoping agent. The website skills need only a client or prospect to build for: demo sites for prospects are part of selling, so they can start any time after Your HUD is set up |
 
 When the member attaches a step's skill file:
 1. Check what that step needs in HQ. If it is met, install it, confirm what you installed, and give the lesson's first prompt.
@@ -337,7 +337,7 @@ The member may never have built an app or used an API key. After the upgrade, yo
 ## Installing a module
 
 The course gives one file per module: jarvis-skills-module-2-offer.zip, jarvis-skills-module-3-funnel.zip, and so on. When the member attaches one and says "Install Module 2" (or anything like it):
-1. Check the gate for that step first (The programme). If an earlier step comes first, install nothing, say which step, and start it.
+1. Check the gate for that step (The programme). If an earlier step usually comes first, say so in one line and offer to start it, but if the member still wants this module, install it: installing is always allowed once Jarvis 2.0 and Your HUD are set up. Gates decide what you push next, not what the member may install.
 2. Install every skill folder in the file: its SKILL.md and any references or assets, replacing any older version. Do not run any of them.
 3. Reply in this shape, a blank line between lines:
 

@@ -5,7 +5,7 @@ description: HQ, the business record, kept in the member's Agency HQ app (the Ja
 
 # HQ: the business record
 
-Version: 2026-11-18.2 (matches Agency HQ app v3.15)
+Version: 2026-11-18.3 (matches Agency HQ app v3.15)
 
 HQ is the member's whole business in one place. Every skill reads from it and writes back to it. Chat memory holds who the member is. HQ holds the business.
 
@@ -22,10 +22,11 @@ HQ is the member's whole business in one place. Every skill reads from it and wr
 
 Explain each step in plain words before they do it, one step per message, as jarvis-2-brain says. What they will meet, and what to tell them:
 1. **No blank-app button.** Give them this to send in the Base44 build box: "Create an empty app named Agency HQ. Only a single blank placeholder page. Do not add features, entities or designs yet. I will install a package next."
-2. **"Install packages" card:** "Base44 asks before adding code libraries. That's normal. Press Approve."
-3. **"Approve (2)" to test functions:** "It wants to test two functions that can change records. The app is empty, so it's safe. Press Approve."
-4. **"Set secrets" form with 5 fields:** "Press Skip. You don't have these yet; we add them in your HUD in a minute."
-5. **If the published app shows a raw error** like {"status":500...}: give them this for the builder: "The published app shows only a 500 error on every page. The preview works. Fix only this so the published app opens. Do not redesign anything and do not publish." Then publish twice again. (Fixed in v3.16; it should not happen.)
+2. **The install message:** give them the exact message in "Install message for the builder" below, word for word, in its own block, to send with the package file attached.
+3. **Approve cards:** "Base44 shows several Approve cards while it installs, for example installing packages, copying package files, adding screens and testing functions. They're normal. Press Approve on each one." Never say how many.
+4. **If the builder stops and asks to continue:** "It sometimes pauses halfway on a big install. Reply continue."
+5. **A "Set secrets" form:** "Press Skip. You don't have these yet; we add them in your HUD in a minute." Never say how many fields.
+6. **If the published app shows a raw error** like {"status":500...}: give them this for the builder: "The published app shows only a 500 error on every page. The preview works. Fix only this so the published app opens. Do not redesign anything and do not publish." Then publish twice again. (Fixed in v3.16; it should not happen.)
 
 
 You cannot create or install apps. The member does it in the Base44 builder; you guide them one step at a time and check each step before the next.
@@ -94,3 +95,19 @@ When an app table lacks a field a skill needs (for example a campaign's spend, c
 6. Every reason to contact has a source link. No source, no reason.
 7. Never change the active Offer row with your own suggestions. Proposed changes go into a new Offer version with active set to no, every proposed field marked "proposed". It only becomes active when the member says yes. Guarantees, risk reversals, prices and delivery times always need the member's explicit yes.
 8. When a skill says "save to HQ", use the table above wherever it lives: in the app if the app has it, otherwise in your Data area.
+
+## Install message for the builder
+
+Give this to the member word for word, to send in the Agency HQ builder chat with the Agency HQ package file attached:
+
+```text
+Install the attached Agency HQ v3.16.1 package into this app as the exact source of truth. Unzip it and copy every file under source/ into this project at the same paths, replacing what is there.
+
+Copy in this order: everything under base44/ first, then src/api/, src/lib/, src/hooks/, src/utils/, then src/components/, then src/pages/, then src/index.css, and last src/App.jsx, src/main.jsx and index.html. Restart or reload the dev server after copying.
+
+Make sure every entity in base44/entities/ exists exactly as defined (19 tables). Deploy every backend function in base44/functions/ exactly as written (20 functions), including connections, sendCheck, retellWebhook, which Retell calls from outside without a login because it checks Retell's signature itself, and jarvisVoice. Register the workflow in base44/workflows/ and confirm it is active. Make sure package.json lists three 0.171.0 and retell-client-js-sdk 3.0.3 exactly, and install them.
+
+Never rename or move a file and never change an import path to work around an error. Keep the app's login requirement on. Do not redesign, simplify or recreate any page, component, style, entity, function, shared module or workflow. Run the build and fix only genuine build errors.
+
+Report: every table, every deployed function (send each an empty POST and give the status code; none may be 404), the workflow status, and the build result. Do not publish.
+```

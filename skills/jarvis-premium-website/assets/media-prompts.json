@@ -1,0 +1,204 @@
+{
+  "surf-detail": {
+    "model": "seedream/4.5-text-to-image",
+    "input": {
+      "prompt": "Photoreal editorial campaign photography, tangible natural materials, subtle film grain, beautifully art directed, no text, no lettering, no logos, no watermarks, no collage. A turquoise wave viewed from inside its empty translucent barrel, glowing golden sunlight through the lip and luminous open exit on the right, water level camera, beautiful transparent water, entirely empty wave with no surfers or people, warm sunset.",
+      "aspect_ratio": "16:9",
+      "quality": "basic",
+      "nsfw_checker": true
+    }
+  },
+  "surf-board": {
+    "model": "seedream/4.5-text-to-image",
+    "input": {
+      "prompt": "Photoreal editorial campaign photography, tangible natural materials, subtle film grain, beautifully art directed, no text, no lettering, no logos, no watermarks, no collage. Three unbranded cream, pale yellow and muted teal surfboards leaning against a rough charcoal concrete wall beside coastal dune grass. Strong late afternoon sun, deep graphic shadows, sand at base, surf culture fashion campaign, complete boards visible.",
+      "aspect_ratio": "3:4",
+      "quality": "basic",
+      "nsfw_checker": true
+    }
+  },
+  "restaurant-detail": {
+    "model": "seedream/4.5-text-to-image",
+    "input": {
+      "prompt": "Photoreal editorial campaign photography, tangible natural materials, subtle film grain, beautifully art directed, no text, no lettering, no logos, no watermarks, no collage. Extreme close-up of glowing red charcoal embers under a black iron grill, a few slender spring onions and half a charred lemon resting on the grill, tiny natural flames, rich amber warmth, moody dark burgundy shadows, tactile live-fire restaurant campaign, no people.",
+      "aspect_ratio": "16:9",
+      "quality": "basic",
+      "nsfw_checker": true
+    }
+  },
+  "restaurant-food": {
+    "model": "seedream/4.5-text-to-image",
+    "input": {
+      "prompt": "Photoreal editorial campaign photography, tangible natural materials, subtle film grain, beautifully art directed, no text, no lettering, no logos, no watermarks, no collage. Top down photograph of a warm ivory plate holding a sculptural roasted beetroot salad, whipped cheese, dark red beetroot wedges, dill, glossy olive oil, fine sea salt, on burgundy linen with silver fork, hard sidelight, elegant restrained fine dining magazine photograph.",
+      "aspect_ratio": "3:4",
+      "quality": "basic",
+      "nsfw_checker": true
+    }
+  },
+  "landscape-detail": {
+    "model": "seedream/4.5-text-to-image",
+    "input": {
+      "prompt": "Photoreal editorial campaign photography, tangible natural materials, subtle film grain, beautifully art directed, no text, no lettering, no logos, no watermarks, no collage. Low intimate view of a sandstone water bowl set among soft native grasses and eucalyptus foliage in a contemporary Australian garden, sunlight touching gently rippled water, moss green, muted straw and warm sandstone, atmospheric backlight, no people or buildings.",
+      "aspect_ratio": "16:9",
+      "quality": "basic",
+      "nsfw_checker": true
+    }
+  },
+  "landscape-plant": {
+    "model": "seedream/4.5-text-to-image",
+    "input": {
+      "prompt": "Photoreal editorial campaign photography, tangible natural materials, subtle film grain, beautifully art directed, no text, no lettering, no logos, no watermarks, no collage. Close botanical portrait of silver blue eucalyptus leaves, fine golden native grasses and one deep olive banksia branch in a contemporary garden, tactile natural forms filling the frame, warm directional morning sun, dark olive shadows, architectural planting magazine.",
+      "aspect_ratio": "3:4",
+      "quality": "basic",
+      "nsfw_checker": true
+    }
+  },
+  "architecture-detail": {
+    "model": "seedream/4.5-text-to-image",
+    "input": {
+      "prompt": "Photoreal editorial campaign photography, tangible natural materials, subtle film grain, beautifully art directed, no text, no lettering, no logos, no watermarks, no collage. Interior architectural photograph inside a quiet concrete and warm oak pavilion, long floor-to-ceiling glass opening on a single olive tree courtyard, afternoon sunlight casts a sharp rectangular patch across travertine floor, one low oak bench, calm geometrical composition, no people.",
+      "aspect_ratio": "16:9",
+      "quality": "basic",
+      "nsfw_checker": true
+    }
+  },
+  "architecture-project": {
+    "model": "seedream/4.5-text-to-image",
+    "input": {
+      "prompt": "Photoreal editorial campaign photography, tangible natural materials, subtle film grain, beautifully art directed, no text, no lettering, no logos, no watermarks, no collage. Architectural photograph of a sculptural concrete stair turning upward between two smooth pale concrete walls, warm oak stair treads, soft skylight, strong vertical composition, minimal timeless architecture, no people or furniture.",
+      "aspect_ratio": "3:4",
+      "quality": "basic",
+      "nsfw_checker": true
+    }
+  },
+  "product-hero": {
+    "model": "seedream/4.5-text-to-image",
+    "input": {
+      "prompt": "Photoreal editorial campaign photography, tangible natural materials, subtle film grain, beautifully art directed, no text, no lettering, no logos, no watermarks, no collage. One sculptural unbranded table lamp, a brushed aluminum hemisphere mushroom shade above a slim cylindrical aluminum stem and circular base, lamp completely visible at right center, sitting on a pale limestone plinth. Quiet warm grey seamless studio background, dramatic angled sunlight, precise premium industrial design campaign, generous calm negative space left. No switches or cables visible.",
+      "aspect_ratio": "16:9",
+      "quality": "basic",
+      "nsfw_checker": true
+    }
+  },
+  "product-detail": {
+    "model": "seedream/4.5-text-to-image",
+    "input": {
+      "prompt": "Photoreal editorial campaign photography, tangible natural materials, subtle film grain, beautifully art directed, no text, no lettering, no logos, no watermarks, no collage. Extreme macro product photograph of the edge of a brushed aluminum hemispherical lamp shade and its slim stem, warm light softly reflected inside the metal, visible brushed grain, abstract precise curved geometry on charcoal grey studio background, refined industrial design campaign.",
+      "aspect_ratio": "16:9",
+      "quality": "basic",
+      "nsfw_checker": true
+    }
+  },
+  "product-room": {
+    "model": "seedream/4.5-text-to-image",
+    "input": {
+      "prompt": "Photoreal editorial campaign photography, tangible natural materials, subtle film grain, beautifully art directed, no text, no lettering, no logos, no watermarks, no collage. An unbranded brushed aluminum mushroom table lamp with hemispherical shade and slim stem on a pale travertine side table beside a warm wool lounge chair, minimal quiet apartment interior, soft evening light, natural grey and sand palette, beautiful editorial interior photograph.",
+      "aspect_ratio": "3:4",
+      "quality": "basic",
+      "nsfw_checker": true
+    }
+  },
+  "video-restaurant": {
+    "model": "kling/v2-5-turbo-image-to-video-pro",
+    "input": {
+      "prompt": "A very slow smooth dolly forward along the walnut dining table toward the warm copper kitchen. Tiny natural flicker from the fire and subtle steam from the dish. Preserve all architecture, chairs and plate shapes. One continuous elegant shot, no people appear. Photoreal, smooth natural movement, no cuts.",
+      "image_url": "https://tempfile.aiquickdraw.com/p/e434901cfd8467a9c74e78600fc36288_1_1789022647_7515.jpg",
+      "duration": "10",
+      "negative_prompt": "text, watermark, logo, cuts, jump cuts, camera shake, morphing, warped geometry, flicker, extra objects, people appearing",
+      "cfg_scale": 0.5
+    }
+  },
+  "video-landscape": {
+    "model": "kling/v2-5-turbo-image-to-video-pro",
+    "input": {
+      "prompt": "A very slow stable forward tracking shot following the curved sandstone garden path. Native grasses sway gently in a light breeze, leaves move subtly. Keep all architecture, path edges and plants consistent. Warm sunlight, realistic movement, no people. Photoreal, smooth natural movement, no cuts.",
+      "image_url": "https://tempfile.aiquickdraw.com/p/fe9b9c6961c8e21c8c1866e587c7078f_1_1789022681_6062.jpg",
+      "duration": "10",
+      "negative_prompt": "text, watermark, logo, cuts, jump cuts, camera shake, morphing, warped geometry, flicker, extra objects, people appearing",
+      "cfg_scale": 0.5
+    }
+  },
+  "video-architecture": {
+    "model": "kling/v2-5-turbo-image-to-video-pro",
+    "input": {
+      "prompt": "A very slow architectural dolly forward with subtle lateral parallax across the concrete pavilion and courtyard tree. Leaves move softly. Keep every structural line perfectly straight and all windows unchanged. One continuous stabilized photoreal shot, no people. Photoreal, smooth natural movement, no cuts.",
+      "image_url": "https://tempfile.aiquickdraw.com/p/3f983719251fb94f2d0938b3b68db4bd_1_1789022708_5365.jpg",
+      "duration": "10",
+      "negative_prompt": "text, watermark, logo, cuts, jump cuts, camera shake, morphing, warped geometry, flicker, extra objects, people appearing",
+      "cfg_scale": 0.5
+    }
+  },
+  "video-product": {
+    "model": "kling/v2-5-turbo-image-to-video-pro",
+    "input": {
+      "prompt": "One continuous precision product shot. The aluminum lamp stays completely stationary and rigid. Camera makes a very slow subtle lateral move across the lamp, revealing beautiful brushed metal reflections and slight parallax against the limestone plinth. No rotation or deformation. Soft studio lighting stays consistent. Photoreal, smooth natural movement, no cuts.",
+      "image_url": "https://tempfile.aiquickdraw.com/p/c3bedf57c9923c825afcba3a9ef9ac0a_1_1789023755_9717.jpg",
+      "duration": "10",
+      "negative_prompt": "text, watermark, logo, cuts, jump cuts, camera shake, morphing, warped geometry, flicker, extra objects, people appearing",
+      "cfg_scale": 0.5
+    }
+  },
+  "video-surf-second": {
+    "model": "kling/v2-5-turbo-image-to-video-pro",
+    "input": {
+      "prompt": "One continuous smooth forward glide through this empty turquoise wave barrel toward its glowing exit. Water flows and sprays naturally, sunlight shimmers through the translucent wave lip. No people or boards appear. Stable water level camera, no cuts. Photoreal, smooth natural movement, no cuts.",
+      "image_url": "https://tempfile.aiquickdraw.com/p/61f31b0a520768d84844f744c8dd7abe_1_1789023709_9838.jpg",
+      "duration": "5",
+      "negative_prompt": "text, watermark, logo, cuts, jump cuts, camera shake, morphing, warped geometry, flicker, extra objects, people appearing",
+      "cfg_scale": 0.5
+    }
+  },
+  "video-restaurant-second": {
+    "model": "kling/v2-5-turbo-image-to-video-pro",
+    "input": {
+      "prompt": "A locked macro camera on glowing charcoal and the iron grill. Tiny flames flicker naturally and a delicate trace of smoke drifts upward past the onions and lemon. Food and grill stay exactly in place, appetizing realistic motion, no cuts. Photoreal, smooth natural movement, no cuts.",
+      "image_url": "https://tempfile.aiquickdraw.com/p/9a413a54bca52ddffc0502c370c4dd04_1_1789023720_2777.jpg",
+      "duration": "5",
+      "negative_prompt": "text, watermark, logo, cuts, jump cuts, camera shake, morphing, warped geometry, flicker, extra objects, people appearing",
+      "cfg_scale": 0.5
+    }
+  },
+  "video-landscape-second": {
+    "model": "kling/v2-5-turbo-image-to-video-pro",
+    "input": {
+      "prompt": "A slow subtle camera push toward the sandstone water bowl. Natural concentric ripples drift across its water and grasses sway softly. The bowl remains rigid and stationary. Gentle warm light, realistic restrained movement. Photoreal, smooth natural movement, no cuts.",
+      "image_url": "https://tempfile.aiquickdraw.com/p/f24550827f8c48a3ea785771394e239e_1_1789023722_7292.jpg",
+      "duration": "5",
+      "negative_prompt": "text, watermark, logo, cuts, jump cuts, camera shake, morphing, warped geometry, flicker, extra objects, people appearing",
+      "cfg_scale": 0.5
+    }
+  },
+  "video-architecture-second": {
+    "model": "kling/v2-5-turbo-image-to-video-pro",
+    "input": {
+      "prompt": "A slow stable forward architectural camera glide into the quiet pavilion toward its courtyard. Perfectly rigid straight architectural lines and stable furniture, only tree leaves move gently, natural lighting unchanged, no people. Photoreal, smooth natural movement, no cuts.",
+      "image_url": "https://tempfile.aiquickdraw.com/p/2679d8b282e15d7013dfc9cffb2a3771_1_1789023723_8634.jpg",
+      "duration": "5",
+      "negative_prompt": "text, watermark, logo, cuts, jump cuts, camera shake, morphing, warped geometry, flicker, extra objects, people appearing",
+      "cfg_scale": 0.5
+    }
+  },
+  "video-product-second": {
+    "model": "kling/v2-5-turbo-image-to-video-pro",
+    "input": {
+      "prompt": "An extremely slow macro camera slide along the brushed aluminum shade edge. A warm reflection travels gently over the metal surface. Geometry stays rigid and unchanged, no added objects, no cuts, subtle precision product cinematography. Photoreal, smooth natural movement, no cuts.",
+      "image_url": "https://tempfile.aiquickdraw.com/p/06d036b7432fdfb9ba01c5b532274a61_1_1789023725_3853.jpg",
+      "duration": "5",
+      "negative_prompt": "text, watermark, logo, cuts, jump cuts, camera shake, morphing, warped geometry, flicker, extra objects, people appearing",
+      "cfg_scale": 0.5
+    }
+  },
+  "product-room-refined": {
+    "model": "seedream/4.5-edit",
+    "input": {
+      "prompt": "Use image 1 as the exact product reference. Use image 2 as the room composition reference. Keep the room, chair, side table, lighting, portrait camera composition and all architecture of image 2. Replace ONLY its lamp with exactly the brushed silver aluminum lamp from image 1: perfectly hemispherical mushroom shade, straight narrow cylindrical stem of constant diameter, shallow circular metal base. Preserve the exact shade proportions and straight stem. The whole lamp must be visible on the side table. The shade and stem are silver aluminum, not bronze or gold. Photoreal interior editorial photography. No text or logos.",
+      "image_urls": [
+        "https://tempfile.aiquickdraw.com/p/c3bedf57c9923c825afcba3a9ef9ac0a_1_1789023755_9717.jpg",
+        "https://tempfile.aiquickdraw.com/p/9e2bcd7078f27cd5e860b1caf9518d94_1_1789023715_1863.jpg"
+      ],
+      "aspect_ratio": "3:4",
+      "quality": "basic",
+      "nsfw_checker": true
+    }
+  }
+}

@@ -4,8 +4,8 @@ Updated 18 November 2026. 26 skills, one folder each. Install order follows the 
 
 | Module | Skill | What it does | Student prompt | Version | Tested |
 | --- | --- | --- | --- | --- | --- |
-| Core | [jarvis-2-brain](jarvis-2-brain/SKILL.md) | How Jarvis thinks and decides what's next; the 8 step programme, gates, and solve-it rules | Upgrade me to Jarvis 2.0. | 2026-11-18.4 | Base44 tested (core install); programme section new |
-| Core | [jarvis-hq](jarvis-hq/SKILL.md) | Where every table and field lives; guides the Agency HQ app install and checks it | Use the jarvis-hq skill to set up my Agency HQ. | 2026-11-18.2 | Matches app v3.15 (Connections); Base44 test next |
+| Core | [jarvis-2-brain](jarvis-2-brain/SKILL.md) | How Jarvis thinks and decides what's next; the 8 step programme, gates, and solve-it rules | Upgrade me to Jarvis 2.0. | 2026-11-18.5 | Base44 tested (core install); programme section new |
+| Core | [jarvis-hq](jarvis-hq/SKILL.md) | Where every table and field lives; guides the Agency HQ app install and checks it | Use the jarvis-hq skill to set up my Agency HQ. | 2026-11-18.3 | Matches app v3.15 (Connections); Base44 test next |
 | Core | [jarvis-rhythm](jarvis-rhythm/SKILL.md) | Twice-daily check-ins (morning brief and afternoon check-in) to the student's WhatsApp, Telegram or other channel, plus reply watch, after the call, Friday numbers and the campaign runner | Use the rhythm skill to show me my numbers this week. | 2026-11-18.1 | Base44 tested (core install) |
 | Core | [jarvis-missions](jarvis-missions/SKILL.md) | The 19 missions to the first client live, each proven in Agency HQ | Where am I? | 2026-11-18.1 | Base44 tested (core install) |
 | Course | [jarvis-course-guide](jarvis-course-guide/SKILL.md) | Answers questions about any lesson | (any lesson question) | 2026-11-15.1 | Blake's skill |
@@ -30,5 +30,8 @@ Updated 18 November 2026. 26 skills, one folder each. Install order follows the 
 | 6 Sales | [jarvis-solution-design](jarvis-solution-design/SKILL.md) | What to build, who builds it, running cost, price check | Use the solution design skill to design the solution for [business]. | 2026-11-15.1 |  |
 | 6 Sales | [jarvis-proposal-builder](jarvis-proposal-builder/SKILL.md) | One page premium proposal, rendered by script, plus call two notes | Use the proposal builder skill to write the proposal for [business]. | 2026-11-13.1 | Local tests; Base44 test next |
 | 7 Delivery | [jarvis-scoping-agent](jarvis-scoping-agent/SKILL.md) | One build plan a developer or Jarvis can build from | Use the scoping agent skill to scope the build for [client]. | 2026-11-15.1 |  |
+| 7 Delivery | [jarvis-website-research](jarvis-website-research/SKILL.md) | Researches a client's market, buyers, rules and competitors, then plans every section of the site | Use the website research skill to research my client's website. Ask me what you need first. | 2026-11-18.4 | Local review; Base44 test next |
+| 7 Delivery | [jarvis-brand-guide](jarvis-brand-guide/SKILL.md) | Three brand directions from the research; the member picks one and it becomes the brand guideline | Use the brand guide skill to create three brand directions from my research. | 2026-11-23.1 | Local review; Base44 test next |
+| 7 Delivery | [jarvis-premium-website](jarvis-premium-website/SKILL.md) | Builds, tests and delivers the client's premium site with Higgsfield media, real enquiries, SEO and handover | Use the premium website skill to build a website for my client. Ask me what you need first. | 2026-11-24.7 | v3 engine tested locally on 5 sites; v4 Base44 test next |
 
 Still to add: jarvis-ad-editing (Module 5), built separately and not yet in this repo.

@@ -60,7 +60,7 @@ Not yet run end to end: a fresh Base44 test of the whole flow with Agency HQ v3.
 
 | Folder | What's in it |
 | --- | --- |
-| skills/ | All 26 current skills, one folder each. skills/README.md is the index: student prompt, version and test notes for every skill |
+| skills/ | All 29 current skills, one folder each. skills/README.md is the index: student prompt, version and test notes for every skill |
 | apps/agency-hq/ | The HUD app source, install prompt, release notes, Retell setup, talk mode notes, 3 screenshots |
 | docs/ | Decisions, course status, test results (Meta scenarios, sendCheck), Jarvis 2.0 install steps |
 | course/ | Blake's full course text (studio/export/COURSE.md), his writing rules (studio/VOICE.md), CRM and outreach specs |
