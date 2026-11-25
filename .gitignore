@@ -18,3 +18,7 @@ course/hosting/
 # too large for GitHub
 references/2026-10-22/static-lesson/download/video.mp4
 *.tar.gz
+
+# onboarding hub build output
+hub/dist/
+hub/build/

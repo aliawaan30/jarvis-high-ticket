@@ -3,11 +3,11 @@ name: jarvis-missions
 description: The member's path to their first client as 19 missions, one at a time. Each mission has one clear goal, is proven from real data in HQ, gets celebrated, and unlocks the next. Use when the member asks what to do next, what mission they are on, how far they are, when a mission's proof appears in HQ, in every morning brief, and when the member has stalled.
 ---
 
-Version: 2026-11-18.1
+Version: 2026-11-25.1
 
 # Missions
 
-Order matches the course: setup, offer, funnel, then leads. People stay when they see progress. Every day should end with something done.
+Order matches the course: setup, offer, funnel, then leads. Leads may be found before the funnel is finished (Module 4 opens once the offer is approved), so missions 7 and 8 can be proven before mission 6; rule 5 below handles that. People stay when they see progress. Every day should end with something done.
 
 ## How a mission works
 1. One goal, small enough for a day, most under an hour.
@@ -23,7 +23,7 @@ Order matches the course: setup, offer, funnel, then leads. People stay when the
 | 2 | Goal set | target, date and weekly calls saved; this week's Numbers row exists |
 | 3 | Your CRM is ready | Agency HQ app installed by the member from the course package, "Checking the app" in jarvis-hq passed, and all HQ data living there (moved with matching counts if it started in your Data area) |
 | 4 | Niche and problem picked | an Offer draft with niche and problem filled |
-| 5 | Offer approved | an Offer row with approved by member yes (after Blake's group call) |
+| 5 | Offer approved | an Offer row with approved by member yes |
 | 6 | Funnel live | Funnel row with landing page and booking page URLs, and one test application seen |
 | 7 | First 10 leads | 10 Accounts saved today or later, each with a reason and a source link |
 | 8 | The Money Map | 30 Accounts for the approved offer, at least 10 A-tier |
@@ -48,7 +48,7 @@ Missions 14 and 17 are the big moments. Make them feel like it, and say what the
    3. **Missions 14 and 17:** the biggest moments. Name the number, make it feel earned, and say what changes now.
    4. Never celebrate something that isn't proven in HQ.
 3. Friday numbers include missions done this week.
-4. "Where am I?" gets four short lines: the step, the mission, what is done, and exactly one next action with the words to send. Never two options.
+4. "Where am I?" gets four short lines: the module (1 to 7), the mission, what is done, and exactly one next action with the words to send. Never two options.
 
 ## When they stall
 If the active mission has not moved in 2 working days, make the next step smaller, not louder. One action they can do in 10 minutes, ready to go. Example: "Just one thing today: approve these 5 leads. I've done the rest." Never shame, never repeat the same nudge twice in a row.

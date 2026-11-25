@@ -1,0 +1,78 @@
+{
+  "_readme": "Which skills ship in which pack. scripts/build_hub.py builds every zip from skills/. Pack version = newest skill Version line in it. Change 'note' when you ship a change: it goes in the update notice.",
+  "packs": [
+    {
+      "id": "core",
+      "module": 1,
+      "title": "Jarvis 2.0 core",
+      "file": "jarvis-skills-module-1-core.zip",
+      "skills": ["jarvis-2-brain", "jarvis-hq", "jarvis-rhythm", "jarvis-missions", "jarvis-course-guide"],
+      "include": [{"from": "docs/jarvis-2/INSTALL.md", "as": "INSTALL.md"}],
+      "note": "Module 1 to 7 naming everywhere, Module 4 opens once your offer is approved, update link support."
+    },
+    {
+      "id": "hud",
+      "module": 1,
+      "title": "Agency HQ app (your HUD)",
+      "prebuilt": "course/downloads/jarvis-2/agency-hq-v3.16.1.zip",
+      "version": "3.16.1",
+      "note": "Phone layout, Connections screen, Set up my voice."
+    },
+    {
+      "id": "offer",
+      "module": 2,
+      "title": "Module 2: The Irresistible Offer",
+      "file": "jarvis-skills-module-2-offer.zip",
+      "skills": ["jarvis-offer-menu", "jarvis-offer-creation", "jarvis-ad-library-offer-research", "jarvis-custom-opportunity-finder"],
+      "note": "Six line offer with your guarantee."
+    },
+    {
+      "id": "funnel",
+      "module": 3,
+      "title": "Module 3: Funnels",
+      "file": "jarvis-skills-module-3-funnel.zip",
+      "skills": ["jarvis-landing-page", "jarvis-confirmation-page", "jarvis-vsl-writer", "jarvis-precall-followup"],
+      "note": "Landing page with palettes and SMS consent."
+    },
+    {
+      "id": "outreach",
+      "module": 4,
+      "title": "Module 4: Outreach",
+      "file": "jarvis-skills-module-4-outreach.zip",
+      "skills": ["jarvis-lead-hunter", "jarvis-email-setup", "jarvis-outreach-coordinator", "jarvis-call-card", "jarvis-reply-desk", "jarvis-sms"],
+      "note": "Drafts wait until your booking page works, then send through the safety check."
+    },
+    {
+      "id": "ads",
+      "module": 5,
+      "title": "Module 5: Paid Ads",
+      "file": "jarvis-skills-module-5-ads.zip",
+      "skills": ["jarvis-ad-scripting", "jarvis-static-ad-creator", "jarvis-meta-campaign-setup"],
+      "note": "Ad scripts, image ads and Meta setup. Ad editing coming soon."
+    },
+    {
+      "id": "sales",
+      "module": 6,
+      "title": "Module 6: Sales",
+      "file": "jarvis-skills-module-6-sales.zip",
+      "skills": ["playbook-call-to-close", "jarvis-solution-design", "jarvis-proposal-builder"],
+      "note": "Call brief, solution design and the one page proposal."
+    },
+    {
+      "id": "fulfilment",
+      "module": 7,
+      "title": "Module 7: Fulfilment",
+      "file": "jarvis-skills-module-7-fulfilment.zip",
+      "skills": ["jarvis-scoping-agent"],
+      "note": "One build plan a developer or Jarvis can build from."
+    },
+    {
+      "id": "websites",
+      "module": 0,
+      "title": "Websites pack",
+      "file": "jarvis-skills-websites.zip",
+      "skills": ["jarvis-website-research", "jarvis-brand-guide", "jarvis-premium-website"],
+      "note": "Research, brand directions and premium sites for you, your prospects and your clients."
+    }
+  ]
+}
