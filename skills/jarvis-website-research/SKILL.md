@@ -3,7 +3,7 @@ name: jarvis-website-research
 description: "Research a client's website before any design: a short intake, then six research layers (customer, rules, market, search, client facts, design), ending in a research brief that decides every section of the site. Use when a member starts a website for a client, asks what a client's site should contain, or asks to research a niche or competitors for a website. Hands over to jarvis-brand-guide."
 ---
 
-Version: 2026-11-18.4
+Version: 2026-11-26.1
 
 # Website research
 

@@ -11,6 +11,8 @@ Every brand direction includes a minimal logo made from the business name. Most 
 3. **Lockups:** mark beside the wordmark (for headers), mark above the wordmark (for footers and social images), and mark alone (for the browser tab icon).
 4. **Colour versions:** dark on light, light on dark, and one colour.
 
+**Always deliver a logo**, including for demo and showcase sites: a simple geometric mark drawn in code that tells the business's (or the property's) story, a wordmark (spaced capitals often suit premium brands), and, where useful, a small location line beneath it.
+
 ## How to make it
 
 - Draw it in code as SVG, built from simple shapes and the font. Never generate a logo as an image: images blur, cannot be edited, and do not scale.

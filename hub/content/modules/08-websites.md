@@ -24,6 +24,10 @@ Media costs money. Sites use generated photos (Premium) or short films (Cinemati
 
 [[pack:websites]]
 
+1. Download the Websites file above.
+
+2. In the Jarvis chat, click + and attach it, then send the message below.
+
 ```prompt Send to Jarvis, with the file attached
 Install the Websites pack from the attached file. Add every skill inside, replace any older versions, and don't run anything yet. When you're done, show me what you installed and where we start.
 ```
@@ -49,7 +53,7 @@ Use the premium website skill to build a demo site for [business] as a concept, 
 > see: A concept site labelled "Concept by [your agency]", kept out of search engines, ready to show on call two.
 > fix: Jarvis won't use their logo or photos without permission. It makes a starter logo and images instead.
 
-## A client website {2 to 3 hours}
+## A client website {2 to 3 hours} optional
 
 Three skills, in order, each with your approval.
 

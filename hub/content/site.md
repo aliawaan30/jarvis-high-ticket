@@ -3,6 +3,7 @@ name: Jarvis 2.0 Onboarding
 programme: 0 to $20k a month with your AI agency
 booking_url: https://REPLACE-WITH-ONBOARDING-CALENDAR-LINK
 discord_url: https://REPLACE-WITH-DISCORD-INVITE
+video_url:
 support_note: Post in your private Discord channel. Blake, Ali and the team are in there.
 ---
 
@@ -30,7 +31,7 @@ Have these ready. It takes 2 minutes to check.
 
 2. Your Base44 account, signed in. Your plan must include backend functions (Builder plan or higher), because your HUD uses them.
 
-3. Your Jarvis from the free course. No Jarvis yet? You create one in Module 1.
+3. Your Jarvis from the free course. No Jarvis yet? Pick "I'm new to Jarvis" above and we'll show you how.
 
 4. Your Gmail or Google Workspace account, for sending emails later.
 

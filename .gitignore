@@ -22,3 +22,4 @@ references/2026-10-22/static-lesson/download/video.mp4
 # onboarding hub build output
 hub/dist/
 hub/build/
+hub/preview.html

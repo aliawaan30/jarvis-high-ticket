@@ -7,7 +7,7 @@ time: About 1 hour, then weekly checks
 outcome: Ad scripts, image ads in your brand, and a Meta campaign sending people to your landing page.
 gate: Your landing page tested on a phone. This module is optional.
 packs: ads
-missions: none, optional
+missions: none
 ---
 
 Ads are optional. Outreach alone can get your first clients. Only start ads when your landing page works and you're happy to spend the budget you set. Your ad spend is your own money, so Jarvis plans a two week loss limit with you first.
@@ -15,6 +15,10 @@ Ads are optional. Outreach alone can get your first clients. Only start ads when
 ## Install Module 5 {2 min}
 
 [[pack:ads]]
+
+1. Download the Module 5 file above.
+
+2. In the Jarvis chat, click + and attach it, then send the message below.
 
 ```prompt Send to Jarvis, with the file attached
 Install Module 5, Paid Ads, from the attached file. Add every skill inside, replace any older versions, and don't run anything yet. When you're done, show me what you installed and where we start.

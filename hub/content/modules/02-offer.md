@@ -18,7 +18,7 @@ Everything else is built from your offer. Watch the offer lessons first, then co
 
 1. Download the Module 2 file above.
 
-2. In the Jarvis chat, attach it and send the message below.
+2. In the Jarvis chat, click + and attach it, then send the message below.
 
 ```prompt Send to Jarvis, with the file attached
 Install Module 2, The Irresistible Offer, from the attached file. Add every skill inside, replace any older versions, and don't run anything yet. When you're done, show me what you installed and where we start.

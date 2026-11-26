@@ -20,6 +20,7 @@ Students still update their own Jarvis: they send "Update my Jarvis 2.0 skills" 
 | content/modules/*.md | One file per page. `## Step title {time} optional`, prompt blocks, `> see:` and `> fix:` notes, `[[pack:id]]`, `[[link:slug]]` |
 | src/ | The site (plain HTML, CSS, JS) |
 | functions/pack.mjs | Signed downloads and the update manifest for Jarvis |
+| functions/site.mjs | Programme content, members only |
 | supabase/schema.sql | Tables, sign up gate, storage bucket |
 | ../scripts/build_hub.py | The build |
 
@@ -44,3 +45,11 @@ Supabase, Table Editor: tickets (status new, doing, done) and the team_progress 
     cd hub/dist && python3 -m http.server 8080
 
 Open http://localhost:8080. With no Supabase settings the hub runs in preview mode.
+
+## Security
+
+1. **Members only.** Only emails in the members table can create a login (a database trigger blocks everyone else). Set active to false to remove someone: their content, downloads and update link stop working straight away.
+2. **No passwords.** Sign in is a 6 digit code (or the link) sent to their email.
+3. **Content behind login.** The lesson text, prompts and file details are bundled into the /api/site function and only returned to a signed in member. The public site is an empty shell. Zips come from private storage through 5 minute signed links.
+4. **Keys.** The service role key lives only in Netlify environment variables. The browser only ever sees the anon key, and every table has row level security.
+5. **Recommended Supabase settings:** Authentication, Providers, Email: set the email OTP expiry to 600 seconds (10 minutes). Keep the default rate limits. Add custom SMTP before launch.

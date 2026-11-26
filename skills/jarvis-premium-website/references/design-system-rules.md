@@ -10,6 +10,10 @@ Learned from the Fernhollow Gardens test (18 November 2026): on phones the hero 
 2. **Components second.** Then the shared components, built only from the tokens: Button (three variants), IconButton, Header (with phone menu), Container, Section, ImageFrame, Card, Carousel, Tabs, Accordion, FormField, StickyActionBar, Footer.
 3. **Pages last.** Pages are composed only from these components. No one-off button, spacing or image styles inside a page. If a page needs something new, add it to the components first.
 
+## 1b. Write once, reuse everywhere
+
+The palette, the type scale and the look line (lighting and photographic prompt) are fixed once in the brand guideline and reused for every asset and every section, never re-described per image. One shared entrance animation (the Reveal component) is used for every section, so the whole site moves the same way.
+
 ## 2. Surfaces: components choose their colours automatically
 
 Learned from the Fernhollow phone test: buttons and icons were set one by one, so a dark Menu button ended up on a dark header and a dark-text button on a dark photo. Fix it once, in the system.

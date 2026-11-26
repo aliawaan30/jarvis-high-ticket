@@ -60,6 +60,10 @@ Ask the builder to add these exact versions to the app's dependencies (approve t
 
 Tabs and toggles take the brand accent from the CSS variables --tab-bg, --tab-border and --tab-on (text on the selected tab); set them in the design tokens.
 
+## Motion level and the components
+
+For **Clean** sites (the default), leave these out unless the member asks for them: MagneticButton, CursorPreviewList's pointer image (use the list without it, or TabImageSwap), Marquee, LayeredDepth, KineticHeadline beyond the hero headline, and useSmoothScroll. Prefer pieces the visitor uses: BeforeAfterSlider, TabImageSwap, ProfileQuiz, Packages, PhoneDemo, ServiceAreaMap, FAQAccordion. **Expressive** sites may use everything, still within the noise test.
+
 ## Which components fit which niche (starting points)
 
 | Niche | Usually fits | Usually avoid |

@@ -3,7 +3,7 @@ name: jarvis-brand-guide
 description: "Turn a client's website research brief into three distinct brand directions (palette, typography, voice, photography and film, motion), let the member pick or mix one, and save it as the client's brand guideline. Use after jarvis-website-research, or when a member asks for branding, colours, fonts or a style for a client. Hands over to jarvis-premium-website."
 ---
 
-Version: 2026-11-23.1
+Version: 2026-11-27.1
 
 # Brand guide
 

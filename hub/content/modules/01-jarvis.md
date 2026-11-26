@@ -18,7 +18,7 @@ Jarvis is your Base44 Superagent. If you already have Jarvis from the free cours
 
 1. In Base44, open Superagents.
 
-2. Open your Jarvis. No Jarvis yet? Create a new Superagent and name it Jarvis.
+2. Open your Jarvis. No Jarvis yet? Do the New to Jarvis page first (under Start here).
 
 > see: Your Jarvis chat is open.
 > fix: Can't find Superagents? It's in the main Base44 menu. Ask in your Discord channel and we'll point you to it.
@@ -82,6 +82,8 @@ Save this as my Jarvis 2.0 update link: {{update_link}}
 ## Ask Jarvis to start your HUD {1 min}
 
 Your HUD (Agency HQ) is where you see your whole agency: what needs you, your pipeline, leads, campaigns and results.
+
+Nothing to attach here. Jarvis already has the HQ skill: it came inside the Jarvis 2.0 file. The HUD app file comes two steps later, and it goes to the Base44 builder, not to Jarvis.
 
 ```prompt Send to Jarvis
 Let's set up my Agency HQ. Use the jarvis-hq skill and guide me one step at a time: tell me exactly what to click, what to send, and what I should see.
@@ -186,6 +188,30 @@ What's next?
 
 > see: Jarvis answers, out loud or under the box.
 > fix: Voice not working? Typing in Message Jarvis works the same.
+
+## Put your HUD on your phone {2 min} optional
+
+Open your HUD like an app, straight from your home screen.
+
+1. **iPhone:** open your published HUD in Safari. Tap Share (the square with the arrow), then Add to Home Screen, then Add.
+
+2. **Android:** open your published HUD in Chrome. Tap the three dots menu, then Add to home screen (or Install app), then Add.
+
+3. Open it from the new icon and log in once.
+
+[[image:hud-phone.png|Your HUD on a phone]]
+
+> see: A HUD icon on your home screen that opens straight into your HUD.
+> fix: No Add to Home Screen option? On iPhone it only shows in Safari, not in Chrome.
+
+## See what you've built {1 min} optional
+
+This is your HUD once leads, emails and calls start moving: today's mission, who needs you, your pipeline and Talk to Jarvis.
+
+[[image:hud-desktop.png|Your HUD on a computer]]
+
+> see: Yours fills up like this as you work through Modules 2 to 4.
+> fix: Yours looks empty? That's normal until your first leads arrive in Module 4.
 
 ## Jarvis's live voice (Retell add-on) {5 min} optional
 

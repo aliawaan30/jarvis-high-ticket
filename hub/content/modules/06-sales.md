@@ -16,6 +16,10 @@ Every deal follows the same path: call one finds the pain and its cost, Jarvis d
 
 [[pack:sales]]
 
+1. Download the Module 6 file above.
+
+2. In the Jarvis chat, click + and attach it, then send the message below.
+
 ```prompt Send to Jarvis, with the file attached
 Install Module 6, Sales, from the attached file. Add every skill inside, replace any older versions, and don't run anything yet. When you're done, show me what you installed and where we start.
 ```

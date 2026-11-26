@@ -3,7 +3,7 @@ name: jarvis-premium-website
 description: "Build a complete premium website for a client in Base44 from one prompt: a short intake, research, three brand guidelines to choose from, then the plan and cost, Higgsfield images and films, the build, testing, review and launch: a researched section plan, art-directed Higgsfield images and scroll films, a native Base44 frontend, real enquiry handling, SEO, launch checks and handover. Use when a member asks to build, design or rebuild a website for a client."
 ---
 
-Version: 2026-11-24.7 (premium website v4; builds on v3.0.0, approved 10 September 2026)
+Version: 2026-11-27.1 (premium website v4; builds on v3.0.0, approved 10 September 2026)
 
 # Premium website
 
@@ -23,15 +23,17 @@ The member sends: "Use the premium website skill to build a website for my clien
 
    2. The style they want: sleek and modern, classic and elegant, warm and natural, bold and energetic, or "you decide".
 
-   3. Contact details for the site: phone, email, address, opening hours, booking link, and the email address where new enquiries should be sent.
+   3. How much movement: **Clean** (calm and confident, one or two meaningful moments; recommended for most businesses) or **Expressive** (animation-rich and cinematic, several signature moments). Recommend one from the niche (see Motion level in motion-system.md) and say why in one line; if they are unsure, use Clean.
 
-   4. Services, and prices or "from" prices; licences and certifications.
+   4. Contact details for the site: phone, email, address, opening hours, booking link, and the email address where new enquiries should be sent.
 
-   5. What they already have: logo, colours, fonts, photos, real reviews.
+   5. Services, and prices or "from" prices; licences and certifications.
 
-   6. The one action the site must drive, sites they like, and anything they must have or must never have.
+   6. What they already have: logo, colours, fonts, photos, real reviews, team photos, recent work, and their Instagram or Google profile. Real content comes first: ask for it before anything is generated or animated.
 
-   7. The site's language, and for languages with a formal and an informal "you" (Dutch je or u, German du or Sie, French tu or vous), which one.
+   7. The one action the site must drive, sites they like, and anything they must have or must never have.
+
+   8. The site's language, and for languages with a formal and an informal "you" (Dutch je or u, German du or Sie, French tu or vous), which one.
 
 2. **Research, then the visual approach.** Run the six research layers from jarvis-website-research yourself (skip its intake; you just asked). Save the brief. In one message, show a short summary (the five most useful findings and the niche design profile in two lines) and **recommend a visual approach** with a one-line reason, listing the others:
 
@@ -46,7 +48,7 @@ The member sends: "Use the premium website skill to build a website for my clien
 
 4. **Higgsfield, only when needed.** Most sites need no generated media (media level 1, code-built visuals). Connect Higgsfield only when the chosen media level is 2 or 3, at check-in 1, never before. Higgsfield is then the only source for generated images and films. If the keys are not saved yet, run the first-time connection in [references/higgsfield-prompting.md](references/higgsfield-prompting.md) and the one-image test. If no **media budget** is saved, ask once: "How much can I spend on images and videos per website without asking? I suggest 15 US dollars." Save the answer in memory and reuse it for every website.
 
-## Four kinds of website
+## Five kinds of website
 
 Ask which one this is if it is not clear from the request.
 
@@ -68,10 +70,16 @@ Ask which one this is if it is not clear from the request.
 
 4. **A demo site for a prospect** (to help close a deal). Differences:
    - Use only public facts about the prospect (their real services, area and contact details from their own site or Google profile), and mark anything else in [brackets].
-   - Label it clearly as a concept: a small "Concept by [agency name]" note in the footer, and keep it out of search engines (noindex).
+   - Label it clearly as a concept: a small "Concept by [agency name]" note in the footer and the form's note, never in the header, and keep it out of search engines (noindex).
    - Never use the prospect's logo or photos without permission; make a starter logo and generated images instead, and say so.
    - Do not connect a domain or real enquiry destination; the form shows "This is a concept site" instead of submitting.
    - Keep it light: Premium tier, one hero film at most, so it costs little. Tell the member the cost first as usual.
+
+5. **A showcase or concept site** (a fictional business, for marketing, portfolios or teaching). Differences:
+   - Invent believable fictional details so no section is empty: the business name, a fictional street address, neighbourhood and map position, four or five real nearby places with realistic drive times, and plausible services and prices. Label every invented fact clearly as fictional.
+   - Never present invented reviews, team members, awards or results as real; use clearly labelled sample content or leave them out.
+   - Keep the concept label out of the header. Put it in the footer, in the enquiry form's note and on the map ("fictional address").
+   - These invented details are only for showcase sites. For a real client's site, rule 1 always applies: never invent facts.
 
 ## The work, with three check-ins
 
@@ -79,8 +87,9 @@ Ask which one this is if it is not clear from the request.
 
 - The site plan as a numbered list of sections, using [references/section-patterns.md](references/section-patterns.md): ordered by the buyer's questions (see Section order there), each with its pattern, headline and action. Include a story scene, diagrams, a before and after or an estimator only where their trigger is true, and say which trigger, and its phone version from [references/mobile-design.md](references/mobile-design.md). Follow the niche design profile: patterns that fit, none it says to avoid.
 - The **media level** (1 Opus only, 2 a few photos, 3 cinematic) from [references/image-direction.md](references/image-direction.md), with a one-line reason; level 1 uses the code-built visuals in [references/code-visuals.md](references/code-visuals.md). Then the **media plan**: first the media type from what the site sells (the relevance test: every visual shows the buyer, the problem, the product working or the result), then each image's role, desktop shape, phone shape and shot, and any code-built demos. The **variety check** passes.
+- The **motion level** (Clean or Expressive) and what it means for this site.
 - The **wow plan** from [references/wow-pass.md](references/wow-pass.md): the one brand idea, the immersive signature moment that expresses it, the two bold compositions, and how the palette and type differ from the local competitors.
-- The **component list:** the 8 to 12 tested components this site will use, each tied to a section and its trigger.
+- The **component list:** the tested components this site will use (fewer for Clean), each tied to a section and its trigger.
 - The **Scroll Score** from [references/motion-system.md](references/motion-system.md): every section's motion by name, and the three to five signature moments (usually including a transformation scroll of the client's real result).
 - The tier: Premium (art-directed stills, light motion) or Cinematic (films where they earn their place). Decide the hero with the video test in image-direction.md ("Does the hero need a video?") and say why in one line; a hero video is never the default.
 - The shot list, written with the look line and shot recipe in [references/higgsfield-prompting.md](references/higgsfield-prompting.md), with one line for the estimated cost and time (for information when it is within the media budget).
@@ -92,7 +101,7 @@ Ask which one this is if it is not clear from the request.
 
 2. **Media.** Use the client's real photos first, then the code-built visuals in code-visuals.md. Only at media level 2 or 3, generate the rest with Higgsfield, always: never Base44's built-in image generation, other generators, stock photos or placeholders, unless the member explicitly asks for something else. Before generating, check the keys HIGGSFIELD_KEY_ID and HIGGSFIELD_KEY_SECRET exist; if they are missing or rejected, stop and say so, open the secure secret card, and never fall back silently to another source. Generate following [references/higgsfield-route.md](references/higgsfield-route.md) and [references/higgsfield-prompting.md](references/higgsfield-prompting.md): generate within the media budget without asking again (stop and ask only if a job would go over it or the Higgsfield balance runs low), pause any background goal, submit all shots together, drafts first, then finals for the best ones, images before films (films are made from the approved stills), and the quality gate in [references/design-and-media.md](references/design-and-media.md) plus higgsfield-prompting.md. Explain any Higgsfield error in plain words, as that file says, and wait only when the member must act (for example adding credit).
 
-3. **Build.** Install the motion tools (gsap@3.15.1 and lenis@1.3.27; Three.js only if a 3D object is the story) and add only the tested components the plan uses (usually 8 to 12, plus motion.js) from [assets/signature-mechanics](assets/signature-mechanics/README.md), exactly as given, following its hand-off rules: the builder gets the exact code, never a description to reinterpret. First the design system, following [references/design-system-rules.md](references/design-system-rules.md): the tokens from the brand guideline, then the shared components (buttons, header, sections, image frames, cards, carousels, tabs, form fields). Then build the hero first, then one section at a time, phone and desktop together, checking each before the next. Build the pages in the client's website app using only those components, following [references/v3-build-method.md](references/v3-build-method.md) for structure, scroll films and phone, reduced-motion and failed-media behaviour, and [assets/runtime.js](assets/runtime.js) for the tested film mechanics. Apply the logo (header, footer, browser tab icon, social preview image), palette, type scale, motion, and the composition rules in image-direction.md. Build the phone version on purpose with mobile-design.md. Build every motion exactly as the Scroll Score names it, with its phone and reduced-motion versions. Hide sections with no real content yet (portfolio, reviews, team). The five sites in [references/screenshots](references/screenshots) and the previews in [references/quality-bar](references/quality-bar) show the level to reach (composition, the lower half of the page, signature moments); they are never templates to copy.
+3. **Build.** Install the motion tools (gsap@3.15.1 and lenis@1.3.27; Three.js only if a 3D object is the story) and add only the tested components the plan uses (fewer for Clean, usually 8 to 12 for Expressive, plus motion.js) from [assets/signature-mechanics](assets/signature-mechanics/README.md), exactly as given, following its hand-off rules: the builder gets the exact code, never a description to reinterpret. First the design system, following [references/design-system-rules.md](references/design-system-rules.md): the tokens from the brand guideline, then the shared components (buttons, header, sections, image frames, cards, carousels, tabs, form fields). Then build the hero first, then one section at a time, phone and desktop together, checking each before the next. Build the pages in the client's website app using only those components, following [references/v3-build-method.md](references/v3-build-method.md) for structure, scroll films and phone, reduced-motion and failed-media behaviour, and [assets/runtime.js](assets/runtime.js) for the tested film mechanics. Apply the logo (header, footer, browser tab icon, social preview image), palette, type scale, motion, and the composition rules in image-direction.md. Build the phone version on purpose with mobile-design.md. Build every motion exactly as the Scroll Score names it, with its phone and reduced-motion versions. Hide sections with no real content yet (portfolio, reviews, team). The five sites in [references/screenshots](references/screenshots) and the previews in [references/quality-bar](references/quality-bar) show the level to reach (composition, the lower half of the page, signature moments); they are never templates to copy.
 
 4. **Connect.** Build one enquiry pipeline in the client's own website app and wire every form to it, following [references/client-delivery.md](references/client-delivery.md): saved in the site's own Enquiry table, the client emailed, the visitor confirmed, and only then a copy forwarded server to server to the member's Jarvis if wanted. Never post from the browser to another app, and never show a success message for something that was not saved.
 
@@ -140,7 +149,7 @@ Save its app ID in memory as the client's website app ID. Work only in that app 
 
 7. Images are composed, not placed: at least two full-width image moments after the hero, at most one even grid of cards, at least three image shapes, and images that interact with the design in at least two sections.
 
-8. Motion is planned, not sprinkled: a Scroll Score with three to five signature moments that tell the client's story, quiet consistent motion elsewhere, built with named tools (motion-system.md). Films are scroll-controlled with native scrolling on desktop, never a hijacked wheel. On phones the hero film plays as a short muted loop with its still as the fallback; reduced motion and data saving get the still.
+8. Motion matches the chosen level: Clean has one or two meaningful moments and stillness elsewhere; Expressive has several signature moments; both pass the noise test (motion-system.md). Real content and useful interactions come before effects. Films are scroll-controlled with native scrolling on desktop, never a hijacked wheel. On phones the hero film plays as a short muted loop with its still as the fallback; reduced motion and data saving get the still.
 
 9. Fast: compressed media, the second film loads near its section, nothing heavy before the first screen is useful.
 

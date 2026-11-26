@@ -7,10 +7,14 @@ Learned 23 November 2026: a med spa preview passed every correctness check but f
 ## 1. Plan the wow (at check-in 1)
 
 1. **One brand idea.** A single metaphor drawn from the name, the place or the result (for example Solenne, the sun: light that changes through the day). Every signature moment expresses it.
-2. **One immersive signature moment** that takes over the whole screen and expresses the idea (for example the page's light rising from dawn to day as the visitor scrolls). Not half the screen, not a small card.
+2. **One signature moment** that expresses the idea. For Clean it is usually an interaction the visitor uses (a before and after, a colour try-out, an estimate, a demo) or one calm scroll story; for Expressive it can be immersive and full screen.
 3. **At least two bold compositions** that break the usual grid: oversized type overlapping a full-bleed image, an asymmetric layout, a giant list, extreme scale contrast, type that fills the screen width.
 4. **Distinctive palette and type.** Different from the top local competitors found in the research (if every competitor is beige and blush, do not be beige and blush). Say how it differs.
 5. **Micro-interactions** that feel crafted: hover reveals (an image following the pointer over a list), magnetic main buttons, links whose underline draws, a custom cursor only where it adds something, smooth transitions. Phone versions use tap and swipe instead.
+
+## 1b. Wow is not motion
+
+The strongest premium sites win with real content (the client's own photos, team, reviews and work), confident typography, generous space and one or two moments that are genuinely useful. Run the noise test from motion-system.md in every critique: remove motion that does not help someone understand, trust or act.
 
 ## 2. The five-second test
 

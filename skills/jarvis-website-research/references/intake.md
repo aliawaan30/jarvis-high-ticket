@@ -12,7 +12,7 @@ Ask in one message, only what is still unknown, numbered, with a blank line betw
 
 4. Existing brand: logo, colours, fonts, photos, or "nothing yet".
 
-5. What the client can provide: real reviews, credentials and licence numbers, prices or "from" prices, before and after photos with written consent, team photos.
+5. What the client can provide: real reviews, credentials and licence numbers, prices or "from" prices, before and after photos with written consent, team photos, recent project photos, and their Instagram or Google profile (often the best source of real photos). Real content makes a site feel premium more than any animation.
 
 6. Two or three websites the client likes, and what they like about each.
 

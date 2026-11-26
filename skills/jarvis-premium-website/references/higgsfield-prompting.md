@@ -6,6 +6,16 @@ How to get the best images and films from Higgsfield, how to connect it the firs
 
 Basic results come from topic prompts ("something about websites", "a modern office"). Write every shot from the buyer's journey in the Scroll Score instead: the problem moment, the turning point, the result. Each shot names a real person's situation (shot so no real customer is implied), a place, a time of day, an emotion and one thing that moves. Check each shot against the recipe for the niche in motion-system.md. If a shot would fit any business, rewrite it until it only fits this one.
 
+## 0b. The premium image bar (every still, every site)
+
+Learned 27 November 2026: first images read as generic stock or 3D renders because the skill set a budget but never defined premium. Every still prompt starts from this core, adapted to the niche, then adds the look line and the shot recipe:
+
+1. **The photographic standard:** shot like the best photography in the niche, on a professional camera (for example "top-tier architectural photography on a medium-format camera" for properties and buildings, "editorial food photography" for restaurants, "documentary photography" for trades, "soft editorial beauty photography without faces" for med spas).
+2. **Real, local light:** the time of day, the direction of the sun and the place (for example "late-afternoon Texas Hill Country light, low western sun"), deep or shallow focus as the shot needs, fine film grain.
+3. **Quiet quality:** never glossy, over-retouched, oversaturated or CGI-looking.
+
+**Generate 2 to 3 options for every key shot** (the hero, the keyframes, the most-seen section images) and pick the best. Never ship the first result.
+
 ## 1. The look line (shared by every shot)
 
 Write one look line from the brand guideline and put it at the start of every prompt, word for word, so every image feels like one shoot:
@@ -51,21 +61,27 @@ Checked 19 November 2026. The catalogue and names change often, so list the mode
 
 Before generating, show the member the models you chose for each shot, why, and the cost.
 
+**Proven in live builds (27 November 2026), check the catalogue still offers them:** Soul Cinema (or Grok Imagine) for hero and gallery stills; Kling 3.0 Pro with a start and an end frame for drone and transformation films.
+
 ## 4. Keyframe pairs for the transformation scroll
 
 The transformation scroll (motion-system.md) needs a film that goes from a start state to an end state with the camera and composition matching exactly, so scrolling feels like time passing in one place.
 
 1. **Start keyframe:** generate the start state (for example the bare yard) with the look line and full shot recipe, 16:9 for desktop.
-2. **End keyframe:** create the end state (the finished garden) by **editing the start keyframe** with an image editing model, keeping the same camera, horizon, framing and light, rather than generating a new image. Check both frames line up when laid over each other.
+2. **End keyframe:** create the end state (the finished garden) by **editing the start keyframe**. Keep the composition, lens and light identical; change only what the story needs (the state of the scene, or for a drone move only the camera height or position) with an image editing model, keeping the same camera, horizon, framing and light, rather than generating a new image. Check both frames line up when laid over each other.
 3. **The film between them:** use a video model that accepts a start frame and an end frame (for example Kling 3.0 with start and end frames, or a Veo start and end frame lane, whichever the catalogue offers), 8 seconds, highest quality, a locked or very slow camera, with the prompt describing the change happening gradually (soil levelled, path laid, plants growing in, light warming).
 4. **Frames for the web:** if the workspace has ffmpeg, extract frames for a canvas sequence:
    `ffmpeg -i film.mp4 -vf "fps=12,scale=1600:-2" -c:v libwebp -quality 70 frames/desktop_%03d.webp`
    and a phone set with `scale=900:-2`. Keep about 90 to 100 frames per sequence. If ffmpeg is not available, encode the film with a keyframe on every frame and scrub the video's current time instead (the v3 engine's method), and say which method was used.
 5. Also make a phone keyframe pair in a tall shape (4:5 or 9:16) when the phone version keeps the transformation.
 
+## 4b. Planning to the budget
+
+Before generating, write a short cost table from the current catalogue prices: each shot type (key still, gallery still, keyframe pair, drone or transformation film, phone film version), how many, the price each, and the total. Plan to the member's cap in this order: the hero, then the keyframes and the signature film, then section images, then the gallery. **When the cap is tight, cut the number of gallery images and secondary films, never the quality or the model of the key shots.** Show the table at check-in 1.
+
 ## 5. Quality gate (reject and redo only these)
 
-Films that look like a still photo slowly zooming (no motion in the scene, no depth), soft or low-detail frames, warped or melting shapes, extra or broken fingers, garbled or fake text, plastic or waxy surfaces, impossible physics (water flowing up, floating objects), a subject cut off where text will sit, colours that do not match the look line, jitter or morphing in films, or a weak final second (trim it instead of rerolling when the story still works).
+Anything that reads as stock or a 3D render, fake-looking materials, plastic-looking plants or foliage, too much contrast, light that does not match the other shots, films that look like a still photo slowly zooming (no motion in the scene, no depth), soft or low-detail frames, warped or melting shapes, extra or broken fingers, garbled or fake text, plastic or waxy surfaces, impossible physics (water flowing up, floating objects), a subject cut off where text will sit, colours that do not match the look line, jitter or morphing in films, or a weak final second (trim it instead of rerolling when the story still works).
 
 ## 6. Niche starter prompts (adapt, never paste blindly)
 
@@ -83,7 +99,7 @@ When no Higgsfield keys are saved:
 
 1. Explain in plain words: "Higgsfield makes your client's images and films. It needs its own API account and a small balance, separate from any Higgsfield subscription."
 2. Walk the member through console.higgsfield.ai: sign in, add a balance (about 10 US dollars covers a test site), create an API key.
-3. Open the secure secret card for HIGGSFIELD_KEY_ID and HIGGSFIELD_KEY_SECRET. Never ask for keys in chat.
+3. Open the secure secret card for HIGGSFIELD_KEY_ID and HIGGSFIELD_KEY_SECRET. Never ask for keys in chat. If the console gives one combined key instead of two parts, put the whole combined key in HIGGSFIELD_KEY_ID (this worked in the live build on 27 November 2026) and leave the secret field as the card allows.
 4. Run one cheap test image. Report the model, the cost and the request ID.
 5. Ask once for the media budget per website (suggest 15 US dollars) and save it in memory, so later websites need no cost approval within it.
 

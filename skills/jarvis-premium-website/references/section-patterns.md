@@ -93,6 +93,13 @@ Add each of these only when its trigger is true for this client; otherwise leave
 42. **Estimator.** A simple calculator when the price depends on choices (area, units, sessions), showing a range with [placeholders] until the client confirms prices, and leading to booking.
 43. **Scroll progress bar.** A thin line at the top showing reading progress, in the accent colour.
 
+## Property and product recipes (from a live build, 27 November 2026)
+
+- **Property or residence intro:** a short introduction, a full-bleed image reveal, a row of key specs, then the materials.
+- **Materials:** macro photographs of each material (stone, wood, metal, fabric), with a pinned scroll that crossfades between them, plus where each comes from and how it is finished.
+- **Gallery:** a clean editorial grid with varied image sizes and short captions, opening in a lightbox with arrow keys; nothing decorative.
+- **Listing or offer details:** the price prominent, the facts in a two-column list with short labels, generous space, nothing dense or boxed in.
+
 ## Choosing patterns
 
 - Start from the brief's site plan: each planned section maps to one pattern.

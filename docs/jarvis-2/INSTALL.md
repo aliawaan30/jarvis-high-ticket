@@ -13,7 +13,7 @@ Members keep Cross-app data access on All apps; never ask them to change it. You
 Send one short message, always, as the very first thing, on a fresh install and a re-install: "Hey [name], upgrading you to Jarvis 2.0 now. It takes about 3 minutes. Then I'll walk you through everything, one step at a time." Use "Hey," if you don't know their name.
 
 ## Step 1b. Save access details
-No code is needed to upgrade. If the member sent their update link from the onboarding hub, save it in memory as "Jarvis 2.0 pack URL"; if not, skip this and never ask for it.
+No code is needed to upgrade. If the member sent one, save it in memory as "Jarvis 2.0 code"; if not, skip this and never ask for one.
 
 ## Step 2. Install every skill
 The attached zip holds each skill as a folder under skills/, each with one SKILL.md and sometimes references or assets. This is the core: install every folder in it. Course modules come later, one zip per module, each with its own install message. For every skill folder:
@@ -64,12 +64,12 @@ If a goal from an earlier install exists, update its text to this scope. If it i
 ## Step 8. Verify before reporting
 Check the real current state of each item, not what you set up or intended. A workflow or goal only counts as running if it shows as on right now. Items that were already paused before this install count as "paused by the member", not as failures, and stay paused. Check, do not assume:
 1. Count the skill folders in the core zip and confirm each is installed. Open every one and confirm it shows a Version line. Any skill that shows an older version, or no version, was not replaced: install it again with your skill tool and check it again. List any still failing in the install check note. Never report the install as done while an older version is installed.
-1c. Save the pack's version in memory as "Jarvis 2.0 version" and add "core [version]" to "Installed packs", and write it at the top of the install check note.
+1c. Save the pack's version in memory as "Jarvis 2.0 version", and write it at the top of the install check note.
 1b. Confirm "Update data" is on: from memory if already confirmed, otherwise by asking the member once.
 2. Check HQ: if the Agency HQ app is installed, run "Checking the app" from jarvis-hq; otherwise confirm the HQ tables exist in your Data area.
 3. List every active workflow on this agent, including any the goal created by itself. Count the Jarvis 2.0 ones: 5, or 3 if no inbox is connected yet.
 4. Confirm the goal is running.
-5. If a "Jarvis 2.0 pack URL" was saved, read it back from memory.
+5. If a "Jarvis 2.0 code" was saved, read it back from memory.
 6. List every instruction you still have that conflicts with jarvis-2-brain. Every one must be covered by the switched off list. If any is not, include it in your report under "Conflicts to check".
 
 ## Step 9. Save the check, then go live
@@ -97,5 +97,5 @@ Add one line before the plan if no WhatsApp or Telegram is connected: "Want thes
 When they reply go, guide the HUD install with jarvis-hq, step by step. Never start a lead hunt from the install.
 
 3. Add up to two extra lines, only for things that need them. If no inbox is connected: "One thing: say "connect my Gmail" so I can catch replies the second they land." If the goal is waiting on their /goal message: "One thing: send the goal message above so I keep working when you're away." If something failed in Step 8: say in one plain line what did not install, and ask them to send "show me the setup check" to their support contact. Nothing else.
-4. On a re-install, skip the HUD prompt and the live message. Send one line instead: "All set. Picking up where we left off.", plus up to two extra lines from point 3 for things that need them. Then stop.
-5. On a fresh install, the first job is Your HUD: wait for "go", then guide the Agency HQ install with jarvis-hq, one step at a time. Never start a lead hunt, offer, pricing or funnel work from the install. The lead hunter is not installed yet (Module 4); offer work starts in Module 2.
+4. On a re-install, skip the first job and the live message. Send one line instead: "All set. Picking up where we left off.", plus up to two extra lines from point 3 for things that need them. Then stop.
+5. On a fresh install, start that first job straight away and report back when it is done. The first job is the lead hunt (jarvis-lead-hunter, at their daily quota), run by you directly in this chat, not handed to the goal or sub-agents, whenever their niche and target city are known. Report only the leads: no offer pitch, no other topics. If they are not known, the live message has already asked for them; start the hunt once they answer. Never start offer, pricing or funnel work as the first job; that happens when the member asks, or in Module 2.

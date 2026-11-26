@@ -3,7 +3,7 @@ name: jarvis-outreach-coordinator
 description: Run outreach for leads the lead hunter has already found: plan and get approval for a campaign, write the emails, call cards and LinkedIn notes, run the 14 day sequence with reminders, and apply the country rules. Use when the member wants to reach out to leads, start or approve a campaign, or asks what to send or who to contact today. Never use this skill to find or research leads; that is jarvis-lead-hunter.
 ---
 
-Version: 2026-11-25.1
+Version: 2026-11-18.1
 
 # Jarvis outreach coordinator
 
@@ -11,7 +11,7 @@ Version 2, 6 November 2026. Turns leads from jarvis-lead-hunter into booked call
 
 ## Must do, every campaign
 1. Leads come only from jarvis-lead-hunter. Never build or research lists here.
-2. Before approval: the member's postal address is on the Campaign row, the offer is approved, and the booking page works (a Funnel row with a booking page URL and one test application seen). Without a working booking page, write and save drafts, then say in one line: "Your drafts are ready. They go out once your booking page works (Module 3)." Everything else has a default; ask the member for nothing else.
+2. Before approval: the member's postal address is on the Campaign row and the offer is approved. Everything else has a default; ask the member for nothing else.
 3. Every first email scores 6 of 6 on "Would they reply?" before it is saved.
 4. Every email goes through the send gate. No check, no send.
 5. Emails before calls: no cold call until the lead has had two emails.

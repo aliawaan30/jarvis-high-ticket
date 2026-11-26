@@ -4,6 +4,22 @@ What makes a site feel premium instead of basic is planned, named motion: a few 
 
 Researched 23 November 2026: award-level sites built with Claude Opus use GSAP with ScrollTrigger and SplitText for scroll and text motion, Lenis for smooth scrolling, Three.js for 3D, and Apple-style scroll sequences made from AI video; the difference between basic and award-level output comes from a detailed brief that names the tools and describes every section's motion.
 
+## 0. Motion level (asked in the intake)
+
+Learned 26 November 2026: Blake preferred a calm, content-led site (a painter's site with one scroll moment, a before and after and a colour try-out) to our animation-rich builds, which read as noise. More motion is not more premium.
+
+| | Clean (the default) | Expressive (on request) |
+| --- | --- | --- |
+| Signature moments | 1 to 2, and each must let the visitor try, compare or decide something (a before and after, a colour or option try-out, an estimate, a demo), or tell the one story that matters | 3 to 5 |
+| Everything else | Still, or one simple fade as sections arrive | The quiet defaults below |
+| Off unless the member asks | Cursor-following images, magnetic buttons, moving text rows (Marquee), split-text reveals beyond the hero headline, layered parallax, smooth-scroll takeover (Lenis), custom cursors | Allowed |
+| The wow comes from | Real content (the client's photos, team, reviews, work), strong typography and space, and one or two useful interactions | Cinematic motion plus content |
+| Recommend for | Clinics, legal and professional, trades, med spas, most service businesses | Restaurants, hospitality, creative studios, cinematic niches, or a member who asks for wow |
+
+**Calm is not plain.** Clean means restrained motion, never low effort. Every section still needs an editorial layout with a clear type scale (a display headline, small spaced-caps labels, readable body text), one considered visual move (a full-bleed image, a crop, a scale change, a pinned moment or a strong grid), and real photography or real content, never placeholders. (Learned 27 November 2026: "keep everything else calm" was read as "plain", and four sections had to be redone.)
+
+**The noise test (every site):** for each screen, list what moves. Anything that does not help a visitor understand, trust or act stops moving. In Clean, no more than one thing moves on any screen at a time, apart from a signature moment.
+
 ## 1. Tools (install in the client's website app)
 
 - **GSAP** with **ScrollTrigger** (scroll-linked animation, pinning, scrubbing) and **SplitText** (headline reveals by line, word or letter). Free for all use, plugins included.
@@ -18,7 +34,7 @@ Every signature moment below has a tested React component in assets/signature-me
 
 ## 2. The Scroll Score (written at check-in 1)
 
-For every section: its motion, named from the library below, what triggers it (page load, entering view, scroll scrubbed, pinned), how long or how far, and its phone version. Then choose **three to five signature moments** for the site: the moments people remember. Everything else uses the quiet defaults. Never animate everything; contrast is what makes the big moments land.
+For every section: its motion, named from the library below, what triggers it (page load, entering view, scroll scrubbed, pinned), how long or how far, and its phone version. Then choose the signature moments for the motion level, **one or two for Clean and three to five for Expressive**: the moments people remember. Everything else uses the quiet defaults. Never animate everything; contrast is what makes the big moments land.
 
 ## 3. Signature moments (pick 3 to 5)
 
@@ -34,7 +50,7 @@ For every section: its motion, named from the library below, what triggers it (p
 9. **Number moment.** Confirmed figures that count up once, large, in the brand's display type.
 10. **3D object.** A Three.js model that rotates, opens or assembles on scroll, only when the product is physical and a model exists.
 
-## 4. Recipes by niche (start here, then adapt)
+## 4. Recipes by niche (start here, then adapt; for Clean, keep only the one or two most useful moments)
 
 Each recipe combines up to three layers: code-built animation for the product, scroll as the storyteller, and, only at media level 2 or 3, Higgsfield for the emotion (the buyer's real world). At media level 1, replace each Higgsfield shot in a recipe with code-built visuals (code-visuals.md) or the client's real photos; for example the AI receptionist evening scroll uses an illustrated or colour-shifting dusk to night background instead of a film. Pick the recipe for the niche, then adapt it to the client's real offer.
 
@@ -61,7 +77,7 @@ Each recipe combines up to three layers: code-built animation for the product, s
 
 **Real estate**: a transformation of a property from day to twilight with lights coming on; listings as a clean grid with image reveals; neighbourhood panorama bands.
 
-## 5. Quiet defaults (everything else)
+## 5. Quiet defaults (Expressive only; Clean uses stillness or one simple fade)
 
 - Sections and cards rise 24 px and fade in once, 0.6 to 0.8 seconds, ease out, small stagger.
 - Buttons: a short hover lift and colour change; on desktop the main button may be slightly magnetic toward the pointer (within 8 px).

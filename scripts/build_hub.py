@@ -118,6 +118,23 @@ def parse_blocks(body):
             blocks.append({'type': m.group(1), 'id': m.group(2)})
             i += 1
             continue
+        m = re.match(r'^\[\[ext:([^|\]]+)\|(https?://[^\]]+)\]\]$', line.strip())
+        if m:
+            blocks.append({'type': 'ext', 'label': m.group(1), 'url': m.group(2)})
+            i += 1
+            continue
+        m = re.match(r'^\[\[image:([\w./-]+)(?:\|([^\]]*))?\]\]$', line.strip())
+        if m:
+            if not (HUB / 'src' / 'media' / m.group(1)).exists():
+                fail(f'image hub/src/media/{m.group(1)} not found')
+            blocks.append({'type': 'image', 'src': 'media/' + m.group(1), 'caption': m.group(2) or '', 'phone': 'phone' in m.group(1)})
+            i += 1
+            continue
+        m = re.match(r'^\[\[video:(https://[^\]|]+)(?:\|([^\]]*))?\]\]$', line.strip())
+        if m:
+            blocks.append({'type': 'video', 'url': m.group(1), 'caption': m.group(2) or ''})
+            i += 1
+            continue
         if line.strip() == '[[updatelink]]':
             blocks.append({'type': 'updatelink'})
             i += 1
@@ -242,6 +259,8 @@ def upload(packs):
 # ---------- main ----------
 
 def main():
+    if os.environ.get('NETLIFY') and not (os.environ.get('SUPABASE_URL') and os.environ.get('SUPABASE_ANON_KEY')):
+        fail('Set SUPABASE_URL and SUPABASE_ANON_KEY in Netlify before deploying. Without them the hub would run in open preview mode.')
     manifest = json.loads((CONTENT / 'packs.json').read_text())
     # Output folders are overwritten, never cleared, so the build needs no delete rights.
     # Netlify always builds from a clean checkout, so stale local files never ship.
@@ -253,8 +272,17 @@ def main():
     (DIST / 'data').mkdir(exist_ok=True)
     site = {'site': parse_site(), 'packs': packs, 'pages': pages,
             'built': os.environ.get('COMMIT_REF', 'local')[:8]}
-    (DIST / 'data' / 'site.json').write_text(json.dumps(site, ensure_ascii=False, indent=1))
-    cfg = {'supabaseUrl': os.environ.get('SUPABASE_URL', ''), 'supabaseAnonKey': os.environ.get('SUPABASE_ANON_KEY', '')}
+    site_json = json.dumps(site, ensure_ascii=False, indent=1)
+    # Members only: the content is bundled into the /api/site function, never published as a public file.
+    (HUB / 'build').mkdir(exist_ok=True)
+    (HUB / 'build' / 'site-data.mjs').write_text('export default ' + site_json + ';\n')
+    public_copy = DIST / 'data' / 'site.json'
+    if '--demo' in sys.argv or '--preview' in sys.argv or not os.environ.get('SUPABASE_URL'):
+        public_copy.write_text(site_json)  # local preview only
+    elif public_copy.exists():
+        public_copy.write_text('{}')
+    cfg = {'supabaseUrl': os.environ.get('SUPABASE_URL', ''), 'supabaseAnonKey': os.environ.get('SUPABASE_ANON_KEY', ''),
+           'siteName': site['site'].get('name', '')}
     (DIST / 'config.js').write_text('window.HUB_CONFIG = ' + json.dumps(cfg) + ';\n')
 
     for p in packs:
@@ -267,6 +295,22 @@ def main():
             fail('--demo must not run on Netlify')
         shutil.copytree(PACKS_OUT, DIST / 'demo-packs', dirs_exist_ok=True)
         print('Demo packs copied (local preview only)')
+
+    if '--preview' in sys.argv:
+        # One file you can open or share for review. Gitignored. No login, no downloads.
+        import base64
+        data = (DIST / 'data/site.json').read_text()
+        for img in (DIST / 'media').glob('*'):
+            uri = 'data:image/png;base64,' + base64.b64encode(img.read_bytes()).decode()
+            data = data.replace(f'"media/{img.name}"', f'"{uri}"')
+        h = (DIST / 'index.html').read_text()
+        h = h.replace('<link rel="stylesheet" href="style.css">', '<style>' + (DIST / 'style.css').read_text() + '</style>')
+        h = h.replace('<script src="config.js"></script>', '<script>window.HUB_CONFIG={};window.__SITE=' + data.replace('</', '<\\/') + ';</script>')
+        h = re.sub(r'<script src="https://cdn[^>]+></script>\n?', '', h)
+        h = h.replace('<script src="app.js" defer></script>\n', '')
+        h = h.replace('</body>', '<script>' + (DIST / 'app.js').read_text().replace('</script', '<\\/script') + '</script>\n</body>')
+        (HUB / 'preview.html').write_text(h)
+        print('Preview: hub/preview.html')
 
     if '--sync-downloads' in sys.argv:
         dl = ROOT / 'course/downloads/jarvis-2'
